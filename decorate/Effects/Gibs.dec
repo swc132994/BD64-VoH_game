@@ -2259,6 +2259,8 @@ Scale 0.85
 //ARACHNOTRON
 ACTOR XDeathSpiderLeg1 : XDeathZombieArm1
 {
++NOBLOOD
++NOBLOODDECALS
 	States
 	{
 	Spawn:
@@ -2273,6 +2275,8 @@ ACTOR XDeathSpiderLeg1 : XDeathZombieArm1
 
 ACTOR XDeathCrawlerGun : XDeathZombieArm1
 {
++NOBLOOD
++NOBLOODDECALS
 	States
 	{
 	Spawn:
@@ -2372,7 +2376,17 @@ renderstyle Normal
 //ERADICATOR - UNMAKER MASTERMIND
 Actor EradicatorHead : XDeathBlueSpiderHead
 {
-Scale 1.2
+Scale 0.7
+	States
+	{
+	Spawn:
+		EBBG ABCDEFGH 4
+		Wait
+	Death:
+		EBBG A 1
+		EBBG A -1
+		Stop
+	}
 }
 
 ACTOR XDeathBlueSpiderLeg1 : XDeathSpiderLeg1
@@ -2404,7 +2418,17 @@ YScale -0.8
 //SPIDER MASTERMIND
 ACTOR XDeathMastermindHead : XDeathSpiderHead
 {
-Scale 1.2
+Scale 0.7
+	States
+	{
+	Spawn:
+		MPBG ABCDEFGH 4
+		Wait
+	Death:
+		MPBG A 1
+		MPBG A -1
+		Stop
+	}
 }
 
 //HELLHOUND ALT

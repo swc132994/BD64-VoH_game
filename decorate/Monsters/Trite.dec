@@ -1,6 +1,6 @@
 Actor 64Trite 19139
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.4
 Health 30
 Radius 16
@@ -17,7 +17,7 @@ DeathSound "Trite/Death"
 ActiveSound "Trite/Active"
 BloodType "Brutal_BloodGreen"
 PainChance 200
-PainChance "Fire",64
+PainChance "Flames",64
 PainChance "Bullet",26
 PainChance "SuperFists",255
 PainChance "Kick",255
@@ -29,12 +29,12 @@ DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Jump",50
 DamageFactor "Kick",1.5
 DamageFactor "SuperKick",1.5
-DamageFactor "Fire",1.5
+DamageFactor "Flames",1.5
 DamageFactor "Plasma",1.5
 DamageFactor "BFG",1.5
-DropItem "DemonEssenceSpawner"
-Tag "Trite"
-HitObituary "%o was poisoned by a Trite"
+//DropItem "DemonEssenceSpawner"
+Tag "$FO_TAG_TRITE"
+HitObituary "$FO_OB_TRITE"
 Species "Trite"
 MONSTER
 -COUNTKILL

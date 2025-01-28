@@ -1,17 +1,17 @@
 ACTOR 64Pestilence : Revenant 19137
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.68
 Health 400
 Radius 20
 Height 56
 Mass 500
 Speed 10
-Tag "Pestilence"
+Tag "$FO_TAG_PEST"
 MeleeThreshold 196
 PoisonDamage 128 //Poison Damage Duration from Melee About 4-5 Seconds
 PainChance 80
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",255
 PainChance "Kick",255
@@ -24,9 +24,9 @@ PainSound "Pestilence/pain"
 DeathSound "Pestilence/death"
 ActiveSound "Pestilence/active"
 MeleeSound "Pestilence/melee"
-HitObituary "%o died by the Pestilence's poison fists"
-Obituary "%o fell to the Pestilence's chemical warfare"
-DropItem "DemonEssenceSpawner"
+HitObituary "$FO_OB_PESTHIT"
+Obituary "$FO_OB_PEST"
+//DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodGreen"
 +NOBLOODDECALS
 +DONTHARMSPECIES
@@ -63,10 +63,10 @@ BloodType "Brutal_BloodGreen"
 	Missile:
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12Green",8,0,60)
 		GHUL J 12 Bright Light("PestiFire") A_FaceTarget
-		TNT1 A 0 A_CustomMissile("PestilentMissile1",65,19)
+		TNT1 A 0 A_CustomMissile("PestilentMissile1",60,19)
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget6Green",8,0,60)
 		GHUL J 6 Bright Light("PestiFire")
-		TNT1 A 0 A_CustomMissile("PestilentMissile2",65,-19)
+		TNT1 A 0 A_CustomMissile("PestilentMissile2",60,-19)
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget6Green",-4,0,65)
 		GHUL K 6
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12Green",-4,0,65)
@@ -147,7 +147,7 @@ BloodType "Brutal_BloodGreen"
 		TNT1 AAA 0 A_CustomMissile("BloodHitGreen",56,0,random(0,360),2,random(0,90))
 		GHNH A 1 A_SpawnItemEx("Dying64Pestilence",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 AAAA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistSmallGreen",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",30,0,random(0,360),2,random(0,180))
@@ -209,8 +209,8 @@ Health 15
 Damage 5
 Speed 12
 FastSpeed 17
-Radius 10
-Height 20
+Radius 8
+Height 12
 SeeSound "Pestilence/attack"
 DeathSound "Pestilence/tracex"
 RenderStyle Translucent
@@ -222,6 +222,7 @@ PROJECTILE
 +SEEKERMISSILE
 +NOBLOOD
 +NOTARGETSWITCH
++NOTARGET
 	States
 	{
 	Spawn:
@@ -412,7 +413,7 @@ DropItem "None"
 		GHD1 E 35
 		GHD1 E -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 	Death.BFG:
 		TNT1 AAAA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistSmallGreen",35,0,random(0,360),2,random(0,90))
@@ -525,7 +526,7 @@ DropItem "None"
 		GHD2 G 35
 		GHD2 G -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 	Death.BFG:
 		TNT1 AAAA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistSmallGreen",35,0,random(0,360),2,random(0,90))
@@ -637,7 +638,7 @@ MONSTER
 		PTD1 ABCDE 5
 		PTD1 E -1 A_CustomMissile("BigBloodSpotGreen",0,0,random(0,360),2,random(0,90))
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 	Death.BFG:
 	Death.Shotgun:
 	Death.SSG:

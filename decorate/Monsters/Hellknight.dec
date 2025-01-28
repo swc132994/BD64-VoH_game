@@ -1,21 +1,21 @@
 Actor 64HellKnight : HellKnight Replaces HellKnight
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",220
 PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 MeleeRange 60	//default 44
 Species "HellKnight"
 BloodType "Brutal_BloodGreen"
 HitObituary "$FO_OB_KNIGHTHIT"
 Obituary "$FO_OB_KNIGHT"
-Tag "Hell Knight"
+Tag "$FO_TAG_KNIGHT"
 +NOBLOODDECALS
 +NEVERFAST
 	states
@@ -63,7 +63,7 @@ Tag "Hell Knight"
 		TNT1 A 0 A_PlaySound("Misc/Gibbed",CHAN_BODY)
 		A038 A -1
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -217,7 +217,7 @@ RenderStyle Add
 
 ACTOR 64StealthHellKnight : 64HellKnight Replaces StealthHellKnight
 {
-Tag "Stealth Hell Knight"
+Tag "$FO_TAG_STEALTHKNIGHT"
 Obituary "$FO_OB_STEALTHKNIGHT"
 HitObituary "$FO_OB_STEALTHKNIGHT"
 +STEALTH

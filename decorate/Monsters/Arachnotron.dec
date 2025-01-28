@@ -4,7 +4,7 @@ Actor 64Arachnotron : Arachnotron Replaces Arachnotron
 Scale 0.8
 Radius 40
 Speed 11
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
@@ -12,7 +12,7 @@ PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 BloodType "BD64ArachnotronBlood"
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 Tag "Arachnotron"
 Obituary "$FO_OB_BABY"
 +NOBLOODDECALS
@@ -77,7 +77,7 @@ Obituary "$FO_OB_BABY"
 		BSPI K 35 A_BossDeath
 		BSPI K -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
-	XDeath:
+	XDeath: Death.Fire:
 		TNT1 A 0 A_CustomMissile("XDeath1",52,0,random(150,210),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("XDeath1",52,0,random(0,360),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("XDeath2b",52,0,random(0,360),2,random(10,50))

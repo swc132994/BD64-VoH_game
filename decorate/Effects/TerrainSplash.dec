@@ -58,7 +58,7 @@ renderstyle ADD
 	Death:
 		TNT1 A 1
 		Stop
-	XDeath:
+	XDeath: 
 		TNT1 A 1
 		Stop
 	}
@@ -200,7 +200,7 @@ speed 20
 	Death:
 		TNT1 A 1
 		Stop
-	XDeath:
+	XDeath: 
 		TNT1 A 1
 		Stop
 	}

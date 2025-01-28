@@ -290,7 +290,7 @@ Obituary "%o chewed on %k's foot."
 		TNT1 A 2
 		Stop
 	Death:
-	XDeath:
+	XDeath: 
 		TNT1 A 0 A_CheckFloor("DeathOnGround")
 		TNT1 A 0 A_PlaySound("FOOTWALL",CHAN_WEAPON)
 		TNT1 AAAAAA 0 A_CustomMissile("MeleeSmoke",0,0,random(0,360),2,random(0,360))
@@ -321,7 +321,7 @@ Decal "Crack"
 		TNT1 A 0 Radius_Quake(4,6,0,5,0)
 		TNT1 A 15
 		Stop
-	XDeath:
+	XDeath: 
 		TNT1 A 0 A_PlaySound("SUPERFIST",CHAN_WEAPON)
 		TNT1 AAAAAA 0 A_CustomMissile("MeleeSmoke",0,0,random(0,360),2,random(0,360))
 		TNT1 A 0 Radius_Quake(4,6,0,5,0)
@@ -353,7 +353,7 @@ Decal "Crack"
 		TNT1 A 0 Radius_Quake(4,10,0,5,0)
 		TNT1 A 10
 		Stop
-	XDeath:
+	XDeath: 
 		TNT1 A 0 A_PlaySound("SUPERFIST",CHAN_WEAPON)
 		TNT1 AAAAAA 0 A_CustomMissile("MeleeSmoke",0,0,random(0,360),2,random(0,360))
 		TNT1 A 0 Radius_Quake(4,6,0,5,0)
@@ -398,7 +398,7 @@ Obituary "%o tripped on %k's slide kick."
 		TNT1 A 0 Radius_Quake(2,6,0,5,0)
 		TNT1 A 10
 		Stop
-	XDeath:
+	XDeath: 
 		TNT1 A 0 A_PlaySound("SUPERFIST",CHAN_WEAPON)
 		TNT1 AAAAAA 0 A_CustomMissile("MeleeSmoke",0,0,random(0,360),2,random(0,360))
 		TNT1 A 0 Radius_Quake(2,6,0,5,0)

@@ -13,7 +13,7 @@ AttackSound "aciddemon/melee"
 PainSound "aciddemon/pain"
 DeathSound "aciddemon/death"
 PainChance 180
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
@@ -24,7 +24,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 Obituary "%o was dissolved by an acid demon"
 HitObituary "%o was mauled by an acid demon"
 Tag "Acid Demon"
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodGreen"
 +DONTHARMSPECIES
 +MISSILEMORE
@@ -89,8 +89,9 @@ BloodType "Brutal_BloodGreen"
 		TNT1 A 0 A_JumpIfCloser(1000,"Death.ShotgunNoArm")
 		Goto Death
 	Death.Rifle:
-		TNT1 A 0 A_Jump(168,"Death")
+		TNT1 A 0 A_Jump(128,"Death")
 	Death.CutLess:
+		TNT1 A 0 A_Jump(85,"Death")
 	Death.ShotgunNoArm:
 		TNT1 A 0 A_CustomMissile("AcidDemonArm",50,0,random(00,360),2,random(10,50))
 		TNT1 A 0 A_XScream
@@ -136,7 +137,7 @@ BloodType "Brutal_BloodGreen"
 		GRGD D 35
 		GRGD D -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	XDeath:
+	XDeath: Death.Fire:
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherGreen",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
@@ -191,7 +192,7 @@ BloodType "Brutal_BloodGreen"
 		GARX H 35
 		GARX H -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -268,7 +269,7 @@ DropItem "None"
 		GANA A 2 A_Recoil(9)
 		TNT1 A 0 A_JumpIfCloser(170,"Death.SplatteredOnWall")
 	Death.Rifle:
-		TNT1 A 0 A_Jump(64,"Death")
+		TNT1 A 0 A_Jump(85,"Death")
 	Death.CutLess:
 	Death.Heavy:
 		TNT1 A 0 A_CustomMissile("XDeath1Green",32,0,random(150,210),2,random(10,50))
@@ -331,7 +332,7 @@ DropItem "None"
 		GARX H 35
 		GARX H -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	XDeath:
+	XDeath: Death.Fire:
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherGreen",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
@@ -471,7 +472,7 @@ Actor 64Nightcrawler : 64Arachnotron 19105
 //$category "Game/BD64_Monsters
 Health 750
 PainChance 96
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
@@ -480,7 +481,7 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 Obituary "%o was blown up by a nightcrawler."
 Tag "Nightcrawler"
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodBLUE"
 +DONTHARMSPECIES
 	States
@@ -527,7 +528,7 @@ BloodType "Brutal_BloodBLUE"
 		NTCR K 35 A_BossDeath
 		NTCR K -1 A_SpawnItemEx("GrowingBloodPoolBlue")
 		Stop
-	XDeath:
+	XDeath: Death.Fire:
 		TNT1 A 0 A_CustomMissile("XDeath1BLUE",52,0,random(150,210),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("XDeath1BLUE",52,0,random(0,360),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("XDeath2bBLUE",52,0,random(0,360),2,random(10,50))
@@ -620,12 +621,12 @@ Actor 64Stalker : 64LostSoul 19107
 {
 //$category "Game/BD64_Monsters
 Health 200
-Speed 16
-FastSpeed 24
+Speed 12
+FastSpeed 18
 Alpha 0.5
-PainChance "Fire",0
-DamageFactor "Fire",0
-DamageFactor "Ice",1.5
+PainChance "Flames",0
+DamageFactor "Flames",0
+DamageFactor "Ice",2
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 RenderStyle Translucent
@@ -634,18 +635,36 @@ Obituary "%o didn't see the stalker coming."
 PainSound "DSSTLKPN"
 SeeSound "DSSTLKST"
 +DONTHARMCLASS
-+NOBLOODDECALS
 	States
 	{
 	Spawn:
 		STKR ABC 2 Bright A_LookEx
 		Loop
-	See:
-		STKR A 1 Bright A_Chase
-		STKR B 2 Bright A_SpawnItemEx("GreenFlare",0,0,30)
-		STKR C 1 Bright
-		TNT1 A 0 A_Jump(3,"TeleportHideStart")
+	Idle:
+		STKR A 2 Bright A_Wander
+		TNT1 A 0 A_SpawnItemEx("GreenFlare",0,0,30)
+		STKR B 2 Bright A_LookEx
+		TNT1 A 0 A_SpawnItemEx("GreenFlare",0,0,30)
+		STKR C 2 Bright A_Wander
 		Loop
+	See:
+		TNT1 A 0 A_JumpIfTargetInLOS("SeeTarget")
+		STKR A 1 Bright A_Chase("","")
+		STKR A 1 Bright A_SpawnItemEx("GreenFlare",0,0,30)
+		STKR B 1 Bright A_Chase
+		STKR B 1 Bright A_SpawnItemEx("GreenFlare",0,0,30)
+		STKR C 1 Bright A_Chase("","")
+		STKR C 1 Bright A_SpawnItemEx("GreenFlare",0,0,30)
+		Loop
+	SeeTarget:
+		STKR A 1 Bright A_Chase
+		STKR A 1 Bright A_SpawnItemEx("GreenFlare",0,0,30)
+		STKR B 1 Bright A_Wander
+		STKR B 1 Bright A_SpawnItemEx("GreenFlare",0,0,30)
+		STKR C 1 Bright A_Chase
+		STKR C 1 Bright A_SpawnItemEx("GreenFlare",0,0,30)
+		TNT1 A 0 A_Jump(5,"TeleportHideStart")
+		Goto See
 	Missile:
 		TNT1 A 0 A_Jump(64,"Teleport")
 		TNT1 A 0 A_Jump(256,"Missile1","Missile2")

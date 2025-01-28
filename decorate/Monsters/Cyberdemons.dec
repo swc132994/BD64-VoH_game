@@ -1,19 +1,19 @@
 Actor 64Cyberdemon : Cyberdemon Replaces Cyberdemon
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.80
 Health 5000
 Speed 13
-PainChance "Fire",0
+PainChance "Flames",0
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DropItem "DemonEssenceLargeSpawner"
+//DropItem "DemonEssenceLargeSpawner"
 DropItem "Soulsphere",32
-Tag "Cyberdemon"
+Tag "$FO_TAG_CYBERDEMON"
 Obituary "$FO_OB_CYBORG"
 +NOBLOODDECALS
 +QUICKTORETALIATE
@@ -97,7 +97,7 @@ Obituary "$FO_OB_CYBORG"
 
 Actor Annihilator64 : Cyberdemon 19991
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 SpawnID 157
 Scale 0.85
 Health 6000
@@ -105,20 +105,20 @@ Radius 40
 Mass 1000
 Speed 16
 PainChance 10
-PainChance "Fire",0
+PainChance "Flames",0
 PainChance "Bullet",0
 PainChance "SuperFists",200
 PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Tag "Annihilator"
-Obituary "The Annihilator blew %o away with its rockets."
+Tag "$FO_TAG_ANNIHILATOR"
+Obituary "$FO_OB_ANNIHILATOR"
 SeeSound "monster/annsit"
 PainSound "cyber/pain"
 DeathSound "monster/anndth"
 ActiveSound "cyber/active"
-DropItem "DemonEssenceLargeSpawner"
+//DropItem "DemonEssenceLargeSpawner"
 DropItem "Soulsphere",32
 +NOBLOODDECALS
 +QUICKTORETALIATE

@@ -9,7 +9,7 @@ Damage 0
 Gravity 0
 Alpha 1
 RenderStyle Add
-DamageType "Fire"
+DamageType "Flames"
 +NOBLOCKMAP
 +NOTELEPORT
 +DONTSPLASH
@@ -209,7 +209,7 @@ Damage 0
 Gravity 0
 Alpha 1
 RenderStyle Add
-DamageType "Fire"
+DamageType "Flames"
 +NOBLOCKMAP
 +NOTELEPORT
 +DONTSPLASH
@@ -343,7 +343,7 @@ Damage 0
 Gravity 0
 Alpha 1.0
 RenderStyle Add
-DamageType "Fire"
+DamageType "Flames"
 +NOBLOCKMAP
 +NOTELEPORT
 +DONTSPLASH
@@ -581,7 +581,7 @@ Speed 6
 Height 2
 Radius 2
 Gravity 0.1
-DamageType "Fire"
+DamageType "Flames"
 MaxStepHeight 64
 -NOGRAVITY
 -NOCLIP
@@ -617,7 +617,7 @@ Speed 6
 Radius 2
 Height 2
 Gravity 0.1
-DamageType "Fire"
+DamageType "Flames"
 MaxStepHeight 64
 -NOGRAVITY
 -NOCLIP
@@ -680,7 +680,7 @@ Damage 0
 Gravity 0
 Alpha 1.0
 RenderStyle Add
-DamageType "Fire"
+DamageType "Flames"
 +NOBLOCKMAP
 +NOTELEPORT
 +DONTSPLASH
@@ -857,7 +857,7 @@ Height 8
 Speed 11
 Mass 1
 Damage 3
-DamageType "Fire"
+DamageType "Flames"
 +NOBLOCKMAP
 +MISSILE
 +NOTELEPORT
@@ -941,7 +941,7 @@ Height 8
 Speed 11
 Mass 1
 Damage 3
-DamageType "Fire"
+DamageType "Flames"
 Decal "BigScorch"
 BounceType "None"
 BounceFactor 0.1
@@ -1010,7 +1010,7 @@ Height 8
 Speed 11
 Mass 1
 Damage 0
-DamageType "Fire"
+DamageType "Flames"
 +DONTSPLASH
 +NOBLOCKMAP
 +MISSILE
@@ -1079,7 +1079,7 @@ Damage 0
 Gravity 0
 Alpha 1.0
 Renderstyle Add
-DamageType "Fire"
+DamageType "Flames"
 +NOBLOCKMAP
 +NOTELEPORT
 +DONTSPLASH
@@ -1121,7 +1121,7 @@ Damage 0
 Gravity 0.3
 Alpha 1.0
 RenderStyle Translucent
-DamageType "Fire"
+DamageType "Flames"
 +NOBLOCKMAP
 +NOTELEPORT
 +DONTSPLASH
@@ -1161,7 +1161,7 @@ Damage 0
 Alpha 1.0
 Gravity 0.3
 RenderStyle Translucent
-DamageType "Fire"
+DamageType "Flames"
 +NOBLOCKMAP
 +NOTELEPORT
 +DONTSPLASH
@@ -1232,7 +1232,7 @@ Speed 25
 Damage 0
 Alpha 1.0
 RenderStyle Add
-DamageType "Fire"
+DamageType "Flames"
 -RIPPER
 -BLOODSPLATTER
 +NOBLOCKMAP
@@ -1280,7 +1280,7 @@ ACTOR TinyBurningPiece : BarrelExplosionSmokeColumn
 Scale 1.1
 Alpha 0.55
 RenderStyle Translucent
-DamageType "Fire"
+DamageType "Flames"
 -CLIENTSIDEONLY
 	States
 	{
@@ -1366,7 +1366,7 @@ Damage 0
 Gravity 0
 Alpha 0.9
 Renderstyle Add
-DamageType "Fire"
+DamageType "Flames"
 +NOBLOCKMAP
 +NOTELEPORT
 +DONTSPLASH

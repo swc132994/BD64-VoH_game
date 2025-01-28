@@ -1,6 +1,6 @@
 Actor 64ForgottenOne : LostSoul 19129
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Health 70
 Alpha 0.5
@@ -8,19 +8,19 @@ AttackSound "alphasoul/melee"
 PainSound "alphasoul/pain"
 DeathSound "alphasoul/death"
 ActiveSound "alphasoul/active"
-Obituary "%o was electrocuted by a Forgotten One."
+Obituary "$FO_OB_FORGOTTEN"
 RenderStyle Translucent
 PainChance 128
 PainChance "SuperFists",200
 PainChance "Kick",255
 PainChance "SuperKick",255
-PainChance "Fire",0
-DamageFactor "Fire",0
-DamageFactor "Ice",1.5
+PainChance "Flames",0
+DamageFactor "Flames",0
+DamageFactor "Ice",2
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 MaxTargetRange 128
-Tag "Forgotten One"
+Tag "$FO_TAG_FORGOTTEN"
 +DONTHARMCLASS
 +NOBLOOD
 +FORCEXYBILLBOARD

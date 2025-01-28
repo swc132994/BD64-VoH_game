@@ -281,7 +281,7 @@ Decal "FireworxScorch"
 	States
 	{
 	Spawn:
-		FIR3 ABCDEFGHIJKLMNOP 1 Bright light("ROCKET_X1")
+		FIR3 ABCDEFGHIJKLMNOP 1 Bright
 		Goto Death
 	}
 }

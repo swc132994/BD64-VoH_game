@@ -1,11 +1,11 @@
 Actor 64DoomImp : DoomImp Replaces DoomImp
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.75
 GibHealth 15
 MeleeRange 60 //default 44
 MeleeThreshold 70
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",255
 PainChance "Kick",255
@@ -14,8 +14,8 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "chainsaw",0.5
 DamageFactor "Head",0.8
-DropItem "DemonEssenceSpawner"
-Tag "Imp"
+//DropItem "DemonEssenceSpawner"
+Tag "$FO_TAG_IMP"
 HitObituary "$FO_OB_IMPHIT"
 Obituary "$FO_OB_IMP"
 +NOBLOODDECALS
@@ -100,7 +100,7 @@ Obituary "$FO_OB_IMP"
 		TNT1 A 0 A_Jump(205,"Death")//80%
 	Death.Rifle:
 	Death.CutLess:
-		TNT1 A 0 A_Jump(64,"Death")
+		TNT1 A 0 A_Jump(85,"Death")
 		TNT1 A 0 A_CustomMissile("XDeathImpArm1",50,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
@@ -202,7 +202,7 @@ Obituary "$FO_OB_IMP"
 		TROD E 35
 		TROD E -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -647,15 +647,15 @@ PROJECTILE
 
 Actor 64StealthDoomImp : 64DoomImp Replaces StealthDoomImp
 {
-Tag "Stealth Imp"
+Tag "$FO_TAG_STEALTHIMP"
 Obituary "$FO_OB_STEALTHIMP"
-HitObituary "FO_$OB_STEALTHIMP"
+HitObituary "$FO_OB_STEALTHIMP"
 +STEALTH
 }
 
 Actor NightmareImp : 64Doomimp 19989
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 SpawnID 13
 Scale 0.75
 Health 60
@@ -669,9 +669,9 @@ SeeSound "imp/sight"
 PainSound "imp/pain"
 DeathSound "imp/death"
 ActiveSound "imp/active"
-Tag "Nightmare Imp"
-Obituary "%o was burned by a Nightmare Imp."
-HitObituary "%o was slashed by a Nightmare Imp."
+Tag "$FO_TAG_IMP_NIGHTMARE"
+Obituary "$FO_OB_IMP_NIGHTMARE"
+HitObituary "$FO_OB_IMPHIT_NIGHTMARE"
 BloodType "Brutal_BloodBLUE"
 	States
 	{
@@ -750,7 +750,7 @@ BloodType "Brutal_BloodBLUE"
 		TNT1 A 0 A_Jump(205,"Death")//80%
 	Death.Rifle:
 	Death.CutLess:
-		TNT1 A 0 A_Jump(64,"Death")
+		TNT1 A 0 A_Jump(85,"Death")
 		TNT1 A 0 A_CustomMissile("XDeathNImpArm1",50,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
@@ -863,7 +863,7 @@ BloodType "Brutal_BloodBLUE"
 		NROD E 35
 		NROD E -1 A_SpawnItemEx("GrowingBloodPoolBlue")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop

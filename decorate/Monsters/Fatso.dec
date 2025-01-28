@@ -1,19 +1,19 @@
 Actor 64Fatso : Fatso Replaces Fatso
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Health 700
 Speed 6
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Dropitem "SawGas"
-Dropitem "DemonEssenceSpawner"
-Tag "Mancubus"
+//Dropitem "SawGas"
+//DropItem "DemonEssenceSpawner"
+Tag "$FO_TAG_FATSO"
 Obituary "$FO_OB_FATSO"
 +DONTHARMCLASS
 +NOBLOODDECALS
@@ -66,7 +66,7 @@ Obituary "$FO_OB_FATSO"
 		TNT1 A 0 A_CustomMissile("XDeath2b",72,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_CustomMissile("XDeath3",72,0,random(150,210),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("SmallBrainPiece",72,0,random(150,210),2,random(10,50))
-		TNT1 AA 0 A_CustomMissile("XDeathEyesFatso",70,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathEyesFatso",70,0,random(150,210),2,random(10,50))
 		TNT1 AAA 0 A_CustomMissile("Brutal_Blood",75,0,random(0,360),2,random(0,90))
 		FATT K 5 A_Scream
 		FATT L 5 A_NoBlocking
@@ -86,9 +86,10 @@ Obituary "$FO_OB_FATSO"
 		TNT1 A 0 A_Jump(128,"Death")
 		TNT1 A 0 A_JumpIfCloser(1000,"Death.Cutless")
 		Goto Death
+	Death.CutLess:
+		TNT1 A 0 A_Jump(85,"Death")
 	Death.Cut:
 	Death.Chainsaw:
-	Death.CutLess:
 		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBig",45,0,random(0,360),2,random(10,90))
@@ -110,6 +111,7 @@ Obituary "$FO_OB_FATSO"
 		TNT1 AA 0 A_CustomMissile("XDeath4",72,0,random(0,360),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("SmallBrainPiece",72,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_CustomMissile("XDeathFatsoBoneGib",72,0,random(0,360),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathFatsoBoneGibSmall",72,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_CustomMissile("XDeathFatsoCell",72,0,random(0,360),2,random(10,50))
 		TNT1 AA 0 A_CustomMissile("XDeathEyesFatso",70,0,random(150,210),2,random(10,50))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBig",45,0,random(0,360),2,random(10,90))
@@ -135,7 +137,7 @@ Obituary "$FO_OB_FATSO"
 		FTX2 D 35 A_BossDeath
 		FTX2 D -1 A_SpawnItemEx("GrowingBloodPoolBig")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_SetScale(1.2,1.2)
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
@@ -175,7 +177,7 @@ Obituary "$FO_OB_FATSO"
 
 Actor 64StealthFatso : 64Fatso Replaces StealthFatso
 {
-Tag "Stealth Mancubus"
+Tag "$FO_TAG_STEALTHFATSO"
 Obituary "$FO_OB_STEALTHFATSO"
 +STEALTH
 }
@@ -191,9 +193,11 @@ Speed 20
 RenderStyle Normal
 Decal "MedScorch"
 DamageType "Extreme"
+-NOBLOCKMAP
 +NOBLOOD
 +SHOOTABLE
 +NOTARGETSWITCH
++NOTARGET
 	States
 	{
 	Spawn:
@@ -295,7 +299,7 @@ DropItem "None"
 		TNT1 A 0 A_CustomMissile("XDeath2b",72,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_CustomMissile("XDeath3",72,0,random(150,210),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("SmallBrainPiece",72,0,random(150,210),2,random(10,50))
-		TNT1 AA 0 A_CustomMissile("XDeathEyesFatso",70,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathEyesFatso",70,0,random(150,210),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_Scream
@@ -318,6 +322,7 @@ DropItem "None"
 		TNT1 AAAA 0 A_CustomMissile("SmallBrainPiece",72,0,random(150,210),2,random(10,50))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBig",45,0,random(0,360),2,random(10,90))
 		TNT1 A 0 A_CustomMissile("XDeathFatsoBoneGib",72,0,random(0,360),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathFatsoBoneGibSmall",72,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_CustomMissile("XDeathFatsoCell",72,0,random(0,360),2,random(10,50))
 		TNT1 AAA 0 A_CustomMissile("Brutal_Blood",75,0,random(0,360),2,random(0,90))
 		TNT1 AAA 0 A_CustomMissile("SuperGoreSpawner",45,0,random(0,360),2,random(10,90))

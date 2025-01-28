@@ -1,6 +1,6 @@
 Actor Motherdemon 9897
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Game Doom
 SpawnID 17
 Scale 1.0
@@ -10,20 +10,19 @@ Radius 65
 Mass 1000
 Speed 24
 PainChance 10
-PainChance "Fire",0
+PainChance "Flames",0
 PainChance "Bullet",0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DamageFactor "UnmakerWhite",0.5
 DamageFactor "BFG",0.7
-Obituary "%o was obliterated by the mother of all demons."
+Obituary "$FO_OB_MOTHER"
 SeeSound "mother/sight"
 AttackSound "mother/attack"
 PainSound "mother/Pain"
 DeathSound "mother/Death"
 ActiveSound "mother/Active"
-Tag "Mother Demon"
-DropItem "DemonEssenceLargeSpawner"
+Tag "$FO_TAG_MOTHER"
+//DropItem "DemonEssenceLargeSpawner"
 DropItem "Soulsphere",32
 Species "Resurrector"
 MONSTER
@@ -164,7 +163,7 @@ States
 	}
 }
 
-Actor MotherFire 9899
+Actor MotherFire
 {
 Game Doom
 Scale 0.8
@@ -239,7 +238,7 @@ Height 8
 Radius 6
 Speed 0
 Damage 0
-DamageType "Fire"
+DamageType "Flames"
 Alpha 0.6
 RenderStyle Translucent
 +NOGRAVITY
@@ -396,23 +395,21 @@ DamageFactor "BFG",0.5
 		MOTH F 4 Bright A_CustomMissile("MotherBallWeak",80,48,-90)
 		Goto See
 	EnragedScream:
-//		MOTH H 0 A_SetRenderStyle(1,STYLE_Subtract)	//Not Zandro compatible
 		TNT1 A 0 A_ChangeFlag("INVULNERABLE",True)
 		TNT1 A 0 A_PlaySound("mother/scream2",CHAN_6)
-		TNT1 A 0 A_Quake (4,160,0,32000)
+		TNT1 A 0 A_Quake(4,160,0,32000)
 		MOTH HHHHHHHHHHHHHHHHHHHHHHH 5 Bright A_FaceTarget
-//		TNT1 A 0 A_SetRenderStyle(1,STYLE_Normal)	//Not Zandro compatible
 		TNT1 A 0 A_ChangeFlag("INVULNERABLE",False)
 		TNT1 A 0 A_PlaySound("mother/beamstart",CHAN_BODY)
 	EnragedLoop:
-		TNT1 A 0 Bright A_Quake (9,2,0,4096,0)
-		TNT1 A 0 Bright A_PlaySound("mother/beamloop",CHAN_7,1,TRUE)
-		TNT1 A 0 Bright ThrustThing(angle*256/360,2,0,0)
-		TNT1 A 0 Bright A_VileAttack("",(1),0,0,0,"Fire",VAF_DMGTYPEAPPLYTODIRECT)
-		TNT1 A 0 Bright A_CustomRailgun(0,0,None,None,RGF_FULLBRIGHT|RGF_NOPIERCING,10,10,"FinalMotherdemonBeamPuff",0,0,0,0,30,5,"FinalMotherdemonBeam",25)
-		MOTH G 1 Bright A_FaceTarget
-		MOTH G 1 Bright ThrustThing(angle*256/360,1,0,0)
-		TNT1 A 0 Bright A_MonsterRefire (128,"EnragedEnd")
+		TNT1 A 0 A_Quake(9,2,0,4096,0)
+		TNT1 A 0 A_PlaySound("mother/beamloop",CHAN_7,1,TRUE)
+		TNT1 A 0 ThrustThing(angle*256/360,2,0,0)
+		TNT1 A 0 A_VileAttack("",(1),0,0,0,"Fire",VAF_DMGTYPEAPPLYTODIRECT)
+		TNT1 A 0 A_CustomRailgun(0,0,None,None,RGF_FULLBRIGHT|RGF_NOPIERCING,10,10,"FinalMotherdemonBeamPuff",0,0,0,0,30,5,"FinalMotherdemonBeam",25)
+		MOTH G 2 Bright A_FaceTarget
+		MOTH G 2 Bright ThrustThing(angle*256/360,1,0,0)
+		TNT1 A 0 A_Jump(26,"EnragedEnd")
 		Loop
 	EnragedEnd:
 		TNT1 A 0 A_StopSound(CHAN_7)

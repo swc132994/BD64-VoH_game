@@ -1,24 +1,23 @@
 Actor 64SpiderMastermind : SpiderMastermind Replaces SpiderMastermind
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.9
 Radius 62
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-MeleeThreshold 200
+MeleeThreshold 300
 MeleeRange 100
-DropItem "DemonEssenceLargeSpawner"
+//DropItem "DemonEssenceLargeSpawner"
 DropItem "Soulsphere",32
-AttackSound "weapons/gswing"
-Tag "Spider Mastermind"
+AttackSound "None"
+Tag "$FO_TAG_MASTERMIND"
 Obituary "$FO_OB_SPIDER"
-HitObituary "%o was crushed underfoot."
-+EXTREMEDEATH
+HitObituary "$FO_OB_SPIDERHIT"
 +AVOIDMELEE
 +QUICKTORETALIATE
 +NEVERFAST
@@ -34,7 +33,8 @@ HitObituary "%o was crushed underfoot."
 		Loop
 	Melee:
 		MSMN DE 6 A_FaceTarget
-		MSMN D 6 A_CustomMeleeAttack(50)
+		MSMN D 3 A_CustomMeleeAttack(100,"FOOTWALL","weapons/gswing","Extreme")	//Melee and Missile seperated
+		MSMN D 3 A_Recoil(-5)
 		Goto See
 	Missile:
 		MSMN A 15 A_FaceTarget
@@ -152,14 +152,15 @@ Scale 0.1
 Damage 5
 Speed 60
 FastSpeed 70
-+EXTREMEDEATH
+DamageType "Extreme"
+Translation "0:255=%[0,0,0]:[0.87,0.80,1.00]"//Pale Lavander
 	States
 	{
 	Spawn:
 		SPKO S 1 Bright
 		Loop
 	Death:
-		TNT1 A 1 A_SpawnItemEx("RicoChet")
+		TNT1 A 1 A_SpawnItemEx("RicoChetPurple")
 		EFIR ABCDEFGHIJKLM 1
 		Stop
 	XDeath:
@@ -170,29 +171,28 @@ FastSpeed 70
 
 Actor 64Eradicator : SpiderMastermind 19119
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.9
 Health 4000
 Speed 14
 Radius 62
 PainChance 30
-PainChance "Fire",10
+PainChance "Flames",10
 PainChance "Bullet",10
 PainChance "SuperFists",200
 PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-AttackSound "weapons/gswing"
-MeleeThreshold 200
+AttackSound "None"
+MeleeThreshold 300
 MeleeRange 100
-DropItem "DemonEssenceLargeSpawner"
-DropItem "Soulsphere",64
-Obituary "The Eradicator unmade %o."
-HitObituary "%o was crushed underfoot."
-Tag "Eradicator"
+//DropItem "DemonEssenceLargeSpawner"
+DropItem "Soulsphere",32
+Obituary "$FO_OB_ERADICATOR"
+HitObituary "$FO_OB_SPIDERHIT"
+Tag "$FO_TAG_ERADICATOR"
 BloodType "Brutal_BloodBLUE"
-+EXTREMEDEATH
 +AVOIDMELEE
 +QUICKTORETALIATE
 +NEVERFAST
@@ -208,7 +208,8 @@ BloodType "Brutal_BloodBLUE"
 		Loop
 	Melee:
 		BSGI DE 6 A_FaceTarget
-		BSGI D 6 A_CustomMeleeAttack(75)
+		BSGI D 3 A_CustomMeleeAttack(100,"FOOTWALL","weapons/gswing","Extreme")	//Melee and Missile seperated
+		BSGI D 3 A_Recoil(-5)
 		Goto See
 	Missile:
 		BSGI A 15 A_FaceTarget

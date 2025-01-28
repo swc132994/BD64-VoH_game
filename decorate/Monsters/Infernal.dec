@@ -1,6 +1,6 @@
 Actor 64Infernal 19135
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Health 9500
 Speed 16
@@ -8,17 +8,17 @@ Radius 40
 Height 110
 Mass 5000
 Damage 15
-MeleeThreshold 200
+MeleeThreshold 250
 MeleeRange 100
-Obituary "%o met eternal damnation at the hands of the Infernal Resurrector."
-Tag "Infernal Resurrector"
+Obituary "$FO_OB_RESURRECTOR"
+Tag "$FO_TAG_RESURRECTOR"
 PainChance 10
 PainChance "SuperFists",200
 PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DropItem "DemonEssenceLargeSpawner"
+//DropItem "DemonEssenceLargeSpawner"
 DropItem "Soulsphere",32
 SeeSound "SisDemon/see"
 PainSound "SisDemon/pain"
@@ -45,15 +45,21 @@ MONSTER
 		Loop
 	See:
 		TNT1 A 0 A_Playsound("HEDBON2",CHAN_AUTO,1,FALSE,2)
-		DIAB AB 6 A_Chase("Melee","Missile",CHF_RESURRECT)
+		DIAB A 5 A_Chase("Melee","Missile",CHF_RESURRECT)
+		DIAB B 5 A_Chase("Missile","Missile",CHF_RESURRECT)
 		TNT1 A 0 A_Playsound("HEDBON2",CHAN_AUTO,1,FALSE,2)
-		DIAB CD 6 A_Chase("Melee","Missile",CHF_RESURRECT)
+		DIAB C 5 A_Chase("Melee","Missile",CHF_RESURRECT)
+		DIAB D 5 A_Chase("Missile","Missile",CHF_RESURRECT)
 		Goto See
 	Missile:
-		TNT1 A 0 A_Jump(256,"FireBall","Meteor","FireAttack")
+		TNT1 A 0 A_Jump(92,"Meteor","FireAttack")
 	Fireball:
 		TNT1 A 0 A_Playsound("DEMONSMK",CHAN_AUTO)
 		DIAB G 10 A_FaceTarget
+		TNT1 A 0 A_CustomMissile("64SisShot",random(50,90),60)
+		DIAB E 20 A_FaceTarget
+		TNT1 A 0 A_CustomMissile("64SisShot",random(50,90),-60)
+		DIAB G 20 A_FaceTarget
 		TNT1 A 0 A_CustomMissile("64SisShot",random(50,90),60)
 		DIAB E 20 A_FaceTarget
 		TNT1 A 0 A_CustomMissile("64SisShot",random(50,90),-60)
@@ -91,12 +97,14 @@ MONSTER
 		TNT1 A 0 A_CustomMissile("MotherFire",0,0,-80,2,0)
 		Goto See
 	Melee:
-		DIAB B 20 A_FaceTarget
+		TNT1 A 0 A_ChangeFlag("NOPAIN",TRUE)
+		DIAB B 12 A_FaceTarget
 		TNT1 A 0 A_SpawnItemEx("ExplosionAirDisplacementEffect")
 		TNT1 A 0 A_Playsound("misc/xdeath4b",CHAN_AUTO)
-		DIAB E 10 A_CustomMeleeAttack(50)
+		DIAB E 6 A_CustomMeleeAttack(100,"FOOTWALL","weapons/gswing","Extreme")
 		TNT1 A 0 Radius_Quake(10,15,0,40,0)
-		TNT1 A 0 A_Recoil(-8)
+		DIAB E 6 A_Recoil(-6)
+		TNT1 A 0 A_ChangeFlag("NOPAIN",FALSE)
 		Goto See
 	Heal:
 		DIAB F 5 Bright

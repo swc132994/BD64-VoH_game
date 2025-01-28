@@ -1,21 +1,21 @@
 Actor 64HellKnight : HellKnight Replaces HellKnight
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",220
 PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 MeleeRange 60	//default 44
 Species "HellKnight"
 BloodType "Brutal_BloodGreen"
 HitObituary "$FO_OB_KNIGHTHIT"
 Obituary "$FO_OB_KNIGHT"
-Tag "Hell Knight"
+Tag "$FO_TAG_KNIGHT"
 +NOBLOODDECALS
 +NEVERFAST
 	states
@@ -63,7 +63,7 @@ Tag "Hell Knight"
 		TNT1 A 0 A_PlaySound("Misc/Gibbed",CHAN_BODY)
 		A038 A -1
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -84,13 +84,33 @@ Tag "Hell Knight"
 	Death.SSG:
 		BOS2 H 2 A_Recoil(6)
 		TNT1 A 0 A_JumpIfCloser(170,"XDeath")
+	Death.Shotgun:
+		TNT1 A 0 A_JumpIfCloser(300,1)
 		Goto Death
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 A_CustomMissile("XDeathHKArm",52,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_Jump(128,"HeadArmLoss")	
+		TNT1 A 0 A_Scream
+		HNAL ABCDE 5
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		HNAL F 35 A_BossDeath
+		HNAL F -1 A_SpawnItemEx("GrowingBloodPoolGreen")
+		Stop
+	HeadArmLoss:
+		TNT1 A 0 A_XScream
+		TNT1 AA 0 A_CustomMissile("HeadshotKnightHorn",56,0,random(0,360),2,random(0,90))
+		HNHS ABCDE 5
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		HNHS F 35 A_BossDeath
+		HNHS F -1 A_SpawnItemEx("GrowingBloodPoolGreen")
+		Stop
 	Death.Head:
 		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeathEyesGreen",40,0,random(0,360),2,random(-5,5))
 		TNT1 AAAAAA 0 A_CustomMissile("SmallBrainPieceGreen",56,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath3Green",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("HeadshotKnightHorn",56,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		BS2H ABCDE 5
@@ -217,7 +237,7 @@ RenderStyle Add
 
 ACTOR 64StealthHellKnight : 64HellKnight Replaces StealthHellKnight
 {
-Tag "Stealth Hell Knight"
+Tag "$FO_TAG_STEALTHKNIGHT"
 Obituary "$FO_OB_STEALTHKNIGHT"
 HitObituary "$FO_OB_STEALTHKNIGHT"
 +STEALTH

@@ -1,6 +1,6 @@
 Actor 64Knightmare 19118
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 SpawnID 178
 Scale 0.8
 Health 500
@@ -12,23 +12,23 @@ Alpha 0.6
 MeleeRange 60	//default 44
 RenderStyle Translucent
 DamageFactor "Head",0.8
-Tag "Knightmare"
-Obituary "%o was charred by a Knightmare."
-HitObituary "%o was mangled by a Knightmare."
+Tag "$FO_TAG_KNIGHTMARE"
+Obituary "$FO_OB_KNIGHTMARE"
+HitObituary "$FO_OB_KNIGHTMAREHIT"
 SeeSound "knight/sight"
 PainSound "knight/pain"
 DeathSound "knight/death"
 ActiveSound "knight/active"
 GibHealth 15
 PainChance 75
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",255
 PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodGreen"
 Species "HellKnight"
 MONSTER
@@ -97,7 +97,7 @@ MONSTER
 		TNT1 A 0 A_PlaySound("Misc/Gibbed",CHAN_BODY)
 		A038 A -1
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -118,7 +118,25 @@ MONSTER
 	Death.SSG:
 		BOZ3 H 2 A_Recoil(6)
 		TNT1 A 0 A_JumpIfCloser(170,"XDeath")
+	Death.Shotgun:
+		TNT1 A 0 A_JumpIfCloser(300,1)
 		Goto Death
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 A_CustomMissile("KnightmareArm",52,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_Jump(128,"HeadArmLoss")
+		TNT1 A 0 A_Scream
+		KMAL ABCDE 5
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		KMAL F 35 A_BossDeath
+		KMAL F -1 A_SpawnItemEx("GrowingBloodPoolGreen")
+		Stop
+	HeadArmLoss:
+		TNT1 A 0 A_XScream
+		KMHS ABCDE 5
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		KMHS F 35 A_BossDeath
+		KMHS F -1 A_SpawnItemEx("GrowingBloodPoolGreen")
+		Stop
 	Death.Head:
 		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))

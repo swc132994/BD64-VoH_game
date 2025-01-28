@@ -3,27 +3,27 @@ script "DefaultCvars" (void) net
 {
 	SetCVarString("BD64_Preset","Default");
 
-	SetCvar("AlternativeAmmoPickupSpritesCvar",1);
-	SetCvar("VanillaChainsawCvar",0);
-	SetCvar("ClassicChaingunCvar",0);
-	SetCvar("ClassicRLCvar",0);
-	SetCvar("VWeaponCvar",0);
-	SetCvar("WeaponsWarmUpCvar",1);
-	SetCvar("CensoredHealing_Cvar",0);
-	SetCvar("AlphaPickupCvar",0);
-	SetCvar("FlashlightStartCvar",0);
-	SetCvar("NoReloadCvar",0);
+//	SetCvar("AlternativeAmmoPickupSpritesCvar",1);
+//	SetCvar("VanillaChainsawCvar",0);
+//	SetCvar("ClassicChaingunCvar",0);
+//	SetCvar("ClassicRLCvar",0);
+//	SetCvar("VWeaponCvar",0);
+//	SetCvar("WeaponsWarmUpCvar",1);
+//	SetCvar("CensoredHealing_Cvar",0);
+//	SetCvar("AlphaPickupCvar",0);
+//	SetCvar("FlashlightStartCvar",0);
+//	SetCvar("NoReloadCvar",0);
 
 	SetCvar("D64_SkipTitleMap",0);
 	SetCvar("VMapCheckCvar",0);
 	SetCvar("TCMapCheckCvar",1);
 	SetCvar("AbsMapCheckCvar",1);
 
-	SetCvar("Chaingun_Spawner_Cvar",1);
-	SetCvar("GaussCannon_Spawner_Cvar",1);
-	SetCvar("BFG_Spawner_Cvar",1);
-	SetCvar("WpnPower_Spawner_Cvar",1);
-	SetCvar("BonusRandomCvar",1);
+//	SetCvar("Chaingun_Spawner_Cvar",1);
+//	SetCvar("GaussCannon_Spawner_Cvar",1);
+//	SetCvar("BFG_Spawner_Cvar",1);
+//	SetCvar("WpnPower_Spawner_Cvar",1);
+//	SetCvar("BonusRandomCvar",1);
 
 	SetCvar("ZMarineRandom_Cvar",1);
 	SetCvar("SSGZombieRandom_Cvar",1);
@@ -46,8 +46,8 @@ script "DefaultCvars" (void) net
 	SetCvar("CacoChooserCvar",0);
 	SetCvar("HoundChooserCvar",1);
 
-	SetCvar("HUDSwitchCvar",0);
-	SetCvar("FootStepCheckCvar",0);
+//	SetCvar("HUDSwitchCvar",0);
+//	SetCvar("FootStepCheckCvar",0);
 	SetCvar("LFog_Cvar",0);
 	SetCvar("FloorDecal_Cvar",1);
 	SetCvar("ClassicTorchCvar",0);
@@ -57,10 +57,10 @@ script "DefaultCvars" (void) net
 	SetCvar("ThingRandomCvar",1);
 	SetCvar("TheHorde_Multiplier_Cvar",-1);
 	
-	SetUserCvar(PlayerNumber(),"AlternativeLaserSkinCvar",TRUE);
-	SetUserCvar(PlayerNumber(),"BerserkSwitchFistsCvar",TRUE);
-	SetUserCvar(PlayerNumber(),"LowAmmoSFX",1);
-	ACS_NamedExecuteAlways("BD64Respawn",0);
+//	SetUserCvar(PlayerNumber(),"AlternativeLaserSkinCvar",TRUE);
+//	SetUserCvar(PlayerNumber(),"BerserkSwitchFistsCvar",TRUE);
+//	SetUserCvar(PlayerNumber(),"LowAmmoSFX",1);
+//	ACS_NamedExecuteAlways("BD64Respawn",0);
 	
 	//percent is here
 	SetCvar("bd64_SpawnPercentZombieman", 1);
@@ -89,16 +89,16 @@ script "ClassicalCvars" (void) net
 {
 	SetCVarString("BD64_Preset","Classical");
 	
-	SetCvar("AlternativeAmmoPickupSpritesCvar",1);
-	SetCvar("VanillaChainsawCvar",1);
-	SetCvar("ClassicChaingunCvar",1);
-	SetCvar("ClassicRLCvar",1);
-	SetCvar("VWeaponCvar",1);
-	SetCvar("WeaponsWarmUpCvar",0);
-	SetCvar("CensoredHealing_Cvar",0);
-	SetCvar("AlphaPickupCvar",0);
-	SetCvar("FlashlightStartCvar",0);
-	SetCvar("NoReloadCvar",1);
+//	SetCvar("AlternativeAmmoPickupSpritesCvar",1);
+//	SetCvar("VanillaChainsawCvar",1);
+//	SetCvar("ClassicChaingunCvar",1);
+//	SetCvar("ClassicRLCvar",1);
+//	SetCvar("VWeaponCvar",1);
+//	SetCvar("WeaponsWarmUpCvar",0);
+//	SetCvar("CensoredHealing_Cvar",0);
+//	SetCvar("AlphaPickupCvar",0);
+//	SetCvar("FlashlightStartCvar",0);
+//	SetCvar("NoReloadCvar",1);
 
 	SetCvar("D64_SkipTitleMap",0);
 	SetCvar("VMapCheckCvar",1);
@@ -108,11 +108,11 @@ script "ClassicalCvars" (void) net
 	SetCvar("CacoChooserCvar",0);
 	SetCvar("HoundChooserCvar",-1);
 
-	SetCvar("Chaingun_Spawner_Cvar",1);
-	SetCvar("GaussCannon_Spawner_Cvar",1);
-	SetCvar("BFG_Spawner_Cvar",1);
-	SetCvar("WpnPower_Spawner_Cvar",1);
-	SetCvar("BonusRandomCvar",1);
+//	SetCvar("Chaingun_Spawner_Cvar",1);
+//	SetCvar("GaussCannon_Spawner_Cvar",1);
+//	SetCvar("BFG_Spawner_Cvar",1);
+//	SetCvar("WpnPower_Spawner_Cvar",1);
+//	SetCvar("BonusRandomCvar",1);
 
 	SetCvar("ZMarineRandom_Cvar",1);
 	SetCvar("SSGZombieRandom_Cvar",1);
@@ -134,8 +134,8 @@ script "ClassicalCvars" (void) net
 
 	SetCvar("TheHorde_Multiplier_Cvar",-1);
 
-	SetCvar("HUDSwitchCvar",0);
-	SetCvar("FootStepCheckCvar",1);
+//	SetCvar("HUDSwitchCvar",0);
+//	SetCvar("FootStepCheckCvar",1);
 	SetCvar("LFog_Cvar",1);
 	SetCvar("FloorDecal_Cvar",0);
 	SetCvar("ClassicTorchCvar",1);
@@ -144,10 +144,10 @@ script "ClassicalCvars" (void) net
 	SetCvar("PoltergeistCvar",0);
 	SetCvar("ThingRandomCvar",0);
 
-	SetUserCvar(PlayerNumber(),"AlternativeLaserSkinCvar",FALSE);
-	SetUserCvar(PlayerNumber(),"BerserkSwitchFistsCvar",1);
-	SetUserCvar(PlayerNumber(),"LowAmmoSFX",0);
-	ACS_NamedExecuteAlways("BD64Respawn",0);
+//	SetUserCvar(PlayerNumber(),"AlternativeLaserSkinCvar",FALSE);
+//	SetUserCvar(PlayerNumber(),"BerserkSwitchFistsCvar",1);
+//	SetUserCvar(PlayerNumber(),"LowAmmoSFX",0);
+//	ACS_NamedExecuteAlways("BD64Respawn",0);
 	
 	//percent is here
 	SetCvar("bd64_SpawnPercentZombieman", 1);
@@ -176,27 +176,27 @@ script "StevenCvars" (void) net
 {
 	SetCVarString("BD64_Preset","SWC's Vision");
 	
-	SetCvar("AlternativeAmmoPickupSpritesCvar",2);
-	SetCvar("VanillaChainsawCvar",0);
-	SetCvar("ClassicChaingunCvar",0);
-	SetCvar("ClassicRLCvar",0);
-	SetCvar("VWeaponCvar",0);
-	SetCvar("WeaponsWarmUpCvar",1);
-	SetCvar("CensoredHealing_Cvar",0);
-	SetCvar("AlphaPickupCvar",0);
-	SetCvar("FlashlightStartCvar",0);
-	SetCvar("NoReloadCvar",0);
+//	SetCvar("AlternativeAmmoPickupSpritesCvar",2);
+//	SetCvar("VanillaChainsawCvar",0);
+//	SetCvar("ClassicChaingunCvar",0);
+//	SetCvar("ClassicRLCvar",0);
+//	SetCvar("VWeaponCvar",0);
+//	SetCvar("WeaponsWarmUpCvar",1);
+//	SetCvar("CensoredHealing_Cvar",0);
+//	SetCvar("AlphaPickupCvar",1);
+//	SetCvar("FlashlightStartCvar",0);
+//	SetCvar("NoReloadCvar",0);
 
 	SetCvar("D64_SkipTitleMap",0);
 	SetCvar("VMapCheckCvar",0);
 	SetCvar("TCMapCheckCvar",1);
 	SetCvar("AbsMapCheckCvar",1);
 
-	SetCvar("Chaingun_Spawner_Cvar",0);
-	SetCvar("GaussCannon_Spawner_Cvar",0);
-	SetCvar("BFG_Spawner_Cvar",0);
-	SetCvar("WpnPower_Spawner_Cvar",0);
-	SetCvar("BonusRandomCvar",0);
+//	SetCvar("Chaingun_Spawner_Cvar",0);
+//	SetCvar("GaussCannon_Spawner_Cvar",0);
+//	SetCvar("BFG_Spawner_Cvar",0);
+//	SetCvar("WpnPower_Spawner_Cvar",0);
+//	SetCvar("BonusRandomCvar",0);
 
 	SetCvar("ZMarineRandom_Cvar",0);
 	SetCvar("SSGZombieRandom_Cvar",0);
@@ -216,11 +216,11 @@ script "StevenCvars" (void) net
 	SetCvar("Annihilator_Spawner_Cvar",0);
 	SetCvar("Motherdemon_Spawner_Cvar",0);
 
-	SetCvar("CacoChooserCvar",0);
-	SetCvar("HoundChooserCvar",1);
+	SetCvar("CacoChooserCvar",1);
+	SetCvar("HoundChooserCvar",0);
 
-	SetCvar("HUDSwitchCvar",1);
-	SetCvar("FootStepCheckCvar",0);
+//	SetCvar("HUDSwitchCvar",1);
+//	SetCvar("FootStepCheckCvar",0);
 	SetCvar("LFog_Cvar",0);
 	SetCvar("FloorDecal_Cvar",1);
 	SetCvar("ClassicTorchCvar",0);
@@ -230,10 +230,10 @@ script "StevenCvars" (void) net
 	SetCvar("ThingRandomCvar",1);
 	SetCvar("TheHorde_Multiplier_Cvar",0);
 	
-	SetUserCvar(PlayerNumber(),"AlternativeLaserSkinCvar",TRUE);
-	SetUserCvar(PlayerNumber(),"BerserkSwitchFistsCvar",TRUE);
-	SetUserCvar(PlayerNumber(),"LowAmmoSFX",1);
-	ACS_NamedExecuteAlways("BD64Respawn",0);
+//	SetUserCvar(PlayerNumber(),"AlternativeLaserSkinCvar",TRUE);
+//	SetUserCvar(PlayerNumber(),"BerserkSwitchFistsCvar",TRUE);
+//	SetUserCvar(PlayerNumber(),"LowAmmoSFX",1);
+//	ACS_NamedExecuteAlways("BD64Respawn",0);
 	
 	//percent is here
 	SetCvar("bd64_SpawnPercentZombieman", 4);

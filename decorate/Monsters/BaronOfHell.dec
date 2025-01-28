@@ -1,19 +1,19 @@
 Actor 64BaronOfHell : BaronOfHell Replaces BaronOfHell
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 MeleeRange 60	//default 44
 BloodType "Brutal_BloodGreen"
 BloodColor "00 64 00"	//Hex value
-Tag "Baron of Hell"
+Tag "$FO_TAG_BARON"
 Obituary "$FO_OB_BARON"
 HitObituary "$FO_OB_BARONHIT"
 +NOBLOODDECALS
@@ -128,7 +128,7 @@ HitObituary "$FO_OB_BARONHIT"
 		TNT1 A 0 A_ChangeFlag("FORCEXYBILLBOARD",TRUE)
 		BGB1 D -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -226,7 +226,7 @@ RenderStyle Add
 
 Actor 64StealthBaron : 64BaronOfHell Replaces StealthBaron
 {
-Tag "Stealth Baron of Hell"
+Tag "$FO_TAG_STEALTHBARON"
 Obituary "$FO_OB_STEALTHBARON"
 HitObituary "$FO_OB_STEALTHBARON"
 +STEALTH

@@ -1,6 +1,6 @@
 Actor 64Fallen 19133
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.7
 Health 450
 Radius 24
@@ -9,8 +9,8 @@ Mass 200
 Speed 20
 Damage 10
 MeleeRange 90
-Obituary "%o was immolated by a Fallen."
-Tag "Fallen"
+Obituary "$FO_OB_FALLEN"
+Tag "$FO_TAG_FALLEN"
 SeeSound "monster/falsit"
 PainSound "monster/falpai"
 DeathSound "monster/faldth"
@@ -22,14 +22,14 @@ PainChance "Kick",255
 PainChance "SuperKick",255
 PainChance "Plasma",0
 PainChance "BFG",0
-PainChance "Fire",0
+PainChance "Flames",0
 DamageFactor "CauseWaterSplash",0
 DamageFactor "CauseObjectsToSplash",0
 DamageFactor "Plasma",0.5
 DamageFactor "BFG",0.5
-DamageFactor "Fire",0
+DamageFactor "Flames",0
 DamageFactor "Ice",1.5
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 MONSTER
 +DONTHARMCLASS
 +NOGRAVITY
@@ -59,7 +59,6 @@ MONSTER
 		FALN B 4 Bright A_LookEx
 		Loop
 	SpawnedBlank:
-		FALN A 1 Bright A_Playsound("monster/falwng",CHAN_BODY)
 		FALN ABCDCB 4 Bright A_LookEx
 		Goto Spawned
 	See:

@@ -1,0 +1,199 @@
+//This file is based off the BDv21b Map Enhancement system.
+//These scripts will check the Doom 1 maps and place Doom 2 monsters approx to PSX Doom 1 placements.
+//
+//CREDITS
+//BROS_ETT_311 (brosett311), Sgt_Mark_IV, Kaminsky, TDRR
+
+Script "BD64MapCheckSetup" ENTER
+{
+	SetPlayerProperty(0,1,PROP_TOTALLYFROZEN);
+	ACS_NamedExecuteWithResult("BD64DetectMap",0,0,0,0);
+	Delay(5);
+	SetPlayerProperty(0,0,PROP_TOTALLYFROZEN);
+}
+
+script "BD64DetectMap" (Void)
+{
+	int x = GetActorX(0) >> 16;// / 65536;
+	int y = GetActorY(0) >> 16;// / 65536;
+	int z = GetActorZ(0) >> 16;// / 65536;
+	int par = GetLevelInfo(LEVELINFO_PAR_TIME);
+	int secrets = GetLevelInfo(LEVELINFO_TOTAL_SECRETS);
+	//E1M1
+		if ( (x == 1056 && y == -3616 || x == 1072 && y == -4296) && par == 30 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M1") == 0 )
+		{
+			delay(1);
+			SpawnForced("ZombieMan",1408.0,-2528.0,0.0,7000,160);
+			SpawnForced("Chaingunguy",2400.0,-2560.0,0.0,7000,128);
+			SpawnForced("PainElemental",3616.0,-3488.0,104.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E1M2
+		if ( x == -32 && y == -240 && par == 75 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M2") == 0 )
+		{
+			delay(1);
+			SpawnForced("Chaingunguy",-48.0,912.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",1040.0,1080.0,0.0,7000,0);
+			SpawnForced("Chaingunguy",-1536.0,1376.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",-2128.0,1120.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E1M3
+		if ( (x == -1472 && y == -3344 || x == -1504 && y == -4128) && par == 120 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M3") == 0 )
+		{
+			delay(1);
+			SpawnForced("Chaingunguy",-2912.0,-1120.0,0.0,7000,224);
+			SpawnForced("Chaingunguy",-1504.0,-1824.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",-1664.0,-960.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E1M4
+		if ( (x == 2032 && y == 1120) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M4") == 0 )
+		{
+			delay(1);
+			SpawnForced("PainElemental",-1312.0,592.0,104.0,7000,192);
+			SpawnForced("PainElemental",-1424.0,-400.0,128.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E1M5
+		if ( (x == -224 && y == -624 || x == -224 && y == -1888) && par == 165 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M5") == 0 )
+		{
+			delay(1);
+			SpawnForced("Chaingunguy",192.0,512.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",736.0,-32.0,0.0,7000,0);
+			SpawnForced("Chaingunguy",-800.0,1760.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",-704.0,1888.0,0.0,7000,0);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E1M6
+		if ( (x == 32 && y == -1376 || x == 96 && y == -2144) && par == 180 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M6") == 0 )
+		{
+			delay(1);
+			SpawnForced("Chaingunguy",-288.0,-768.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",384.0,-896.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",544.0,1408.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",640.0,1376.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",2496.0,-736.0,0.0,7000,64);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E1M7
+		if ( (x == 96 && y == 528) && par == 180 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M7") == 0 )
+		{
+			delay(1);
+			SpawnForced("Revenant",-960.0,-1280.0,0.0,7000,192);
+			SpawnForced("Revenant",416.0,-2176.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E1M8	NO D2 MONSTERS
+	//E1M9
+		if ( (x == 96 && y == -272) && par == 165 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M9") == 0 )
+		{
+			delay(1);
+			SpawnForced("PainElemental",2304.0,576.0,-160.0,7000,192);
+			SpawnForced("PainElemental",1952.0,960.0,-24.0,7000,120);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M1
+		if ( (x == 0 && y == 48) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M1") == 0 )
+		{
+			delay(1);
+			SpawnForced("HellKnight",1088.0,-192.0,0.0,7000,224);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M2
+		if ( (x == 608 && y == 4576) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M2") == 0 )
+		{
+			delay(1);
+			SpawnForced("Revenant",928.0,2720.0,0.0,7000,0);
+			SpawnForced("Revenant",832.0,2976.0,0.0,7000,32);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M3
+		if ( (x == 480 && y == 1904) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M3") == 0 )
+		{
+			delay(1);
+			SpawnForced("Arachnotron",384.0,464.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M4	//NO D2 MONSTERS
+	//E2M5
+		if ( (x == -1536 && y == 2384) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M5") == 0 )
+		{
+			delay(1);
+			SpawnForced("PainElemental",-2112.0,1056.0,0.0,7000,0);
+			SpawnForced("PainElemental",192.0,1408.0,72.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M6
+		if ( (x == 592 && y == 400) && par == 360 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M6") == 0 )
+		{
+			delay(1);
+			SpawnForced("Revenant",-496.0,96.0,0.0,7000,64);
+			SpawnForced("Revenant",-880.0,-976.0,0.0,7000,64);
+			SpawnForced("Revenant",384.0,-1344.0,0.0,7000,128);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M7
+		if ( (x == 1424 && y == 1776) && par == 240 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M7") == 0 )
+		{
+			delay(1);
+			SpawnForced("Fatso",2080.0,-32.0,0.0,7000,64);
+			SpawnForced("Fatso",736.0,160.0,0.0,7000,128);
+			SpawnForced("Fatso",128.0,1632.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}		
+	//E2M8
+		if ( x == -96 && y == -736 && secrets == 0 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M8") == 0 )
+		{
+			delay(1);
+			SpawnForced("Fatso",-96.0,416.0,0.0,7000,192);
+			SpawnForced("Fatso",-1280.0,-800.0,0.0,7000,0);
+			SpawnForced("Fatso",-96.0,-1984.0,0.0,7000,64);
+			SpawnForced("Fatso",1088.0,-800.0,0.0,7000,128);
+			SpawnForced("Fatso",128.0,320.0,0.0,7000,192);
+			SpawnForced("Fatso",-1216.0,-992.0,0.0,7000,0);
+			SpawnForced("Fatso",128.0,-1952.0,0.0,7000,64);
+			SpawnForced("Fatso",1152.0,-960.0,0.0,7000,128);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M9	NO D2 MONSTERS
+	//E3M1	NOT PSX MAP
+	//E3M2	NOT PSX MAP
+	//E3M3
+		if ( x == -160 && y == -1248 && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E3M3") == 0 )
+		{
+			delay(1);
+			SpawnForced("HellKnight",-128.0,1120.0,0.0,7000,192);
+			SpawnForced("HellKnight",-348.0,1248.0,0.0,7000,192);
+			SpawnForced("HellKnight",-416.0,-368.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E3M4	NO D2 MONSTERS
+	//E3M5	NO D2 MONSTERS
+	//E3M6
+		if ( x == 1712 && y == -1792 && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E3M6") == 0 )
+		{
+			delay(1);
+			SpawnForced("Fatso",-1184.0,-1344.0,0.0,7000,224);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E3M7	NO D2 MONSTERS
+	//E3M8	NOT PSX MAP
+	//E3M9	NOT PSX MAP
+	//E4M1	BARONS ON SAME SPOT AS HELLKNIGHTS
+	//E4M2	BARONS ON SAME SPOT AS HELLKNIGHTS
+	//E4M3	BARONS ON SAME SPOT AS HELLKNIGHTS
+	//E4M4	NO D2 MONSTERS
+	//E4M5	NOT PSX MAP
+	//E4M6	NOT PSX MAP
+	//E4M7	NOT PSX MAP
+	//E4M8
+		if ( x == 224 && y == 32 && secrets == 1 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E4M8") == 0 )
+		{
+			delay(1);
+			SpawnForced("Hellknight",-2624.0,288.0,0.0,7000,0);
+			SpawnForced("Hellknight",-2624.0,-224.0,0.0,7000,0);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}	
+	//E4M9	NOT PSX MAP
+}

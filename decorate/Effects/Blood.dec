@@ -1641,7 +1641,7 @@ Decal "BrutalBloodSuper"
 		TNT1 AAAAAAAA 3 A_SpawnItemEx("SuperGore")
 		Stop
 	Death:
-	Xdeath:
+	XDeath: 
 		TNT1 A 3
 		Stop
 	}

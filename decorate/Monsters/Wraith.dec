@@ -1,6 +1,6 @@
 Actor 64Wraith 19123
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Health 300
 GibHealth 100
@@ -12,7 +12,7 @@ Fastspeed 16
 MeleeRange 64 //default 44
 MeleeThreshold 128
 PainChance 128
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",255
 PainChance "Kick",255
@@ -21,13 +21,13 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 Alpha 0.6
 RenderStyle Translucent
-Obituary "%o was slit open by a Wraith"
+Obituary "$FO_OB_WRAITH"
 SeeSound "D3Wraith/Sight"
 PainSound "D3Wraith/Pain"
 DeathSound "D3Wraith/Death"
 ActiveSound "D3Wraith/Active"
-Tag "Wraith"
-DropItem "DemonEssenceSpawner"
+Tag "$FO_TAG_WRAITH"
+//DropItem "DemonEssenceSpawner"
 BloodType "Brutal_Blood"
 MONSTER
 +SHADOW
@@ -280,7 +280,7 @@ MONSTER
 		TNT1 A 0 A_BossDeath
 		PTXB P -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop

@@ -735,15 +735,10 @@ Obituary "%o was unmade by %k."
 	}
 }
 
-Actor UnmakerLaser : UnmakerLaser2
-{
-Damage 30
-}
-
 Actor UnmakerLaserIce : UnmakerLaser2
 {
 Translation "0:255=%[0,0,0]:[0.49,0.73,0.91]"//Aero
-Damage 2
+Damage 8
 Decal "IceScorch"
 DamageType "Ice"
 	States
@@ -769,11 +764,4 @@ DamageType "Ice"
 		SHWK ABCDEFGHIJKL 1 Bright Light("ICELASER") A_CustomMissile("PlasmaSmoke",0,0,random(0,360),2,random(0,360))
 		Stop
 	}
-}
-
-Actor UnmakerLaserPierce : UnmakerLaser
-{
-Damage 8
-+RIPPER
-+NOBOSSRIP
 }

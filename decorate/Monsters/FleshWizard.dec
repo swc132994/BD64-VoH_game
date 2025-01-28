@@ -1,6 +1,6 @@
 Actor 64FleshWizard 19127
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.64
 Health 400
 Radius 20
@@ -8,7 +8,7 @@ Height 56
 Mass 100
 Speed 15
 PainChance 70
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",220
 PainChance "Kick",255
@@ -17,13 +17,13 @@ PainChance "FWizardHaunt",0
 DamageFactor "FWizardHaunt",0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Tag "Flesh Wizard"
-Obituary "%o had %p blood boiled by a Flesh Wizard."
+Tag "$FO_TAG_FLESH"
+Obituary "$FO_OB_FLESH"
 SeeSound "wizard/See"
 PainSound "wizard/pain"
 DeathSound "wizard/death"
 ActiveSound "wizard/active"
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 Alpha 0.6
 RenderStyle Translucent
 MONSTER
@@ -103,8 +103,9 @@ MONSTER
 		RMWZ F -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
 	Death.Rifle:
-		TNT1 A 0 A_Jump(168,"Death")
+		TNT1 A 0 A_Jump(128,"Death")
 	Death.CutLess:
+		TNT1 A 0 A_Jump(85,"Death")
 	Death.ShotgunNoArm:
 		TNT1 A 0 A_CustomMissile("FleshWizardArmGib",50,0,random(00,360),2,random(10,50))
 		TNT1 A 0 A_XScream
@@ -156,7 +157,7 @@ MONSTER
 		LMWZ P 35
 		LMWZ P -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop

@@ -1,8 +1,8 @@
 Actor 64Belphegor : BaronOfHell 11053
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
-Health 1500
+Health 1750
 Height 64
 Radius 24
 Speed 8
@@ -12,15 +12,15 @@ SeeSound "64Belphegor/see"
 PainSound "64Belphegor/pain"
 DeathSound "64Belphegor/death"
 ActiveSound "64Belphegor/active"
-Obituary "%o was Obliterated by a Belphegor."
-Tag "Belphegor"
-PainChance 25
+Obituary "$FO_OB_BELPHEGOR"
+Tag "$FO_TAG_BELPHEGOR"
+PainChance 16
 PainChance "SuperFists",220
 PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodGreen"
 +DONTHARMSPECIES
 +NOBLOODDECALS
@@ -70,9 +70,11 @@ BloodType "Brutal_BloodGreen"
 		TNT1 A 0 A_PlaySound("FOOTWALL",CHAN_VOICE)
 		BOS3 G 10 A_Explode(64,100,XF_NOTMISSILE,0,1)
 		Goto See
-	Melee:
-		BOS3 EF 9 A_FaceTarget
-		BOS3 G 8 A_CustomMeleeAttack(13*random(1,8),"baron/melee")	//Melee and Missile seperated
+	Melee:	
+		TNT1 A 0 A_ChangeFlag("NOPAIN",TRUE)
+		BOS3 EF 8 A_FaceTarget
+		BOS3 G 6 A_CustomMeleeAttack(15*random(2,5),"baron/melee","weapons/gswing","Extreme")	//Melee and Missile seperated
+		TNT1 A 0 A_ChangeFlag("NOPAIN",FALSE)
 		Goto See
 	Raise:
 		TNT1 A 0 A_SetScale(0.8,0.8)
@@ -92,7 +94,7 @@ BloodType "Brutal_BloodGreen"
 		TNT1 A 0 A_JumpIfCloser(170,"XDeath2")
 		Goto Death
 	Death.Cutless:
-		TNT1 A 0 A_Jump(92,"Death")
+		TNT1 A 0 A_Jump(85,"Death")
 		Goto XDeath2
 	Death.SuperFists:
 	Death.SuperKick:
@@ -160,7 +162,7 @@ BloodType "Brutal_BloodGreen"
 		TNT1 A 0 A_ChangeFlag("FORCEXYBILLBOARD",TRUE)
 		BPTG D -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_SetScale(1.0,1.0)
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
@@ -230,7 +232,7 @@ Radius 6
 Height 6
 RenderStyle Normal
 Decal "MedScorch"
-+EXTREMEDEATH
+DamageType "Plasma"
 	States
 	{
 	Spawn:
@@ -245,6 +247,7 @@ Decal "MedScorch"
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterMed")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterMed")
 		TNT1 A 0 Radius_Quake(2,54,0,15,0)
+		TNT1 A 0 A_Explode(20,125,0)
 		TNT1 A 0 A_PlaySound("EXPLO3",CHAN_VOICE)
 		TNT1 A 0 A_PlaySound("EXPLOSION",CHAN_WEAPON)
 		BAL7 CDEFGH 2 Bright A_SpawnItemEx("LensFlareTorchBlue",0,0,0,0,0,0,0,SXF_TRANSFERTRANSLATION)

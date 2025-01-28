@@ -76,9 +76,9 @@ str ACSUtils_Strings[1] = {
 	"SMALLFONT", // R_TextFont
 };
 
-private enum : int { ACSUTILS_ERROR_PROGRAM = 0 };
-private enum : int { ACSUTILS_ERROR_MAPPING = 1 };
-private enum : int { ACSUTILS_ERROR_LIMIT = 2 };
+internal enum : int { ACSUTILS_ERROR_PROGRAM = 0 };
+internal enum : int { ACSUTILS_ERROR_MAPPING = 1 };
+internal enum : int { ACSUTILS_ERROR_LIMIT = 2 };
 
 function void ACSUtils_ProgramError(str message)
 {
@@ -110,8 +110,8 @@ function void ACSUtils_ErrorHandler(int type, str message)
 
 	printbold(s:text);
 }
-enum : int { INT_MAX = 0x7fffffff };
-enum : int { INT_MIN = 0x80000000 };
+//enum : int { INT_MAX = 0x7fffffff };
+//enum : int { INT_MIN = 0x80000000 };
 enum : fixed { FIXED_MAX = (fixed)(0x7fffffff) };
 enum : fixed { FIXED_MIN = (fixed)(0x80000000) };
 enum : int { USHORT_MAX = 65535 };

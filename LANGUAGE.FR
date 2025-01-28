@@ -1,0 +1,835 @@
+//=====================================
+//French strings updated by Pygargue00fr.
+//=====================================
+
+[fr]
+
+//OTHER SYSTEM STUFF
+FO_64SYSTEM_AUTO = "Certaines modifications ne sont pas initialisées automatiquement";
+FO_64SYSTEM_APPLY = "Appuyez sur \"Appliquer les modifications\" pour que les modifications prennent effet";
+FO_64SYSTEM_RESTART = -"Toute modification ici nécessite un redémarrage du niveau pour fonctionner.";
+FO_64SYSTEM_APPLIED = "Appliquer les modifications";
+
+TXT_NO = "\cgNon";
+TXT_YES = "\cdOui";
+OPTVAL_ON = "\cdACTIVÉ";
+OPTVAL_OFF = "\caDÉSACTIVÉ";
+
+FO_DEFAULT = "Défaut";
+FO_CLASSICAL = "Classique";
+FO_SWC = "Vision de SWC";
+
+FO_ENABLED = "Activé";
+FO_DISABLED = "Désactivé";
+FO_ALTERNATIVE = "Alternatif";
+FO_GEC = "GEC (par défaut)";
+
+FO_RANDOM = "Aléatoire";
+
+RANDOM_NO_ANNIHILATOR = "Aléatoire (pas d'Annihilateur)";
+RANDOM_NO_INFERNAL = "Aléatoire (pas d'Infernal)";
+
+RANDOM_NO_MOTHER = "Aléatoire (Pas de Démon mère)";
+RANDOM_NO_ERADICATOR = "Aléatoire (Pas d'Éradicateur)";
+
+RANDOM_NO_NIGHTCRAWLER = "Aléatoire (pas de Cyber-Veuve noire)";
+RANDOM_NO_IMPALER = "Aléatoire (pas d'Empaleur)";
+
+RANDOM_NO_STALKER = "Aléatoire (pas de Harceleur)";
+RANDOM_NO_FORGOTTEN = "Aléatoire (pas d'Oublié)";
+
+RANDOM_NO_HELLHOUND = "Aléatoire (pas de Chien de l'enfer)";
+RANDOM_NO_BELPHEGOR = "Random (Pas de Belphégor)";
+
+RANDOM_NO_ACID = "Aléatoire (Pas d'Acide)";
+RANDOM_NO_BUTCHER = "Aléatoire (pas de boucher)";
+
+RANDOM_NO_CACO_NIGHTMARE = "Aléatoire (pas de variantes cauchemardesques)";
+RANDOM_NO_FALLEN = "Aléatoire (pas d'Anges déchu)";
+
+RANDOM_NO_SPECTRE_NIGHTMARE = "Aléatoire (pas de variantes cauchemardesques)";
+RANDOM_NO_WRAITH = "Aléatoire (pas d'Apparitions)";
+
+RANDOM_NO_IMP_NIGHTMARE = "Aléatoire (pas de variantes cauchemardesques)";
+RANDOM_NO_HARVESTER =  "Aléatoire (pas de Moissonneur)";
+
+RANDOM_NO_SSGGUY = "Aléatoire (pas de SSG)";
+RANDOM_NO_BFG_GUY = "Aléatoire (pas de BFG)";
+
+RANDOM_NO_WIZARD = "Aléatoire (Pas de Sorcier de chair)";
+RANDOM_NO_HELLSTORM = "Aléatoire (pas de Tempête infernale)";
+
+FO_HUSK_1 = "1 Rétif ";
+FO_HUSK_2 = "2 Rétifs ";
+FO_HUSK2_CARRION1 = "2 rétifs & 1 Charogne.";
+FO_HUSK3_CARRION2 = "3 rétifs & 1 Charogne";
+
+FO_CHAINGUN = "\cuMitrailleuse";
+FO_RIFLE = "\cuFusil d'assault";
+FO_SMG = "\cuPistolet-mitrailleur";
+FO_BFG = "\cuBFG 9000";
+FO_UNMAKER = "\cuUnmaker";
+FO_LASER = "\cuRayon laser";
+FO_PLASMA = "\cuFusil à Plasma";
+FO_GAUSS = "\cuFusil Gauss";
+
+FO_BLOOD_LOW = "Faible";
+FO_BLOOD_LOW = "Normal";
+FO_BLOOD_LOW = "Beaucoup";
+FO_BLOOD_LOW = "Comique";
+FO_BLOOD_LOW = "Maximum";
+
+//////////////////////////////////////////////////////////////////
+// HUD
+
+HUD_ARMOR = "Armure";
+HUD_HEALTH = "Santé";
+
+//////////////////////////////////////////////////////////////////
+//weapon messages
+
+NEED_FLASHLIGHT = "Il vous faut une lampe de poche ! On en trouve dans les sacs à dos.";
+WM_NOSTAMINA = "Pas assez d'endurance !";
+WM_NEED_SILENCER = "Il vous faut un supresseur pour pistolet ! On en trouve dans les sacs à dos.";
+WM_CHAINSAW_SSG_NONE = "Il vous faut un Super-Fusil de chasse !";
+WM_CHAINSAW_SSG = "Veuillez recharger votre Super-Fusil de chasse !";
+WM_CHAINGUNSPIN = "Personne sensé ne toucherait au canon d'une mitrailleuse.";
+WM_NOTENOUGHAMMO = "Munitions insufisantes !";
+WM_ROCKETROUND = "Tirs de roquettes sont activés.";
+WM_MORTARROUND = "Obus de mortier activés.";
+WM_SPECIAL = "Action spéciale d'arme disponible.";
+WM_NOMINES = "Aucune mines dans l'inventaire !";	
+WM_NOTENOUGHDEMONART = "Pas assez d'artefacts démoniaques !";
+WM_AUTOFIRE= "Mode de tir automatique.";
+WM_BURSTFIRE = "Mode de tir en rafale.";
+UN_REGULAR = "Mode régulier.";
+UN_UNMAKE = "Mode déstruction.";
+UN_HELLTIME = "Mode Infernale.";
+UN_TIMESTOP = "Le temps s'arrête !";
+UN_NOTENOUGHSOULS = "Pas assez d'âmes !";
+UN_NOTENOUGHESSENCE = "Pas assez d'essence démoniaque !";
+SH_NEEDBANDAGES = "Pas assez de bandages !";
+SH_HEALTY = "Vous êtes en bonne santé.";
+SH_BERSERKLIMIT = "Vous ne pouvez pas utiliser plus d'une seringue Berserk !";
+SH_NOSYRINGES = "Vous n'avez pas de seringues Berserk !";
+
+//////////////////////////////////////////////////////////////////
+//Tags for gamemodes 
+
+//////////////////////////////////////////////////////////////////
+//Tags for Classes
+
+FO_TAG_CLASS_CLASSIC = "Classique";
+FO_TAG_MODERN = "Moderne";
+FO_TAG_CLASS_TACTICAL = "Tactique";
+
+//////////////////////////////////////////////////////////////////
+//Tags for Dificulties
+
+FO_TAG_BABY = "Soit doux !";
+FO_TAG_BABY_TXT = "Équivalent de 'Trop jeune pour mourir' (facteur de munitions x2)";
+FO_TAG_EASY = "Rammenez-vous !";
+FO_TAG_EASY_TXT = "Équivalent de 'Hé, pas trop fort'";
+FO_TAG_NORMAL = "J'ai acheté Doom !";
+FO_TAG_NORMAL_TXT = "Équivalent de 'Fait moi mal !'";
+FO_TAG_HARD = "Regarde-moi mourir !";
+FO_TAG_HARD_TXT = "Équivalent de  'Ultra-violence'";
+FO_TAG_HARDER = "Regarde-moi mourir+ !";
+FO_TAG_HARDER_TXT = "Équivalent de 'Ultra-violence+', Projectiles rapides (GZDoom uniquement) : Apparition des armes multijoueurs";
+FO_TAG_NIGHTMARE = "Hardcore !";
+FO_TAG_NIGHTMARE_TXT = "Capacités des monstres = Projectiles rapides, +25% de santé et plus agressif";
+FO_TAG_SURVIVAL = "Survie !";
+FO_TAG_SURVIVAL_TXT = "Capacités des monstres = +25% de santé (soins manuels du joueur).";
+FO_TAG_REALISM = "Survie ! (réalisme)";
+FO_TAG_REALISM_TXT = "Capacités des monstres = Projectiles rapides, -70 % de santé et inflige x5 dégâts (soins manuels du joueur)";
+
+FO_TAG_HARDER_RELOAD_MESSAGE = "La carte a été redémarrée pendant l'émulation multijoueur activée";
+
+//////////////////////////////////////////////////////////////////
+//Option values
+
+FO_OP_BD64 = "\ckBrutal Doom 64";
+FO_OP_KICK = "\ckCoup de pied";
+FO_OP_TOSS = "\ckJeter mine";
+FO_OP_PLACE = "\ckPlacez mine";
+FO_OP_SPECIAL = "\ckCapacitées spéciales des armes";
+FO_OP_FLASH = "\ckInterrupteur de la lampe de poche";
+
+//////////////////////////////////////////////////////////////////
+//menus
+
+FO_MNU_NEWGAME = "NOUVELLE PARTIE";
+FO_MNU_LOAD = "CHARGER";
+FO_MNU_SAVE = "SAUVEGARDER";
+FO_MNU_OPTIONS = "OPTIONS";
+FO_MNU_64OPTIONS ="Options BD64";
+FO_MNU_READ = "LISEZ CECI";
+FO_MNU_QUIT = "QUITTER LE JEU";
+
+FO_MNU_CLASS = "Choisissez une classe :";
+
+FO_64OPTIONS_MAIN = "OPTIONS DE BRUTAL DOOM 64";
+
+FO_64OPTIONS_MAIN_TXT1 = "Certaines modifications ne sont pas appliquées automatiquement";
+FO_64OPTIONS_MAIN_TXT2 = "Appuyez sur \"Apply Changes\" pour que les modifications prennent effet";
+
+FO_64OPTIONS_PRESET = "-------------------------------- Préréglages -------------------------------------";
+
+FO_64MNU_LAST = "Dernier préréglage utilisé =";
+
+FO_64MNU_BEFORE = "Vous devez être à l'intérieur d'un niveau avant de séléctioner un changement";
+FO_64MNU_APPLY = "Vous devez également quitter le menu à chaque fois que vous appliquez un préréglage";
+FO_64MNU_COMFIRM = "L'option ci-dessus est purement une confirmation de l'application réussie du préréglage";
+FO_64MNU_NOTHING = "Aucun effet";
+
+FO_64MNU_DEFAULT = "Défaut";
+FO_64MNU_DEFAULT_TXT = "Les options par défaut du mod";
+FO_64MNU_CLASSICAL = "Classique";
+FO_64MNU_CLASSICAL_TXT = "Ajuste les paramètres pour qu'ils soient aussi vanilla que possible";
+FO_64MNU_SWC = "Vision de SWC";
+FO_64MNU_SWC_TXT1 ="Ajoute de nouveaux monstres et armes avec des paramètres équilibrés,";
+FO_64MNU_SWC_TXT2 = "paramétrages du créateur du mod";
+FO_64MNU_RANDOM = "Générateur aléatoire";
+FO_64MNU_RANDOM_TXT1 = "Pour définir toutess les apparitions des monstres/armes/objets comme aléatoires, séléctionez ceci";
+
+FO_64OPTIONS_OPTIONS = "-------------------------------- Options -------------------------------------";
+
+FO_64MNU_OTHER_ITEMS = "Autres options des objets/armes";
+FO_64MNU_OHTHER_MONSTER = "Autres options des monstres";
+FO_64MNU_PERFORMANCE = "Performances et options diverses";
+FO_64MNU_LEVEL_OPTIONS = "Options des niveaux";
+
+FO_64OPTIONS_GAMEPLAY = "-------------------------------- Gameplay -------------------------------------";
+
+FO_64MNU_WEAPONS_SPAWN = "Options de l'apparition des objets/armes";
+FO_64MNU_MONSTER_SPAWN = "Options de l'apparition des monstres";
+FO_64MNU_ENGINE = "Raccourcis moteur (GZD, Zand)";
+
+FO_64MNU_ITEMS_WEAPONS_SPAWN = "Options d'apparition d'objets/armes";
+
+FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1 = "Options permettant de choisir des remplacements d'armes et de bonus ou de les configurer"; 
+FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2 = "pour qu'ils apparaissent de manière aléatoire";
+
+FO_64MNU_BONUS = "Bonus par défaut";
+FO_64MNU_BONUS_TXT = "(les potions infernales sont combinées avec les bonus d'armure et de santé)";
+FO_64MNU_POWERUP = "Super-pouvoirs par défaut";
+FO_64MNU_PLASMA = "Fusil à plasma par défaut";
+FO_64MNU_BFG = "BFG9000 par défaut";
+FO_64MNU_CHAINGUN = "Mitrailleuse par défaut";
+
+FO_64MNU_OTHER_ITEMS_SPAWN = "Autres options d'objets/armes";
+
+FO_64MNU_WEAPON_FUNCTION = "---------------------------- Fonctions des armes ------------------------------";
+
+FO_64MNU_CLASSIC_SHOTGUN = "Activer les animations classiques du fusil à pompe/SSG =";
+FO_64MNU_CLASSIC_SHOTGUN_TXT = "Afficher les animations classiques du fusil à pompe/SSG de Doom 64 (mode classique).";
+FO_64MNU_WARMUP = "Activer les animations des armes au ramassage =";
+FO_64MNU_WARMUP_TXT = "Afficher les animations des armes lors du premier ramassage (modes tactiques/modernes UNIQUEMENT).";
+FO_64MNU_CLASSIC_CHAINSAW ="Apparence classique de la tronçonneuse pour les classes tactique/moderne =";
+FO_64MNU_CLASSIC_CHAINGUN = "Apparence classique de la mitrailleuse pour les classes tactique/moderne =";
+FO_64MNU_CLASSIC_ROCKET = "Apparence classique du lance-roquettes pour les classes tactiques/modernes =";
+FO_64MNU_CLASSIC_SWITCH = "Options pour basculer entre les armes classiques ou modernisées.";
+
+FO_64MNU_SKIP_RELOAD = "Ignorer les séquences de rechargement des armes (Maintenez \"Appliquer les modifications\") =";
+FO_64MNU_SKIP_RELOAD_TXT = "Ignorer les séquences d'animation de rechargement des armes (modes tactiques/modernes UNIQUEMENT).";
+
+FO_64MNU_LOWAMMO = "Effets sonores de munitions faible =";
+FO_64MNU_LOWAMMO_TXT1 = "Vous permet d'activer ou de désactiver l'avertissement sonore lorsque les munitions sont trop faibles.";
+FO_64MNU_LOWAMMO_TXT2 = "(modes tactiques/modernes UNIQUEMENT)";
+
+FO_64MNU_SWITCH_FIST = "Passez aux poings lors du ramassage d'un Berserk =";
+FO_64MNU_SWITCH_FIST_TXT = "Option pour désactiver le passage aux poings lors du ramassage en mode berserkeur.";
+
+FO_64MNU_SKINS = "--------------------------- Skins d'armes et d'objets -----------------------------";
+
+FO_64MNU_SKIN_LASER = "Sprites du Rayon laser alternatif =";
+FO_64MNU_SKIN_ITEM = "Sprites des objets ramassés alternatifs =";
+FO_64MNU_SKIN_HEALTH = "Sprites Kits de soins et Berserk alternatifs =";
+FO_64MNU_SKIN_ALPHA = "Sprites des objets ramassés des verions Alpha =";
+FO_64MNU_SKIN_ALPHA_TXT = "Options pour activer les apparences alternatives alpha des objets et les armes.";
+
+FO_64MNU_OTHER = "-------------------------------------- Autres -----------------------------------";
+
+FO_64MNU_FLASHLIGHT = "Commencez avec une lampe de poche/torche =";
+
+FO_MONSTER_SPAWN = "Options de génération de monstres";
+FO_MONSTER_SPAWN_TXT1 = "Ces options permettent de définir le pourcentage de variantes des monstres,";
+FO_MONSTER_SPAWN_TXT2 = "outcast, ainsi que monstres supplémentaires, ou configurés pour apparaître aléatoirement";
+
+FO_SPAWN_ZOMBIEMAN = "Générateur de zombies pistolet =";
+FO_SPAWN_ZOMBIEMAN_TXT = "Pourcentage aléatoire de zombies pistolet =";
+FO_SPAWN_SHOTGUNGUY = "Générateur de zombies sargeants =";
+FO_SPAWN_SHOTGUNGUY_TXT = "Pourcentage aléatoire de zombies sargeants =";
+FO_SPAWN_COMMANDO = "Générateur de zombies commandos =";
+FO_SPAWN_COMMANDO_TXT = "Pourcentage aléatoire de zombies commandos =";
+FO_SPAWN_IMP = "Générateur de Diablotins =";
+FO_SPAWN_IMP_TXT = "Pourcentage aléatoire de diablotins =";
+FO_SPAWN_PINKY = "Générateur de Démons =";
+FO_SPAWN_PINKY_TXT = "Pourcentage aléatoire de démons =";
+FO_SPAWN_SPECTRE = "Générateur de Spectres =";
+FO_SPAWN_SPECTRE_TXT = "Pourcentage aléatoire de spectres =";
+FO_SPAWN_CACO = "Générateur de Cacodémons =";
+FO_SPAWN_CACO_TXT = "Pourcentage aléatoire de Cacodémons =";
+FO_SPAWN_SOUL = "Générateur d'Âmes perdues =";
+FO_SPAWN_SOUL_TXT1 = "Pourcentage aléatoire d'âmes perdues =";
+FO_SPAWN_SOUL_TXT2 = "(Doloris/Agonis peuvent les invoquer en fonction des valeurs)";
+FO_SPAWN_KNIGHT = "Générateur de Chevaliers des enfers =";
+FO_SPAWN_KNIGHT = "Pourcentage aléatoire de chevaliers des enfers =";
+FO_SPAWN_UNDEAD = "Générateur de Revenants =";
+FO_SPAWN_UNDEAD_TXT = "Pourcentage aléatoire de revenants =";
+FO_SPAWN_BARON = "Générateur de Barons infernales =";
+FO_SPAWN_BARON_TXT = "Pourcentage aléatoire de barons infernaux =";
+FO_SPAWN_FATSO = "Générateur de Mancubi =";
+FO_SPAWN_FATSO_TXT = "Pourcentage aléatoire de mancubi =";
+FO_SPAWN_ELEMENTAL = "Générateur de Doloris =";
+FO_SPAWN_ELEMENTAL_TXT = "Pourcentage aléatoire de doloris =";
+FO_SPAWN_VILE = "Générateur d'Archviles =";
+FO_SPAWN_VILE_TXT = "Pourcentage aléatoire de d'archviles =";
+FO_SPAWN_CYBERDEMON = "Générateur de Démons-cybernétiques=";
+FO_SPAWN_CYBERDEMON_TXT = "Pourcentage aléatoire de démons-cybernétique =";
+FO_SPAWN_MASTERMIND = "Générateur de Cerveaux arachnides=";
+FO_SPAWN_MASTERMIND_TXT = "Pourcentage aléatoire de cerveaux arachnides =";
+FO_SPAWN_HUSK = "Multiplicateur de hordes de rétifs =";
+FO_SPAWN_HUSK_TXT1 = "Pourcentage aléatoire de hordes de rétifs  =";
+FO_SPAWN_HUSK_TXT2 = "Option permettant de faire apparaître des rétifs et des charognes à proximité des cadavres de zombies décoratifs.";
+FO_SPAWN_HUSK_TXT3 = "Désactivé par défaut";
+FO_SPAWN_SETTING = "(Paramètre recommandé x3, x4 ou aléatoire)";
+
+FO_MONSTER_OTHER= "Autres options de monstres";
+
+FO_MONSTER_SKIN = "------------------------------- Skins de monstres -------------------------------";
+
+FO_MONSTER_HELLHOUND = "Apparence du Cerbère =";
+FO_MONSTER_HELLHOUND_TXT1 = "Si vous avez sélectionné \"Aléatoire (Pas de Baron)\"";
+FO_MONSTER_HELLHOUND_TXT2 = "et désactivé la sélection de skin Cerbère";
+FO_MONSTER_HELLHOUND_TXT3 = "vous obtiendrez \"Aléatoire (Pas de Cerbère)\"";
+
+FO_MONSTER_CACO = "Style du Cacodémon =";
+
+FO_OPTION_MAP = "------------------------------- Sélection du pack de niveaux -------------------------------";
+
+FO_MAP_SELECT = "Sélectionnez pack de niveaux =";
+FO_MAP_SELECT_TXT1 = "Cette option n'est pas automatique et doit être configurée manuellement";
+FO_MAP_SELECT_TXT2 = "avant de commencer une nouvelle partie dans l'un des wads pris en charge";
+FO_MAP_SELECT_TXT3 = "Vous pouvez utiliser Doom 2 sur des wads non compatibles";
+
+FO_MAP_PROP = "----------------------------- Remplacement des décorations des niveaux -----------------------------";
+
+FO_PROP_INFECTED = "Cadavres de Marine infecté =";
+FO_PROP_INFECTED_TXT = "Remplacez les marines morts et les décorations de marine morts par les monstres 'La chose'.";
+FO_PROP_GHOST = "Mode esprit frappeur =";
+FO_PROP_GHOST_TXT1 = "Remplacez les objets décoratifs des esprits frappeurs hostiles.";
+FO_PROP_GHOST_TXT2 = "(les Esprits frappeurs sont des les objets décoratifs dans les niveaux hostiles qui peuvent attaquer le joueur.)";
+
+FO_PERFORMANCE_MISK = "Options de performance et diverses";
+FO_PERFORMANCE_MISK_TXT = "Activez cette option UNIQUEMENT si vous hébergez un serveur sur un jeu multijoueur.";
+FO_PERFORMANCE_MISK_TXT = "(l'activation de cette option générera un message d'erreur si vous utilisez GZDoom)";
+FO_PERFORMANCE_ZAN_MULTI = "Activer les scripts multijoueurs spécifiques à Zandronum =";
+FO_PERFORMANCE_ZAN_TACTICAL = "Activer le script de la classe tactique spécifique à QZandronum =";
+
+FO_OPTION_PERFORMANCE = "-------------------------------- Performances et gore --------------------------------";
+
+FO_OPTION_PERFORMANCE_SERVER =  "Sélectionner la quantité de sang (serveur/solo) =";
+FO_OPTION_PERFORMANCE_CLIENT = "Sélectionner la quantité de sang (Client/Multijoueur) =";
+FO_OPTION_PERFORMANCE_FLATS = "Activer la suppression du gore sur les surfaces plates (30s) =";
+FO_OPTION_PERFORMANCE_DECALS = "Activer les décalcomanies de tir/explosion au sol/plafond =";
+FO_OPTION_PERFORMANCE_FOG = "Options de brouillard léger et de halos =";
+FO_OPTION_PERFORMANCE_TORCH = "Activer les torches de style classique (redémarrage de lu niveau requis) =";
+FO_OPTION_PERFORMANCE_SPLASH = "Désactiver les éclaboussures liquides =";
+
+FO_OPTION_HUD = "------------------------------------ ATH ------------------------------------";
+
+FO_OPTION_HUD_STYLE = "Définir le style de l'ATH (HUD) =";
+FO_OPTION_HUD_SCREEN = "Activer les effets d'écran de l'ATH =";
+FO_OPTION_HUD_BLOOD = "Active les effets d'écran sur l'ATH, tels que les éclaboussures de sang et les impacts de balles.";
+FO_OPTION_HUD_TRAILS = "Activer les éclaboussures de traînées de sang sur l'écran de l'ATH =";
+FO_OPTION_HUD_SPLASH = "Les monstres qui saignent de près créeront des éclaboussures de sang sur l'ATH.";
+FO_OPTION_HUD_SPLASH_TXT1 = "(Si les effets d'écran sont désactivés, cette option sera également désactivée.)";
+FO_OPTION_HUD_SPLASH_TXT2 = "(Ne fonctionne pas pour le mode effets d'écran BDv21.)";
+
+FO_OPTION_SOUND = "---------------------------------- Bruitages ----------------------------------";
+ 
+FO_OPTION_SOUND_FOOTS = "Activer les bruits de pas";
+
+FO_OPTION_MAP_OP = "Options des niveaux :";
+FO_OPTION_MAP_OP_TXT = "(Ces options fonctionnent UNIQUEMENT avec les cartes BD64).";
+FO_OPTION_MAP_EASY = "Jouez aux cartes plus faciles Map08 et Map28 (pas de combat de boss ((étendue finale)) =";
+FO_OPTION_MAP_TC = "Ajouter les cartes Absolution TC à la campagne principale =";
+FO_OPTION_MAP_TITLE = "Afficher la séquence d'ouverture originale de Doom 64 au démarrage.";
+FO_OPTION_MAP_TITLE_TXT = "Afficher le niveau d'ouverture du jeu (redémarrage requis) =";
+
+FO_ENGINE_OPTION = "Raccourcis des options du moteur :";
+FO_ENGINE_OPTION_TXT = "Options Zdoom, disponibles ici pour votre commodité.";
+FO_ENGINE_CLIPPING = "Ajuster le clipping des sprites";
+FO_ENGINE_CROSSHAIR = "Forcer Réticule Zdoom";
+FO_ENGINE_JUMP = "Autoriser Saut";
+FO_ENGINE_CROUCH = "Autoriser aAcroupissement";
+FO_ENGINE_FREELOOK = "Autoriser Vue Libre";
+FO_ENGINE_BOBBING = "Intensité du mouvement de chaloupage";
+FO_ENGINE_PARTICULES = "Particules maximales";
+FO_ENGINE_INPUT = "saisir la valeur manuellement";
+FO_ENGINE_MAX = "Max décalcomanies";
+FO_ENGINE_DECALS = "saisir la valeur manuellement";
+FO_ENGINE_FPS = "Compteur PFS";
+FO_ENGINE_DISCORD = "Présence Discord Rich";
+FO_ENGINE_DISCORD_TXT = "(Ne fonctionne pas sur Zandronum).";
+
+FO_ENGINE_GIBS = "Quantité de démenbrements (gibs)";
+FO_ENGINE_GIBS_TXT1 = "Limite le nombre de démenbrements qui apparaîtront en tout temps.";
+FO_ENGINE_GIBS_TXT2 = "L'augmentation de cette valeur n'affectera que le maximum";
+FO_ENGINE_GIBS_TXT3 = "quantité dans le monde, pas par monstre.";
+FO_ENGINE_GIBS_MAX = "Démenbrements maximum";
+
+//////////////////////////////////////////////////////////////////
+
+FO_EMPTYSTRING = "emplacement vide";
+
+//////////////////////////////////////////////////////////////////
+//Health / armor
+
+FO_GOTARMBONUS = "\cdBonus d'armure\c- récupéré.";
+FO_GOTARMOR = "\cdArmure\c- récupérée.";
+FO_GOTMEGA = "\cdMéga-Armure\c- récupérée.";
+
+FO_GOTHTHBONUS = "\chBonus de santé\c- récupéré.";
+FO_GOTHPOTION = "\crPotion infernale\c- de santé récupérée.";
+FO_GOTSTIM = "\crStimpack\c- récupéré.";
+FO_GOTMEDINEED = "\crKit de soins\c- récupéré. Vous en aviez bien besoin !";
+FO_GOTMEDIKIT = "\crKit de soins\c- récupéré.";
+
+//////////////////////////////////////////////////////////////////
+//powerups
+
+FO_GOTINVUL = "\cqInvulnérabilitée !";
+FO_GOTSUPER = "\chSphère d'Âme !";
+FO_GOTMSPHERE = "\csMéga-sphère !";
+FO_GOTINVIS = "\caInvisibilité partielle !";
+FO_GOTSUIT = "\cdBouclier anti-radiations !";
+FO_GOTVISOR = "\cnLunettes de vision nocturne !";
+FO_GOTMAP = "\cbCarte éléctronique !";
+FO_GOTBERSERK = "\crBerserk !";
+
+//////////////////////////////////////////////////////////////////
+//Keys
+
+FO_GOTBLUECARD = "\chCarte-clé magnétique bleue\c- récupérée.";
+FO_GOTYELWCARD = "\cfCarte-clé magnétique jaune\c- récupérée.";
+FO_GOTREDCARD = "\crCarte-clé magnétique rouge\c- récupérée.";
+FO_GOTBLUESKUL = "\chClé crâne bleue\c- récupérée.";
+FO_GOTYELWSKUL = "\cfClé crâne jaune\c- récupérée.";
+FO_GOTREDSKUL = "\crClé crâne rouge\c- récupérée.";
+
+//////////////////////////////////////////////////////////////////
+// Demon keys
+
+FO_GOTDEMON_ORANGE = "\ciVous avez le sentiment que ce n’était pas censé être touché.";
+FO_GOTDEMON_PURPLE = "\ctÇa doit bien servir à quelque chose...";
+FO_GOTDEMON_BLU = "\cvQuoi que ce soit, cela n'appartient pas à notre monde.";
+FO_GOTDEMON_GREEN = "\cqCela ressemble à une sorte de clé...";
+FO_GOTDEMON_RED = "\cgÀ quoi cela sert-il ?";
+
+//////////////////////////////////////////////////////////////////
+//ammo
+
+FO_GOTBACKPACK = "\cpSac à dos\c- récupéré !";
+FO_GOTBACKPACK2 = "\cpSac à dos\c- rempli de munitions avec un supresseur pour pistolet récupéré !";
+FO_GOTBACKPACK3 = "\cpSac à dos\c- rempli de munitions avec lampe torche récupéré !";
+FO_GOTBACKPACK4 = "\cpSac à dos\c- rempli de munitions avec un silencieux pour pistolet et lampe torche récupéré !";
+FO_GOTCLIP = "\cpChargeur récupéré\c-.";
+FO_GOTCLIPBOX = "\cpBoîte de munitions\c- récupérée.";
+FO_GOTCLIPBOX2 = "\cpBoîte de munitions gros calibre\c- récupérée.";
+FO_GOTSHELLS = "\cpQuatres cartouches de Fusil à pompe\c- récupérées.";
+FO_GOTSHELLBOX = "\cpBoîte de cartouches de Fusil à Pompe\c- récupéré.";
+FO_GOTROCKET = "\cpRoquette récupérée\c-.";
+FO_GOTROCKBOX = "\cpCaisse de roquettes\c- récupéré.";
+FO_GOTCELL = "\cpCellules d'énergie\c- récupérées.";
+FO_GOTCELLBOX = "\cpPack d'énergie\c- récupéré.";
+FO_GOTSAWGAS = "\cpBidon d'essence\c- récupéré.";
+FO_GOTSOUL = "\cnÂme\c- récupérée";
+FO_GOTESSENSE = "\clEssense démoniaque\c- récupérée";
+FO_GOTESSENSE2 = "\clLarge essense démoniaque\c- récupérée";
+FO_GOTBANDAGES = "\chBandages\c- récupérés.";
+FO_GOTSYRINGE = "\crSeringue berserk\c récupérée.";
+FO_SCAVENGE1 = "Vous récupérez \ch10 bandages\c- dans ce Medikit.";
+FO_SCAVENGE2 = "Vous récupérez \ch25 bandages\c- dans ce Medikit.";
+FO_SCAVENGE3 = "Vous récupérez une \crseringue Berserk\c- dans ce pack Berserk.";
+FO_GOTSILECER = "\cpSupresseur pour pistolet\c- récupéré !";
+FO_GOTFLASHLIGHT = "\cnLampe de poche\c- récupéré !";
+BD64_GOTMINES = "\cpMine anti-personnelle\c- récupéré!";
+
+//////////////////////////////////////////////////////////////////
+//doors
+
+/*
+	PD_BLUEO = "You need a blue key.";
+	PD_REDO = "You need a red key.";
+	PD_YELLOWO = "You need a yellow key.";
+	PD_BLUEK = "You need a blue key.";
+	PD_REDK = "You need a red key.";
+	PD_YELLOWK = "You need a yellow key.";
+	PD_BLUEC = "You need a blue key card.";
+	PD_REDC = "You need a red key card.";
+	PD_YELLOWC = "You need a yellow key card.";
+	PD_BLUECO = "You need a blue key card.";
+	PD_REDCO = "You need a red key card.";
+	PD_YELLOWCO = "You need a yellow key card.";
+	PD_BLUESO = "You need a blue skull key.";
+	PD_REDSO = "You need a red skull key.";
+	PD_YELLOWSO = "You need a yellow skull key.";
+	PD_BLUES = "You need a blue skull key.";
+	PD_REDS = "You need a red skull key.";
+	PD_YELLOWS = "You need a yellow skull key.";
+	PD_ANY = "You need a key.";
+	PD_All3 = "You need all three keys.";
+	PD_All6 = "You need all six keys.";
+*/
+
+//////////////////////////////////////////////////////////////////
+//weapon pickups
+
+//Slot 1
+BD64_GOTCHAINSAW = "Vous avez mis la main sur la \cmTronconneuse\c- ! (Touche 1)";
+//Slot 2
+BD64_GOTPISTOL = "Vous avez mis la main sur un \cmPistolet\c- ! (Touche 2)";
+BD64_GOTSMG = "Vous avez mis la main sur le \cmPistolet-Mitrailleur\c- ! (Touche 2)";
+BD64_GOTMP40 = "Vous avez mis la main sur le \cmMP40\c- ! (Touche 2)";
+//Slot 3
+BD64_GOTSHOTGUN = "Vous avez mis la main sur le \cmFusil à pompe\c- ! (Touche 3)";
+BD64_GOTSHOTGUN2 = "Vous avez mis la main sur le \cmSuper-Fusil de chasse à canons juxtaposé\cl- ! (Touche 3)";
+//Slot 4
+BD64_GOTRIFLE = "Vous avez mis la main sur le \cmFusil d'assault\c- ! (Touche 4)";
+BD64_GOTCHAINGUN = "Vous avez mis la main sur la \cmMitrailleuse\c- ! (Touche 4)";
+//Slot 5
+BD64_GOTLAUNCHER = "Vous avez mis la main sur le \cmLance-roquettes\c- ! (Touche 5)";
+BD64_GOTMINES = "Vous avez mis la main sur une \cmMine polyvalente\c- ! (Touche 5)";
+//Slot 6
+BD64_GOTPLASMA = "Vous avez mis la main sur le \cmFusil à plasma\c-  ! (Touche 6)";
+BD64_GOTGAUSS = "Vous avez mis la main sur le \cmFusil Gauss !\c-  (Touche 6)";
+//Slot 7
+BD64_GOTBFG9000 = "Vous avez mis la main sur le \cmBFG9000 !\c-  Quel pied ! (Touche 7)";
+//Slot 8
+BD64_GOTUNMAKER = "\cgBordel mais c'est quoi ça !?\c-  (Touche 8)";
+//Slot 9
+BD64_GOTLASER = "Vous avez mis la main sur le \cmRayon laser !\c-  (Touche 9)";
+
+//////////////////////////////////////////////////////////////////
+// weapon tags
+
+//1
+FO_TAG_FIST = "\cmPoings";
+FO_TAG_CHAINSAW = "\cmTronconneuse";
+//2
+FO_TAG_PISTOL = "\cmPistolet";
+FO_TAG_SMG = "\cmPistolet-mitrailleur";
+FO_TAG_MP40 = "\cmMP40";
+//3
+FO_TAG_SHOTGUN = "\cmFusil à pompe";
+FO_TAG_SUPERSHOTGUN = "\cmSuper-Fusil de chasse juxtaposé";
+//4
+FO_TAG_RIFLE = "\cmFusil d'assault";
+FO_TAG_CHAINGUN = "\cmMitrailleuse";
+//5
+FO_TAG_ROCKETLAUNCHER = "\cmLance-roquettes";
+FO_TAG_MINES = "\cmuMine polyvalente";
+//6
+FO_TAG_PLASMARIFLE = "\cmFusil à plasma";
+FO_TAG_GAUSS = "\cmFusil Gauss";
+//7
+FO_TAG_BFG9000 = "\cmBFG9000";
+//8
+FO_TAG_UNMAKER = "\cgUnmaker";
+//9
+FO_TAG_LASER = "\cmFusil laser";
+
+//////////////////////////////////////////////////////////////////
+// ammo tags
+
+FO_TAG_BACKPACK1 = "\cpSac à dos";
+FO_TAG_BACKPACK2 = "\cpSac à dos\c- avec silencieux pour pistolet";
+FO_TAG_BACKPACK3 = "\cpSac à dos\c- avec lampe de poche";
+FO_TAG_BACKPACK4 = "\cpSac à dos\c- avec lampe de poche et silencieux pour pistolet";
+FO_TAG_CLIP = "\cpMagazin";
+FO_TAG_CLIPBOX = "\cpBoîte de munitions";
+FO_TAG_CLIPBOX2 = "\cpBoîte de munitions gros calibre";
+FO_TAG_SHELL = "\cpCartouches de fusil à pompe";
+FO_TAG_SHELLBOX = "\cpBoîte de cartouches de fusil à pompe";
+FO_TAG_ROCKET = "\cpRoquette";
+FO_TAG_ROCKBOX ="\cpCaisse de roquettes";
+FO_TAG_CELL = "\cpCellules d'énergie";
+FO_TAG_CELLBOX = "\cpPack d'énergie";
+FO_TAG_SOUL = "\cnÂme";
+FO_TAG_ESSENSE = "\clEssence démoniaque";
+FO_TAG_ESSENSE2 = "\clLarge essense démoniaque";
+FO_TAG_BANDAGES = "\crBandages";
+FO_TAG_SYRINGE = "\crSeringue Berserk";
+FO_TAG_SAWGAS = "\cpBidon d'essence";
+FO_TAG_MINES = "\cmMine anti-personelle";
+FO_TAG_SILENCER = "\cpSupresseur pour pistolet";
+FO_TAG_FLASHLIGHT = "\cnLampe de poche";
+
+//////////////////////////////////////////////////////////////////
+// health and armor tags
+
+FO_TAG_HBONUS = "\chBonus de santé";
+FO_TAG_HPOTION = "\crPotion infernale";
+FO_TAG_STIM = "\crStimpack";
+FO_TAG_MEDIKIT = "\crKit de soins";
+
+FO_TAG_ARMBONUS = "\cdBonus d'armure";
+FO_TAG_ARMOR = "\cdArmure verte";
+FO_TAG_MEGA= "\chArmure bleue";
+
+//////////////////////////////////////////////////////////////////
+// powerup tags
+
+FO_TAG_INVUL = "\cqSphère d'invulnérabilité";
+FO_TAG_SUPER = "\chSphère d'âme";
+FO_TAG_MSPHERE = "\csMéga-Sphère";
+FO_TAG_INVIS = "\caSphère d'invisibilité partielle";
+FO_TAG_SUIT = "\cdBouclier anti-radiations";
+FO_TAG_VISOR = "\cnLunettes de vision nocturne";
+FO_TAG_MAP = "\cbCarte éléctronique";
+FO_TAG_BERSERK = "\clPack Berserk";
+
+//////////////////////////////////////////////////////////////////
+// Demon keys tags
+
+FO_TAG_DEMON_ORANGE = "\ciClé Démoniaque orange";
+FO_TAG_DEMON_PURPLE = "\ctClé Démoniaque violette";
+FO_TAG_DEMON_BLUE = "\cvClé Démoniaque sarcelle";
+FO_TAG_DEMON_GREEN = "\cqClé Démoniaque verte Outcast";
+FO_TAG_DEMON_RED = "\cgClé Démoniaque rouge Outcast";
+
+//////////////////////////////////////////////////////////////////
+// Keys tags
+
+FO_TAG_BLUECARD = "\chCarte-clé magnétique bleue";
+FO_TAG_YELWCARD = "\cfCarte-clé magnétique jaune";
+FO_TAG_REDCARD = "\crCarte-clé magnétique rouge";
+FO_TAG_GOTBLUESKUL = "\chClé crâne bleue";
+FO_TAG_GOTYELWSKUL = "\cfClé crâne jaune";
+FO_TAG_GOTREDSKUL = "\crClé crâne rouge";
+
+//////////////////////////////////////////////////////////////////
+//obituaries for weapons
+
+FO_OB_RICOCHET = "%o à mangé(e) du \cmplond\c-.";
+FO_OB_MPKICK = "%o à lèché(e) les \cmbottes\c- de \cg%k\c- .";
+FO_OB_MPSLIDEKICK = "%o à glissé(e) sur le \cmcoup de pied coulissant\c- de \cg%k\c-.";
+
+FO_OB_MPFIST = "%o à mangé(e) le \cmpoing\c- de \cg%k\c-.";
+FO_OB_MPCHAINSAW = "%o s'est fait(e) passé(e) dessus par la \cmtronconneuse\c- de \cg%k\c-.";
+FO_OB_MPPISTOL = "%o s'est fait(e) chatouillé(e) les côtes par la \cmpétoire\c- de \cg%k\c-.";
+FO_OB_MPSMG = "%o a été(e) abattu(e) par le \cmPistoley-Mitrailleur\c- de \cg%k\c-.";
+FO_OB_MP40 = "%o a été(e) abattu(e) par \cg%k\c-.";
+FO_OB_MPRIFLE = "%o a été(e) abattu(e) par le \cmFusil d'assault\c- de \cg%k\c-.";
+FO_OB_MPSHOTGUN = "%o s'est fait(e) éclaté(e) la gueule par le \cmFusil à pompe\c- de \cg%k\c-.";
+FO_OB_MPSSHOTGUN = "%o a été(e) éparpillé(e) au sol par le \cmSuper-Fusil de chasse\c- de \cg%k\c-.";
+FO_OB_MPCHAINGUN = "%o a été(e) dégommé(e) par la \cmMitrailleuse\c- de \cg%k\c-.";
+FO_OB_MPROCKET = "%o à chevauché(e) la \cmroquette\c- de \cg%k\c-.";
+FO_OB_MINES = "%o a été déchiqueté par la \cmmine\c- de \cg%k\c-.";
+//	OB_MPR_SPLASH = "%o était à deux doigts d'esquiver la \cmroquette\c- de \cg%k\c-.";
+FO_OB_MPPLASMARIFLE = "%o a été(e) désintégré(e) \cmFusil à plasma\c- de \cg%k\c-.";
+FO_OB_GAUSS = "%o a été(e) transpercé(e) par le \cmFusil Gauss\c- de \cg%k.";
+FO_OB_MPBFG_BOOM = "%o a été(e) désintégré(e) par le le \cmBFG\c- de \cg%k\c-.";
+FO_OB_MPBFG_BETA = "%o a été(e) désintégré(e) par le le \cmBFG\c- de \cg%k\c-.";
+FO_OB_LASER = "%o à été(e) réduit à néant par le \cmRayon laser\c- de \cg%k\c-.";
+FO_OB_MPUNMAKER = "%o à supprimé \cg%k\c-.";
+//	OB_MPBFG_SPLASH = "%o ne pouvait rien faire face au \cmBFG\c- de \cg%k\c-.";
+//	OB_MPTELEFRAG = "%o a été(e) \cmtélecrasé\c- par \cg%k\c-.";
+//	OB_RAILGUN = "%o été \cmréduit en cendres\c- par \cg%k\c-.";
+//	OB_MPBFG_MBF = "%o a été(e) incinéré(e) par le \cmBFG\c- de \cg%k\c-.";
+
+//////////////////////////////////////////////////////////////////
+//Noms des démons
+
+FO_TAG_STEALTHBABY = "Arachnotron furtif";
+FO_TAG_STEALTHVILE = "Archvile furtif";
+FO_TAG_STEALTHBARON = "Baron infernale furtif";
+FO_TAG_STEALTHCACO = "Cacodémon furtif";
+FO_TAG_STEALTHCHAINGUY = "Commando furtif";
+FO_TAG_STEALTHDEMON = "Démon furtif";
+FO_TAG_STEALTHKNIGHT = "Chevalier de l'enfer furtif";
+FO_TAG_STEALTHIMP = "Diablotin furtif";
+FO_TAG_STEALTHFATSO = "Mancubus furtif";
+FO_TAG_STEALTHUNDEAD = "Revenant furtif";
+FO_TAG_STEALTHSHOTGUY = "Sergeant furtif";
+FO_TAG_STEALTHZOMBIE = "Zombie furtif";
+
+FO_TAG_ZOMBIEMAN = "Zombie";
+FO_TAG_PISTOLMAN = "Zombie pistolet";
+FO_TAG_SHOTGUNGUY = "Zombie sergeant";
+FO_TAG_SSGGUY = "Zombie doubles canon";
+FO_TAG_COMMANDO = "Zombie commando";
+FO_TAG_PLASMAGUY = "zombie colonel";
+FO_TAG_BFGGUY = "Zombie général de brigade";
+FO_TAG_ZOMBIEMARINE = "Zombie marine";
+FO_TAG_HUSK = "Rétif";
+FO_TAG_IMP = "Diablotin";
+FO_TAG_IMP_NIGHTMARE = "Diablotin cauchemard";
+FO_TAG_IMPALER = "Empaleur";
+FO_TAG_HARVESTER = "Moissoneur d'âmes";
+FO_TAG_PINKY = "Démon pinky";
+FO_TAG_SPECTRE = "Spectre";
+FO_TAG_SPECTRE_NIGHTMARE = ​​"Spectre cauchemard";
+FO_TAG_WRAITH = "Apparition";
+FO_TAG_BUTCHER = "Boucher";
+FO_TAG_HOUND = "Cerbère";
+FO_TAG_ACID = "Démon acide";
+FO_TAG_SPIDER = "Arachnotron";
+FO_TAG_NIGHTCRAWLER = "Cyber-Veuve noire";
+FO_TAG_FATSO = "Mancubus";
+FO_TAG_KNIGHT = "Chevalier de l'enfer";
+FO_TAG_KNIGHTMARE = "Chevalier cauchemard";
+FO_TAG_BRUISER = "Fracasseur";
+FO_TAG_BARON = "Baron infernal";
+FO_TAG_BELPHEGOR = "Belphégor";
+FO_TAG_FALLEN = "Ange déchu";
+FO_TAG_CACO = "Cacodémon";
+FO_TAG_CACO_NIGHTMARE = "Cacodémon cauchemard";
+FO_TAG_ELEMENTAL = "Doloris";
+FO_TAG_ELEMENTAL_NIGHTMARE = "Agonis";
+FO_TAG_PEST = "Peste";
+FO_TAG_LOSTSOUL = "Âme perdue";
+FO_TAG_STALKER = "Harceleur";
+FO_TAG_TRITE = "Araignée infernale";
+FO_TAG_FORGOTTEN = "L'oublié";
+FO_TAG_VILE = "Archvile";
+FO_TAG_RESURRECTOR = "Résurrecteur infernal";
+FO_TAG_HELLSTORM = "Tempête infernale";
+FO_TAG_FLESH = "Sorcier de chair" ;
+FO_TAG_MOTHER = "Démon mère";
+FO_TAG_CYBERDEMON = "Démon Cybernétique";
+FO_TAG_ANNIHILATOR = "Annihilateur";
+FO_TAG_MASTERMIND = "Cerveau arachide démoniaque";
+FO_TAG_ERADICATOR = "Éradicateur";
+FO_TAG_ZIOSS = "Wolfenstein SS";
+FO_TAG_CARRION = "Charogne";
+FO_TAG_THING = "La chose";
+FO_TAG_EVILSPIRIT = "Esprit frappeur";
+FO_TAG_VENOMEYE = "Oeil vindicateur";
+FO_TAG_EVILTREE = "Arbre maléfique";
+FO_TAG_EVILTREEROOT = "Racine d'arbre maléfique";
+FO_TAG_HANGMAN = "Pendu";
+FO_TAG_KEEN = "Scorpion pendu";
+FO_TAG_SUPERFALLEN = "Déchu suprême";
+
+//////////////////////////////////////////////////////////////////
+//Noms et nécrologies des Marines PNJ
+
+FO_TAG_NPC_RIFLE = "Marine fusil d'assault";
+FO_TAG_NPC_BFG = "Marine BFG 9k";
+FO_TAG_NPC_BERSERK = "Marine berserkeur";
+FO_TAG_NPC_CHAINGUN = "Marine mitrailleur";
+FO_TAG_NPC_CHAINSAW = "Marine tronçonneur";
+FO_TAG_NPC_FIST = "Marine désarmé";
+FO_TAG_NPC_PLASMA = "Marine fusil à lasma";
+FO_TAG_NPC_RAILGUN = "Marine fusil gauss";
+FO_TAG_NPC_ROCKET = "Marine artilleur";
+FO_TAG_NPC_SSG = "Marine super-fusil";
+FO_TAG_NPC_SHOTGUN = "Marine fusilleur";
+FO_TAG_NPC_UNMAKE0 = "Marine unmaker LV0";
+FO_TAG_NPC_UNMAKE1 = "Marine unmaker LV1";
+FO_TAG_NPC_UNMAKE2 = "Marine unmaker LV2";
+FO_TAG_NPC_UNMAKE3 = "Marine unmaker LV3";
+
+FO_OB_NPC = "%o a été(e) tué(e) par des tirs ami. Salopiaud !";
+
+//////////////////////////////////////////////////////////////////
+//Nécrologies pour les démons
+
+FO_OB_STEALTHBABY = "%o à cru(e) avoir aperçu un \crArachnotron\c-.";
+FO_OB_STEALTHVILE = "%o à cru(e) avoir aperçu un \crArchvile\c-.";
+FO_OB_STEALTHBARON = "%o à cru(e) avoir aperçuu un \crBaron infernale\c-.";
+FO_OB_STEALTHCACO = "%o à cru(e) avoir aperçu un \crCacodémon\c-.";
+FO_OB_STEALTHCHAINGUY = "%o à cru(e) avoir aperçu un \crZombie commando\c-.";
+FO_OB_STEALTHDEMON = "%o à cru(e) avoir aperçu un \crDémon\c-.";
+FO_OB_STEALTHKNIGHT = "%o à cru(e) avoir aperçu un \crChevalier de l'enfer\c-.";
+FO_OB_STEALTHIMP = "%o à cru(e) avoir aperçu un \crDiablotin\c-.";
+FO_OB_STEALTHFATSO = "%o à cru(e) avoir aperçu un \crMancubus\c-.";
+FO_OB_STEALTHUNDEAD = "%o à cru(e) avoir aperçu un \crRevenant\c-.";
+FO_OB_STEALTHSHOTGUY = "%o à cru(e) avoir aperçu un \crZombie sergeant\c-.";
+FO_OB_STEALTHZOMBIE = "%o à cru(e) avoir aperçu un \crZombie\c-.";
+
+FO_OB_DEMONHIT = "%o a été(e) mordu(e) par un \crDémon\c-.";
+FO_OB_SPECTREHIT = "%o a été(e) dévoré(e) par un \crSpectre\c-.";
+FO_OB_SPECTREHIT_NIGHTMARE = ​​"%o a été(e) traqué(e) par un \crSpectre cauchemardesque\c-.";
+FO_OB_WRAITH = "%o a été(e) ouvert(e) en deux par une \crApparition\c-.";
+FO_OB_BUTCHER = "%o a été(e) vidé(e) par un \crBoucher\c-.";
+FO_OB_HOUND = "%o a été(e) brûlé(e) par un \crCerbère\c-.";
+FO_OB_HOUNDHIT = "%o a été(e) réduit(e) en \crpâté pour chien\c-.";
+FO_OB_ACID = "%o a été(e) dissout(e) par un \crDémon acide\c-.";
+FO_OB_ACIDHIT = "%o a été(e) mutilé(e) par un \crDémon acide\c-.";
+FO_OB_ZOMBIE = "%o a été(e) tué(e) par un \crZombie\c-.";
+FO_OB_ZOMBIEMARINE = "%o a été(e) tué(e) par un \crZombie marine\c-.";
+FO_OB_SHOTGUY = "%o a été(e) tué(e) par un \crZombie sergeant\c-.";
+FO_OB_SSGGUY = "%o s'est fait(e) laminé(e) par un \crZombie doubles canon\c-.";
+FO_OB_PLASMAGUY = "%o a été(e) désinégré(e) sur place par un \crColonel zombie\c-.";
+FO_OB_BFGGUY = "%o a été(e) illuminé(e) par une \crexplosion de BFG\c-.";
+FO_OB_HUSK = "\crLa horde\c- a consommé %o.";
+FO_OB_VILE = "%o a été(e) incinéré'e) par un \crArchvile\c-.";
+FO_OB_RESURRECTOR = "%o encourt désormais la damnation éternelle des griffes du \crRésurrecteur infernal\c-.";
+FO_OB_HELLSTORM = "%o a été(e) déchiré(e) par une \crTempête infernale\c-.";
+FO_OB_FLESH = "%o s'est vu(e)son sang bouilli par un \crSorcier de chair\c-.";
+FO_OB_UNDEAD = "%o était à deux doigts d'esquiver la boule de feu du \crRevenant\c-.";
+FO_OB_UNDEADHIT = "%o à pris une claque monumentale de la part d'un \crRevenant\c-.";
+FO_OB_FATSO = "%o a été(e) écrasé(e) par un \crMancubus.\c-";
+FO_OB_CHAINGUY = "%o s'est fait(e) transformé(e) en passoire par un \crZombie commando\c-.";
+FO_OB_SKULL = "%o a été(e) effrayé(e) par une \crÂme perdue\c-.";
+FO_OB_STALKER = "%o n'avait pas vu le \crHarceleur\c-.";
+FO_OB_TRITE = "%o a été(e) empoisonné(e) par une \crAraignée infernale\c-.";
+FO_OB_FORGOTTEN = "%o a été(e) électrocuté(e) par un \crOublié\c-.";
+FO_OB_IMP = "%o a été(e) brulé(e) au quatrième degré par un \crDiablotin\c-.";
+FO_OB_IMPHIT = "%o a été(e) tailladé(e) en pièces par un \crDiablotin\c-.";
+FO_OB_IMP_NIGHTMARE = ​​"%o a été(e) brûlé(e) au quatrième degré par un \crDiablotin cauchemardesque\c-.";
+FO_OB_IMPHIT_NIGHTMARE = ​​"%o a été(e) tailladé(e) en pièces par un \crDiablotin cauchemardesque\c-.";
+FO_OB_IMPALER = "%o a été(e) perforé(e) par un \crEmpaleur\c-.";
+FO_OB_IMPALERHIT = "%o a été(e) empalé(e) vivant(e)\c-.";
+FO_OB_HARVESTER = "%o a rendu(e) son âme à un \crMoissoneur.\c-";
+FO_OB_CACO = "%o a été dévoré(e) par un \crCacodémon.\c-";
+FO_OB_CACOHIT = "%o s'est approché(e) un peu trop près d'un \crCacodémon\c-.";
+FO_OB_CACO_NIGHTMARE = ​​"%o a flambé(e) devant un \crCacodémon cauchemardesque\c-.";
+FO_OB_CACOHIT_NIGHTMARE = ​​"%o a été(e) dévoré(e) par un \crCacodémon cauchemardesque\c-.";
+FO_OB_FALLEN = "%o a été(e) carbonisé(e) par un \crAnge déchu\c-.";
+FO_OB_ELEMENTAL = "%o s'est approché trop près d'un \crDoloris\c-.";
+FO_OB_ELEMENTAL_NIGHTMARE ="%o a été tourmenté par un \crAgonis\c-.";
+FO_OB_PEST = "%o est tombé face aux armes chimiques de la \crPeste\c-.";
+FO_OB_PESTHIT = "%o à gouté aux poings empoisonés de la \crPeste\c-'\.";
+FO_OB_BARON = "%o s'est fait(e) brutalisé(e) par un \crBaron infernale\c-.";
+FO_OB_BARONHIT = "%o s'est fait(e) victimisé(e) par un \crBaron infernale\c-.";
+FO_OB_KNIGHT = "%o a été(e) poutré(e) par un \crChevalier de l'enfer\c-.";
+FO_OB_KNIGHTHIT = "%o a été(e) écartelé(e) par un \crChevalier de l'enfer\c-.";
+FO_OB_KNIGHTMARE = "%o a été(e) carbonisé(e) par un \crChevalier cauchemardesque\c-.";
+FO_OB_KNIGHTMAREHIT = "%o a été(e) mutilé(e) par un \crChevalier cauchemardesque\c-.";
+FO_OB_BRUISER = "%o a été(e) secoué(e) par un \crFracasseur\c-.";
+FO_OB_BELPHEGOR = "%o a été(e) anéanti(e) par un \crBelphégor\c-.";
+FO_OB_SPIDER = "%o est resté(e) en admiration devant le \crCerveau arachéen\c-.";
+FO_OB_SPIDERHIT = "%o a été(e) écrasé'e) par un pied\c-.";
+FO_OB_ERADICATOR = "\crL'Eradicateur\c- a défait %o\c-.";
+FO_OB_MOTHER = "%o a été(e) anéanti(e) par la \crMère de tous les démons\c-.";
+FO_OB_BABY = "%o s'est fait(e) vaporisé(e) par un \crArachnotron\c-.";
+FO_OB_NIGHTCRAWLER = "%o a été(e) tué(e) par une \crCyber-Veuve noire\c-.";
+FO_OB_CYBORG = "%o a été(e) soulvé(e) par un \crDémon-Cybernétique\c-.";
+FO_OB_ANNIHILATOR = "\crL'Annihilator\c- a emporté %o avec ses roquettes\c-.";
+FO_OB_WOLFSS = "%o a été(e) exterminé(e) par un \crNazi\c-.";
+FO_OB_GHOST = "%o a été(e) hanté(e) par un \crÉsprit frappeur\c-.";
+FO_OB_CARRION = "\crLa Horde\c- a infecté %o\c-.";
+FO_OB_THING = "%o a été(e) réarangé(e) par \crune chose\c-.";
+FO_OB_EVILEYE = "%o a regardé(e) un \crœil vindicateur\c- pendant trop longtemps...";
+FO_OB_EVILTREE = "%o a été(e) empalé(e) par un \crYatevéo\c-.";
+FO_OB_HANGMAN = "%o a été(e) pris en embuscade par un \crPendu\c-.";
+FO_OB_SUPERFALLEN = "%o a été(e) immolé(e) par un \crDéchu suprême\c-.";
+//	OB_DOG = "%o a été mutilé par un Chien.";
+
+//////////////////////////////////////////////////////////////////
+//Nom des objects décoratifs
+
+FO_TAG_EXPLOSIVEBARREL = "Barril éxplosif";
+FO_TAG_TROWEDBARREL = "Un barril particulièrement volatile!";
+
+//////////////////////////////////////////////////////////////////
+//Verrous pour la carte finale BD64
+
+FO_LOCK_ORANGE = "\ciVous n'avez pas la possibilité de l'activer...";
+FO_LOCK_PURPLE = "\ctVous n'avez pas la possibilité de l'activer...";
+FO_LOCK_BLUE = "\cvVous n'avez pas la possibilité de l'activer...";

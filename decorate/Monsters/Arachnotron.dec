@@ -1,10 +1,10 @@
 Actor 64Arachnotron : Arachnotron Replaces Arachnotron
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Radius 40
 Speed 11
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
@@ -12,8 +12,8 @@ PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 BloodType "BD64ArachnotronBlood"
-DropItem "DemonEssenceSpawner"
-Tag "Arachnotron"
+//DropItem "DemonEssenceSpawner"
+Tag "$FO_TAG_SPIDER"
 Obituary "$FO_OB_BABY"
 +NOBLOODDECALS
 +NEVERFAST
@@ -125,7 +125,7 @@ Obituary "$FO_OB_BABY"
 
 Actor 64StealthArachnotron : 64Arachnotron Replaces StealthArachnotron
 {
-Tag "Stealth Arachnotron"
+Tag "$FO_TAG_STEALTHBABY"
 Obituary "$FO_OB_STEALTHBABY"
 +STEALTH
 }

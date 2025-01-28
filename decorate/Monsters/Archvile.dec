@@ -1,8 +1,8 @@
 Actor 64Archvile : Archvile Replaces Archvile
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.64
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",220
 PainChance "Kick",255
@@ -10,9 +10,9 @@ PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Head",0.9
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 Species "Archvile"
-Tag "Archvile"
+Tag "$FO_TAG_VILE"
 Obituary "$FO_OB_VILE"
 +NOBLOODDECALS
 +NEVERFAST
@@ -72,7 +72,7 @@ Obituary "$FO_OB_VILE"
 		TNT1 A 0 A_PlaySound("Misc/Gibbed",CHAN_BODY)
 		POL5 A -1
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -125,7 +125,7 @@ Obituary "$FO_OB_VILE"
 	Death.Rifle:
 		TNT1 A 0 A_Jump(128,"Death")
 	Death.Cutless:
-		TNT1 A 0 A_Jump(92,"Death.Heavy")
+		TNT1 A 0 A_Jump(85,"Death.Heavy")
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
@@ -255,7 +255,7 @@ DropItem "None"
 	Death.Rifle:
 		TNT1 A 0 A_Jump(128,"Death")
 	Death.Cutless:
-		TNT1 A 0 A_Jump(92,"Death.Heavy")
+		TNT1 A 0 A_Jump(85,"Death.Heavy")
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
@@ -431,7 +431,7 @@ RenderStyle Add
 
 Actor 64StealthArchvile : 64Archvile Replaces StealthArchvile
 {
-Tag "Stealth Archvile"
+Tag "$FO_TAG_STEALTHVILE"
 Obituary "$FO_OB_STEALTHVILE"
 +STEALTH
 }

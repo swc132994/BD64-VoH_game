@@ -1,21 +1,21 @@
 Actor 64HellKnight : HellKnight Replaces HellKnight
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",220
 PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 MeleeRange 60	//default 44
 Species "HellKnight"
 BloodType "Brutal_BloodGreen"
 HitObituary "$FO_OB_KNIGHTHIT"
 Obituary "$FO_OB_KNIGHT"
-Tag "Hell Knight"
+Tag "$FO_TAG_KNIGHT"
 +NOBLOODDECALS
 +NEVERFAST
 	states
@@ -63,7 +63,7 @@ Tag "Hell Knight"
 		TNT1 A 0 A_PlaySound("Misc/Gibbed",CHAN_BODY)
 		A038 A -1
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -81,16 +81,34 @@ Tag "Hell Knight"
 		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		BOSB N -1 A_BossDeath
 		Stop
-	Death.SSG:
-		BOS2 H 2 A_Recoil(6)
-		TNT1 A 0 A_JumpIfCloser(170,"XDeath")
+	Death.Shotgun:
+		BOS2 H 2 A_Recoil(5)
+		TNT1 A 0 A_Jump(128,"Death")
+		TNT1 A 0 A_JumpIfCloser(1000,"Death.ShotgunNoArm")
 		Goto Death
+	Death.SSG:
+		BOS2 H 2 A_Recoil(9)
+		TNT1 A 0 A_JumpIfCloser(170,"XDeath")
+		TNT1 A 0 A_Jump(128,"Death")
+		TNT1 A 0 A_JumpIfCloser(1000,"Death.ShotgunNoArm")
+		Goto Death
+	Death.Rifle:
+		TNT1 A 0 A_Jump(128,"Death")
+	Death.CutLess:
+		TNT1 A 0 A_Jump(85,"Death")
+	Death.ShotgunNoArm:
+		TNT1 A 0 A_CustomMissile("XDeathHKArm",50,0,random(00,360),2,random(10,50))
+		TNT1 A 0 A_XScream
+		TNT1 A 0 A_NoBlocking
+		HNAL N 1 A_SpawnItemEx("64HellKnightNoArm",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
+		Stop
 	Death.Head:
 		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeathEyesGreen",40,0,random(0,360),2,random(-5,5))
 		TNT1 AAAAAA 0 A_CustomMissile("SmallBrainPieceGreen",56,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath3Green",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("HeadshotKnightHorn",56,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		BS2H ABCDE 5
@@ -98,8 +116,6 @@ Tag "Hell Knight"
 		BS2H F 35 A_BossDeath
 		BS2H F -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	Death.Cutless:
-		TNT1 A 0 A_Jump(85,"Death")
 	Death.SuperFists:
 	Death.SuperKick:
 		TNT1 A 0 A_Jump(170,"Death.Head")
@@ -144,6 +160,128 @@ Tag "Hell Knight"
 		"####" "#" 0 A_KillMaster
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
+	}
+}
+
+Actor 64HellKnightNoArm : 64HellKnight
+{
+Health 60
+Mass 1500
+DropItem "None"
+DamageFactor "Cutless",0.6
+-SOLID
+-COUNTKILL
++FRIENDLY
++NOTARGET
++NOPAIN
+	States
+	{
+	Spawn:
+		HNAL N 0
+		HNAL N 8 A_FaceTarget
+		TNT1 A 0 A_Pain
+		TNT1 AAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_SpawnItemEx("HeadshotTarget16GREEN",0,0,70)
+		HNAL MN 8 A_FaceTarget
+		TNT1 AAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_SpawnItemEx("HeadshotTarget16GREEN",0,0,70)
+		HNAL MN 8 A_FaceTarget
+		TNT1 A 0 A_Pain
+		TNT1 AAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_SpawnItemEx("HeadshotTarget16GREEN",0,0,70)
+		HNAL MN 8 A_FaceTarget
+		TNT1 AAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_SpawnItemEx("HeadshotTarget16GREEN",0,0,70)
+		HNAL MN 8 A_FaceTarget
+		TNT1 A 0 A_Pain
+		TNT1 AAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_SpawnItemEx("HeadshotTarget16GREEN",0,0,70)
+		HNAL MN 8 A_FaceTarget
+		TNT1 AAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_SpawnItemEx("HeadshotTarget16GREEN",0,0,70)
+		HNAL MN 8 A_FaceTarget
+		TNT1 A 0 A_Pain
+		TNT1 AAAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8GREEN",0,0,70)
+		HNAL M 8 A_FaceTarget
+	Death:
+		TNT1 A 0 A_Die
+		TNT1 A 0 A_Scream
+		TNT1 A 0 A_NoBlocking
+		HNAL ABCDE 5
+		HNAL F 35
+		HNAL F -1 A_SpawnItemEx("GrowingBloodPoolGREEN")
+		Stop
+	Death.Shotgun:
+		HNAL N 2 A_Recoil(5)
+		Goto Death
+	Death.SSG:
+		HNAL N 2 A_Recoil(9)
+		TNT1 A 0 A_JumpIfCloser(170,"XDeath")
+		Goto Death
+	Death.Rifle:
+		Goto Death
+	Death.CutLess:
+		TNT1 A 0 A_Jump(85,"Death")
+		Goto XDeath
+	Death.Head:
+		TNT1 AA 0 A_CustomMissile("XDeath1GREEN",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2GREEN",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeathEyesGreen",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAAAA 0 A_CustomMissile("SmallBrainPieceGREEN",56,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3GREEN",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("HeadshotKnightHorn",56,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_XScream
+		TNT1 A 0 A_NoBlocking
+		HNHS ABCDE 5
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		HNHS F 35 A_BossDeath
+		HNHS F -1 A_SpawnItemEx("GrowingBloodPoolGreen")
+		Stop
+	XDeath:
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherGreen",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Green",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Green",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Green",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Green",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineGreen",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistGreen",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("BloodmistBigGreen",45,0,random(0,360),2,random(10,90))
+		TNT1 A 0 A_CustomMissile("XDeathHKArm",52,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_SpawnItemEx("XDeathHKLegs",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_XScream
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 A_BossDeath
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		KGB1 C 2 A_Recoil(8)
+		KGB1 C 2 ThrustThingZ(0,45,0,0)
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
+		KGB1 C 2 A_CheckFloor("LANDAFTERXDEATH2")
+		Wait
+	Death.Plasma: Death.BFGSplash: Death.Flames:
+		TNT1 A 0 A_XScream
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 A_Stop
+		TNT1 AAAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistSmallGREEN",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",30,0,random(0,360),2,random(0,180))
+		TNT1 AAAAAAAAAAAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",30,0,random(0,360),2,random(0,360))
+		TNT1 AAAAA 0 A_CustomMissile("ExplosionParticleVeryFast",30,0,random(0,360),2,random(0,360))
+		TNT1 AA 0 A_CustomMissile("CarbonizedSmoke1",30,0,random(0,360),2,random(10,90))
+		TNT1 A 0 A_SpawnItemEx("BarrelExplosionSmokeColumn",random(-10,10),random(-10,10),20)
+		TNT1 A 0 A_SpawnItemEx("BarrelExplosionSmokeColumn")
+		TNT1 A 0 A_SpawnItemEx("BurningFleshEffect2",0,0,5)
+		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
+		HKPD ABCDEF 4
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		HKPD F -1 A_BossDeath
+		Stop
+	Raise:
+		BOS2 NMLKJI 5
+		BOS2 I 1 A_SpawnItemEx("64HellKnight",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
+		Stop
 	}
 }
 
@@ -217,7 +355,7 @@ RenderStyle Add
 
 ACTOR 64StealthHellKnight : 64HellKnight Replaces StealthHellKnight
 {
-Tag "Stealth Hell Knight"
+Tag "$FO_TAG_STEALTHKNIGHT"
 Obituary "$FO_OB_STEALTHKNIGHT"
 HitObituary "$FO_OB_STEALTHKNIGHT"
 +STEALTH

@@ -1,6 +1,6 @@
 ACTOR 64Carrion 19136
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.7
 Health 60
 
@@ -10,7 +10,7 @@ Height 56
 Mass 400
 MaxTargetRange 250
 PainChance 100
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
@@ -24,9 +24,9 @@ ActiveSound "Carrion/Active"
 DeathSound "Carrion/Detonate"
 PainSound "Carrion/SCREAMING"
 AttackSound "Carrion/Active"
-DropItem "SOULSPAWNER"
-Tag "Carrion Zombie"
-Obituary "The Horde infected %o."
+//DropItem "SOULSPAWNER"
+Tag "$FO_TAG_CARRION"
+Obituary "$FO_OB_CARRION"
 MONSTER
 +FLOORCLIP
 +NOBLOODDECALS

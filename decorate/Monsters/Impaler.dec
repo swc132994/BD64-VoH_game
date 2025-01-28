@@ -1,6 +1,6 @@
 Actor 64Impaler 19140
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Health 800
 Height 64
@@ -13,9 +13,9 @@ PoisonDamage 128 //Poison Damage Duration from Melee About 4-5 Seconds
 SeeSound "Impaler/See"
 PainSound "Impaler/Pain"
 DeathSound "Impaler/Death"
-Obituary "%o was punctured by an Impaler."
-HitObituary "%o was impaled by an Impaler."
-Tag "Impaler"
+Obituary "$FO_OB_IMPALER"
+HitObituary "$FO_OB_IMPALERHIT"
+Tag "$FO_TAG_IMPALER"
 PainChance 32
 PainChance "SuperFists",220
 PainChance "Kick",255
@@ -23,7 +23,7 @@ PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Plasma",0.7
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodGreen"
 MONSTER
 +MOVEWITHSECTOR
@@ -194,7 +194,7 @@ height 6
 Radius 3
 Speed 80
 Damage 2
-Obituary "%o got nailed!"
+Obituary "$FO_OB_IMPALER"
 SeeSound "Impaler/Attack"
 Decal "BulletDecalNew1"
 DamageType "Bullet"

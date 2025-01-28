@@ -3,7 +3,7 @@ splash nukage
 {
 smallclass		NukageSplashBase
 smallclip		2
-//smallsound	world/lavasizzlesmall
+smallsound		world/lavasizzlesmall
 
 baseclass		NukageSplashBase
 chunkclass		NukageSplashBase	//was sludgechunk
@@ -51,7 +51,7 @@ splash blood
 {
 smallclass		BloodSplashBase3
 smallclip		2
-//smallsound	world/sludgegloopsmall
+smallsound		world/sludgegloopsmall
 
 baseclass		bloodsplashbase3
 chunkclass		bloodsplashbase3	//was bloodsplash
@@ -128,7 +128,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/carpet
+//sound			floor/carpet
 NoAlert
 }
 
@@ -144,7 +144,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/dirt
+//sound			floor/dirt
 NoAlert
 }
 
@@ -160,7 +160,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/gravel
+//sound			floor/gravel
 NoAlert
 }
 
@@ -176,7 +176,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/metal
+//sound			floor/metal
 NoAlert
 }
 
@@ -192,7 +192,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/met2
+//sound			floor/met2
 NoAlert
 }
 
@@ -208,7 +208,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/rock
+//sound			floor/rock
 NoAlert
 }
 
@@ -224,7 +224,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/slimy
+//sound			floor/slimy
 NoAlert
 }
 
@@ -240,7 +240,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/snow
+//sound			floor/snow
 NoAlert
 }
 
@@ -256,7 +256,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/hard
+//sound			floor/hard
 NoAlert
 }
 
@@ -272,7 +272,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/tile
+//sound			floor/tile
 NoAlert
 }
 
@@ -288,7 +288,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/tile2
+//sound			floor/tile2
 NoAlert
 }
 
@@ -304,7 +304,7 @@ chunkxvelshift	0
 chunkyvelshift	0
 chunkzvelshift	0
 chunkbasezvel	0
-sound			floor/wood
+//sound			floor/wood
 NoAlert
 }
 

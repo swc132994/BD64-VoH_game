@@ -438,7 +438,7 @@ Decal "Crack"
 		TNT1 A 0 Radius_Quake(4,6,0,5,0)
 		TNT1 A 15
 		Stop
-	XDeath:
+	XDeath: 
 		TNT1 A 0 A_PlaySound("SUPERFIST",CHAN_WEAPON)
 		TNT1 AAAAAA 0 A_CustomMissile("MeleeSmoke",0,0,random(0,360),2,random(0,360))
 		TNT1 A 0 Radius_Quake(4,6,0,5,0)

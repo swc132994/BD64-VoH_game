@@ -10,8 +10,8 @@ Damage 3
 DeathSound "polt/break1"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOBLOOD
 +DONTMORPH
@@ -21,6 +21,7 @@ MONSTER
 -NOGRAVITY
 +NEVERFAST
 +NOICEDEATH
++NOTARGET
 	States
 	{
 	Spawn:
@@ -192,7 +193,7 @@ ACTOR poltshard2 : poltshard1
 	}
 }
 
-ACTOR 64Poltergeist2
+ACTOR 64Poltergeist2	//explosive barrel
 {
 Scale 0.8
 Health 20
@@ -202,10 +203,10 @@ Mass 45
 Speed 0
 Damage 20
 DeathSound "world/barrelx"
-Obituary "%o was killed by a poltergeist."
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Tag "Poltergeist"
 MONSTER
 +DONTHARMCLASS
 +NOBLOOD
@@ -216,6 +217,7 @@ MONSTER
 +NEVERFAST
 +NOICEDEATH
 +NOPAIN
++NOTARGET
 	States
 	{
 	Spawn:
@@ -271,7 +273,7 @@ MONSTER
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_SpawnItemEx("64BarrelExplosion")
 		TNT1 A 0 A_SpawnItemEx("DetectBarrelCrater")
-		BEXP D 3 Bright
+		BEXP D 3 Bright Light("IMPBALL_X6")
 		TNT1 A 0 A_Explode(100,200)
 		TNT1 A 0 A_CheckSight("Finish")
 		TNT1 A 0 A_SpawnItemEx("BarrelExplosionSmokeColumn",random(-10,10),random(-10,10),20)
@@ -279,42 +281,43 @@ MONSTER
 		TNT1 A 0 A_SpawnItemEx("LiquidExplosionEffectSpawner")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		BEXP E 3 Bright
+		BEXP E 3 Bright Light("IMPBALL_X4")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		BEXP F 3 Bright
+		BEXP F 3 Bright Light("IMPBALL_X2")
+		TNT1 AAAAAAAAAAAAAAA 0 A_CustomMissile("BurningBarrelPiece",42,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X1")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X1")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X1")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X1")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X2")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X2")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X3")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X3")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X4")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X4")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X5")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X5")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X6")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X6")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 3
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
@@ -342,8 +345,8 @@ Damage 3
 DeathSound "polt/break1"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOPAIN
 +NOBLOOD
@@ -353,10 +356,12 @@ MONSTER
 -NOGRAVITY
 +NEVERFAST
 +NOICEDEATH
++NOTARGET
 	States
 	{
 	Spawn:
 		64CN AA 0 NoDelay A_SpawnItemEx("LightShaft2BrighterLess",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 	Stay:
 		64CN AB 3 Light("SMALLREDTORCH") A_LookEx(LOF_NOSOUNDCHECK,0,192,0,360)
 		Loop
@@ -451,10 +456,10 @@ DeathHeight 67
 Mass 0x7FFFFFFF
 Speed 0
 Damage 3
-Tag "Poltergeist"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 DeathSound "polt/break2"
 MONSTER
 +NOPAIN
@@ -466,6 +471,7 @@ MONSTER
 -NOGRAVITY
 +NEVERFAST
 +NOICEDEATH
++NOTARGET
 	States
 	{
 	Spawn:
@@ -540,8 +546,8 @@ Damage 3
 DeathSound "polt/break2"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOPAIN
 +NOBLOOD
@@ -552,6 +558,7 @@ MONSTER
 -NOGRAVITY
 +NEVERFAST
 +NOICEDEATH
++NOTARGET
 	States
 	{
 	Spawn:
@@ -663,7 +670,7 @@ Mass 2000
 Damage 3
 PoisonDamage 30
 DamageType "Poison"
-Obituary "%o stared into an Evil Eye for too long..."
+Obituary "$FO_OB_EVILEYE"
 PROJECTILE
 -NOGRAVITY
 +RIPPER
@@ -706,7 +713,7 @@ Mass 3000
 Damage 2
 PoisonDamage 20
 DamageType "Poison"
-Obituary "%o stared into an Evil Eye for too long..."
+Obituary "$FO_OB_EVILEYE"
 RenderStyle Translucent
 Alpha 0.33
 PROJECTILE
@@ -749,7 +756,7 @@ Mass 4000
 Damage 1
 PoisonDamage 10
 DamageType "Poison"
-Obituary "%o stared into an Evil Eye for too long..."
+Obituary "$FO_OB_EVILEYE"
 RenderStyle Translucent
 Alpha 0.15
 PROJECTILE
@@ -850,8 +857,8 @@ Mass 0x7FFFFFFF
 Speed 0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOPAIN
 +DONTHARMCLASS
@@ -863,6 +870,7 @@ MONSTER
 -NOGRAVITY
 +NEVERFAST
 +NOICEDEATH
++NOTARGET
 	States
 	{
 	Spawn:
@@ -962,8 +970,8 @@ Mass 0x7FFFFFFF
 Speed 0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOPAIN
 +DONTHARMCLASS
@@ -975,6 +983,7 @@ MONSTER
 -NOGRAVITY
 +NEVERFAST
 +NOICEDEATH
++NOTARGET
 	States
 	{
 	Spawn:
@@ -1033,8 +1042,8 @@ Mass 0x7FFFFFFF
 Speed 0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOPAIN
 +DONTHARMCLASS
@@ -1046,6 +1055,7 @@ MONSTER
 -NOGRAVITY
 +NEVERFAST
 +NOICEDEATH
++NOTARGET
 	States
 	{
 	Spawn:
@@ -1099,8 +1109,8 @@ Actor 64VenomEye1 : LostSoul
 scale 0.8
 Alpha 0.99
 RenderStyle Normal
-Tag "Venom Eye"
-Obituary "%o stared into an Evil Eye for too long..."
+Obituary "$FO_OB_EVILEYE"
+Tag "$FO_TAG_VENOMEYE"
 Damage 0
 PainSound "EvilEye/pain"
 DeathSound "EvilEye/death"
@@ -1114,6 +1124,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 -DONTFALL
 -COUNTKILL
 +NEVERFAST
++NOTARGET
 	States
 	{
 	Spawn:
@@ -1209,14 +1220,14 @@ DeathHeight 56
 radius 32
 Mass 5000
 Speed 0
-Tag "Possessed Tree"
-Obituary "%o was impaled by a Yateveo."
+Obituary "$FO_OB_EVILTREE"
+Tag "$FO_TAG_EVILTREE"
 BloodType "Brutal_BloodGreen"
 BloodColor "00 64 00"	//Hex value
 ActiveSound "UNMNROAM"
 PainSound "UNMNPAIN"
 DeathSound "UNMNDYIN"
-DamageFactor "Fire",1.5
+DamageFactor "Flames",1.5
 DamageFactor "chainsaw",2.0
 DamageFactor "Plasma",1.5
 DamageFactor "CauseWaterSplash",0.0
@@ -1234,6 +1245,7 @@ MONSTER
 +LOOKALLAROUND
 +DONTCORPSE
 +NEVERFAST
++NOTARGET
 	States
 	{
 	Spawn:
@@ -1288,7 +1300,7 @@ MONSTER
 actor BrambleTargetBase : HeadshotTargetBase
 {
 Height 56
-Tag "Tree Bramble"
+Tag "$FO_TAG_EVILTREEROOT"
 BloodType "Brutal_BloodGreen"
 -SERVERSIDEONLY
 -THRUACTORS
@@ -1344,17 +1356,16 @@ Health 50
 Mass 5
 meleerange 45
 MaxTargetRange 60
-Obituary "%o was impaled by a Yateveo."
-DeathSound "EvilEye/pain"
+Obituary "$FO_OB_EVILTREE"
+Tag "$FO_TAG_EVILTREEROOT"
 BloodType "Brutal_BloodGreen"
 BloodColor "00 64 00"	//Hex value
 Painchance 128
-DamageFactor "Fire",1.5
+DamageFactor "Flames",1.5
 DamageFactor "chainsaw",2.0
 DamageFactor "Plasma",1.5
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Tag "Possessed Tree Bramble"
 ActiveSound "floor/slimy"
 DeathSound "Misc/Gibbed"
 MONSTER
@@ -1459,7 +1470,8 @@ MONSTER
 actor 64Hangman
 {
 Scale 0.7
-obituary "%o was ambushed by a hanged man."
+Obituary "$FO_OB_HANGMAN"
+Tag "$FO_TAG_HANGMAN"
 health 150
 radius 13
 height 46
@@ -1474,7 +1486,6 @@ MaxTargetRange 256
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 MaxTargetRange 896
-Tag "Hanged Man"
 MONSTER
 +NOGRAVITY
 +SPAWNCEILING
@@ -1485,6 +1496,7 @@ MONSTER
 +NOBLOODDECALS
 -COUNTKILL
 +NEVERFAST
++NOTARGET
 	states
 	{
 	Spawn:

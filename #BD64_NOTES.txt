@@ -33,8 +33,20 @@ NEW ACTOR IDS
 ---------------
 
 NAME				TID		SPAWNID
--------------------------------
+-----------------------------------
 
+//PROPS
+64YellowTorch			9917
+64YellowTorchSmall		9918
+64WallTorchRed			9930
+64WallTorchBlue			9933
+64WallTorchGreen		9935
+64WallTorchYellow		9936
+BD64HangingTechLampb	9923
+BD64CeilingLightb		9924
+BD64GroundFire			9929
+
+//MONSTERS
 NIGHT IMP			19989	13
 NIGHT SPECTRE		1000	155
 NIGHT CACO			19990	156
@@ -42,11 +54,10 @@ NIGHT CACO			19990	156
 ZOMBIE MARINE					(Replaces WolfensteinSS)	84		116
 INTRO MARINE					(Replaces MarinePistol)		9104	151
 SSG GUY				19110	170
-
-HELLHOUND GEC		19117	177		{Hound Chooser 19125 185
-HELLHOUND ALT		19116	176		{Hound Chooser 19125 185
+HOUND CHOOSER		19125	185
 ANNIHILATOR			19991	157
 MOTHERDEMON			9897	17
+Motherdemon_Final	9898
 ERADICATOR			19119
 BELPHEGOR 			11053
 64BFGGUY			19122
@@ -73,6 +84,13 @@ Trite				19139
 Impaler				19140
 Harverster			19141
 
+64MarineUnmaker		9940
+64MarineUnmaker1	9941
+64MarineUnmaker2	9942
+64MarineUnmaker3	9943
+
+//WEAPONS & ITEMS
+
 Gauss Cannon spawn	19134
 MP40 SPAWNER		19124
 SMG SPAWNER			19121
@@ -84,8 +102,10 @@ WPNPOWER2			9906	163
 WPNPOWER3			9907	164
 WPNPOWER4			9908
 WPNPOWER5			9909
+64SCANNER			9967
+64HellPotion		1657
 
-Monster spawn list
+MONSTER SPAWN LIST
 ------------------
 //Zombies
 64ZombieMan

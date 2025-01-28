@@ -6,7 +6,7 @@ Mass 125
 DamageType "Extreme"
 Damagefactor "Melee",0
 Damagefactor "Kick",0
-Tag "Explosive Barrel"
+Tag "$FO_TAG_EXPLOSIVEBARREL"
 +PUSHABLE
 +SLIDESONWALLS
 	States
@@ -27,7 +27,7 @@ Tag "Explosive Barrel"
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_SpawnItemEx("64BarrelExplosion")
 		TNT1 A 0 A_SpawnItemEx("DetectBarrelCrater")
-		BEXP D 3 Bright
+		BEXP D 3 Bright Light("IMPBALL_X6")
 		TNT1 A 0 A_Explode(100,200)
 		TNT1 A 0 A_CheckSight("Finish")
 		TNT1 A 0 A_SpawnItemEx("BarrelExplosionSmokeColumn",random(-10,10),random(-10,10),20)
@@ -35,48 +35,82 @@ Tag "Explosive Barrel"
 		TNT1 A 0 A_SpawnItemEx("LiquidExplosionEffectSpawner")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		BEXP E 3 Bright
+		BEXP E 3 Bright Light("IMPBALL_X4")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		BEXP F 3 Bright
+		BEXP F 3 Bright Light("IMPBALL_X2")
+		TNT1 AAAAAAAAAAAAAAA 0 A_CustomMissile("BurningBarrelPiece",42,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X1")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X1")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X1")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X1")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X2")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X2")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X3")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X3")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X4")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X4")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X5")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X5")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X6")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 0 A_SpawnItemEx("LongFlameParticleSpark",random(-16,16),random(-16,16),random(2,8),0,0,2)
-		TNT1 A 3
+		TNT1 A 3 Light("IMPBALL_X6")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 3
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
 	Finish:
 		TNT1 A 10
 		stop
+	}
+}
+
+ACTOR BurningBarrelPiece : BurningXDeath1
+{
+Scale 0.6
+Damage (1)
+Speed 15
+Gravity 0.8
+SeeSound "None"
+DeathSound "None"
+Decal "SmallerScorch"
++ACTIVATEPCROSS
++BOUNCEONWALLS
++NOBLOOD
++NOBLOODDECALS
++BLOODLESSIMPACT
+	States
+	{
+	Spawn:
+		FLRB P 0 NoDelay A_Jump(128,2)
+		TNT1 A 0 A_SetScale(0-ScaleX,ScaleY)	//FLIP IMAGE HORZ
+	Fly:
+		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
+		FLRB PQRSTU 2 A_SpawnItemEx("FlameTrails")
+		Loop
+	Death:
+		TNT1 A 0 A_SpawnItemEX("BarrelExplosionSmokeColumn",0,0,1)
+		TNT1 A 0 A_Jump(256,1,2)
+		FLRB Q -1 A_SpawnItemEx("TinyBurningPiece")
+		Stop
+		FLRB Q -1 A_SpawnItemEx("TinyBurningPiece2")
+		Stop
 	}
 }
 
@@ -87,10 +121,9 @@ Radius 65
 Height 8
 Speed 20
 Damage 20
-DamageType "Fire"
+DamageType "Flames"
 Alpha 0.6
 Renderstyle Translucent
-+RANDOMIZE
 +DEHEXPLOSION
 	states
 	{

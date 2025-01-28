@@ -1,4 +1,9 @@
-LISTMENU "MainMenu"
+AddOptionMenu "OptionsMenu"		//GZDOOM/Q-ZANDRONUM ONLY FEATURE
+{
+	Submenu "BD64 Options","BD64MENU"
+}
+
+/*LISTMENU "MainMenu"
 {
 	IfGame(Doom,Chex)
 	{
@@ -30,26 +35,26 @@ LISTMENU "MainMenu"
 	}
 	IfGame(Doom,Strife,Chex)
 	{
-		TextItem "NEW GAME","n","PlayerclassMenu"
+		TextItem "$MNU_NEWGAME","n","PlayerclassMenu"
 		ifOption(SwapMenu)
 		{
-			TextItem "LOAD GAME","l","LoadGameMenu"
-			TextItem "SAVE GAME","s","SaveGameMenu"
-			TextItem "OPTIONS","o","OptionsMenu"
+			TextItem "$MNU_LOADGAME","l","LoadGameMenu"
+			TextItem "$MNU_SAVEGAME","s","SaveGameMenu"
+			TextItem "$MNU_OPTIONS","o","OptionsMenu"
 			TextItem "BD64 Options","b","BD64Menu"
 		}
 		else
 		{
-			TextItem "OPTIONS","o","OptionsMenu"
-			TextItem "BD64 Options","b","BD64Menu"
-			TextItem "LOAD GAME","l","LoadGameMenu"
-			TextItem "SAVE GAME","s","SaveGameMenu"
+			TextItem "$MNU_OPTIONS","o","OptionsMenu"
+			TextItem "$FO_MNU_64OPTIONS","b","BD64Menu"
+			TextItem "$MNU_LOADGAME","l","LoadGameMenu"
+			TextItem "$MNU_SAVEGAME","s","SaveGameMenu"
 		}
 		ifOption(ReadThis)
 		{
-			TextItem "READ THIS","r","ReadThisMenu"
+			TextItem "$MNU_INFO","r","ReadThisMenu"
 		}
-		TextItem "QUIT GAME","q","QuitMenu"
+		TextItem "$MNU_QUITGAME","q","QuitMenu"
 	}
 	IfGame(Heretic,Hexen)
 	{
@@ -59,339 +64,341 @@ LISTMENU "MainMenu"
 		TextItem "$MNU_INFO","i","ReadThisMenu"
 		TextItem "$MNU_QUITGAME","q","QuitMenu"
 	}
-}
+}*/
 
-ListMenu "PlayerclassMenu"
-{
-	StaticTextCentered 160, 15, "Choose Class:"
-	Position 50, 45
-	PlayerDisplay 140, 35, "FF 00 00", "FF 00 00"
+//ListMenu "PlayerclassMenu"
+//{
+//	StaticTextCentered 160, 15, "$FO_MNU_CLASS"
+//	Position 50, 45
+//	PlayerDisplay 140, 35, "FF 00 00", "FF 00 00"
 	// The rest of this menu will be set up based on the actual player definitions.
-}
+//}
+
+//ListMenu "SkillMenu"
+//{
+//	StaticTextCentered 160, 15, "$MNU_CHOOSESKILL"
+//	Position 50, 45
+//}
 
 OptionMenu "BD64Menu"
 {
-	Title "BRUTAL DOOM 64 OPTIONS"
-	StaticText "Some changes are not initialised automatically", 1
-	StaticText "Press \"Apply Changes\" for the changes to take effect",1
-	Command "Apply Changes","PukeName BD64Respawn"
+//	Title "$FO_64OPTIONS_MAIN"
+//	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+//	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
+//	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
+//	StaticText " "
+	StaticText "$FO_64OPTIONS_PRESET",1
+	StaticText "$FO_64MNU_BEFORE",1
+	StaticText "$FO_64MNU_APPLY",1
+	TextField "$FO_64MNU_LAST", "BD64_Preset"
+	StaticText "$FO_64MNU_COMFIRM",1
+	StaticText "$FO_64MNU_NOTHING",1
 	StaticText " "
-	StaticText "-------------------------------- Presets -------------------------------------",1
-	StaticText "You must be inside a level before pressing the buttons",1
-	StaticText "You also have to exit the menu each time you apply a preset",1
-	TextField "Last Preset Used =", "BD64_Preset"
-	StaticText "Option above is purely a confirmation of the preset successfully applying",1
-	StaticText "it does nothing",1
+	SafeCommand "$FO_64MNU_DEFAULT", "pukename DefaultCvars"
+	StaticText "$FO_64MNU_DEFAULT_TXT",1
+	SafeCommand "$FO_64MNU_CLASSICAL", "pukename ClassicalCvars"
+	StaticText "$FO_64MNU_CLASSICAL_TXT",1	
+	SafeCommand "$FO_64MNU_SWC", "pukename StevenCvars"
+	StaticText "$FO_64MNU_SWC_TXT1",1
+	StaticText "$FO_64MNU_SWC_TXT2",1
 	StaticText " "
-	SafeCommand "Default", "pukename DefaultCvars"
-	StaticText "The mod's default options",1
-	SafeCommand "Classical", "pukename ClassicalCvars"
-	StaticText "Tweaks the settings to be as vanilla as possible",1	
-	SafeCommand "SWC's Vision", "pukename StevenCvars"
-	StaticText "Adds new monsters and weapons with balanced settings,",1
-	StaticText "how the creator plays his own mod",1
+	StaticText "$FO_64MNU_RANDOM_TXT1",1
+	SafeCommand "$FO_64MNU_RANDOM", "pukename RandomCvars"
 	StaticText " "
-	StaticText "To set all monster/weapon/item spawners to random, press this",1
-	SafeCommand "Spawner Randomiser", "pukename RandomCvars"
+	StaticText "$FO_64OPTIONS_OPTIONS",1
 	StaticText " "
-	StaticText "-------------------------------- Options -------------------------------------",1
+//	Submenu "$FO_64MNU_OTHER_ITEMS",		"BrutalDoom64Item/WeaponOptions"
+	Submenu "$FO_64MNU_OHTHER_MONSTER",			"BrutalDoom64OptionsOtherMonster"
+	Submenu "$FO_64MNU_PERFORMANCE",		"BrutalDoom64OptionsPerformance"
+	Submenu "$FO_64MNU_LEVEL_OPTIONS",			"BD64MapOptions"
 	StaticText " "
-	Submenu "Other Item/Weapon Options",		"BrutalDoom64Item/WeaponOptions"
-	Submenu "Other Monster Options",			"BrutalDoom64OptionsOtherMonster"
-	Submenu "Performance & Misc. Options",		"BrutalDoom64OptionsPerformance"
-	Submenu "Map Options",						"BD64MapOptions"
+	StaticText "$FO_64OPTIONS_GAMEPLAY",1
 	StaticText " "
-	StaticText "-------------------------------- Gameplay -------------------------------------",1
-	StaticText " "
-	Submenu "Item/Weapon Spawner Options",		"BrutalDoom64OptionsItem/WeaponSpawner"	
-	Submenu "Monster Spawner Options",			"BrutalDoom64OptionsMonsterSpawner"	
+//	Submenu "$FO_64MNU_WEAPONS_SPAWN",		"BrutalDoom64OptionsItem/WeaponSpawner"	
+	Submenu "$FO_64MNU_MONSTER_SPAWN",			"BrutalDoom64OptionsMonsterSpawner"	
 	StaticText " "
 	StaticText ""
-	Submenu 	"Engine (GZD, Zand) Shortcuts",		"GZDShortcuts"
+	Submenu 	"$FO_64MNU_ENGINE",		"GZDShortcuts"
 }
 
-OptionMenu "BrutalDoom64OptionsItem/WeaponSpawner"
+/*OptionMenu "BrutalDoom64OptionsItem/WeaponSpawner"
 {
-	Title "Item/Weapon Spawner Options"
-	StaticText "Some changes are not initialised automatically", 1
-	StaticText "Press \"Apply Changes\" for the changes to take effect",1
-	Command "Apply Changes","PukeName BD64Respawn"
+	Title "$FO_64MNU_ITEMS_WEAPONS_SPAWN"
+	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
+	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 		StaticText " "
-		StaticText "Options to choose replacements of weapons and power-ups",1
-		StaticText "or set to appear randomly",1
+		StaticText "$FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1",1
+		StaticText "$FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2",1
 		StaticText ""
 	Option "Bonuses Spawner =","BonusRandomCvar","BonusRandomValue"
-		StaticText "Bonus by Default",1
-		StaticText "(hell potions are combined armour/health pickups)",1
+		StaticText "$FO_64MNU_BONUS",1
+		StaticText "$FO_64MNU_BONUS_TXT",1
 		StaticText ""
 	Option "Power-up spawner =","WpnPower_Spawner_Cvar","WpnPower_Spawner_Value"
-		StaticText "Power-up by Default",1
+		StaticText "$FO_64MNU_POWERUP",1
+		StaticText "$FO_64MNU_POWERUP_NOTE",1
 		StaticText ""
 	Option "Plasmagun Spawner =","GaussCannon_Spawner_Cvar","GaussCannon_Spawner_Value"
-		StaticText "Plasmagun by Default",1
+		StaticText "$FO_64MNU_PLASMA",1
 		StaticText ""
 	Option "BFG9000 Spawner =","BFG_Spawner_Cvar","BFG_Spawner_Value"
-		StaticText "BFG9000 by Default",1
+		StaticText "$FO_64MNU_BFG",1
 		StaticText ""
 	Option "Chaingun Spawner =","Chaingun_Spawner_Cvar","Chaingun_Spawner_Value"
-		StaticText "Chaingun by Default",1
+		StaticText "$FO_64MNU_CHAINGUN",1
 		StaticText ""
-}
+}*/
 
-OptionMenu "BrutalDoom64Item/WeaponOptions"
+/*OptionMenu "BrutalDoom64Item/WeaponOptions"
 {
-	Title "Other Item/Weapon Options"
-	StaticText "Some changes are not initialised automatically", 1
-	StaticText "Press \"Apply Changes\" for the changes to take effect",1
-	Command "Apply Changes","PukeName BD64Respawn"
+	Title "$FO_64MNU_OTHER_ITEMS_SPAWN"
+	StaticText "$FO_64OPTIONS_MAIN_TXT1",1
+	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
+	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 	StaticText " "
-	StaticText "---------------------------- Weapons Functions ------------------------------",1
+	StaticText "$FO_64MNU_WEAPON_FUNCTION",1
 		StaticText ""
-	Option "Enable Classic Shotgun/SSG Animations =","VWeaponCvar","YesOrNo"
-		StaticText "Show classic Doom 64 Shotgun/SSG animations (classical mode).",1
+	Option "$FO_64MNU_CLASSIC_SHOTGUN","VWeaponCvar","YesNo"
+		StaticText "$FO_64MNU_CLASSIC_SHOTGUN_TXT",1
 		StaticText ""
-	Option "Enable Weapon Warm Up Animations =","WeaponsWarmUpCvar","YesOrNo"
-		StaticText "Show weapon warm up animations on first pickup (tactical/modern modes ONLY).",1
+	Option "$FO_64MNU_WARMUP","WeaponsWarmUpCvar","YesNo"
+		StaticText "$FO_64MNU_WARMUP_TXT",1
 		StaticText ""
-	Option "Classic Style Chainsaw for Tactical/Modern =","VanillaChainsawCvar","YesOrNo"
-	Option "Classic Style Chaingun for Tactical/Modern =","ClassicChaingunCvar","YesOrNo"
-	Option "Classic Style Rocket Launcher for Tactical/Modern =","ClassicRLCvar","YesOrNo"
-		StaticText "Options to switch between classic or modernised weapons.",1
+	Option "$FO_64MNU_CLASSIC_CHAINSAW","VanillaChainsawCvar","YesNo"
+	Option "$FO_64MNU_CLASSIC_CHAINGUN","ClassicChaingunCvar","YesNo"
+	Option "$FO_64MNU_CLASSIC_ROCKET","ClassicRLCvar","YesNo"
+		StaticText "$FO_64MNU_CLASSIC_SWITCH",1
 		StaticText ""
-	Option "Skip Weapon Reload Sequences (Press \"Apply Changes\") =","NoReloadCvar","YesOrNo"
-		StaticText "Skip weapon reload animation sequences (tactical/modern modes ONLY).",1
+	Option "$FO_64MNU_SKIP_RELOAD","NoReloadCvar","YesNo"
+		StaticText "$FO_64MNU_SKIP_RELOAD_TXT",1
 		StaticText ""
-	Option "Low Ammo SFX =","LowAmmoSFX","YesOrNo"
-		StaticText "Allows you to toggle the sound warning when ammo is too low.",1
-		StaticText "(tactical/modern modes ONLY)",1
+	Option "$FO_64MNU_LOWAMMO","LowAmmoSFX","YesNo"
+		StaticText "$FO_64MNU_LOWAMMO_TXT1",1
+		StaticText "$FO_64MNU_LOWAMMO_TXT2",1
 		StaticText ""
-	Option "Switch to Fists on Berserk Pickup =","BerserkSwitchFistsCvar","YesOrNo"
-		StaticText "Option to disable switching to fists on berserk pickup.",1
+	Option "$FO_64MNU_SWITCH_FIST","BerserkSwitchFistsCvar","YesNo"
+		StaticText "$FO_64MNU_SWITCH_FIST_TXT",1
 		StaticText ""
-		StaticText "--------------------------- Weapons & Items Skins -----------------------------",1
-		StaticText " "
-	Option "Alternative Laser Skin =","AlternativeLaserSkinCvar","YesOrNo"
-	Option "Item Sprites Pickups =","AlternativeAmmoPickupSpritesCvar","AlternativeAmmoPickupSpritesValue"
-	Option "Alternative Healing Kits & Berserk Pickups =","CensoredHealing_Cvar","CensoredHealing_Value"
-	Option "Alpha Build Item Pickups =","AlphaPickupCvar","YesOrNo"
-		StaticText "Options for alternative or some alpha build looks for items & weapons.",1
+		StaticText "$FO_64MNU_SKINS",1
 		StaticText ""
-		StaticText "-------------------------------------- Other -----------------------------------",1
-		StaticText " "
-	Option "Start with Flashlight/Torch =","FlashlightStartCvar","YesOrNo"
-}
+	Option "$FO_64MNU_SKIN_LASER","AlternativeLaserSkinCvar","YesNo"
+	Option "$FO_64MNU_SKIN_ITEM","AlternativeAmmoPickupSpritesCvar","AlternativeAmmoPickupSpritesValue"
+	Option "$FO_64MNU_SKIN_HEALTH","CensoredHealing_Cvar","CensoredHealing_Value"
+	Option "$FO_64MNU_SKIN_ALPHA","AlphaPickupCvar","YesNo"
+		StaticText "$FO_64MNU_SKIN_ALPHA_TXT",1
+		StaticText ""
+		StaticText "$FO_64MNU_OTHER",1
+		StaticText ""
+	Option "$FO_64MNU_FLASHLIGHT","FlashlightStartCvar","YesNo"
+}*/
 
 OptionMenu "BrutalDoom64OptionsMonsterSpawner"
 {
-	Title "Monster Spawner Options"
-	StaticText "Some changes are not initialised automatically", 1
-	StaticText "Press \"Apply Changes\" for the changes to take effect",1
-	Command "Apply Changes","PukeName BD64Respawn"
+	Title "$FO_MONSTER_SPAWN"
+	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
+	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 		StaticText ""
-		StaticText "These options allow setting the monster replacements to nightmare,",1
-		StaticText "outcast and extra monsters, or set to appear randomly",1
-		StaticText "Any changes here requires a level restart in order to work.",1
+		StaticText "$FO_MONSTER_SPAWN_TXT1",1
+		StaticText "$FO_MONSTER_SPAWN_TXT2",1
+		StaticText "$FO_64SYSTEM_RESTART",1
 		StaticText ""
-	Option "Pistol Zombie Spawner =","ZMarineRandom_Cvar","ZMarineRandom_Value"
-	Option "Pistol Zombie Random Percent =","bd64_SpawnPercentZombieman","SpawnPercentValue"
+	Option "$FO_SPAWN_ZOMBIEMAN","ZMarineRandom_Cvar","ZMarineRandom_Value"
+	Option "$FO_SPAWN_ZOMBIEMAN_TXT","bd64_SpawnPercentZombieman","SpawnPercentValue"
 		StaticText ""
-	Option "Shotgun Zombie Spawner =","SSGZombieRandom_Cvar","SSGZombieRandom_Value"
-	Option "Shotgun Zombie Random Percent =","bd64_SpawnPercentShotgunGuy","SpawnPercentValue"	
+	Option "$FO_SPAWN_SHOTGUNGUY","SSGZombieRandom_Cvar","SSGZombieRandom_Value"
+	Option "$FO_SPAWN_SHOTGUNGUY_TXT","bd64_SpawnPercentShotgunGuy","SpawnPercentValue"	
 		StaticText ""
-	Option "Chaingun Zombie Spawner =","ZombieChaingunRandom_Cvar","ChaingunZombie_Value"
-	Option "Chaingun Zombie Random Percent =","bd64_SpawnPercentChaingunGuy","SpawnPercentValue"		
+	Option "$FO_SPAWN_COMMANDO","ZombieChaingunRandom_Cvar","ChaingunZombie_Value"
+	Option "$FO_SPAWN_COMMANDO_TXT","bd64_SpawnPercentChaingunGuy","SpawnPercentValue"		
 		StaticText ""
-	Option "Imp Spawner =","NImp_Spawner_Cvar","NImp_Spawner_Value"
-	Option "Imp Random Percent =","bd64_SpawnPercentImp","SpawnPercentValue"		
+	Option "$FO_SPAWN_IMP","NImp_Spawner_Cvar","NImp_Spawner_Value"
+	Option "$FO_SPAWN_IMP_TXT","bd64_SpawnPercentImp","SpawnPercentValue"		
 		StaticText ""
-	Option "Demon Spawner =","AcidDemonRandom_Cvar","AcidDemon_Spawner_Value"
-	Option "Demon Random Percent =","bd64_SpawnPercentDemon","SpawnPercentValue"		
+	Option "$FO_SPAWN_PINKY","AcidDemonRandom_Cvar","AcidDemon_Spawner_Value"
+	Option "$FO_SPAWN_PINKY_TXT","bd64_SpawnPercentDemon","SpawnPercentValue"		
 		StaticText ""
-	Option "Spectre Spawner =","NSpectre_Spawner_Cvar","NSpectre_Spawner_Value"
-	Option "Spectre Random Percent =","bd64_SpawnPercentSpectre","SpawnPercentValue"		
+	Option "$FO_SPAWN_SPECTRE","NSpectre_Spawner_Cvar","NSpectre_Spawner_Value"
+	Option "$FO_SPAWN_SPECTRE_TXT","bd64_SpawnPercentSpectre","SpawnPercentValue"		
 		StaticText ""
-	Option "Cacodemon Spawner =","NCaco_Spawner_Cvar","NCaco_Spawner_Value"
-	Option "Cacodemon Random Percent =","bd64_SpawnPercentCacodemon","SpawnPercentValue"		
+	Option "$FO_SPAWN_CACO","NCaco_Spawner_Cvar","NCaco_Spawner_Value"
+	Option "$FO_SPAWN_CACO_TXT","bd64_SpawnPercentCacodemon","SpawnPercentValue"		
 		StaticText ""
-	Option "Lost Soul Spawner =","StalkerRandom_Cvar","Stalker_Spawner_Value"
-	Option "Lost Soul Random Percent =","bd64_SpawnPercentLostSoul","SpawnPercentValue"		
-		StaticText "(Pain/Agony Elemental can summon them depending on values)",1
+	Option "$FO_SPAWN_SOUL","StalkerRandom_Cvar","Stalker_Spawner_Value"
+	Option "$FO_SPAWN_SOUL_TXT1","bd64_SpawnPercentLostSoul","SpawnPercentValue"		
+		StaticText "$FO_SPAWN_SOUL_TXT2",1
 		StaticText ""
 	Option "Arachnotron Spawner =","ArachnotronRandomCvar","Arachnotron_Spawner_Value"
 	Option "Arachnotron Random Percent =","bd64_SpawnPercentArachnotron","SpawnPercentValue"		
 		StaticText ""
-	Option "HellKnight Spawner =","KnightmareRandomCvar","Knightmare_Spawner_Value"
-	Option "HellKnight Random Percent =","bd64_SpawnPercentHellKnight","SpawnPercentValue"		
+	Option "$FO_SPAWN_KNIGHT","KnightmareRandomCvar","Knightmare_Spawner_Value"
+	Option "$FO_SPAWN_KNIGHT_TXT","bd64_SpawnPercentHellKnight","SpawnPercentValue"		
 		StaticText ""
-	Option "Revenant Spawner =","Revenant_Spawner_Cvar","Revenant_Spawner_Value"
-	Option "Revenant Random Percent =","bd64_SpawnPercentRevenant","SpawnPercentValue"	
+	Option "$FO_SPAWN_UNDEAD","Revenant_Spawner_Cvar","Revenant_Spawner_Value"
+	Option "$FO_SPAWN_UNDEAD_TXT","bd64_SpawnPercentRevenant","SpawnPercentValue"	
 		StaticText ""
-	Option "Baron Spawner =","Hellhound_Spawner_Cvar","Hellhound_Spawner_Value"
-	Option "Baron Random Percent =","bd64_SpawnPercentBaron","SpawnPercentValue"		
+	Option "$FO_SPAWN_BARON","Hellhound_Spawner_Cvar","Hellhound_Spawner_Value"
+	Option "$FO_SPAWN_BARON_TXT","bd64_SpawnPercentBaron","SpawnPercentValue"		
 		StaticText ""
-	Option "Mancubus Spawner =","BruiserRandom_Cvar","Bruiser_Spawner_Value"
-	Option "Mancubus Random Percent =","bd64_SpawnPercentMancubus","SpawnPercentValue"	
+	Option "$FO_SPAWN_FATSO","BruiserRandom_Cvar","Bruiser_Spawner_Value"
+	Option "$FO_SPAWN_FATSO_TXT","bd64_SpawnPercentMancubus","SpawnPercentValue"	
 		StaticText ""
-	Option "Pain Elemental Spawner =","NightElementalRandomCvar","NightElemental_Spawner_Value"
-	Option "Pain Elemental Random Percent =","bd64_SpawnPercentPainElemental","SpawnPercentValue"		
+	Option "$FO_SPAWN_ELEMENTAL","NightElementalRandomCvar","NightElemental_Spawner_Value"
+	Option "$FO_SPAWN_ELEMENTAL_TXT","bd64_SpawnPercentPainElemental","SpawnPercentValue"		
 		StaticText ""
-	Option "Archvile Spawner =","FleshWizardRandomCvar","FleshWizardRandom_Value"
-	Option "Archvile Random Percent =","bd64_SpawnPercentArchvile","SpawnPercentValue"		
+	Option "$FO_SPAWN_VILE","FleshWizardRandomCvar","FleshWizardRandom_Value"
+	Option "$FO_SPAWN_VILE_TXT","bd64_SpawnPercentArchvile","SpawnPercentValue"		
 		StaticText ""
-	Option "Cyberdemon Spawner =","Annihilator_Spawner_Cvar","Annihilator_Spawner_Value"
-	Option "Cyberdemon Random Percent =","bd64_SpawnPercentCyberdemon","SpawnPercentValue"		
+	Option "$FO_SPAWN_CYBERDEMON","Annihilator_Spawner_Cvar","Annihilator_Spawner_Value"
+	Option "$FO_SPAWN_CYBERDEMON_TXT","bd64_SpawnPercentCyberdemon","SpawnPercentValue"		
 		StaticText ""
-	Option "Mastermind Spawner =","Motherdemon_Spawner_Cvar","Motherdemon_Spawner_Value"
-	Option "Mastermind Random Percent =","bd64_SpawnPercentMastermind","SpawnPercentValue"
+	Option "$FO_SPAWN_MASTERMIND","Motherdemon_Spawner_Cvar","Motherdemon_Spawner_Value"
+	Option "$FO_SPAWN_MASTERMIND_TXT","bd64_SpawnPercentMastermind","SpawnPercentValue"
 		StaticText ""
-	Option "Husk Zombie Horde Multiplier =","TheHorde_Multiplier_Cvar","TheHorde_Multiplier_Value"
-	Option "Husk Zombie Horde Random Percent =","bd64_SpawnPercentHorde","SpawnPercentValue"
-		StaticText "Option to spawn Husks & Carrions near dead zombie props",1
-		StaticText "Disabled by Default",1
-		StaticText "(Recommended setting x3, x4 or Random)",1
+	Option "$FO_SPAWN_HUSK","TheHorde_Multiplier_Cvar","TheHorde_Multiplier_Value"
+	Option "$FO_SPAWN_HUSK_TXT1","bd64_SpawnPercentHorde","SpawnPercentValue"
+		StaticText "$FO_SPAWN_HUSK_TXT2",1
+		StaticText "$FO_SPAWN_HUSK_TXT3",1
+		StaticText "$FO_SPAWN_SETTING",1
 		StaticText ""
 }
 
 OptionMenu "BrutalDoom64OptionsOtherMonster"
 {
-	Title "Other Monster Options"
-	StaticText "Some changes are not initialised automatically", 1
-	StaticText "Press \"Apply Changes\" for the changes to take effect",1
-	Command "Apply Changes","PukeName BD64Respawn"
+	Title "$FO_MONSTER_OTHER"
+	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
+	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 		StaticText ""
-		StaticText "Any change here requires a level restart in order to work.",1
+		StaticText "$FO_64SYSTEM_RESTART",1
 		StaticText ""
-		StaticText "------------------------------- Monster Skins -------------------------------",1
+		StaticText "$FO_MONSTER_SKIN",1
 		StaticText ""
-	Option "Hellhound Style =","HoundChooserCvar","HoundChooser"
-		StaticText "If you selected \"Random (No Baron)\"",1
-		StaticText "and turned off Hellhound skin selection",1
-		StaticText "you will receive \"Random (No HellHound)\"",1
+	Option "$FO_MONSTER_HELLHOUND","HoundChooserCvar","HoundChooser"
+		StaticText "$FO_MONSTER_HELLHOUND_TXT1",1
+		StaticText "$FO_MONSTER_HELLHOUND_TXT2",1
+		StaticText "$FO_MONSTER_HELLHOUND_TXT3",1
 		StaticText ""
-	Option "Cacodemon Style =","CacoChooserCvar","CacoSkinChooser"
+	Option "$FO_MONSTER_CACO","CacoChooserCvar","CacoSkinChooser"
 		StaticText ""
-		StaticText "------------------------------- MapSet Selection -------------------------------",1
+		StaticText "$FO_OPTION_MAP",1
 		StaticText ""
-	Option "Select Mapset =","BD64_WadCheck","WadCheck"
-		StaticText "This option is not automatic and must be configured manually",1
-		StaticText "before starting a new game in one of the supported wads",1
-		StaticText "You can use Doom 2 on non-compatible wads",1
+	Option "$FO_MAP_SELECT","BD64_WadCheck","WadCheck"
+		StaticText "$FO_MAP_SELECT_TXT1",1
+		StaticText "$FO_MAP_SELECT_TXT2",1
+		StaticText "$FO_MAP_SELECT_TXT3",1
 		StaticText ""
-		StaticText "----------------------------- Map Prop Replacement -----------------------------",1
+		StaticText "$FO_MAP_PROP",1
 		StaticText ""
-	Option "Infected Dead Marine Corpse =","ThingRandomCvar","YesOrNo"
-		StaticText "Replace dead marines & dead marine props with 'The Thing' monsters.",1
+	Option "$FO_PROP_INFECTED","ThingRandomCvar","YesNo"
+		StaticText "$FO_PROP_INFECTED_TXT",1
 		StaticText ""
-	Option "Poltergeist Mode =","PoltergeistCvar","YesOrNo"
-		StaticText "Replace map props with hostile poltergeists props.",1
-		StaticText "(poltergeists are hostile map props that can attack the player)",1
+	Option "$FO_PROP_GHOST","PoltergeistCvar","YesNo"
+		StaticText "$FO_PROP_GHOST_TXT1",1
+		StaticText "$FO_PROP_GHOST_TXT2",1
 }
 
 OptionMenu "BrutalDoom64OptionsPerformance"
 {
-	Title "Performance & Miscellaneous Options"
-	StaticText "Some changes are not initialised automatically", 1
-	StaticText "Press \"Apply Changes\" for the changes to take effect",1
-	Command "Apply Changes","PukeName BD64Respawn"
+	Title "$FO_PERFORMANCE_MISK"
+	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
+	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 		StaticText ""
-		StaticText "Enable this option ONLY if hosting a server on a multiplayer game.",1
-		StaticText "(enabling this option will generate an error message if using GZDoom)",1
+		StaticText "$FO_PERFORMANCE_MISK_TXT",1
+		StaticText "$FO_PERFORMANCE_MISK_TXT2",1
 		StaticText ""
-	Option "Enable Zandronum Specific Multiplayer Scripts =","isrunningzandronum","OnOff"
-	Option "Enable QZandronum Specific Tactical Class Script =","IsRunningQZan","OnOff"
+	Option "$FO_PERFORMANCE_ZAN_MULTI","isrunningzandronum","OnOff"
+	Option "$FO_PERFORMANCE_ZAN_TACTICAL","IsRunningQZan","OnOff"
 		StaticText ""
-		StaticText "-------------------------------- Performance & Gore --------------------------------",1
+		StaticText "$FO_OPTION_PERFORMANCE",1
 		StaticText ""
-	Option "Select Blood Amount (Server/Singleplayer) =","zdoombrutalblood","BrutalBlood"
-	Option "Select Blood Amount (Client/Multiplayer) =","bd_bloodamount","BrutalBlood"
-	Option "Enable Gore Removing on Flats (30s) =","zdoombrutaljanitor","YesOrNo"
-	Option "Enable Floor/Ceiling Shot/Blast Decals =","FloorDecal_Cvar","YesOrNo"
-	Option "Light Fog & Halos Options =","LFog_Cvar","LFog_Value"
-	Option "Enable Classic Style Torches (Need Map Restart) =","ClassicTorchCvar","YesOrNo"
-	Option "Disable Liquid Splashes =","LiquidSplashCvar","YesOrNo"
+	Option "$FO_OPTION_PERFORMANCE_SERVER","zdoombrutalblood","BrutalBlood"
+	Option "$FO_OPTION_PERFORMANCE_CLIENT","bd_bloodamount","BrutalBlood"
+	Option "$FO_OPTION_PERFORMANCE_FLATS","zdoombrutaljanitor","YesNo"
+	Option "$FO_OPTION_PERFORMANCE_DECALS","FloorDecal_Cvar","YesNo"
+	Option "$FO_OPTION_PERFORMANCE_FOG","LFog_Cvar","LFog_Value"
+	Option "$FO_OPTION_PERFORMANCE_TORCH","ClassicTorchCvar","YesNo"
+/*	Option "$FO_OPTION_PERFORMANCE_SPLASH","LiquidSplashCvar","YesNo"
 		StaticText ""
-		StaticText "------------------------------------ HUD ------------------------------------",1
+		StaticText "$FO_OPTION_HUD",1
 		StaticText ""
-	Option "Set HUD Style =","HUDSwitchCvar","HUDValue"
+	Option "$FO_OPTION_HUD_STYLE","HUDSwitchCvar","HUDValue"
 		StaticText ""
-	Option "Enable HUD Screen Effects =", "bd64_ScreenFX", "ScreenTypes"
-		StaticText "Enables screen effects on HUD, such as blood splashes and bullet holes."
+	Option "$FO_OPTION_HUD_SCREEN", "bd64_ScreenFX", "ScreenTypes"
+		StaticText "$FO_OPTION_HUD_BLOOD"
 		StaticText ""
-	Option "Enable HUD Screen Blood Trail Splashes =", "bd64_BloodTrail", "YesOrNoFalse"
-		StaticText "Close up bleeding monsters will create HUD blood splashes."
-		StaticText "(If screen effects are disabled, this option will also be disabled)"
-		StaticText "(Does not work for BDv21 screen effects mode)"
+	Option "$FO_OPTION_HUD_TRAILS", "bd64_BloodTrail","NoYes"
+		StaticText "$FO_OPTION_HUD_SPLASH"
+		StaticText "$FO_OPTION_HUD_SPLASH_TXT1"
+		StaticText "$FO_OPTION_HUD_SPLASH_TXT2"
 		StaticText ""
-		StaticText "---------------------------------- Sounds ----------------------------------",1
+		StaticText "$FO_OPTION_SOUND",1
 		StaticText ""
-	Option "Enable Footstep Sounds =","FootStepCheckCvar","YesOrNoFalse"
+	Option "$FO_OPTION_SOUND_FOOTS","FootStepCheckCvar","NoYes"*/
 }
 
 OptionMenu "BD64MapOptions"
 {
-	Title "Map Options"
-	StaticText "Some changes are not initialised automatically", 1
-	StaticText "Press \"Apply Changes\" for the changes to take effect",1
-	Command "Apply Changes","PukeName BD64Respawn"
+	Title "$FO_OPTION_MAP_OP"
+	StaticText "$FO_64OPTIONS_MAIN_TXT1",1
+	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
+	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 		StaticText ""
-		StaticText "(These options ONLY work with the BD64 Maps)",1
+		StaticText "$FO_OPTION_MAP_OP_TXT",1
 		StaticText ""
-	Option "Play Easier Map08 and Map28 (No (Extended Final) Boss Fight) =","VMapCheckCvar","YesOrNo"
-	Option "Add Absolution TC Maps to Campaign =","TCMapCheckCvar","YesOrNo"
+	Option "$FO_OPTION_MAP_EASY","VMapCheckCvar","YesNo"
+	Option "$FO_OPTION_MAP_TC","TCMapCheckCvar","YesNo"
 		StaticText ""
-		StaticText "Show orignal Doom 64 opening title sequence at startup",1
+		StaticText "$FO_OPTION_MAP_TITLE",1
 		StaticText ""
-	Option "Show Opening Title Map (Restart Required) =","BD64_SkipTitleMap","YesOrNoFalse"
+	Option "$FO_OPTION_MAP_TITLE_TXT","BD64_SkipTitleMap","NoYes"
 }
 
 Optionmenu GZDShortcuts
 {
-	Title "Engine Option Shortcuts"
+	Title "$FO_ENGINE_OPTION"
 	StaticText ""
-	StaticText "Zdoom options, available here for your convenience",1
+	StaticText "$FO_ENGINE_OPTION_TXT",1
 	StaticText ""
-	Option "Adjust sprite clipping",	gl_spriteclip,					"SpriteclipModes"
+	Option "$FO_ENGINE_CLIPPING",	gl_spriteclip,					"SpriteclipModes"
 	StaticText ""
-	Option "Force Zdoom Crosshairs",	"crosshairforce","OnOff"
-	Option "Allow Jump",				"sv_jump","JumpCrouchFreeLook"
-	Option "Allow Crouch",				"sv_crouch","JumpCrouchFreeLook"
-	Option "Allow Freelook",			"sv_freelook","JumpCrouchFreeLook"
+	Option "$FO_ENGINE_CROSSHAIR",	"crosshairforce","OnOff"
+	Option "$FO_ENGINE_JUMP",				"sv_jump","JumpCrouchFreeLook"
+	Option "$FO_ENGINE_CROUCH",				"sv_crouch","JumpCrouchFreeLook"
+	Option "$FO_ENGINE_FREELOOK",			"sv_freelook","JumpCrouchFreeLook"
 	StaticText ""
-	Slider "Move Bobbing Intensity",	"Movebob",	0,0.75,0.02,2
+	Slider "$FO_ENGINE_BOBBING",	"Movebob",	0,0.75,0.02,2
 		StaticText ""
-	Slider "Max Particles",		"r_maxparticles",	100,30000,100,0
-		textfield "input value manually","r_maxparticles"
+	Slider "$FO_ENGINE_PARTICULES",		"r_maxparticles",	100,30000,100,0
+		textfield "$FO_ENGINE_INPUT","r_maxparticles"
 	StaticText ""
-	Slider "Max Decals","cl_maxdecals",0,10000,100,0
-		textfield "input value manually","cl_maxdecals"
+	Slider "$FO_ENGINE_MAX","cl_maxdecals",0,10000,100,0
+		textfield "$FO_ENGINE_DECALS","cl_maxdecals"
 	StaticText ""
-	Option "FPS counter",				"vid_fps",			"OnOff"
+	Option "$FO_ENGINE_FPS",				"vid_fps",			"OnOff"
 	StaticText ""
-	Option "Discord Rich Presence ",	"i_discordrpc",		"OnOff"
-	StaticText "(Doesn't work on Zandronum)." ,1
+	Option "$FO_ENGINE_DISCORD",	"i_discordrpc",		"OnOff"
+	StaticText "$FO_ENGINE_DISCORD_TXT" ,1
 	StaticText ""
-	StaticText "Giblets queue amount",1
-	StaticText "Limits how many gibs will spawn at any time."
-	StaticText "Increasing this value will only affect the max"
-	StaticText "amount in the world, not per monster."
+	Option "Lauguage", "language", "BD64LanguageOptions"	
 	StaticText ""
-	Slider "Max Giblets","sv_corpsequeuesize",1,1000,10,0
-		textfield "input value manually","sv_corpsequeuesize"
+	StaticText "$FO_ENGINE_LANGUAGE_TXT",1
+	StaticText ""
+	StaticText "$FO_ENGINE_GIBS",1
+	StaticText "$FO_ENGINE_GIBS_TXT1"
+	StaticText "$FO_ENGINE_GIBS_TXT2"
+	StaticText "$FO_ENGINE_GIBS_TXT3"
+	StaticText ""
+	Slider "$FO_ENGINE_GIBS_MAX","sv_corpsequeuesize",1,1000,10,0
+		textfield "$FO_ENGINE_INPUT","sv_corpsequeuesize"
 	StaticText ""
 }
+
+//OPTION VALUES	- Language strings not supported by Zandronum
 
 //Misc values
-OptionValue "YesOrNo"
-{
-	0,"No"
-	1,"Yes"
-}
-
-OptionValue "YesOrNoFalse"
-{
-	1,"No"
-	0,"Yes"
-}
 
 OptionString "VisualPreset"
 {
@@ -412,6 +419,7 @@ OptionValue "HoundChooser"
 	-1,"Disabled"
 	0,"Alternative"
 	1,"GEC(default)"
+	2,"Any Hound"
 }
 
 OptionValue "CacoSkinChooser"
@@ -707,4 +715,14 @@ OptionValue "WadCheck"
 	4,"Bloodstain"
 	5,"Going Down"
 	6,"Doom Zero"
+}
+
+OptionString "BD64LanguageOptions" 
+{
+	"auto", "Auto"
+	"enu", "Engligh-US (United States)"
+	"eng", "English-GB (United Kingdom)"
+	"es", "Espanol (Spanish)"
+	"fr", "Francais (French)"
+	"ru", "Русский (Russian)"
 }

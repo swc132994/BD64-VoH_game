@@ -1,11 +1,19 @@
 //Prop replacements
 Actor 64DeadMarineReplacer replaces DeadMarine
 {
+//$Category Decoration
+//$Title "Dead player Spawner"
+//$Arg0 What decoration/monster to spawn
+//$Arg0Tooltip Select the decoration/monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Dead player"; 2 = "Force The Thing"; }
 Scale 0.8
 	States
 	{
 	Spawn:
 		PLAY M 0
+		TNT1 A 0 A_Jumpif(args[0] == 1, "SpawnDeadMarine")
+		TNT1 A 0 A_Jumpif(args[0] == 2, "SpawnThing")
 		TNT1 A 2 ACS_NamedExecuteAlways("ThingRandomACS")
 		TNT1 A 0 A_Jump(26,"SpawnThing")//10%
 	SpawnDeadMarine:
@@ -20,11 +28,19 @@ Scale 0.8
 
 Actor 64GibbedMarineReplacer replaces GibbedMarine
 {
+//$Category Decoration
+//$Title "Bloody mess 1 Spawner"
+//$Arg0 What decoration/monster to spawn
+//$Arg0Tooltip Select the decoration/monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Bloody mess 1"; 2 = "Force The Thing"; }
 Scale 0.8
 	States
 	{
 	Spawn:
 		PLAY V 0
+		TNT1 A 0 A_Jumpif(args[0] == 1, "SpawnGibbedMarine")
+		TNT1 A 0 A_Jumpif(args[0] == 2, "SpawnThing")
 		TNT1 A 2 ACS_NamedExecuteAlways("ThingRandomACS")
 		TNT1 A 0 A_Jump(26,"SpawnThing")//10%
 	SpawnGibbedMarine:
@@ -39,11 +55,19 @@ Scale 0.8
 
 Actor 64GibbedMarineExtraReplacer replaces GibbedMarineExtra
 {
-	Scale 0.8
+//$Category Decoration
+//$Title "Bloody mess 2 Spawner"
+//$Arg0 What decoration/monster to spawn
+//$Arg0Tooltip Select the decoration/monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Bloody mess 2"; 2 = "Force The Thing"; }
+Scale 0.8
 	States
 	{
 	Spawn:
 		CPOG B 0
+		TNT1 A 0 A_Jumpif(args[0] == 1, "SpawnGibbedMarineExtra")
+		TNT1 A 0 A_Jumpif(args[0] == 2, "SpawnThing")
 		TNT1 A 2 ACS_NamedExecuteAlways("ThingRandomACS")
 		TNT1 A 0 A_Jump(26,"SpawnThing")//10%
 	SpawnGibbedMarineExtra:
@@ -56,14 +80,23 @@ Actor 64GibbedMarineExtraReplacer replaces GibbedMarineExtra
 	}
 }
 
-//Weapon replacements
+/*//Weapon replacements
 Actor Dyn_ChaingunReplacer Replaces Chaingun
 {
+//$Category Weapons
+//$Title "Chaingun Spawner"
+//$Arg0 What weapon to spawn
+//$Arg0Tooltip Select the weapon to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Chaingun"; 2 = "Force Rifle"; 3 = "Force SMG"; }
 Scale 0.82
 	States
 	{
 	Spawn:
 		MGUN A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1, "SpawnChaingun")
+		TNT1 A 0 A_JumpIf(args[0] == 2, "SpawnRifle")
+		TNT1 A 0 A_JumpIf(args[0] == 3, "SpawnSMG")
 		TNT1 A 2 ACS_NamedExecuteAlways("ChaingunSpawner")
 		TNT1 A 0 A_Jump(85,"SpawnSMG","SpawnRifle")//33%
 	SpawnChaingun:
@@ -80,11 +113,19 @@ Scale 0.82
 
 Actor Dyn_PlasmaRifleReplacer Replaces Plasmarifle	//Option to replace plasma rifle with gauss cannon
 {
+//$Category Weapons
+//$Title "Plasma Rifle Spawner"
+//$Arg0 What weapon to spawn
+//$Arg0Tooltip Select the weapon to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Plasma Rifle"; 2 = "Force Gauss Cannon"; }
 Scale 0.82
 	States
 	{
 	Spawn:
 		PLAS A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnPlasmaRifle")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnGaussCannon")
 		TNT1 A 2 ACS_NamedExecuteAlways("PlasmaRifleSpawner")	//if D64 weapons only enabled spawn plasma rifle
 		TNT1 A 0 A_Jump(64,"SpawnGaussCannon")//25%
 	SpawnPlasmaRifle:
@@ -98,11 +139,20 @@ Scale 0.82
 
 Actor Dyn_BFGReplacer Replaces BFG9000	//Option to replace BFG with unmaker or lasergun
 {
+//$Category Weapons
+//$Title "BFG9000 Spawner"
+//$Arg0 What weapon to spawn
+//$Arg0Tooltip Select the weapon to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force BFG9000"; 2 = "Force Unmaker"; 3 = "Force Laser gun"; }
 Scale 0.9
 	States
 	{
 	Spawn:
 		BFUG A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnBFG9000")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnUnmaker")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnLasergun")
 		TNT1 A 2 ACS_NamedExecuteAlways("BFGSpawner")
 		TNT1 A 0 A_Jump(64,"SpawnUnmaker","SpawnLasergun")//25%
 	SpawnBFG9000:
@@ -120,11 +170,19 @@ Scale 0.9
 //Item/Powerup replacements
 Actor 64HealthBonusReplacer Replaces HealthBonus
 {
+//$Category Health and Armor
+//$Title "Health Bonus Spawner"
+//$Arg0 What health to spawn
+//$Arg0Tooltip Select the health to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Health Bonus"; 2 = "Force Hell Potion"; }
 Scale 0.82
 	States
 	{
 	Spawn:
 		BON1 A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnHealthBonus")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnHellPotion")
 		TNT1 A 2 ACS_NamedExecuteAlways("BonusRandomACS")
 		TNT1 A 0 A_Jump(26,"SpawnHellPotion")//10%
 	SpawnHealthBonus:
@@ -138,11 +196,19 @@ Scale 0.82
 
 Actor 64ArmorBonusReplacer Replaces ArmorBonus
 {
+//$Category Health and Armor
+//$Title "Armor Bonus Spawner"
+//$Arg0 What armor to spawn
+//$Arg0Tooltip Select the armor to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Armor Bonus"; 2 = "Force Hell Potion"; }
 Scale 0.82
 	States
 	{
 	Spawn:
 		BON2 A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnArmorBonus")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnHellPotion")
 		TNT1 A 2 ACS_NamedExecuteAlways("BonusRandomACS")
 		TNT1 A 0 A_Jump(26,"SpawnHellPotion")//10%
 	SpawnArmorBonus:
@@ -156,11 +222,19 @@ Scale 0.82
 
 Actor Dyn_WpnPower1Replacer Replaces Blursphere
 {
+//$Category Powerups
+//$Title "Invisibility Spawner"
+//$Arg0 What Powerup to spawn
+//$Arg0Tooltip Select the Powerup to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Invisibility"; 2 = "Force Invisibility with Weapon Power"; }
 Scale 0.82
 	States
 	{
 	Spawn:
 		PINS A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnBlurSphere")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnDemonKey")
 		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
 		TNT1 A 0 A_Jump(26,"SpawnDemonKey")//10%
 	SpawnBlurSphere:
@@ -175,11 +249,19 @@ Scale 0.82
 
 Actor Dyn_WpnPower2Replacer Replaces Berserk
 {
+//$Category Powerups
+//$Title "Berserk Spawner"
+//$Arg0 What Powerup to spawn
+//$Arg0Tooltip Select the Powerup to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Berserk"; 2 = "Force Berserk with Weapon Power"; }
 Scale 0.82
 	States
 	{
 	Spawn:
 		PSTR A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnBerserk")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnDemonKey")
 		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
 		TNT1 A 0 A_Jump(26,"SpawnDemonKey")//10%
 	SpawnBerserk:
@@ -194,11 +276,19 @@ Scale 0.82
 
 Actor Dyn_WpnPower3Replacer Replaces Soulsphere
 {
+//$Category Powerups
+//$Title "Soulsphere Spawner"
+//$Arg0 What Powerup to spawn
+//$Arg0Tooltip Select the Powerup to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Soulsphere"; 2 = "Force Soulsphere with Weapon Power"; }
 Scale 0.7
 	States
 	{
 	Spawn:
 		SOUL A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnSoulSphere")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnDemonKey")
 		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
 		TNT1 A 0 A_Jump(26,"SpawnDemonKey")//10%
 	SpawnSoulSphere:
@@ -213,12 +303,20 @@ Scale 0.7
 
 Actor Dyn_WpnPower4Replacer Replaces MegaSphere
 {
+//$Category Powerups
+//$Title "Megasphere Spawner"
+//$Arg0 What Powerup to spawn
+//$Arg0Tooltip Select the Powerup to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Megasphere"; 2 = "Force Megasphere with Weapon Power"; }
 Scale 0.7
 	States
 	{
 	Spawn:
 		MEGA A 0
-		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnMegaSphere")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnDemonKey")
+//		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
 		TNT1 A 0 A_Jump(38,"SpawnDemonKey")//15%
 	SpawnMegaSphere:
 		TNT1 A 1 A_SpawnItemEx("64MegaSphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
@@ -232,12 +330,20 @@ Scale 0.7
 
 Actor Dyn_WpnPower5Replacer Replaces InvulnerabilitySphere
 {
+//$Category Powerups
+//$Title "Invulnerability Spawner"
+//$Arg0 What Powerup to spawn
+//$Arg0Tooltip Select the Powerup to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Invulnerability"; 2 = "Force Invulnerability with Weapon Power"; }
 Scale 0.7
 	States
 	{
 	Spawn:
 		PINV A 0
-		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnInvulnerabilitySphere")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnDemonKey")
+//		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
 		TNT1 A 0 A_Jump(38,"SpawnDemonKey")//15%
 	SpawnInvulnerabilitySphere:
 		TNT1 A 1 A_SpawnItemEx("64InvulnerabilitySphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
@@ -251,25 +357,40 @@ Scale 0.7
 
 Actor InfraredReplacer Replaces Infrared
 {
+//$Category Powerups
+//$Title "Lite Amplification goggles Spawner"
+//$Arg0 What Powerup to spawn
+//$Arg0Tooltip Select the Powerup to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Lite Amplification goggles"; 2 = "Force Flashlight"; }
 Scale 0.82
 	States
 	{
 	Spawn:
 		PVIS A 0
-		TNT1 A 2 ACS_NamedExecuteAlways("FlashlightCheck")
-		TNT1 A 0 A_Jump(51,"SpawnFlashlight")//20%
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnInfrared")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnFlashlight")
+		TNT1 A 2 ACS_NamedExecuteAlways("FlashlightCheck")	
+		TNT1 A 0 A_Jump(90,"SpawnFlashlight")//35%
 	SpawnInfrared:
 		TNT1 A 1 A_SpawnItemEx("64Infrared",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnFlashlight:
-		TNT1 A 1 A_SpawnItemEx("FlashlightItem",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 0 A_SpawnItemEx("64Infrared",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("FlashlightItem")
 		Stop
 	}
-}
+}*/
 
 //Random monster spawners
 Actor ZMarine_Random Replaces ZombieMan
 {
+//$Category Monsters
+//$Title "Zombieman Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Pistol Zombie"; 2 = "Force Zombie Marine"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -280,6 +401,8 @@ MONSTER
 	{
 	Spawn:
 		PSSS B 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnZombieMan")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnZombieMarine")
 		TNT1 A 2 ACS_NamedExecuteAlways("ZombiemanSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",1)*13,"SpawnZombieMarine")
 	SpawnZombieMan:
@@ -293,6 +416,12 @@ MONSTER
 
 Actor SSG_Zombie_Random Replaces Shotgunguy
 {
+//$Category Monsters
+//$Title "Shotgunguy Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Sergeant"; 2 = "Force SSG Zombie"; 3 = "Force Brigadier general"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -303,6 +432,9 @@ MONSTER
 	{
 	Spawn:
 		SPOS A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnShotgunGuy")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnSSGGuy")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnBFGGuy")
 		TNT1 A 2 ACS_NamedExecuteAlways("ShotgunGuySpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",2)*13,"SpawnSSGGuy","SpawnBFGGuy")
 		Goto SpawnShotgunGuy
@@ -328,6 +460,12 @@ MONSTER
 
 Actor ChaingunZombie_Random Replaces Chaingunguy
 {
+//$Category Monsters
+//$Title "Chaingunguy Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Commando"; 2 = "Force Coloner"; 3 = "Replace to Sergeant"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -338,6 +476,9 @@ MONSTER
 	{
 	Spawn:
 		MPOS A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnChaingunGuy")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnPlasmaGuy")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"D64MonsterOnly")
 		TNT1 A 2 ACS_NamedExecuteAlways("ChaingunGuySpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",3)*13,"SpawnPlasmaGuy")
 	SpawnChaingunGuy:
@@ -354,6 +495,12 @@ MONSTER
 
 Actor NImp_Random Replaces Doomimp
 {
+//$Category Monsters
+//$Title "Imp Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Imp"; 2 = "Force Nightmare Imp"; 3 = "Force Harvester"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -364,6 +511,9 @@ MONSTER
 	{
 	Spawn:
 		DI64 A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnImp")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnNightImp")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnHarvester")
 		TNT1 A 2 ACS_NamedExecuteAlways("ImpSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",4)*13,"SpawnNightImp","SpawnHarvester")
 		Goto SpawnImp
@@ -389,6 +539,12 @@ MONSTER
 
 Actor D64AcidButcherDemonRandom Replaces Demon
 {
+//$Category Monsters
+//$Title "Demon Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Demon"; 2 = "Force Acid Demon"; 3 = "Force Butcher"; }
 Scale 0.9
 MONSTER
 -SOLID
@@ -399,6 +555,9 @@ MONSTER
 	{
 	Spawn:
 		SARG A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnDemon")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnAcidDemon")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnButcher")
 		TNT1 A 2 ACS_NamedExecuteAlways("DemonSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",5)*13,"SpawnAcidDemon","SpawnButcher")
 		Goto SpawnDemon
@@ -424,6 +583,12 @@ MONSTER
 
 Actor NSpectre_Random Replaces Spectre
 {
+//$Category Monsters
+//$Title "Spectre Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Spectre"; 2 = "Force Nightmare Spectre"; 3 = "Force Wraith"; }
 Scale 0.9
 MONSTER
 -SOLID
@@ -434,6 +599,9 @@ States
 	{
 	Spawn:
 		SAR2 A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnSpectre")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnNightSpectre")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnWraith")
 		TNT1 A 2 ACS_NamedExecuteAlways("SpectreSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",6)*13,"SpawnNightSpectre","SpawnWraith")
 		Goto SpawnSpectre
@@ -520,6 +688,12 @@ Scale 0.8
 
 Actor NCacodemon_Random Replaces Cacodemon
 {
+//$Category Monsters
+//$Title "Cacodemon Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Cacodemon"; 2 = "Force Nightmare Cacodemon"; 3 = "Force Fallen"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -530,6 +704,9 @@ MONSTER
 	{
 	Spawn:
 		HEAD A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnCacodemon")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnNightCacodemon")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnFallen")
 		TNT1 A 2 ACS_NamedExecuteAlways("CacodemonSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",7)*13,"SpawnNightCacodemon","SpawnFallen")
 		Goto SpawnCacodemon
@@ -555,6 +732,12 @@ MONSTER
 
 Actor Hellhound_Random Replaces BaronOfHell		//tag 666 fix (A_KillMaster must be called from spawned monster)
 {
+//$Category Monsters
+//$Title "Baron of Hell Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Baron of Hell"; 2 = "Force Hellhound"; 3 = "Force Belphegor"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -570,6 +753,9 @@ MONSTER
 		Stop
 	Spawn:
 		BOSS A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnBaron")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"HoundChooser")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnBelp")
 		TNT1 A 2 ACS_NamedExecuteAlways("BaronSpawner")	//if D64 monsters only enabled spawn Baron
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",13)*13,"HoundChooser","SpawnBelp")
 		Goto SpawnBaron
@@ -593,6 +779,12 @@ MONSTER
 
 Actor D64_HellKnight_Replacer Replaces HellKnight	//tag 666 fix (A_KillMaster must be called from spawned monster)
 {
+//$Category Monsters
+//$Title "HellKnight Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Hell Knight"; 2 = "Force Knightmare"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -608,6 +800,8 @@ MONSTER
 		Stop
 	Spawn:
 		BOS2 A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnHellKnight")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnKnightmare")
 		TNT1 A 2 ACS_NamedExecuteAlways("HellKnightSpawner")	//if D64 monsters only enabled spawn Hellknight
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",11)*13,"SpawnKnightmare")
 	SpawnHellKnight:
@@ -621,6 +815,12 @@ MONSTER
 
 Actor D64Arachnotron_Replacer Replaces Arachnotron		//tag 666 fix (A_KillMaster must be called from spawned monster)
 {
+//$Category Monsters
+//$Title "Arachnotron Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Arachnotron"; 2 = "Force Night Crawler"; 2 = "Force Impaler"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -636,6 +836,9 @@ MONSTER
 		Stop
 	Spawn:
 		BSPI A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnArachnotron")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnNightCrawler")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnImpaler")
 		TNT1 A 2 ACS_NamedExecuteAlways("ArachnotronSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",10)*13,"SpawnNightCrawler","SpawnImpaler")
 		Goto SpawnArachnotron
@@ -661,6 +864,12 @@ MONSTER
 
 Actor NightmareElemental_Random Replaces PainElemental
 {
+//$Category Monsters
+//$Title "Pain Elemental Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Pain Elemental"; 2 = "Force Agony Elemental"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -671,6 +880,8 @@ MONSTER
 	{
 	Spawn:
 		PAIN A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnPainElemental")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnNightmareElemental")
 		TNT1 A 2 ACS_NamedExecuteAlways("PainElementalSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",9)*13,"SpawnNightmareElemental")
 	SpawnPainElemental:
@@ -684,6 +895,12 @@ MONSTER
 
 Actor D64StalkerRandom Replaces LostSoul
 {
+//$Category Monsters
+//$Title "Lost Soul Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Lost Soul"; 2 = "Force Stalker"; 3 = "Force Forgotten One"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -694,6 +911,9 @@ MONSTER
 	{
 	Spawn:
 		SKUL A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnLostSoul")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnStalker")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnForgottenOne")
 		TNT1 A 2 ACS_NamedExecuteAlways("LostSoulSpawner")	//if D64 monsters only enabled spawn lost soul
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",8)*13,"SpawnStalker","SpawnForgottenOne")
 		Goto SpawnLostSoul
@@ -719,6 +939,12 @@ MONSTER
 
 Actor D64_Mancubus_Replacer Replaces Fatso	//tag 666 fix (A_KillMaster must be called from spawned monster)
 {
+//$Category Monsters
+//$Title "Mancubus Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Mancubus"; 2 = "Force Bruiser"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -734,6 +960,8 @@ MONSTER
 		Stop
 	Spawn:
 		FATT A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnFatso")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnBruiser")
 		TNT1 A 2 ACS_NamedExecuteAlways("MancubusSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",14)*13,"SpawnBruiser")
 	SpawnFatso:
@@ -747,6 +975,12 @@ MONSTER
 
 Actor D64_Archvile_Replacer Replaces Archvile
 {
+//$Category Monsters
+//$Title "Archvile Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Archvile"; 2 = "Force Flesh Wizard"; 3 = "Force Hellstorm"; 4 = "Replace to Mancubus"; }
 Scale 0.7
 MONSTER
 -SOLID
@@ -756,6 +990,10 @@ MONSTER
 	{
 	Spawn:
 		VILE A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnArchvile")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnFleshWizard")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnHellstorm")
+		TNT1 A 0 A_JumpIf(args[0] == 4,"D64MonsterOnly")
 		TNT1 A 2 ACS_NamedExecuteAlways("ArchvileSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",15)*13,"SpawnFleshWizard","SpawnHellstorm")
 		Goto SpawnArchvile
@@ -784,6 +1022,12 @@ MONSTER
 
 Actor D64_Cyberdemon_Replacer Replaces Cyberdemon	//tag 666 fix (A_KillMaster must be called from spawned monster)
 {
+//$Category Monsters
+//$Title "Cyberdemon Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Cyberdemon"; 2 = "Force Annihilator"; 3 = "Force Infernal"; }
 Scale 0.8
 MONSTER
 -SOLID
@@ -799,6 +1043,9 @@ MONSTER
 		Stop
 	Spawn:
 		CYBR A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnCyberdemon")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnAnnihilator")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnInfernal")
 		TNT1 A 2 ACS_NamedExecuteAlways("CyberdemonSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",16)*13,"SpawnAnnihilator","SpawnInfernal")
 		Goto SpawnCyberdemon
@@ -824,6 +1071,12 @@ MONSTER
 
 Actor D64_Mastermind_Replacer Replaces SpiderMastermind		//tag 666 fix (A_KillMaster must be called from spawned monster)
 {
+//$Category Monsters
+//$Title "Spider Mastermind Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Spider Mastermind"; 2 = "Force Motherdemon"; 3 = "Force Eradicator"; 4 = "Replace to Cyberdemon"; }
 Scale 1
 MONSTER
 -SOLID
@@ -839,6 +1092,10 @@ MONSTER
 		Stop
 	Spawn:
 		MSMN A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnMastermind")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnMother")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnEradicator")
+		TNT1 A 0 A_JumpIf(args[0] == 4,"D64MonsterOnly")
 		TNT1 A 2 ACS_NamedExecuteAlways("MastermindSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",17)*13,"SpawnMother","SpawnEradicator")
 		Goto SpawnMastermind
@@ -867,6 +1124,12 @@ MONSTER
 
 Actor 64TheHorde_Spawner	//Spawns husk zombies near dead body props
 {
+//$Category Monsters
+//$Title "Horde Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Disabled"; 2 = "Force 1 Husk"; 3 = "Force 2 Husks"; 4 = "Force 2 Husks, 1 Carrion"; 5 = "Force 3 Husks, 1 Carrion"; }
 Scale 0.7
 MONSTER
 -SOLID
@@ -877,6 +1140,11 @@ MONSTER
 	{
 	Spawn:
 		64ZF A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"Disabled")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"Hordex1")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"Hordex2")
+		TNT1 A 0 A_JumpIf(args[0] == 4,"Hordex3")
+		TNT1 A 0 A_JumpIf(args[0] == 5,"Hordex4")
 		TNT1 A 2 ACS_NamedExecuteAlways("HordeMultiplier")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",18)*13,"Hordex1","Hordex2","Hordex3","Hordex4")
 	Disabled:
@@ -906,6 +1174,12 @@ MONSTER
 //Direct monster replacers
 Actor D64_WaffenSS_Replacer Replaces WolfensteinSS
 {
+//$Category Monsters
+//$Title "Wolf SS Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Wolf SS"; 2 = "Force Zombie Marine"; 3 = "Force Motherdemon"; 4 = "Force Forgotten One"; }
 Scale 0.7
 MONSTER
 -SOLID
@@ -920,6 +1194,10 @@ MONSTER
 		Stop
 	Spawn:
 		CPOS A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"Doom2")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"Doom64")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"GoingDown")
+		TNT1 A 0 A_JumpIf(args[0] == 4,"DoomZero")
 		TNT1 A 2 ACS_NamedExecuteAlways("WadChecker")
 	Doom2:
 		TNT1 A 1 A_SpawnItemEx("64WaffenSS",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
@@ -940,6 +1218,12 @@ MONSTER
 
 Actor Revenant_Random Replaces Revenant
 {
+//$Category Monsters
+//$Title "Revenant Spawner"
+//$Arg0 What monster to spawn
+//$Arg0Tooltip Select the monster to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Revenant"; 2 = "Force Pestilence"; 3 = "Replace to Baron of Hell"; }
 Scale 0.6
 MONSTER
 -SOLID
@@ -950,6 +1234,9 @@ MONSTER
 	{
 	Spawn:
 		SKEL A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"Revenant")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnPestilence")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"D64MonsterOnly")
 		TNT1 A 2 ACS_NamedExecuteAlways("RevenantSpawner")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercent",12)*13,"SpawnPestilence")
 	Revenant:
@@ -966,7 +1253,7 @@ MONSTER
 
 Actor Hound_Chooser	19125	//Used for direct hound placement on maps. Tag 666 fix (A_KillMaster must be called from spawned monster)
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 SpawnID 185
 Scale 0.8
 MONSTER
@@ -1001,11 +1288,19 @@ MONSTER
 //Prop replacements
 Actor 64DemonicTreeReplacer replaces BigTree
 {
+//$Category Obstacles
+//$Title "Large brown tree Spawner"
+//$Arg0 What obstacle to spawn
+//$Arg0Tooltip Select the obstacle to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Large brown tree"; 2 = "Force Large demonic tree"; }
 Scale 0.7
 	States
 	{
 	Spawn:
 		LTRI A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnBigTree")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnDemonTree")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnDemonTree")//10%
 	SpawnBigTree:
@@ -1019,11 +1314,20 @@ Scale 0.7
 
 Actor 64EvilEyeReplacer replaces EvilEye
 {
+//$Category Obstacles
+//$Title "Evil Eye Spawner"
+//$Arg0 What obstacle to spawn
+//$Arg0Tooltip Select the obstacle to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Evil Eye"; 2 = "Force Venom Eye 1"; 3 = "Force Venom Eye 2"; }
 Scale 0.7
 	States
 	{
 	Spawn:
 		CEYE A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnEvilEye")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnVenomEye1")
+		TNT1 A 0 A_JumpIf(args[0] == 3,"SpawnVenomEye2")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnVenomEye1","SpawnVenomEye2")//10%
 	SpawnEvilEye:
@@ -1042,11 +1346,19 @@ Scale 0.7
 
 Actor 64CandlestickReplacer replaces Candlestick
 {
+//$Category Light sources
+//$Title "Candle Spawner"
+//$Arg0 What light source to spawn
+//$Arg0Tooltip Select the light source to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Candle"; 2 = "Force Hell Candle"; }
 Scale 0.7
 	States
 	{
 	Spawn:
 		CAND A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnCandlestick")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnHellCandle")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnHellCandle")//10%
 	SpawnCandlestick:
@@ -1060,11 +1372,19 @@ Scale 0.7
 
 Actor 64CandelabraGhostReplacer replaces Candelabra
 {
+//$Category Light sources
+//$Title "Candelabra Spawner"
+//$Arg0 What light source to spawn
+//$Arg0Tooltip Select the light source to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Candelabra"; 2 = "Force Hell Candelabra"; }
 Scale 0.7
 	States
 	{
 	Spawn:
 		64CN A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnCandelabra")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnHellCandle")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnHellCandle")//10%
 	SpawnCandelabra:
@@ -1078,11 +1398,19 @@ Scale 0.7
 
 Actor 64KillerBarrelReplacer replaces ExplosiveBarrel
 {
+//$Category Obstacles
+//$Title "Barrels Spawner"
+//$Arg0 What obstacle to spawn
+//$Arg0Tooltip Select the obstacle to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Normal Barrel"; 2 = "Force Killer Barrel"; }
 Scale 0.7
 	States
 	{
 	Spawn:
 		BEXP A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnNormalBarrel")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnKillerBarrel")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnKillerBarrel")//10%
 	SpawnNormalBarrel:
@@ -1096,11 +1424,19 @@ Scale 0.7
 
 Actor 64HangmanReplacer replaces BloodyTwitch
 {
+//$Category Decoration
+//$Title "Hanging Victim Spawner (blocking)"
+//$Arg0 What obstacle to spawn
+//$Arg0Tooltip Select the obstacle to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Hanging Victim"; 2 = "Force Hanging Enemy"; }
 Scale 0.7
 	States
 	{
 	Spawn:
 		DAM1 A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnNormalHangmen")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnHangedManEnemy")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnHangedManEnemy")//10%
 	SpawnNormalHangmen:
@@ -1114,11 +1450,19 @@ Scale 0.7
 
 Actor 64PossessedStatueReplacer Replaces HeartColumn
 {
+//$Category Obstacles
+//$Title "Short green pillar Spawner (beating heart)"
+//$Arg0 What obstacle to spawn
+//$Arg0Tooltip Select the obstacle to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Normal Short green pillar"; 2 = "Force Possessed Short green pillar"; }
 Scale 0.8
 	States
 	{
 	Spawn:
 		COL5 A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnNormalStatue")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnPossessedStatue")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnPossessedStatue")//10%
 	SpawnNormalStatue:
@@ -1132,11 +1476,19 @@ Scale 0.8
 
 Actor 64PHauntedFireskullReplacer Replaces FloatingSkull
 {
+//$Category Decoration
+//$Title "Floating skull rock Spawner"
+//$Arg0 What obstacle to spawn
+//$Arg0Tooltip Select the obstacle to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Normal Floating Skull"; 2 = "Force Aggressive Floating Skull"; }
 Scale 0.8
 	States
 	{
 	Spawn:
 		FSKU A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnNormalFloatingSkull")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnAggressiveFloatingSkull")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnAggressiveFloatingSkull")//10%
 	SpawnNormalFloatingSkull:
@@ -1150,11 +1502,19 @@ Scale 0.8
 
 Actor 64NonSolidHangmanReplacer replaces NonSolidTwitch
 {
+//$Category Decoration
+//$Title "Hanging Victim Spawner"
+//$Arg0 What obstacle to spawn
+//$Arg0Tooltip Select the obstacle to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Hanging Victim"; 2 = "Force Hanging Enemy"; }
 Scale 0.7
 	States
 	{
 	Spawn:
 		DAM1 A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnNormalHangmen")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnHangedManEnemy")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnHangedManEnemy")//10%
 	SpawnNormalHangmen:
@@ -1168,10 +1528,18 @@ Scale 0.7
 
 Actor 64FailingTechLampReplacer replaces TechLamp
 {
+//$Category Light sources
+//$Title "Tall techno floor lamp Spawner"
+//$Arg0 What light source to spawn
+//$Arg0Tooltip Select the light source to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Tall techno floor lamp"; 2 = "Force Tall hellish floor lamp"; }
 	States
 	{
 	Spawn:
 		TLMP A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnTechLamp")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnHellLamp")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnHellLamp")//10%
 	SpawnTechLamp:
@@ -1185,10 +1553,18 @@ Actor 64FailingTechLampReplacer replaces TechLamp
 
 Actor 64FailingTechLamp2Replacer replaces TechLamp2
 {
+//$Category Light sources
+//$Title "Short techno floor lamp Spawner"
+//$Arg0 What light source to spawn
+//$Arg0Tooltip Select the light source to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Short techno floor lamp"; 2 = "Force Short hellish floor lamp"; }
 	States
 	{
 	Spawn:
 		TLP2 A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnTechLamp")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnHellLamp")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnHellLamp")//10%
 	SpawnTechLamp:
@@ -1202,10 +1578,18 @@ Actor 64FailingTechLamp2Replacer replaces TechLamp2
 
 Actor 64FailingColumnReplacer replaces Column
 {
+//$Category Light sources
+//$Title "Floor lamp Spawner"
+//$Arg0 What light source to spawn
+//$Arg0Tooltip Select the light source to spawn.
+//$Arg0Type 11
+//$Arg0Enum { 0 = "Configurable by user (DEFAULT)"; 1 = "Force Floor lamp"; 2 = "Force Hellish floor lamp"; }
 	States
 	{
 	Spawn:
 		COLU A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnTechLamp")
+		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnHellLamp")
 		TNT1 A 2 ACS_NamedExecuteAlways("PoltergeistEnablerACS")
 		TNT1 A 0 A_Jump(26,"SpawnHellLamp")//10%
 	SpawnTechLamp:

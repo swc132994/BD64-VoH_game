@@ -23,7 +23,7 @@ PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Plasma",0.7
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodGreen"
 MONSTER
 +MOVEWITHSECTOR
@@ -145,7 +145,7 @@ MONSTER
 		CENT N 35
 		CENT N -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	XDeath:
+	XDeath: Death.Fire:
 		TNT1 A 0 A_CustomMissile("XDeath1Green",52,0,random(150,210),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("XDeath1Green",52,0,random(0,360),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("XDeath2Green",52,0,random(0,360),2,random(10,50))
@@ -206,7 +206,7 @@ PROJECTILE
 	Spawn:
 		DART A -1
 		Stop
-	Xdeath:
+	XDeath:
 		TNT1 A 3 A_PlaySound("NAILFLE",CHAN_WEAPON)
 		Stop
 	Death:

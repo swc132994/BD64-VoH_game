@@ -10,7 +10,7 @@ Height 56
 Mass 400
 MaxTargetRange 250
 PainChance 100
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
@@ -24,7 +24,7 @@ ActiveSound "Carrion/Active"
 DeathSound "Carrion/Detonate"
 PainSound "Carrion/SCREAMING"
 AttackSound "Carrion/Active"
-DropItem "SOULSPAWNER"
+//DropItem "SOULSPAWNER"
 Tag "Carrion Zombie"
 Obituary "The Horde infected %o."
 MONSTER

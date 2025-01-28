@@ -87,7 +87,7 @@ Radius 65
 Height 8
 Speed 20
 Damage 20
-DamageType "Fire"
+DamageType "Flames"
 Alpha 0.6
 Renderstyle Translucent
 +RANDOMIZE

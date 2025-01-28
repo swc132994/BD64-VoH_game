@@ -2,14 +2,14 @@ Actor 64BaronOfHell : BaronOfHell Replaces BaronOfHell
 {
 //$category "Game/BD64_Monsters
 Scale 0.8
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 MeleeRange 60	//default 44
 BloodType "Brutal_BloodGreen"
 BloodColor "00 64 00"	//Hex value
@@ -93,7 +93,7 @@ HitObituary "$FO_OB_BARONHIT"
 	Death.SuperFists:
 	Death.SuperKick:
 		TNT1 A 0 A_Jump(170,"Death.Head")
-	XDeath:
+	XDeath: Death.Fire:
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherGREEN",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1GREEN",52,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2GREEN",52,0,random(0,360),2,random(0,90))
@@ -128,7 +128,7 @@ HitObituary "$FO_OB_BARONHIT"
 		TNT1 A 0 A_ChangeFlag("FORCEXYBILLBOARD",TRUE)
 		BGB1 D -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop

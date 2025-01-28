@@ -3,7 +3,7 @@ Actor 64SpiderMastermind : SpiderMastermind Replaces SpiderMastermind
 //$category "Game/BD64_Monsters
 Scale 0.9
 Radius 62
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",200
@@ -12,7 +12,7 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 MeleeThreshold 200
 MeleeRange 100
-DropItem "DemonEssenceLargeSpawner"
+//DropItem "DemonEssenceLargeSpawner"
 DropItem "Soulsphere",32
 AttackSound "weapons/gswing"
 Tag "Spider Mastermind"
@@ -152,14 +152,15 @@ Scale 0.1
 Damage 5
 Speed 60
 FastSpeed 70
-+EXTREMEDEATH
+DamageType "Extreme"
+Translation "0:255=%[0,0,0]:[0.87,0.80,1.00]"//Pale Lavander
 	States
 	{
 	Spawn:
 		SPKO S 1 Bright
 		Loop
 	Death:
-		TNT1 A 1 A_SpawnItemEx("RicoChet")
+		TNT1 A 1 A_SpawnItemEx("RicoChetPurple")
 		EFIR ABCDEFGHIJKLM 1
 		Stop
 	XDeath:
@@ -176,7 +177,7 @@ Health 4000
 Speed 14
 Radius 62
 PainChance 30
-PainChance "Fire",10
+PainChance "Flames",10
 PainChance "Bullet",10
 PainChance "SuperFists",200
 PainChance "Kick",200
@@ -186,7 +187,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 AttackSound "weapons/gswing"
 MeleeThreshold 200
 MeleeRange 100
-DropItem "DemonEssenceLargeSpawner"
+//DropItem "DemonEssenceLargeSpawner"
 DropItem "Soulsphere",64
 Obituary "The Eradicator unmade %o."
 HitObituary "%o was crushed underfoot."

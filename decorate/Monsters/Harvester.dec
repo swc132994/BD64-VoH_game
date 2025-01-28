@@ -9,7 +9,7 @@ Speed 12
 MeleeRange 70 //default 44
 MeleeThreshold 60
 PainChance 160
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",255
 PainChance "Kick",255
@@ -23,7 +23,7 @@ PainSound "harvester/pain"
 DeathSound "harvester/death"
 ActiveSound "harvester/active"
 Obituary "%o was leeched by a Soul Harvester."
-DropItem "DemonEssenceSpawner"
+//DropItem "DemonEssenceSpawner"
 Tag "Soul Harvester"
 MONSTER
 +FLOORCLIP
@@ -93,7 +93,7 @@ MONSTER
 		SLVH F 35
 		SLVH F -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
-	XDeath:
+	XDeath: Death.Fire:
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncher",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2",32,0,random(0,360),2,random(0,90))
@@ -115,7 +115,7 @@ MONSTER
 		SLHV VWX 5
 		SLHV Y -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -256,7 +256,7 @@ DropItem "None"
 		TNT1 A 0 A_NoBlocking
 		SHDM B 1 A_SpawnItemEx("64BrutalisedHarvester_2",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
-	XDeath:
+	XDeath: Death.Fire:
 	Death.Chainsaw:
 	Death.BFG:
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncher",0,0,random(0,360),2,random(50,130))
@@ -356,7 +356,7 @@ Actor 64BrutalisedHarvester_2 : 64BrutalisedHarvester
 	Death.SSG:
 		SHDM B 2 A_Recoil(10)
 		TNT1 A 0 A_JumpIfCloser(170,"XDeath")
-	XDeath:
+	XDeath: Death.Fire:
 	Death.CutLess:
 	Death.Chainsaw:
 	Death.BFG:

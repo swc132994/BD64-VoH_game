@@ -15,7 +15,7 @@ Mass 0
 		TNT1 A 1
 		Stop
 	Death:
-	XDeath:
+	XDeath: 
 		TNT2 A 1
 		Stop
 	}
@@ -45,7 +45,7 @@ States
 		TNT1 A 1
 		Stop
 	Death:
-	XDeath:
+	XDeath: 
 		TNT1 A 1 A_AlertMonsters(100)
 		Stop
 	}

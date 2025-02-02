@@ -2,13 +2,13 @@ Actor 64PainElemental : PainElemental Replaces PainElemental
 {
 //$category "Game/BD64_Monsters
 Scale 0.8
-PainChance "Fire",10
+PainChance "Flames",10
 PainChance "Bullet",26
 PainChance "SuperFists",255
 PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "Ice",1.5
-DamageFactor "Fire",0.5
+DamageFactor "Flames",0.5
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 HitObituary "%o got too close to a Pain Elemental."

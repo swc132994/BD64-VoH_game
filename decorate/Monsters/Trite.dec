@@ -17,7 +17,7 @@ DeathSound "Trite/Death"
 ActiveSound "Trite/Active"
 BloodType "Brutal_BloodGreen"
 PainChance 200
-PainChance "Fire",64
+PainChance "Flames",64
 PainChance "Bullet",26
 PainChance "SuperFists",255
 PainChance "Kick",255
@@ -29,7 +29,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Jump",50
 DamageFactor "Kick",1.5
 DamageFactor "SuperKick",1.5
-DamageFactor "Fire",1.5
+DamageFactor "Flames",1.5
 DamageFactor "Plasma",1.5
 DamageFactor "BFG",1.5
 DropItem "DemonEssenceSpawner"

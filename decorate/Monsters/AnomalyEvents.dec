@@ -1216,7 +1216,7 @@ BloodColor "00 64 00"	//Hex value
 ActiveSound "UNMNROAM"
 PainSound "UNMNPAIN"
 DeathSound "UNMNDYIN"
-DamageFactor "Fire",1.5
+DamageFactor "Flames",1.5
 DamageFactor "chainsaw",2.0
 DamageFactor "Plasma",1.5
 DamageFactor "CauseWaterSplash",0.0
@@ -1349,7 +1349,7 @@ DeathSound "EvilEye/pain"
 BloodType "Brutal_BloodGreen"
 BloodColor "00 64 00"	//Hex value
 Painchance 128
-DamageFactor "Fire",1.5
+DamageFactor "Flames",1.5
 DamageFactor "chainsaw",2.0
 DamageFactor "Plasma",1.5
 DamageFactor "CauseWaterSplash",0.0

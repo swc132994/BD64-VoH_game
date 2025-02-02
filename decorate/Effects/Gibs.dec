@@ -2259,6 +2259,8 @@ Scale 0.85
 //ARACHNOTRON
 ACTOR XDeathSpiderLeg1 : XDeathZombieArm1
 {
++NOBLOOD
++NOBLOODDECALS
 	States
 	{
 	Spawn:
@@ -2273,6 +2275,8 @@ ACTOR XDeathSpiderLeg1 : XDeathZombieArm1
 
 ACTOR XDeathCrawlerGun : XDeathZombieArm1
 {
++NOBLOOD
++NOBLOODDECALS
 	States
 	{
 	Spawn:

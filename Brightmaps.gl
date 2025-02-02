@@ -81,6 +81,7 @@ brightmap sprite PLASC0		{map "brightmaps/PGUNB2.png"disablefullbright}
 //WEAPONS
 
 //SMG
+/*
 brightmap sprite 2MGRA0		{map "BRIGHTMAPS/2MGRA0B.png" Disablefullbright}
 brightmap sprite 2MGRB0		{map "BRIGHTMAPS/2MGRB0B.png" Disablefullbright}
 brightmap sprite 2MGRC0		{map "BRIGHTMAPS/2MGRC0B.png" Disablefullbright}
@@ -179,6 +180,7 @@ brightmap sprite SMGSH0		{map "BRIGHTMAPS/SMGSH0B.png" Disablefullbright}
 brightmap sprite SMGPA0		{map "BRIGHTMAPS/SMGPA0B.png" Disablefullbright}
 brightmap sprite SMGPB0		{map "BRIGHTMAPS/SMGPB0B.png" Disablefullbright}
 brightmap sprite SMGPC0		{map "BRIGHTMAPS/SMGPC0B.png" Disablefullbright}
+*/
 
 //CHAINGUN
 brightmap sprite CHNGA0		{map "BRIGHTMAPS/CHNGA0B.png" Disablefullbright}

@@ -2,7 +2,7 @@ Actor 64BaronOfHell : BaronOfHell Replaces BaronOfHell
 {
 //$category "Game/BD64_Monsters
 Scale 0.8
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
@@ -128,7 +128,7 @@ HitObituary "$FO_OB_BARONHIT"
 		TNT1 A 0 A_ChangeFlag("FORCEXYBILLBOARD",TRUE)
 		BGB1 D -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop

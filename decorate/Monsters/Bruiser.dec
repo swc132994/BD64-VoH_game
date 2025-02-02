@@ -14,7 +14,7 @@ ActiveSound "64Bruiser/active"
 Obituary "%o was blasted by a Bruiser"
 Tag "Bruiser"
 PainChance 26
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "SuperFists",220
 PainChance "Kick",255
 PainChance "SuperKick",255
@@ -118,7 +118,7 @@ MONSTER
 		DKHL O 35 A_BossDeath
 		DKHL O -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -265,7 +265,7 @@ Radius 8
 Gravity 1.0
 Alpha 1.0
 RenderStyle Add
-DamageType "Fire"
+DamageType "Flames"
 Decal "SmallerScorch"
 +MISSILE
 +NOBLOCKMAP

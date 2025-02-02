@@ -21,7 +21,7 @@ DeathSound "knight/death"
 ActiveSound "knight/active"
 GibHealth 15
 PainChance 75
-PainChance "Fire",26
+PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",255
 PainChance "Kick",255
@@ -97,7 +97,7 @@ MONSTER
 		TNT1 A 0 A_PlaySound("Misc/Gibbed",CHAN_BODY)
 		A038 A -1
 		Stop
-	Death.Plasma: Death.Fire:
+	Death.Plasma: Death.Flames:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop

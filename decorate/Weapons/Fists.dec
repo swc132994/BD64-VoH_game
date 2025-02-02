@@ -1,7 +1,7 @@
 Actor AltPunchCharge : Ammo
 {
 inventory.maxamount 100
-Inventory.Icon "PUN1A0"
+Inventory.Icon "PUNXA0"
 }
 
 Actor 64Fist : Fist Replaces Fist
@@ -11,7 +11,7 @@ Weapon.SlotPriority 1
 Weapon.SelectionOrder 3700
 Obituary "$FO_OB_MPFIST"
 Tag "$FO_TAG_FIST"
-Inventory.Icon "PUN1A0"
+Inventory.Icon "PUNXA0"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 +INVENTORY.RESTRICTABSOLUTELY
@@ -109,7 +109,7 @@ Weapon.SlotPriority 1
 Weapon.SelectionOrder 3700
 Obituary "$FO_OB_MPFIST"
 Tag "$FO_TAG_FIST"
-Inventory.Icon "PUN1A0"
+Inventory.Icon "PUNXA0"
 Inventory.forbiddento "64DoomPlayer"
 Weapon.AmmoType "AltPunchCharge"
 Weapon.AmmoUse 0

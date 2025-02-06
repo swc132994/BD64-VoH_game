@@ -92,7 +92,7 @@ BloodType "Brutal_BloodGreen"
 		TNT1 A 0 A_JumpIfCloser(170,"XDeath2")
 		Goto Death
 	Death.Cutless:
-		TNT1 A 0 A_Jump(92,"Death")
+		TNT1 A 0 A_Jump(85,"Death")
 		Goto XDeath2
 	Death.SuperFists:
 	Death.SuperKick:

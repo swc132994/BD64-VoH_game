@@ -153,13 +153,14 @@ Damage 5
 Speed 60
 FastSpeed 70
 DamageType "Extreme"
+Translation "0:255=%[0,0,0]:[0.87,0.80,1.00]"//Pale Lavander
 	States
 	{
 	Spawn:
 		SPKO S 1 Bright
 		Loop
 	Death:
-		TNT1 A 1 A_SpawnItemEx("RicoChet")
+		TNT1 A 1 A_SpawnItemEx("RicoChetPurple")
 		EFIR ABCDEFGHIJKLM 1
 		Stop
 	XDeath:

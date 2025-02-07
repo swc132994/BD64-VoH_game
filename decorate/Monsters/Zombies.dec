@@ -24,7 +24,16 @@ Decal "BulletDecalNew1"
 	}
 }
 
-Actor ChaingunProjectile : EnemyProjectile {}
+Actor ChaingunProjectile : EnemyProjectile
+{
+Translation "0:255=%[0,0,0]:[0.87,0.80,1.00]"//Pale Lavander
+	States
+	{
+	Death:
+		TNT1 A 3 A_SpawnItemEx("RicoChetPurple")
+		Stop
+	}
+}
 
 Actor EnemyProjectileExtreme : EnemyProjectile
 {

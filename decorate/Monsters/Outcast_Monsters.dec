@@ -626,7 +626,7 @@ FastSpeed 24
 Alpha 0.5
 PainChance "Flames",0
 DamageFactor "Flames",0
-DamageFactor "Ice",1.5
+DamageFactor "Ice",2
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 RenderStyle Translucent

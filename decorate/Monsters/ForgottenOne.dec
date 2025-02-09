@@ -16,7 +16,7 @@ PainChance "Kick",255
 PainChance "SuperKick",255
 PainChance "Flames",0
 DamageFactor "Flames",0
-DamageFactor "Ice",1.5
+DamageFactor "Ice",2
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 MaxTargetRange 128

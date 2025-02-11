@@ -192,9 +192,11 @@ Speed 20
 RenderStyle Normal
 Decal "MedScorch"
 DamageType "Extreme"
+-NOBLOCKMAP
 +NOBLOOD
 +SHOOTABLE
 +NOTARGETSWITCH
++NOTARGET
 	States
 	{
 	Spawn:

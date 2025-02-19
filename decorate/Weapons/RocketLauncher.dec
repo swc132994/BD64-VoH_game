@@ -476,8 +476,8 @@ Weapon.SisterWeapon "64ClassicRocketLauncherTactical"
 		RLNG BCDE 2 A_WeaponReady(WRF_ALLOWZOOM)
 		Goto Ready
 	Altfire:
-		TNT1 A 0 A_JumpIfInventory("NoReloading",1,"AltFireNoReload")
 		TNT1 A 0 A_JumpIfInventory("AltMode",1,"ReturnToLaser")
+		TNT1 A 0 A_JumpIfInventory("NoReloading",1,"AltFireNoReload")
 		TNT1 A 0 A_JumpIfInventory("RLAmmo",3,"FullAltfire")
 		TNT1 A 0 A_JumpIfInventory("RLAmmo",2,"HalfAltfire")
 	AltFireAnimation:	

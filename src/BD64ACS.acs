@@ -155,7 +155,17 @@ script "LightAndFogChecker" (Void)
 
 script "BerserkSwitchFistsACS" (void) Clientside
 {
-SetResultValue(GetUserCVar(PlayerNumber(),"BerserkSwitchFistsCvar"));
+	if(GetUserCVar(PlayerNumber(),"BerserkSwitchFistsCvar") == true)	
+	{
+		If(CheckInventory("IsTacticalClass") || CheckInventory("IsModern"))
+		{
+			SetWeapon("64FistTactical");
+		}	
+		else
+		{
+			SetWeapon("64Fist");
+		}
+	}
 }
 
 script "Flat_Decal_Check" (void) NET

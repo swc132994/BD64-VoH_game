@@ -268,8 +268,6 @@ Obituary "$FO_OB_MPBFG_BOOM"
 Actor 64BFGExtra : BFGExtra Replaces BFGExtra
 {
 Renderstyle Normal
-DamageType "BFG"
-+EXTREMEDEATH
 	states
 	{
 	Spawn:

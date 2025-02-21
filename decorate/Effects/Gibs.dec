@@ -1823,6 +1823,8 @@ ACTOR XDeathFatsoCell : XDeathZombieArm1
 {
 +NOBLOOD
 +NOBLOODDECALS
++BLOODLESSIMPACT
+Decal "None"
 	States
 	{
 	Spawn:
@@ -1878,14 +1880,14 @@ Scale 1
 	States
 	{
 	Spawn:
-		MANF A 0 NoDelay A_Jump(128,2)
+		MAND A 0 NoDelay A_Jump(128,2)
 		TNT1 A 0 A_SetScale(0-ScaleX,ScaleY)	//FLIP IMAGE HORZ
-		MANF ABCDEFGH 4
+		MAND ABCDEFGH 4
 		Wait
 	Death:
-		MANF C 35
+		MAND C 35
 		TNT1 A 0 A_CustomMissile("Brutal_BloodSpot",0,0,random(0,360),2,random(0,90))
-		MANF C -1
+		MAND C -1
 		Stop
 	}
 }
@@ -2299,13 +2301,14 @@ ACTOR XDeathSpiderLeg1 : XDeathZombieArm1
 {
 +NOBLOOD
 +NOBLOODDECALS
++BLOODLESSIMPACT
+Decal "None"
 	States
 	{
 	Spawn:
 		SPIL ABCDEFGH 4
 		Wait
 	Death:
-		SPIL I 1
 		SPIL I -1
 		Stop
 	}
@@ -2315,13 +2318,14 @@ ACTOR XDeathCrawlerGun : XDeathZombieArm1
 {
 +NOBLOOD
 +NOBLOODDECALS
++BLOODLESSIMPACT
+Decal "None"
 	States
 	{
 	Spawn:
 		NCWG ABCDEFGH 4
 		Wait
 	Death:
-		NCWG I 1
 		NCWG I -1
 		Stop
 	}
@@ -2811,6 +2815,10 @@ ACTOR XDeathHuskArm1 : XDeathZombieArm1
 //Lost Soul
 ACTOR LostSoulPiece1 : XDeathZombieArm1
 {
++NOBLOOD
++NOBLOODDECALS
++BLOODLESSIMPACT
+Decal "None"
 Scale 0.7
 	States
 	{

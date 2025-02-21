@@ -1757,11 +1757,11 @@ health 20
 mass 125
 Damagefactor "Melee",0
 Damagefactor "Kick",0
+DamageType "Flames"
 -ISMONSTER
 +SOLID
 +SHOOTABLE
 +NOBLOOD
-+EXTREMEDEATH
 +PUSHABLE
 +SLIDESONWALLS
 	States

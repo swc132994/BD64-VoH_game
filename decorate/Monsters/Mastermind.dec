@@ -10,15 +10,14 @@ PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-MeleeThreshold 200
+MeleeThreshold 300
 MeleeRange 100
 DropItem "DemonEssenceLargeSpawner"
 DropItem "Soulsphere",32
-AttackSound "weapons/gswing"
+AttackSound "None"
 Tag "Spider Mastermind"
 Obituary "$FO_OB_SPIDER"
 HitObituary "%o was crushed underfoot."
-+EXTREMEDEATH
 +AVOIDMELEE
 +QUICKTORETALIATE
 +NEVERFAST
@@ -34,7 +33,8 @@ HitObituary "%o was crushed underfoot."
 		Loop
 	Melee:
 		MSMN DE 6 A_FaceTarget
-		MSMN D 6 A_CustomMeleeAttack(50)
+		MSMN D 3 A_CustomMeleeAttack(100,"FOOTWALL","weapons/gswing","Extreme")	//Melee and Missile seperated
+		MSMN D 3 A_Recoil(-5)
 		Goto See
 	Missile:
 		MSMN A 15 A_FaceTarget
@@ -184,8 +184,8 @@ PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-AttackSound "weapons/gswing"
-MeleeThreshold 200
+AttackSound "None"
+MeleeThreshold 300
 MeleeRange 100
 DropItem "DemonEssenceLargeSpawner"
 DropItem "Soulsphere",64
@@ -193,7 +193,6 @@ Obituary "The Eradicator unmade %o."
 HitObituary "%o was crushed underfoot."
 Tag "Eradicator"
 BloodType "Brutal_BloodBLUE"
-+EXTREMEDEATH
 +AVOIDMELEE
 +QUICKTORETALIATE
 +NEVERFAST
@@ -209,7 +208,8 @@ BloodType "Brutal_BloodBLUE"
 		Loop
 	Melee:
 		BSGI DE 6 A_FaceTarget
-		BSGI D 6 A_CustomMeleeAttack(75)
+		BSGI D 3 A_CustomMeleeAttack(100,"FOOTWALL","weapons/gswing","Extreme")	//Melee and Missile seperated
+		BSGI D 3 A_Recoil(-5)
 		Goto See
 	Missile:
 		BSGI A 15 A_FaceTarget

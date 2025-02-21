@@ -38,6 +38,8 @@ Tag "Explosive Barrel"
 		BEXP E 3 Bright
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
 		BEXP F 3 Bright
+		TNT1 AAAAA 0 A_SpawnItemEx("TinyBurningPiece2",0,0,0,Random(-5,5),Random(-5,5),Random(-5,5),Random(45,360),SXF_TRANSFERTRANSLATION|SXF_TRANSFERPITCH)
+		TNT1 AAAAA 0 A_SpawnItemEx("TinyBurningPiece",0,0,0,Random(-5,5),Random(-5,5),Random(-5,5),Random(45,360),SXF_TRANSFERTRANSLATION|SXF_TRANSFERPITCH)
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 3
 		TNT1 A 0 A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))

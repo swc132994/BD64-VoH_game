@@ -37,7 +37,7 @@ Translation "0:255=%[0,0,0]:[0.87,0.80,1.00]"//Pale Lavander
 
 Actor EnemyProjectileExtreme : EnemyProjectile
 {
-+EXTREMEDEATH
+DamageType "Extreme"
 }
 
 Actor 64ZombieMan : ZombieMan Replaces ZombieMan

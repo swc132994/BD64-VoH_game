@@ -1849,9 +1849,9 @@ Scale 1
 		MANB ABCDEFGH 4
 		Wait
 	Death:
-		MANB A 35
+		MANB I 35
 		TNT1 A 0 A_CustomMissile("Brutal_BloodSpot",0,0,random(0,360),2,random(0,90))
-		MANB A -1
+		MANB I -1
 		Stop
 	}
 }
@@ -1867,27 +1867,9 @@ Scale 1
 		MANE ABCDEFGH 4
 		Wait
 	Death:
-		MANE G 35
+		MANE I 35
 		TNT1 A 0 A_CustomMissile("Brutal_BloodSpot",0,0,random(0,360),2,random(0,90))
-		MANE G -1
-		Stop
-	}
-}
-
-ACTOR XDeathFatsoBoneGibMedium : XDeathZombieArm1
-{
-Scale 1
-	States
-	{
-	Spawn:
-		MAND A 0 NoDelay A_Jump(128,2)
-		TNT1 A 0 A_SetScale(0-ScaleX,ScaleY)	//FLIP IMAGE HORZ
-		MAND ABCDEFGH 4
-		Wait
-	Death:
-		MAND C 35
-		TNT1 A 0 A_CustomMissile("Brutal_BloodSpot",0,0,random(0,360),2,random(0,90))
-		MAND C -1
+		MANE I -1
 		Stop
 	}
 }

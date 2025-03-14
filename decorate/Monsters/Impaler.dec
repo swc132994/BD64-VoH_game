@@ -1,6 +1,6 @@
 Actor 64Impaler 19140
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Health 800
 Height 64

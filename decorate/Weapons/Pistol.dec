@@ -1,6 +1,6 @@
 ACTOR PistolSpawner : CustomInventory Replaces Pistol
 {
-//$category "Game/BD64_Weapons
+//$category "Game/BD64_Weapons"
 Scale 0.82
 Tag "$FO_TAG_PISTOL"
 Inventory.PickupMessage "$GOTPISTOL"

@@ -1,6 +1,6 @@
 Actor 64Trite 19139
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.4
 Health 30
 Radius 16

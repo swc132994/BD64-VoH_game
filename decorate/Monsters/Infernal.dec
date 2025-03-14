@@ -1,6 +1,6 @@
 Actor 64Infernal 19135
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Health 9500
 Speed 16

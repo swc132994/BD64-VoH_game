@@ -1,6 +1,6 @@
 Actor 64ClassicCacodemon : Cacodemon
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Health 350
 PainChance "Flames",26
@@ -323,7 +323,7 @@ Actor Brutalized64ClassicCaco_3 : Brutalized64ClassicCaco
 
 Actor NightmareClassicCacodemon : Cacodemon
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 SpawnID 156
 Scale 0.8
 Health 700

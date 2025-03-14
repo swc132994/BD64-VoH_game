@@ -1,6 +1,6 @@
 Actor UnmakerSpawner : CustomInventory 9901
 {
-//$category "Game/BD64_Weapons
+//$category "Game/BD64_Weapons"
 SpawnID 84
 Scale 0.9
 Tag "Unmaker"

@@ -674,7 +674,7 @@ Obituary "$FO_OB_STEALTHZOMBIE"
 
 Actor 64ShotgunGuy : 64Zombieman Replaces ShotgunGuy
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Speed 6
 GibHealth 15
 Tag "Shotgun Zombie"
@@ -1233,7 +1233,7 @@ Obituary "$FO_OB_STEALTHSHOTGUNGUY"
 
 Actor 64SSGGuy : 64ShotgunGuy 19110
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 DropItem "SSGDrop"
 DropItem "SOULSPAWNER"
 Tag "SSG Zombie"
@@ -1778,7 +1778,7 @@ Actor BrutalizedSSGGuy_2 : BrutalizedSSGGuy_1
 
 Actor 64ChaingunGuy : 64Zombieman Replaces Chaingunguy
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Health 120
 Speed 4
 AttackSound "MGUNFIR"
@@ -2203,7 +2203,7 @@ Actor BrutalizedChaingunner_2 : BrutalizedChaingunner_1
 
 Actor 64ZombieMarine : 64Zombieman Replaces WolfensteinSS
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Health 80
 Speed 12
 DamageFactor "Head",2.25

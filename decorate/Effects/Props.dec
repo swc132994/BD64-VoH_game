@@ -1089,7 +1089,7 @@ actor 64NonsolidMeat5 : 64Meat5 Replaces NonsolidMeat5
 
 actor TweezerGore : Meat2 9913
 {
-//$category "Game/BD64_Props
+//$category "Game/BD64_Props"
 Scale 0.82
 Height 83
 	States
@@ -1114,13 +1114,13 @@ Height 83
 
 actor TweezerGoreNonSolid : TweezerGore 9928//DoomED
 {
-//$category "Game/BD64_Props
+//$category "Game/BD64_Props"
 -SOLID
 }
 
 actor BloodyStick : HeadOnAStick 9915//DoomED
 {
-//$category "Game/BD64_Props
+//$category "Game/BD64_Props"
 Scale 0.82
 	States
 	{
@@ -1310,7 +1310,7 @@ Scale 0.75
 
 actor 64YellowTorch : RedTorch 9917//DoomED
 {
-//$category "Game/BD64_Props
+//$category "Game/BD64_Props"
 Scale 0.75
 	States
 	{
@@ -1411,7 +1411,7 @@ Scale 0.75
 
 actor 64YellowTorchSmall : ShortRedTorch 9918//DoomED
 {
-//$category "Game/BD64_Props
+//$category "Game/BD64_Props"
 Scale 0.75
 	States
 	{
@@ -1437,7 +1437,7 @@ Scale 0.75
 
 actor 64WallTorchRed 9930//DoomED
 {
-//$category "Game/BD64_Props
+//$category "Game/BD64_Props"
 Game Doom
 Scale 0.75
 Radius 5
@@ -1466,7 +1466,7 @@ Radius 5
 
 actor 64WallTorchBlue 9933//DoomED
 {
-//$category "Game/BD64_Props
+//$category "Game/BD64_Props"
 Game Doom
 Scale 0.75
 Radius 5
@@ -1495,7 +1495,7 @@ Radius 5
 
 actor 64WallTorchGreen 9935//DoomED
 {
-//$category "Game/BD64_Props
+//$category "Game/BD64_Props"
 Game Doom
 Scale 0.75
 Radius 5
@@ -1524,7 +1524,7 @@ Radius 5
 
 actor 64WallTorchYellow 9936//DoomED
 {
-//$category "Game/BD64_Props
+//$category "Game/BD64_Props"
 Game Doom
 Scale 0.75
 Radius 5
@@ -1961,7 +1961,7 @@ SCALE 0.8
 
 Actor BD64HangingTechLampb 9923
 {
-//$category "Maps/BD64_Lights
+//$category "Maps/BD64_Lights"
 Game Doom
 Height 56
 Radius 16
@@ -1980,7 +1980,7 @@ Radius 16
 
 actor BD64CeilingLightb 9924
 {
-//$category "Maps/BD64_Lights
+//$category "Maps/BD64_Lights"
 Game Doom
 Height 16
 Radius 16
@@ -2000,7 +2000,7 @@ Radius 16
 
 actor BD64GroundFire 9929
 {
-//$category "Maps/BD64_Lights
+//$category "Maps/BD64_Lights"
 Game Doom
 scale 0.6
 Height 8

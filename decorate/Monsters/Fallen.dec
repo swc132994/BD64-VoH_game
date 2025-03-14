@@ -1,6 +1,6 @@
 Actor 64Fallen 19133
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.7
 Health 450
 Radius 24

@@ -1,6 +1,6 @@
 Actor 64Belphegor : BaronOfHell 11053
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Health 1500
 Height 64

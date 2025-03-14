@@ -1,6 +1,6 @@
 Actor 64PainElemental : PainElemental Replaces PainElemental
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 PainChance "Flames",10
 PainChance "Bullet",26
@@ -61,7 +61,7 @@ DropItem "DemonEssenceSpawner"
 
 Actor 64AgonyElemental : 64PainElemental 19126
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Health 600
 Speed 10
 PainChance 64

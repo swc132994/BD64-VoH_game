@@ -1,6 +1,6 @@
 Actor 64PlasmaGuy : 64Zombieman 19138
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Health 80
 Speed 12
 SeeSound "colonelzombie/see"

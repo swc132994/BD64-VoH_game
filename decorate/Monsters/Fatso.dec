@@ -1,6 +1,6 @@
 Actor 64Fatso : Fatso Replaces Fatso
 {
-//$category "Game/BD64_Monsters
+//$category "Game/BD64_Monsters"
 Scale 0.8
 Health 700
 Speed 6

@@ -23,7 +23,7 @@ inventory.maxamount 50
 
 ACTOR 64ProximityMine : Brutal64Weapon
 {
-//$category "Game/BD64_Weapons
+//$category "Game/BD64_Weapons"
 Scale 0.35
 Weapon.SlotNumber 5
 Weapon.SlotPriority 1

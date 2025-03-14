@@ -1,6 +1,6 @@
 Actor PlasmaRifleSpawner : CustomInventory// Replaces PlasmaRifle		//spawned from randomspawners
 {
-//$category "Game/BD64_Weapons
+//$category "Game/BD64_Weapons"
 Scale 0.82
 Tag "$FO_TAG_PLASMARIFLE"
 Inventory.PickupMessage "$BD64_GOTPLASMA"

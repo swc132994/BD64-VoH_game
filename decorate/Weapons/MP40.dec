@@ -1,6 +1,6 @@
 Actor MP40Spawner : CustomInventory 19124
 {
-//$category "Game/BD64_Weapons
+//$category "Game/BD64_Weapons"
 Scale 0.8
 Tag "MP40"
 Inventory.PickupMessage "$GOTMP40"

@@ -28,6 +28,13 @@ script "BD64Respawn" Respawn NET
 
 Script "BD64Initilize" Enter
 {
+	if(GameType () == GAME_SINGLE_PLAYER)
+	{
+		sethudsize(160, 90, TRUE);
+		setfont("BLASCR");
+		HudMessageBold(s:"a"; HUDMSG_FADEOUT, 1, CR_BLACK, 0.1, 0.1, 0.1, 1.0);
+	}
+
 	ACS_NamedExecuteAlways("BD64Respawn",0);
 	CreateTranslation(2666,0:255=%[0,0,0]:[0.94,0.97,1.00]);//ALICE BLUE
 

@@ -32,7 +32,7 @@ Actor 64SMG : DoomWeapon
 {
 Scale 0.82
 Weapon.SlotNumber 2
-Weapon.SlotPriority 3
+Weapon.SlotPriority 2
 Weapon.SelectionOrder 800
 Weapon.AmmoType "Clip"
 Weapon.AmmoUse 1
@@ -96,7 +96,7 @@ Actor 64SMGTactical : Brutal64Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 2
-Weapon.SlotPriority 3
+Weapon.SlotPriority 2
 Weapon.SelectionOrder 800
 Weapon.AmmoType1 "Clip"
 Weapon.AmmoUse1 1

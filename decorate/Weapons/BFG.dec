@@ -31,6 +31,7 @@ Actor 64BFG9000 : DoomWeapon
 {
 Scale 0.9
 Weapon.SlotNumber 7
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2800
 Weapon.AmmoType "Cell"
 Weapon.AmmoUse 40
@@ -82,6 +83,7 @@ Actor 64BFG9000Tactical : Brutal64Weapon
 {
 Scale 0.9
 Weapon.SlotNumber 7
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2800
 Weapon.AmmoType "Cell"
 Weapon.AmmoUse 1

@@ -34,7 +34,7 @@ Actor 64Rifle : DoomWeapon
 {
 Scale 0.82
 Weapon.SlotNumber 4
-Weapon.SlotPriority 1
+Weapon.SlotPriority 100
 Weapon.SelectionOrder 800
 Weapon.AmmoType "Clip"
 Weapon.AmmoUse 1
@@ -92,7 +92,7 @@ Actor 64RifleTactical : Brutal64Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 4
-Weapon.SlotPriority 1
+Weapon.SlotPriority 100
 Weapon.SelectionOrder 800
 Weapon.AmmoType1 "64HighCaliberBox"
 Weapon.AmmoUse1 1

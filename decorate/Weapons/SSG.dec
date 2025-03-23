@@ -20,7 +20,7 @@ Actor 64SuperShotgun : DoomWeapon
 {
 Scale 0.87
 Weapon.SlotNumber 3
-Weapon.SlotPriority 2
+Weapon.SlotPriority 500
 Weapon.SelectionOrder 400
 Weapon.AmmoType "Shell"
 Weapon.AmmoUse 2
@@ -122,7 +122,7 @@ Actor 64SuperShotgunTACTICAL : Brutal64Weapon
 {
 Scale 0.87
 Weapon.SlotNumber 3
-Weapon.SlotPriority 2
+Weapon.SlotPriority 500
 Weapon.SelectionOrder 400
 Weapon.AmmoType1 "Shell"
 Weapon.AmmoUse1 1

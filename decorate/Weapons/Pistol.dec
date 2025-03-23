@@ -20,12 +20,11 @@ Actor 64Pistol : DoomWeapon
 {
 Scale 0.82
 Weapon.SlotNumber 2
-Weapon.SlotPriority 1
+Weapon.SlotPriority 10
 Weapon.SelectionOrder 1900
 Weapon.AmmoType "Clip"
 Weapon.AmmoUse 1
 Weapon.AmmoGive 10
-+WEAPON.WIMPY_WEAPON
 +WEAPON.NOAUTOFIRE
 Obituary "$FO_OB_MPPISTOL"
 Inventory.Pickupmessage "$GOTPISTOL"
@@ -83,7 +82,7 @@ Actor 64PistolTACTICAL : Brutal64Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 2
-Weapon.SlotPriority 1
+Weapon.SlotPriority 10
 Weapon.SelectionOrder 1900
 Weapon.AmmoType1 "Clip"
 Weapon.AmmoUse1 1
@@ -94,7 +93,6 @@ Weapon.AmmoGive2 0
 Obituary "$FO_OB_MPPISTOL"
 Inventory.Pickupmessage "$FO_PICKUP_PISTOL_DROPPED"
 Tag "$FO_TAG_PISTOL"
-+WEAPON.WIMPY_WEAPON
 	states
 	{
 	Spawn:

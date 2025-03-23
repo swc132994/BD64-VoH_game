@@ -20,7 +20,7 @@ Actor 64RocketLauncher : DoomWeapon
 {
 Scale 0.82
 Weapon.SlotNumber 5
-Weapon.SlotPriority 2
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2500
 Weapon.AmmoType "RocketAmmo"
 Weapon.AmmoUse 1
@@ -92,7 +92,7 @@ Actor 64RocketLauncherTactical : Brutal64Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 5
-Weapon.SlotPriority 2
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2500
 Weapon.AmmoType1 "RocketAmmo"
 Weapon.AmmoUse1 1
@@ -562,7 +562,7 @@ Actor 64ClassicRocketLauncherTactical : Brutal64Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 5
-Weapon.SlotPriority 2
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2500
 Weapon.AmmoType "RocketAmmo"
 Weapon.AmmoUse 1

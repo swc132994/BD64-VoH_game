@@ -31,7 +31,7 @@ Actor 64Chaingun : DoomWeapon
 {
 Scale 0.82
 Weapon.SlotNumber 4
-Weapon.SlotPriority 2
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 700
 Weapon.AmmoType "Clip"
 Weapon.AmmoUse 1
@@ -101,7 +101,7 @@ Actor 64ChaingunTACTICAL : Brutal64Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 4
-Weapon.SlotPriority 2
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 700
 Weapon.AmmoType "64HighCaliberBox"
 Weapon.AmmoUse 1

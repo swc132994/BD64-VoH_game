@@ -31,8 +31,8 @@ Actor 64PlasmaRifle : DoomWeapon
 {
 Scale 0.82
 Weapon.SlotNumber 6
-Weapon.SlotPriority 2
 Weapon.SelectionOrder 100
+Weapon.SlotPriority 1000
 Weapon.AmmoType "Cell"
 Weapon.AmmoUse 1
 Weapon.AmmoGive 40
@@ -108,8 +108,8 @@ Actor 64PlasmaRifleTACTICAL : Brutal64Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 6
-Weapon.SlotPriority 2
 Weapon.SelectionOrder 100
+Weapon.SlotPriority 1000
 Weapon.AmmoType1 "Cell"
 Weapon.AmmoUse1 1
 Weapon.AmmoGive1 40

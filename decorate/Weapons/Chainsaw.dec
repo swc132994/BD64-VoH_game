@@ -20,7 +20,7 @@ Actor 64Chainsaw : Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 1
-Weapon.SlotPriority 2
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2200
 Weapon.Kickback 0
 Inventory.PickupMessage "$BD64_GOTCHAINSAW"
@@ -112,7 +112,7 @@ Actor 64ChainsawTACTICAL : Brutal64Weapon	//CHAINSAW FOR TACTICAL CLASS
 {
 Scale 0.82
 Weapon.SlotNumber 1
-Weapon.SlotPriority 2
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2200
 Weapon.Kickback 0
 Weapon.AmmoType1 "SawGas"
@@ -391,7 +391,7 @@ Actor 64ChainsawTactical_Classic : Brutal64Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 1
-Weapon.SlotPriority 2
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2200
 Weapon.Kickback 0
 Weapon.AmmoType "SawGas"

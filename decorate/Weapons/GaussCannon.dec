@@ -36,7 +36,7 @@ ACTOR 64GaussCannon : DoomWeapon
 {
 Scale 0.9
 Weapon.SlotNumber 6
-Weapon.SlotPriority 1
+Weapon.SlotPriority 500
 Weapon.Selectionorder 2000
 Weapon.AmmoType "Cell"
 Weapon.AmmoUse 10
@@ -103,7 +103,7 @@ ACTOR 64GaussCannonTACTICAL : Brutal64Weapon
 {
 Scale 0.9
 Weapon.SlotNumber 6
-Weapon.SlotPriority 1
+Weapon.SlotPriority 500
 Weapon.Selectionorder 2000
 Weapon.AmmoType1 "Cell"
 Weapon.AmmoUse1 1

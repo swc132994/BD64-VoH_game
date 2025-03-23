@@ -21,11 +21,11 @@ Actor MineHold : Ammo
 inventory.maxamount 50
 }
 
-ACTOR 64ProximityMine : Brutal64Weapon
+ACTOR 64ProximityMine : Brutal64Weapon	//Weapon now used as a keybind from other weapons.
 {
 //$category "Game/BD64_Weapons"
 Scale 0.35
-Weapon.SlotNumber 5
+//Weapon.SlotNumber 5
 Weapon.SlotPriority 1
 Weapon.SelectionOrder 9999
 Weapon.AmmoType1 "64MineAmmo"
@@ -40,6 +40,7 @@ Inventory.PickupSound "IPick"
 Inventory.Pickupmessage "$GOTMINES"
 Tag "Multi-Purpose Mine"
 +WEAPON.EXPLOSIVE
++WEAPON.NO_AUTO_SWITCH
 	States
 	{
 	KickingFlash:

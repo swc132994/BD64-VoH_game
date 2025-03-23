@@ -32,6 +32,7 @@ Actor Unmaker : DoomWeapon
 {
 Scale 0.9
 Weapon.SlotNumber 8
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2900
 Weapon.AmmoType "Cell"
 Weapon.AmmoUse 1
@@ -427,6 +428,7 @@ Actor UnmakerTACTICAL : Brutal64Weapon
 {
 Scale 0.9
 Weapon.SlotNumber 8
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2900
 Weapon.AmmoType1 "SoulAmmo"
 Weapon.AmmoUse1 1

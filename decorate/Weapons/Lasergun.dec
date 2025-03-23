@@ -35,6 +35,7 @@ Actor Lasergun : DoomWeapon
 {
 Scale 0.9
 Weapon.SlotNumber 9
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 200
 Inventory.PickupMessage "$GOTLASER"
 AttackSound "weapons/AlphaLZRGker"
@@ -127,6 +128,7 @@ Actor LasergunTactical : Brutal64Weapon
 {
 Scale 0.9
 Weapon.SlotNumber 9
+Weapon.SlotPriority 1000
 Weapon.SelectionOrder 200
 Inventory.PickupMessage "$GOTLASER"
 AttackSound "weapons/AlphaLZRGker"

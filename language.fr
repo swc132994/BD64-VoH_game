@@ -1,0 +1,260 @@
+//=====================================
+//French strings updated by Pygargue00fr.
+//=====================================
+
+[fr]
+
+FO_EMPTYSTRING = "emplacement vide";
+
+//////////////////////////////////////////////////////////////////
+//Health / armor
+FO_GOTARMBONUS = "Bonus d'armure récupéré.";
+FO_GOTARMOR = "Armure récupérée.";
+FO_GOTMEGA = "Méga-Armure récupérée.";
+
+FO_GOTHTHBONUS = "Bonus de santé récupéré.";
+FO_GOTSTIM = "Stimpack récupéré.";
+FO_GOTMEDINEED = "Kit de soins récupéré. Vous en aviez bien besoin !";
+FO_GOTMEDIKIT = "Kit de soins récupéré.";
+
+//////////////////////////////////////////////////////////////////
+//powerups
+FO_GOTINVUL = "Invulnérabilitée !";
+FO_GOTSUPER = "Supercharge !";
+FO_GOTMSPHERE = "Méga-sphère !";
+FO_GOTINVIS = "Invisibilité partielle !";
+FO_GOTSUIT = "Bouclier anti-radiations !";
+FO_GOTVISOR = "Lunettes de vision nocturne !";
+FO_GOTMAP = "Carte éléctronique !";
+FO_GOTBERSERK = "Berserk !";
+
+//////////////////////////////////////////////////////////////////
+//Keys
+FO_GOTBLUECARD = "Carte-clé magnétique bleue récupérée";
+FO_GOTYELWCARD = "Carte-clé magnétique jaune récupérée";
+FO_GOTREDCARD = "Carte-clé magnétique rouge récupérée.";
+FO_GOTBLUESKUL = "Clé crâne bleue récupérée.";
+FO_GOTYELWSKUL = "Clé crâne jaune récupérée.";
+FO_GOTREDSKUL = "Clé crâne rouge récupérée.";
+
+//////////////////////////////////////////////////////////////////
+//ammo
+FO_GOTBACKPACK = "Sac à dos récupéré !";
+FO_GOTCLIP = "Chargeur récupéré.";
+FO_GOTCLIPBOX = "Boîte de munitions récupérée.";
+FO_GOTSHELLS = "Quatres cartouches de Fusil à pompe récupérées.";
+FO_GOTSHELLBOX = "Boîte de cartouches de Fusil à Pompe récupéré.";
+FO_GOTROCKET = "Roquette récupérée.";
+FO_GOTROCKBOX = "Caisse de roquettes récupéré.";
+FO_GOTCELL = "Cellules d'énergie récupérées.";
+FO_GOTCELLBOX = "Pack d'énergie récupéré.";
+
+//////////////////////////////////////////////////////////////////
+//doors
+/*
+	PD_BLUEO = "You need a blue key.";
+	PD_REDO = "You need a red key.";
+	PD_YELLOWO = "You need a yellow key.";
+	PD_BLUEK = "You need a blue key.";
+	PD_REDK = "You need a red key.";
+	PD_YELLOWK = "You need a yellow key.";
+	PD_BLUEC = "You need a blue key card.";
+	PD_REDC = "You need a red key card.";
+	PD_YELLOWC = "You need a yellow key card.";
+	PD_BLUECO = "You need a blue key card.";
+	PD_REDCO = "You need a red key card.";
+	PD_YELLOWCO = "You need a yellow key card.";
+	PD_BLUESO = "You need a blue skull key.";
+	PD_REDSO = "You need a red skull key.";
+	PD_YELLOWSO = "You need a yellow skull key.";
+	PD_BLUES = "You need a blue skull key.";
+	PD_REDS = "You need a red skull key.";
+	PD_YELLOWS = "You need a yellow skull key.";
+	PD_ANY = "You need a key.";
+	PD_All3 = "You need all three keys.";
+	PD_All6 = "You need all six keys.";
+*/
+
+//////////////////////////////////////////////////////////////////
+//weapon pickups
+BD64_GOTCHAINSAW = "Vous avez mis la main sur la Tronconneuse ! (Touche 1)"; //(Freedoom Override)
+//Slot 3
+BD64_GOTPISTOL = "Vous avez mis la main sur un Pistolet ! (Touche 2)";
+BD64_GOTSMG = "Vous avez mis la main sur le Pistolet-Mitrailleur ! (Touche 2)";
+BD64_GOTMP40 = "Vous avez mis la main sur le MP40 ! (Touche 2)";
+//Slot 3
+BD64_GOTSHOTGUN = "Vous avez mis la main sur le Fusil à pompe ! (Touche 3)"; //(Freedoom Override)
+BD64_GOTSHOTGUN2 = "Vous avez mis la main sur le Super-Fusil de chasse à canons juxtaposé ! (Touche 3)"; //(Freedoom Override)
+//Slot 4
+BD64_GOTRIFLE = "Vous avez mis la main sur le Fusil d'assault ! (Touche 4)";
+BD64_GOTCHAINGUN = "Vous avez mis la main sur la Mitrailleuse ! (Touche 4)"; //(Freedoom Override)
+//Slot 5
+BD64_GOTLAUNCHER = "Vous avez mis la main sur le Lance-roquettes ! (Touche 5)"; //(Freedoom Override)
+BD64_GOTMINES = "Vous avez mis la main sur une Mine polyvalente ! (Touche 5)";
+//Slot 6
+BD64_GOTPLASMA = "Vous avez mis la main sur le Fusil à plasma ! (Touche 6)"; //(Freedoom Override)
+BD64_GOTGAUSS = "Vous avez mis la main sur le Fusil Gauss ! (Touche 6)";
+//Slot 7 (Freedoom Override)
+BD64_GOTBFG9000 = "Vous avez mis la main sur le BFG9000 ! Quel pied ! (Touche 7)";
+//Slot 8
+BD64_GOTUNMAKER = "Bordel mais c'est quoi ça !? (Slot 8)";
+//Slot 9
+BD64_GOTLASER = "Vous avez mis la main sur le Rayon laser ! (Slot 9)";
+
+//////////////////////////////////////////////////////////////////
+// weapon tags
+//1
+FO_TAG_FIST = "Poings";
+FO_TAG_CHAINSAW = "Tronconneuse";
+//2
+FO_TAG_PISTOL = "Pistolet";
+FO_TAG_SMG = "Pistolet-mitrailleur";
+FO_TAG_MP40 = "MP40";
+//3
+FO_TAG_SHOTGUN = "Fusil à pompe";
+FO_TAG_SUPERSHOTGUN = "Super-Fusil de chasse juxtaposé";
+//4
+FO_TAG_RIFLE = "Fusil d'assault";
+FO_TAG_CHAINGUN = "Mitrailleuse";
+//5
+FO_TAG_ROCKETLAUNCHER = "Lance-roquettes";
+FO_TAG_MINES = "Mine polyvalente";
+//6
+FO_TAG_PLASMARIFLE = "Fusil à plasma";
+FO_TAG_GAUSS = "Fusil Gauss";
+//7
+FO_TAG_BFG9000 = "BFG9000";
+//8
+
+//////////////////////////////////////////////////////////////////
+//obituaries for weapons
+FO_OB_MPFIST = "%o à mangé(e) le poing de %k.";
+FO_OB_MPCHAINSAW = "%o s'est fait(e) passé(e) dessus par la tronconneuse de %k.";
+FO_OB_MPPISTOL = "%o s'est fait(e) chatouillé(e) les côtes par la pétoire de %k.";
+FO_OB_MPSHOTGUN = "%o s'est fait(e) éclaté(e) la gueule par le Fusil à pompe de %k.";
+FO_OB_MPSSHOTGUN = "%o a été(e) éparpillé(e) au sol par le  Super-Fusil de chasse de %k.";
+FO_OB_MPCHAINGUN = "%o a été(e) dégommé(e) par la Mitrailleuse de %k.";
+FO_OB_MPROCKET = "%o à chevauché(e) la roquette de %k.";
+//	OB_MPR_SPLASH = "%o était à deux doigts d'esquiver la roquette de %k.";
+FO_OB_MPPLASMARIFLE = "%o a été(e) désintégré(e) Fusil à plasma de %k.";
+FO_OB_MPBFG_BOOM = "%o a été(e) désintégré(e) par le le BFG9000 de %k.";
+//	OB_MPBFG_SPLASH = "%o couldn't hide from %k's BFG.";
+//	OB_MPTELEFRAG = "%o a été(e) télecrasé par %k.";
+//	OB_RAILGUN = "%o été réduit en cendres par %k.";
+//	OB_MPBFG_MBF = "%o a été(e) incinéré(e) par le BFG de %k.";
+
+//////////////////////////////////////////////////////////////////
+//Tags for demons
+FO_TAG_ZOMBIEMAN = "Zombie";
+FO_TAG_SHOTGUNGUY = "Zombie sergeant";
+FO_TAG_COMMANDO = "Zombie commando";
+FO_TAG_PLASMAGUY = "zombie colonel";
+FO_TAG_BFGGUY = "Zombie général de brigade";
+FO_TAG_HUSK = "Zombie momifié";
+FO_TAG_IMP = "Diablotin";
+FO_TAG_IMPALER = "Empaleur";
+FO_TAG_HARVESTER = "Moissoneur d'âmes";
+FO_TAG_PINKY = "Démon pinky";
+FO_TAG_SPECTRE = "Spectre";
+FO_TAG_WRAITH = "Apparition";
+FO_TAG_BUTCHER = "Boucher";
+FO_TAG_HOUND = "Chien de l'enfer";
+FO_TAG_ACID = "Démon acide";
+FO_TAG_SPIDER = "Arachnotron";
+FO_OB_NIGHTCRAWLER = "Cyber-Veuve noire"
+FO_TAG_FATSO = "Mancubus";
+FO_TAG_KNIGHT = "Chevalier de l'Enfer";
+FO_TAG_KNIGHTMARE = "Chevalier cauchemardesque";
+FO_TAG_BRUISER = "Cogneur";
+FO_TAG_BARON = "Baron infernal";
+FO_TAG_BELPHEGOR = "Belphégor";
+FO_TAG_FALLEN = "Ange déchue";
+FO_TAG_CACO = "Cacodemon";
+FO_TAG_ELEMENTAL = "Doloris";
+FO_TAG_PEST = "Peste";
+FO_TAG_SOUL = "Âme Perdue";
+FO_TAG_STALKER = "Harceleur";
+FO_TAG_TRITE = "Araignée infernale";
+FO_TAG_FORGOTTEN = "L'oublié";
+FO_TAG_VILE = "Archvile";
+FO_TAG_RESURRECTOR = "Résurrecteur infernal";
+FO_TAG_HELLSTORM = "Tempête infernale";
+FO_TAG_FLESH = "Sorcier de chair" ;
+FO_TAG_MOTHER = "Démon mère";
+FO_TAG_CYBERDEMON = "Démon Cybernétique";
+FO_TAG_MASTERMIND = "Cerveau arachide démoniaque";
+FO_TAG_ZIOSS = "Wolfenstein SS";
+FO_TAG_EVILSPIRIT = "Esprit frappeur";
+FO_TAG_CARRION = "Zombie charognard";
+FO_TAG_THING = "La chose";
+
+//////////////////////////////////////////////////////////////////
+//obituaries for Demons
+FO_OB_STEALTHBABY = "%o thought %g saw an arachnotron.";
+FO_OB_STEALTHVILE = "%o thought %g saw an archvile.";
+FO_OB_STEALTHBARON = "%o thought %g saw a Baron of Hell.";
+FO_OB_STEALTHCACO = "%o thought %g saw a cacodemon.";
+FO_OB_STEALTHCHAINGUY = "%o thought %g saw a chaingunner.";
+FO_OB_STEALTHDEMON = "%o thought %g saw a demon.";
+FO_OB_STEALTHKNIGHT = "%o thought %g saw a Hell Knight.";
+FO_OB_STEALTHIMP = "%o thought %g saw an imp.";
+FO_OB_STEALTHFATSO = "%o thought %g saw a mancubus.";
+FO_OB_STEALTHUNDEAD = "%o thought %g saw a revenant.";
+FO_OB_STEALTHSHOTGUY = "%o thought %g saw a sergeant.";
+FO_OB_STEALTHZOMBIE = "%o thought %g saw a zombieman.";
+
+FO_OB_UNDEADHIT = "%o à pris une claque monumentale de la part d'un Revenant.";
+FO_OB_IMPHIT = "%o a été tailladé par un Diablotin.";
+FO_OB_CACOHIT = "%o s'est approché(e) un peu trop près d'un cacodemon.";
+FO_OB_DEMONHIT = "%o a été(e) mordu(e) par un Demon.";
+FO_OB_SPECTREHIT = "%o a été(e) dévoré(e) par un Spectre.";
+FO_OB_WRAITH = "%o a été(e) ouvert(e) en deux par une Apparition.";
+FO_OB_BUTCHER = "%o a été(e) vidé(e) par un Boucher";
+FO_OB_HOUND = "%o a été(e) brûlé(e) par un Chien de l'enfer.";
+FO_OB_HOUNDHIT = "%o a été(e) réduit(e) en pâté pour chien.";
+FO_OB_BARONHIT = "%o s'est fait(e) victimisé(e) par un Baron Infernale.";
+FO_OB_KNIGHTHIT = "%o a été(e) écartelé(e) par un Chevalier de l'Enfer.";
+FO_OB_ZOMBIE = "%o a été(e) tué(e) par un Zombie";
+FO_OB_SHOTGUY = "%o a été(e) tué(e) par un Zombie sergeant.";
+FO_OB_PLASMAGUY = "%o a été(e) désinégré(e) sur place par un Colonel zombie.";
+FO_OB_BFGGUY = "%o a été(e) illuminé(e) par une explosion de BFG.";
+FO_OB_HUSK = "La Horde a consommé %o.";
+FO_OB_VILE = "%o a été(e) incinéré'e) par un Archvile.";
+FO_OB_RESURRECTOR = "%o encourt désormais la damnation éternelle des griffes du Résurrecteur Infernal.";
+FO_OB_HELLSTORM = "%o a été(e) déchiré(e) par une Tempête infernale";
+FO_OB_FLESH = "%o s'est vu(e)son sang bouilli par un Sorcier de chair." ;
+FO_OB_UNDEAD = "%o était à deux doigts d'esquiver la boule de feu du Revenant.";
+FO_OB_FATSO = "%o a été(e) écrasé(e) par un \crMancubus.\c-";
+FO_OB_CHAINGUY = "%o s'est fait(e) transformé(e) en passoire par un Zombie commandos";
+FO_OB_SKULL = "%o a été(e) effrayé(e) par une Âme perdue.";
+FO_OB_STALKER = "%o n'a pas vu le Harceleur venir.";
+FO_OB_TRITE = "%o a été(e) empoisonné(e) par une Araignée infernale";
+FO_OB_FORGOTTEN = "%o a été(e) électrocuté(e) par un Oublié.";
+FO_OB_IMP = "%o a été(e) brulé(e) au quatrième degré par un Diablotin.";
+FO_OB_IMPALER = "%o a été(e) perforé(e) par un Empaleur";
+FO_OB_IMPALERHIT = "%o a été(e) empalé(e) vivant(e).";
+FO_OB_HARVESTER = "%o a rendu(e) son âme à un Moissoneur.";
+FO_OB_CACO = "%o a été dévoré(e) par un cacodémon.";
+FO_OB_FALLEN = "%o a été(e) déchu(e) par un Ange corrompu.";
+FO_OB_BARON = "%o s'est fait(e) brutalisé(e) par un Baron Infernale.";
+FO_OB_KNIGHT = "%o a été(e) poutré(e) par un Chevalier de l'Enfer.";
+FO_OB_KNIGHTMARE = "%o a été(e) carbonisé(e) par un Chevalier cauchemardesque.";
+FO_OB_KNIGHTMAREHIT = "%o a été(e) mutilé(e) par un Chevalier cauchemardesque.";
+FO_OB_BRUISER = "%o a été(e) secoué(e) par un Cogneur";
+FO_OB_BELPHEGOR = "%o a été(e) anéanti(e) par un Belphégor.";
+FO_OB_SPIDER = "%o est resté(e) en admiration devant le Cerveau arachéen.";
+FO_OB_NIGHTCRAWLER = "%o a été(e) tué(e) par une Cyber-Veuve noire."
+FO_OB_SPIDERHIT = "%o a été(e) écrasé'e) par un pied.";
+FO_OB_MOTHER = "%o a été(e) anéanti(e) par la mère de tous les démons.";
+FO_OB_BABY = "%o s'est fait(e) prendre par un Arachnotron.";
+FO_OB_CYBORG = "%o a été(e) soulvé(e) par un Demon-Cybernétique.";
+FO_OB_WOLFSS = "%o a été(e) exterminé(e) par un Nazi.";
+FO_OB_GHOST = "%o a été(e) hanté(e) par un Ésprit frappeur.";
+FO_OB_CARRION = "La Horde a infecté %o.";
+FO_OB_THING = "%o a été(e) réarangé(e) par une chose.";
+//	OB_DOG = "%o was mauled by a dog.";
+
+//////////////////////////////////////////////////////////////////
+//Item Tags
+TAGBD_EXPLOSIVEBARREL = "Barril éxplosif";
+TAGBD_TROWEDBARREL = "Un barril particulièrement volatile!";

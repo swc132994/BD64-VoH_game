@@ -248,10 +248,12 @@ script "WeaponPickupChecker" (int Weapon)
 		str TacticalWeaponPickup = StrParam(s:WeaponPickups[Weapon-1],s:"Tactical");
 		
 		GiveInventory(TacticalWeaponPickup,1);
+		SetWeapon(TacticalWeaponPickup);
 	}	
 	else
 	{
 		GiveInventory(WeaponPickups[Weapon-1],1);
+		SetWeapon(WeaponPickups[Weapon-1]);
 	}
 }
 

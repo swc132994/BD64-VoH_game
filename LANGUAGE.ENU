@@ -1,12 +1,12 @@
-[enu default]
+[enu us default]
 
 FO_EMPTYSTRING = "empty slot";
 
 //////////////////////////////////////////////////////////////////
 //Health / armor
-FO_GOTARMBONUS = "You pick up an armour bonus.";
-FO_GOTARMOR = "You pick up the armour.";
-FO_GOTMEGA = "You got the Mega Armour!";
+FO_GOTARMBONUS = "You pick up an armor bonus.";
+FO_GOTARMOR = "You pick up the armor.";
+FO_GOTMEGA = "You got the Mega Armor!";
 
 FO_GOTHTHBONUS = "You pick up a health bonus.";
 FO_GOTSTIM = "You pick up a stimpack.";

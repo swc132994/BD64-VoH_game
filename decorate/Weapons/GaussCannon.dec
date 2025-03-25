@@ -3,7 +3,7 @@ Actor GaussCannonSpawner : CustomInventory	19134	//spawned from randomspawners
 //$category "Game/BD64_Weapons"
 Scale 0.9
 Tag "Gauss Cannon"
-Inventory.PickupMessage "$GOTGAUSS"
+Inventory.PickupMessage "$BD64_GOTGAUSS"
 Inventory.PickupSound "WPICK"
 	States
 	{
@@ -15,7 +15,12 @@ Inventory.PickupSound "WPICK"
 		GCPC A -1
 		Stop
 	Pickup:
-		TNT1 A 0 ACS_NamedExecuteWithResult("WeaponPickupChecker",10)
+		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
+		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")
+		TNT1 A 0 A_GiveInventory("64GaussCannon",1)
+		Stop
+	PickupTactical:
+		TNT1 A 0 A_GiveInventory("64GaussCannonTactical",1)
 		Stop
 	DMSpawn:
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)

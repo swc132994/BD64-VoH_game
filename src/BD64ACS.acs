@@ -233,7 +233,7 @@ script "CensoredHealing_ACS" (void)
 	Delay(1);
 }
 
-script "WeaponPickupChecker" (int Weapon)
+/*script "WeaponPickupChecker" (int Weapon)
 {
 	static str WeaponPickups[50] =
 	{ //Regular Weapons
@@ -255,7 +255,7 @@ script "WeaponPickupChecker" (int Weapon)
 		GiveInventory(WeaponPickups[Weapon-1],1);
 		SetWeapon(WeaponPickups[Weapon-1]);
 	}
-}
+}*/
 
 script "AlphaPickupACS" (void)
 {

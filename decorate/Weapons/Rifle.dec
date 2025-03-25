@@ -3,7 +3,7 @@ Actor RifleSpawner : CustomInventory 19120
 //$category "Game/BD64_Weapons"
 Scale 0.82
 Tag "Assault Rifle"
-Inventory.PickupMessage "$GOTRIFLE"
+Inventory.PickupMessage "$BD64_GOTRIFLE"
 Inventory.PickupSound "WPICK"
 	States
 	{
@@ -15,8 +15,13 @@ Inventory.PickupSound "WPICK"
 		ARSD A 1
 		Loop
 	Pickup:
-		TNT1 A 0 ACS_NamedExecuteWithResult("WeaponPickupChecker",7)
+		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
+		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")	
+		TNT1 A 0 A_GiveInventory("64Rifle",1)
 		Stop
+	PickupTactical:
+		TNT1 A 0 A_GiveInventory("64RifleTactical",1)
+		Stop		
 	SpawnChaingun:
 		TNT1 A 1 A_SpawnItemEx("ChaingunSpawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop

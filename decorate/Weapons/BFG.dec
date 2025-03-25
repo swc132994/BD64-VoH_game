@@ -15,7 +15,12 @@ Inventory.PickupSound "WPICK"
 		BFUG A -1
 		Stop
 	Pickup:
-		TNT1 A 0 ACS_NamedExecuteWithResult("WeaponPickupChecker",11)
+		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
+		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")
+		TNT1 A 0 A_GiveInventory("64BFG9000",1)
+		Stop
+	PickupTactical:
+		TNT1 A 0 A_GiveInventory("64BFG9000Tactical",1)
 		Stop
 	DMSpawn:
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)

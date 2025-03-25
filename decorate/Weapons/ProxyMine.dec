@@ -5,7 +5,7 @@ Ammo.BackpackAmount 0
 Ammo.BackpackMaxAmount 20
 Inventory.Amount 1
 Inventory.MaxAmount 10
-Inventory.PickupMessage "$GOTMINES"
+Inventory.PickupMessage "$BD64_GOTMINES"
 Inventory.Icon PMNED0
 Inventory.PickupSound "IPICK"
 	States

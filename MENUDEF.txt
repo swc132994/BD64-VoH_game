@@ -30,26 +30,26 @@ LISTMENU "MainMenu"
 	}
 	IfGame(Doom,Strife,Chex)
 	{
-		TextItem "NEW GAME","n","PlayerclassMenu"
+		TextItem "$MNU_NEWGAME","n","PlayerclassMenu"
 		ifOption(SwapMenu)
 		{
-			TextItem "LOAD GAME","l","LoadGameMenu"
-			TextItem "SAVE GAME","s","SaveGameMenu"
-			TextItem "OPTIONS","o","OptionsMenu"
+			TextItem "$MNU_LOADGAME","l","LoadGameMenu"
+			TextItem "$MNU_SAVEGAME","s","SaveGameMenu"
+			TextItem "$MNU_OPTIONS","o","OptionsMenu"
 			TextItem "BD64 Options","b","BD64Menu"
 		}
 		else
 		{
-			TextItem "OPTIONS","o","OptionsMenu"
+			TextItem "$MNU_OPTIONS","o","OptionsMenu"
 			TextItem "BD64 Options","b","BD64Menu"
-			TextItem "LOAD GAME","l","LoadGameMenu"
-			TextItem "SAVE GAME","s","SaveGameMenu"
+			TextItem "$MNU_LOADGAME","l","LoadGameMenu"
+			TextItem "$MNU_SAVEGAME","s","SaveGameMenu"
 		}
 		ifOption(ReadThis)
 		{
-			TextItem "READ THIS","r","ReadThisMenu"
+			TextItem "$MNU_INFO","r","ReadThisMenu"
 		}
-		TextItem "QUIT GAME","q","QuitMenu"
+		TextItem "$MNU_QUITGAME","q","QuitMenu"
 	}
 	IfGame(Heretic,Hexen)
 	{
@@ -373,8 +373,10 @@ Optionmenu GZDShortcuts
 	StaticText ""
 	Option "FPS counter",				"vid_fps",			"OnOff"
 	StaticText ""
-	Option "Discord Rich Presence ",	"i_discordrpc",		"OnOff"
+	Option "Discord Rich Presence",	"i_discordrpc",		"OnOff"
 	StaticText "(Doesn't work on Zandronum)." ,1
+	StaticText ""
+	Option "Lauguage", "language", "BD64LanguageOptions"	
 	StaticText ""
 	StaticText "Giblets queue amount",1
 	StaticText "Limits how many gibs will spawn at any time."
@@ -713,4 +715,13 @@ OptionValue "WadCheck"
 	4,"Bloodstain"
 	5,"Going Down"
 	6,"Doom Zero"
+}
+
+OptionString "BD64LanguageOptions" 
+{
+	"auto", "Auto"
+	"enu", "English (US)"
+	"eng", "English (UK)"
+	"fr", "Français (French)"
+	"ru", "Русский (Russian)"
 }

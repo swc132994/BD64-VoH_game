@@ -13,7 +13,7 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 BloodType "BD64ArachnotronBlood"
 DropItem "DemonEssenceSpawner"
-Tag "Arachnotron"
+Tag "$FO_TAG_SPIDER"
 Obituary "$FO_OB_BABY"
 +NOBLOODDECALS
 +NEVERFAST

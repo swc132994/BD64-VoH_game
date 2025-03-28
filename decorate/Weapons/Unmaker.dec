@@ -44,7 +44,6 @@ Weapon.AmmoUse 1
 Weapon.AmmoGive 20
 AttackSound "weapons/unmaker"
 Inventory.PickupMessage "$GOTUNMAKER"
-Inventory.Icon LGUNA0
 Tag "Unmaker"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
@@ -442,7 +441,6 @@ Weapon.AmmoType2 "DemonEssence"
 Weapon.AmmoUse2 1
 Weapon.AmmoGive2 0
 Inventory.PickupMessage "$GOTUNMAKER"
-Inventory.Icon LGUNA0
 AttackSound "weapons/unmaker"
 Tag "Unmaker"
 +INVENTORY.RESTRICTABSOLUTELY

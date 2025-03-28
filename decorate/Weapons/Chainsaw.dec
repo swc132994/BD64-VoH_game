@@ -369,28 +369,6 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 	}
 }
 
-Actor SawGas : Ammo
-{
-Scale 0.9
-SpawnID 11
-Inventory.PickupMessage "You found some fuel!"
-Inventory.Amount 50
-Inventory.MaxAmount 600
-Ammo.BackpackAmount 100
-Ammo.BackpackMaxAmount 600
-Inventory.Icon "GSLNA0"
-+IGNORESKILL
-VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
-Inventory.ForbiddenTo "64DoomPlayer"
-+INVENTORY.RESTRICTABSOLUTELY
-	States
-	{
-	Spawn:
-		GSLN A -1
-		Stop
-	}
-}
-
 //CLASSICAL LOOK
 Actor 64ChainsawTactical_Classic : Brutal64Weapon
 {

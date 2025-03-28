@@ -47,7 +47,6 @@ AttackSound "weapons/AlphaLZRGker"
 Weapon.AmmoType "Cell"
 Weapon.AmmoUse 1
 Weapon.AmmoGive 40
-Inventory.Icon LGUNB0
 Tag "Laser Rifle"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
@@ -140,7 +139,6 @@ AttackSound "weapons/AlphaLZRGker"
 Weapon.AmmoType "Cell"
 Weapon.AmmoUse 1
 Weapon.AmmoGive 40
-Inventory.Icon LGUNB0
 Tag "Laser Rifle"
 +WEAPON.ALT_USES_BOTH
 -WEAPON.AMMO_CHECKBOTH

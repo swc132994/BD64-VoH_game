@@ -13,7 +13,7 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "chainsaw",0.9
 DropItem "DemonEssenceSpawner"
-Tag "Demon"
+Tag "$FO_TAG_PINKY"
 Obituary "$FO_OB_DEMONHIT"
 +NOBLOODDECALS
 +NEVERFAST
@@ -359,7 +359,7 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "chainsaw",0.9
 DropItem "DemonEssenceSpawner"
-Tag "Spectre"
+Tag "$FO_TAG_SPECTRE"
 HitObituary "$FO_OB_SPECTREHIT"
 +NOBLOODDECALS
 	States
@@ -774,8 +774,8 @@ Speed 14
 Alpha 0.5
 MeleeRange 55 //default 44
 RenderStyle Translucent
-Tag "Nightmare Spectre"
-Obituary "%o was hunted down by a nightmare spectre."
+Tag "$FO_TAG_SPECTRE_NIGHTMARE"
+Obituary "$FO_OB_SPECTREHIT_NIGHTMARE"
 	States
 	{
 	Spawn:

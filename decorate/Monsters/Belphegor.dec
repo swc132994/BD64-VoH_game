@@ -12,8 +12,8 @@ SeeSound "64Belphegor/see"
 PainSound "64Belphegor/pain"
 DeathSound "64Belphegor/death"
 ActiveSound "64Belphegor/active"
-Obituary "%o was Obliterated by a Belphegor."
-Tag "Belphegor"
+Obituary "$FO_OB_BELPHEGOR"
+Tag "$FO_TAG_BELPHEGOR"
 PainChance 25
 PainChance "SuperFists",220
 PainChance "Kick",255

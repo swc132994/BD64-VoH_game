@@ -11,8 +11,8 @@ SeeSound "64Bruiser/sight"
 PainSound "64Bruiser/pain"
 DeathSound "64Bruiser/death"
 ActiveSound "64Bruiser/active"
-Obituary "%o was blasted by a Bruiser"
-Tag "Bruiser"
+Obituary "$FO_OB_BRUISER"
+Tag "$FO_TAG_BRUISER"
 PainChance 26
 PainChance "Flames",26
 PainChance "SuperFists",220

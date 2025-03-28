@@ -7,8 +7,8 @@ Radius 20
 Height 56
 Speed 10
 MeleeRange 70
-Obituary "%o was gutted by a Butcher"
-Tag "Butcher"
+Obituary "$FO_OB_BUTCHER"
+Tag "$FO_TAG_BUTCHER"
 SeeSound "sawcubus/sight"
 PainSound "sawcubus/pain"
 DeathSound "sawcubus/death"

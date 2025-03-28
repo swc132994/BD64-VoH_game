@@ -25,8 +25,8 @@ DeathSound "Carrion/Detonate"
 PainSound "Carrion/SCREAMING"
 AttackSound "Carrion/Active"
 DropItem "SOULSPAWNER"
-Tag "Carrion Zombie"
-Obituary "The Horde infected %o."
+Tag "$FO_TAG_CARRION"
+Obituary "$FO_OB_CARRION"
 MONSTER
 +FLOORCLIP
 +NOBLOODDECALS

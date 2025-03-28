@@ -4,7 +4,7 @@ Scale 0.82
 Armor.SaveAmount 2
 Armor.Savepercent 50
 Inventory.Pickupmessage "$FO_GOTARMBONUS"
-Tag "Armour Bonus"
+Tag "$FO_TAG_ARMBONUS"
 	States
 	{
 	Spawn:
@@ -19,7 +19,7 @@ Actor 64GreenArmor : GreenArmor Replaces GreenArmor
 Scale 0.82
 Inventory.Pickupmessage "$FO_GOTARMOR"
 Inventory.PickupSound "ARMOR"
-Tag "Green Armour"
+Tag "$FO_TAG_ARMOR"
 	States
 	{
 	Spawn:
@@ -42,7 +42,7 @@ Actor 64BlueArmor : BlueArmor Replaces BlueArmor
 Scale 0.82
 Inventory.Pickupmessage "$FO_GOTMEGA"
 Inventory.PickupSound "ARMOR"
-Tag "Blue Armour"
+Tag "$FO_TAG_MEGA"
 	States
 	{
 	Spawn:
@@ -65,7 +65,7 @@ Actor 64HealthBonus : HealthBonus Replaces HealthBonus
 Scale 0.82
 Inventory.Amount 2
 Inventory.PickupMessage "$FO_GOTHTHBONUS"
-Tag "Health Bonus"
+Tag "$FO_TAG_HBONUS"
 	states
 	{
 	Spawn:
@@ -78,7 +78,7 @@ Actor 64Stimpack : Stimpack Replaces Stimpack
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTSTIM"
-Tag "Stimpack"
+Tag "$FO_TAG_STIM"
 	states
 	{
 	Spawn:
@@ -106,7 +106,7 @@ Actor 64Medikit : Medikit Replaces Medikit
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTMEDIKIT"
 Health.LowMessage 25, "$FO_GOTMEDINEED"
-Tag "Medikit"
+Tag "$FO_TAG_MEDIKIT"
 	states
 	{
 	Spawn:
@@ -134,7 +134,7 @@ Actor 64InvulnerabilitySphere : InvulnerabilitySphere Replaces InvulnerabilitySp
 Scale 0.82
 powerup.color "FF FF FF",0.30
 Inventory.PickupMessage "$FO_GOTINVUL"
-Tag "Invulnerability Sphere"
+Tag "$FO_TAG_INVUL"
 	states
 	{
 	Spawn:
@@ -158,7 +158,7 @@ Scale 0.7
 Inventory.PickupMessage "$FO_GOTSUPER"
 Inventory.PickupSound "misc/p_pkup"
 Inventory.PickupAnnouncerEntry "soulsphere"
-Tag "Soul Sphere"
+Tag "$FO_TAG_SUPER"
 	States
 	{
 	Spawn:
@@ -183,7 +183,7 @@ Actor 64Megasphere : Megasphere Replaces Megasphere
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTMSPHERE"
 Inventory.PickupSound "misc/p_pkup"
-Tag "Mega Sphere"
+Tag "$FO_TAG_MSPHERE"
 	States
 	{
 	Spawn:
@@ -209,7 +209,7 @@ Actor 64BlurSphere : BlurSphere Replaces BlurSphere
 Scale 0.82
 powerup.strength 50
 Inventory.PickupMessage "$FO_GOTINVIS"
-Tag "Partial Invisibility Sphere"
+Tag "$FO_TAG_INVIS"
 -VISIBILITYPULSE
 	States
 	{
@@ -231,7 +231,7 @@ Actor 64RadSuit : RadSuit Replaces RadSuit
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTSUIT"
 powerup.color "green",0.15
-Tag "Radiation Suit"
+Tag "$FO_TAG_SUIT"
 	States
 	{
 	Spawn:
@@ -252,7 +252,7 @@ ACTOR 64Infrared : Infrared //Replaces Infrared		//Replaced by optional spawner
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTVISOR"
-Tag "Night Vision Goggles"
+Tag "$FO_TAG_VISOR"
 	States
 	{
 	Spawn:
@@ -274,7 +274,7 @@ Actor 64Allmap : Allmap Replaces Allmap
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTMAP"
-Tag "Computer Area Map"
+Tag "$FO_TAG_MAP"
 	states
 	{
 	Spawn:
@@ -295,7 +295,7 @@ Actor 64Berserk : Berserk Replaces Berserk
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTBERSERK"
-Tag "Berserk Pack"
+Tag "$FO_TAG_BERSERK"
 	states
 	{
 	Spawn:
@@ -328,7 +328,7 @@ ACTOR GLBlueCard : CustomInventory Replaces Bluecard
 {
 Inventory.PickupMessage "$FO_GOTBLUECARD"
 Inventory.PickupSound "KCRPKUP"
-Tag "Blue Keycard"
+Tag "$FO_TAG_BLUECARD"
 +COUNTITEM
 	States
 	{
@@ -346,7 +346,7 @@ ACTOR GLYellowCard : CustomInventory Replaces Yellowcard
 {
 Inventory.PickupMessage "$FO_GOTYELWCARD"
 Inventory.PickupSound "KCRPKUP"
-Tag "Yellow Keycard"
+Tag "$FO_TAG_YELWCARD "
 +COUNTITEM
 	States
 	{
@@ -364,7 +364,7 @@ ACTOR GLRedCard : CustomInventory Replaces Redcard
 {
 Inventory.PickupMessage "$FO_GOTREDCARD"
 Inventory.PickupSound "KCRPKUP"
-Tag "Red Keycard"
+Tag "$FO_TAG_REDCARD"
 +COUNTITEM
 	States
 	{
@@ -382,7 +382,7 @@ ACTOR GLBlueSkull : CustomInventory Replaces BlueSkull
 {
 Inventory.PickupMessage "$FO_GOTBLUESKUL"
 Inventory.PickupSound "SKLPKUP"
-Tag "Blue Skullkey"
+Tag "$FO_TAG_GOTBLUESKUL"
 +COUNTITEM
 	States
 	{
@@ -399,7 +399,7 @@ ACTOR GLYellowSkull : CustomInventory Replaces YellowSkull
 {
 Inventory.PickupMessage "$FO_GOTYELWSKUL"
 Inventory.PickupSound "SKLPKUP"
-Tag "Yellow Skullkey"
+Tag "$FO_TAG_GOTYELWSKUL"
 +COUNTITEM
 	States
 	{
@@ -417,7 +417,7 @@ ACTOR GLRedSkull : CustomInventory Replaces RedSkull
 {
 Inventory.PickupMessage "$FO_GOTREDSKUL"
 Inventory.PickupSound "SKLPKUP"
-Tag "Red Skullkey"
+Tag "$FO_TAG_GOTREDSKUL"
 +COUNTITEM
 	States
 	{
@@ -453,7 +453,7 @@ Scale 0.82
 Height 26
 Inventory.PickupMessage "$FO_GOTBACKPACK"
 Inventory.PickupSound "BPPICK"
-Tag "Backpack"
+Tag "$FO_TAG_BACKPACK1"
 +COUNTITEM
 	States
 	{
@@ -485,9 +485,9 @@ Tag "Backpack"
 
 Actor 64BackpackPistolSilencer : 64Backpack
 {
-Inventory.PickupMessage "Picked up a backpack full of ammo with pistol silencer!"
+Inventory.PickupMessage "$FO_GOTBACKPACK2"
 Inventory.PickupSound "BPPICK"
-Tag "Backpack with Pistol Silencer"
+Tag "$FO_TAG_BACKPACK2"
 	States
 	{
 	Spawn:
@@ -509,9 +509,9 @@ Tag "Backpack with Pistol Silencer"
 
 Actor 64BackpackFlashlight : 64Backpack
 {
-Inventory.PickupMessage "Picked up a backpack full of ammo with flashlight!"
+Inventory.PickupMessage "$FO_GOTBACKPACK3"
 Inventory.PickupSound "BPPICK"
-Tag "Backpack with Flashlight"
+Tag "$FO_TAG_BACKPACK3"
 	States
 	{
 	Spawn:
@@ -533,9 +533,9 @@ Tag "Backpack with Flashlight"
 
 Actor 64BackpackPistolSilencerandFlashlight : 64Backpack
 {
-Inventory.PickupMessage "Picked up a backpack full of ammo with pistol silencer and flashlight!"
+Inventory.PickupMessage "$FO_GOTBACKPACK4"
 Inventory.PickupSound "BPPICK"
-Tag "Backpack with Flashlight and Pistol Silencer"
+Tag "$FO_TAG_BACKPACK4"
 	States
 	{
 	Spawn:
@@ -574,7 +574,7 @@ Actor 64Clip : Clip Replaces Clip
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTCLIP"
 Inventory.PickupSound "IPICK"
-Tag "Bullet Magazine"
+Tag "$FO_TAG_CLIP"
 	states
 	{
 	Spawn:
@@ -613,7 +613,7 @@ Actor 64Shell : Shell Replaces Shell
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTSHELLS"
 Inventory.PickupSound "IPICK"
-Tag "Shotgun Shells"
+Tag "$FO_TAG_SHELL"
 	states
 	{
 	Spawn:
@@ -646,7 +646,7 @@ Actor 64RocketAmmo : RocketAmmo Replaces RocketAmmo
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTROCKET"
 Inventory.PickupSound "IPICK"
-Tag "Rocket Shell"
+Tag "$FO_TAG_ROCKET"
 	states
 	{
 	Spawn:
@@ -679,7 +679,7 @@ Actor 64Cell : Cell Replaces Cell
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTCELL"
 Inventory.PickupSound "IPICK"
-Tag "Energy Cell"
+Tag "$FO_TAG_CELL"
 	states
 	{
 	Spawn:
@@ -724,7 +724,7 @@ Actor 64ClipBox : ClipBox
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTCLIPBOX"
 Inventory.PickupSound "IPICK"
-Tag "Bullet Box"
+Tag "$FO_TAG_CLIPBOX"
 	states
 	{
 	Spawn:
@@ -745,13 +745,13 @@ Actor 64HighCaliberBox : Ammo	//new ammo for rifle and chaingun
 {
 Scale 0.82
 Inventory.PickupSound "IPICK"
-Inventory.PickupMessage "Picked up a high-caliber ammo box."
+Inventory.PickupMessage "$FO_GOTCLIPBOX2"
 Inventory.Amount 50
 Inventory.MaxAmount 200
 Ammo.BackpackAmount 10
 Ammo.BackpackMaxAmount 400
 Inventory.Icon "HI04X0"
-Tag "High Calibre Bullet Box"
+Tag "$FO_TAG_CLIPBOX2"
 	states
 	{
 	Spawn:
@@ -766,7 +766,7 @@ Scale 0.82
 Inventory.Amount 16
 Inventory.PickupMessage "$FO_GOTSHELLBOX"
 Inventory.PickupSound "IPICK"
-Tag "Shotgun Shell Box"
+Tag "$FO_TAG_SHELLBOX"
 	states
 	{
 	Spawn:
@@ -794,7 +794,7 @@ ACTOR 64Rocketbox : Rocketbox replaces Rocketbox
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTROCKBOX"
 Inventory.PickupSound "IPICK"
-Tag "Rocket Shell Crate"
+Tag "$FO_TAG_ROCKBOX"
 	states
 	{
 	Spawn:
@@ -818,7 +818,7 @@ Actor 64CellPack : CellPack Replaces CellPack
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTCELLBOX"
 Inventory.PickupSound "IPICK"
-Tag "Energy Cell Pack"
+Tag "$FO_TAG_CELLBOX"
 	states
 	{
 	Spawn:
@@ -844,15 +844,37 @@ Tag "Energy Cell Pack"
 	}
 }
 
+Actor SawGas : Ammo
+{
+Scale 0.9
+Inventory.PickupMessage "$FO_GOTSAWGAS"
+Inventory.Amount 50
+Inventory.MaxAmount 600
+Tag "$FO_TAG_SAWGAS"
+Ammo.BackpackAmount 100
+Ammo.BackpackMaxAmount 600
+Inventory.Icon "GSLNA0"
++IGNORESKILL
+VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
+Inventory.ForbiddenTo "64DoomPlayer"
++INVENTORY.RESTRICTABSOLUTELY
+	States
+	{
+	Spawn:
+		GSLN A -1
+		Stop
+	}
+}
+
 ACTOR 64HellPotion : CustomInventory 1657
 {
 //$category "Game/BD64_Artifacts"
 Scale 0.82
 Inventory.Amount 2
-Inventory.PickupMessage "Picked up a Hell Potion."
+Inventory.PickupMessage "$FO_GOTHPOTION"
 Inventory.PickupSound "misc/i_pkup"
 inventory.respawntics 1050
-Tag "Hell Potion"
+Tag "$FO_TAG_HPOTION"
 +INVENTORY.BIGPOWERUP
 +COUNTITEM
 	States
@@ -896,9 +918,9 @@ ACTOR WpnPower1 : CustomInventory 9905
 //$category "Game/BD64_Artifacts"
 SpawnID 162
 Inventory.Icon POW1E0
-Inventory.PickupMessage "You have a feeling that it wasn't meant to be touched."
+Inventory.PickupMessage "$FO_GOTDEMON_ORANGE"
 Inventory.PickupSound "DEMKEYUP"
-Tag "Demon Key Orange"
+Tag "$FO_TAG_DEMON_ORANGE"
 +COUNTITEM
 -INTERHUBSTRIP
 	States
@@ -920,9 +942,9 @@ ACTOR WpnPower2 : CustomInventory 9906
 //$category "Game/BD64_Artifacts"
 SpawnID 163
 Inventory.Icon POW2E0
-Inventory.PickupMessage "It must do something..."
+Inventory.PickupMessage "$FO_GOTDEMON_PURPLE"
 Inventory.PickupSound "DEMKEYUP"
-Tag "Demon Key Purple"
+Tag "$FO_TAG_DEMON_PURPLE"
 +COUNTITEM
 -INTERHUBSTRIP
 	States
@@ -944,9 +966,9 @@ ACTOR WpnPower3 : CustomInventory 9907
 //$category "Game/BD64_Artifacts"
 SpawnID 164
 Inventory.Icon POW3E0
-Inventory.PickupMessage "Whatever it is, it doesn't belong in this world."
+Inventory.PickupMessage "$FO_GOTDEMON_BLU"
 Inventory.PickupSound "DEMKEYUP"
-Tag "Demon Key Teal"
+Tag "$FO_TAG_DEMON_BLUE"
 +COUNTITEM
 -INTERHUBSTRIP
 	States
@@ -975,9 +997,9 @@ ACTOR WpnPower4 : CustomInventory 9908	//GREEN ARTIFACT
 //$category "Game/BD64_Artifacts"
 Translation "0:255=%[0,0,0]:[0,1,0]"//Green
 Inventory.Icon POW3E0
-Inventory.PickupMessage "It looks like some sort of key...."
+Inventory.PickupMessage "$FO_GOTDEMON_GREEN"
 Inventory.PickupSound "DEMKEYUP"
-Tag "Outcast Demon Key Green"
+Tag "$FO_TAG_DEMON_GREEN"
 +COUNTITEM
 -INTERHUBSTRIP
 	States
@@ -1003,9 +1025,9 @@ ACTOR WpnPower5 : CustomInventory 9909	//RED ARTIFACT
 //$category "Game/BD64_Artifacts"
 Translation "0:255=%[0,0,0]:[1,0,0]"//Red
 Inventory.Icon POW3E0
-Inventory.PickupMessage "What is this used for?"
+Inventory.PickupMessage "$FO_GOTDEMON_RED"
 Inventory.PickupSound "DEMKEYUP"
-Tag "Outcast Demon Key Red"
+Tag "$FO_TAG_DEMON_RED"
 +COUNTITEM
 -INTERHUBSTRIP
 	States

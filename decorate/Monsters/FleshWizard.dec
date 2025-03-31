@@ -17,8 +17,8 @@ PainChance "FWizardHaunt",0
 DamageFactor "FWizardHaunt",0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Tag "Flesh Wizard"
-Obituary "%o had %p blood boiled by a Flesh Wizard."
+Tag "$FO_TAG_FLESH"
+Obituary "$FO_OB_FLESH"
 SeeSound "wizard/See"
 PainSound "wizard/pain"
 DeathSound "wizard/death"

@@ -15,7 +15,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "chainsaw",0.5
 DamageFactor "Head",0.8
 DropItem "DemonEssenceSpawner"
-Tag "Imp"
+Tag "$FO_TAG_IMP"
 HitObituary "$FO_OB_IMPHIT"
 Obituary "$FO_OB_IMP"
 +NOBLOODDECALS
@@ -669,9 +669,9 @@ SeeSound "imp/sight"
 PainSound "imp/pain"
 DeathSound "imp/death"
 ActiveSound "imp/active"
-Tag "Nightmare Imp"
-Obituary "%o was burned by a Nightmare Imp."
-HitObituary "%o was slashed by a Nightmare Imp."
+Tag "$FO_TAG_IMP_NIGHTMARE"
+Obituary "$FO_OB_IMP_NIGHTMARE"
+HitObituary "$FO_OB_IMPHIT_NIGHTMARE"
 BloodType "Brutal_BloodBLUE"
 	States
 	{

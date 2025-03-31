@@ -13,7 +13,7 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 Dropitem "SawGas"
 Dropitem "DemonEssenceSpawner"
-Tag "Mancubus"
+Tag "$FO_TAG_FATSO"
 Obituary "$FO_OB_FATSO"
 +DONTHARMCLASS
 +NOBLOODDECALS

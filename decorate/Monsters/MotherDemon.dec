@@ -14,15 +14,14 @@ PainChance "Flames",0
 PainChance "Bullet",0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DamageFactor "UnmakerWhite",0.5
 DamageFactor "BFG",0.7
-Obituary "%o was obliterated by the mother of all demons."
+Obituary "$FO_OB_MOTHER"
 SeeSound "mother/sight"
 AttackSound "mother/attack"
 PainSound "mother/Pain"
 DeathSound "mother/Death"
 ActiveSound "mother/Active"
-Tag "Mother Demon"
+Tag "$FO_TAG_MOTHER"
 DropItem "DemonEssenceLargeSpawner"
 DropItem "Soulsphere",32
 Species "Resurrector"

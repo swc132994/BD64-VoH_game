@@ -8,8 +8,8 @@ Radius 15
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "chainsaw",0.6
-Tag "Husk Zombie"
-HitObituary "The Horde consumed %o."
+Tag "$FO_TAG_HUSK"
+HitObituary "$FO_OB_HUSK"
 SeeSound "TheHusk/See"
 PainSound "TheHusk/Pain"
 DeathSound "TheHusk/Death"

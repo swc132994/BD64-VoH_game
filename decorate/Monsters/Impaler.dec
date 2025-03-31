@@ -13,9 +13,9 @@ PoisonDamage 128 //Poison Damage Duration from Melee About 4-5 Seconds
 SeeSound "Impaler/See"
 PainSound "Impaler/Pain"
 DeathSound "Impaler/Death"
-Obituary "%o was punctured by an Impaler."
-HitObituary "%o was impaled by an Impaler."
-Tag "Impaler"
+Obituary "$FO_OB_IMPALER"
+HitObituary "$FO_OB_IMPALERHIT"
+Tag "$FO_TAG_IMPALER"
 PainChance 32
 PainChance "SuperFists",220
 PainChance "Kick",255

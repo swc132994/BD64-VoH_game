@@ -10,8 +10,8 @@ Mass 5000
 Damage 15
 MeleeThreshold 200
 MeleeRange 100
-Obituary "%o met eternal damnation at the hands of the Infernal Resurrector."
-Tag "Infernal Resurrector"
+Obituary "$FO_OB_RESURRECTOR"
+Tag "$FO_TAG_RESURRECTOR"
 PainChance 10
 PainChance "SuperFists",200
 PainChance "Kick",200

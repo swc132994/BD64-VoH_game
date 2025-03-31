@@ -9,8 +9,8 @@ Mass 200
 Speed 20
 Damage 10
 MeleeRange 90
-Obituary "%o was immolated by a Fallen."
-Tag "Fallen"
+Obituary "$FO_OB_FALLEN"
+Tag "$FO_TAG_FALLEN"
 SeeSound "monster/falsit"
 PainSound "monster/falpai"
 DeathSound "monster/faldth"

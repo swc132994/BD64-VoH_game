@@ -14,7 +14,7 @@ DamageFactor "Flames",0
 DamageFactor "Ice",2
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Tag "Lost Soul"
+Tag "$FO_TAG_SOUL"
 Obituary "$FO_OB_SKULL"
 +NOBLOOD
 +NOBLOODDECALS

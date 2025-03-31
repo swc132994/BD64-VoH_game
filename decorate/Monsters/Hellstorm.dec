@@ -18,8 +18,8 @@ PainChance "SuperKick",200
 DamageFactor "Head",0.9
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-obituary "%o was torn apart by a Hellstorm"
-Tag "Hellstorm"
+obituary "$FO_OB_HELLSTORM"
+Tag "$FO_TAG_HELLSTORM"
 seesound "tornado/see"
 painsound "tornado/pain"
 deathsound "tornado/death"

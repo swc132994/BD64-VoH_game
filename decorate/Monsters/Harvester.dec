@@ -22,9 +22,9 @@ SeeSound "harvester/sight"
 PainSound "harvester/pain"
 DeathSound "harvester/death"
 ActiveSound "harvester/active"
-Obituary "%o was leeched by a Soul Harvester."
+Obituary "$FO_OB_HARVESTER"
 DropItem "DemonEssenceSpawner"
-Tag "Soul Harvester"
+Tag "$FO_TAG_HARVESTER"
 MONSTER
 +FLOORCLIP
 +NOBLOODDECALS

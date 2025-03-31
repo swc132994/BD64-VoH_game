@@ -110,12 +110,12 @@ FO_TAG_HARD = "Vois-moi mourir !";
 FO_TAG_HARD_TXT = "Équivalent de  'Ultra-violence'";
 FO_TAG_HARDER = "Vois-moi mourir+ !";
 FO_TAG_HARDER_TXT = "Équivalent de 'Ultra-violence+', Projectiles rapides (GZDoom uniquement) : Apparition des armes multijoueurs";
-FO_TAG_NIGHTMARE = "Hardcore!";
+FO_TAG_NIGHTMARE = "Hardcore !";
 FO_TAG_NIGHTMARE_TXT = "Capacités des monstres = Projectiles rapides, +25% de santé et plus agressif";
 FO_TAG_SURVIVAL = "Survie !";
 FO_TAG_SURVIVAL_TXT = "Capacités des monstres = +25% de santé (soins manuels du joueur).";
 FO_TAG_REALISM = "Survie ! (réalisme)";
-FO_TAG_REALISM = "Capacités des monstres = Projectiles rapides, -70 % de santé et inflige x5 dégâts (soins manuels du joueur)";
+FO_TAG_REALISM_TXT = "Capacités des monstres = Projectiles rapides, -70 % de santé et inflige x5 dégâts (soins manuels du joueur)";
 
 //////////////////////////////////////////////////////////////////
 //Option values

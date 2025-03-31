@@ -21,12 +21,12 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 Alpha 0.6
 RenderStyle Translucent
-Obituary "%o was slit open by a Wraith"
+Obituary "$FO_OB_WRAITH"
 SeeSound "D3Wraith/Sight"
 PainSound "D3Wraith/Pain"
 DeathSound "D3Wraith/Death"
 ActiveSound "D3Wraith/Active"
-Tag "Wraith"
+Tag "$FO_TAG_WRAITH"
 DropItem "DemonEssenceSpawner"
 BloodType "Brutal_Blood"
 MONSTER

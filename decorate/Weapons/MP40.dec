@@ -2,7 +2,7 @@ Actor MP40Spawner : CustomInventory 19124
 {
 //$category "Game/BD64_Weapons"
 Scale 0.8
-Tag "MP40"
+Tag "$FO_TAG_MP40"
 Inventory.PickupMessage "$BD64_GOTMP40"
 Inventory.PickupSound "WPICK"
 	States
@@ -33,9 +33,9 @@ Weapon.SelectionOrder 850
 Weapon.AmmoType "Clip"
 Weapon.AmmoUse 1
 Weapon.AmmoGive 20
-Inventory.PickupMessage "$GOTMP40"
-Obituary "%o was gunned down by %k."
-Tag "MP-40"
+Inventory.PickupMessage "$BD64_GOTMP40"
+Obituary "$FO_OB_MP40"
+Tag "$FO_TAG_MP40"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 +INVENTORY.RESTRICTABSOLUTELY
@@ -95,9 +95,9 @@ Weapon.AmmoGive1 20
 Weapon.AmmoType2 "MP40Ammo"
 Weapon.AmmoUse2 1
 Weapon.AmmoGive2 0
-Inventory.PickupMessage "$GOTMP40"
-Obituary "%o was gunned down by %k."
-Tag "MP40"
+Inventory.PickupMessage "$BD64_GOTMP40"
+Obituary "$FO_OB_MP40"
+Tag "$FO_TAG_MP40"
 +WEAPON.CHEATNOTWEAPON
 	States
 	{

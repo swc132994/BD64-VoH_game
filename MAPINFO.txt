@@ -16,27 +16,27 @@ Skill Baby
 {
 	SpawnFilter = Easy
 	DamageFactor = 0.5
-	Name = "Be Gentle!"
+	Name = "$FO_TAG_BABY"
 	AmmoFactor = 2.0
 	EasyBossBrain
-	mustconfirm = "Equivalent to 'I'm too young to die' (ammo factor x2)"
+	mustconfirm = "$FO_TAG_BABY_TXT"
 }
 
 Skill Easy
 {
 	SpawnFilter = Easy
 	DamageFactor = 0.5
-	Name = "Bring it on!"
+	Name = "$FO_TAG_EASY"
 	EasyBossBrain
-	mustconfirm = "Equivalent to 'Hey, not too rough'"
+	mustconfirm = "$FO_TAG_EASY_TXT"
 }
 
 Skill Normal
 {
 	SpawnFilter = Normal
 	DamageFactor = 0.75
-	Name = "I own Doom!"
-	mustconfirm = "Equivalent to 'Hurt me plenty'"
+	Name = "$FO_TAG_NORMAL"
+	mustconfirm = "$FO_TAG_NORMAL_TXT"
 	defaultskill
 }
 
@@ -44,18 +44,18 @@ Skill Hard
 {
 	SpawnFilter = Hard
 	DamageFactor = 0.75
-	Name = "Watch me die!"
-	mustconfirm = "Equivalent to 'Ultra violence'"
+	Name = "$FO_TAG_HARD"
+	mustconfirm = "$FO_TAG_HARD_TXT"
 }
 
 Skill HardPlus
 {
 	SpawnFilter = Hard
 	DamageFactor = 0.75
-	Name = "Watch me die+!"
+	Name = "$FO_TAG_HARDER"
 	FastMonsters
 	SpawnMulti //This command works correctly in GZDoom, but has no effect on Zandronum
-	mustconfirm = "Equivalent to 'Ultra violence+', Fast Monster Projectiles, (GZDoom only) Spawn Multiplayer Weapons"
+	mustconfirm = "$FO_TAG_HARDER_TXT"
 }
 
 Skill Nightmare
@@ -65,8 +65,8 @@ Skill Nightmare
 	DamageFactor = 0.75
 	Aggressiveness = 0.5
 	FastMonsters
-	Name = "Hardcore!"
-	mustconfirm = "Monster abilities = Fast projectiles, +25% health and more aggressive"
+	Name = "$FO_TAG_NIGHTMARE"
+	mustconfirm = "$FO_TAG_NIGHTMARE_TXT"
 }
 
 Skill Survival
@@ -78,10 +78,10 @@ Skill Survival
 	ReplaceActor = "Stimpack","BandagedStimSpawner"
 	ReplaceActor = "Medikit","BandagedMedikitSpawner"
 	ReplaceActor = "64Berserk","BerserkerSyringeSpawner"
-	Name = "Survival!"
+	Name = "$FO_TAG_SURVIVAL"
 	ACSReturn = 6
 	textcolor = Gray
-	mustconfirm = "Monster abilities = +25% health (player manual healing)."
+	mustconfirm = "$FO_TAG_SURVIVAL_TXT"
 }
 
 Skill SurvivalRealism
@@ -95,9 +95,9 @@ Skill SurvivalRealism
 	ReplaceActor = "64Berserk","BerserkerSyringeSpawner"
 	FastMonsters
 	ACSReturn = 7
-	Name = "Survival! (realism)"
+	Name = "$FO_TAG_REALISM"
 	textcolor = Gray
-	mustconfirm = "Monster abilities = Fast Projectiles, -70% health and inflict x5 damage (player manual healing)"
+	mustconfirm = "$FO_TAG_REALISM_TXT"
 }
 
 

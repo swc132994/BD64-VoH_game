@@ -3,6 +3,7 @@ Actor BFG9000Spawner : CustomInventory Replaces BFG9000
 //$category "Game/BD64_Weapons"
 Scale 0.9
 Tag "$FO_TAG_BFG9000"
+Obituary "$FO_OB_MPBFG_BOOM"
 Inventory.PickupMessage "$BD64_GOTBFG9000"
 Inventory.PickupSound "WPICK"
 	States
@@ -42,6 +43,7 @@ Weapon.AmmoType "Cell"
 Weapon.AmmoUse 40
 Weapon.AmmoGive 40
 Inventory.PickupMessage "$BD64_GOTBFG9000"
+Obituary "$FO_OB_MPBFG_BOOM"
 Tag "$FO_TAG_BFG9000"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
@@ -95,6 +97,7 @@ Weapon.AmmoUse 1
 Weapon.AmmoGive 40
 Inventory.PickupMessage "$BD64_GOTBFG9000"
 Tag "$FO_TAG_BFG9000"
+Obituary "$FO_OB_MPBFG_BOOM"
 +WEAPON.ALT_USES_BOTH
 -WEAPON.AMMO_CHECKBOTH
 +WEAPON.BFG

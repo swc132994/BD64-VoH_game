@@ -115,7 +115,7 @@ FO_TAG_NIGHTMARE_TXT = "Monster abilities = Fast projectiles, +25% health and mo
 FO_TAG_SURVIVAL = "Survival!";
 FO_TAG_SURVIVAL_TXT = "Monster abilities = +25% health (player manual healing).";
 FO_TAG_REALISM = "Survival! (realism)";
-FO_TAG_REALISM = "Monster abilities = Fast Projectiles, -70% health and inflict x5 damage (player manual healing)";
+FO_TAG_REALISM_TXT = "Monster abilities = Fast Projectiles, -70% health and inflict x5 damage (player manual healing)";
 
 //////////////////////////////////////////////////////////////////
 //Option values

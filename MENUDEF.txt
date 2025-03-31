@@ -270,7 +270,7 @@ OptionMenu "BrutalDoom64OptionsOtherMonster"
 		StaticText "$FO_MONSTER_SKIN",1
 		StaticText ""
 	Option "$FO_MONSTER_HELLHOUND","HoundChooserCvar","HoundChooser"
-		StaticText "$FO_MONSTER_HELLHOUND_TXT1"",1
+		StaticText "$FO_MONSTER_HELLHOUND_TXT1",1
 		StaticText "$FO_MONSTER_HELLHOUND_TXT2",1
 		StaticText "$FO_MONSTER_HELLHOUND_TXT3",1
 		StaticText ""

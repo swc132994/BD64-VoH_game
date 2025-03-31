@@ -63,7 +63,7 @@ LISTMENU "MainMenu"
 
 ListMenu "PlayerclassMenu"
 {
-	StaticTextCentered 160, 15, "Choose Class:"
+	StaticTextCentered 160, 15, "$FO_MNU_CLASS"
 	Position 50, 45
 	PlayerDisplay 140, 35, "FF 00 00", "FF 00 00"
 	// The rest of this menu will be set up based on the actual player definitions.
@@ -77,28 +77,28 @@ ListMenu "SkillMenu"
 
 OptionMenu "BD64Menu"
 {
-	Title "BRUTAL DOOM 64 OPTIONS"
-	StaticText "Some changes are not initialised automatically", 1
-	StaticText "Press \"Apply Changes\" for the changes to take effect",1
+	Title "$FO_64OPTIONS_MAIN "
+	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
 	Command "Apply Changes","PukeName BD64Respawn"
 	StaticText " "
-	StaticText "-------------------------------- Presets -------------------------------------",1
-	StaticText "You must be inside a level before pressing the buttons",1
-	StaticText "You also have to exit the menu each time you apply a preset",1
+	StaticText "$FO_64OPTIONS_PRESET",1
+	StaticText "$FO_64MNU_BEFORE",1
+	StaticText "$FO_64MNU_APPLY",1
 	TextField "Last Preset Used =", "BD64_Preset"
-	StaticText "Option above is purely a confirmation of the preset successfully applying",1
-	StaticText "it does nothing",1
+	StaticText "$FO_64MNU_COMFIRM",1
+	StaticText "$FO_64MNU_NOTHING",1
 	StaticText " "
-	SafeCommand "Default", "pukename DefaultCvars"
-	StaticText "The mod's default options",1
-	SafeCommand "Classical", "pukename ClassicalCvars"
-	StaticText "Tweaks the settings to be as vanilla as possible",1	
-	SafeCommand "SWC's Vision", "pukename StevenCvars"
-	StaticText "Adds new monsters and weapons with balanced settings,",1
-	StaticText "how the creator plays his own mod",1
+	SafeCommand "$FO_64MNU_DEFAULT", "pukename DefaultCvars"
+	StaticText "$FO_64MNU_DEFAULT_TXT",1
+	SafeCommand "$FO_64MNU_CLASSICAL", "pukename ClassicalCvars"
+	StaticText "$FO_64MNU_CLASSICAL_TXT",1	
+	SafeCommand "$FO_64MNU_SWC", "pukename StevenCvars"
+	StaticText "$FO_64MNU_SWC_TXT1",1
+	StaticText "$FO_64MNU_SWC_TXT2",1
 	StaticText " "
-	StaticText "To set all monster/weapon/item spawners to random, press this",1
-	SafeCommand "Spawner Randomiser", "pukename RandomCvars"
+	StaticText "$FO_64MNU_RANDOM_TXT1",1
+	SafeCommand "$FO_64MNU_RANDOM", "pukename RandomCvars"
 	StaticText " "
 	StaticText "-------------------------------- Options -------------------------------------",1
 	StaticText " "

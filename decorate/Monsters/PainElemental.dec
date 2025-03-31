@@ -11,7 +11,8 @@ DamageFactor "Ice",2
 DamageFactor "Flames",0.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-HitObituary "%o got too close to a Pain Elemental."
+Tag "$FO_TAG_ELEMENTAL"
+HitObituary "$FO_OB_ELEMENTAL"
 DropItem "DemonEssenceSpawner"
 +FORCEXYBILLBOARD
 +NOBLOOD
@@ -67,8 +68,8 @@ Speed 10
 PainChance 64
 Alpha 0.5
 RenderStyle Translucent
-HitObituary "%o was tormented by an Agony Elemental."
-Tag "Agony Elemental"
+HitObituary "$FO_OB_ELEMENTAL_NIGHTMARE"
+Tag "$FO_TAG_ELEMENTAL_NIGHTMARE"
 	states
 	{
 	Spawn:

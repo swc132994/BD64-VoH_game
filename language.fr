@@ -58,8 +58,8 @@ RANDOM_NO_HELLSTORM = "Aléatoire (pas de Tempête infernale)";
 
 FO_HUSK_1 = "1 Zombie momifié";
 FO_HUSK_2 ="2 Zombies momifiés";
-FO_HUSK2_CARRION1 = "2 Zombie momifié & 1 Zombie charognard.";
-FO_HUSK3_CARRION2 = "3 Zombie momifié & 1 Zombies charognards".
+FO_HUSK2_CARRION1 = "2 Zombie momifié & 1 Charogne.";
+FO_HUSK3_CARRION2 = "3 Zombie momifié & 1 Charogne".
 
 FO_CHAINGUN = "\cuMitrailleuse";
 FO_RIFLE = "\cuFusil d'assault";
@@ -79,16 +79,22 @@ FO_BLOOD_LOW = "Maximum";
 //////////////////////////////////////////////////////////////////
 // HUD
 
-HUD_ARMOR = "Armour";
+HUD_ARMOR = "Armure";
 
-HUD_HEALTH = "Health";
+HUD_HEALTH = "Santé";
+
+HUD_SILENCER = "Il te faut un silencieux pour pistolet ! On en trouve dans les sacs à dos.";
+
+HUD_CHAINSAW_SSG = "Veuillez recharger votre doubles canon.";
+
+HUD_NOTENOUGH = "Munitions insufisantes !";
 
 //////////////////////////////////////////////////////////////////
 //Tags for gamemodes 
 
 //////////////////////////////////////////////////////////////////
 //Tags for Classes
-FO_TAG_CLASS_PURIST = "Puriste";
+FO_TAG_CLASS_CLASSIC = "Classique";
 FO_TAG_MODERN = "Moderne";
 FO_TAG_CLASS_TACTICAL = "Tactique";
 
@@ -254,7 +260,7 @@ FO_SPAWN_MASTERMIND = "Générateur de Cerveaux arachnides=";
 FO_SPAWN_MASTERMIND_TXT = "Pourcentage aléatoire de cerveaux arachnides =";
 FO_SPAWN_HUSK = "Multiplicateur de hordes de zombies momifiés =";
 FO_SPAWN_HUSK_TXT1 = "Pourcentage aléatoire de hordes de zombies momifiés =";
-FO_SPAWN_HUSK_TXT2 = "Option permettant de faire apparaître des zombies momifiés et charogniards à proximité des zombies morts décoratifs.";
+FO_SPAWN_HUSK_TXT2 = "Option permettant de faire apparaître des zombies momifiés et des Charognes à proximité des zombies morts décoratifs.";
 FO_SPAWN_HUSK_TXT3 = "Désactivé par défaut";
 FO_SPAWN_SETTING = "(Paramètre recommandé x3, x4 ou aléatoire)";
 
@@ -361,12 +367,12 @@ FO_GOTMEDIKIT = "\crKit de soins\c- récupéré.";
 //////////////////////////////////////////////////////////////////
 //powerups
 FO_GOTINVUL = "\cqInvulnérabilitée !";
-FO_GOTSUPER = "\chSupercharge !";
+FO_GOTSUPER = "\chSphère d'Âme !";
 FO_GOTMSPHERE = "\csMéga-sphère !";
 FO_GOTINVIS = "\caInvisibilité partielle !";
 FO_GOTSUIT = "\cdBouclier anti-radiations !";
 FO_GOTVISOR = "\cnLunettes de vision nocturne !";
-FO_GOTMAP = "\cmCarte éléctronique !";
+FO_GOTMAP = "\cbCarte éléctronique !";
 FO_GOTBERSERK = "\clBerserk !";
 
 //////////////////////////////////////////////////////////////////
@@ -389,18 +395,27 @@ FO_GOTDEMON_RED = "\cgÀ quoi cela sert-il ?";
 
 //////////////////////////////////////////////////////////////////
 //ammo
-FO_GOTBACKPACK = "Sac à dos récupéré !";
-FO_GOTBACKPACK2 = "Sac à dos rempli de munitions avec un silencieux pour pistolet récupéré !";
-FO_GOTBACKPACK3 = "Sac à dos rempli de munitions avec lampe torche récupéré !";
-FO_GOTBACKPACK4 = "Sac à dos rempli de munitions avec un silencieux pour pistolet et lampe torche récupéré !";
-FO_GOTCLIP = "Chargeur récupéré.";
-FO_GOTCLIPBOX = "Boîte de munitions récupérée.";
-FO_GOTSHELLS = "Quatres cartouches de Fusil à pompe récupérées.";
-FO_GOTSHELLBOX = "Boîte de cartouches de Fusil à Pompe récupéré.";
-FO_GOTROCKET = "Roquette récupérée.";
-FO_GOTROCKBOX = "Caisse de roquettes récupéré.";
-FO_GOTCELL = "Cellules d'énergie récupérées.";
-FO_GOTCELLBOX = "Pack d'énergie récupéré.";
+FO_GOTBACKPACK = "\ceSac à dos\c- récupéré !";
+FO_GOTBACKPACK2 = "\ceSac à dos\c- rempli de munitions avec un silencieux pour pistolet récupéré !";
+FO_GOTBACKPACK3 = "\ceSac à dos\c- rempli de munitions avec lampe torche récupéré !";
+FO_GOTBACKPACK4 = "\ceSac à dos\c- rempli de munitions avec un silencieux pour pistolet et lampe torche récupéré !";
+FO_GOTCLIP = "\ceChargeur récupéré\c-.";
+FO_GOTCLIPBOX = "\ceBoîte de munitions\c- récupérée.";
+FO_GOTCLIPBOX2 = "\ceBoîte de munitions fros calibre\c- récupérée.";
+FO_GOTSHELLS = "\ceQuatres cartouches de Fusil à pompe\c- récupérées.";
+FO_GOTSHELLBOX = "\ceBoîte de cartouches de Fusil à Pompe\c- récupéré.";
+FO_GOTROCKET = "\ceRoquette récupérée\c-.";
+FO_GOTROCKBOX = "\ceCaisse de roquettes\c- récupéré.";
+FO_GOTCELL = "\ceCellules d'énergie\c- récupérées.";
+FO_GOTCELLBOX = "\cePack\c- d'énergie récupéré.";
+FO_GOTSOUL = "\clÂme\c- récupérée";
+FO_GOTESSENSE = "\clEssense démoniaque\c- récupérée";
+FO_GOTESSENSE2 = "\clLarge essense démoniaque\c- récupérée";
+FO_GOTBANDAGES = "\chBandages\c- récupérés.";
+FO_GOTSYRINGE = "\clSeringue BERSERK\c récupérée.";
+FO_SCAVENGE1 = "Vous récupérez 25 bandages dans ce Medikit.";
+FO_SCAVENGE2 = "Vous récupérez 25 bandages dans ce Medikit.";
+FO_SCAVENGE3 = "Vous récupérez une seringue Berserk dans ce kit Berserk.";
 
 //////////////////////////////////////////////////////////////////
 //doors
@@ -430,57 +445,57 @@ FO_GOTCELLBOX = "Pack d'énergie récupéré.";
 
 //////////////////////////////////////////////////////////////////
 //weapon pickups
-BD64_GOTCHAINSAW = "Vous avez mis la main sur la Tronconneuse ! (Touche 1)"; //(Freedoom Override)
+BD64_GOTCHAINSAW = "Vous avez mis la main sur la \cmTronconneuse ! (Touche 1)"; //(Freedoom Override)
 //Slot 3
-BD64_GOTPISTOL = "Vous avez mis la main sur un Pistolet ! (Touche 2)";
-BD64_GOTSMG = "Vous avez mis la main sur le Pistolet-Mitrailleur ! (Touche 2)";
-BD64_GOTMP40 = "Vous avez mis la main sur le MP40 ! (Touche 2)";
+BD64_GOTPISTOL = "Vous avez mis la main sur un \cmPistolet\c- ! (Touche 2)";
+BD64_GOTSMG = "Vous avez mis la main sur le \cmPistolet-Mitrailleur\c- ! (Touche 2)";
+BD64_GOTMP40 = "Vous avez mis la main sur le \cmMP40\c- ! (Touche 2)";
 //Slot 3
-BD64_GOTSHOTGUN = "Vous avez mis la main sur le Fusil à pompe ! (Touche 3)"; //(Freedoom Override)
-BD64_GOTSHOTGUN2 = "Vous avez mis la main sur le Super-Fusil de chasse à canons juxtaposé ! (Touche 3)"; //(Freedoom Override)
+BD64_GOTSHOTGUN = "Vous avez mis la main sur le \cmFusil à pompe\c- ! (Touche 3)"; //(Freedoom Override)
+BD64_GOTSHOTGUN2 = "Vous avez mis la main sur le \cmSuper-Fusil de chasse à canons juxtaposé\cl- ! (Touche 3)"; //(Freedoom Override)
 //Slot 4
-BD64_GOTRIFLE = "Vous avez mis la main sur le Fusil d'assault ! (Touche 4)";
-BD64_GOTCHAINGUN = "Vous avez mis la main sur la Mitrailleuse ! (Touche 4)"; //(Freedoom Override)
+BD64_GOTRIFLE = "Vous avez mis la main sur le \cmFusil d'assault\c- ! (Touche 4)";
+BD64_GOTCHAINGUN = "Vous avez mis la main sur la \cmMitrailleuse\c- ! (Touche 4)"; //(Freedoom Override)
 //Slot 5
-BD64_GOTLAUNCHER = "Vous avez mis la main sur le Lance-roquettes ! (Touche 5)"; //(Freedoom Override)
-BD64_GOTMINES = "Vous avez mis la main sur une Mine polyvalente ! (Touche 5)";
+BD64_GOTLAUNCHER = "Vous avez mis la main sur le \cmLance-roquettes\c- ! (Touche 5)"; //(Freedoom Override)
+BD64_GOTMINES = "Vous avez mis la main sur une \cmMine polyvalente\c- ! (Touche 5)";
 //Slot 6
-BD64_GOTPLASMA = "Vous avez mis la main sur le Fusil à plasma ! (Touche 6)"; //(Freedoom Override)
-BD64_GOTGAUSS = "Vous avez mis la main sur le Fusil Gauss ! (Touche 6)";
+BD64_GOTPLASMA = "Vous avez mis la main sur le \cmFusil à plasma\c-  ! (Touche 6)"; //(Freedoom Override)
+BD64_GOTGAUSS = "Vous avez mis la main sur le \cmFusil Gauss !\c-  (Touche 6)";
 //Slot 7 (Freedoom Override)
-BD64_GOTBFG9000 = "Vous avez mis la main sur le BFG9000 ! Quel pied ! (Touche 7)";
+BD64_GOTBFG9000 = "Vous avez mis la main sur le \cmBFG9000 !\c-  Quel pied ! (Touche 7)";
 //Slot 8
-BD64_GOTUNMAKER = "Bordel mais c'est quoi ça !? (Touche 8)";
+BD64_GOTUNMAKER = "\cgBordel mais c'est quoi ça !?\c-  (Touche 8)";
 //Slot 9
-BD64_GOTLASER = "Vous avez mis la main sur le Rayon laser ! (Touche 9)";
+BD64_GOTLASER = "Vous avez mis la main sur le \cmRayon laser !\c-  (Touche 9)";
 
 //////////////////////////////////////////////////////////////////
 // weapon tags
 //1
-FO_TAG_FIST = "Poings";
-FO_TAG_CHAINSAW = "Tronconneuse";
+FO_TAG_FIST = "\cmPoings";
+FO_TAG_CHAINSAW = "\cmTronconneuse";
 //2
-FO_TAG_PISTOL = "Pistolet";
-FO_TAG_SMG = "Pistolet-mitrailleur";
-FO_TAG_MP40 = "MP40";
+FO_TAG_PISTOL = "\cmPistolet";
+FO_TAG_SMG = "\cmPistolet-mitrailleur";
+FO_TAG_MP40 = "\cmMP40";
 //3
-FO_TAG_SHOTGUN = "Fusil à pompe";
-FO_TAG_SUPERSHOTGUN = "Super-Fusil de chasse juxtaposé";
+FO_TAG_SHOTGUN = "\cmFusil à pompe";
+FO_TAG_SUPERSHOTGUN = "\cmSuper-Fusil de chasse juxtaposé";
 //4
-FO_TAG_RIFLE = "Fusil d'assault";
-FO_TAG_CHAINGUN = "Mitrailleuse";
+FO_TAG_RIFLE = "\cmFusil d'assault";
+FO_TAG_CHAINGUN = "\cmMitrailleuse";
 //5
 FO_TAG_ROCKETLAUNCHER = "Lance-roquettes";
-FO_TAG_MINES = "Mine polyvalente";
+FO_TAG_MINES = "\cmuMine polyvalente";
 //6
-FO_TAG_PLASMARIFLE = "Fusil à plasma";
-FO_TAG_GAUSS = "Fusil Gauss";
+FO_TAG_PLASMARIFLE = "\cmFusil à plasma";
+FO_TAG_GAUSS = "\cmFusil Gauss";
 //7
-FO_TAG_BFG9000 = "BFG9000";
+FO_TAG_BFG9000 = "\cmBFG9000";
 //8
-FO_TAG_UNMAKER = "Unmaker";
+FO_TAG_UNMAKER = "\cuUnmaker";
 //9
-FO_TAG_LASER = "Fusil laser";
+FO_TAG_LASER = "\cmFusil laser";
 
 //////////////////////////////////////////////////////////////////
 // ammo tags
@@ -489,15 +504,20 @@ FO_TAG_BACKPACK1 = "\ceSac à dos";
 FO_TAG_BACKPACK2 = "\ceSac à dos\c- avec silencieux pour pistolet";
 FO_TAG_BACKPACK3 = "\ceSac à dos\c- avec lampe de poche";
 FO_TAG_BACKPACK4 = "\ceSac à dos\c- avec lampe de poche et silencieux pour pistolet";
-FO_TAG_CLIP = "Magazin";
-FO_TAG_CLIPBOX = "Boîte de munitions";
-FO_TAG_CLIPBOX2 = "Boîte de munitions gros calibre":
-FO_TAG_SHELL = "Cartouches de fusil à pompe";
-FO_TAG_SHELLBOX = "Boîte de cartouches de fusil à pompe";
-FO_TAG_ROCKET = "Roquette";
-FO_TAG_ROCKBOX ="Caisse de roquettes";
-FO_TAG_CELL = "Cellules d'énergie";
-FO_TAG_CELLBOX = "Pack d'énergie";
+FO_TAG_CLIP = "\ceMagazin";
+FO_TAG_CLIPBOX = "\ceBoîte de munitions";
+FO_TAG_CLIPBOX2 = "\ceBoîte de munitions gros calibre";
+FO_TAG_SHELL = "\ceCartouches de fusil à pompe";
+FO_TAG_SHELLBOX = "\ceBoîte de cartouches de fusil à pompe";
+FO_TAG_ROCKET = "\ceRoquette";
+FO_TAG_ROCKBOX ="\ceCaisse de roquettes";
+FO_TAG_CELL = "\ceCellules d'énergie";
+FO_TAG_CELLBOX = "\cePack d'énergie";
+FO_TAG_SOUL = "\clÂme";
+FO_TAG_ESSENSE = "\clEssence démoniaque";
+FO_TAG_ESSENSE2 = "\clLarge essense démoniaque";
+FO_TAG_BANDAGES = "\chBandages";
+FO_TAG_SYRINGE = "\cgSeringue BERSERK";
 
 //////////////////////////////////////////////////////////////////
 // health and armor tags
@@ -520,7 +540,7 @@ FO_TAG_MSPHERE = "\csMéga-Sphère";
 FO_TAG_INVIS = "\caSphère d'invisibilité partielle";
 FO_TAG_SUIT = "\cdBouclier anti-radiations";
 FO_TAG_VISOR = "\cnLunettes de vision nocturne";
-FO_TAG_MAP = "\cmCarte éléctronique";
+FO_TAG_MAP = "\cbCarte éléctronique";
 FO_TAG_BERSERK = "\clPack Berserk";
 
 //////////////////////////////////////////////////////////////////
@@ -544,24 +564,24 @@ FO_TAG_GOTREDSKUL = "\crClé crâne rouge";
 
 //////////////////////////////////////////////////////////////////
 //obituaries for weapons
-FO_OB_MPFIST = "%o à mangé(e) le \cupoing\c- de \cg%k\c-.";
-FO_OB_MPCHAINSAW = "%o s'est fait(e) passé(e) dessus par la \cutronconneuse\c- de \cg%k\c-.";
-FO_OB_MPPISTOL = "%o s'est fait(e) chatouillé(e) les côtes par la \cupétoire\c- de \cg%k\c-.";
+FO_OB_MPFIST = "%o à mangé(e) le \cmpoing\c- de \cg%k\c-.";
+FO_OB_MPCHAINSAW = "%o s'est fait(e) passé(e) dessus par la \cmtronconneuse\c- de \cg%k\c-.";
+FO_OB_MPPISTOL = "%o s'est fait(e) chatouillé(e) les côtes par la \cmpétoire\c- de \cg%k\c-.";
 FO_OB_MP40 = "%o a été abattu par \cg%k\c-.";
-FO_OB_MPSHOTGUN = "%o s'est fait(e) éclaté(e) la gueule par le \cuFusil à pompe\c- de \cg%k\c-.";
-FO_OB_MPSSHOTGUN = "%o a été(e) éparpillé(e) au sol par le \cuSuper-Fusil de chasse\c- de \cg%k\c-.";
-FO_OB_MPCHAINGUN = "%o a été(e) dégommé(e) par la \\cuMitrailleuse\c- de \cg%k\c-.";
-FO_OB_MPROCKET = "%o à chevauché(e) la \curoquette\c- de \cg%k\c-.";
-FO_OB_MINES = "%o a été déchiqueté par la \cumine\c- de \cg%k\c-.";
-//	OB_MPR_SPLASH = "%o était à deux doigts d'esquiver la \curoquette\c- de \cg%k\c-.";
-FO_OB_MPPLASMARIFLE = "%o a été(e) désintégré(e) \cuFusil à plasma\c- de \cg%k\c-.";
-FO_OB_GAUSS = "%o a été(e) transpercé(e) par le \cuFusil Gauss\c- de \cg%k.";
-FO_OB_MPBFG_BOOM = "%o a été(e) désintégré(e) par le le \\cuBFG9000\c- de \cg%k\c-.";
-FO_OB_LASER = "%o à été(e) réduit à néant par le \cuRayon laser\c- de \cg%k\c-.";
-//	OB_MPBFG_SPLASH = "%o ne pouvait se planquer du \cuBFG\c- de \cg%k\c-.";
-//	OB_MPTELEFRAG = "%o a été(e) \cutélecrasé\c- par \cg%k\c-.";
-//	OB_RAILGUN = "%o été \curéduit en cendres\c- par \cg%k\c-.";
-//	OB_MPBFG_MBF = "%o a été(e) incinéré(e) par le \cuBFG\c- de \cg%k\c-.";
+FO_OB_MPSHOTGUN = "%o s'est fait(e) éclaté(e) la gueule par le \cmFusil à pompe\c- de \cg%k\c-.";
+FO_OB_MPSSHOTGUN = "%o a été(e) éparpillé(e) au sol par le \cmSuper-Fusil de chasse\c- de \cg%k\c-.";
+FO_OB_MPCHAINGUN = "%o a été(e) dégommé(e) par la \cmMitrailleuse\c- de \cg%k\c-.";
+FO_OB_MPROCKET = "%o à chevauché(e) la \cmroquette\c- de \cg%k\c-.";
+FO_OB_MINES = "%o a été déchiqueté par la \cmmine\c- de \cg%k\c-.";
+//	OB_MPR_SPLASH = "%o était à deux doigts d'esquiver la \cmroquette\c- de \cg%k\c-.";
+FO_OB_MPPLASMARIFLE = "%o a été(e) désintégré(e) \cmFusil à plasma\c- de \cg%k\c-.";
+FO_OB_GAUSS = "%o a été(e) transpercé(e) par le \cmFusil Gauss\c- de \cg%k.";
+FO_OB_MPBFG_BOOM = "%o a été(e) désintégré(e) par le le \cmBFG9000\c- de \cg%k\c-.";
+FO_OB_LASER = "%o à été(e) réduit à néant par le \cmRayon laser\c- de \cg%k\c-.";
+//	OB_MPBFG_SPLASH = "%o ne pouvait se planquer du \cmBFG\c- de \cg%k\c-.";
+//	OB_MPTELEFRAG = "%o a été(e) \cmtélecrasé\c- par \cg%k\c-.";
+//	OB_RAILGUN = "%o été \cmréduit en cendres\c- par \cg%k\c-.";
+//	OB_MPBFG_MBF = "%o a été(e) incinéré(e) par le \cmBFG\c- de \cg%k\c-.";
 
 //////////////////////////////////////////////////////////////////
 //Tags for demons
@@ -613,7 +633,7 @@ FO_TAG_MASTERMIND = "Cerveau arachide démoniaque";
 FO_TAG_ERADICATOR = "Éradicateur";
 FO_TAG_ZIOSS = "Wolfenstein SS";
 FO_TAG_EVILSPIRIT = "Esprit frappeur";
-FO_TAG_CARRION = "Zombie charognard";
+FO_TAG_CARRION = "Charogne";
 FO_TAG_THING = "La chose";
 
 //////////////////////////////////////////////////////////////////

@@ -26,7 +26,7 @@ FO_GOTMEGA = "You got the Mega \cgArmour\c-!";			//en-gb
 
 FO_GOTCLIPBOX2 = "Picked up a box of high calibre bullets.";	//en-gb
 
-FO_GOTSAWGAS = "Picked up some fuel!.";	//en-gb
+FO_GOTSAWGAS = "Picked up a can of fuel!.";	//en-gb
 
 //////////////////////////////////////////////////////////////////
 // ammo tags

@@ -83,12 +83,18 @@ HUD_ARMOR = "Armor";
 
 HUD_HEALTH = "Health";
 
+HUD_SILENCER = "You need a pistol silencer! This can be found in backpacks.";
+
+HUD_CHAINSAW_SSG = "Super Shotgun Needs Reloading.";
+
+HUD_NOTENOUGH = "Not Enough Ammo!";
+
 //////////////////////////////////////////////////////////////////
 //Tags for gamemodes 
 
 //////////////////////////////////////////////////////////////////
 //Tags for Classes
-FO_TAG_CLASS_PURIST = "Purist";
+FO_TAG_CLASS_CLASSIC = "Classic";
 FO_TAG_MODERN = "Modern";
 FO_TAG_CLASS_TACTICAL = "Tactical";
 
@@ -360,14 +366,14 @@ FO_GOTMEDIKIT = "You pick up a \chmedikit\c-.";
 
 //////////////////////////////////////////////////////////////////
 //powerups
-FO_GOTINVUL = "Invulnerability!";
-FO_GOTSUPER = "Supercharge!";
-FO_GOTMSPHERE = "Mega Sphere!";
-FO_GOTINVIS = "Partial Invisibility!";
-FO_GOTSUIT = "Radiation Shield!";
-FO_GOTVISOR = "Light Amplification Goggles!";
-FO_GOTMAP = "Computer Area Map!";
-FO_GOTBERSERK = "Berserk!";
+FO_GOTINVUL = "\cqInvulnerability!";
+FO_GOTSUPER = "\chSupercharge!";
+FO_GOTMSPHERE = "\csMega Sphere!";
+FO_GOTINVIS = "\caPartial Invisibility!";
+FO_GOTSUIT = "\cdRadiation Shield!";
+FO_GOTVISOR = "\cnLight Amplification Goggles!";
+FO_GOTMAP = "\cbComputer Area Map!";
+FO_GOTBERSERK = "\clBerserk!";
 
 //////////////////////////////////////////////////////////////////
 //Keys
@@ -393,17 +399,24 @@ FO_GOTBACKPACK = "You got the \cebackpack\c-!";
 FO_GOTBACKPACK2 = "Picked up a \cebackpack\c- full of ammo with pistol silencer!";
 FO_GOTBACKPACK3 = "Picked up a \cebackpack\c- full of ammo with flashlight!";
 FO_GOTBACKPACK4 =  "Picked up a \cebackpack\c- full of ammo with pistol silencer and flashlight!";
-FO_GOTCLIP = "Picked up a clip.";
-FO_GOTCLIPBOX = "Picked up a box of bullets.";
-FO_GOTCLIPBOX2 = "Picked up a box of high caliber bullets.";
-FO_GOTSHELLS = "Picked up 4 shotgun shells.";
-FO_GOTSHELLBOX = "Picked up a box of shells.";
-FO_GOTROCKET = "Picked up a rocket.";
-FO_GOTROCKBOX = "Picked up a box of rockets.";
-FO_GOTCELL = "Picked up an energy cell.";
-FO_GOTCELLBOX = "Picked up an energy cell pack.";
-
-FO_GOTSAWGAS = "Picked up some gasoline!.";
+FO_GOTCLIP = "Picked up a \ceclip\c-.";
+FO_GOTCLIPBOX = "Picked up a box of \cebullets\c-.";
+FO_GOTCLIPBOX2 = "Picked up a \cehigh calibre bullet box\c-.";
+FO_GOTSHELLS = "Picked up \ce4 shotgun shells\c-.";
+FO_GOTSHELLBOX = "Picked up a \cebox of shells\c-.";
+FO_GOTROCKET = "Picked up a \cerocket\c-.";
+FO_GOTROCKBOX = "Picked up a \cebox of rockets\c-.";
+FO_GOTCELL = "Picked up an \ceenergy cell\c-.";
+FO_GOTCELLBOX = "Picked up an \ceenergy cell pack\c-.";
+FO_GOTSAWGAS = "Picked up a can of Gasoline.";
+FO_GOTSOUL = "\clSoul\c-Collected";
+FO_GOTESSENSE = "\clDemonic Essence\c- collected";
+FO_GOTESSENSE2 = "\clLarge Demonic Essence\c- collected";
+FO_GOTBANDAGES = "Found Some \chbandages\c-.";
+FO_GOTSYRINGE = "Found a \clBERSERK syringe\c.";
+FO_SCAVENGE1 = "You scavenge 25 bandages from this Medikit.";
+FO_SCAVENGE2 = "You scavenge 25 bandages from this Medikit.";
+FO_SCAVENGE3 = "You scavenge a Berserk syringe from this Berserk Kit.";
 
 //////////////////////////////////////////////////////////////////
 //doors
@@ -433,58 +446,58 @@ FO_GOTSAWGAS = "Picked up some gasoline!.";
 
 //////////////////////////////////////////////////////////////////
 //weapon pickups
-BD64_GOTCHAINSAW = "A \cuChainsaw\c-! Find some meat! (Slot 1)"; //(Freedoom Override)
+BD64_GOTCHAINSAW = "A \cmChainsaw\c-! Find some meat! (Slot 1)"; //(Freedoom Override)
 //Slot 3
-BD64_GOTPISTOL = "You got the \cuPistol\c-! (Slot 2)";
-BD64_GOTSMG = "You got the \cuSMG\c-! (Slot 2)";
-BD64_GOTMP40 = "You got the \cuMP40\c-! (Slot 2)";
+BD64_GOTPISTOL = "You got the \cmPistol\c-! (Slot 2)";
+BD64_GOTSMG = "You got the \cmSMG\c-! (Slot 2)";
+BD64_GOTMP40 = "You got the \cmMP40\c-! (Slot 2)";
 //Slot 3
-BD64_GOTSHOTGUN = "You got the \cuShotgun\c-! (Slot 3)"; //(Freedoom Override)
-BD64_GOTSHOTGUN2 = "You got the \cuSuper Shotgun\c-! (Slot 3)"; //(Freedoom Override)
+BD64_GOTSHOTGUN = "You got the \cmShotgun\c-! (Slot 3)"; //(Freedoom Override)
+BD64_GOTSHOTGUN2 = "You got the \cmSuper Shotgun\c-! (Slot 3)"; //(Freedoom Override)
 //Slot 4
-BD64_GOTRIFLE = "You got an \cuAssault rifle\c-! (Slot 4)";
-BD64_GOTCHAINGUN = "You got the \cuChaingun\c-! (Slot 4)"; //(Freedoom Override)
+BD64_GOTRIFLE = "You got an \cmAssault rifle\c-! (Slot 4)";
+BD64_GOTCHAINGUN = "You got the \cmChaingun\c-! (Slot 4)"; //(Freedoom Override)
 //Slot 5
-BD64_GOTLAUNCHER = "You got the \cuRocket Launcher\c-! (Slot 5)"; //(Freedoom Override)
-BD64_GOTMINES = "You got a \cuMulti-Purpose Mine\c-! (Slot 5)";
+BD64_GOTLAUNCHER = "You got the \cmRocket Launcher\c-! (Slot 5)"; //(Freedoom Override)
+BD64_GOTMINES = "You got a \cmMulti-Purpose Mine\c-! (Slot 5)";
 //Slot 6
-BD64_GOTPLASMA = "You got the \cuPlasma Rifle\c-! (Slot 6)"; //(Freedoom Override)
-BD64_GOTGAUSS = "You got the \cuGauss Cannon\c-! (Slot 6)";
+BD64_GOTPLASMA = "You got the \cmPlasma Rifle\c-! (Slot 6)"; //(Freedoom Override)
+BD64_GOTGAUSS = "You got the \cmGauss Cannon\c-! (Slot 6)";
 //Slot 7 (Freedoom Override)
-BD64_GOTBFG9000 = "You got the \cuBFG9000\c-! Oh, yes. (Slot 7)";
+BD64_GOTBFG9000 = "You got the \cmBFG9000\c-! Oh, yes. (Slot 7)";
 //Slot 8
-BD64_GOTUNMAKER = "What the !@# is this! (Slot 8)";
+BD64_GOTUNMAKER = "\cgWhat the !@# is this!\c- (Slot 8)";
 //Slot 9
-BD64_GOTLASER = "You got the \cuLaser Rifle\c-! (Slot 9)";
+BD64_GOTLASER = "You got the \cmLaser Rifle\c-! (Slot 9)";
 
 //////////////////////////////////////////////////////////////////
 // weapon tags
-FO_TAG_DEFAULT = "Unnamed Weapon";
+FO_TAG_DEFAULT = "\cmUnnamed Weapon";
 //1
-FO_TAG_FIST = "Fists";
-FO_TAG_CHAINSAW = "Chainsaw";
+FO_TAG_FIST = "\cmFists";
+FO_TAG_CHAINSAW = "\cmChainsaw";
 //2
-FO_TAG_PISTOL = "Pistol";
-FO_TAG_SMG = "Sub-machinegun";
-FO_TAG_MP40 = "MP40";
+FO_TAG_PISTOL = "\cmPistol";
+FO_TAG_SMG = "\cmSub-machinegun";
+FO_TAG_MP40 = "\cmMP40";
 //3
-FO_TAG_SHOTGUN = "Shotgun";
-FO_TAG_SUPERSHOTGUN = "Super Shotgun";
+FO_TAG_SHOTGUN = "\cmShotgun";
+FO_TAG_SUPERSHOTGUN = "\cmSuper Shotgun";
 //4
-FO_TAG_RIFLE = "Rifle";
-FO_TAG_CHAINGUN = "Chaingun";
+FO_TAG_RIFLE = "\cmRifle";
+FO_TAG_CHAINGUN = "\cmChaingun";
 //5
-FO_TAG_ROCKETLAUNCHER = "Rocket Launcher";
-FO_TAG_MINES = "Multi-Purpose Mines";
+FO_TAG_ROCKETLAUNCHER = "\cmRocket Launcher";
+FO_TAG_MINES = "\cmMulti-Purpose Mines";
 //6
-FO_TAG_PLASMARIFLE = "Plasma Rifle";
-FO_TAG_GAUSS = "Gauss Cannon";
+FO_TAG_PLASMARIFLE = "\cmPlasma Rifle";
+FO_TAG_GAUSS = "\cmGauss Cannon";
 //7
-FO_TAG_BFG9000 = "BFG9000";
+FO_TAG_BFG9000 = "\cmBFG9000";
 //8
-FO_TAG_UNMAKER = "Unmaker";
+FO_TAG_UNMAKER = "\cmUnmaker";
 //9
-FO_TAG_LASER = "Laser Rifle";
+FO_TAG_LASER = "\cmLaser Rifle";
 
 //////////////////////////////////////////////////////////////////
 // ammo tags
@@ -493,15 +506,20 @@ FO_TAG_BACKPACK1 = "\ceBackpack";
 FO_TAG_BACKPACK2 = "\ceBackpack\c- with Pistol Silencer";
 FO_TAG_BACKPACK3 = "\ceBackpack\c- with Flashlight";
 FO_TAG_BACKPACK4 = "\ceBackpack\c- with Flashlight and Pistol Silencer";
-FO_TAG_CLIP = "Bullet Magazine";
-FO_TAG_CLIPBOX = "Bullet Box";
-FO_TAG_CLIPBOX2 = "High Caliber Bullet Box";
-FO_TAG_SHELL = "Shotgun Shells";
-FO_TAG_SHELLBOX = "Shotgun Shell Box";
-FO_TAG_ROCKET = "Rocket Shell";
-FO_TAG_ROCKBOX ="Rocket Shell Crate";
-FO_TAG_CELL = "Energy Cell";
-FO_TAG_CELLBOX = "Energy Cell Pack";
+FO_TAG_CLIP = "\ceBullet Magazine";
+FO_TAG_CLIPBOX = "\ceBullet Box";
+FO_TAG_CLIPBOX2 = "\ceHigh Caliber Bullet Box";
+FO_TAG_SHELL = "\ceShotgun Shells";
+FO_TAG_SHELLBOX = "\ceShotgun Shell Box";
+FO_TAG_ROCKET = "\ceRocket Shell";
+FO_TAG_ROCKBOX ="\ceRocket Shell Crate";
+FO_TAG_CELL = "\ceEnergy Cell";
+FO_TAG_CELLBOX = "\ceEnergy Cell Pack";
+FO_TAG_SOUL = "\clÂme";
+FO_TAG_ESSENSE = "\clDemonic Essence";
+FO_TAG_ESSENSE2 = "\clLarge Demonic Essence";
+FO_TAG_BANDAGES = "\chBandages";
+FO_TAG_SYRINGE = "\cgBerserk Syringe";
 
 FO_TAG_SAWGAS = "Gasoline Can";
 
@@ -515,7 +533,7 @@ FO_TAG_MEDIKIT = "\crMedikit";
 
 FO_TAG_ARMBONUS = "\cdArmor Bonus";
 FO_TAG_ARMOR = "\cdGreen Armor";
-FO_TAG_MEGA= "\chBlue Armor";
+FO_TAG_MEGA = "\chBlue Armor";
 
 //////////////////////////////////////////////////////////////////
 // powerup tags
@@ -526,7 +544,7 @@ FO_TAG_MSPHERE = "\csMega Sphere";
 FO_TAG_INVIS = "\caPartial Invisibility Sphere";
 FO_TAG_SUIT = "\cdRadiation Sheild";
 FO_TAG_VISOR = "\cnNight Vision Goggles";
-FO_TAG_MAP = "\cmComputer Area Map";
+FO_TAG_MAP = "\cbComputer Area Map";
 FO_TAG_BERSERK = "\clBerserk Pack";
 
 //////////////////////////////////////////////////////////////////
@@ -550,24 +568,24 @@ FO_TAG_GOTREDSKUL = "\crRed Skullkey\c-";
 
 //////////////////////////////////////////////////////////////////
 //Obituaries for weapons
-FO_OB_MPFIST = "%o chewed on \cg%k\c-'s \cufist\c-.";
-FO_OB_MPCHAINSAW = "%o was mowed over by \cg%k\c-'s \cuchainsaw\c-.";
-FO_OB_MPPISTOL = "%o was tickled by \cg%k\c-'s \cupeashooter\c-.";
+FO_OB_MPFIST = "%o chewed on \cg%k\c-'s \cmfist\c-.";
+FO_OB_MPCHAINSAW = "%o was mowed over by \cg%k\c-'s \cmchainsaw\c-.";
+FO_OB_MPPISTOL = "%o was tickled by \cg%k\c-'s \cmpeashooter\c-.";
 FO_OB_MP40 = "%o was gunned down by \cg%k\c-.";
-FO_OB_MPSHOTGUN = "%o chewed on \cg%k\c-'s \cuboomstick\c-.";
-FO_OB_MPSSHOTGUN = "%o was splattered by \cg%k\c-'s \cusuper shotgun\c-.";
-FO_OB_MPCHAINGUN = "%o was mowed down by \cg%k\c-'s \cuchaingun\c-.";
-FO_OB_MPROCKET = "%o rode \cg%k\c-'s \curocket\c-.";
-FO_OB_MINES = "%o was shreded by \cg%k\c-'s \cuMine\c-.";
-//	OB_MPR_SPLASH = "%o almost dodged \cg%k\c-'s r\cuocket\c-.";
-FO_OB_MPPLASMARIFLE = "%o was melted by \cg%k\c-'s \cuplasma gun\c-.";
-FO_OB_GAUSS = "%o was pierced by \cg%k\c-'s \cuGauss Cannon\c-.";
-FO_OB_MPBFG_BOOM = "%o was splintered by \cg%k\c-'s \cuBFG\c-.";
-FO_OB_LASER = "%o was blasted to nothingness by \cg%k\c-'s \cuLaser gun\c-.";
-//	OB_MPBFG_SPLASH = "%o couldn't hide from \cg%k\c-'s \cuBFG\c-.";
-//	OB_MPTELEFRAG = "%o was \cutelefragged\c- by \cg%k\c-.";
+FO_OB_MPSHOTGUN = "%o chewed on \cg%k\c-'s \cmboomstick\c-.";
+FO_OB_MPSSHOTGUN = "%o was splattered by \cg%k\c-'s \cmsuper shotgun\c-.";
+FO_OB_MPCHAINGUN = "%o was mowed down by \cg%k\c-'s \cmchaingun\c-.";
+FO_OB_MPROCKET = "%o rode \cg%k\c-'s \cmrocket\c-.";
+FO_OB_MINES = "%o was shreded by \cg%k\c-'s \cmMine\c-.";
+//	OB_MPR_SPLASH = "%o almost dodged \cg%k\c-'s r\cmocket\c-.";
+FO_OB_MPPLASMARIFLE = "%o was melted by \cg%k\c-'s \cmplasma gun\c-.";
+FO_OB_GAUSS = "%o was pierced by \cg%k\c-'s \cmGauss Cannon\c-.";
+FO_OB_MPBFG_BOOM = "%o was splintered by \cg%k\c-'s \cmBFG\c-.";
+FO_OB_LASER = "%o was blasted to nothingness by \cg%k\c-'s \cmLaser gun\c-.";
+//	OB_MPBFG_SPLASH = "%o couldn't hide from \cg%k\c-'s \cmBFG\c-.";
+//	OB_MPTELEFRAG = "%o was \cmtelefragged\c- by \cg%k\c-.";
 //	OB_RAILGUN = "%o was railed by \cg%k\c-.";
-//	OB_MPBFG_MBF = "%o was burned by \cg%k\c-'s \cuBFG\c-.";
+//	OB_MPBFG_MBF = "%o was burned by \cg%k\c-'s \cmBFG\c-.";
 
 //////////////////////////////////////////////////////////////////
 //Tags for demons

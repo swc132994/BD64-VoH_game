@@ -518,6 +518,7 @@ FO_TAG_ESSENSE = "\clEssence démoniaque";
 FO_TAG_ESSENSE2 = "\clLarge essense démoniaque";
 FO_TAG_BANDAGES = "\chBandages";
 FO_TAG_SYRINGE = "\cgSeringue BERSERK";
+FO_TAG_SAWGAS = "Bidon d'essence";
 
 //////////////////////////////////////////////////////////////////
 // health and armor tags

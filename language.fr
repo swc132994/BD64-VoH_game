@@ -147,7 +147,7 @@ FO_64OPTIONS_MAIN_TXT2 = "Appuyez sur \"Apply Changes\" pour que les modificatio
 FO_64OPTIONS_PRESET = "-------------------------------- Préréglages -------------------------------------";
 
 FO_64MNU_BEFORE = "Vous devez être à l'intérieur d'un niveau avant de séléctioner un changement";
-FO_64MNU_APPLY = "Vous devez également quitter le menu à chaque fois que vous appliquez un préréglage",
+FO_64MNU_APPLY = "Vous devez également quitter le menu à chaque fois que vous appliquez un préréglage";
 FO_64MNU_COMFIRM = "L'option ci-dessus est purement une confirmation de l'application réussie du préréglage";
 FO_64MNU_NOTHING = "Aucun effet";
 

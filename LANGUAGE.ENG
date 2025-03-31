@@ -15,11 +15,13 @@ FO_64OPTIONS_MAIN_TXT1 = "Some changes are not initialised automatically";	//en-
 
 FO_64MNU_BONUS_TXT = "(hell potions are combined armour/health pickups)";	//en-gb
 
+FO_OP_FLASH = "\ckToggle Torch";
 //////////////////////////////////////////////////////////////////
 //Health / armor
 FO_GOTARMBONUS = "You pick up an \cgarmour bonus\c-.";	//en-gb
 FO_GOTARMOR = "You pick up the \cgarmour\c-.";			//en-gb
 FO_GOTMEGA = "You got the Mega \cgArmour\c-!";			//en-gb
+
 
 //////////////////////////////////////////////////////////////////
 //ammo

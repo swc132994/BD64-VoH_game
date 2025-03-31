@@ -7,7 +7,7 @@ Radius 20
 Height 56
 Mass 500
 Speed 10
-Tag "Pestilence"
+Tag "$FO_TAG_PEST"
 MeleeThreshold 196
 PoisonDamage 128 //Poison Damage Duration from Melee About 4-5 Seconds
 PainChance 80
@@ -24,8 +24,8 @@ PainSound "Pestilence/pain"
 DeathSound "Pestilence/death"
 ActiveSound "Pestilence/active"
 MeleeSound "Pestilence/melee"
-HitObituary "%o died by the Pestilence's poison fists"
-Obituary "%o fell to the Pestilence's chemical warfare"
+HitObituary "$FO_OB_PESTHIT"
+Obituary "$FO_OB_PEST"
 DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodGreen"
 +NOBLOODDECALS

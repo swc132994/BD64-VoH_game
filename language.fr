@@ -41,7 +41,7 @@ RANDOM_NO_BELPHEGOR = "Random (Pas de Belphégor)";
 RANDOM_NO_ACID = "Aléatoire (Pas d'Acide)";
 RANDOM_NO_BUTCHER = "Aléatoire (pas de boucher)";
 
-RANDOM_NO_CACO_NIGHTMARE = "Aléatoire (pas de variantes cauchemardesques)" ;
+RANDOM_NO_CACO_NIGHTMARE = "Aléatoire (pas de variantes cauchemardesques)";
 RANDOM_NO_FALLEN = "Aléatoire (pas d'Anges déchu)";
 
 RANDOM_NO_SPECTRE_NIGHTMARE = "Aléatoire (pas de variantes cauchemardesques)";
@@ -270,12 +270,12 @@ FO_MONSTER_SKIN = "------------------------------- Skins de monstres -----------
 
 FO_MONSTER_HELLHOUND = "Style du Chien de l'Enfer =";
 FO_MONSTER_HELLHOUND_TXT1 = "Si vous avez sélectionné \"Random (No Baron)\"";
-FO_MONSTER_HELLHOUND_TXT2 = "et désactivé la sélection de skin Chien de l'Enfer"
+FO_MONSTER_HELLHOUND_TXT2 = "et désactivé la sélection de skin Chien de l'Enfer";
 FO_MONSTER_HELLHOUND_TXT3 = "vous obtiendrez \"Random (No HellHound)\"";
 
 FO_MONSTER_CACO = "Style du Cacodémon =";
 
-FO_OPTION_MAP = "------------------------------- Sélection du pack de niveaux -------------------------------"
+FO_OPTION_MAP = "------------------------------- Sélection du pack de niveaux -------------------------------";
 
 FO_MAP_SELECT = "Sélectionnez pack de niveaux =";
 FO_MAP_SELECT_TXT1 = "Cette option n'est pas automatique et doit être configurée manuellement";
@@ -284,7 +284,7 @@ FO_MAP_SELECT_TXT3 = "Vous pouvez utiliser Doom 2 sur des wads non compatibles";
 
 FO_MAP_PROP = "----------------------------- Remplacement des décorations des niveaux -----------------------------";
 
-FO_PROP_INFECTED = "Cadavre de Marine infecté =";
+FO_PROP_INFECTED = "Cadavres de Marine infecté =";
 FO_PROP_INFECTED_TXT = "Remplacez les marines morts et les décorations de marine morts par les monstres "La chose".";
 FO_PROP_GHOST = "Mode esprit frappeur =";
 FO_PROP_GHOST_TXT1 = "Remplacez les objets décoratifs des esprits frappeurs hostiles.";
@@ -316,7 +316,7 @@ FO_OPTION_HUD_SPLASH = "Les monstres qui saignent de près créeront des éclabo
 FO_OPTION_HUD_SPLASH_TXT1 = "(Si les effets d'écran sont désactivés, cette option sera également désactivée)";
 FO_OPTION_HUD_SPLASH_TXT2 = "(Ne fonctionne pas pour le mode effets d'écran BDv21)";
 
-FO_OPTION_SOUND = "---------------------------------- Sounds ----------------------------------";
+FO_OPTION_SOUND = "---------------------------------- Sons ----------------------------------";
  
 FO_OPTION_SOUND_FOOTS = "Activer les bruits de pas =";
 

@@ -59,7 +59,7 @@ RANDOM_NO_HELLSTORM = "Aléatoire (pas de Tempête infernale)";
 FO_HUSK_1 = "1 Zombie momifié";
 FO_HUSK_2 = "2 Zombies momifiés";
 FO_HUSK2_CARRION1 = "2 Zombie momifié & 1 Charogne.";
-FO_HUSK3_CARRION2 = "3 Zombie momifié & 1 Charogne".
+FO_HUSK3_CARRION2 = "3 Zombie momifié & 1 Charogne";
 
 FO_CHAINGUN = "\cuMitrailleuse";
 FO_RIFLE = "\cuFusil d'assault";

@@ -4,6 +4,7 @@ Actor GaussCannonSpawner : CustomInventory	19134	//spawned from randomspawners
 Scale 0.9
 Tag "Gauss Cannon"
 Inventory.PickupMessage "$BD64_GOTGAUSS"
+Obituary "$FO_OB_GAUSS"
 Inventory.PickupSound "WPICK"
 	States
 	{
@@ -46,9 +47,9 @@ Weapon.Selectionorder 2000
 Weapon.AmmoType "Cell"
 Weapon.AmmoUse 10
 Weapon.AmmoGive 40
-Inventory.Pickupmessage "$GOTGAUSS"
-Obituary "%o was pierced by %k's Gauss Cannon"
-Tag "Gauss Cannon"
+Inventory.Pickupmessage "$BD64_GOTGAUSS"
+Obituary "$FO_OB_GAUSS"
+Tag "$FO_TAG_GAUSS"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 Decal "BigScorch"
@@ -116,9 +117,9 @@ Weapon.AmmoGive1 40
 Weapon.AmmoType2 "GaussAmmo"
 Weapon.AmmoUse2 1
 Weapon.AmmoGive2 0
-Inventory.Pickupmessage "$GOTGAUSS"
-Obituary "%o was pierced by %k's Gauss Cannon"
-Tag "Gauss Cannon"
+Inventory.Pickupmessage "$BD64_GOTGAUSS"
+Obituary "$FO_OB_GAUSS"
+Tag "$FO_TAG_GAUSS"
 VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 Inventory.ForbiddenTo "64DoomPlayer"
 Decal "BigScorch"

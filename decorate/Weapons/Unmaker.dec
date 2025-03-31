@@ -3,7 +3,7 @@ Actor UnmakerSpawner : CustomInventory 9901
 //$category "Game/BD64_Weapons"
 SpawnID 84
 Scale 0.9
-Tag "Unmaker"
+Tag "$FO_TAG_UNMAKER"
 Inventory.PickupMessage "$BD64_GOTUNMAKER"
 Inventory.PickupSound "WPICK"
 	States
@@ -43,8 +43,8 @@ Weapon.AmmoType "Cell"
 Weapon.AmmoUse 1
 Weapon.AmmoGive 20
 AttackSound "weapons/unmaker"
-Inventory.PickupMessage "$GOTUNMAKER"
-Tag "Unmaker"
+Inventory.PickupMessage "$BD64_GOTUNMAKER"
+Tag "$FO_TAG_UNMAKER"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 +WEAPON.BFG
@@ -254,14 +254,14 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 Actor SoulAmmo : Ammo	//from humans/zombies
 {
 SCALE 0.8
-Inventory.PickupMessage "Soul Collected"
+Inventory.PickupMessage "$FO_GOTSOUL"
 Inventory.Amount 1
 Inventory.MaxAmount 30
 Ammo.BackpackAmount 0
 Ammo.BackpackMaxAmount 30
 Inventory.PickupSound "HUMAMMO"
 Inventory.Icon "SAMMZ0"
-Tag "Soul"
+Tag "$FO_TAG_SOUL"
 RenderStyle Translucent
 Alpha 0.3
 +ALWAYSPICKUP
@@ -283,14 +283,14 @@ Actor DemonEssence : Ammo	//from demons
 {
 Translation "0:255=%[0,0,0]:[1,0.25,0.1]"//Orange-Red
 Scale 0.8
-Inventory.PickupMessage "Demonic Essence Collected"
+Inventory.PickupMessage "$FO_GOTESSENSE"
 Inventory.Amount 1
 Inventory.MaxAmount 25
 Ammo.BackpackAmount 0
 Ammo.BackpackMaxAmount 25
 Inventory.PickupSound "DemonSoulUp"
 Inventory.Icon "DESSZ0"
-Tag "Demonic Essence"
+Tag "$FO_TAG_ESSENSE"
 RenderStyle  Translucent
 Alpha 0.3
 +ALWAYSPICKUP
@@ -311,9 +311,9 @@ ReactionTime 90
 Actor DemonEssenceLarge : DemonEssence		//from boss demons
 {
 Scale 1.2
-Inventory.PickupMessage "Large Demonic Essence Collected"
+Inventory.PickupMessage "$FO_GOTESSENSE2"
 Inventory.Amount 10
-Tag "Demonic Essence Large"
+Tag "$FO_TAG_ESSENSE2"
 }
 
 Actor SoulSpawner
@@ -440,9 +440,9 @@ Weapon.AmmoGive1 15
 Weapon.AmmoType2 "DemonEssence"
 Weapon.AmmoUse2 1
 Weapon.AmmoGive2 0
-Inventory.PickupMessage "$GOTUNMAKER"
+Inventory.PickupMessage "$BD64_GOTUNMAKER"
 AttackSound "weapons/unmaker"
-Tag "Unmaker"
+Tag "$FO_TAG_UNMAKER"
 +INVENTORY.RESTRICTABSOLUTELY
 +WEAPON.NOALERT
 +WEAPON.NOAUTOFIRE

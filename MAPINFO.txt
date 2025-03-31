@@ -106,37 +106,37 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64ZombiemanCast"
-		CastName = "Pistol Zombie"
+		CastName = "$FO_TAG_PISTOLMAN"
 		AttackSound = "Missile",1,"grunt/attack"
 	}
 	Cast
 	{
 		CastClass = "D64HuskZombieCast"
-		CastName = "Husk Zombie"
+		CastName = "$FO_TAG_HUSK"
 		AttackSound = "Melee",1,"imp/melee"
 		AttackSound = "Missile",1,"imp/melee"
 	}
 	Cast
 	{
 		CastClass = "64CarrionCast"
-		CastName = "Carrion Zombie"
+		CastName = "$FO_TAG_CARRION"
 	}
 	Cast
 	{
 		CastClass = "D64ShotgunGuyCast"
-		CastName = "Shotgun Zombie"
+		CastName = "$FO_TAG_SHOTGUNGUY"
 		AttackSound = "Missile",1,"shotguy/attack"
 	}
 	Cast
 	{
 		CastClass = "D64SSGGuyCast"
-		CastName = "SSG Zombie"
+		CastName = "$FO_TAG_SSGGUY"
 		AttackSound = "Missile",1,"SSGFIRE"
 	}
 	Cast
 	{
 		CastClass = "D64ChaingunGuyCast"
-		CastName = "Chaingun Zombie"
+		CastName = "$FO_TAG_COMMANDO"
 		AttackSound = "Missile",1,"MGUNFIR"
 		AttackSound = "Missile",2,"MGUNFIR"
 		AttackSound = "Missile",3,"MGUNFIR"
@@ -152,7 +152,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64PlasmaGuyCast"
-		CastName = "Plasma Zombie"
+		CastName = "$FO_TAG_PLASMAGUY"
 		AttackSound = "Missile",1,"baby/attack"
 		AttackSound = "Missile",2,"baby/attack"
 		AttackSound = "Missile",3,"baby/attack"
@@ -163,110 +163,110 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64BFGGuyCast"
-		CastName = "BFG Zombie"
+		CastName = "$FO_TAG_BFGGUY"
 		AttackSound = "Missile",1,"weapons/bfgf"
 		AttackSound = "Melee",1,"weapons/bfgf"
 	}
 	Cast
 	{
 		CastClass = "D64ThingCast"
-		CastName = "The Thing"
+		CastName = "$FO_TAG_THING"
 		AttackSound = "Melee",1,"64Thing/attack"
 	}
 	Cast
 	{
 		CastClass = "D64DoomImpCast"
-		CastName = "Imp"
+		CastName = "$FO_TAG_IMP"
 		AttackSound = "Missile",2,"imp/attack"
 		AttackSound = "Melee",2,"imp/melee"
 	}
 	Cast
 	{
 		CastClass = "D64NightmareImpCast"
-		CastName = "Nightmare Imp"
+		CastName = "$FO_TAG_IMP_NIGHTMARE"
 		AttackSound = "Missile",2,"imp/attack"
 		AttackSound = "Melee",2,"imp/melee"
 	}
 	Cast
 	{
 		CastClass = "D64HarvesterCast"
-		CastName = "Soul Harvester"
+		CastName = "$FO_TAG_HARVESTER"
 		AttackSound = "Missile",2,"harvester/scream"
 		AttackSound = "Melee",2,"imp/melee"
 	}
 	Cast
 	{
 		CastClass = "D64DemonCast"
-		CastName = "Demon"
+		CastName = "$FO_TAG_PINKY"
 		AttackSound = "Melee",1,"demon/melee"
 	}
 	Cast
 	{
 		CastClass = "D64AcidDemonCast"
-		CastName = "Acid Demon"
+		CastName = "$FO_TAG_ACID"
 		AttackSound = "Missile",2,"SlimeBall/Shoot"
 		AttackSound = "Melee",1,"demon/melee"
 	}
 	Cast
 	{
 		CastClass = "64ButcherCast"
-		CastName = "Butcher"
+		CastName = "$FO_TAG_BUTCHER"
 		AttackSound = "Missile",1,"chainsaw/loop"
 	}
 	Cast
 	{
 		CastClass = "D64SpectreCast"
-		CastName = "Spectre"
+		CastName = "$FO_TAG_SPECTRE"
 		AttackSound = "Melee",1,"demon/melee"
 	}
 	Cast
 	{
 		CastClass = "D64NightmareSpectreCast"
-		CastName = "Nightmare Spectre"
+		CastName = "$FO_TAG_SPECTRE_NIGHTMARE"
 		AttackSound = "Melee",1,"demon/melee"
 	}
 	Cast
 	{
 		CastClass = "64WraithCast"
-		CastName = "Wraith"
+		CastName = "$FO_TAG_WRAITH"
 		AttackSound = "Melee",1,"D3Wraith/Attack"
 	}
 	Cast
 	{
 		CastClass = "D64LostSoulCast"
-		CastName = "Lost Soul"
+		CastName = "$FO_TAG_SOUL"
 		AttackSound = "Missile",1,"skull/melee"
 	}
 	Cast
 	{
 		CastClass = "D64StalkerCast"
-		CastName = "Stalker"
+		CastName = "$FO_TAG_STALKER"
 		AttackSound = "Missile",1,"skeleton/attack"
 	}
 	Cast
 	{
 		CastClass = "D64ForgottenOneCast"
-		CastName = "Forgotten One"
+		CastName = "$FO_TAG_FORGOTTEN"
 		AttackSound = "Missile",1,"alphasoul/melee"
 	}
 	Cast
 	{
 		CastClass = "D64TriteCast"
-		CastName = "Trite"
+		CastName = "$FO_TAG_TRITE"
 		AttackSound = "Melee",1,"Trite/Attack"
 		AttackSound = "Missile",1,"Trite/Attack"
 	}
 	Cast
 	{
 		CastClass = "D64CacodemonCast"
-		CastName = "Cacodemon"
+		CastName = "$FO_TAG_CACO"
 		AttackSound = "Missile",1,"caco/attack"
 		AttackSound = "Melee",1,"weapons/gswing"
 	}
 	Cast
 	{
 		CastClass = "D64NightmareCacodemonCast"
-		CastName = "Nightmare Cacodemon"
+		CastName = "$FO_TAG_CACO_NIGHTMARE"
 		AttackSound = "Missile",1,"caco/attack"
 		AttackSound = "Missile",3,"caco/attack"
 		AttackSound = "Missile",5,"caco/attack"
@@ -275,7 +275,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "64FallenCast"
-		CastName = "Fallen"
+		CastName = "$FO_TAG_FALLEN"
 		AttackSound = "Missile",1,"caco/attack"
 		AttackSound = "Missile",3,"caco/attack"
 		AttackSound = "Missile",5,"caco/attack"
@@ -283,28 +283,28 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64HellKnightCast"
-		CastName = "Hellknight"
+		CastName = "$FO_TAG_KNIGHT"
 		AttackSound = "Missile",1,"baron/attack"
 		AttackSound = "Melee",1,"imp/melee"
 	}
 	Cast
 	{
 		CastClass = "D64KnightmareCast"
-		CastName = "Knightmare"
+		CastName = "$FO_TAG_KNIGHTMARE"
 		AttackSound = "Missile",1,"baron/attack"
 		AttackSound = "Melee",1,"imp/melee"
 	}
 	Cast
 	{
 		CastClass = "D64BaronOfHellCast"
-		CastName = "Baron Of Hell"
+		CastName = "$FO_TAG_BARON"
 		AttackSound = "Missile",1,"baron/attack"
 		AttackSound = "Melee",1,"imp/melee"
 	}
 	Cast
 	{
 		CastClass = "D64ArachnotronCast"
-		CastName = "Arachnotron"
+		CastName = "$FO_TAG_SPIDER"
 		AttackSound = "Missile",1,"baby/attack"
 		AttackSound = "Missile",2,"baby/attack"
 		AttackSound = "Missile",3,"baby/attack"
@@ -314,13 +314,13 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64NightCrawlerCast"
-		CastName = "Nightcrawler"
+		CastName = "$FO_OB_NIGHTCRAWLER"
 		AttackSound = "Missile",1,"weapons/rocklf"
 	}
 	Cast
 	{
 		CastClass = "D64ImpalerCast"
-		CastName = "Impaler"
+		CastName = "$FO_TAG_IMPALER"
 		AttackSound = "Missile",1,"Impaler/Attack"
 		AttackSound = "Missile",2,"Impaler/Attack"
 		AttackSound = "Missile",3,"Impaler/Attack"
@@ -330,19 +330,19 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64PainElementalCast"
-		CastName = "Pain Elemental"
+		CastName = "$FO_TAG_ELEMENTAL"
 		AttackSound = "Missile",2,"skull/melee"
 	}
 	Cast
 	{
 		CastClass = "64AgonyElementalCast"
-		CastName = "Agony Elemental"
+		CastName = "$FO_TAG_ELEMENTAL_NIGHTMARE"
 		AttackSound = "Missile",2,"skull/melee"
 	}
 	Cast
 	{
 		CastClass = "D64RevenantCast"
-		CastName = "Revenant"
+		CastName = "$FO_TAG_REVENANT"
 		AttackSound = "Missile",1,"skeleton/attack"
 		AttackSound = "Melee",1,"skeleton/swing"
 		AttackSound = "Melee",3,"skeleton/melee"
@@ -350,7 +350,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64PestilenceCast"
-		CastName = "Pestilence"
+		CastName = "$FO_TAG_PEST"
 		AttackSound = "Missile",1,"Pestilence/attack"
 		AttackSound = "Melee",1,"Pestilence/Swing"
 		AttackSound = "Melee",3,"Pestilence/melee"
@@ -358,7 +358,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64FatsoCast"
-		CastName = "Mancubus"
+		CastName = "$FO_TAG_FATSO"
 		AttackSound = "Missile",1,"fatso/attack"
 		AttackSound = "Missile",3,"fatso/attack"
 		AttackSound = "Missile",5,"fatso/attack"
@@ -366,47 +366,47 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64HellHoundCast"
-		CastName = "HellHound"
+		CastName = "$FO_TAG_HOUND"
 		AttackSound = "Missile",1,"caco/attack"
 		AttackSound = "Melee",1,"Dog/melee"
 	}
 	Cast
 	{
 		CastClass = "D64BruiserCast"
-		CastName = "Bruiser"
+		CastName = "$FO_TAG_BRUISER"
 		AttackSound = "Missile",1,"64Bruiser/raiseguns"
 		AttackSound = "Melee",1,"BREATHOF"
 	}
 	Cast
 	{
 		CastClass = "D64BelphegorCast"
-		CastName = "Belphegor"
+		CastName = "$FO_TAG_BELPHEGOR"
 		AttackSound = "Missile",1,"baron/attack"
 		AttackSound = "Melee",1,"imp/melee"
 	}
 	Cast
 	{
 		CastClass = "D64ArchvileCast"
-		CastName = "Archvile"
+		CastName = "$FO_TAG_VILE"
 		AttackSound = "Missile",1,"vile/firecrkl"
 	}
 	Cast
 	{
 		CastClass = "D64FleshWizardCast"
-		CastName = "Flesh Wizard"
+		CastName = "$FO_TAG_FLESH"
 		AttackSound = "Missile",1,"vile/firecrkl"
 	}
 	Cast
 	{
 		CastClass = "D64HellstormCast"
-		CastName = "Hellstorm"
+		CastName = "$FO_TAG_HELLSTORM"
 		AttackSound = "Missile",1,"vile/firecrkl"
 		AttackSound = "Melee",2,"tornado/form"
 	}
 	Cast
 	{
 		CastClass = "D64CyberdemonCast"
-		CastName = "The Cyberdemon"
+		CastName = "$FO_TAG_CYBERDEMON"
 		AttackSound = "Missile",1,"weapons/rocklf"
 		AttackSound = "Missile",3,"weapons/rocklf"
 		AttackSound = "Missile",5,"weapons/rocklf"
@@ -414,7 +414,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64AnnihilatorCast"
-		CastName = "The Annihilator"
+		CastName = "$FO_TAG_ANNIHILATOR"
 		AttackSound = "Missile",1,"weapons/rocklf"
 		AttackSound = "Missile",3,"weapons/rocklf"
 		AttackSound = "Missile",5,"weapons/rocklf"
@@ -422,14 +422,14 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "64InfernalCast"
-		CastName = "Infernal Resurrector"
+		CastName = "$FO_TAG_RESURRECTOR"
 		AttackSound = "Missile",1,"SisDemon/see"
 		AttackSound = "Melee",1,"SisDemon/active"
 	}
 	Cast
 	{
 		CastClass = "D64SpiderMastermindCast"
-		CastName = "The Spider Mastermind"
+		CastName = "$FO_TAG_MASTERMIND"
 		AttackSound = "Missile",1,"CHGNSHOT"
 		AttackSound = "Missile",2,"CHGNSHOT"
 		AttackSound = "Melee",2,"weapons/gswing"
@@ -437,7 +437,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64EradicatorCast"
-		CastName = "The Eradicator"
+		CastName = "$FO_TAG_ERADICATOR"
 		AttackSound = "Missile",1,"UNMAKER"
 		AttackSound = "Missile",2,"UNMAKER"
 		AttackSound = "Melee",2,"weapons/gswing"
@@ -445,7 +445,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64ResurrectorCast"
-		CastName = "The Mother Demon"
+		CastName = "$FO_TAG_MOTHER"
 		AttackSound = "Missile",1,"mother/attack"
 		AttackSound = "Missile",3,"mother/attack"
 		AttackSound = "Missile",5,"mother/attack"

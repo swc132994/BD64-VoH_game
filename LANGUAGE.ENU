@@ -84,11 +84,7 @@ HUD_ARMOR = "Armor";
 
 HUD_HEALTH = "Health";
 
-HUD_SILENCER = "You need a pistol silencer! This can be found in backpacks.";
 
-HUD_CHAINSAW_SSG = "Super Shotgun Needs Reloading.";
-
-HUD_NOTENOUGH = "Not Enough Ammo!";
 
 //////////////////////////////////////////////////////////////////
 //Tags for gamemodes 
@@ -398,20 +394,20 @@ FO_GOTDEMON_RED = "\cgWhat is this used for?";
 
 //////////////////////////////////////////////////////////////////
 //ammo
-FO_GOTBACKPACK = "You got the \cebackpack\c-!";
-FO_GOTBACKPACK2 = "Picked up a \cebackpack\c- full of ammo with pistol silencer!";
-FO_GOTBACKPACK3 = "Picked up a \cebackpack\c- full of ammo with flashlight!";
+FO_GOTBACKPACK = "You got the \cpbackpack\c-!";
+FO_GOTBACKPACK2 = "Picked up a \cpbackpack\c- full of ammo with pistol silencer!";
+FO_GOTBACKPACK3 = "Picked up a \cpbackpack\c- full of ammo with flashlight!";
 FO_GOTBACKPACK4 =  "Picked up a \cebackpack\c- full of ammo with pistol silencer and flashlight!";
-FO_GOTCLIP = "Picked up a \ceclip\c-.";
-FO_GOTCLIPBOX = "Picked up a box of \cebullets\c-.";
-FO_GOTCLIPBOX2 = "Picked up a \cehigh caliber bullet box\c-.";
-FO_GOTSHELLS = "Picked up \ce4 shotgun shells\c-.";
-FO_GOTSHELLBOX = "Picked up a \cebox of shells\c-.";
-FO_GOTROCKET = "Picked up a \cerocket\c-.";
-FO_GOTROCKBOX = "Picked up a \cebox of rockets\c-.";
-FO_GOTCELL = "Picked up an \ceenergy cell\c-.";
+FO_GOTCLIP = "Picked up a \cpclip\c-.";
+FO_GOTCLIPBOX = "Picked up a box of \cpbullets\c-.";
+FO_GOTCLIPBOX2 = "Picked up a \cphigh caliber bullet box\c-.";
+FO_GOTSHELLS = "Picked up \cp4 shotgun shells\c-.";
+FO_GOTSHELLBOX = "Picked up a \cpbox of shells\c-.";
+FO_GOTROCKET = "Picked up a \cprocket\c-.";
+FO_GOTROCKBOX = "Picked up a \cpbox of rockets\c-.";
+FO_GOTCELL = "Picked up an \cpenergy cell\c-.";
 FO_GOTCELLBOX = "Picked up an \ceenergy cell pack\c-.";
-FO_GOTSAWGAS = "Picked up a can of Gasoline.";
+FO_GOTSAWGAS = "Picked up a can of \ceGasoline\c-.";
 FO_GOTSOUL = "\clSoul\c-Collected";
 FO_GOTESSENSE = "\clDemonic Essence\c- collected";
 FO_GOTESSENSE2 = "\clLarge Demonic Essence\c- collected";
@@ -505,26 +501,26 @@ FO_TAG_LASER = "\cmLaser Rifle";
 //////////////////////////////////////////////////////////////////
 // ammo tags
 
-FO_TAG_BACKPACK1 = "\ceBackpack";
-FO_TAG_BACKPACK2 = "\ceBackpack\c- with Pistol Silencer";
-FO_TAG_BACKPACK3 = "\ceBackpack\c- with Flashlight";
-FO_TAG_BACKPACK4 = "\ceBackpack\c- with Flashlight and Pistol Silencer";
-FO_TAG_CLIP = "\ceBullet Magazine";
-FO_TAG_CLIPBOX = "\ceBullet Box";
-FO_TAG_CLIPBOX2 = "\ceHigh Caliber Bullet Box";
-FO_TAG_SHELL = "\ceShotgun Shells";
-FO_TAG_SHELLBOX = "\ceShotgun Shell Box";
-FO_TAG_ROCKET = "\ceRocket Shell";
-FO_TAG_ROCKBOX ="\ceRocket Shell Crate";
-FO_TAG_CELL = "\ceEnergy Cell";
-FO_TAG_CELLBOX = "\ceEnergy Cell Pack";
+FO_TAG_BACKPACK1 = "\cpBackpack";
+FO_TAG_BACKPACK2 = "\cpBackpack\c- with Pistol Silencer";
+FO_TAG_BACKPACK3 = "\cpBackpack\c- with Flashlight";
+FO_TAG_BACKPACK4 = "\cpBackpack\c- with Flashlight and Pistol Silencer";
+FO_TAG_CLIP = "\cpBullet Magazine";
+FO_TAG_CLIPBOX = "\cpBullet Box";
+FO_TAG_CLIPBOX2 = "\cpHigh Caliber Bullet Box";
+FO_TAG_SHELL = "\cpShotgun Shells";
+FO_TAG_SHELLBOX = "\cpShotgun Shell Box";
+FO_TAG_ROCKET = "\cpRocket Shell";
+FO_TAG_ROCKBOX ="\cpRocket Shell Crate";
+FO_TAG_CELL = "\cpEnergy Cell";
+FO_TAG_CELLBOX = "\cpEnergy Cell Pack";
 FO_TAG_SOUL = "\clÂme";
 FO_TAG_ESSENSE = "\clDemonic Essence";
 FO_TAG_ESSENSE2 = "\clLarge Demonic Essence";
 FO_TAG_BANDAGES = "\chBandages";
 FO_TAG_SYRINGE = "\cgBerserk Syringe";
 
-FO_TAG_SAWGAS = "Gasoline Can";
+FO_TAG_SAWGAS = "\cpGasoline Can";
 
 //////////////////////////////////////////////////////////////////
 // health and armor tags

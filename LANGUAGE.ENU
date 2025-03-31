@@ -57,7 +57,7 @@ RANDOM_NO_WIZARD = "Random (No Flesh Wizard)";
 RANDOM_NO_HELLSTORM = "Random (No Hellstorm)";
 
 FO_HUSK_1 = "1 Husk";
-FO_HUSK_2 ="2 Husks";
+FO_HUSK_2 = "2 Husks";
 FO_HUSK2_CARRION1 = "2Husks & 1 Carrion";
 FO_HUSK3_CARRION2 = "3 Husks & 1 Carrion".
 
@@ -156,7 +156,7 @@ FO_64MNU_DEFAULT_TXT = "The mod's default options";
 FO_64MNU_CLASSICAL = "Classical";
 FO_64MNU_CLASSICAL_TXT = "Tweaks the settings to be as vanilla as possible";
 FO_64MNU_SWC = "SWC's Vision";
-FO_64MNU_SWC_TXT1 ="Adds new monsters and weapons with balanced settings,";
+FO_64MNU_SWC_TXT1 = "Adds new monsters and weapons with balanced settings,";
 FO_64MNU_SWC_TXT2 = "how the creator plays his own mod";
 FO_64MNU_RANDOM = "Spawner Randomiser";
 FO_64MNU_RANDOM_TXT1 = "To set all monster/weapon/item spawners to random, press this";
@@ -194,7 +194,7 @@ FO_64MNU_CLASSIC_SHOTGUN = "Enable Classic Shotgun/SSG Animations =";
 FO_64MNU_CLASSIC_SHOTGUN_TXT = "Show classic Doom 64 Shotgun/SSG animations (classical mode).";
 FO_64MNU_WARMUP = "Enable Weapon Warm Up Animations =";
 FO_64MNU_WARMUP_TXT = "Show weapon warm up animations on first pickup (tactical/modern modes ONLY).";
-FO_64MNU_CLASSIC_CHAINSAW ="Classic Style Chainsaw for Tactical/Modern =";
+FO_64MNU_CLASSIC_CHAINSAW = "Classic Style Chainsaw for Tactical/Modern =";
 FO_64MNU_CLASSIC_CHAINGUN = "Classic Style Chaingun for Tactical/Modern =";
 FO_64MNU_CLASSIC_ROCKET = "Classic Style Rocket Launcher for Tactical/Modern =";
 FO_64MNU_CLASSIC_SWITCH = "Options to switch between classic or modernised weapons."
@@ -329,15 +329,15 @@ FO_OPTION_MAP_TITLE_TXT ="Show Opening Title Map (Restart Required) =";
 
 FO_ENGINE_OPTION = "Engine Option Shortcuts";
 FO_ENGINE_OPTION_TXT = "Zdoom options, available here for your convenience";
-FO_ENGINE_ = "Adjust sprite clipping";
-FO_ENGINE_CLIPPING = "Force Zdoom Crosshairs";
+FO_ENGINE_CLIPPING = "Adjust sprite clipping";
+FO_ENGINE_CROSSHAIR = "Force Zdoom Crosshairs";
 FO_ENGINE_JUMP = "Allow Jump";
 FO_ENGINE_CROUCH = "Allow Crouch";
 FO_ENGINE_FREELOOK = "Allow Freelook";
 FO_ENGINE_BOBBING = "Move Bobbing Intensity";
 FO_ENGINE_PARTICULES = "Max Particles";
 FO_ENGINE_INPUT = "input value manually";
-FO_ENGINE_ = "Max Decals";
+FO_ENGINE_MAX = "Max Decals";
 FO_ENGINE_DECALS = "input value manually";
 FO_ENGINE_FPS = "FPS counter";
 FO_ENGINE_DISCORD = "Discord Rich Presence ";

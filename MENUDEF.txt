@@ -431,177 +431,177 @@ OptionValue "CacoSkinChooser"
 OptionValue "Annihilator_Spawner_Value"
 {
 //	-3,"Random (No Cyberdemon)"
-	-2,"Random (No Annihilator)"
-	-1,"Random (No Infernal)"
-	0,"Random"
-	1,"Cyberdemon"
-	2,"Annihilator"
-	3,"Infernal"
+	-2,"$RANDOM_NO_ANNIHILATOR"
+	-1,"$RANDOM_NO_INFERNAL"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_CYBERDEMON"
+	2,"$FO_TAG_ANNIHILATOR"
+	3,"$FO_TAG_RESURRECTOR"
 }
 
 OptionValue "Motherdemon_Spawner_Value"
 {
-	-4,"Disabled"
+	-4,"$FO_DISABLED"
 //	-3,"Random (No Mastermind)"	
-	-2,"Random (No Motherdemon)"
-	-1,"Random (No Eradicator)"
-	0,"Random"
-	1,"Mastermind"
-	2,"Motherdemon"
-	3,"Eradicator"
+	-2,"$RANDOM_NO_MOTHER"
+	-1,"$RANDOM_NO_ERADICATOR"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_MASTERMIND"
+	2,"$FO_TAG_MOTHER"
+	3,"$FO_TAG_ERADICATOR"
 }
 
 OptionValue "Knightmare_Spawner_Value"
 {
-	0,"Random"
-	1,"HellKnight"
-	2,"Knightmare"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_KNIGHT"
+	2,"$FO_TAG_KNIGHTMARE"
 }
 
 OptionValue "Bruiser_Spawner_Value"
 {
-	0,"Random"
-	1,"Mancubus"
-	2,"Bruiser"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_FATSO "
+	2,"$FO_TAG_BRUISER"
 }
 
 OptionValue "Arachnotron_Spawner_Value"
 {
 //	-3, "Random (No Arachnotron)"
-	-2, "Random (No Night Crawler)"
-	-1, "Random (No Impaler)"
-	0,"Random"
-	1,"Arachnotron"
-	2,"Night Crawler"
-	3,"Impaler"
+	-2, "$RANDOM_NO_NIGHTCRAWLER"
+	-1, "$RANDOM_NO_IMPALER"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_SPIDER"
+	2,"$FO_TAG_NIGHTCRAWLER"
+	3,"$FO_TAG_IMPALER"
 }
 
 OptionValue "Stalker_Spawner_Value"
 {
 //	-3,"Random (No Lost Soul)"
-	-2,"Random (No Stalker)"
-	-1,"Random (No Forgotten)"
-	0,"Random"
-	1,"Lost Soul"
-	2,"Stalker"
-	3,"Forgotten One"
+	-2,"$RANDOM_NO_STALKER"
+	-1,"$RANDOM_NO_FORGOTTEN"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_SOUL"
+	2,"$FO_TAG_STALKER"
+	3,"$FO_TAG_FORGOTTEN"
 }
 
 OptionValue "Hellhound_Spawner_Value"
 {
-	-2, "Random (No Hellhound)"
-	-1, "Random (No Belphegor)"
-	0,"Random"
-	1,"Baron"
-	2,"Hellhound"
-	3,"Belphegor"
+	-2, "$RANDOM_NO_HELLHOUND"
+	-1, "$RANDOM_NO_BELPHEGOR"
+	0,"$FO_RANDOM""
+	1,"$FO_TAG_BARON"
+	2,"$FO_TAG_HOUND"
+	3,"$FO_TAG_BELPHEGOR"
 }
 
 OptionValue "AcidDemon_Spawner_Value"
 {
 //	-3,"Random (No Pinky)"
-	-2,"Random (No Acid)"
-	-1,"Random (No Butcher)"
-	0,"Random"
-	1,"Pinky"
-	2,"Acid"
-	3,"Butcher"
+	-2,"$RANDOM_NO_ACID"
+	-1,"$RANDOM_NO_BUTCHER"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_PINKY"
+	2,"$FO_TAG_ACID"
+	3,"$FO_TAG_BUTCHER"
 }
 
 OptionValue "NCaco_Spawner_Value"
 {
 //	-3,"Random (No Cacodemon)"
-	-2,"Random (No N'mare Variant)" 
-	-1,"Random (No Fallen)"
-	0,"Random"
-	1,"Cacodemon"
-	2,"N'mare Variant"
-	3,"Fallen"
+	-2,"$RANDOM_NO_CACO_NIGHTMARE" 
+	-1,"$RANDOM_NO_FALLEN"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_CACO"
+	2,"$FO_TAG_CACO_NIGHTMARE"
+	3,"$FO_TAG_FALLEN"
 }
 
 OptionValue "NSpectre_Spawner_Value"
 {
 //	-3,"Random (No Spectre)"
-	-2,"Random (No N'mare Variant)"
-	-1,"Random (No Wraith)"
-	0,"Random"
-	1,"Spectre"
-	2,"N'mare Variant"
-	3,"Wraith"
+	-2,"RANDOM_NO_SPECTRE_NIGHTMARE"
+	-1,"$RANDOM_NO_WRAITH"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_SPECTRE"
+	2,"$FO_TAG_SPECTRE"
+	3,"$FO_TAG_WRAITH"
 }
 
 OptionValue "NImp_Spawner_Value"
 {
 //	-3,"Random (No Imp)"
-	-2,"Random (No N'mare Variant)"
-	-1,"Random (No Harvester)"
-	0,"Random"
-	1,"Imp"
-	2,"N'mare Variant"
-	3,"Soul Harvester"
+	-2,"$RANDOM_NO_IMP_NIGHTMARE"
+	-1,"$RANDOM_NO_HARVESTER"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_IMP"
+	2,"$FO_TAG_IMP_NIGHTMARE"
+	3,"$FO_TAG_HARVESTER"
 }
 
 OptionValue "Revenant_Spawner_Value"
 {
-	-1,"Disabled"
-	0,"Random"
-	1,"Revenant"
-	2,"Pestilence"
+	-1,"$FO_DISABLED"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_REVENANT"
+	2,"$FO_TAG_PEST"
 }
 
 OptionValue "NightElemental_Spawner_Value"
 {
-	0,"Random"
-	1,"Pain Elemental"
-	2,"Agony Elemental"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_ELEMENTAL"
+	2,"$FO_TAG_ELEMENTAL_NIGHTMARE"
 }
 
 OptionValue "SSGZombieRandom_Value"
 {
 //	-3,"Random (No Shotgun)"
-	-2,"Random (No SSG)"
-	-1,"Random (No BFG)"
-	0,"Random"
-	1,"Shotgun Zombie"
-	2,"SSG Zombie"
-	3,"BFG Zombie"
+	-2,"$RANDOM_NO_SSGGUY"
+	-1,"$RANDOM_NO_BFG_GUY"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_SHOTGUNGUY"
+	2,"$FO_TAG_SSGGUY"
+	3,"$FO_TAG_BFGGUY"
 }
 
 OptionValue "ZMarineRandom_Value"
 {
-	0,"Random"
-	1,"Pistol Zombie"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_PISTOLMAN"
 	2,"Marine Zombie"
 }
 
 OptionValue "ChaingunZombie_Value"
 {
-	-1,"Disabled"
-	0,"Random"
-	1,"Chaingun Zombie"
-	2,"Plasma Zombie"
+	-1,"$FO_DISABLED"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_COMMANDO"
+	2,"$FO_TAG_PLASMAGUY"
 }
 
 OptionValue "FleshWizardRandom_Value"
 {
-	-4,"Disabled"
+	-4,"$FO_DISABLED"
 //	-3,"Random (No Archvile)"
-	-2,"Random (No Flesh Wizard)"
-	-1,"Random (No Hellstorm)"
-	0,"Random"
-	1,"Archvile"
-	2,"Flesh Wizard"
-	3,"Hellstorm"
+	-2,"$RANDOM_NO_WIZARD"
+	-1,"$RANDOM_NO_HELLSTORM"
+	0,"$FO_RANDOM"
+	1,"$FO_TAG_VILE"
+	2,"$FO_TAG_FLESH"
+	3,"$FO_TAG_HELLSTORM"
 }
 
 OptionValue "TheHorde_Multiplier_Value"	//Husk zombie
 {
-	-1,"Disabled"
-	0,"Random"
-	1,"1 Husk"
-	2,"2 Husks"
-	3,"2 Husks & 1 Carrion"
-	4,"3 Husks & 1 Carrion"
+	-1,"$FO_DISABLED"
+	0,"$FO_RANDOM"
+	1,"$FO_HUSK_1"
+	2,"$FO_HUSK_2"
+	3,"$FO_HUSK2_CARRION1"
+	4,"$FO_HUSK3_CARRION2"
 }
 
 OptionValue "Keen_Spawner_Value"
@@ -628,70 +628,70 @@ OptionValue "SpawnPercentValue"
 //Performance values
 OptionValue "BrutalBlood"	//Blood amount
 {
-	1,"Low"
-	2,"Normal"
-	3,"Lots"
-	4,"Comical"
-	5,"Maximum"
+	1,"$FO_BLOOD_LOW"
+	2,"$FO_BLOOD_LOW"
+	3,"$FO_BLOOD_LOW"
+	4,"$FO_BLOOD_LOW"
+	5,"$FO_BLOOD_LOW"
 }
 
 OptionValue "LFog_Value"	//Steam and Halo effects
 {
 	0,"Enabled"
-	1,"Disabled"
+	1,"$FO_DISABLED"
 	2,"Disable Halos only"
 	3,"Disable Light Fog only"
 }
 
 OptionValue "ScreenTypes"	//HUD effects
 {
-	0, "No"
-	1, "Yes"
+	0, "$FO_NO"
+	1, "$FO_YES"
 	2, "BDv21"
 }
 
 //Item & Weapon values
 OptionValue "Chaingun_Spawner_Value"
 {
-	0,"Random"
-	1,"Chaingun"
-	2,"Assault Rifle"
-	3,"Sub Machinegun"
+	0,"$FO_RANDOM"
+	1,"$FO_CHAINGUN"
+	2,"$FO_RIFLE"
+	3,"$FO_SMG"
 }
 
 OptionValue "BFG_Spawner_Value"
 {
-	0,"Random"
-	1,"BFG9000"
-	2,"Unmaker"
-	3,"Laser Rifle"
+	0,"$FO_RANDOM"
+	1,"$FO_BFG"
+	2,"$FO_UNMAKER"
+	3,"$FO_LASER"
 }
 
 OptionValue "GaussCannon_Spawner_Value"
 {
-	0,"Random"
-	1,"Plasma Rifle"
-	2,"Gauss Cannon"
+	0,"$FO_RANDOM"
+	1,"$FO_PLASMA"
+	2,"$FO_GAUSS"
 }
 
 OptionValue "BonusRandomValue"	//Health/Armor bonus replacement
 {
-	0,"Random"
+	0,"$FO_RANDOM"
 	1,"Default Bonus"
 	2,"Hell Potion"
 }
 
 OptionValue "WpnPower_Spawner_Value"
 {
-	0,"Random"
+	0,"$FO_RANDOM"
 	1,"Power-ups"
 	2,"Unmaker Power-ups"
 }
 
 OptionValue "AlternativeAmmoPickupSpritesValue"
 {
-	1,"Default"
-	2,"Alternative"
+	1,"$FO_DEFAULT"
+	2,"$FO_ALTERNATIVE"
 }
 
 OptionValue "CensoredHealing_Value"
@@ -703,7 +703,7 @@ OptionValue "CensoredHealing_Value"
 
 OptionValue "HUDValue"
 {
-	0,"Default"
+	0,"$FO_DEFAULT"
 	1,"Doom Style"
 }
 

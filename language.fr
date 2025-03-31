@@ -17,11 +17,11 @@ FO_DEFAULT = "Défaut";
 FO_CLASSICAL = "Classique";
 FO_SWC = "Vision de SWC";
 
-FO_DISABLED = "Désactivé"
-FO_ALTERNATIVE = "Alternative"
-FO_GEC = "GEC (par défaut)"
+FO_DISABLED = "Désactivé";
+FO_ALTERNATIVE = "Alternative";
+FO_GEC = "GEC (par défaut)";
 
-FO_RANDOM = "Aléatoire"
+FO_RANDOM = "Aléatoire";
 
 RANDOM_NO_ANNIHILATOR = "Aléatoire (pas d'Annihilateur)";
 RANDOM_NO_INFERNAL = "Aléatoire (pas d'Infernal)";
@@ -197,7 +197,7 @@ FO_64MNU_WARMUP_TXT = "Afficher les animations des armes lors du premier ramassa
 FO_64MNU_CLASSIC_CHAINSAW ="Tronçonneuse de style classique pour classes tactique/moderne =";
 FO_64MNU_CLASSIC_CHAINGUN = "Mitrailleuse de style classique pour classes tactique/moderne =";
 FO_64MNU_CLASSIC_ROCKET = "Lance-roquettes de style classique pour classes tactiques/modernes =";
-FO_64MNU_CLASSIC_SWITCH = "Options pour basculer entre les armes classiques ou modernisées."
+FO_64MNU_CLASSIC_SWITCH = "Options pour basculer entre les armes classiques ou modernisées.";
 
 FO_64MNU_SKIP_RELOAD = "Ignorer les séquences de rechargement des armes (Maintenez \"Apply Changes\") =";
 FO_64MNU_SKIP_RELOAD_TXT = "Ignorer les séquences d'animation de rechargement des armes (modes tactiques/modernes UNIQUEMENT).";

@@ -33,8 +33,8 @@ DamageFactor "Flames",1.5
 DamageFactor "Plasma",1.5
 DamageFactor "BFG",1.5
 DropItem "DemonEssenceSpawner"
-Tag "Trite"
-HitObituary "%o was poisoned by a Trite"
+Tag "$FO_TAG_TRITE"
+HitObituary "$FO_OB_TRITE"
 Species "Trite"
 MONSTER
 -COUNTKILL

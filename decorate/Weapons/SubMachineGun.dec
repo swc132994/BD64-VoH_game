@@ -2,7 +2,7 @@ Actor SMGSpawner : CustomInventory 19121
 {
 //$category "Game/BD64_Weapons"
 Scale 0.82
-Tag "Sub-Machine Gun"
+Tag "$FO_TAG_SMG"
 Inventory.PickupMessage "$BD64_GOTSMG"
 Inventory.PickupSound "WPICK"
 	States
@@ -42,9 +42,9 @@ Weapon.SelectionOrder 800
 Weapon.AmmoType "Clip"
 Weapon.AmmoUse 1
 Weapon.AmmoGive 20
-Inventory.PickupMessage "You got the SMG!"
+Inventory.PickupMessage "$BD64_GOTSMG"
 Obituary "%o was picked off by %k."
-Tag "Sub-Machine Gun"
+Tag "$FO_TAG_SMG"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 +INVENTORY.RESTRICTABSOLUTELY
@@ -109,9 +109,9 @@ Weapon.AmmoGive1 20
 Weapon.AmmoType2 "SMGAmmo"
 Weapon.AmmoUse2 1
 Weapon.AmmoGive2 0
-Inventory.PickupMessage "You got the SMG!"
+Inventory.PickupMessage "$BD64_GOTSMG"
 Obituary "%o was picked off by %k SMG."
-Tag "Sub-machine gun"
+Tag "$FO_TAG_SMG"
 	States
 	{
 	MineThrowFlash:

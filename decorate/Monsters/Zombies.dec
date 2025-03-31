@@ -54,7 +54,7 @@ DamageFactor "Head",2.5
 DamageFactor "Chainsaw",0.65
 DamageFactor "Unmaker",0.2
 Obituary "$FO_OB_ZOMBIE"
-Tag "Pistol Zombie"
+Tag "$FO_TAG_PISTOLMAN"
 DropItem "SOULSPAWNER"
 DropItem "64Clip"
 +DOHARMSPECIES
@@ -677,7 +677,7 @@ Actor 64ShotgunGuy : 64Zombieman Replaces ShotgunGuy
 //$category "Game/BD64_Monsters"
 Speed 6
 GibHealth 15
-Tag "Shotgun Zombie"
+Tag "$FO_TAG_SHOTGUNGUY"
 Obituary "$FO_OB_SHOTGUY"
 DropItem "ShotgunDrop"
 DropItem "SOULSPAWNER"
@@ -1236,8 +1236,8 @@ Actor 64SSGGuy : 64ShotgunGuy 19110
 //$category "Game/BD64_Monsters"
 DropItem "SSGDrop"
 DropItem "SOULSPAWNER"
-Tag "SSG Zombie"
-Obituary "%o was blown apart by an SSG Zombie."
+Tag "$FO_TAG_SSGGUY"
+Obituary "$FO_OB_SSGGUY"
 SpawnID 170
 	States
 	{
@@ -1782,7 +1782,7 @@ Actor 64ChaingunGuy : 64Zombieman Replaces Chaingunguy
 Health 120
 Speed 4
 AttackSound "MGUNFIR"
-Tag "Chaingun Zombie"
+Tag "$FO_TAG_COMMANDO"
 Obituary "$FO_OB_CHAINGUY"
 DropItem "ChaingunDrop"
 DropItem "SOULSPAWNER"

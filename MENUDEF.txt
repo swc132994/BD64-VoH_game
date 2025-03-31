@@ -491,7 +491,7 @@ OptionValue "Hellhound_Spawner_Value"
 {
 	-2, "$RANDOM_NO_HELLHOUND"
 	-1, "$RANDOM_NO_BELPHEGOR"
-	0,"$FO_RANDOM""
+	0,"$FO_RANDOM"
 	1,"$FO_TAG_BARON"
 	2,"$FO_TAG_HOUND"
 	3,"$FO_TAG_BELPHEGOR"

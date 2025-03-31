@@ -45,7 +45,7 @@ Weapon.AmmoType "Clip"
 Weapon.AmmoUse 1
 Weapon.AmmoGive 10
 Inventory.PickupMessage "$BD64_GOTRIFLE"
-Obituary "%o was picked off by %k."
+Obituary "$FO_OB_MPRIFLE"
 Tag "$FO_TAG_RIFLE"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
@@ -106,7 +106,7 @@ Weapon.AmmoType2 "RifleAmmo"
 Weapon.AmmoUse2 1
 Weapon.AmmoGive2 0
 Inventory.PickupMessage "$FO_TAG_RIFLE"
-Obituary "%o was picked off by %k Assualt Rifle."
+Obituary "$FO_OB_MPRIFLE"
 Tag "$FO_TAG_RIFLE"
 	States
 	{

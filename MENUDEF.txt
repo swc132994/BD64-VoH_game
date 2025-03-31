@@ -161,7 +161,7 @@ OptionMenu "BrutalDoom64Item/WeaponOptions"
 		StaticText ""
 	Option "$FO_64MNU_CLASSIC_CHAINSAW","VanillaChainsawCvar","YesOrNo"
 	Option "$FO_64MNU_CLASSIC_CHAINGUN","ClassicChaingunCvar","YesOrNo"
-	Option "$FO_64MNU_CLASSIC_ROCKE","ClassicRLCvar","YesOrNo"
+	Option "$FO_64MNU_CLASSIC_ROCKET","ClassicRLCvar","YesOrNo"
 		StaticText "$FO_64MNU_CLASSIC_SWITCH",1
 		StaticText ""
 	Option "$FO_64MNU_SKIP_RELOAD","NoReloadCvar","YesOrNo"

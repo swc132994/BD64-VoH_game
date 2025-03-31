@@ -43,7 +43,7 @@ Weapon.AmmoType "Clip"
 Weapon.AmmoUse 1
 Weapon.AmmoGive 20
 Inventory.PickupMessage "$BD64_GOTSMG"
-Obituary "%o was picked off by %k."
+Obituary "$FO_OB_MPSMG"
 Tag "$FO_TAG_SMG"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
@@ -110,7 +110,7 @@ Weapon.AmmoType2 "SMGAmmo"
 Weapon.AmmoUse2 1
 Weapon.AmmoGive2 0
 Inventory.PickupMessage "$BD64_GOTSMG"
-Obituary "%o was picked off by %k SMG."
+Obituary "$FO_OB_MPSMG"
 Tag "$FO_TAG_SMG"
 	States
 	{

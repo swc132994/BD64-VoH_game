@@ -147,7 +147,7 @@ FO_64OPTIONS_MAIN_TXT2 = "Press \"Apply Changes\" for the changes to take effect
 FO_64OPTIONS_PRESET = "-------------------------------- Presets -------------------------------------";
 
 FO_64MNU_BEFORE = "You must be inside a level before pressing the buttons";
-FO_64MNU_APPLY = "You also have to exit the menu each time you apply a preset",
+FO_64MNU_APPLY = "You also have to exit the menu each time you apply a preset";
 FO_64MNU_COMFIRM = "Option above is purely a confirmation of the preset successfully applying";
 FO_64MNU_NOTHING = "it does nothing";
 

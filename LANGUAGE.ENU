@@ -17,11 +17,11 @@ FO_DEFAULT = "Default";
 FO_CLASSICAL = "Classical";
 FO_SWC = "SWC's Vision";
 
-FO_DISABLED = "Disabled"
-FO_ALTERNATIVE = "Alternative"
-FO_GEC = "GEC(default)"
+FO_DISABLED = "Disabled";
+FO_ALTERNATIVE = "Alternative";
+FO_GEC = "GEC(default)";
 
-FO_RANDOM = "Random"
+FO_RANDOM = "Random";
 
 RANDOM_NO_ANNIHILATOR = "Random (No Annihilator)";
 RANDOM_NO_INFERNAL = "Random (No Infernal)";

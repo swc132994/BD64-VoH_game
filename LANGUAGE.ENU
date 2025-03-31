@@ -41,7 +41,7 @@ RANDOM_NO_BELPHEGOR = "Random (No Belphegor)";
 RANDOM_NO_ACID = "Random (No Acid)";
 RANDOM_NO_BUTCHER = "Random (No Butcher)";
 
-RANDOM_NO_CACO_NIGHTMARE = "Random (No N'mare Variant)" ;
+RANDOM_NO_CACO_NIGHTMARE = "Random (No N'mare Variant)";
 RANDOM_NO_FALLEN = "Random (No Fallen)";
 
 RANDOM_NO_SPECTRE_NIGHTMARE = "Random (No N'mare Variant)";
@@ -59,7 +59,7 @@ RANDOM_NO_HELLSTORM = "Random (No Hellstorm)";
 FO_HUSK_1 = "1 Husk";
 FO_HUSK_2 = "2 Husks";
 FO_HUSK2_CARRION1 = "2Husks & 1 Carrion";
-FO_HUSK3_CARRION2 = "3 Husks & 1 Carrion".
+FO_HUSK3_CARRION2 = "3 Husks & 1 Carrion";
 
 FO_CHAINGUN = "\cuChaingun";
 FO_RIFLE = "\cuAssault Rifle";
@@ -197,7 +197,7 @@ FO_64MNU_WARMUP_TXT = "Show weapon warm up animations on first pickup (tactical/
 FO_64MNU_CLASSIC_CHAINSAW = "Classic Style Chainsaw for Tactical/Modern =";
 FO_64MNU_CLASSIC_CHAINGUN = "Classic Style Chaingun for Tactical/Modern =";
 FO_64MNU_CLASSIC_ROCKET = "Classic Style Rocket Launcher for Tactical/Modern =";
-FO_64MNU_CLASSIC_SWITCH = "Options to switch between classic or modernised weapons."
+FO_64MNU_CLASSIC_SWITCH = "Options to switch between classic or modernised weapons.";
 
 FO_64MNU_SKIP_RELOAD = "Skip Weapon Reload Sequences (Press \"Apply Changes\") =";
 FO_64MNU_SKIP_RELOAD_TXT = "Skip weapon reload animation sequences (tactical/modern modes ONLY).";
@@ -270,7 +270,7 @@ FO_MONSTER_SKIN = "------------------------------- Monster Skins ---------------
 
 FO_MONSTER_HELLHOUND = "Hellhound Style =";
 FO_MONSTER_HELLHOUND_TXT1 = "If you selected \"Random (No Baron)\"";
-FO_MONSTER_HELLHOUND_TXT2 = "and turned off Hellhound skin selection"
+FO_MONSTER_HELLHOUND_TXT2 = "and turned off Hellhound skin selection";
 FO_MONSTER_HELLHOUND_TXT3 = "you will receive \"Random (No HellHound)\"";
 
 FO_MONSTER_CACO = "Cacodemon Style =";

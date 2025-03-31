@@ -168,7 +168,7 @@ FO_64MNU_OHTHER_MONSTER = "Other Monster Options";
 FO_64MNU_PERFORMANCE = "Performance & Misc. Options";
 FO_64MNU_LEVEL_OPTIONS = "Map Options";
 
-FO_64OPTIONS_GAMEPLAY = "-------------------------------- Gameplay -------------------------------------"
+FO_64OPTIONS_GAMEPLAY = "-------------------------------- Gameplay -------------------------------------";
 
 FO_64MNU_WEAPONS_SPAWN = "Item/Weapon Spawner Options";
 FO_64MNU_MONSTER_SPAWN = "Monster Spawner Options";
@@ -275,7 +275,7 @@ FO_MONSTER_HELLHOUND_TXT3 = "you will receive \"Random (No HellHound)\"";
 
 FO_MONSTER_CACO = "Cacodemon Style =";
 
-FO_OPTION_MAP = "------------------------------- MapSet Selection -------------------------------"
+FO_OPTION_MAP = "------------------------------- MapSet Selection -------------------------------";
 
 FO_MAP_SELECT = "Select Mapset =";
 FO_MAP_SELECT_TXT1 = "This option is not automatic and must be configured manually";

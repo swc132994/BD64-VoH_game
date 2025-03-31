@@ -17,6 +17,7 @@ FO_DEFAULT = "Default";
 FO_CLASSICAL = "Classical";
 FO_SWC = "SWC's Vision";
 
+FO_ENABLED = "Enabled";
 FO_DISABLED = "Disabled";
 FO_ALTERNATIVE = "Alternative";
 FO_GEC = "GEC(default)";
@@ -145,6 +146,8 @@ FO_64OPTIONS_MAIN_TXT1 = "Some changes are not initialized automatically";
 FO_64OPTIONS_MAIN_TXT2 = "Press \"Apply Changes\" for the changes to take effect";
 
 FO_64OPTIONS_PRESET = "-------------------------------- Presets -------------------------------------";
+
+FO_64MNU_LAST = "Last Preset Used =";
 
 FO_64MNU_BEFORE = "You must be inside a level before pressing the buttons";
 FO_64MNU_APPLY = "You also have to exit the menu each time you apply a preset";

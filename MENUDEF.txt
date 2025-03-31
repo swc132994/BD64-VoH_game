@@ -85,7 +85,7 @@ OptionMenu "BD64Menu"
 	StaticText "$FO_64OPTIONS_PRESET",1
 	StaticText "$FO_64MNU_BEFORE",1
 	StaticText "$FO_64MNU_APPLY",1
-	TextField "Last Preset Used =", "BD64_Preset"
+	TextField "$FO_64MNU_LAST", "BD64_Preset"
 	StaticText "$FO_64MNU_COMFIRM",1
 	StaticText "$FO_64MNU_NOTHING",1
 	StaticText " "
@@ -637,7 +637,7 @@ OptionValue "BrutalBlood"	//Blood amount
 
 OptionValue "LFog_Value"	//Steam and Halo effects
 {
-	0,"Enabled"
+	0,"$FO_ENABLED"
 	1,"$FO_DISABLED"
 	2,"Disable Halos only"
 	3,"Disable Light Fog only"

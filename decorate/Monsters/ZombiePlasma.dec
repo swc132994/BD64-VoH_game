@@ -8,10 +8,10 @@ ActiveSound "colonelzombie/active"
 DeathSound "colonelzombie/death"
 PainSound "colonelzombie/pain"
 DamageFactor "Head",2.25
-Tag "Plasma Zombie"
+Tag "$FO_TAG_PLASMAGUY"
 DropItem "64Cell"
 DropItem "SOULSPAWNER"
-Obituary "%o was melted by a zombie colonel."
+Obituary "$FO_OB_PLASMAGUY"
 	States
 	{
 	Idle:	//placeholder

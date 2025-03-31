@@ -109,7 +109,7 @@ OptionMenu "BD64Menu"
 	StaticText " "
 	StaticText "$FO_64OPTIONS_GAMEPLAY",1
 	StaticText " "
-	Submenu $FO_64MNU_WEAPONS_SPAWN",		"BrutalDoom64OptionsItem/WeaponSpawner"	
+	Submenu "$FO_64MNU_WEAPONS_SPAWN",		"BrutalDoom64OptionsItem/WeaponSpawner"	
 	Submenu "$FO_64MNU_MONSTER_SPAWN",			"BrutalDoom64OptionsMonsterSpawner"	
 	StaticText " "
 	StaticText ""
@@ -359,11 +359,11 @@ Optionmenu GZDShortcuts
 	Option "$FO_ENGINE_CLIPPING",	gl_spriteclip,					"SpriteclipModes"
 	StaticText ""
 	Option "$FO_ENGINE_CROSSHAIR",	"crosshairforce","OnOff"
-	Option "£FO_ENGINE_JUMP",				"sv_jump","JumpCrouchFreeLook"
-	Option "£FO_ENGINE_CROUCH",				"sv_crouch","JumpCrouchFreeLook"
-	Option "£FO_ENGINE_FREELOOK",			"sv_freelook","JumpCrouchFreeLook"
+	Option "$FO_ENGINE_JUMP",				"sv_jump","JumpCrouchFreeLook"
+	Option "$FO_ENGINE_CROUCH",				"sv_crouch","JumpCrouchFreeLook"
+	Option "$FO_ENGINE_FREELOOK",			"sv_freelook","JumpCrouchFreeLook"
 	StaticText ""
-	Slider "£FO_ENGINE_BOBBING",	"Movebob",	0,0.75,0.02,2
+	Slider "$FO_ENGINE_BOBBING",	"Movebob",	0,0.75,0.02,2
 		StaticText ""
 	Slider "£FO_ENGINE_PARTICULES",		"r_maxparticles",	100,30000,100,0
 		textfield "£FO_ENGINE_INPUT","r_maxparticles"

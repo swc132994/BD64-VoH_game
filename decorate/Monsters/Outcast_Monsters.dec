@@ -21,9 +21,9 @@ PainChance "SuperKick",255
 DamageFactor "Acid",0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was dissolved by an acid demon"
-HitObituary "%o was mauled by an acid demon"
-Tag "Acid Demon"
+Obituary "$FO_OB_ACID"
+HitObituary "$FO_OB_ACIDHIT"
+Tag "$FO_TAG_ACID"
 DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodGreen"
 +DONTHARMSPECIES
@@ -479,8 +479,8 @@ PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was blown up by a nightcrawler."
-Tag "Nightcrawler"
+Obituary "$FO_OB_NIGHTCRAWLER"
+Tag "$FO_OB_NIGHTCRAWLER"
 DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodBLUE"
 +DONTHARMSPECIES
@@ -630,8 +630,8 @@ DamageFactor "Ice",2
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 RenderStyle Translucent
-Tag "Stalker"
-Obituary "%o didn't see the stalker coming."
+Tag "$FO_TAG_STALKER"
+Obituary "$FO_OB_STALKER"
 PainSound "DSSTLKPN"
 SeeSound "DSSTLKST"
 +DONTHARMCLASS

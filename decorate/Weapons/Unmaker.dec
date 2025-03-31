@@ -720,7 +720,7 @@ RenderStyle Normal
 Decal "LaserDecal"
 SeeSound "LASERTR"
 DeathSound ""
-Obituary "%o was unmade by %k."
+Obituary "$FO_OB_MPUNMAKER"
 +DONTSPLASH
 +EXTREMEDEATH
 +FORCERADIUSDMG

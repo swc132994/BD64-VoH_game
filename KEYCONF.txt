@@ -1,16 +1,16 @@
-AddKeySection "Brutal Doom 64" BrutalDoomInteractions
+AddKeySection "$FO_OP_BD64" BrutalDoomInteractions
 
-AddMenuKey "Kick" "+zoom"
+AddMenuKey "$FO_OP_KICK" "+zoom"
 DefaultBind "Q" "+zoom"
 
-AddMenuKey "Toss Mine" "+user1"
+AddMenuKey "$FO_OP_TOSS" "+user1"
 DefaultBind "G" "+user1"
 
-AddMenuKey "Place Mine" "+user2"
+AddMenuKey "$FO_OP_PLACE" "+user2"
 DefaultBind "M" "+user2"
 
-AddMenuKey "Weapon Special Action" "+user3"
-DefaultBind "V" "+user3"
+AddMenuKey "$FO_OP_SPECIAL" "+user3"
+DefaultBind "$FO_OP_FLASH" "+user3"
 
 Alias "Flashlightswitch" "PukeName ToggleFlashlight"
 AddMenuKey "Toggle Flashlight/Torch" "FlashlightSwitch"

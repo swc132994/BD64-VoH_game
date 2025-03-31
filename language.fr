@@ -57,7 +57,7 @@ RANDOM_NO_WIZARD = "Aléatoire (Pas de Sorcier de chair)";
 RANDOM_NO_HELLSTORM = "Aléatoire (pas de Tempête infernale)";
 
 FO_HUSK_1 = "1 Zombie momifié";
-FO_HUSK_2 ="2 Zombies momifiés";
+FO_HUSK_2 = "2 Zombies momifiés";
 FO_HUSK2_CARRION1 = "2 Zombie momifié & 1 Charogne.";
 FO_HUSK3_CARRION2 = "3 Zombie momifié & 1 Charogne".
 
@@ -322,22 +322,22 @@ FO_OPTION_SOUND_FOOTS = "Activer les bruits de pas =";
 
 FO_OPTION_MAP_OP = "Options des niveaux";
 FO_OPTION_MAP_OP_TXT ="(Ces options fonctionnent UNIQUEMENT avec les cartes BD64)";
-FO_OPTION_MAP_EASY ="Jouez aux cartes plus faciles Map08 et Map28 (pas de combat de boss (final étendu))=";
+FO_OPTION_MAP_EASY = "Jouez aux cartes plus faciles Map08 et Map28 (pas de combat de boss (final étendu))=";
 FO_OPTION_MAP_TC ="Ajouter les cartes Absolution TC à la campagne =";
 FO_OPTION_MAP_TITLE ="Afficher la séquence d'ouverture originale de Doom 64 au démarrage";
 FO_OPTION_MAP_TITLE_TXT ="Afficher le titre d'ouverture (redémarrage requis) =";
 
 FO_ENGINE_OPTION = "Raccourcis des options du moteur";
 FO_ENGINE_OPTION_TXT = "Options Zdoom, disponibles ici pour votre commodité";
-FO_ENGINE_ = "Ajuster le clipping des sprites";
-FO_ENGINE_CLIPPING = "Forcer Réticule Zdoom";
+FO_ENGINE_CLIPPING = "Ajuster le clipping des sprites";
+FO_ENGINE_CROSSHAIR = "Forcer Réticule Zdoom";
 FO_ENGINE_JUMP = "Autoriser Saut";
 FO_ENGINE_CROUCH = "Autoriser aAcroupissement";
 FO_ENGINE_FREELOOK = "Autoriser Vue Libre";
 FO_ENGINE_BOBBING = "Intensité du mouvement de chaloupage";
 FO_ENGINE_PARTICULES = "Particules maximales";
 FO_ENGINE_INPUT = "saisir la valeur manuellement";
-FO_ENGINE_ = "Max décalcomanies";
+FO_ENGINE_MAX = "Max décalcomanies";
 FO_ENGINE_DECALS = "saisir la valeur manuellement";
 FO_ENGINE_FPS = "Compteur PFS";
 FO_ENGINE_DISCORD = "Présence Discord Rich";

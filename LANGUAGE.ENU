@@ -218,7 +218,7 @@ FO_64MNU_SKIN_ALPHA_TXT = "Options for alternative or some alpha build looks for
 
 FO_64MNU_OTHER = "-------------------------------------- Other -----------------------------------";
 
-FO_64MNU_FLASHLIGHT = "Start with Flashlight/Torch =";
+FO_64MNU_FLASHLIGHT = "Start with Flashlight =";
 
 FO_MONSTER_SPAWN = "Monster Spawner Options";
 FO_MONSTER_SPAWN_TXT1 = "These options allow setting the monster replacements to nightmare,";
@@ -399,20 +399,20 @@ FO_GOTBACKPACK2 = "Picked up a \cpbackpack\c- full of ammo with pistol silencer!
 FO_GOTBACKPACK3 = "Picked up a \cpbackpack\c- full of ammo with flashlight!";
 FO_GOTBACKPACK4 =  "Picked up a \cebackpack\c- full of ammo with pistol silencer and flashlight!";
 FO_GOTCLIP = "Picked up a \cpclip\c-.";
-FO_GOTCLIPBOX = "Picked up a box of \cpbullets\c-.";
+FO_GOTCLIPBOX = "Picked up a \cpbox of bullets\c-.";
 FO_GOTCLIPBOX2 = "Picked up a \cphigh caliber bullet box\c-.";
 FO_GOTSHELLS = "Picked up \cp4 shotgun shells\c-.";
 FO_GOTSHELLBOX = "Picked up a \cpbox of shells\c-.";
 FO_GOTROCKET = "Picked up a \cprocket\c-.";
 FO_GOTROCKBOX = "Picked up a \cpbox of rockets\c-.";
 FO_GOTCELL = "Picked up an \cpenergy cell\c-.";
-FO_GOTCELLBOX = "Picked up an \ceenergy cell pack\c-.";
-FO_GOTSAWGAS = "Picked up a can of \ceGasoline\c-.";
+FO_GOTCELLBOX = "Picked up an \cpenergy cell pack\c-.";
+FO_GOTSAWGAS = "Picked up a \cpcan of gasoline\c-.";
 FO_GOTSOUL = "\clSoul\c-Collected";
 FO_GOTESSENSE = "\clDemonic Essence\c- collected";
 FO_GOTESSENSE2 = "\clLarge Demonic Essence\c- collected";
 FO_GOTBANDAGES = "Found Some \chbandages\c-.";
-FO_GOTSYRINGE = "Found a \clBERSERK syringe\c.";
+FO_GOTSYRINGE = "Found a \clBERSERK syringe\c-.";
 FO_SCAVENGE1 = "You scavenge 25 bandages from this Medikit.";
 FO_SCAVENGE2 = "You scavenge 25 bandages from this Medikit.";
 FO_SCAVENGE3 = "You scavenge a Berserk syringe from this Berserk Kit.";

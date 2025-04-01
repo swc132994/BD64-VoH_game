@@ -6,40 +6,46 @@ FO_64SYSTEM_AUTO = "Some changes are not initialised automatically";	//en-gb
 //////////////////////////////////////////////////////////////////
 // HUD
 
-HUD_ARMOR = "Armour";	//en-gb
+HUD_ARMOR = "Armour";
+
+//////////////////////////////////////////////////////////////////
+//menus
+FO_64MNU_FLASHLIGHT = "Start with Torch =";
 
 //////////////////////////////////////////////////////////////////
 //Option values
 
-FO_64OPTIONS_MAIN_TXT1 = "Some changes are not initialised automatically";	//en-gb
+FO_64OPTIONS_MAIN_TXT1 = "Some changes are not initialised automatically";
 
-FO_64MNU_BONUS_TXT = "(hell potions are combined armour/health pickups)";	//en-gb
+FO_64MNU_BONUS_TXT = "(hell potions are combined armour/health pickups)";
 
 FO_OP_FLASH = "\ckToggle Torch";
+
 //////////////////////////////////////////////////////////////////
 //Health / armor
-FO_GOTARMBONUS = "You pick up an \cgarmour bonus\c-.";	//en-gb
-FO_GOTARMOR = "You pick up the \cgarmour\c-.";			//en-gb
-FO_GOTMEGA = "You got the Mega \cgArmour\c-!";			//en-gb
+
+FO_GOTARMBONUS = "You pick up an \cgarmour bonus\c-.";
+FO_GOTARMOR = "You pick up the \cgarmour\c-.";
+FO_GOTMEGA = "You got the \cgMega Armour\c-!";
 
 
 //////////////////////////////////////////////////////////////////
 //ammo
 
-FO_GOTCLIPBOX2 = "Picked up a \cehigh calibre bullet box\c-.";
+FO_GOTROCKBOX2 = "Picked up a \cphigh calibre bullet box\c-.";
 
-FO_GOTSAWGAS = "Picked up a can of fuel!.";	//en-gb
+FO_GOTSAWGAS = "Picked up a \cpcan of fuel!\c-.";
 
 //////////////////////////////////////////////////////////////////
 // ammo tags
 
-FO_TAG_CLIPBOX2 = "\ceHigh Calibre Bullet Box";	//en-gb
+FO_TAG_CLIPBOX2 = "\ceHigh Calibre Bullet Box";
 
-FO_TAG_SAWGAS = "Fuel Can";	//en-gb
+FO_TAG_SAWGAS = "\ceFuel Can";
 
 //////////////////////////////////////////////////////////////////
 // health and armor tags
 
-FO_TAG_ARMBONUS = "\cdArmour Bonus";	//en-gb
-FO_TAG_ARMOR = "\cdGreen Armour";		//en-gb
-FO_TAG_MEGA = "\chBlue Armour";			//en-gb
+FO_TAG_ARMBONUS = "\cdArmour Bonus";
+FO_TAG_ARMOR = "\cdGreen Armour";
+FO_TAG_MEGA = "\chBlue Armour";

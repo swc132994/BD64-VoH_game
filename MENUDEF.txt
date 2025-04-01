@@ -365,10 +365,10 @@ Optionmenu GZDShortcuts
 	StaticText ""
 	Slider "$FO_ENGINE_BOBBING",	"Movebob",	0,0.75,0.02,2
 		StaticText ""
-	Slider "£FO_ENGINE_PARTICULES",		"r_maxparticles",	100,30000,100,0
-		textfield "£FO_ENGINE_INPUT","r_maxparticles"
+	Slider "$FO_ENGINE_PARTICULES",		"r_maxparticles",	100,30000,100,0
+		textfield "$FO_ENGINE_INPUT","r_maxparticles"
 	StaticText ""
-	Slider "£FO_ENGINE_MAX","cl_maxdecals",0,10000,100,0
+	Slider "$FO_ENGINE_MAX","cl_maxdecals",0,10000,100,0
 		textfield "$FO_ENGINE_DECALS","cl_maxdecals"
 	StaticText ""
 	Option "$FO_ENGINE_FPS",				"vid_fps",			"OnOff"

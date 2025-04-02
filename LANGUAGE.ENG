@@ -24,9 +24,9 @@ FO_OP_FLASH = "\ckToggle Torch";
 //////////////////////////////////////////////////////////////////
 //Health / armor
 
-FO_GOTARMBONUS = "You pick up an \cgarmour bonus\c-.";
-FO_GOTARMOR = "You pick up the \cgarmour\c-.";
-FO_GOTMEGA = "You got the \cgMega Armour\c-!";
+FO_GOTARMBONUS = "You pick up an \cdarmour bonus\c-.";
+FO_GOTARMOR = "You pick up the \cdarmour\c-.";
+FO_GOTMEGA = "You got the \cdMega Armour\c-!";
 
 
 //////////////////////////////////////////////////////////////////

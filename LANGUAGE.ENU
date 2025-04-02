@@ -353,9 +353,9 @@ FO_EMPTYSTRING = "empty slot";
 
 //////////////////////////////////////////////////////////////////
 //Health / armor
-FO_GOTARMBONUS = "You pick up an \cgarmor bonus\c-.";
-FO_GOTARMOR = "You pick up the \cgarmor\c-.";
-FO_GOTMEGA = "You got the Mega \cgArmor\c-!";
+FO_GOTARMBONUS = "You pick up an \cdarmor bonus\c-.";
+FO_GOTARMOR = "You pick up the \cdarmor\c-.";
+FO_GOTMEGA = "You got the \cdMega Armor\c-!";
 
 FO_GOTHTHBONUS = "You pick up a \chhealth bonus\c-.";
 FO_GOTHPOTION = "You pick up up a \chHell Potion\c-.";
@@ -372,7 +372,7 @@ FO_GOTINVIS = "\caPartial Invisibility!";
 FO_GOTSUIT = "\cdRadiation Shield!";
 FO_GOTVISOR = "\cnLight Amplification Goggles!";
 FO_GOTMAP = "\cbComputer Area Map!";
-FO_GOTBERSERK = "\clBerserk!";
+FO_GOTBERSERK = "\crBerserk!";
 
 //////////////////////////////////////////////////////////////////
 //Keys
@@ -408,7 +408,7 @@ FO_GOTROCKBOX = "Picked up a \cpbox of rockets\c-.";
 FO_GOTCELL = "Picked up an \cpenergy cell\c-.";
 FO_GOTCELLBOX = "Picked up an \cpenergy cell pack\c-.";
 FO_GOTSAWGAS = "Picked up a \cpcan of gasoline\c-.";
-FO_GOTSOUL = "\clSoul\c-Collected";
+FO_GOTSOUL = "\cnSoul \c-Collected";
 FO_GOTESSENSE = "\clDemonic Essence\c- collected";
 FO_GOTESSENSE2 = "\clLarge Demonic Essence\c- collected";
 FO_GOTBANDAGES = "Found Some \chbandages\c-.";
@@ -514,11 +514,11 @@ FO_TAG_ROCKET = "\cpRocket Shell";
 FO_TAG_ROCKBOX ="\cpRocket Shell Crate";
 FO_TAG_CELL = "\cpEnergy Cell";
 FO_TAG_CELLBOX = "\cpEnergy Cell Pack";
-FO_TAG_SOUL = "\clÂme";
-FO_TAG_ESSENSE = "\clDemonic Essence";
-FO_TAG_ESSENSE2 = "\clLarge Demonic Essence";
-FO_TAG_BANDAGES = "\chBandages";
-FO_TAG_SYRINGE = "\cgBerserk Syringe";
+FO_TAG_SOUL = "\cnSoul";
+FO_TAG_ESSENSE = "\crDemonic Essence";
+FO_TAG_ESSENSE2 = "\crLarge Demonic Essence";
+FO_TAG_BANDAGES = "\crBandages";
+FO_TAG_SYRINGE = "\crBerserk Syringe";
 
 FO_TAG_SAWGAS = "\cpGasoline Can";
 
@@ -544,7 +544,7 @@ FO_TAG_INVIS = "\caPartial Invisibility Sphere";
 FO_TAG_SUIT = "\cdRadiation Sheild";
 FO_TAG_VISOR = "\cnNight Vision Goggles";
 FO_TAG_MAP = "\cbComputer Area Map";
-FO_TAG_BERSERK = "\clBerserk Pack";
+FO_TAG_BERSERK = "\crBerserk Pack";
 
 //////////////////////////////////////////////////////////////////
 // Demon keys tags
@@ -625,7 +625,7 @@ FO_TAG_CACO_NIGHTMARE = "Nightmare Cacodemon";
 FO_TAG_ELEMENTAL = "Pain Elemental";
 FO_TAG_ELEMENTAL_NIGHTMARE = "Agony Elemental";
 FO_TAG_PEST = "Pestilence";
-FO_TAG_SOUL = "Lost Soul";
+FO_TAG_LOSTSOUL = "Lost Soul";
 FO_TAG_STALKER = "Stalker";
 FO_TAG_TRITE = "Trite";
 FO_TAG_FORGOTTEN = "Forgotten One";

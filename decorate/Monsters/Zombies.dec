@@ -2208,8 +2208,8 @@ Health 80
 Speed 12
 DamageFactor "Head",2.25
 AttackSound "RIFLE"
-Tag "Marine Zombie"
-Obituary "%o was gunned down by a zombie marine."
+Tag "$FO_TAG_ZOMBIEMARINE"
+Obituary "$FO_OB_ZOMBIEMARINE"
 DropItem "RifleDrop"
 DropItem "SOULSPAWNER"
 	States

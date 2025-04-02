@@ -144,7 +144,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64ZombiemarineCast"
-		CastName = "Marine Zombie"
+		CastName = "$FO_TAG_ZOMBIEMARINE"
 		AttackSound = "Missile",1,"PISTOLF2"
 		AttackSound = "Missile",2,"PISTOLF2"
 		AttackSound = "Missile",3,"PISTOLF2"

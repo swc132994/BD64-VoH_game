@@ -81,22 +81,21 @@ FO_BLOOD_LOW = "Maximum";
 // HUD
 
 HUD_ARMOR = "Armor";
-
 HUD_HEALTH = "Health";
-
-
 
 //////////////////////////////////////////////////////////////////
 //Tags for gamemodes 
 
 //////////////////////////////////////////////////////////////////
 //Tags for Classes
+
 FO_TAG_CLASS_CLASSIC = "Classic";
 FO_TAG_MODERN = "Modern";
 FO_TAG_CLASS_TACTICAL = "Tactical";
 
 //////////////////////////////////////////////////////////////////
 //Tags for Dificulties
+
 FO_TAG_BABY = "Be Gentle!";
 FO_TAG_BABY_TXT = "Equivalent to 'I'm too young to die' (ammo factor x2)";
 FO_TAG_EASY = "Bring it on!";
@@ -126,6 +125,7 @@ FO_OP_FLASH = "\ckFlashlightswitch";
 
 //////////////////////////////////////////////////////////////////
 //menus
+
 FO_MNU_NEWGAME = "NEW GAME";
 FO_MNU_LOAD = "LOAD GAME";
 FO_MNU_SAVE = "SAVE GAME";
@@ -242,7 +242,7 @@ FO_SPAWN_SOUL = "Lost Soul Spawner =";
 FO_SPAWN_SOUL_TXT1 = "Lost Soul Random Percent =";
 FO_SPAWN_SOUL_TXT2 = "(Pain/Agony Elemental can summon them depending on values)";
 FO_SPAWN_KNIGHT = "HellKnight Spawner =";
-FO_SPAWN_KNIGHT = "HellKnight Random Percent =";
+FO_SPAWN_KNIGHT_TXT = "HellKnight Random Percent =";
 FO_SPAWN_UNDEAD = "Revenant Spawner =";
 FO_SPAWN_UNDEAD_TXT = "Revenant Random Percent =";
 FO_SPAWN_BARON = "Baron Spawner =";
@@ -291,7 +291,7 @@ FO_PROP_GHOST_TXT2 = "(poltergeists are hostile map props that can attack the pl
 
 FO_PERFORMANCE_MISK = "Performance & Miscellaneous Options";
 FO_PERFORMANCE_MISK_TXT = "Enable this option ONLY if hosting a server on a multiplayer game.";
-FO_PERFORMANCE_MISK_TXT = "(enabling this option will generate an error message if using GZDoom)";
+FO_PERFORMANCE_MISK_TXT2 = "(enabling this option will generate an error message if using GZDoom)";
 FO_PERFORMANCE_ZAN_MULTI = "Enable Zandronum Specific Multiplayer Scripts =";
 FO_PERFORMANCE_ZAN_TACTICAL = "Enable QZandronum Specific Tactical Class Script =";
 
@@ -353,6 +353,7 @@ FO_EMPTYSTRING = "empty slot";
 
 //////////////////////////////////////////////////////////////////
 //Health / armor
+
 FO_GOTARMBONUS = "You pick up an \cdarmor bonus\c-.";
 FO_GOTARMOR = "You pick up the \cdarmor\c-.";
 FO_GOTMEGA = "You got the \cdMega Armor\c-!";
@@ -365,6 +366,7 @@ FO_GOTMEDIKIT = "You pick up a \chmedikit\c-.";
 
 //////////////////////////////////////////////////////////////////
 //powerups
+
 FO_GOTINVUL = "\cqInvulnerability!";
 FO_GOTSUPER = "\chSupercharge!";
 FO_GOTMSPHERE = "\csMega Sphere!";
@@ -376,6 +378,7 @@ FO_GOTBERSERK = "\crBerserk!";
 
 //////////////////////////////////////////////////////////////////
 //Keys
+
 FO_GOTBLUECARD = "You pick up a \chblue keycard\c-.";
 FO_GOTYELWCARD = "You pick up a \cfyellow keycard\c-.";
 FO_GOTREDCARD = "You pick up a \crred keycard\c-.";
@@ -394,6 +397,7 @@ FO_GOTDEMON_RED = "\cgWhat is this used for?";
 
 //////////////////////////////////////////////////////////////////
 //ammo
+
 FO_GOTBACKPACK = "You got the \cpbackpack\c-!";
 FO_GOTBACKPACK2 = "Picked up a \cpbackpack\c- full of ammo with pistol silencer!";
 FO_GOTBACKPACK3 = "Picked up a \cpbackpack\c- full of ammo with flashlight!";
@@ -412,13 +416,14 @@ FO_GOTSOUL = "\cnSoul \c-Collected";
 FO_GOTESSENSE = "\clDemonic Essence\c- collected";
 FO_GOTESSENSE2 = "\clLarge Demonic Essence\c- collected";
 FO_GOTBANDAGES = "Found Some \chbandages\c-.";
-FO_GOTSYRINGE = "Found a \clBERSERK syringe\c-.";
-FO_SCAVENGE1 = "You scavenge 25 bandages from this Medikit.";
-FO_SCAVENGE2 = "You scavenge 25 bandages from this Medikit.";
-FO_SCAVENGE3 = "You scavenge a Berserk syringe from this Berserk Kit.";
+FO_GOTSYRINGE = "Found a \crBerserk syringe\c-.";
+FO_SCAVENGE1 = "You scavenge \ch10 bandages\c- from this Medikit.";
+FO_SCAVENGE2 = "You scavenge \ch25 bandages\c- from this Medikit.";
+FO_SCAVENGE3 = "You scavenge a \crBerserk syringe\c- from this Berserk pack.";
 
 //////////////////////////////////////////////////////////////////
 //doors
+
 /*
 	PD_BLUEO = "You need a blue key.";
 	PD_REDO = "You need a red key.";
@@ -445,8 +450,10 @@ FO_SCAVENGE3 = "You scavenge a Berserk syringe from this Berserk Kit.";
 
 //////////////////////////////////////////////////////////////////
 //weapon pickups
+
+//Slot 1
 BD64_GOTCHAINSAW = "A \cmChainsaw\c-! Find some meat! (Slot 1)"; //(Freedoom Override)
-//Slot 3
+//Slot 2
 BD64_GOTPISTOL = "You got the \cmPistol\c-! (Slot 2)";
 BD64_GOTSMG = "You got the \cmSMG\c-! (Slot 2)";
 BD64_GOTMP40 = "You got the \cmMP40\c-! (Slot 2)";
@@ -471,6 +478,7 @@ BD64_GOTLASER = "You got the \cmLaser Rifle\c-! (Slot 9)";
 
 //////////////////////////////////////////////////////////////////
 // weapon tags
+
 FO_TAG_DEFAULT = "\cmUnnamed Weapon";
 //1
 FO_TAG_FIST = "\cmFists";
@@ -517,6 +525,7 @@ FO_TAG_CELLBOX = "\cpEnergy Cell Pack";
 FO_TAG_SOUL = "\cnSoul";
 FO_TAG_ESSENSE = "\crDemonic Essence";
 FO_TAG_ESSENSE2 = "\crLarge Demonic Essence";
+
 FO_TAG_BANDAGES = "\crBandages";
 FO_TAG_SYRINGE = "\crBerserk Syringe";
 
@@ -567,6 +576,7 @@ FO_TAG_GOTREDSKUL = "\crRed Skullkey\c-";
 
 //////////////////////////////////////////////////////////////////
 //Obituaries for weapons
+
 FO_OB_MPFIST = "%o chewed on \cg%k\c-'s \cmfist\c-.";
 FO_OB_MPCHAINSAW = "%o was mowed over by \cg%k\c-'s \cmchainsaw\c-.";
 FO_OB_MPPISTOL = "%o was tickled by \cg%k\c-'s \cmpeashooter\c-.";
@@ -591,6 +601,7 @@ FO_OB_MPUNMAKER = "%o was unmade by \cg%k\c-.";
 
 //////////////////////////////////////////////////////////////////
 //Tags for demons
+
 FO_TAG_ZOMBIEMAN = "Former Human";
 FO_TAG_PISTOLMAN = "Pistol Zombie";
 FO_TAG_SHOTGUNGUY = "Former Sargeant";
@@ -647,6 +658,7 @@ FO_TAG_THING = "Thing";
 
 //////////////////////////////////////////////////////////////////
 //Obituaries for monsters
+
 FO_OB_STEALTHBABY = "%o thought %g saw an \crarachnotron\c-.";
 FO_OB_STEALTHVILE = "%o thought %g saw an \crarchvile\c-.";
 FO_OB_STEALTHBARON = "%o thought %g saw a \crbaron of hell\c-.";
@@ -729,11 +741,13 @@ FO_OB_EVILEYE = "%o stared into an \crevil Eye\c- for too long...";
 
 //////////////////////////////////////////////////////////////////
 //Item Tags
+
 FO_TAG_EXPLOSIVEBARREL = "Explosive Barrel";
 FO_TAG_THROWNBARREL = "Particulary volatile Barrel!"; //To potentially be used for thrown barrels
 
 //////////////////////////////////////////////////////////////////
 //locks for final BD64 map
+
 FO_LOCK_ORANGE = "\ciYou lack the ability to activate it...";
 FO_LOCK_PURPLE = "\ctYou lack the ability to activate it...";
 FO_LOCK_BLUE = "\cvYou lack the ability to activate it...";

@@ -179,7 +179,7 @@ OptionMenu "BrutalDoom64Item/WeaponOptions"
 	Option "$FO_64MNU_SKIN_LASER","AlternativeLaserSkinCvar","YesOrNo"
 	Option "$FO_64MNU_SKIN_ITEM","AlternativeAmmoPickupSpritesCvar","AlternativeAmmoPickupSpritesValue"
 	Option "$FO_64MNU_SKIN_HEALTH","CensoredHealing_Cvar","CensoredHealing_Value"
-	Option "$FO_64MNU_SKIN_ALPHA ","AlphaPickupCvar","YesOrNo"
+	Option "$FO_64MNU_SKIN_ALPHA","AlphaPickupCvar","YesOrNo"
 		StaticText "$FO_64MNU_SKIN_ALPHA_TXT",1
 		StaticText ""
 		StaticText "$FO_64MNU_OTHER",1
@@ -227,7 +227,7 @@ OptionMenu "BrutalDoom64OptionsMonsterSpawner"
 	Option "Arachnotron Random Percent =","bd64_SpawnPercentArachnotron","SpawnPercentValue"		
 		StaticText ""
 	Option "$FO_SPAWN_KNIGHT","KnightmareRandomCvar","Knightmare_Spawner_Value"
-	Option "$FO_SPAWN_KNIGHT","bd64_SpawnPercentHellKnight","SpawnPercentValue"		
+	Option "$FO_SPAWN_KNIGHT_TXT","bd64_SpawnPercentHellKnight","SpawnPercentValue"		
 		StaticText ""
 	Option "$FO_SPAWN_UNDEAD","Revenant_Spawner_Cvar","Revenant_Spawner_Value"
 	Option "$FO_SPAWN_UNDEAD_TXT","bd64_SpawnPercentRevenant","SpawnPercentValue"	
@@ -301,7 +301,7 @@ OptionMenu "BrutalDoom64OptionsPerformance"
 	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 		StaticText ""
 		StaticText "$FO_PERFORMANCE_MISK_TXT",1
-		StaticText "$FO_PERFORMANCE_MISK_TXT",1
+		StaticText "$FO_PERFORMANCE_MISK_TXT2",1
 		StaticText ""
 	Option "$FO_PERFORMANCE_ZAN_MULTI","isrunningzandronum","OnOff"
 	Option "$FO_PERFORMANCE_ZAN_TACTICAL","IsRunningQZan","OnOff"

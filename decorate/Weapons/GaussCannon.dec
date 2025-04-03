@@ -2,7 +2,7 @@ Actor GaussCannonSpawner : CustomInventory	19134	//spawned from randomspawners
 {
 //$category "Game/BD64_Weapons"
 Scale 0.9
-Tag "Gauss Cannon"
+Tag "$FO_TAG_GAUSS"
 Inventory.PickupMessage "$BD64_GOTGAUSS"
 Obituary "$FO_OB_GAUSS"
 Inventory.PickupSound "WPICK"

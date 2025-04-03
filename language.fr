@@ -95,12 +95,14 @@ HUD_NOTENOUGH = "Munitions insufisantes !";
 
 //////////////////////////////////////////////////////////////////
 //Tags for Classes
+
 FO_TAG_CLASS_CLASSIC = "Classique";
 FO_TAG_MODERN = "Moderne";
 FO_TAG_CLASS_TACTICAL = "Tactique";
 
 //////////////////////////////////////////////////////////////////
 //Tags for Dificulties
+
 FO_TAG_BABY = "Sois doux !";
 FO_TAG_BABY_TXT = "Équivalent de 'Trop jeune pour mourir' (facteur de munitions x2)";
 FO_TAG_EASY = "Rammenez-vous !";
@@ -130,6 +132,7 @@ FO_OP_FLASH = "\ckInterrupteur de lampe de poche";
 
 //////////////////////////////////////////////////////////////////
 //menus
+
 FO_MNU_NEWGAME = "NOUVELLE PARTIE";
 FO_MNU_LOAD = "CHARGER";
 FO_MNU_SAVE = "SAUVEGARDER";
@@ -357,6 +360,7 @@ FO_EMPTYSTRING = "emplacement vide";
 
 //////////////////////////////////////////////////////////////////
 //Health / armor
+
 FO_GOTARMBONUS = "\cdBonus d'armure\c- récupéré.";
 FO_GOTARMOR = "\cdArmure\c- récupérée.";
 FO_GOTMEGA = "\cdMéga-Armure\c- récupérée.";
@@ -369,6 +373,7 @@ FO_GOTMEDIKIT = "\crKit de soins\c- récupéré.";
 
 //////////////////////////////////////////////////////////////////
 //powerups
+
 FO_GOTINVUL = "\cqInvulnérabilitée !";
 FO_GOTSUPER = "\chSphère d'Âme !";
 FO_GOTMSPHERE = "\csMéga-sphère !";
@@ -376,10 +381,11 @@ FO_GOTINVIS = "\caInvisibilité partielle !";
 FO_GOTSUIT = "\cdBouclier anti-radiations !";
 FO_GOTVISOR = "\cnLunettes de vision nocturne !";
 FO_GOTMAP = "\cbCarte éléctronique !";
-FO_GOTBERSERK = "\clBerserk !";
+FO_GOTBERSERK = "\crBerserk !";
 
 //////////////////////////////////////////////////////////////////
 //Keys
+
 FO_GOTBLUECARD = "\chCarte-clé magnétique bleue\c- récupérée.";
 FO_GOTYELWCARD = "\cfCarte-clé magnétique jaune\c- récupérée.";
 FO_GOTREDCARD = "\crCarte-clé magnétique rouge\c- récupérée.";
@@ -398,6 +404,7 @@ FO_GOTDEMON_RED = "\cgÀ quoi cela sert-il ?";
 
 //////////////////////////////////////////////////////////////////
 //ammo
+
 FO_GOTBACKPACK = "\cpSac à dos\c- récupéré !";
 FO_GOTBACKPACK2 = "\cpSac à dos\c- rempli de munitions avec un silencieux pour pistolet récupéré !";
 FO_GOTBACKPACK3 = "\cpSac à dos\c- rempli de munitions avec lampe torche récupéré !";
@@ -415,13 +422,14 @@ FO_GOTSOUL = "\cnÂme\c- récupérée";
 FO_GOTESSENSE = "\clEssense démoniaque\c- récupérée";
 FO_GOTESSENSE2 = "\clLarge essense démoniaque\c- récupérée";
 FO_GOTBANDAGES = "\chBandages\c- récupérés.";
-FO_GOTSYRINGE = "\clSeringue BERSERK\c récupérée.";
-FO_SCAVENGE1 = "Vous récupérez 25 bandages dans ce Medikit.";
-FO_SCAVENGE2 = "Vous récupérez 25 bandages dans ce Medikit.";
-FO_SCAVENGE3 = "Vous récupérez une seringue Berserk dans ce kit Berserk.";
+FO_GOTSYRINGE = "\crSeringue BERSERK\c récupérée.";
+FO_SCAVENGE1 = "Vous récupérez \ch10 bandages\c- dans ce Medikit.";
+FO_SCAVENGE2 = "Vous récupérez \ch25 bandages\c- dans ce Medikit.";
+FO_SCAVENGE3 = "Vous récupérez une \crseringue Berserk\c- dans ce pack Berserk.";
 
 //////////////////////////////////////////////////////////////////
 //doors
+
 /*
 	PD_BLUEO = "You need a blue key.";
 	PD_REDO = "You need a red key.";
@@ -448,8 +456,10 @@ FO_SCAVENGE3 = "Vous récupérez une seringue Berserk dans ce kit Berserk.";
 
 //////////////////////////////////////////////////////////////////
 //weapon pickups
+
+//Slot 1
 BD64_GOTCHAINSAW = "Vous avez mis la main sur la \cmTronconneuse\c- ! (Touche 1)"; //(Freedoom Override)
-//Slot 3
+//Slot 2
 BD64_GOTPISTOL = "Vous avez mis la main sur un \cmPistolet\c- ! (Touche 2)";
 BD64_GOTSMG = "Vous avez mis la main sur le \cmPistolet-Mitrailleur\c- ! (Touche 2)";
 BD64_GOTMP40 = "Vous avez mis la main sur le \cmMP40\c- ! (Touche 2)";
@@ -474,6 +484,7 @@ BD64_GOTLASER = "Vous avez mis la main sur le \cmRayon laser !\c-  (Touche 9)";
 
 //////////////////////////////////////////////////////////////////
 // weapon tags
+
 //1
 FO_TAG_FIST = "\cmPoings";
 FO_TAG_CHAINSAW = "\cmTronconneuse";
@@ -519,8 +530,10 @@ FO_TAG_CELLBOX = "\cpPack d'énergie";
 FO_TAG_SOUL = "\cnÂme";
 FO_TAG_ESSENSE = "\clEssence démoniaque";
 FO_TAG_ESSENSE2 = "\clLarge essense démoniaque";
-FO_TAG_BANDAGES = "\chBandages";
-FO_TAG_SYRINGE = "\cgSeringue BERSERK";
+
+FO_TAG_BANDAGES = "\crBandages";
+FO_TAG_SYRINGE = "\crSeringue Berserk";
+
 FO_TAG_SAWGAS = "\cpBidon d'essence";
 
 //////////////////////////////////////////////////////////////////
@@ -568,6 +581,7 @@ FO_TAG_GOTREDSKUL = "\crClé crâne rouge";
 
 //////////////////////////////////////////////////////////////////
 //obituaries for weapons
+
 FO_OB_MPFIST = "%o à mangé(e) le \cmpoing\c- de \cg%k\c-.";
 FO_OB_MPCHAINSAW = "%o s'est fait(e) passé(e) dessus par la \cmtronconneuse\c- de \cg%k\c-.";
 FO_OB_MPPISTOL = "%o s'est fait(e) chatouillé(e) les côtes par la \cmpétoire\c- de \cg%k\c-.";
@@ -592,6 +606,7 @@ FO_OB_MPUNMAKER = "%o à supprimé \cg%k\c-.";
 
 //////////////////////////////////////////////////////////////////
 //Tags for demons
+
 FO_TAG_ZOMBIEMAN = "Zombie";
 FO_TAG_PISTOLMAN = "Zombie pistolet";
 FO_TAG_SHOTGUNGUY = "Zombie sergeant";
@@ -646,6 +661,7 @@ FO_TAG_THING = "La chose";
 
 //////////////////////////////////////////////////////////////////
 //obituaries for Demons
+
 FO_OB_STEALTHBABY = "%o à cru(e) avoir aperçu un \crArachnotron\c-.";
 FO_OB_STEALTHVILE = "%o à cru(e) avoir aperçu un \crArchvile\c-.";
 FO_OB_STEALTHBARON = "%o à cru(e) avoir aperçuu un \crBaron infernale\c-.";
@@ -726,11 +742,13 @@ FO_OB_EVILEYE = "%o a regardé(e) un \crœil maléfique\c- pendant trop longtemp
 
 //////////////////////////////////////////////////////////////////
 //Item Tags
+
 FO_TAG_EXPLOSIVEBARREL = "Barril éxplosif";
 FO_TAG_TROWEDBARREL = "Un barril particulièrement volatile!";
 
 //////////////////////////////////////////////////////////////////
 //locks for final BD64 map
+
 FO_LOCK_ORANGE = "\ciVous n'avez pas la possibilité de l'activer...";
 FO_LOCK_PURPLE = "\ctVous n'avez pas la possibilité de l'activer...";
 FO_LOCK_BLUE = "\cvVous n'avez pas la possibilité de l'activer...";

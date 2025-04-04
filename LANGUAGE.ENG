@@ -33,7 +33,7 @@ FO_GOTMEGA = "You got the \cdMega Armour\c-!";
 //////////////////////////////////////////////////////////////////
 //ammo
 
-FO_GOTROCKBOX2 = "Picked up a \cphigh calibre bullet box\c-.";
+FO_GOTCLIPBOX2 = "Picked up a \cphigh calibre bullet box\c-.";
 
 FO_GOTSAWGAS = "Picked up a \cpcan of fuel!\c-.";
 

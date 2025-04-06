@@ -118,7 +118,7 @@ OptionMenu "BD64Menu"
 
 OptionMenu "BrutalDoom64OptionsItem/WeaponSpawner"
 {
-	Title "$FO_64MNU_ITEMS_WEAPONS_SPAWN "
+	Title "$FO_64MNU_ITEMS_WEAPONS_SPAWN"
 	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
 	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
 	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
@@ -153,38 +153,38 @@ OptionMenu "BrutalDoom64Item/WeaponOptions"
 	StaticText " "
 	StaticText "$FO_64MNU_WEAPON_FUNCTION",1
 		StaticText ""
-	Option "$FO_64MNU_CLASSIC_SHOTGUN","VWeaponCvar","YesOrNo"
+	Option "$FO_64MNU_CLASSIC_SHOTGUN","VWeaponCvar","YesNo"
 		StaticText "$FO_64MNU_CLASSIC_SHOTGUN_TXT",1
 		StaticText ""
-	Option "$FO_64MNU_WARMUP","WeaponsWarmUpCvar","YesOrNo"
+	Option "$FO_64MNU_WARMUP","WeaponsWarmUpCvar","YesNo"
 		StaticText "$FO_64MNU_WARMUP_TXT",1
 		StaticText ""
-	Option "$FO_64MNU_CLASSIC_CHAINSAW","VanillaChainsawCvar","YesOrNo"
-	Option "$FO_64MNU_CLASSIC_CHAINGUN","ClassicChaingunCvar","YesOrNo"
-	Option "$FO_64MNU_CLASSIC_ROCKET","ClassicRLCvar","YesOrNo"
+	Option "$FO_64MNU_CLASSIC_CHAINSAW","VanillaChainsawCvar","YesNo"
+	Option "$FO_64MNU_CLASSIC_CHAINGUN","ClassicChaingunCvar","YesNo"
+	Option "$FO_64MNU_CLASSIC_ROCKET","ClassicRLCvar","YesNo"
 		StaticText "$FO_64MNU_CLASSIC_SWITCH",1
 		StaticText ""
-	Option "$FO_64MNU_SKIP_RELOAD","NoReloadCvar","YesOrNo"
+	Option "$FO_64MNU_SKIP_RELOAD","NoReloadCvar","YesNo"
 		StaticText "$FO_64MNU_SKIP_RELOAD_TXT",1
 		StaticText ""
-	Option "$FO_64MNU_LOWAMMO","LowAmmoSFX","YesOrNo"
+	Option "$FO_64MNU_LOWAMMO","LowAmmoSFX","YesNo"
 		StaticText "$FO_64MNU_LOWAMMO_TXT1",1
 		StaticText "$FO_64MNU_LOWAMMO_TXT2",1
 		StaticText ""
-	Option "$FO_64MNU_SWITCH_FIST","BerserkSwitchFistsCvar","YesOrNo"
+	Option "$FO_64MNU_SWITCH_FIST","BerserkSwitchFistsCvar","YesNo"
 		StaticText "$FO_64MNU_SWITCH_FIST_TXT",1
 		StaticText ""
 		StaticText "$FO_64MNU_SKINS",1
 		StaticText " "
-	Option "$FO_64MNU_SKIN_LASER","AlternativeLaserSkinCvar","YesOrNo"
+	Option "$FO_64MNU_SKIN_LASER","AlternativeLaserSkinCvar","YesNo"
 	Option "$FO_64MNU_SKIN_ITEM","AlternativeAmmoPickupSpritesCvar","AlternativeAmmoPickupSpritesValue"
 	Option "$FO_64MNU_SKIN_HEALTH","CensoredHealing_Cvar","CensoredHealing_Value"
-	Option "$FO_64MNU_SKIN_ALPHA","AlphaPickupCvar","YesOrNo"
+	Option "$FO_64MNU_SKIN_ALPHA","AlphaPickupCvar","YesNo"
 		StaticText "$FO_64MNU_SKIN_ALPHA_TXT",1
 		StaticText ""
 		StaticText "$FO_64MNU_OTHER",1
 		StaticText " "
-	Option "$FO_64MNU_FLASHLIGHT","FlashlightStartCvar","YesOrNo"
+	Option "$FO_64MNU_FLASHLIGHT","FlashlightStartCvar","YesNo"
 }
 
 OptionMenu "BrutalDoom64OptionsMonsterSpawner"
@@ -285,10 +285,10 @@ OptionMenu "BrutalDoom64OptionsOtherMonster"
 		StaticText ""
 		StaticText "$FO_MAP_PROP",1
 		StaticText ""
-	Option "$FO_PROP_INFECTED","ThingRandomCvar","YesOrNo"
+	Option "$FO_PROP_INFECTED","ThingRandomCvar","YesNo"
 		StaticText "$FO_PROP_INFECTED_TXT",1
 		StaticText ""
-	Option "$FO_PROP_GHOST","PoltergeistCvar","YesOrNo"
+	Option "$FO_PROP_GHOST","PoltergeistCvar","YesNo"
 		StaticText "$FO_PROP_GHOST_TXT1",1
 		StaticText "$FO_PROP_GHOST_TXT2",1
 }
@@ -310,11 +310,11 @@ OptionMenu "BrutalDoom64OptionsPerformance"
 		StaticText ""
 	Option "$FO_OPTION_PERFORMANCE_SERVER","zdoombrutalblood","BrutalBlood"
 	Option "$FO_OPTION_PERFORMANCE_CLIENT","bd_bloodamount","BrutalBlood"
-	Option "$FO_OPTION_PERFORMANCE_FLATS","zdoombrutaljanitor","YesOrNo"
-	Option "$FO_OPTION_PERFORMANCE_DECALS","FloorDecal_Cvar","YesOrNo"
+	Option "$FO_OPTION_PERFORMANCE_FLATS","zdoombrutaljanitor","YesNo"
+	Option "$FO_OPTION_PERFORMANCE_DECALS","FloorDecal_Cvar","YesNo"
 	Option "$FO_OPTION_PERFORMANCE_FOG","LFog_Cvar","LFog_Value"
-	Option "$FO_OPTION_PERFORMANCE_TORCH","ClassicTorchCvar","YesOrNo"
-	Option "$FO_OPTION_PERFORMANCE_SPLASH","LiquidSplashCvar","YesOrNo"
+	Option "$FO_OPTION_PERFORMANCE_TORCH","ClassicTorchCvar","YesNo"
+	Option "$FO_OPTION_PERFORMANCE_SPLASH","LiquidSplashCvar","YesNo"
 		StaticText ""
 		StaticText "$FO_OPTION_HUD",1
 		StaticText ""
@@ -323,31 +323,31 @@ OptionMenu "BrutalDoom64OptionsPerformance"
 	Option "$FO_OPTION_HUD_SCREEN", "bd64_ScreenFX", "ScreenTypes"
 		StaticText "$FO_OPTION_HUD_BLOOD"
 		StaticText ""
-	Option "$FO_OPTION_HUD_TRAILS", "bd64_BloodTrail", "YesOrNoFalse"
+	Option "$FO_OPTION_HUD_TRAILS", "bd64_BloodTrail","NoYes"
 		StaticText "$FO_OPTION_HUD_SPLASH"
 		StaticText "$FO_OPTION_HUD_SPLASH_TXT1"
 		StaticText "$FO_OPTION_HUD_SPLASH_TXT2"
 		StaticText ""
 		StaticText "$FO_OPTION_SOUND",1
 		StaticText ""
-	Option "$FO_OPTION_SOUND_FOOTS","FootStepCheckCvar","YesOrNoFalse"
+	Option "$FO_OPTION_SOUND_FOOTS","FootStepCheckCvar","NoYes"
 }
 
 OptionMenu "BD64MapOptions"
 {
 	Title "$FO_OPTION_MAP_OP"
-	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT1",1
 	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
 	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 		StaticText ""
 		StaticText "$FO_OPTION_MAP_OP_TXT",1
 		StaticText ""
-	Option "$FO_OPTION_MAP_EASY","VMapCheckCvar","YesOrNo"
-	Option "$FO_OPTION_MAP_TC","TCMapCheckCvar","YesOrNo"
+	Option "$FO_OPTION_MAP_EASY","VMapCheckCvar","YesNo"
+	Option "$FO_OPTION_MAP_TC","TCMapCheckCvar","YesNo"
 		StaticText ""
 		StaticText "$FO_OPTION_MAP_TITLE",1
 		StaticText ""
-	Option "$FO_OPTION_MAP_TITLE_TXT","BD64_SkipTitleMap","YesOrNoFalse"
+	Option "$FO_OPTION_MAP_TITLE_TXT","BD64_SkipTitleMap","NoYes"
 }
 
 Optionmenu GZDShortcuts
@@ -378,6 +378,8 @@ Optionmenu GZDShortcuts
 	StaticText ""
 	Option "Lauguage", "language", "BD64LanguageOptions"	
 	StaticText ""
+	StaticText "$FO_ENGINE_LANGUAGE_TXT",1
+	StaticText ""
 	StaticText "$FO_ENGINE_GIBS",1
 	StaticText "$FO_ENGINE_GIBS_TXT1"
 	StaticText "$FO_ENGINE_GIBS_TXT2"
@@ -391,17 +393,6 @@ Optionmenu GZDShortcuts
 //OPTION VALUES	- Language strings not supported by Zandronum
 
 //Misc values
-OptionValue "YesOrNo"
-{
-	0,"No"
-	1,"Yes"
-}
-
-OptionValue "YesOrNoFalse"
-{
-	1,"No"
-	0,"Yes"
-}
 
 OptionString "VisualPreset"
 {
@@ -726,5 +717,5 @@ OptionString "BD64LanguageOptions"
 	"eng", "English-GB (United Kingdom)"
 	"es", "Espanol (Spanish)"
 	"fr", "Francais (French)"
-	"ru", "Russkiy (Russian)"
+	"ru", "Русский (Russian)"
 }

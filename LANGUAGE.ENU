@@ -340,7 +340,9 @@ FO_ENGINE_MAX = "Max Decals";
 FO_ENGINE_DECALS = "input value manually";
 FO_ENGINE_FPS = "FPS counter";
 FO_ENGINE_DISCORD = "Discord Rich Presence ";
-FO_ENGINE_DISCORD_TXT = "(Doesn't work on Zandronum).";
+FO_ENGINE_DISCORD_TXT = "(Discord rich presence not supported in Zandronum)";
+FO_ENGINE_LANGUAGE_TXT = "(Russian language not supported in Zandronum)";
+
 FO_ENGINE_GIBS = "Giblets queue amount";
 FO_ENGINE_GIBS_TXT1 = "Limits how many gibs will spawn at any time.";
 FO_ENGINE_GIBS_TXT2 = "Increasing this value will only affect the max";

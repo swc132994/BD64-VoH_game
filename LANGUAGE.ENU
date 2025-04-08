@@ -10,8 +10,10 @@ FO_64SYSTEM_APPLY = "Press \"Apply Changes\" for the changes to take effect";
 FO_64SYSTEM_RESTART = "Any changes here requires a level restart in order to work.";
 FO_64SYSTEM_APPLIED = "Apply Changes";
 
-FO_NO = "\cgNo";
-FO_YES = "\cdYes";
+TXT_NO = "\cgNo";
+TXT_YES = "\cdYes";
+OPTVAL_ON = "\cdON";
+OPTVAL_OFF = "\caOFF";
 
 FO_DEFAULT = "Default";
 FO_CLASSICAL = "Classical";
@@ -72,10 +74,10 @@ FO_PLASMA = "\cuPlasma Rifle";
 FO_GAUSS = "\cuGauss Cannon";
 
 FO_BLOOD_LOW = "Low";
-FO_BLOOD_LOW = "Normal";
-FO_BLOOD_LOW = "Lots";
-FO_BLOOD_LOW = "Comical";
-FO_BLOOD_LOW = "Maximum";
+FO_BLOOD_NORMAL = "Normal";
+FO_BLOOD_LOT = "Lots";
+FO_BLOOD_COMIC = "Comical";
+FO_BLOOD_MAX = "Maximum";
 
 //////////////////////////////////////////////////////////////////
 // HUD

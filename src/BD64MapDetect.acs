@@ -1,0 +1,73 @@
+//This file is based off the BDv21b Map Enhancement system.
+//These scripts will check the Doom 1 maps and place Doom 2 monsters approx to PSX Doom 1 placements.
+//
+//CREDITS
+//BROS_ETT_311 (brosett311), Sgt_Mark_IV, Kaminsky, TDRR
+
+Script "BD64MapCheckSetup" ENTER
+{
+	SetPlayerProperty(0,1,PROP_TOTALLYFROZEN);
+	ACS_NamedExecuteWithResult("BD64DetectMap",0,0,0,0);
+	Delay(5);
+	SetPlayerProperty(0,0,PROP_TOTALLYFROZEN);
+}
+
+script "BD64DetectMap" (Void)
+{
+	int x = GetActorX(0) >> 16;// / 65536;
+	int y = GetActorY(0) >> 16;// / 65536;
+	int z = GetActorZ(0) >> 16;// / 65536;
+	int par = GetLevelInfo(LEVELINFO_PAR_TIME);
+	int secrets = GetLevelInfo(LEVELINFO_TOTAL_SECRETS);
+	//E1M1
+		if ( (x == 1056 && y == -3616 || x == 1072 && y == -4296) && par == 30 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M1") == 0 )
+		{
+			delay(1);
+			SpawnForced("ZombieMan",1408.0,-2528.0,0.0,7000,160);
+			SpawnForced("Chaingunguy",2400.0,-2560.0,0.0,7000,128);
+			SpawnForced("PainElemental",3616.0,-3488.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E1M2
+		if ( x == -32 && y == -240 && par == 75 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M2") == 0 )
+		{
+			delay(1);
+//			SpawnForced("EvidenceCheckerLightpost",32,-480,0,118,0.0);
+		}
+	//E1M3
+		if ( (x == -1472 && y == -3344 || x == -1504 && y == -4128) && par == 120 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M3") == 0 )
+		{
+			delay(1);
+//			SpawnForced("EvidenceCheckerBlueKey",-160.0,-864.0,0.0,19,0.0);
+		}
+	//E1M5
+		if ( (x == -224 && y == -624 || x == -224 && y == -1888) && par == 165 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M5") == 0 )
+		{
+			delay(1);
+//			SpawnForced("EvidenceCheckerBlueKey",192.0,1040.0,0.0,4,0.0);
+		}
+	//E1M6
+		if ( (x == 32 && y == -1376 || x == 96 && y == -2144) && par == 180 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M6") == 0 )
+		{
+			delay(1);
+//			SpawnForced("EvidenceCheckerBlueKey",-1536.0,-1728.0,0.0,5,0.0);
+		}
+	//E1M8
+		if ( (x == -128 && y == -224 || x == -164 && y == -224) && secrets == 1 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M8") == 0 )
+		{
+			delay(1);
+//			SpawnForced("EvidenceCheckerInvisibility",-480.0,3344.0,0.0,70,0.0);
+		}
+	//E2M8
+		if ( x == -96 && y == -736 && secrets == 0 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M8") == 0 )
+		{
+			delay(1);
+//			SpawnForced("EvidenceCheckerInvisibility",-480.0,3344.0,0.0,70,0.0);
+		}
+	//E3M8
+		if ( x == 176 && y == -1488 && secrets == 0 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E3M8") == 0 )
+		{
+			delay(1);
+//			SpawnForced("EvidenceCheckerInvisibility",-480.0,3344.0,0.0,70,0.0);
+		}
+}

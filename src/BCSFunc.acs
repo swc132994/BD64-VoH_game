@@ -110,8 +110,8 @@ function void ACSUtils_ErrorHandler(int type, str message)
 
 	printbold(s:text);
 }
-enum : int { INT_MAX = 0x7fffffff };
-enum : int { INT_MIN = 0x80000000 };
+//enum : int { INT_MAX = 0x7fffffff };
+//enum : int { INT_MIN = 0x80000000 };
 enum : fixed { FIXED_MAX = (fixed)(0x7fffffff) };
 enum : fixed { FIXED_MIN = (fixed)(0x80000000) };
 enum : int { USHORT_MAX = 65535 };

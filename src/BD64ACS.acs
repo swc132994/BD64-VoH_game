@@ -7,6 +7,7 @@
 #include "BD64Inputs.acs"
 #include "BD64Spawners.acs"
 #include "BD64Preset.acs"
+#include "BD64MapDetect.acs"
 
 script "BD64Respawn" Respawn NET
 {

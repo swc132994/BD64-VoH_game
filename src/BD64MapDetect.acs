@@ -25,7 +25,7 @@ script "BD64DetectMap" (Void)
 			delay(1);
 			SpawnForced("ZombieMan",1408.0,-2528.0,0.0,7000,160);
 			SpawnForced("Chaingunguy",2400.0,-2560.0,0.0,7000,128);
-			SpawnForced("PainElemental",3616.0,-3488.0,0.0,7000,192);
+			SpawnForced("PainElemental",3616.0,-3488.0,104.0,7000,192);
 			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
 	//E1M2
@@ -51,27 +51,52 @@ script "BD64DetectMap" (Void)
 		if ( (x == 2032 && y == 1120) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M4") == 0 )
 		{
 			delay(1);
-			SpawnForced("PainElemental",-1312.0,592.0,0.0,7000,192);
-			SpawnForced("PainElemental",-1424.0,-464.0,0.0,7000,192);
+			SpawnForced("PainElemental",-1312.0,592.0,104.0,7000,192);
+			SpawnForced("PainElemental",-1424.0,-400.0,128.0,7000,192);
 			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
 	//E1M5
 		if ( (x == -224 && y == -624 || x == -224 && y == -1888) && par == 165 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M5") == 0 )
 		{
 			delay(1);
-//			SpawnForced("EvidenceCheckerBlueKey",192.0,1040.0,0.0,4,0.0);
+			SpawnForced("Chaingunguy",192.0,512.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",736.0,-32.0,0.0,7000,0);
+			SpawnForced("Chaingunguy",-800.0,1760.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",-704.0,1888.0,0.0,7000,0);
+			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
 	//E1M6
 		if ( (x == 32 && y == -1376 || x == 96 && y == -2144) && par == 180 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M6") == 0 )
 		{
 			delay(1);
-//			SpawnForced("EvidenceCheckerBlueKey",-1536.0,-1728.0,0.0,5,0.0);
+			SpawnForced("Chaingunguy",-288.0,-768.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",384.0,-896.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",544.0,1408.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",640.0,1376.0,0.0,7000,192);
+			SpawnForced("Chaingunguy",2496.0,-736.0,0.0,7000,64);
+			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
-	//E1M8
-		if ( (x == -128 && y == -224 || x == -164 && y == -224) && secrets == 1 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M8") == 0 )
+	//E1M7
+		if ( (x == 96 && y == 528) && par == 180 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M7") == 0 )
 		{
 			delay(1);
+			SpawnForced("Revenant",-960.0,-1280.0,0.0,7000,192);
+			SpawnForced("Revenant",416.0,-2176.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E1M8
+//		if ( (x == -128 && y == -224 || x == -164 && y == -224) && secrets == 1 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M8") == 0 )
+//		{
+//			delay(1);
 //			SpawnForced("EvidenceCheckerInvisibility",-480.0,3344.0,0.0,70,0.0);
+//		}
+	//E1M9
+		if ( (x == 96 && y == -272) && par == 165 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M9") == 0 )
+		{
+			delay(1);
+			SpawnForced("PainElemental",2304.0,576.0,-160.0,7000,192);
+			SpawnForced("PainElemental",1952.0,960.0,-24.0,7000,120);
+			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
 	//E2M8
 		if ( x == -96 && y == -736 && secrets == 0 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M8") == 0 )

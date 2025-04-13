@@ -88,7 +88,7 @@ script "BD64DetectMap" (Void)
 //		if ( (x == -128 && y == -224 || x == -164 && y == -224) && secrets == 1 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M8") == 0 )
 //		{
 //			delay(1);
-//			SpawnForced("EvidenceCheckerInvisibility",-480.0,3344.0,0.0,70,0.0);
+//			SpawnForced("None",416.0,-2176.0,0.0,7000,192);
 //		}
 	//E1M9
 		if ( (x == 96 && y == -272) && par == 165 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M9") == 0 )
@@ -98,6 +98,52 @@ script "BD64DetectMap" (Void)
 			SpawnForced("PainElemental",1952.0,960.0,-24.0,7000,120);
 			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
+	//E2M1
+		if ( (x == 0 && y == 48) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M1") == 0 )
+		{
+			delay(1);
+			SpawnForced("HellKnight",1088.0,-192.0,0.0,7000,224);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M2
+		if ( (x == 608 && y == 4576) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M2") == 0 )
+		{
+			delay(1);
+			SpawnForced("Revenant",928.0,2720.0,0.0,7000,0);
+			SpawnForced("Revenant",832.0,2976.0,0.0,7000,32);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M3
+		if ( (x == 480 && y == 1904) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M3") == 0 )
+		{
+			delay(1);
+			SpawnForced("Arachnotron",384.0,464.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M4
+//		if ( (x == -768 && y == -2592) && par == 120 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M4") == 0 )
+//		{
+//			delay(1);
+//			SpawnForced("None",384.0,464.0,0.0,7000,192);
+//			SetActorFlag(7000,"AMBUSH",TRUE);
+//		}
+	//E2M5
+		if ( (x == -1536 && y == 2384) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M5") == 0 )
+		{
+			delay(1);
+			SpawnForced("PainElemental",-2112.0,1056.0,0.0,7000,0);
+			SpawnForced("PainElemental",192.0,1408.0,72.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E2M6
+		if ( (x == 592 && y == 400) && par == 360 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M6") == 0 )
+		{
+			delay(1);
+			SpawnForced("Revenant",-496.0,96.0,0.0,7000,64);
+			SpawnForced("Revenant",-880.0,-976.0,0.0,7000,64);
+			SpawnForced("Revenant",384.0,-1344.0,0.0,7000,128);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}			
 	//E2M8
 		if ( x == -96 && y == -736 && secrets == 0 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M8") == 0 )
 		{

@@ -116,7 +116,7 @@ script "DemonSpawner" (void)
 		"SpawnDemon","SpawnAcidDemon","SpawnButcher"
 	};
 	
-	Switch(GetCvar("NSpectre_Spawner_Cvar"))
+	Switch(GetCvar("AcidDemonRandom_Cvar"))
 	{
 //		Case -3: SetActorState(0,"AltSpawn3"); break;
 		Case -2: SetActorState(0,"AltSpawn2"); break;

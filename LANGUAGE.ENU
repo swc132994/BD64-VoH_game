@@ -456,24 +456,24 @@ FO_SCAVENGE3 = "You scavenge a \crBerserk syringe\c- from this Berserk pack.";
 //weapon pickups
 
 //Slot 1
-BD64_GOTCHAINSAW = "A \cmChainsaw\c-! Find some meat! (Slot 1)"; //(Freedoom Override)
+BD64_GOTCHAINSAW = "A \cmChainsaw\c-! Find some meat! (Slot 1)";
 //Slot 2
 BD64_GOTPISTOL = "You got the \cmPistol\c-! (Slot 2)";
 BD64_GOTSMG = "You got the \cmSMG\c-! (Slot 2)";
 BD64_GOTMP40 = "You got the \cmMP40\c-! (Slot 2)";
 //Slot 3
-BD64_GOTSHOTGUN = "You got the \cmShotgun\c-! (Slot 3)"; //(Freedoom Override)
-BD64_GOTSHOTGUN2 = "You got the \cmSuper Shotgun\c-! (Slot 3)"; //(Freedoom Override)
+BD64_GOTSHOTGUN = "You got the \cmShotgun\c-! (Slot 3)";
+BD64_GOTSHOTGUN2 = "You got the \cmSuper Shotgun\c-! (Slot 3)";
 //Slot 4
 BD64_GOTRIFLE = "You got an \cmAssault rifle\c-! (Slot 4)";
-BD64_GOTCHAINGUN = "You got the \cmChaingun\c-! (Slot 4)"; //(Freedoom Override)
+BD64_GOTCHAINGUN = "You got the \cmChaingun\c-! (Slot 4)";
 //Slot 5
-BD64_GOTLAUNCHER = "You got the \cmRocket Launcher\c-! (Slot 5)"; //(Freedoom Override)
+BD64_GOTLAUNCHER = "You got the \cmRocket Launcher\c-! (Slot 5)";
 BD64_GOTMINES = "You got a \cmMulti-Purpose Mine\c-! (Slot 5)";
 //Slot 6
-BD64_GOTPLASMA = "You got the \cmPlasma Rifle\c-! (Slot 6)"; //(Freedoom Override)
+BD64_GOTPLASMA = "You got the \cmPlasma Rifle\c-! (Slot 6)";
 BD64_GOTGAUSS = "You got the \cmGauss Cannon\c-! (Slot 6)";
-//Slot 7 (Freedoom Override)
+//Slot 7
 BD64_GOTBFG9000 = "You got the \cmBFG9000\c-! Oh, yes. (Slot 7)";
 //Slot 8
 BD64_GOTUNMAKER = "\cgWhat the !@# is this!\c- (Slot 8)";
@@ -627,7 +627,7 @@ FO_TAG_BUTCHER = "Butcher";
 FO_TAG_HOUND = "Hell Hound";
 FO_TAG_ACID = "Acid Demon";
 FO_TAG_SPIDER = "Arachnotron";
-FO_TAG_NIGHTCRAWLER = "Nightcrawler"
+FO_TAG_NIGHTCRAWLER = "Nightcrawler";
 FO_TAG_FATSO = "Mancubus";
 FO_TAG_REVENANT = "Revenant";
 FO_TAG_KNIGHT = "Hell Knight";
@@ -695,7 +695,7 @@ FO_OB_HUSK = "\crThe horde\c- consumed %o.";
 FO_OB_VILE = "%o was incinerated by an \crarchvile\c-.";
 FO_OB_RESURRECTOR = "%o met eternal damnation at the hands of the \crinfernal resurrector\c-.";
 FO_OB_HELLSTORM = "%o was torn apart by a \crhellstorm\c-.";
-FO_OB_FLESH = "%o had %p blood boiled by a \crflesh wizard\c-." ;
+FO_OB_FLESH = "%o had %p blood boiled by a \crflesh wizard\c-.";
 FO_OB_UNDEAD = "%o couldn't evade a \crrevenant's fireball\c-.";
 FO_OB_UNDEADHIT = "%o was punched by a \crrevenant\c-.";
 FO_OB_FATSO = "%o was squashed by a \crmancubus\c-.";
@@ -718,8 +718,8 @@ FO_OB_CACOHIT_NIGHTMARE = "%o was chomped by a \crnightmare cacodemon\c-.";
 FO_OB_FALLEN = "%o was immolated by a \crfallen\c-.";
 FO_OB_ELEMENTAL = "%o got too close to a \crpain elemental\c-.";
 FO_OB_ELEMENTAL_NIGHTMARE ="%o was tormented by an agony elemental\c-.";
-FO_OB_PEST = "%o fell to the \crpestilence\c-'s chemical warfare.",
-FO_OB_PESTHIT = "%o died by the \crpestilence\c-'s poison fists\.",
+FO_OB_PEST = "%o fell to the \crpestilence\c-'s chemical warfare.";
+FO_OB_PESTHIT = "%o died by the \crpestilence\c-'s poison fists\.";
 FO_OB_BARON = "%o was bruised by a \crbaron of hell\c-.";
 FO_OB_BARONHIT = "%o was ripped open by a \crbaron of hell\c-.";
 FO_OB_KNIGHT = "%o was splayed by a \crhell knigh\c-t.";

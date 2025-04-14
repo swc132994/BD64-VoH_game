@@ -458,24 +458,24 @@ FO_SCAVENGE3 = "Vous récupérez une \crseringue Berserk\c- dans ce pack Berserk
 //weapon pickups
 
 //Slot 1
-BD64_GOTCHAINSAW = "Vous avez mis la main sur la \cmTronconneuse\c- ! (Touche 1)"; //(Freedoom Override)
+BD64_GOTCHAINSAW = "Vous avez mis la main sur la \cmTronconneuse\c- ! (Touche 1)";
 //Slot 2
 BD64_GOTPISTOL = "Vous avez mis la main sur un \cmPistolet\c- ! (Touche 2)";
 BD64_GOTSMG = "Vous avez mis la main sur le \cmPistolet-Mitrailleur\c- ! (Touche 2)";
 BD64_GOTMP40 = "Vous avez mis la main sur le \cmMP40\c- ! (Touche 2)";
 //Slot 3
-BD64_GOTSHOTGUN = "Vous avez mis la main sur le \cmFusil à pompe\c- ! (Touche 3)"; //(Freedoom Override)
-BD64_GOTSHOTGUN2 = "Vous avez mis la main sur le \cmSuper-Fusil de chasse à canons juxtaposé\cl- ! (Touche 3)"; //(Freedoom Override)
+BD64_GOTSHOTGUN = "Vous avez mis la main sur le \cmFusil à pompe\c- ! (Touche 3)";
+BD64_GOTSHOTGUN2 = "Vous avez mis la main sur le \cmSuper-Fusil de chasse à canons juxtaposé\cl- ! (Touche 3)";
 //Slot 4
 BD64_GOTRIFLE = "Vous avez mis la main sur le \cmFusil d'assault\c- ! (Touche 4)";
-BD64_GOTCHAINGUN = "Vous avez mis la main sur la \cmMitrailleuse\c- ! (Touche 4)"; //(Freedoom Override)
+BD64_GOTCHAINGUN = "Vous avez mis la main sur la \cmMitrailleuse\c- ! (Touche 4)";
 //Slot 5
-BD64_GOTLAUNCHER = "Vous avez mis la main sur le \cmLance-roquettes\c- ! (Touche 5)"; //(Freedoom Override)
+BD64_GOTLAUNCHER = "Vous avez mis la main sur le \cmLance-roquettes\c- ! (Touche 5)";
 BD64_GOTMINES = "Vous avez mis la main sur une \cmMine polyvalente\c- ! (Touche 5)";
 //Slot 6
-BD64_GOTPLASMA = "Vous avez mis la main sur le \cmFusil à plasma\c-  ! (Touche 6)"; //(Freedoom Override)
+BD64_GOTPLASMA = "Vous avez mis la main sur le \cmFusil à plasma\c-  ! (Touche 6)";
 BD64_GOTGAUSS = "Vous avez mis la main sur le \cmFusil Gauss !\c-  (Touche 6)";
-//Slot 7 (Freedoom Override)
+//Slot 7
 BD64_GOTBFG9000 = "Vous avez mis la main sur le \cmBFG9000 !\c-  Quel pied ! (Touche 7)";
 //Slot 8
 BD64_GOTUNMAKER = "\cgBordel mais c'est quoi ça !?\c-  (Touche 8)";
@@ -628,7 +628,7 @@ FO_TAG_BUTCHER = "Boucher";
 FO_TAG_HOUND = "Cerbère";
 FO_TAG_ACID = "Démon acide";
 FO_TAG_SPIDER = "Arachnotron";
-FO_TAG_NIGHTCRAWLER = "Cyber-Veuve noire"
+FO_TAG_NIGHTCRAWLER = "Cyber-Veuve noire";
 FO_TAG_FATSO = "Mancubus";
 FO_TAG_KNIGHT = "Chevalier de l'enfer";
 FO_TAG_KNIGHTMARE = "Chevalier cauchemardesque";
@@ -692,7 +692,7 @@ FO_OB_HUSK = "\crLa Horde\c- a consommé %o.";
 FO_OB_VILE = "%o a été(e) incinéré'e) par un \crArchvile\c-.";
 FO_OB_RESURRECTOR = "%o encourt désormais la damnation éternelle des griffes du \crRésurrecteur Infernal\c-.";
 FO_OB_HELLSTORM = "%o a été(e) déchiré(e) par une \crTempête infernale\c-.";
-FO_OB_FLESH = "%o s'est vu(e)son sang bouilli par un \crSorcier de chair\c-." ;
+FO_OB_FLESH = "%o s'est vu(e)son sang bouilli par un \crSorcier de chair\c-.";
 FO_OB_UNDEAD = "%o était à deux doigts d'esquiver la boule de feu du \crRevenant\c-.";
 FO_OB_UNDEADHIT = "%o à pris une claque monumentale de la part d'un \crRevenant\c-.";
 FO_OB_FATSO = "%o a été(e) écrasé(e) par un \crMancubus.\c-";
@@ -715,8 +715,8 @@ FO_OB_CACOHIT_NIGHTMARE = ​​"%o a été(e) dévoré(e) par un \crCacodémon 
 FO_OB_FALLEN = "%o a été(e) carbonisé(e) par un \crAnge déchu\c-.";
 FO_OB_ELEMENTAL = "%o s'est approché trop près d'un \crDoloris\c-.";
 FO_OB_ELEMENTAL_NIGHTMARE ="%o a été tourmenté par un \crAgonis\c-.";
-FO_OB_PEST = "%o est tombé face aux armes chimiques de la \crPeste\c-.",
-FO_OB_PESTHIT = "%o à gouté aux poings empoisonés de la \crPeste\c-'\.",
+FO_OB_PEST = "%o est tombé face aux armes chimiques de la \crPeste\c-.";
+FO_OB_PESTHIT = "%o à gouté aux poings empoisonés de la \crPeste\c-'\.";
 FO_OB_BARON = "%o s'est fait(e) brutalisé(e) par un \crBaron Infernale\c-.";
 FO_OB_BARONHIT = "%o s'est fait(e) victimisé(e) par un \crBaron Infernale\c-.";
 FO_OB_KNIGHT = "%o a été(e) poutré(e) par un \crChevalier de l'Enfer\c-.";
@@ -732,7 +732,7 @@ FO_OB_MOTHER = "%o a été(e) anéanti(e) par la \crMère de tous les démons\c-
 FO_OB_BABY = "%o s'est fait(e) vaporisé(e) par un \crArachnotron\c-.";
 FO_OB_NIGHTCRAWLER = "%o a été(e) tué(e) par une \crCyber-Veuve noire\c-.";
 FO_OB_CYBORG = "%o a été(e) soulvé(e) par un \crDemon-Cybernétique\c-.";
-FO_OB_ANNIHILATOR = "\crL'Annihilator\c- a emporté %o avec ses roquettes\c-.".
+FO_OB_ANNIHILATOR = "\crL'Annihilator\c- a emporté %o avec ses roquettes\c-.";
 FO_OB_WOLFSS = "%o a été(e) exterminé(e) par un \crNazi\c-.";
 FO_OB_GHOST = "%o a été(e) hanté(e) par un \crÉsprit frappeur\c-.";
 FO_OB_CARRION = "\crLa Horde\c- a infecté %o\c-.";

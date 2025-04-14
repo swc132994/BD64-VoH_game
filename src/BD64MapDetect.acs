@@ -88,7 +88,8 @@ script "BD64DetectMap" (Void)
 //		if ( (x == -128 && y == -224 || x == -164 && y == -224) && secrets == 1 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M8") == 0 )
 //		{
 //			delay(1);
-//			SpawnForced("None",416.0,-2176.0,0.0,7000,192);
+//			SpawnForced("None",-1000.0,-1000.0,0.0,7000,192);
+//			SetActorFlag(7000,"AMBUSH",TRUE);
 //		}
 	//E1M9
 		if ( (x == 96 && y == -272) && par == 165 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M9") == 0 )
@@ -124,7 +125,7 @@ script "BD64DetectMap" (Void)
 //		if ( (x == -768 && y == -2592) && par == 120 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M4") == 0 )
 //		{
 //			delay(1);
-//			SpawnForced("None",384.0,464.0,0.0,7000,192);
+//			SpawnForced("None",-1000.0,-1000.0,0.0,7000,192);
 //			SetActorFlag(7000,"AMBUSH",TRUE);
 //		}
 	//E2M5
@@ -143,12 +144,29 @@ script "BD64DetectMap" (Void)
 			SpawnForced("Revenant",-880.0,-976.0,0.0,7000,64);
 			SpawnForced("Revenant",384.0,-1344.0,0.0,7000,128);
 			SetActorFlag(7000,"AMBUSH",TRUE);
-		}			
+		}
+	//E2M7
+		if ( (x == 1424 && y == 1776) && par == 240 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M7") == 0 )
+		{
+			delay(1);
+			SpawnForced("Fatso",2080.0,-32.0,0.0,7000,64);
+			SpawnForced("Fatso",736.0,160.0,0.0,7000,128);
+			SpawnForced("Fatso",128.0,1632.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}		
 	//E2M8
 		if ( x == -96 && y == -736 && secrets == 0 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M8") == 0 )
 		{
 			delay(1);
-//			SpawnForced("EvidenceCheckerInvisibility",-480.0,3344.0,0.0,70,0.0);
+			SpawnForced("Fatso",-96.0,416.0,0.0,7000,192);
+			SpawnForced("Fatso",-1280.0,-800.0,0.0,7000,0);
+			SpawnForced("Fatso",-96.0,-1984.0,0.0,7000,64);
+			SpawnForced("Fatso",1088.0,-800.0,0.0,7000,128);
+			SpawnForced("Fatso",128.0,320.0,0.0,7000,192);
+			SpawnForced("Fatso",-1216.0,-992.0,0.0,7000,0);
+			SpawnForced("Fatso",128.0,-1952.0,0.0,7000,64);
+			SpawnForced("Fatso",1152.0,-960.0,0.0,7000,128);
+			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
 	//E3M8
 		if ( x == 176 && y == -1488 && secrets == 0 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E3M8") == 0 )

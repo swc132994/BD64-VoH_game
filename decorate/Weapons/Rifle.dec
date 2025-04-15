@@ -41,7 +41,7 @@ Scale 0.82
 Weapon.SlotNumber 4
 Weapon.SlotPriority 100
 Weapon.SelectionOrder 800
-Weapon.AmmoType "Clip"
+Weapon.AmmoType "64HighCaliberBox"
 Weapon.AmmoUse 1
 Weapon.AmmoGive 10
 Inventory.PickupMessage "$BD64_GOTRIFLE"

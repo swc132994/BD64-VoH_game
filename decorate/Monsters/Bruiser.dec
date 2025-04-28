@@ -215,7 +215,7 @@ Actor 64BruiserBall : 64BaronBallGreen
 {
 Scale 1.2
 DamageType "BFG"
-Damage 50
+Damage 45
 Decal "Scorch"
 	states
 	{

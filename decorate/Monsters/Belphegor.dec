@@ -2,7 +2,7 @@ Actor 64Belphegor : BaronOfHell 11053
 {
 //$category "Game/BD64_Monsters"
 Scale 0.8
-Health 1500
+Health 1750
 Height 64
 Radius 24
 Speed 8
@@ -222,7 +222,7 @@ Health 0
 Actor 64BelphegorBall : BaronBall
 {
 Translation "0:255=%[0,0,0]:[0.33,0,1]"
-Damage 35
+Damage 40
 Scale 1.2
 Speed 25
 FastSpeed 30

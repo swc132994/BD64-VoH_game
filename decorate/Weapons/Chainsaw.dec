@@ -122,7 +122,7 @@ Weapon.SelectionOrder 2200
 Weapon.Kickback 0
 Weapon.AmmoType1 "SawGas"
 Weapon.AmmoUse1 1
-Weapon.AmmoGive1 100
+Weapon.AmmoGive1 50
 Weapon.AmmoType2 "SSGAmmo"
 Weapon.AmmoUse2 1
 Weapon.AmmoGive2 0

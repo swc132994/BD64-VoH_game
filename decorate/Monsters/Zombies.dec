@@ -44,6 +44,7 @@ Actor 64ZombieMan : ZombieMan Replaces ZombieMan
 {
 //$category "Game/BD64Monsters
 Scale 0.8
+Health 40
 GibHealth 15
 Speed 6
 PainChance "Flames",64

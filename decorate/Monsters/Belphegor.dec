@@ -14,7 +14,7 @@ DeathSound "64Belphegor/death"
 ActiveSound "64Belphegor/active"
 Obituary "$FO_OB_BELPHEGOR"
 Tag "$FO_TAG_BELPHEGOR"
-PainChance 25
+PainChance 16
 PainChance "SuperFists",220
 PainChance "Kick",255
 PainChance "SuperKick",255
@@ -70,9 +70,11 @@ BloodType "Brutal_BloodGreen"
 		TNT1 A 0 A_PlaySound("FOOTWALL",CHAN_VOICE)
 		BOS3 G 10 A_Explode(64,100,XF_NOTMISSILE,0,1)
 		Goto See
-	Melee:
-		BOS3 EF 9 A_FaceTarget
-		BOS3 G 8 A_CustomMeleeAttack(13*random(1,8),"baron/melee","weapons/gswing","Extreme")	//Melee and Missile seperated
+	Melee:	
+		TNT1 A 0 A_ChangeFlag("NOPAIN",TRUE)
+		BOS3 EF 8 A_FaceTarget
+		BOS3 G 6 A_CustomMeleeAttack(15*random(2,5),"baron/melee","weapons/gswing","Extreme")	//Melee and Missile seperated
+		TNT1 A 0 A_ChangeFlag("NOPAIN",FALSE)
 		Goto See
 	Raise:
 		TNT1 A 0 A_SetScale(0.8,0.8)
@@ -222,7 +224,7 @@ Health 0
 Actor 64BelphegorBall : BaronBall
 {
 Translation "0:255=%[0,0,0]:[0.33,0,1]"
-Damage 40
+Damage 35
 Scale 1.2
 Speed 25
 FastSpeed 30
@@ -245,6 +247,7 @@ DamageType "Plasma"
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterMed")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterMed")
 		TNT1 A 0 Radius_Quake(2,54,0,15,0)
+		TNT1 A 0 A_Explode(20,125,0)
 		TNT1 A 0 A_PlaySound("EXPLO3",CHAN_VOICE)
 		TNT1 A 0 A_PlaySound("EXPLOSION",CHAN_WEAPON)
 		BAL7 CDEFGH 2 Bright A_SpawnItemEx("LensFlareTorchBlue",0,0,0,0,0,0,0,SXF_TRANSFERTRANSLATION)

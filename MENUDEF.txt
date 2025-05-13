@@ -147,7 +147,7 @@ OptionMenu "BrutalDoom64OptionsItem/WeaponSpawner"
 OptionMenu "BrutalDoom64Item/WeaponOptions"
 {
 	Title "$FO_64MNU_OTHER_ITEMS_SPAWN"
-	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT1",1
 	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
 	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 	StaticText " "
@@ -175,7 +175,7 @@ OptionMenu "BrutalDoom64Item/WeaponOptions"
 		StaticText "$FO_64MNU_SWITCH_FIST_TXT",1
 		StaticText ""
 		StaticText "$FO_64MNU_SKINS",1
-		StaticText " "
+		StaticText ""
 	Option "$FO_64MNU_SKIN_LASER","AlternativeLaserSkinCvar","YesNo"
 	Option "$FO_64MNU_SKIN_ITEM","AlternativeAmmoPickupSpritesCvar","AlternativeAmmoPickupSpritesValue"
 	Option "$FO_64MNU_SKIN_HEALTH","CensoredHealing_Cvar","CensoredHealing_Value"
@@ -183,7 +183,7 @@ OptionMenu "BrutalDoom64Item/WeaponOptions"
 		StaticText "$FO_64MNU_SKIN_ALPHA_TXT",1
 		StaticText ""
 		StaticText "$FO_64MNU_OTHER",1
-		StaticText " "
+		StaticText ""
 	Option "$FO_64MNU_FLASHLIGHT","FlashlightStartCvar","YesNo"
 }
 

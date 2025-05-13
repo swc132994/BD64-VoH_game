@@ -202,9 +202,9 @@ FO_64MNU_CLASSIC_SHOTGUN = "Enable Classic Shotgun/SSG Animations =";
 FO_64MNU_CLASSIC_SHOTGUN_TXT = "Show classic Doom 64 Shotgun/SSG animations (classical mode).";
 FO_64MNU_WARMUP = "Enable Weapon Warm Up Animations =";
 FO_64MNU_WARMUP_TXT = "Show weapon warm up animations on first pickup (tactical/modern modes ONLY).";
-FO_64MNU_CLASSIC_CHAINSAW = "Classic Style Chainsaw for Tactical/Modern =";
-FO_64MNU_CLASSIC_CHAINGUN = "Classic Style Chaingun for Tactical/Modern =";
-FO_64MNU_CLASSIC_ROCKET = "Classic Style Rocket Launcher for Tactical/Modern =";
+FO_64MNU_CLASSIC_CHAINSAW = "Classic Look Chainsaw for Tactical/Modern =";
+FO_64MNU_CLASSIC_CHAINGUN = "Classic Look Chaingun for Tactical/Modern =";
+FO_64MNU_CLASSIC_ROCKET = "Classic Look Rocket Launcher for Tactical/Modern =";
 FO_64MNU_CLASSIC_SWITCH = "Options to switch between classic or modernised weapons.";
 
 FO_64MNU_SKIP_RELOAD = "Skip Weapon Reload Sequences (Press \"Apply Changes\") =";

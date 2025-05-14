@@ -5,8 +5,8 @@ The game file can be run independently from the BD64 maps as as a TC mod.
 Installation guide:
 https://docs.google.com/document/d/1OcmVFwE-geQFojNtwcHnfAQHeqH3ujuV4C3-lM9F8fE/edit?tab=t.0
 
-I have uploaded a video showing how to install GZDoom, Zandronum and Doom Mod Launcher:
-https://www.youtube.com/watch?v=lzFlUGhLrik
+Video showing how to install GZDoom, Zandronum and Doom Mod Launcher:
+https://youtu.be/lzFlUGhLrik?si=5b8Z89Bxu5BjBDB6
 
 GZDoom & Zandronum sourceport recommended settings:
 https://docs.google.com/document/d/1vQz-q7bJgQA1gtnoE7JEdKclh63SgJ4nCaW80C2bRkk/edit?tab=t.0

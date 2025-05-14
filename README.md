@@ -1,4 +1,4 @@
-To run the mod you will need any Doom or Freedoom iwad. Doom can be purchased from Steam or GOG. Freedoom is an open source project and is free to download from: Freedoom.github.io
+To run the mod you will need any Doom or Freedoom iwad. Doom can be purchased from Steam or GOG. Freedoom is an open source project and is free to download from: https://freedoom.github.io/download.html
 
 Installation guide:
 https://docs.google.com/document/d/1OcmVFwE-geQFojNtwcHnfAQHeqH3ujuV4C3-lM9F8fE/edit?tab=t.0

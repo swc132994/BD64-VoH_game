@@ -131,7 +131,8 @@ OptionMenu "BrutalDoom64OptionsItem/WeaponSpawner"
 		StaticText "$FO_64MNU_BONUS_TXT",1
 		StaticText ""
 	Option "Power-up spawner =","WpnPower_Spawner_Cvar","WpnPower_Spawner_Value"
-		StaticText "$FO_64MNU_POWERUP ",1
+		StaticText "$FO_64MNU_POWERUP",1
+		StaticText "$FO_64MNU_POWERUP_NOTE",1
 		StaticText ""
 	Option "Plasmagun Spawner =","GaussCannon_Spawner_Cvar","GaussCannon_Spawner_Value"
 		StaticText "$FO_64MNU_PLASMA",1

@@ -190,6 +190,7 @@ FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2 = "or set to appear randomly";
 FO_64MNU_BONUS = "Bonus by Default";
 FO_64MNU_BONUS_TXT = "(hell potions are combined armor/health pickups)";
 FO_64MNU_POWERUP = "Power-up by Default";
+FO_64MNU_POWERUP_NOTE = "(For D64 maps it is recommended to leave set to Power-ups)";
 FO_64MNU_PLASMA = "Plasmagun by Default";
 FO_64MNU_BFG = "BFG9000 by Default";
 FO_64MNU_CHAINGUN = "Chaingun by Default";

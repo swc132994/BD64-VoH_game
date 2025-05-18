@@ -271,11 +271,11 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		Goto Ready
 	AltFire:
 		TNT1 A 0 A_JumpIfInventory("64SuperShotgunTactical",1,"SSGFire")
-		TNT1 A 0 A_Print("$HUD_CHAINSAW_SSG_NONE",1)
+		TNT1 A 0 A_Print("$WM_CHAINSAW_SSG_NONE",1)
 		Goto Ready
 	NeedReloading:
 		TNT1 A 0 A_PlaySound("DRYFIRE")
-		TNT1 A 0 A_Print("$HUD_CHAINSAW_SSG",1)
+		TNT1 A 0 A_Print("$WM_CHAINSAW_SSG",1)
 		Goto Ready
 	SSGFire:
 		TNT1 A 0 A_JumpIfInventory("SSGAmmo",1,1)
@@ -500,11 +500,11 @@ Weapon.SisterWeapon "64ChainsawTactical"
 		Goto Ready
 	AltFire:
 		TNT1 A 0 A_JumpIfInventory("64SuperShotgunTactical",1,"SSGFire")
-		TNT1 A 0 A_Print("$HUD_CHAINSAW_SSG_NONE",1)
+		TNT1 A 0 A_Print("$WM_CHAINSAW_SSG_NONE",1)
 		Goto Ready
 	NeedReloading:
 		TNT1 A 0 A_PlaySound("DRYFIRE")
-		TNT1 A 0 A_Print("$HUD_CHAINSAW_SSG",1)
+		TNT1 A 0 A_Print("$WM_CHAINSAW_SSG",1)
 		Goto Ready
 	SSGFire:
 		TNT1 A 0 A_JumpIfInventory("SSGAmmo",1,1)

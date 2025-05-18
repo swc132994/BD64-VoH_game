@@ -291,7 +291,7 @@ Tag "$FO_TAG_PISTOL"
 		Goto Ready
 	AltFire:
 		TNT1 A 0 A_JumpIfInventory("PistolSilencerPickup",1,2)
-		TNT1 A 0 A_Print("$HUD_SILENCER")
+		TNT1 A 0 A_Print("$WM_NEED_SILENCER")
 		Goto Ready
 		TNT1 A 0 A_JumpIfInventory("IsSilencer",1,"StopAltFire")
 		PISR ABCDE 1

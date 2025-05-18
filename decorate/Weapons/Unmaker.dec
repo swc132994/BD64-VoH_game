@@ -229,7 +229,7 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 		Loop
 	FireAltGreen:
 		TNT1 A 0 A_JumpIfInventory("Cell",15,2)
-		TNT1 A 0 A_Print("Not Enough Ammo!",1)
+		TNT1 A 0 A_Print("$WM_NOTENOUGHAMMO",1)
 		Goto Ready
 		TNT1 A 0 A_PlaySound("DSBOSPIT",CHAN_VOICE)
 		TNT1 A 0 ThrustThingZ(0,5,0,0)

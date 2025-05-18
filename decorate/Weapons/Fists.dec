@@ -151,11 +151,11 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 		PUN1 A 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
 		Loop
 	Tired:
-		TNT1 A 0 A_Print("Not enough stamina!",1)
+		TNT1 A 0 A_Print("$WM_NOSTAMINA",1)
 		TNT1 A 0 A_PlaySound("Tired",CHAN_VOICE)
 		Goto PullUp
 	AltTired:
-		TNT1 A 0 A_Print("Not enough stamina!",1)
+		TNT1 A 0 A_Print("$WM_NOSTAMINA",1)
 		TNT1 A 0 A_PlaySound("Tired",CHAN_VOICE)
 		TNT1 A 0 A_TakeInventory("AltPunchCharge",0)
 		Goto PullUp

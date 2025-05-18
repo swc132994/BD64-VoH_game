@@ -82,13 +82,16 @@ FO_BLOOD_LOW = "Maximum";
 
 HUD_ARMOR = "Armure";
 
-HUD_HEALTH = "Santé";
+HUD_HEALTH = "Sante";
 
-HUD_SILENCER = "Il te faut un silencieux pour pistolet ! On en trouve dans les sacs à dos.";
+//////////////////////////////////////////////////////////////////
+//weapon messages
 
-HUD_CHAINSAW_SSG = "Veuillez recharger votre doubles canon.";
+WM_NEED_SILENCER = "Il te faut un silencieux pour pistolet ! On en trouve dans les sacs à dos.";
 
-HUD_NOTENOUGH = "Munitions insufisantes !";
+WM_CHAINSAW_SSG = "Veuillez recharger votre doubles canon.";
+
+WM_NOTENOUGHAMMO = "Munitions insufisantes !";
 
 //////////////////////////////////////////////////////////////////
 //Tags for gamemodes 

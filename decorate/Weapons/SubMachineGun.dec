@@ -174,7 +174,7 @@ Tag "$FO_TAG_SMG"
 	Select:
 		TNT1 A 0 A_JumpIfInventory("NeverSelectedSMG",1,"WarmUp")
 		TNT1 A 0 A_PlaySound("RIFBOLT",CHAN_AUTO)
-		TNT1 A 0 A_Print("Weapon Special Available",1)
+		TNT1 A 0 A_Print("$WM_SPECIAL",1)
 		SMGS ABCD 1 offset(0,32)
 		TNT1 A 0 A_Raise
 		Wait
@@ -348,7 +348,7 @@ Tag "$FO_TAG_SMG"
 		TNT1 A 0 A_JumpIFInventory("SMGBurstMode",1,"AutomaticMode")
 		TNT1 A 0 A_TakeInventory("WeaponSpecialAction",0)
 		TNT1 A 0 A_GiveInventory("SMGBurstMode",1)
-		TNT1 A 0 A_Print("Burst fire mode")
+		TNT1 A 0 A_Print("$WM_BURSTFIRE")
 		TNT1 A 0 A_PlaySound("SMGBURST",CHAN_BODY)
 		SMGA A 0 A_JumpIfInventory("Zoomed",1,2)
 		SMGG A 0
@@ -360,7 +360,7 @@ Tag "$FO_TAG_SMG"
 	AutomaticMode:
 		TNT1 A 0 A_TakeInventory("WeaponSpecialAction",0)
 		TNT1 A 0 A_TakeInventory("SMGBurstMode",1)
-		TNT1 A 0 A_Print("Automatic Mode")
+		TNT1 A 0 A_Print("$WM_AUTOFIRE")
 		TNT1 A 0 A_PlaySound("SMGAUTO",CHAN_ITEM)
 		SMGA A 0 A_JumpIfInventory("Zoomed",1,2)
 		SMGG A 0

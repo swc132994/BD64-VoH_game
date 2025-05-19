@@ -89,14 +89,29 @@ HUD_HEALTH = "Health";
 //weapon, item &  misc messages
 
 NEED_FLASHLIGHT = "You need a flashlight! This can be found in backpacks";
-
+WM_NOSTAMINA = "Not enough stamina!";
 WM_NEED_SILENCER = "You need a pistol silencer! This can be found in backpacks";
-
 WM_CHAINSAW_SSG_NONE = "You need a super shotgun!";
 WM_CHAINSAW_SSG = "Super shotgun needs reloading!";
-
-WM_NOSTAMINA = "Not Enough Stamina!";
+WM_CHAINGUNSPIN = "No one in their right mind would touch a spinning chaingun.";
 WM_NOTENOUGHAMMO = "Not enough ammo!";
+WM_ROCKETROUND = "Rocket rounds enabled";
+WM_MORTARROUND = "Mortar rounds enabled";
+WM_SPECIAL = "Weapon special available";
+WM_NOMINES = "No Mines in inventory!";	
+WM_NOTENOUGHDEMONART = "Not enough demonic artefacts!";
+WM_AUTOFIRE= "Auto fire mode";
+WM_BURSTFIRE = "Burst fire mode";
+UN_REGULAR = "Regular mode";
+UN_UNMAKE = "Unmake mode";
+UN_HELLTIME = "Helltime mode";
+UN_TIMESTOP = "Time grinds to a halt!";
+UN_NOTENOUGHSOULS = "Not enough souls!";
+UN_NOTENOUGHESSENCE = "Not enough demonic essence!";
+SH_NEEDBANDAGES = "Not enough bandages!";
+SH_HEALTY = "You are healty";
+SH_BERSERKLIMIT = "You cannot use more than one berserk syringe!";
+SH_NOSYRINGES = "You have no berserk syringes!";
 
 //////////////////////////////////////////////////////////////////
 //Tags for gamemodes 

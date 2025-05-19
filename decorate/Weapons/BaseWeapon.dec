@@ -215,7 +215,7 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 	User1:
 	TossMine:
 		"----" A 0 A_JumpIfInventory("64MineAmmo",1,2)
-		"----" A 0 A_Print("No Mines in inventory!")
+		"----" A 0 A_Print("$WM_NOMINES")
 		Goto GetReady
 		TNT1 A 0 A_GunFlash("MineThrowFlash")
 		TNT1 A 5
@@ -235,7 +235,7 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 	User2:	
 	PlaceMine:
 		"----" A 0 A_JumpIfInventory("64MineAmmo",1,2)
-		"----" A 0 A_Print("No Mines in inventory!")
+		"----" A 0 A_Print("$WM_NOMINES")
 		Goto GetReady
 		TNT1 A 0 A_GunFlash("MineThrowFlash")
 		TNT1 A 5

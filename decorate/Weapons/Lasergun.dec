@@ -259,7 +259,7 @@ Inventory.PickupMessage "$BD64_GOTLASER"
 		TNT1 A 0 A_Print("$WM_NOTENOUGHAMMO",1)
 		Goto Ready
 		TNT1 A 0 A_JumpIfInventory("WeaponPower",3,2)
-		TNT1 A 0 A_Print("Not Enough Demonic Artefacts!",1)
+		TNT1 A 0 A_Print("$WM_NOTENOUGHDEMONART",1)
 		Goto Ready
 		TNT1 A 0 A_GiveInventory("HasPlasmaWeapon",1)
 		TNT1 A 0 A_PlaySound("RCHARGE",CHAN_ITEM)

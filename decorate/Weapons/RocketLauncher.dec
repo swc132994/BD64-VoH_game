@@ -489,7 +489,7 @@ Weapon.SisterWeapon "64ClassicRocketLauncherTactical"
 		2LLG ABCDE 1
 		2LLG FGH 2
 		2LLG I 1 A_PlaySound("BEP",CHAN_ITEM)
-		TNT1 A 0 A_Print("Heavy Payload Rockets Enabled",1)
+		TNT1 A 0 A_Print("$WM_MORTARROUND",1)
 		TNT1 A 0 A_GiveInventory("AltMode",1)
 		TNT1 A 0 A_PlaySound("LASEROFF",CHAN_WEAPON)
 		2LHG ABBCCDD 1
@@ -499,7 +499,7 @@ Weapon.SisterWeapon "64ClassicRocketLauncherTactical"
 		RLLG LMNOP 1
 		RLLG QRS 2
 		RLLG T 1 A_PlaySound("BEP",CHAN_ITEM)
-		TNT1 A 0 A_Print("Heavy Payload Rockets Enabled",1)
+		TNT1 A 0 A_Print("$WM_MORTARROUND",1)
 		TNT1 A 0 A_GiveInventory("AltMode",1)
 		TNT1 A 0 A_PlaySound("LASEROFF",CHAN_WEAPON)
 		RLHG LMMNNOO 1
@@ -509,7 +509,7 @@ Weapon.SisterWeapon "64ClassicRocketLauncherTactical"
 		RLLG UVWXY 1
 		RLLG Z 2
 		RLLG "[\]" 2 A_PlaySound("BEP",CHAN_ITEM)
-		TNT1 A 0 A_Print("Heavy Payload Rockets Enabled",1)
+		TNT1 A 0 A_Print("$WM_MORTARROUND",1)
 		TNT1 A 0 A_GiveInventory("AltMode",1)
 		TNT1 A 0 A_PlaySound("LASEROFF",CHAN_WEAPON)
 		RLHG UVVWWXX 1
@@ -528,7 +528,7 @@ Weapon.SisterWeapon "64ClassicRocketLauncherTactical"
 		2LHG IHGFE 1
 		2LHG DCB 2
 		2LHG A 1 A_PlaySound("BEP",CHAN_ITEM)
-		TNT1 A 0 A_Print("Regular Rockets Enabled",1)
+		TNT1 A 0 A_Print("$WM_ROCKETROUND",1)
 		TNT1 A 0 A_TakeInventory("AltMode",1)
 		TNT1 A 0 A_PlaySound("LASERON",CHAN_WEAPON)
 		2LLG IHHGGFF 1
@@ -538,7 +538,7 @@ Weapon.SisterWeapon "64ClassicRocketLauncherTactical"
 		RLHG TSRQP 1
 		RLHG ONM 2
 		RLHG L 1 A_PlaySound("BEP",CHAN_ITEM)
-		TNT1 A 0 A_Print("Regular Rockets Enabled",1)
+		TNT1 A 0 A_Print("$WM_ROCKETROUND",1)
 		TNT1 A 0 A_TakeInventory("AltMode",1)
 		TNT1 A 0 A_PlaySound("LASERON",CHAN_WEAPON)
 		RLLG TSSRRQQ 1
@@ -549,7 +549,7 @@ Weapon.SisterWeapon "64ClassicRocketLauncherTactical"
 		RLHG ZY 1
 		RLHG XWV 2
 		RLHG U 1 A_PlaySound("BEP",CHAN_ITEM)
-		TNT1 A 0 A_Print("Regular Rockets Enabled",1)
+		TNT1 A 0 A_Print("$WM_ROCKETROUND",1)
 		TNT1 A 0 A_TakeInventory("AltMode",1)
 		TNT1 A 0 A_PlaySound("LASERON",CHAN_WEAPON)
 		RLLG "]\\[[" 1
@@ -678,14 +678,14 @@ Weapon.SisterWeapon "64RocketLauncherTactical"
 		MISR ABCCCCC 2
 		TNT1 A 0 A_JumpIfInventory("AltMode",1,"ReturnToLaser")
 		TNT1 A 0 A_PlaySound("ROCKLOAD",CHAN_WEAPON)
-		TNT1 A 0 A_Print("Heavy Payload Rockets Enabled",1)
+		TNT1 A 0 A_Print("$WM_MORTARROUND",1)
 		TNT1 A 0 A_GiveInventory("AltMode",1)
 		MISR DEFGFED 1
 		MISR CCCCBA 2
 		Goto Ready
 	ReturnToLaser:
 		TNT1 A 0 A_PlaySound("ROCKLOAD",CHAN_WEAPON)
-		TNT1 A 0 A_Print("Regular Rockets Enabled",1)
+		TNT1 A 0 A_Print("$WM_ROCKETROUND",1)
 		TNT1 A 0 A_TakeInventory("AltMode",1)
 		MISR DEFGFED 1
 		MISR CCCCBA 2

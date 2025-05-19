@@ -490,7 +490,7 @@ Tag "$FO_TAG_CHAINGUN"
 		LCGG A 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
 		Goto Ready
 	FidgetSpinner:
-		TNT1 A 0 A_Print("No one in their right mind would touch a spinning chaingun.")
+		TNT1 A 0 A_Print("$WM_CHAINGUNSPIN")
 		Goto Ready2
 	}
 }

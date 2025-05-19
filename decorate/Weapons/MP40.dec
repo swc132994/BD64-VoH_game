@@ -238,21 +238,6 @@ Tag "$FO_TAG_MP40"
 		TNT1 A 0 A_Takeinventory("Zoomed",0)
 		TNT1 A 0 A_ZoomFactor(1.0)
 		Goto Ready
-	/*CheckGrenade:
-		TNT1 A 0 A_Takeinventory("TossMine",0)
-		TNT1 A 0 A_JumpIfInventory("RocketAmmo",1,"ThrowGrenade")
-		TNT1 A 0 A_Print("No Rocket Ammo",2)
-		Goto Ready
-	ThrowGrenade:
-		MP4G BCDE 1
-		TNT1 A 0 A_GunFlash("GrenadeThrowFlash")
-		MP4G E 30
-		TNT1 A 0 A_Takeinventory("RocketAmmo",1,TIF_NOTAKEINFINITE)
-		TNT1 A 0 A_FireCustomMissile("64StickGrenadePlayer",0,0)
-		MP4G E 6
-		MP4G EDCB 1
-		TNT1 A 0 A_Refire
-		Goto Ready*/
 	Reload:
 		MP4G R 0 A_JumpIfInventory("Zoomed",1,2)
 		MP4G A 0

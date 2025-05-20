@@ -84,13 +84,7 @@ script "BD64DetectMap" (Void)
 			SpawnForced("Revenant",416.0,-2176.0,0.0,7000,192);
 			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
-	//E1M8
-//		if ( (x == -128 && y == -224 || x == -164 && y == -224) && secrets == 1 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M8") == 0 )
-//		{
-//			delay(1);
-//			SpawnForced("None",-1000.0,-1000.0,0.0,7000,192);
-//			SetActorFlag(7000,"AMBUSH",TRUE);
-//		}
+	//E1M8	NO D2 MONSTERS
 	//E1M9
 		if ( (x == 96 && y == -272) && par == 165 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M9") == 0 )
 		{
@@ -121,13 +115,7 @@ script "BD64DetectMap" (Void)
 			SpawnForced("Arachnotron",384.0,464.0,0.0,7000,192);
 			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
-	//E2M4
-//		if ( (x == -768 && y == -2592) && par == 120 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M4") == 0 )
-//		{
-//			delay(1);
-//			SpawnForced("None",-1000.0,-1000.0,0.0,7000,192);
-//			SetActorFlag(7000,"AMBUSH",TRUE);
-//		}
+	//E2M4	//NO D2 MONSTERS
 	//E2M5
 		if ( (x == -1536 && y == 2384) && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E2M5") == 0 )
 		{
@@ -168,10 +156,29 @@ script "BD64DetectMap" (Void)
 			SpawnForced("Fatso",1152.0,-960.0,0.0,7000,128);
 			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
-	//E3M8
-		if ( x == 176 && y == -1488 && secrets == 0 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E3M8") == 0 )
+	//E2M9	NO D2 MONSTERS
+	//E3M1	NOT PSX MAP
+	//E3M2	NOT PSX MAP
+	//E3M3
+		if ( x == -160 && y == -1248 && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E3M3") == 0 )
 		{
 			delay(1);
-//			SpawnForced("EvidenceCheckerInvisibility",-480.0,3344.0,0.0,70,0.0);
+			SpawnForced("HellKnight",-128.0,1120.0,0.0,7000,192);
+			SpawnForced("HellKnight",-348.0,1248.0,0.0,7000,192);
+			SpawnForced("HellKnight",-416.0,-368.0,0.0,7000,192);
+			SetActorFlag(7000,"AMBUSH",TRUE);
 		}
+	//E3M4	NO D2 MONSTERS
+	//E3M5	NO D2 MONSTERS
+	//E3M6
+		if ( x == 1712 && y == -1792 && par == 90 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E3M6") == 0 )
+		{
+			delay(1);
+			SpawnForced("Fatso",-1184.0,-1344.0,0.0,7000,224);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}
+	//E3M7	NO D2 MONSTERS
+	//E3M8	NOT PSX MAP
+	//E3M9	NOT PSX MAP
+	//E4M1	BARONS IN THE WAY	
 }

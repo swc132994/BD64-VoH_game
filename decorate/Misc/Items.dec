@@ -459,7 +459,7 @@ Tag "$FO_TAG_BACKPACK1"
 	{
 	Spawn:
 		BPAK A 0
-		TNT1 A 0 A_Jump(85,"Spawn2","Spawn3","Spawn4")//33%
+		TNT1 A 0 A_Jump(90,"Spawn2","Spawn3","Spawn4")//35%
 		BPAK A -1
 		Stop
 	Spawn2:

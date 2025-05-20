@@ -371,7 +371,7 @@ Scale 0.82
 		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnInfrared")
 		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnFlashlight")
 		TNT1 A 2 ACS_NamedExecuteAlways("FlashlightCheck")	
-		TNT1 A 0 A_Jump(85,"SpawnFlashlight")//33%
+		TNT1 A 0 A_Jump(90,"SpawnFlashlight")//35%
 	SpawnInfrared:
 		TNT1 A 1 A_SpawnItemEx("64Infrared",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop

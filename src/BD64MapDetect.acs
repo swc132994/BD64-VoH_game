@@ -180,5 +180,20 @@ script "BD64DetectMap" (Void)
 	//E3M7	NO D2 MONSTERS
 	//E3M8	NOT PSX MAP
 	//E3M9	NOT PSX MAP
-	//E4M1	BARONS IN THE WAY	
+	//E4M1	BARONS ON SAME SPOT AS HELLKNIGHTS
+	//E4M2	BARONS ON SAME SPOT AS HELLKNIGHTS
+	//E4M3	BARONS ON SAME SPOT AS HELLKNIGHTS
+	//E4M4	NO D2 MONSTERS
+	//E4M5	NOT PSX MAP
+	//E4M6	NOT PSX MAP
+	//E4M7	NOT PSX MAP
+	//E4M8
+		if ( x == 224 && y == 32 && secrets == 1 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E4M8") == 0 )
+		{
+			delay(1);
+			SpawnForced("Hellknight",-2624.0,288.0,0.0,7000,0);
+			SpawnForced("Hellknight",-2624.0,-224.0,0.0,7000,0);
+			SetActorFlag(7000,"AMBUSH",TRUE);
+		}	
+	//E4M9	NOT PSX MAP
 }

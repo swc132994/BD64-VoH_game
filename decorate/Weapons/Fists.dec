@@ -390,7 +390,7 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 
 Actor PunchAttack : FastProjectile
 {
-Damage 7
+Damage 6
 DamageType "Melee"
 Speed 31
 Height 6
@@ -418,7 +418,7 @@ Obituary "$FO_OB_MPFIST"
 
 Actor SuperPunchAttack : PunchAttack
 {
-Damage 21	//*3 more than regular punch
+Damage 18	//*3 more than regular punch
 DamageType "SuperFists"
 Obituary "$FO_OB_MPFIST"
 Decal "Crack"
@@ -445,10 +445,10 @@ Decal "Crack"
 
 Actor AltPunchAttack : PunchAttack
 {
-Damage 9
+Damage 7
 }
 
 Actor SuperAltPunchAttack : SuperPunchAttack
 {
-Damage 27	//*3 more than regular alt punch
+Damage 21	//*3 more than regular alt punch
 }

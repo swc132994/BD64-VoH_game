@@ -270,7 +270,7 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 
 Actor KickAttack : FastProjectile
 {
-Damage 10
+Damage 8
 DamageType "Kick"
 Speed 22
 Radius 18
@@ -307,7 +307,7 @@ Obituary "%o chewed on %k's foot."
 
 Actor SuperKickAttack : KickAttack
 {
-Damage 30	//*3 more than regualr kick
+Damage 24	//*3 more than regualr kick
 DamageType "SuperKick"
 Decal "Crack"
 +EXTREMEDEATH
@@ -330,14 +330,14 @@ Decal "Crack"
 
 Actor AirKickAttack : KickAttack
 {
-Damage 14
+Damage 9
 Radius 20
 Height 32
 }
 
 Actor SuperAirKickAttack : KickAttack
 {
-Damage 42	//3* more than air kick
+Damage 27	//3* more than air kick
 DamageType "SuperKick"
 Radius 20
 Height 32

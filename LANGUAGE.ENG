@@ -23,7 +23,7 @@ FO_64MNU_BONUS_TXT = "(hell potions are combined armour/health pickups)";
 FO_OP_FLASH = "\ckToggle Torch";
 
 //////////////////////////////////////////////////////////////////
-//Health / armor
+//health & armour pickups
 
 FO_GOTARMBONUS = "You pick up an \cdarmour bonus\c-.";
 FO_GOTARMOR = "You pick up the \cdarmour\c-.";
@@ -31,21 +31,25 @@ FO_GOTMEGA = "You got the \cdMega Armour\c-!";
 
 
 //////////////////////////////////////////////////////////////////
-//ammo
+//ammo & misc item pickups
 
 FO_GOTCLIPBOX2 = "Picked up a \cphigh calibre bullet box\c-.";
-
 FO_GOTSAWGAS = "Picked up a \cpcan of fuel!\c-.";
+FO_GOTBACKPACK3 = "Picked up a \cpbackpack\c- full of ammo with torch!";
+FO_GOTBACKPACK4 =  "Picked up a \cebackpack\c- full of ammo with pistol silencer and torch!";
+FO_GOTFLASHLIGHT = "Picked up a \cntorch\c-!";
 
 //////////////////////////////////////////////////////////////////
-// ammo tags
+//ammo & misc item tags
 
 FO_TAG_CLIPBOX2 = "\ceHigh Calibre Bullet Box";
-
 FO_TAG_SAWGAS = "\ceFuel Can";
+FO_TAG_BACKPACK3 = "\cpBackpack\c- with Torch";
+FO_TAG_BACKPACK4 = "\cpBackpack\c- with Torch and Pistol Silencer";
+FO_TAG_FLASHLIGHT = "\cnTorch";
 
 //////////////////////////////////////////////////////////////////
-// health and armor tags
+//health & armoUr tags
 
 FO_TAG_ARMBONUS = "\cdArmour Bonus";
 FO_TAG_ARMOR = "\cdGreen Armour";

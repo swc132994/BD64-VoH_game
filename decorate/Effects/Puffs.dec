@@ -65,7 +65,7 @@ Radius 1
 Height 1
 alpha 1.0
 renderstyle Add
-Obituary "%o ate bullet shrapnel."
+Obituary "$FO_OB_RICOCHET"
 +CLIENTSIDEONLY
 +BLOODLESSIMPACT
 +FORCEXYBILLBOARD

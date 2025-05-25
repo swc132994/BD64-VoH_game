@@ -280,7 +280,7 @@ RenderStyle Add
 SeeSound "none"
 DeathSound "none"
 Decal "none"
-Obituary "%o chewed on %k's foot."
+Obituary "$FO_OB_MPKICK"
 +NOEXTREMEDEATH
 	States
 	{
@@ -381,7 +381,7 @@ Actor SlideAttack : KickAttack
 {
 Damage 3
 Speed 37
-Obituary "%o tripped on %k's slide kick."
+Obituary "$FO_OB_MPSLIDEKICK"
 +GHOST
 +THRUGHOST
 	States

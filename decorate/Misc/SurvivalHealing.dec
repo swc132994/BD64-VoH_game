@@ -2,7 +2,7 @@ ACTOR 64PortableFirstAidKit : DoomWeapon
 {
 Scale 0.8
 Obituary "How did you die from health. Are you a vampire?"
-Tag "First Aid Kit"
+Tag "$FO_TAG_PORTMEDIKIT"
 Inventory.Icon "WMEDP0"
 Weapon.SlotNumber 1
 Weapon.SelectionOrder 9999
@@ -94,7 +94,7 @@ ACTOR 64PortableFirstAidKitTACTICAL : Brutal64Weapon
 {
 Scale 0.8
 Obituary "How did you die from health. Are you a vampire?"
-Tag "First Aid Kit"
+Tag "$FO_TAG_PORTMEDIKIT"
 Inventory.Icon "WMEDP0"
 Weapon.SlotNumber 1
 Weapon.SelectionOrder 9999

@@ -868,6 +868,25 @@ Inventory.ForbiddenTo "64DoomPlayer"
 	}
 }
 
+Actor 64MineAmmo : Ammo
+{
+Scale 0.35
+Ammo.BackpackAmount 0
+Ammo.BackpackMaxAmount 20
+Inventory.Amount 1
+Inventory.MaxAmount 10
+Inventory.PickupMessage "$BD64_GOTMINES"
+Inventory.Icon PMNED0
+Inventory.PickupSound "IPICK"
+Tag "$FO_TAG_MINES"
+	States
+	{
+	Spawn:
+		PMNE D -1
+		stop
+	}
+}
+
 ACTOR 64HellPotion : CustomInventory 1657
 {
 //$category "Game/BD64_Artifacts"
@@ -1051,8 +1070,8 @@ Scale 0.82
 Inventory.Amount 0
 Inventory.MaxAmount 0
 Inventory.PickupSound "misc/p_pkup"
-Inventory.PickupMessage "Advanced Area Scanner"
-Tag "Advanced Area Scanner"
+Inventory.PickupMessage "$FO_GOT_SCANNER"
+Tag "$FO_TAG_SCANNER"
 +INVENTORY.ALWAYSPICKUP
 +COUNTITEM
 	States
@@ -1079,9 +1098,9 @@ Tag "Advanced Area Scanner"
 
 ACTOR FlashlightItem : CustomInventory
 {
-Inventory.PickupMessage "You got a flashlight!"
+Inventory.PickupMessage "$FO_GOTFLASHLIGHT"
 Inventory.PickupSound "misc/p_pkup"
-Tag "Flashlight"
+Tag "$FO_TAG_FLASHLIGHT"
 -INTERHUBSTRIP
 	States
 	{
@@ -1096,9 +1115,9 @@ Tag "Flashlight"
 
 ACTOR PistolSilencerItem : CustomInventory
 {
-Inventory.PickupMessage "You got a pistol silencer!"
+Inventory.PickupMessage "$FO_GOTSILECER"
 Inventory.PickupSound "misc/p_pkup"
-Tag "Pistol Silencer"
+Tag "$FO_TAG_SILENCER"
 -INTERHUBSTRIP
 	States
 	{

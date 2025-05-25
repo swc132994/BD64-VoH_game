@@ -32,7 +32,7 @@ Weapon.AmmoUse 1
 Weapon.AmmoGive 10
 +WEAPON.NOAUTOFIRE
 Obituary "$FO_OB_MPPISTOL"
-Inventory.Pickupmessage "$GOTPISTOL"
+Inventory.Pickupmessage "$BD64_GOTPISTOL"
 Tag "$FO_TAG_PISTOL"
 VisibleToPlayerClass "64DoomPlayer"
 Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
@@ -96,7 +96,7 @@ Weapon.AmmoType2 "PistolAmmo"
 Weapon.AmmoUse2 1
 Weapon.AmmoGive2 0
 Obituary "$FO_OB_MPPISTOL"
-Inventory.Pickupmessage "$FO_PICKUP_PISTOL_DROPPED"
+Inventory.Pickupmessage "$BD64_GOTPISTOL"
 Tag "$FO_TAG_PISTOL"
 	states
 	{

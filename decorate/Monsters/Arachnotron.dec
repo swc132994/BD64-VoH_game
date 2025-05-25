@@ -125,7 +125,7 @@ Obituary "$FO_OB_BABY"
 
 Actor 64StealthArachnotron : 64Arachnotron Replaces StealthArachnotron
 {
-Tag "Stealth Arachnotron"
+Tag "$FO_TAG_STEALTHBABY"
 Obituary "$FO_OB_STEALTHBABY"
 +STEALTH
 }

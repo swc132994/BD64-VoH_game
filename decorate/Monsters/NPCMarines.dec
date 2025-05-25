@@ -13,15 +13,15 @@ Speed 6
 MaxTargetRange 600
 Species "Marines"
 Translation "112:127=%[0.00,0.00,0.00]:[0.0,0.6,0.0]"
-Tag "Rifle Marine"
+Tag "$FO_TAG_NPC_RIFLE"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 DropItem "RifleDrop",5
-DropItem "Clip"
+DropItem "64Clip"
 DropItem "SOULSPAWNER"
-Obituary "%o was gunned down by a rifle marine."
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -231,14 +231,15 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.35,0.35,0.35]"
-Tag "BFG 9k Marine"
+Tag "$FO_TAG_NPC_BFG"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "cellpack"
+DropItem "64cellpack"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -427,7 +428,8 @@ Speed 8
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.72,0.57,0.58]"
-Tag "Berserk Marine"
+Tag "$FO_TAG_NPC_BERSERK"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
@@ -618,14 +620,15 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.91,0.15,0.15]"
-Tag "Chaingun Marine"
+Tag "$FO_TAG_NPC_CHAINGUN"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "clip"
+DropItem "64clip"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -810,7 +813,8 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.65,1.39,1.17]"
-Tag "Chainsaw Marine"
+Tag "$FO_TAG_NPC_CHAINSAW"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
@@ -989,7 +993,8 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.97,0.98,0.61]"
-Tag "Melee Marine"
+Tag "$FO_TAG_NPC_FIST"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
@@ -1168,14 +1173,15 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.56,0.61,0.94]"
-Tag "Plasma Rifle Marine"
+Tag "$FO_TAG_NPC_PLASMA"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "cell"
+DropItem "64cell"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -1358,14 +1364,15 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[1.20,1.13,1.35]"
-Tag "Gauss Cannon Marine"
+Tag "$FO_TAG_NPC_RAILGUN"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "cell"
+DropItem "64cell"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -1547,14 +1554,15 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.80,1.11,0.65]"
-Tag "Rocket Launcher Marine"
+Tag "$FO_TAG_NPC_ROCKET"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "rocketammo"
+DropItem "64rocketammo"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -1739,14 +1747,15 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.32,0.32,0.32]"
-Tag "Super Shotgun Marine"
+Tag "$FO_TAG_NPC_SSG"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "shell"
+DropItem "64shell"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -1929,14 +1938,15 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.66,0.70,0.75]"
-Tag "Shotgun Marine"
+Tag "$FO_TAG_NPC_SHOTGUN"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "shell"
+DropItem "64shell"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -2122,7 +2132,8 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.79,0.54,0.68]"
-Tag "Rank 1 Unmaker Marine"
+Tag "$FO_TAG_NPC_UNMAKE0"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
@@ -2313,7 +2324,8 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.79,0.54,0.68]"
-Tag "Rank 2 Unmaker Marine"
+Tag "$FO_TAG_NPC_UNMAKE1"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
@@ -2504,7 +2516,8 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.79,0.54,0.68]"
-Tag "Rank 3 Unmaker Marine"
+Tag "$FO_TAG_NPC_UNMAKE2"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
@@ -2696,7 +2709,8 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.79,0.54,0.68]"
-Tag "Rank 4 Unmaker Marine"
+Tag "$FO_TAG_NPC_UNMAKE3"
+Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0

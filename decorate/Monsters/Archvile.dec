@@ -431,7 +431,7 @@ RenderStyle Add
 
 Actor 64StealthArchvile : 64Archvile Replaces StealthArchvile
 {
-Tag "Stealth Archvile"
+Tag "$FO_TAG_STEALTHVILE"
 Obituary "$FO_OB_STEALTHVILE"
 +STEALTH
 }

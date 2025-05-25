@@ -299,10 +299,10 @@ script "ThingRandomACS" (void)
 	}
 }
 
-script "FlashlightCheck" (void)
+/*script "FlashlightCheck" (void)
 {
-	if(GetCvar("FlashlightStartCvar") == 0) { SetActorState(0,"SpawnInfrared"); }
-}
+	if(GetCvar("FlashlightStartCvar") == 1) { SetActorState(0,"SpawnInfrared"); }
+}*/
 
 script "PoltergeistEnablerACS" (void)
 {

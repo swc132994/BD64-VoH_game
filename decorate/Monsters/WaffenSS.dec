@@ -7,7 +7,7 @@ MeleeRange 500
 PainChance 64
 DamageFactor "Head",2.5
 DamageFactor "Unmaker",0.1
-Tag "Waffen-SS"
+Tag "$FO_TAG_WOLF3DSS"
 Obituary "$FO_OB_WOLFSS."
 BloodType "Brutal_Blood"
 AttackSound ""

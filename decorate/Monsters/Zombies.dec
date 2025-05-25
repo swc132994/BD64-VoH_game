@@ -668,7 +668,7 @@ Actor BrutalizedZombieman_2 : BrutalizedZombieman_1
 
 Actor 64StealthZombieMan : 64Zombieman Replaces StealthZombieMan
 {
-Tag "Stealth Pistol Zombie"
+Tag "$FO_TAG_STEALTHZOMBIE"
 Obituary "$FO_OB_STEALTHZOMBIE"
 +STEALTH
 }
@@ -1227,7 +1227,7 @@ Actor BrutalizedShotgunner_2 : BrutalizedZombieman_2
 
 Actor 64StealthShotgunGuy : 64ShotgunGuy Replaces StealthShotgunGuy
 {
-Tag "Stealth Shotgun Zombie"
+Tag "$FO_TAG_STEALTHSHOTGUY"
 Obituary "$FO_OB_STEALTHSHOTGUNGUY"
 +STEALTH
 }
@@ -2019,7 +2019,7 @@ ACTOR BurningChaingunGuy : BurningZombieman
 
 Actor 64StealthChaingunguy : 64Chaingunguy replaces stealthchaingunguy
 {
-Tag "Stealth Chaingun Zombie"
+Tag "$FO_TAG_STEALTHCHAINGUY"
 Obituary "$FO_OB_STEALTHCHAINGUY"
 +STEALTH
 }

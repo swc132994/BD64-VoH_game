@@ -217,7 +217,7 @@ RenderStyle Add
 
 ACTOR 64StealthHellKnight : 64HellKnight Replaces StealthHellKnight
 {
-Tag "Stealth Hell Knight"
+Tag "$FO_TAG_STEALTHKNIGHT"
 Obituary "$FO_OB_STEALTHKNIGHT"
 HitObituary "$FO_OB_STEALTHKNIGHT"
 +STEALTH

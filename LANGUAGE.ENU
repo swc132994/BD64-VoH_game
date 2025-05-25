@@ -317,7 +317,7 @@ FO_MAP_PROP = "----------------------------- Map Prop Replacement --------------
 FO_PROP_INFECTED = "Infected Dead Marine Corpse =";
 FO_PROP_INFECTED_TXT = "Replace dead marines & dead marine props with 'The Thing' monsters.";
 FO_PROP_GHOST = "Poltergeist Mode =";
-FO_PROP_GHOST_TXT1 = "Replace map props with hostile poltergeists props.";
+FO_PROP_GHOST_TXT1 = "Replace map props with hostile poltergeist props.";
 FO_PROP_GHOST_TXT2 = "(poltergeists are hostile map props that can attack the player)";
 
 FO_PERFORMANCE_MISK = "Performance & Miscellaneous Options";
@@ -385,7 +385,7 @@ FO_ENGINE_GIBS_MAX = "Max Giblets";
 FO_EMPTYSTRING = "empty slot";
 
 //////////////////////////////////////////////////////////////////
-//Health / armor
+//health & armor pickups
 
 FO_GOTARMBONUS = "You pick up an \cdarmor bonus\c-.";
 FO_GOTARMOR = "You pick up the \cdarmor\c-.";
@@ -398,7 +398,7 @@ FO_GOTMEDINEED = "You pick up a \chmedikit\c- that you REALLY need!";
 FO_GOTMEDIKIT = "You pick up a \chmedikit\c-.";
 
 //////////////////////////////////////////////////////////////////
-//powerups
+//powerup pickups
 
 FO_GOTINVUL = "\cqInvulnerability!";
 FO_GOTSUPER = "\chSupercharge!";
@@ -408,9 +408,10 @@ FO_GOTSUIT = "\cdRadiation Shield!";
 FO_GOTVISOR = "\cnLight Amplification Goggles!";
 FO_GOTMAP = "\cbComputer Area Map!";
 FO_GOTBERSERK = "\crBerserk!";
+FO_GOT_SCANNER = "\cbAdvanced Area Scanner";
 
 //////////////////////////////////////////////////////////////////
-//Keys
+//key pickups
 
 FO_GOTBLUECARD = "You pick up a \chblue keycard\c-.";
 FO_GOTYELWCARD = "You pick up a \cfyellow keycard\c-.";
@@ -420,7 +421,7 @@ FO_GOTYELWSKUL = "You pick up a \cfyellow skull key\c-.";
 FO_GOTREDSKUL = "You pick up a \crred skull key\c-.";
 
 //////////////////////////////////////////////////////////////////
-// Demon keys
+//demon key pickups
 
 FO_GOTDEMON_ORANGE = "\ciYou have a feeling that it wasn't meant to be touched.";
 FO_GOTDEMON_PURPLE = "\ctIt must do something...";
@@ -429,7 +430,7 @@ FO_GOTDEMON_GREEN = "\cqIt looks like some sort of key....";
 FO_GOTDEMON_RED = "\cgWhat is this used for?";
 
 //////////////////////////////////////////////////////////////////
-//ammo
+//ammo & misc item pickups
 
 FO_GOTBACKPACK = "You got the \cpbackpack\c-!";
 FO_GOTBACKPACK2 = "Picked up a \cpbackpack\c- full of ammo with pistol silencer!";
@@ -448,14 +449,17 @@ FO_GOTSAWGAS = "Picked up a \cpcan of gasoline\c-.";
 FO_GOTSOUL = "\cnSoul \c-Collected";
 FO_GOTESSENSE = "\clDemonic Essence\c- collected";
 FO_GOTESSENSE2 = "\clLarge Demonic Essence\c- collected";
-FO_GOTBANDAGES = "Found Some \chbandages\c-.";
+FO_GOTBANDAGES = "Found some \chbandages\c-.";
 FO_GOTSYRINGE = "Found a \crBerserk syringe\c-.";
 FO_SCAVENGE1 = "You scavenge \ch10 bandages\c- from this Medikit.";
 FO_SCAVENGE2 = "You scavenge \ch25 bandages\c- from this Medikit.";
 FO_SCAVENGE3 = "You scavenge a \crBerserk syringe\c- from this Berserk pack.";
+FO_GOTSILECER = "Picked up a \cpPistol Silencer\c-!";
+FO_GOTFLASHLIGHT = "Picked up a \cnFlashlight\c-!";
+BD64_GOTMINES = "Picked up an \cpExplosive Mine\c-!";
 
 //////////////////////////////////////////////////////////////////
-//doors
+//door locks
 
 /*
 	PD_BLUEO = "You need a blue key.";
@@ -498,7 +502,6 @@ BD64_GOTRIFLE = "You got an \cmAssault rifle\c-! (Slot 4)";
 BD64_GOTCHAINGUN = "You got the \cmChaingun\c-! (Slot 4)";
 //Slot 5
 BD64_GOTLAUNCHER = "You got the \cmRocket Launcher\c-! (Slot 5)";
-BD64_GOTMINES = "You got a \cmMulti-Purpose Mine\c-! (Slot 5)";
 //Slot 6
 BD64_GOTPLASMA = "You got the \cmPlasma Rifle\c-! (Slot 6)";
 BD64_GOTGAUSS = "You got the \cmGauss Cannon\c-! (Slot 6)";
@@ -510,12 +513,13 @@ BD64_GOTUNMAKER = "\cgWhat the !@# is this!\c- (Slot 8)";
 BD64_GOTLASER = "You got the \cmLaser Rifle\c-! (Slot 9)";
 
 //////////////////////////////////////////////////////////////////
-// weapon tags
+//weapon tags
 
 FO_TAG_DEFAULT = "\cmUnnamed Weapon";
 //1
 FO_TAG_FIST = "\cmFists";
 FO_TAG_CHAINSAW = "\cmChainsaw";
+FO_TAG_PORTMEDIKIT = "\crPortable Medikit";
 //2
 FO_TAG_PISTOL = "\cmPistol";
 FO_TAG_SMG = "\cmSub-machinegun";
@@ -528,7 +532,6 @@ FO_TAG_RIFLE = "\cmRifle";
 FO_TAG_CHAINGUN = "\cmChaingun";
 //5
 FO_TAG_ROCKETLAUNCHER = "\cmRocket Launcher";
-FO_TAG_MINES = "\cmMulti-Purpose Mines";
 //6
 FO_TAG_PLASMARIFLE = "\cmPlasma Rifle";
 FO_TAG_GAUSS = "\cmGauss Cannon";
@@ -540,7 +543,7 @@ FO_TAG_UNMAKER = "\cmUnmaker";
 FO_TAG_LASER = "\cmLaser Rifle";
 
 //////////////////////////////////////////////////////////////////
-// ammo tags
+//ammo & misc item tags
 
 FO_TAG_BACKPACK1 = "\cpBackpack";
 FO_TAG_BACKPACK2 = "\cpBackpack\c- with Pistol Silencer";
@@ -558,14 +561,15 @@ FO_TAG_CELLBOX = "\cpEnergy Cell Pack";
 FO_TAG_SOUL = "\cnSoul";
 FO_TAG_ESSENSE = "\crDemonic Essence";
 FO_TAG_ESSENSE2 = "\crLarge Demonic Essence";
-
 FO_TAG_BANDAGES = "\crBandages";
 FO_TAG_SYRINGE = "\crBerserk Syringe";
-
 FO_TAG_SAWGAS = "\cpGasoline Can";
+FO_TAG_MINES = "\cmExplosive Mine";
+FO_TAG_SILENCER = "\cpPistol Silencer";
+FO_TAG_FLASHLIGHT = "\cnFlashlight";
 
 //////////////////////////////////////////////////////////////////
-// health and armor tags
+//health and armor tags
 
 FO_TAG_HBONUS = "\chHealth Bonus";
 FO_TAG_HPOTION = "\crHell Potion";
@@ -577,7 +581,7 @@ FO_TAG_ARMOR = "\cdGreen Armor";
 FO_TAG_MEGA = "\chBlue Armor";
 
 //////////////////////////////////////////////////////////////////
-// powerup tags
+//powerup tags
 
 FO_TAG_INVUL = "\cqInvulnerability Sphere";
 FO_TAG_SUPER = "\chSoul Sphere";
@@ -587,9 +591,10 @@ FO_TAG_SUIT = "\cdRadiation Sheild";
 FO_TAG_VISOR = "\cnNight Vision Goggles";
 FO_TAG_MAP = "\cbComputer Area Map";
 FO_TAG_BERSERK = "\crBerserk Pack";
+FO_TAG_SCANNER = "\cbAdvanced Area Scanner";
 
 //////////////////////////////////////////////////////////////////
-// Demon keys tags
+//demon keys tags
 
 FO_TAG_DEMON_ORANGE = "\ciDemon Key Orange";
 FO_TAG_DEMON_PURPLE = "\ctDemon Key Purple";
@@ -598,7 +603,7 @@ FO_TAG_DEMON_GREEN = "\cqOutcast Demon Key Green";
 FO_TAG_DEMON_RED = "\cgOutcast Demon Key Red";
 
 //////////////////////////////////////////////////////////////////
-// Keys tags
+//key tags
 
 FO_TAG_BLUECARD = "\chBlue Keycard\c-";
 FO_TAG_YELWCARD = "\cfYellow Keycard\c-";
@@ -608,7 +613,11 @@ FO_TAG_GOTYELWSKUL = "\cfYellow Skullkey\c-";
 FO_TAG_GOTREDSKUL = "\crRed Skullkey\c-";
 
 //////////////////////////////////////////////////////////////////
-//Obituaries for weapons
+//weapons obituaries
+
+FO_OB_RICOCHET = "%o ate bullet lead.";
+FO_OB_MPKICK = "%o chewed on \cg%k\c-'s \cmboot\c-.";
+FO_OB_MPSLIDEKICK = "%o tripped on \cg%k\c-'s \cmslide kick\c-.";
 
 FO_OB_MPFIST = "%o chewed on \cg%k\c-'s \cmfist\c-.";
 FO_OB_MPCHAINSAW = "%o was mowed over by \cg%k\c-'s \cmchainsaw\c-.";
@@ -625,7 +634,9 @@ FO_OB_MINES = "%o was shreded by \cg%k\c-'s \cmMine\c-.";
 FO_OB_MPPLASMARIFLE = "%o was melted by \cg%k\c-'s \cmplasma gun\c-.";
 FO_OB_GAUSS = "%o was pierced by \cg%k\c-'s \cmGauss Cannon\c-.";
 FO_OB_MPBFG_BOOM = "%o was splintered by \cg%k\c-'s \cmBFG\c-.";
-FO_OB_LASER = "%o was blasted to nothingness by \cg%k\c-'s \cmLaser gun\c-.";
+FO_OB_MPBFG_BETA = "%o was obliterated by \cg%k\c-'s \cmBFG\c-.";
+FO_OB_LASER = "%o was barbequed by \cg%k\c-'s \cmLaser gun\c-.";
+FO_OB_LASERBLAST = "%o was blasted away by \cg%k\c-'s \cmLaser gun\c-.";
 FO_OB_MPUNMAKER = "%o was unmade by \cg%k\c-.";
 //	OB_MPBFG_SPLASH = "%o couldn't hide from \cg%k\c-'s \cmBFG\c-.";
 //	OB_MPTELEFRAG = "%o was \cmtelefragged\c- by \cg%k\c-.";
@@ -633,7 +644,20 @@ FO_OB_MPUNMAKER = "%o was unmade by \cg%k\c-.";
 //	OB_MPBFG_MBF = "%o was burned by \cg%k\c-'s \cmBFG\c-.";
 
 //////////////////////////////////////////////////////////////////
-//Tags for demons
+//demon tags
+
+FO_TAG_STEALTHBABY = "Stealth Arachnotron";
+FO_TAG_STEALTHVILE = "Stealth Archvile";
+FO_TAG_STEALTHBARON = "Stealth Baron of Hell";
+FO_TAG_STEALTHCACO = "Stealth Cacodemon";
+FO_TAG_STEALTHCHAINGUY = "Stealth Chaingunner";
+FO_TAG_STEALTHDEMON = "Stealth Bull Demon";
+FO_TAG_STEALTHKNIGHT = "Stealth Hell Knight";
+FO_TAG_STEALTHIMP = "Stealth Imp";
+FO_TAG_STEALTHFATSO = "Stealth Mancubus";
+FO_TAG_STEALTHUNDEAD = "Stealth Revenant";
+FO_TAG_STEALTHSHOTGUY = "Stealth Sergeant";
+FO_TAG_STEALTHZOMBIE = "Stealth Zombieman";
 
 FO_TAG_ZOMBIEMAN = "Former Human";
 FO_TAG_PISTOLMAN = "Pistol Zombie";
@@ -683,14 +707,40 @@ FO_TAG_CYBERDEMON = "Cyberdemon";
 FO_TAG_ANNIHILATOR = "Annihilator";
 FO_TAG_MASTERMIND = "Spiderdemon Mastermind";
 FO_TAG_ERADICATOR = "Eradicator";
-FO_TAG_WOLF3DSS = "Wolfenstein SS";
-FO_TAG_EVILSPIRIT = "Poltergeist";
+FO_TAG_WOLF3DSS = "Waffen-SS";
 FO_TAG_CARRION = "Carrion Zombie";
 FO_TAG_THING = "Thing";
-
+FO_TAG_EVILSPIRIT = "Poltergeist";
+FO_TAG_VENOMEYE = "Venom Eye";
+FO_TAG_EVILTREE = "Evil Tree";
+FO_TAG_EVILTREEROOT = "Evil Tree Root";
+FO_TAG_HANGMAN = "Hangman";
+FO_TAG_KEEN = "Scorpion Hanged";
+FO_TAG_SUPERFALLEN = "Supreme Fallen";
 
 //////////////////////////////////////////////////////////////////
-//Obituaries for monsters
+//NPC marine tags & obituary
+
+FO_TAG_NPC-RIFLE = "Marine-Rifle";
+FO_TAG_NPC-BFG = "Marine-BFG 9k";
+FO_TAG_NPC-BERSERK = "Marine-Berserk";
+FO_TAG_NPC-CHAINGUN = "Marine-Chaingun";
+FO_TAG_NPC-CHAINSAW = "Marine-Chainsaw";
+FO_TAG_NPC-FIST = "Marine-Unarmed";
+FO_TAG_NPC-PLASMA = "Marine-Plasma";
+FO_TAG_NPC-RAILGUN = "Marine-Gauss";
+FO_TAG_NPC-ROCKET = "Marine-Rocket";
+FO_TAG_NPC-SSG = "Marine-SuperShotgun";
+FO_TAG_NPC-SHOTGUN = "Marine-Shotgun";
+FO_TAG_NPC-UNMAKE0 = "Marine-Unmaker LV0";
+FO_TAG_NPC-UNMAKE1 = "Marine-Unmaker LV1";
+FO_TAG_NPC-UNMAKE2 = "Marine-Unmaker LV2";
+FO_TAG_NPC-UNMAKE3 = "Marine-Unmaker LV3";
+
+FO_OB_NPC = "%o was killed by friendly fire. You Bastard!";
+
+//////////////////////////////////////////////////////////////////
+//monster obituaries
 
 FO_OB_STEALTHBABY = "%o thought %g saw an \crarachnotron\c-.";
 FO_OB_STEALTHVILE = "%o thought %g saw an \crarchvile\c-.";
@@ -770,10 +820,13 @@ FO_OB_GHOST = "%o was killed by a \crpoltergeist\c-.";
 FO_OB_CARRION = "The horde\c- infected %o.";
 FO_OB_THING = "%o was inverted by a \crthing\c-.";
 FO_OB_EVILEYE = "%o stared into an \crevil Eye\c- for too long...";
+FO_OB_EVILTREE = "%o was impaled by a \crYateveo\c-.";
+FO_OB_HANGMAN = "%o was ambushed by a \crhanged man\c-.";
+FO_OB_SUPERFALLEN = "%o was immolated by a \cr supreme fallen\c-.";
 //	OB_DOG = "%o was mauled by a dog.";
 
 //////////////////////////////////////////////////////////////////
-//Item Tags
+//prop Tags
 
 FO_TAG_EXPLOSIVEBARREL = "Explosive Barrel";
 FO_TAG_THROWNBARREL = "Particulary volatile Barrel!"; //To potentially be used for thrown barrels

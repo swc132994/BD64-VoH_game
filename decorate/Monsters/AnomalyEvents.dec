@@ -10,8 +10,8 @@ Damage 3
 DeathSound "polt/break1"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOBLOOD
 +DONTMORPH
@@ -193,7 +193,7 @@ ACTOR poltshard2 : poltshard1
 	}
 }
 
-ACTOR 64Poltergeist2
+ACTOR 64Poltergeist2	//explosive barrel
 {
 Scale 0.8
 Health 20
@@ -203,10 +203,10 @@ Mass 45
 Speed 0
 Damage 20
 DeathSound "world/barrelx"
-Obituary "%o was killed by a poltergeist."
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Tag "Poltergeist"
 MONSTER
 +DONTHARMCLASS
 +NOBLOOD
@@ -345,8 +345,8 @@ Damage 3
 DeathSound "polt/break1"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOPAIN
 +NOBLOOD
@@ -455,10 +455,10 @@ DeathHeight 67
 Mass 0x7FFFFFFF
 Speed 0
 Damage 3
-Tag "Poltergeist"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 DeathSound "polt/break2"
 MONSTER
 +NOPAIN
@@ -545,8 +545,8 @@ Damage 3
 DeathSound "polt/break2"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOPAIN
 +NOBLOOD
@@ -669,7 +669,7 @@ Mass 2000
 Damage 3
 PoisonDamage 30
 DamageType "Poison"
-Obituary "%o stared into an Evil Eye for too long..."
+Obituary "$FO_OB_EVILEYE"
 PROJECTILE
 -NOGRAVITY
 +RIPPER
@@ -712,7 +712,7 @@ Mass 3000
 Damage 2
 PoisonDamage 20
 DamageType "Poison"
-Obituary "%o stared into an Evil Eye for too long..."
+Obituary "$FO_OB_EVILEYE"
 RenderStyle Translucent
 Alpha 0.33
 PROJECTILE
@@ -755,7 +755,7 @@ Mass 4000
 Damage 1
 PoisonDamage 10
 DamageType "Poison"
-Obituary "%o stared into an Evil Eye for too long..."
+Obituary "$FO_OB_EVILEYE"
 RenderStyle Translucent
 Alpha 0.15
 PROJECTILE
@@ -856,8 +856,8 @@ Mass 0x7FFFFFFF
 Speed 0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOPAIN
 +DONTHARMCLASS
@@ -969,8 +969,8 @@ Mass 0x7FFFFFFF
 Speed 0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOPAIN
 +DONTHARMCLASS
@@ -1041,8 +1041,8 @@ Mass 0x7FFFFFFF
 Speed 0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Obituary "%o was killed by a poltergeist."
-Tag "Poltergeist"
+Obituary "$FO_OB_GHOST"
+Tag "$FO_TAG_EVILSPIRIT"
 MONSTER
 +NOPAIN
 +DONTHARMCLASS
@@ -1108,8 +1108,8 @@ Actor 64VenomEye1 : LostSoul
 scale 0.8
 Alpha 0.99
 RenderStyle Normal
-Tag "Venom Eye"
-Obituary "%o stared into an Evil Eye for too long..."
+Obituary "$FO_OB_EVILEYE"
+Tag "$FO_TAG_VENOMEYE"
 Damage 0
 PainSound "EvilEye/pain"
 DeathSound "EvilEye/death"
@@ -1219,8 +1219,8 @@ DeathHeight 56
 radius 32
 Mass 5000
 Speed 0
-Tag "Possessed Tree"
-Obituary "%o was impaled by a Yateveo."
+Obituary "$FO_OB_EVILTREE"
+Tag "$FO_TAG_EVILTREE"
 BloodType "Brutal_BloodGreen"
 BloodColor "00 64 00"	//Hex value
 ActiveSound "UNMNROAM"
@@ -1299,7 +1299,7 @@ MONSTER
 actor BrambleTargetBase : HeadshotTargetBase
 {
 Height 56
-Tag "Tree Bramble"
+Tag "$FO_TAG_EVILTREEROOT"
 BloodType "Brutal_BloodGreen"
 -SERVERSIDEONLY
 -THRUACTORS
@@ -1355,8 +1355,8 @@ Health 50
 Mass 5
 meleerange 45
 MaxTargetRange 60
-Obituary "%o was impaled by a Yateveo."
-DeathSound "EvilEye/pain"
+Obituary "$FO_OB_EVILTREE"
+Tag "$FO_TAG_EVILTREEROOT"
 BloodType "Brutal_BloodGreen"
 BloodColor "00 64 00"	//Hex value
 Painchance 128
@@ -1365,7 +1365,6 @@ DamageFactor "chainsaw",2.0
 DamageFactor "Plasma",1.5
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Tag "Possessed Tree Bramble"
 ActiveSound "floor/slimy"
 DeathSound "Misc/Gibbed"
 MONSTER
@@ -1470,7 +1469,8 @@ MONSTER
 actor 64Hangman
 {
 Scale 0.7
-obituary "%o was ambushed by a hanged man."
+Obituary "$FO_OB_HANGMAN"
+Tag "$FO_TAG_HANGMAN"
 health 150
 radius 13
 height 46
@@ -1485,7 +1485,6 @@ MaxTargetRange 256
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 MaxTargetRange 896
-Tag "Hanged Man"
 MONSTER
 +NOGRAVITY
 +SPAWNCEILING

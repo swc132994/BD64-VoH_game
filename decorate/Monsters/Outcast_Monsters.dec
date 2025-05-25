@@ -480,7 +480,7 @@ PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 Obituary "$FO_OB_NIGHTCRAWLER"
-Tag "$FO_OB_NIGHTCRAWLER"
+Tag "$FO_TAG_NIGHTCRAWLER"
 DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodBLUE"
 +DONTHARMSPECIES

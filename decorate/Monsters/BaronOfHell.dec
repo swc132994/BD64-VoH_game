@@ -226,7 +226,7 @@ RenderStyle Add
 
 Actor 64StealthBaron : 64BaronOfHell Replaces StealthBaron
 {
-Tag "Stealth Baron of Hell"
+Tag "$FO_TAG_STEALTHBARON"
 Obituary "$FO_OB_STEALTHBARON"
 HitObituary "$FO_OB_STEALTHBARON"
 +STEALTH

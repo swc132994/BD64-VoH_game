@@ -336,7 +336,7 @@ DropItem "None"
 
 Actor 64StealthDemon : 64Demon Replaces StealthDemon
 {
-Tag "Stealth Demon"
+Tag "$FO_TAG_STEALTHDEMON"
 Obituary "$FO_OB_STEALTHDEMON"
 HitObituary "$FO_OB_STEALTHDEMON"
 +STEALTH

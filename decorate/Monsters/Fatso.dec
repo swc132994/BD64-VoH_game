@@ -177,7 +177,7 @@ Obituary "$FO_OB_FATSO"
 
 Actor 64StealthFatso : 64Fatso Replaces StealthFatso
 {
-Tag "Stealth Mancubus"
+Tag "$FO_TAG_STEALTHFATSO"
 Obituary "$FO_OB_STEALTHFATSO"
 +STEALTH
 }

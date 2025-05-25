@@ -113,9 +113,9 @@ Weapon.SisterWeapon "64ClassicRocketLauncherTactical"
 	States
 	{
 	MineThrowFlash:
-		RLTS EFGH 1
+		RLNS DCBA 1
 		TNT1 A 18
-		RLTS ABCD 1
+		RLNS ABCD 1
 		Stop
 	KickingFlash:
 		RLHK A 0 A_JumpIfInventory("AltMode",1,"HeavyKickingFlash")

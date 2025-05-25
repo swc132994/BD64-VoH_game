@@ -19,7 +19,7 @@ PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DropItem "DemonEssenceLargeSpawner"
-DropItem "Soulsphere",32
+DropItem "64Soulsphere",32
 SeeSound "SisDemon/see"
 PainSound "SisDemon/pain"
 DeathSound "SisDemon/death"

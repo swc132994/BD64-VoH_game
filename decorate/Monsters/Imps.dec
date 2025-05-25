@@ -647,9 +647,9 @@ PROJECTILE
 
 Actor 64StealthDoomImp : 64DoomImp Replaces StealthDoomImp
 {
-Tag "Stealth Imp"
+Tag "$FO_TAG_STEALTHIMP"
 Obituary "$FO_OB_STEALTHIMP"
-HitObituary "FO_$OB_STEALTHIMP"
+HitObituary "$FO_OB_STEALTHIMP"
 +STEALTH
 }
 

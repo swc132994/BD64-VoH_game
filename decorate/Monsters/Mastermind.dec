@@ -13,7 +13,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 MeleeThreshold 300
 MeleeRange 100
 DropItem "DemonEssenceLargeSpawner"
-DropItem "Soulsphere",32
+DropItem "64Soulsphere",32
 AttackSound "None"
 Tag "$FO_TAG_MASTERMIND"
 Obituary "$FO_OB_SPIDER"
@@ -188,7 +188,7 @@ AttackSound "None"
 MeleeThreshold 300
 MeleeRange 100
 DropItem "DemonEssenceLargeSpawner"
-DropItem "Soulsphere",64
+DropItem "64Soulsphere",32
 Obituary "$FO_OB_ERADICATOR"
 HitObituary "$FO_OB_SPIDERHIT"
 Tag "$FO_TAG_ERADICATOR"

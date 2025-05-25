@@ -1,21 +1,3 @@
-Actor 64MineAmmo : Ammo
-{
-Scale 0.35
-Ammo.BackpackAmount 0
-Ammo.BackpackMaxAmount 20
-Inventory.Amount 1
-Inventory.MaxAmount 10
-Inventory.PickupMessage "$BD64_GOTMINES"
-Inventory.Icon PMNED0
-Inventory.PickupSound "IPICK"
-	States
-	{
-	Spawn:
-		PMNE D -1
-		stop
-	}
-}
-
 Actor MineHold : Ammo
 {
 inventory.maxamount 50
@@ -34,11 +16,10 @@ Weapon.AmmoGive1 1
 Weapon.AmmoType2 "MineHold"
 Weapon.AmmoUse2 1
 Weapon.AmmoGive2 0
-Obituary "%o was shreded by %k's Mine."
 AttackSound "None"
 Inventory.PickupSound "IPick"
-Inventory.Pickupmessage "$GOTMINES"
-Tag "Multi-Purpose Mine"
+Inventory.Pickupmessage "$BD64_GOTMINES"
+Tag "$FO_TAG_MINES"
 +WEAPON.EXPLOSIVE
 +WEAPON.NO_AUTO_SWITCH
 	States
@@ -202,7 +183,7 @@ Gravity 1
 SeeSound "GRNTOSS"
 DeathSound "MINE002"
 Decal "BigScorch"
-Obituary "%o was shreded by %k's Mine."
+Obituary "$FO_OB_MINES"
 ReactionTime 3
 PROJECTILE
 -NOTELEPORT
@@ -280,13 +261,13 @@ Health 6
 Damage 0
 Mass 9999
 Activation THINGSPEC_Activate
-Tag "Proximity Mine"
+Obituary "$FO_OB_MINES"
+Tag "$FO_TAG_MINES"
 PainChance "SuperFists",200
 PainChance "Kick",255
 PainChance "SuperKick",255
 DamageType "Extreme"
 Decal "BigScorch"
-Obituary "%o was shreded by %k's Mine."
 -SHOOTABLE
 -SOLID
 -EXPLODEONWATER

@@ -3,7 +3,7 @@ ACTOR 64GetOverHere : CommanderKeen replaces CommanderKeen
 PainSound "scorpion/pain"
 DeathSound "scorpion/death"
 Scale 0.65
-Tag "Scorpion"
+Tag "$FO_TAG_KEEN"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 +NOBLOODDECALS
@@ -156,8 +156,8 @@ Actor 64YESAFRIT : 64Fallen //Scythe 2 Afrit replacement
 {
 Scale 0.8
 Health 2500
-Tag "Supreme Fallen"
-Obituary "%o was incinerated by a Supreme Fallen."
+Tag "$FO_TAG_SUPERFALLEN"
+Obituary "$FO_OB_SUPERFALLEN"
 +BOSS
 +BOSSDEATH
 	States

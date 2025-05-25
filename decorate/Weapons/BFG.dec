@@ -298,7 +298,7 @@ RenderStyle Add
 Alpha 0.75
 DeathSound "weapons/plasmax"
 DamageType "Extreme"
-Obituary "%o was obliterated by %k's BFG."
+Obituary "$FO_OB_MPBFG_BETA"
 SeeSound ""
 Decal "MedScorch"
 PROJECTILE

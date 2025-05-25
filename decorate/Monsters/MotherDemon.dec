@@ -23,7 +23,7 @@ DeathSound "mother/Death"
 ActiveSound "mother/Active"
 Tag "$FO_TAG_MOTHER"
 DropItem "DemonEssenceLargeSpawner"
-DropItem "Soulsphere",32
+DropItem "64Soulsphere",32
 Species "Resurrector"
 MONSTER
 +DONTHARMSPECIES

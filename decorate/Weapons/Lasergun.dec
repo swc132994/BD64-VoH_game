@@ -382,7 +382,7 @@ ReactionTime 60
 +BOUNCEONWALLS
 +EXPLODEONWATER
 +PAINLESS
-Obituary "%o was barbequed by %k's Lasergun."
+Obituary "$FO_OB_LASERBLAST"
 SeeSound ""
 BounceFactor 0.95
 ReactionTime 45

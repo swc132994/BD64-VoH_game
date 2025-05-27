@@ -109,7 +109,7 @@ UN_TIMESTOP = "Time grinds to a halt!";
 UN_NOTENOUGHSOULS = "Not enough souls!";
 UN_NOTENOUGHESSENCE = "Not enough demonic essence!";
 SH_NEEDBANDAGES = "Not enough bandages!";
-SH_HEALTY = "You are healty";
+SH_HEALTY = "You are healthy";
 SH_BERSERKLIMIT = "You cannot use more than one berserk syringe!";
 SH_NOSYRINGES = "You have no berserk syringes!";
 

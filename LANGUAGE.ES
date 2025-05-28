@@ -1,11 +1,37 @@
 [es esm]
 
 //////////////////////////////////////////////////////////////////
+//weapon, item &  misc messages
+
+WM_NOSTAMINA = "Sin Energias!";
+WM_NOMINES = "Sin Minas en el inventario!";	
+
+//////////////////////////////////////////////////////////////////
 //Tags for Classes
 
 FO_TAG_CLASS_CLASSIC = "Clasico";
 FO_TAG_MODERN = "Moderno";
 FO_TAG_CLASS_TACTICAL = "Tactico";
+
+//////////////////////////////////////////////////////////////////
+//Tags for Dificulties
+
+FO_TAG_BABY = "Se Gentil!";
+FO_TAG_BABY_TXT = "Equivale a 'I'm too young to die' (factor de munición x2)";
+FO_TAG_EASY = "Dale, sin miedo!";
+FO_TAG_EASY_TXT = "Equivale a 'Hey, not too rough'";
+FO_TAG_NORMAL = "Prepara el culo!";
+FO_TAG_NORMAL_TXT = "Equivale a 'Hurt me plenty'";
+FO_TAG_HARD = "A ver si aguantas verme caer!";
+FO_TAG_HARD_TXT = "Equivale a 'Ultra violence'";
+FO_TAG_HARDER = "A ver si aguantas verme caer+!";
+FO_TAG_HARDER_TXT = "Equivale a 'Ultra violence+', Projectiles enemigos acelerados, (solo para GZDoom) aparicion de armas del multijugador";
+FO_TAG_NIGHTMARE = "DOLOR DE HUEVOS!";
+FO_TAG_NIGHTMARE_TXT = "Monstruos con habilidades = Projectiles enemigos acelerados, +25% de vida y mas agrecivos";
+FO_TAG_SURVIVAL = "SUPERVIVENCIA!";
+FO_TAG_SURVIVAL_TXT = "Monstruos con habilidades = +25% de vida (Curacion manual).";
+FO_TAG_REALISM = "SUPERVIVENCIA! (realista)";
+FO_TAG_REALISM_TXT = "Monstruos con habilidades = Projectiles enemigos acelerados, -70% de vida, se inflinge el x5 de daño (Curacion manual)";
 
 //////////////////////////////////////////////////////////////////
 //Health / armor
@@ -115,6 +141,7 @@ BD64_GOTLASER = "Recogiste un Rifle Laser! (Slot 9)";
 //1
 FO_TAG_FIST = "Corta y Desgarra";
 FO_TAG_CHAINSAW = "Motocierra";
+FO_TAG_PORTMEDIKIT = "primeros auxilios";
 //2
 FO_TAG_PISTOL = "Pistola";
 //3

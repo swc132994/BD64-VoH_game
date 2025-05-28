@@ -48,7 +48,7 @@ Player.StartItem "64Fist"
 Player.ColorRange 112,127
 Player.ViewHeight 50
 Player.AttackZOffset 23
-Player.DisplayName "Classical"
+Player.DisplayName "$FO_TAG_CLASS_CLASSIC"
 Player.CrouchSprite "PLYC"
 	Player.Portrait	"PDOMA0"
 	States
@@ -480,7 +480,7 @@ Player.StartItem "NeverSelectedSMG"
 Player.StartItem "NeverSelectedRL"
 Player.StartItem "NeverSelectedPlasma"
 Player.StartItem "NeverSelectedGauss"
-Player.DisplayName "Tactical"
+Player.DisplayName "$FO_TAG_CLASS_TACTICAL"
 -NOMENU
 }
 
@@ -521,7 +521,7 @@ Player.StartItem "NeverSelectedGauss"
 Player.ColorRange 112,127
 Player.ViewHeight 50
 Player.AttackZOffset 23
-Player.DisplayName "Modern"
+Player.DisplayName "$FO_TAG_MODERN"
 Player.CrouchSprite "PLYC"
 	Player.Portrait	"PCSHA0"
 	States

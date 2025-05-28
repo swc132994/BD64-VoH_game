@@ -1,5 +1,24 @@
 [es esm]
 
+//OTHER SYSTEM STUFF
+FO_64SYSTEM_APPLIED = "Aplicar cambios";
+
+//////////////////////////////////////////////////////////////////
+//menus
+
+FO_MNU_64OPTIONS ="BD64 OPCIONES";
+
+FO_MNU_CLASS = "Elige tu estilo de juego:";
+
+FO_64OPTIONS_MAIN = "BRUTAL DOOM 64 OPCIONES";
+
+FO_64OPTIONS_MAIN_TXT1 = "Algunos cambios no se inicializan automáticamente";
+FO_64OPTIONS_MAIN_TXT2 = "Presione \"Aplicar cambios\" para que los cambios surtan efecto";
+
+//////////////////////////////////////////////////////////////////
+//ammo & misc item pickups
+BD64_GOTMINES = "Recogiste un Explosive Mina!";
+
 //////////////////////////////////////////////////////////////////
 //weapon, item &  misc messages
 
@@ -124,7 +143,6 @@ BD64_GOTRIFLE = "Recogiste un Rifle de asalto! (Slot 4)";
 BD64_GOTCHAINGUN = "Recogiste una Gambling! (Slot 4)";
 //Slot 5
 BD64_GOTLAUNCHER = "Recogiste un Lanza Coetes! (Slot 5)";
-BD64_GOTMINES = "Recogiste un Multi-Purpose Mina! (Slot 5)";
 //Slot 6
 BD64_GOTPLASMA = "Recogiste un Rifle de Plasma! (Slot 6)";
 BD64_GOTGAUSS = "Recogiste una 'Gauss Cannon!' (Slot 6)";

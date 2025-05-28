@@ -41,7 +41,7 @@ LISTMENU "MainMenu"
 		else
 		{
 			TextItem "$MNU_OPTIONS","o","OptionsMenu"
-			TextItem "BD64 Options","b","BD64Menu"
+			TextItem "$FO_MNU_64OPTIONS","b","BD64Menu"
 			TextItem "$MNU_LOADGAME","l","LoadGameMenu"
 			TextItem "$MNU_SAVEGAME","s","SaveGameMenu"
 		}

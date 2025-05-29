@@ -26,9 +26,12 @@ script "BD64Respawn" Respawn NET
 
 #libdefine SKILL_SURVIVAL 6
 #libdefine SKILL_SURVIVAL_REALISM 7
+#libdefine SKILL_HARD_PLUS 33
 
 Script "BD64Initilize" Enter
 {
+	if(GameType() == GAME_TITLE_MAP) terminate;
+
 	if(GameType () == GAME_SINGLE_PLAYER)
 	{
 		sethudsize(160, 90, TRUE);
@@ -60,6 +63,18 @@ Script "BD64Initilize" Enter
 		TakeInventory("NeverSelectedPlasma",1);
 		TakeInventory("NeverSelectedGauss",1);
 	}
+
+	//Watch Me Die+ (Zandronum emulation)
+	if(GameSkill() == SKILL_HARD_PLUS && IsZandronum())
+	{
+		if(GameType() == GAME_NET_COOPERATIVE) terminate;
+		else
+		{
+		ConsoleCommand("netgame 1");
+		Log(l:"FO_TAG_HARDER_RELOAD_MESSAGE");
+		ChangeLevel(StrParam(n:PRINTNAME_LEVEL),0,CHANGELEVEL_NOINTERMISSION,-1);
+		}
+	}	
 
 	//Survival Mode
 	if(GameSkill() == SKILL_SURVIVAL || GameSkill() == SKILL_SURVIVAL_REALISM)

@@ -54,7 +54,8 @@ Skill HardPlus
 	DamageFactor = 0.75
 	Name = "$FO_TAG_HARDER"
 	FastMonsters
-	SpawnMulti //This command works correctly in GZDoom, but has no effect on Zandronum
+	SpawnMulti //This command works correctly in GZDoom, but has no effect on Zandronum because his used multiplayer emulation
+	ACSReturn = 33 //Zandronum multiplayer emulation
 	mustconfirm = "$FO_TAG_HARDER_TXT"
 }
 

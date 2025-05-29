@@ -65,7 +65,7 @@ Script "BD64Initilize" Enter
 	}
 
 	//Watch Me Die+ (Zandronum emulation)
-	if(GameSkill() == SKILL_HARD_PLUS && IsZandronum())
+	if(IsZandronum())
 	{
 		if(GameType() == GAME_NET_COOPERATIVE) terminate;
 		else

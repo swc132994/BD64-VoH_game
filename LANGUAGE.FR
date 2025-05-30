@@ -82,7 +82,7 @@ FO_BLOOD_LOW = "Maximum";
 
 HUD_ARMOR = "Armure";
 
-HUD_HEALTH = "Sante";
+HUD_HEALTH = "Santé";
 
 //////////////////////////////////////////////////////////////////
 //weapon messages
@@ -164,7 +164,7 @@ FO_64MNU_DEFAULT = "Défaut";
 FO_64MNU_DEFAULT_TXT = "Les options par défaut du mod";
 FO_64MNU_CLASSICAL = "Classique";
 FO_64MNU_CLASSICAL_TXT = "Ajuste les paramètres pour qu'ils soient aussi vanilla que possible";
-FO_64MNU_SWC = "Vision d SWC";
+FO_64MNU_SWC = "Vision de SWC";
 FO_64MNU_SWC_TXT1 ="Ajoute de nouveaux monstres et armes avec des paramètres équilibrés,";
 FO_64MNU_SWC_TXT2 = "paramétrages du créateur du mod";
 FO_64MNU_RANDOM = "Générateur aléatoire";
@@ -189,7 +189,7 @@ FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1 = "Options permettant de choisir des remplacem
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2 = "pour qu'ils apparaissent de manière aléatoire";
 
 FO_64MNU_BONUS = "Bonus par défaut";
-FO_64MNU_BONUS_TXT = "(les potions infernales sont combinés avec les bonus d'armure et de santé)";
+FO_64MNU_BONUS_TXT = "(les potions infernales sont combinées avec les bonus d'armure et de santé)";
 FO_64MNU_POWERUP = "Super-pouvoirs par défaut";
 FO_64MNU_PLASMA = "Fusil à plasma par défaut";
 FO_64MNU_BFG = "BFG9000 par défaut";
@@ -220,7 +220,7 @@ FO_64MNU_SWITCH_FIST_TXT = "Option pour désactiver le passage aux poings lors d
 
 FO_64MNU_SKINS = "--------------------------- Skins d'armes et d'objets -----------------------------";
 
-FO_64MNU_SKIN_LASER = "Sprites Rayon laser alternatif =";
+FO_64MNU_SKIN_LASER = "Sprites du Rayon laser alternatif =";
 FO_64MNU_SKIN_ITEM = "Sprites des objets ramassés alternatifs =";
 FO_64MNU_SKIN_HEALTH = "Sprites Kits de soins et Berserk alternatifs =";
 FO_64MNU_SKIN_ALPHA = "Sprites des objets ramassés des verions Alpha =";
@@ -248,15 +248,15 @@ FO_SPAWN_SPECTRE = "Générateur de Spectres =";
 FO_SPAWN_SPECTRE_TXT = "Pourcentage aléatoire de spectres =";
 FO_SPAWN_CACO = "Générateur de Cacodémons =";
 FO_SPAWN_CACO_TXT = "Pourcentage aléatoire de Cacodémons =";
-FO_SPAWN_SOUL = "Générateur d'Âme perdues =";
+FO_SPAWN_SOUL = "Générateur d'Âmes perdues =";
 FO_SPAWN_SOUL_TXT1 = "Pourcentage aléatoire d'âme perdues =";
 FO_SPAWN_SOUL_TXT2 = "(Doloris/Agonis peuvent les invoquer en fonction des valeurs)";
 FO_SPAWN_KNIGHT = "Générateur de Chevaliers des enfers =";
 FO_SPAWN_KNIGHT = "Pourcentage aléatoire de chevaliers des enfers =";
 FO_SPAWN_UNDEAD = "Générateur de Revenants =";
-FO_SPAWN_UNDEAD_TXT = "Pourcentage aléatoire de Revenants =";
+FO_SPAWN_UNDEAD_TXT = "Pourcentage aléatoire de revenants =";
 FO_SPAWN_BARON = "Générateur de Barons infernales =";
-FO_SPAWN_BARON_TXT = "Pourcentage aléatoire de barons infernales =";
+FO_SPAWN_BARON_TXT = "Pourcentage aléatoire de barons infernaux =";
 FO_SPAWN_FATSO = "Générateur de Mancubi =";
 FO_SPAWN_FATSO_TXT = "Pourcentage aléatoire de mancubi =";
 FO_SPAWN_ELEMENTAL = "Générateur de Doloris =";
@@ -269,7 +269,7 @@ FO_SPAWN_MASTERMIND = "Générateur de Cerveaux arachnides=";
 FO_SPAWN_MASTERMIND_TXT = "Pourcentage aléatoire de cerveaux arachnides =";
 FO_SPAWN_HUSK = "Multiplicateur de hordes de zombies momifiés =";
 FO_SPAWN_HUSK_TXT1 = "Pourcentage aléatoire de hordes de zombies momifiés =";
-FO_SPAWN_HUSK_TXT2 = "Option permettant de faire apparaître des zombies momifiés et des Charognes à proximité des zombies morts décoratifs.";
+FO_SPAWN_HUSK_TXT2 = "Option permettant de faire apparaître des zombies momifiés et des Charognes à proximité des cadavres de zombies décoratifs.";
 FO_SPAWN_HUSK_TXT3 = "Désactivé par défaut";
 FO_SPAWN_SETTING = "(Paramètre recommandé x3, x4 ou aléatoire)";
 
@@ -414,7 +414,7 @@ FO_GOTBACKPACK3 = "\cpSac à dos\c- rempli de munitions avec lampe torche récup
 FO_GOTBACKPACK4 = "\cpSac à dos\c- rempli de munitions avec un silencieux pour pistolet et lampe torche récupéré !";
 FO_GOTCLIP = "\cpChargeur récupéré\c-.";
 FO_GOTCLIPBOX = "\cpBoîte de munitions\c- récupérée.";
-FO_GOTCLIPBOX2 = "\cpBoîte de munitions fros calibre\c- récupérée.";
+FO_GOTCLIPBOX2 = "\cpBoîte de munitions gros calibre\c- récupérée.";
 FO_GOTSHELLS = "\cpQuatres cartouches de Fusil à pompe\c- récupérées.";
 FO_GOTSHELLBOX = "\cpBoîte de cartouches de Fusil à Pompe\c- récupéré.";
 FO_GOTROCKET = "\cpRoquette récupérée\c-.";
@@ -602,7 +602,7 @@ FO_OB_GAUSS = "%o a été(e) transpercé(e) par le \cmFusil Gauss\c- de \cg%k.";
 FO_OB_MPBFG_BOOM = "%o a été(e) désintégré(e) par le le \cmBFG9000\c- de \cg%k\c-.";
 FO_OB_LASER = "%o à été(e) réduit à néant par le \cmRayon laser\c- de \cg%k\c-.";
 FO_OB_MPUNMAKER = "%o à supprimé \cg%k\c-.";
-//	OB_MPBFG_SPLASH = "%o ne pouvait se planquer du \cmBFG\c- de \cg%k\c-.";
+//	OB_MPBFG_SPLASH = "%o ne pouvait rien faire face au \cmBFG\c- de \cg%k\c-.";
 //	OB_MPTELEFRAG = "%o a été(e) \cmtélecrasé\c- par \cg%k\c-.";
 //	OB_RAILGUN = "%o été \cmréduit en cendres\c- par \cg%k\c-.";
 //	OB_MPBFG_MBF = "%o a été(e) incinéré(e) par le \cmBFG\c- de \cg%k\c-.";

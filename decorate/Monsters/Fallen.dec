@@ -59,7 +59,6 @@ MONSTER
 		FALN B 4 Bright A_LookEx
 		Loop
 	SpawnedBlank:
-		FALN A 1 Bright A_Playsound("monster/falwng",CHAN_BODY)
 		FALN ABCDCB 4 Bright A_LookEx
 		Goto Spawned
 	See:

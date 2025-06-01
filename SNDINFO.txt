@@ -245,7 +245,7 @@ MINE002						MINE002
 Weapons/StickyBombTick		SBMBTICK
 
 //Plasma rifle
-weapon/plasmaidle			dspsidl
+weapon/plasmaidle			dspsidl		$volume weapon/plasmaidle 0.4
 
 //Plasma rifle reload by iddqd1337
 PLREL			PLREL
@@ -287,7 +287,7 @@ DSFIRXPL		DSFIRXPL
 //Unmaker
 UNMAKER			UNMAKER
 UNMCLAS			UNMCLAS
-UNMKLP			UNMKLP
+UNMKLP			UNMKLP		$Volume UNMKLP 0.4
 LASERTR			LASERTR		$limit LASERTR 0
 LASERLO			LASERLO		$attenuation LASERLO 2
 LASERIC			LASERIC		$attenuation LASERIC 2

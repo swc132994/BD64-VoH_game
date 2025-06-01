@@ -6,7 +6,13 @@ FO_64SYSTEM_APPLIED = "Aplicar cambios";
 //////////////////////////////////////////////////////////////////
 //menus
 
+FO_MNU_NEWGAME = "NUEVA PARTIDA";
+FO_MNU_LOAD = "CARGAR PARTIDA";
+FO_MNU_SAVE = "GUARDAR PARTIDA";
+FO_MNU_OPTIONS = "OPCIONES";
 FO_MNU_64OPTIONS ="BD64 OPCIONES";
+FO_MNU_READ = "LEE ESTO";
+FO_MNU_QUIT = "SALIR DEL JUEGO";
 
 FO_MNU_CLASS = "Elige tu estilo de juego:";
 

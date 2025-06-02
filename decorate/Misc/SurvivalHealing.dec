@@ -152,7 +152,7 @@ Weapon.AmmoGive2 0
 		TNT1 A 0 A_Takeinventory("PlaceMine",0)
 		TNT1 A 0 A_Takeinventory("Kicking",0)
 		M0KI EDCBA 1
-		TNT1 A 1 A_Lower
+		TNT1 A 0 A_Lower
 		Wait
 	Fire:
 		TNT1 A 0 A_JumpIfHealthLower(100,"CheckingBandages")

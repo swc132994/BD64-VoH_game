@@ -1105,8 +1105,9 @@ Tag "$FO_TAG_FLASHLIGHT"
 	States
 	{
 	Spawn:
-		FLSH A -1
-		Stop
+		FLSH A 8
+		FLSH A 8 Bright
+		Loop
 	Pickup:
 		TNT1 A 0 A_GiveInventory("FlashlightPickup",1)
 		Stop

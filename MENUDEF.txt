@@ -414,6 +414,7 @@ OptionValue "HoundChooser"
 	-1,"Disabled"
 	0,"Alternative"
 	1,"GEC(default)"
+	2,"Any Hound"
 }
 
 OptionValue "CacoSkinChooser"

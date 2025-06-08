@@ -662,7 +662,8 @@ Scale 0.8
 	SemiStay2:
 		TNT1 AAA 0 A_SpawnItemEx("BurningBarrelSmoke")
 		TNT1 A 0 A_TakeInventory("BurningBarrelSmokeCheck",0)
-	Stay2:
+		TNT1 A 0 A_PlaySound("BDfireplace",CHAN_VOICE,0.50,TRUE,2.00)
+	Stay2:		
 		TNT1 A 0 A_CheckSight("StayBlank2")
 		ALVE A 3 Light("BIGREDTORCH") A_CustomMissile("RealFlameTrailsSmall",0,0,random(0,360),2,random(70,110))
 		ALVE A 3 Light("BIGREDTORCH") A_CustomMissile("RealFlameTrailsSmall",0,0,random(0,360),2,random(70,110))
@@ -1213,6 +1214,7 @@ Scale 0.7
 	Spawn:
 		64CN A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		64CN A 3 Light("SMALLREDTORCH") A_CustomMissile("RealFlameTrailsWallTorch",45,0,random(0,360),2,random(70,110))
@@ -1253,6 +1255,7 @@ Scale 0.75
 		TRED A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("RealFlameTrailsSmall",60,0,random(0,360),2,random(70,110))
@@ -1278,6 +1281,7 @@ Scale 0.75
 		TBLU A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("RealFlameTrailsBlue",60,0,random(0,360),2,random(70,110))
@@ -1303,6 +1307,7 @@ Scale 0.75
 		TGRN A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("RealFlameTrailsGreen",60,0,random(0,360),2,random(70,110))
@@ -1329,6 +1334,7 @@ Scale 0.75
 		TLYL A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("YellowFlameTrailsSmall",60,0,random(0,360),2,random(70,110))
@@ -1354,6 +1360,7 @@ Scale 0.75
 		SMRT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("RealFlameTrailsSmall",44,0,random(0,360),2,random(70,110))
@@ -1379,6 +1386,7 @@ Scale 0.75
 		SMBT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("RealFlameTrailsBlue",44,0,random(0,360),2,random(70,110))
@@ -1404,6 +1412,7 @@ Scale 0.75
 		SMGT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("RealFlameTrailsGreen",44,0,random(0,360),2,random(70,110))
@@ -1430,6 +1439,7 @@ Scale 0.75
 		SMYT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("RealFlameTrailsYellow",44,0,random(0,360),2,random(70,110))
@@ -1458,6 +1468,7 @@ Radius 5
 		WLRT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("RealFlameTrailsWallTorch",20,0,random(0,360),2,random(70,110))
@@ -1486,6 +1497,7 @@ Radius 5
 		WLBT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("RealFlameTrailsBlueWallTorch",20,0,random(0,360),2,random(70,110))
@@ -1514,6 +1526,7 @@ Radius 5
 		WLGT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLess")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,64)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_CustomMissile("RealFlameTrailsGreenWallTorch",20,0,random(0,360),2,random(70,110))
@@ -1774,7 +1787,7 @@ DamageType "Flames"
 	{
 	Spawn:
 		FCAN A 0 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
-		FCAN A 2
+		FCAN A 2 A_PlaySound("BDfireplace",CHAN_BODY,0.60,TRUE,2.00)
 	SemiStay:
 		TNT1 AAA 0 A_SpawnItemEx("BurningBarrelSmoke")
 		TNT1 A 0 A_TakeInventory("BurningBarrelSmokeCheck",0)
@@ -2018,11 +2031,10 @@ RenderStyle Add
 	Spawn:
 		F1RE A 0 NoDelay A_SpawnItemEx("LightShaft2")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,32)
+		TNT1 A 0 A_PlaySound("BDfireplace",CHAN_VOICE,0.60,TRUE,2.00)
 	Stay:
 		TNT1 A 0 A_CheckSight("WaitSight")
-		//TNT1 A 0 A_Playsound("BDfireplace",CHAN_VOICE)
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY)
 		F1RE A 1 Bright Light("GROUNDFIRE")
 		F1RE B 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("RedFlare",0,0,32)
 		F1RE C 1 Bright Light("GROUNDFIRE")

@@ -315,7 +315,7 @@ MP40/Charge		MP40BACK
 GRNPIN			GRNPIN
 
 //Flies
-Flies			DSBUZZ		$volume Flies 0.75
+Flies			DSBUZZ
 
 //Projectiles
 $random world/ricochet
@@ -589,20 +589,29 @@ AcidPuddle/Start		DSACDFIZ
 $random DamnedSee
 	{
 	DAMS1 DAMS2
-	}
+	}		$volume DamnedSee 0.6		$attenuation DamnedSee 1.5
 DAMS1			DAMS1
 DAMS2			DAMS2
 
 $random TORTURE
 	{
 	TORTURE1 TORTURE2
-	}
-TORTURE1			TORTURE1		$volume TORTURE1 0.6		$attenuation TORTURE1 1.5
-TORTURE2			TORTURE2		$volume TORTURE2 0.6		$attenuation TORTURE2 1.5
+	}		$volume TORTURE 0.6			$attenuation TORTURE 1.5	
+TORTURE1			TORTURE1
+TORTURE2			TORTURE2
 TORTURE3			TORTURE3		$volume TORTURE3 0.6		$attenuation TORTURE3 1.5
 TORTURE4			TORTURE4		$volume TORTURE4 0.6		$attenuation TORTURE4 1.5
 TORTURE5			TORTURE5		$volume TORTURE5 0.4		$attenuation TORTURE5 1.5
 TORTURE6			TORTURE6		$volume TORTURE6 0.6		$attenuation TORTURE6 1.5
+
+$random chainrattle
+	{
+	CHNRTL1 CHNRTL2 CHNRTL3
+	}		$volume chainrattle 0.6			$attenuation chainrattle 1.5
+CHNRTL1 CHNRTL1
+CHNRTL2 CHNRTL2
+CHNRTL3 CHNRTL3
+
 
 //Stalker
 DSSTLKPN			DSSTLKPN
@@ -1110,6 +1119,16 @@ $random menu/quit2
 	gibbage/egg1 powerups/megasphere chainguy/sight1 chainguy/sight2 skeleton/head gibbage/vilebody1 vile/active misc/p_pkup brain/cube misc/gibbed skeleton/swing knight/death baby/active demon/melee
 	}
 
+//Fireplace & torches
+
+BDFirePlace dstorch
+$limit BDfireplace 2
+$rolloff BDfireplace 100 900
+
+props/redfire dstorch2
+$limit props/redfire 2
+$rolloff props/redfire 100 900
+
 //---------------------------
 //**********GORE*************
 //---------------------------
@@ -1155,15 +1174,15 @@ misc/xdeath4c			dsxdth4c
 $random blooddrop
 	{
 	LQDRIP1 LQDRIP2 LQDRIP3
-	}
+	}	$volume blooddrop 0.7		$attenuation blooddrop 1.5
 $random blooddrop2
 	{
 	LQDRIP4 LQDRIP5 LQDRIP6 LQDRIP7
-	}
+	}	$volume blooddrop2 0.7		$attenuation blooddrop2 1.5
 $random blooddrop3
 	{
 	LQDRIP8 LQDRIP9 LQDRIP10 LQDRIP11 LQDRIP12 LQDRIP13 LQDRIP14 LQDRIP14
-	}
+	}	$volume blooddrop3 0.7		$attenuation blooddrop3 1.5
 LQDRIP1			LQDRIP1
 LQDRIP2			LQDRIP2
 LQDRIP3			LQDRIP3

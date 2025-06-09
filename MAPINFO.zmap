@@ -235,7 +235,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64LostSoulCast"
-		CastName = "$FO_TAG_SOUL"
+		CastName = "$FO_TAG_LOSTSOUL"
 		AttackSound = "Missile",1,"skull/melee"
 	}
 	Cast
@@ -315,7 +315,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64NightCrawlerCast"
-		CastName = "$FO_OB_NIGHTCRAWLER"
+		CastName = "$FO_TAG_NIGHTCRAWLER"
 		AttackSound = "Missile",1,"weapons/rocklf"
 	}
 	Cast

@@ -381,12 +381,14 @@ BloodType "Brutal_BloodBLUE"
 		HEA4 N 4 A_CustomMeleeAttack(8,"weapons/gswing")	//RMelee and Missile seperated
 		Goto see
 	Missile:
-		HEA4 BC 8 A_FaceTarget
+		HEA4 BC 4 A_FaceTarget
+		TNT1 A 0 A_Stop
 		HEA4 D 4 Bright A_CustomMissile("NCacoBall",28)	//Melee and Missile seperated
 		HEA4 BC 4 A_FaceTarget
 		HEA4 D 4 Bright A_CustomMissile("NCacoBall",28)	//Melee and Missile seperated
 		HEA4 BC 4 A_FaceTarget
 		HEA4 D 4 Bright A_CustomMissile("NCacoBall",28)	//Melee and Missile seperated
+		HEA4 BC 4 A_FaceTarget
 		Goto see
 	Death:
 		HEA4 E 5 A_NoBlocking

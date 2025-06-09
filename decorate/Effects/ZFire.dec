@@ -875,7 +875,7 @@ DamageType "Flames"
 	Death:
 		TNT1 AAAAAA 0 A_CustomMissile("FlameTrails",0,0,random(0,360),2,random(0,180))
 		TNT1 A 0 A_SpawnItemEx("ExplosionSimpleSmokeColumn")
-		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 		F1RE ABCDEFGH 1 Bright A_SpawnItemEx("RedFlareMedium",0,0,32)
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterNoSplashes")
 		TNT1 A 0 A_CustomMissile("ExplosionSmoke",80,0,random(0,180),2,random(0,180))
@@ -959,7 +959,7 @@ BounceFactor 0.1
 	Death:
 		TNT1 AAAAAA 0 A_CustomMissile("FlameTrails",0,0,random(0,360),2,random(0,180))
 		TNT1 A 0 A_SpawnItemEx("ExplosionSimpleSmokeColumn")
-		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 		F1RE ABCDEFGH 1 Bright A_SpawnItemEx("RedFlareMedium",0,0,32)
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterNoSplashes")
 		F2RE ABCDEFGH 1 Bright A_SpawnItemEx("RedFlareMedium",0,0,32)
@@ -1023,7 +1023,7 @@ DamageType "Flames"
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterSmall")
 		TNT1 AAAAAA 0 A_CustomMissile("FlameTrails",0,0,random(0,360),2,random(0,180))
 		TNT1 A 0 A_SpawnItemEx("ExplosionSimpleSmokeColumn")
-		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.00)
+		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 		F1RE ABCDEFGH 1 Bright A_SpawnItemEx("RedFlareMedium",0,0,32)
 		F2RE ABCDEFGH 1 Bright A_SpawnItemEx("RedFlareMedium",0,0,32)
 		TNT1 A 0 A_Explode(5,40,0)
@@ -1437,7 +1437,7 @@ ReactionTime 60
 	{
 	Spawn:
 		TNT1 A 0 NoDelay A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 0 A_PlaySound("BDfireplace",CHAN_VOICE,0.4,TRUE,2.00)
+		TNT1 A 0 A_PlaySound("BDfireplace",CHAN_VOICE,0.4,TRUE,2.25)
 		TNT1 A 3 Light("BIGREDTORCH")
 		TNT1 A 0 A_CustomMissile("LongFlameParticle2",random(0,8),0,random(0,360),2,random(80,100))
 		TNT1 A 3 Light("BIGREDTORCH")

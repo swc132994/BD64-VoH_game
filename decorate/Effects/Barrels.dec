@@ -84,6 +84,7 @@ Tag "$FO_TAG_EXPLOSIVEBARREL"
 ACTOR BurningBarrelPiece : BurningXDeath1
 {
 Scale 0.6
+Damage (1)
 Speed 15
 Gravity 0.8
 SeeSound "None"
@@ -122,7 +123,6 @@ Damage 20
 DamageType "Flames"
 Alpha 0.6
 Renderstyle Translucent
-+RANDOMIZE
 +DEHEXPLOSION
 	states
 	{

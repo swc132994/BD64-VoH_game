@@ -1088,9 +1088,8 @@ actor 64NonsolidMeat5 : 64Meat5 Replaces NonsolidMeat5
 -SOLID
 }
 
-actor TweezerGore : Meat2 9913
+actor TweezerGore : Meat2
 {
-//$category "Game/BD64_Props"
 Scale 0.82
 Height 83
 	States
@@ -1113,15 +1112,13 @@ Height 83
 	}
 }
 
-actor TweezerGoreNonSolid : TweezerGore 9928//DoomED
+actor TweezerGoreNonSolid : TweezerGore
 {
-//$category "Game/BD64_Props"
 -SOLID
 }
 
-actor BloodyStick : HeadOnAStick 9915//DoomED
+actor BloodyStick : HeadOnAStick
 {
-//$category "Game/BD64_Props"
 Scale 0.82
 	States
 	{
@@ -1323,7 +1320,7 @@ Scale 0.75
 	}
 }
 
-actor 64YellowTorch : RedTorch 9917//DoomED
+actor 64YellowTorch : RedTorch 9917
 {
 //$category "Game/BD64_Props"
 Scale 0.75
@@ -1428,7 +1425,7 @@ Scale 0.75
 	}
 }
 
-actor 64YellowTorchSmall : ShortRedTorch 9918//DoomED
+actor 64YellowTorchSmall : ShortRedTorch 9918
 {
 //$category "Game/BD64_Props"
 Scale 0.75
@@ -1455,7 +1452,7 @@ Scale 0.75
 	}
 }
 
-actor 64WallTorchRed 9930//DoomED
+actor 64WallTorchRed 9930
 {
 //$category "Game/BD64_Props"
 Scale 0.75
@@ -1484,7 +1481,7 @@ Radius 5
 	}
 }
 
-actor 64WallTorchBlue 9933//DoomED
+actor 64WallTorchBlue 9933
 {
 //$category "Game/BD64_Props"
 Scale 0.75
@@ -1513,7 +1510,7 @@ Radius 5
 	}
 }
 
-actor 64WallTorchGreen 9935//DoomED
+actor 64WallTorchGreen 9935
 {
 //$category "Game/BD64_Props"
 Scale 0.75
@@ -1542,7 +1539,7 @@ Radius 5
 	}
 }
 
-actor 64WallTorchYellow 9936//DoomED
+actor 64WallTorchYellow 9936
 {
 //$category "Game/BD64_Props"
 Scale 0.75

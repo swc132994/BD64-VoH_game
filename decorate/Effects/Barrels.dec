@@ -90,6 +90,7 @@ Gravity 0.8
 SeeSound "None"
 DeathSound "None"
 Decal "SmallerScorch"
++ACTIVATEPCROSS
 +BOUNCEONWALLS
 +NOBLOOD
 +NOBLOODDECALS

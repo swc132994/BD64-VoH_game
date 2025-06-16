@@ -1,14 +1,12 @@
-Actor 64HellHoundGEC : Demon 19117
+Actor 64HellHoundGEC : Demon
 {
-//$category "Game/BD64_Monsters"
-SpawnID 177
 Scale 0.8
 Health 1000
 GibHealth 20
 Speed 16
 Radius 24
 MeleeThreshold 200
-MeleeRange 70 //default 44
+MeleeRange 60 //default 44
 PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200

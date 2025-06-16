@@ -1,7 +1,5 @@
-Actor 64HellHound : Demon 19116	//Hellhound Alt by IMI
+Actor 64HellHound : Demon //Hellhound Alt by IMI
 {
-//$category "Game/BD64_Monsters"
-SpawnID 176
 Scale 0.8
 Health 1000
 GibHealth 20

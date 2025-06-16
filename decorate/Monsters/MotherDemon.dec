@@ -163,7 +163,7 @@ States
 	}
 }
 
-Actor MotherFire 9899
+Actor MotherFire
 {
 Game Doom
 Scale 0.8

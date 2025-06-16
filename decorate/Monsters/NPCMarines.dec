@@ -5,7 +5,6 @@ Scale 0.8 //won't touch this guy any more just in case, p. sure ScriptedMarines 
 
 Actor IntroMarine : MarinePistol Replaces MarinePistol
 {
-//$category "BD64Allies"
 Scale 0.8
 Health 10
 GibHealth 30

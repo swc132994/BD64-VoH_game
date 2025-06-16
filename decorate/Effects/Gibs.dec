@@ -1343,6 +1343,7 @@ Scale 0.8
 Health 0
 Radius 5
 Height 10
++ACTIVATEPCROSS
 +CORPSE
 +BOUNCEONWALLS
 	States

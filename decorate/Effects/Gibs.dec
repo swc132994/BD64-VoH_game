@@ -1,10 +1,10 @@
 ACTOR XDeath1
 {
 Scale 1.2
-Radius 4
+Radius 6
 Height 4
 Speed 10
-Mass 1
+Mass 5
 SeeSound "misc/xdeath4"
 DeathSound "misc/xdeath3"
 Decal "BrutalBloodSuper"

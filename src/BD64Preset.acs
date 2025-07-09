@@ -217,7 +217,7 @@ script "StevenCvars" (void) net
 	SetCvar("Motherdemon_Spawner_Cvar",0);
 
 	SetCvar("CacoChooserCvar",1);
-	SetCvar("HoundChooserCvar",0);
+	SetCvar("HoundChooserCvar",2);
 
 	SetCvar("HUDSwitchCvar",1);
 	SetCvar("FootStepCheckCvar",0);

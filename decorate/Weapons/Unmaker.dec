@@ -217,24 +217,27 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 		TNT1 A 0 A_JumpIfInventory("WeaponSpecialAction",1,"Special")
 		Loop
 	FireAltGreen:
-		TNT1 A 0 A_JumpIfInventory("Cell",15,2)
+		TNT1 A 0 A_JumpIfInventory("Cell",50,2)
 		TNT1 A 0 A_Print("$WM_NOTENOUGHAMMO",1)
 		Goto Ready
 		TNT1 A 0 A_PlaySound("DSBOSPIT",CHAN_VOICE)
 		TNT1 A 0 ThrustThingZ(0,5,0,0)
 		TNT1 A 0 A_SpawnItemEx("64LevitatingPlatform")
-		TNT1 A 0 A_TakeInventory("Cell",15,TIF_NOTAKEINFINITE)
+		TNT1 A 0 A_TakeInventory("Cell",50,TIF_NOTAKEINFINITE)
 		UNMG D 2 Bright
 		UNMG DCBA 4
 		Goto ReadyGreen
 	FireAltRed:
-		TNT1 A 0 A_Explode(20,10,XF_HURTSOURCE,0)
+		TNT1 A 0 A_JumpIfInventory("Cell",25,2)
+		TNT1 A 0 A_Print("$WM_NOTENOUGHAMMO",1)
+		Goto Ready
+		TNT1 A 0 A_Explode(40,10,XF_HURTSOURCE,0)
 		TNT1 A 0 A_PlaySound("OutHelltime",CHAN_BODY)
 		TNT1 A 0 A_Print("$UN_TIMESTOP",2)
+		TNT1 A 0 A_TakeInventory("Cell",25,TIF_NOTAKEINFINITE)
 		UNMR D 2 Bright
 		UNMR DCBA 4
-		TNT1 A 0 A_GiveInventory("PowerTimeFreezer",1)
-		TNT1 A 0 A_GiveInventory("PowerStrength",1)
+		TNT1 A 0 A_GiveInventory("UnmakerRedPower",1)
 		TNT1 A 0 A_SelectWeapon("64Fist")
 		Goto Deselect
 	}
@@ -674,25 +677,29 @@ Tag "$FO_TAG_UNMAKER"
 		TNT1 A 0 A_JumpIfInventory("WeaponSpecialAction",1,"Special")
 		Loop
 	FireAltGreen:
+		TNT1 A 0 A_JumpIfInventory("SoulAmmo",10,2)
+		TNT1 A 0 A_Takeinventory("UnAltMode",0)
+		Goto NotReady1
 		TNT1 A 0 A_JumpIfInventory("DemonEssence",10,1)
 		Goto NotReady2
 		TNT1 A 0 A_PlaySound("DSBOSPIT",CHAN_VOICE)
 		TNT1 A 0 ThrustThingZ(0,5,0,0)
 		TNT1 A 0 A_SpawnItemEx("64LevitatingPlatform")
 		TNT1 A 0 A_TakeInventory("DemonEssence",10,TIF_NOTAKEINFINITE)
+		TNT1 A 0 A_TakeInventory("SoulAmmo",10,TIF_NOTAKEINFINITE)
 		UNMG D 2 Bright A_SetPitch(-1.0 + pitch)
 		UNMG DCBA 4 A_SetPitch(0.5 + pitch)
-		Goto ReadyGreen
+		Goto ReadyGreenLoop
 	FireAltRed:
 		TNT1 A 0 A_JumpIfInventory("DemonEssence",10,1)
 		Goto NotReady2
 		TNT1 A 0 A_PlaySound("OutHelltime",CHAN_VOICE)
 		TNT1 A 0 A_TakeInventory("DemonEssence",10,TIF_NOTAKEINFINITE)
 		TNT1 A 0 A_Print("$UN_TIMESTOP",2)
+		TNT1 A 0 A_Explode(40,10,XF_HURTSOURCE,0)
 		UNMR D 2 Bright A_SetPitch(-1.0 + pitch)
 		UNMR DCBA 4 A_SetPitch(0.5 + pitch)
-		TNT1 A 0 A_GiveInventory("PowerTimeFreezer",1)
-		TNT1 A 0 A_GiveInventory("PowerStrength",1)
+		TNT1 A 0 A_GiveInventory("UnmakerRedPower",1)
 		TNT1 A 0 A_SelectWeapon("64Fisttactical")
 		Goto Deselect
 	AltFire:
@@ -718,11 +725,11 @@ Tag "$FO_TAG_UNMAKER"
 		UNMA A 3
 		Goto Ready
 	NotReady1:
-		TNT1 A 0 A_Print("$UN_NOTENOUGHSOULS",1)
+		TNT1 A 0 A_Print("$UN_NOTENOUGHSOULS",2)
 		Goto Ready
 	NotReady2:
 		TNT1 A 0 A_Takeinventory("UnAltMode",0)
-		TNT1 A 0 A_Print("$UN_NOTENOUGHESSENCE",1)
+		TNT1 A 0 A_Print("$UN_NOTENOUGHESSENCE",2)
 		Goto Ready
 	}
 }
@@ -802,4 +809,27 @@ DamageType "Ice"
 		SHWK ABCDEFGHIJKL 1 Bright Light("ICELASER") A_CustomMissile("PlasmaSmoke",0,0,random(0,360),2,random(0,360))
 		Stop
 	}
+}
+
+Actor UnmakerRedPower : CustomInventory
+{
+	States
+	{
+	Pickup:
+		TNT1 A 0 A_GiveInventory("PowerStrength",1)
+		TNT1 A 0 A_GiveInventory("PowerDrainUnmaker",1)
+		TNT1 A 0 A_GiveInventory("PowerTimeFreezerUnmaker",1)
+		Stop
+	}
+}
+
+Actor PowerDrainUnmaker : PowerDrain
+{
+Powerup.Duration -15
+Powerup.Strength 0.1
+}
+
+Actor PowerTimeFreezerUnmaker : PowerTimeFreezer
+{
+Powerup.Duration -15
 }

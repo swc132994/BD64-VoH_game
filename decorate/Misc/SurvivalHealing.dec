@@ -72,15 +72,17 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 	UseBerserkerAdrenaline:
 		TNT1 A 0 A_JumpIfInventory("PowerStrength",1,"NoMoreBerserk")
 		MDQ1 ABCDEF 1
-		MDK1 ABCDEFGH 1
-		MDK1 I 1 A_TakeInventory("64AdrenalineStim",1)
+		MDK1 ABCDEFFGHIJKLLLLLLMNOPQRRST 1
+		MDK1 T 1 A_TakeInventory("64AdrenalineStim",1)
 		TNT1 A 0 A_Stop
 		TNT1 A 0 A_PlaySound("firstaidkit/zerk",CHAN_WEAPON)
 		TNT1 A 0 HealThing(100)
 		TNT1 A 0 A_SetBlend("ff0000",0.75,70)
 		TNT1 A 0 A_GiveInventory("PowerStrength")
-		MDK1 JKL 2
-		MDK1 MNOPQRSTU 1
+		MDK1 UVVVVW 2
+		MDK1 XYZ 1
+		MDK1 "[\]" 1
+		MDK2 AAAABCDEFF 1
 		TNT1 A 1 A_FireCustomMissile("EmptySyringeSpawn",-5,0,8,-18)
 		Goto Select
 	NoMoreBerserk:
@@ -191,15 +193,16 @@ Weapon.AmmoGive2 0
 	UseBerserkerAdrenaline:
 		TNT1 A 0 A_JumpIfInventory("PowerStrength",1,"NoMoreBerserk")
 		MDQ1 ABCDEF 1
-		MDK1 ABCDEFGH 1
-		MDK1 I 1 A_TakeInventory("64AdrenalineStim",1)
+		MDK1 ABCDEFGHIIJJKKLMNNOOOOOPQRR 1
+		MDK2 A 1 A_TakeInventory("64AdrenalineStim",1)
 		TNT1 A 0 A_Stop
 		TNT1 A 0 A_PlaySound("firstaidkit/zerk",CHAN_WEAPON)
 		TNT1 A 0 HealThing(100)
 		TNT1 A 0 A_SetBlend("ff0000",0.75,70)
 		TNT1 A 0 A_GiveInventory("PowerStrength")
-		MDK1 JKL 2
-		MDK1 MNOPQRSTU 1
+		MDK2 BCDEEF 1
+		MDK2 GHHIIIIIJK 1
+		MDK2 LLMM 1
 		TNT1 A 1 A_FireCustomMissile("EmptySyringeSpawn",-5,0,8,-18)
 		Goto Select
 	NoMoreBerserk:

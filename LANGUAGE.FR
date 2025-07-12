@@ -126,15 +126,15 @@ FO_TAG_CLASS_TACTICAL = "Tactique";
 //////////////////////////////////////////////////////////////////
 //Tags for Dificulties
 
-FO_TAG_BABY = "Soyez doux !";
+FO_TAG_BABY = "Soit doux !";
 FO_TAG_BABY_TXT = "Équivalent de 'Trop jeune pour mourir' (facteur de munitions x2)";
 FO_TAG_EASY = "Rammenez-vous !";
 FO_TAG_EASY_TXT = "Équivalent de 'Hé, pas trop fort'";
 FO_TAG_NORMAL = "J'ai acheté Doom !";
 FO_TAG_NORMAL_TXT = "Équivalent de 'Fait moi mal !'";
-FO_TAG_HARD = "Vois-moi mourir !";
+FO_TAG_HARD = "Regarde-moi mourir !";
 FO_TAG_HARD_TXT = "Équivalent de  'Ultra-violence'";
-FO_TAG_HARDER = "Vois-moi mourir+ !";
+FO_TAG_HARDER = "Regarde-moi mourir+ !";
 FO_TAG_HARDER_TXT = "Équivalent de 'Ultra-violence+', Projectiles rapides (GZDoom uniquement) : Apparition des armes multijoueurs";
 FO_TAG_NIGHTMARE = "Hardcore !";
 FO_TAG_NIGHTMARE_TXT = "Capacités des monstres = Projectiles rapides, +25% de santé et plus agressif";
@@ -150,10 +150,10 @@ FO_TAG_HARDER_RELOAD_MESSAGE = "La carte a été redémarrée pendant l'émulati
 
 FO_OP_BD64 = "\ckBrutal Doom 64";
 FO_OP_KICK = "\ckCoup de pied";
-FO_OP_TOSS = "\ckJeter Mine";
-FO_OP_PLACE = "\ckPlacez Mine";
-FO_OP_SPECIAL = "\ckAction spéciale d'arme";
-FO_OP_FLASH = "\ckInterrupteur de lampe de poche";
+FO_OP_TOSS = "\ckJeter mine";
+FO_OP_PLACE = "\ckPlacez mine";
+FO_OP_SPECIAL = "\ckCapacitées spéciales des armes";
+FO_OP_FLASH = "\ckInterrupteur de la lampe de poche";
 
 //////////////////////////////////////////////////////////////////
 //menus
@@ -225,9 +225,9 @@ FO_64MNU_CLASSIC_SHOTGUN = "Activer les animations classiques du fusil à pompe/
 FO_64MNU_CLASSIC_SHOTGUN_TXT = "Afficher les animations classiques du fusil à pompe/SSG de Doom 64 (mode classique).";
 FO_64MNU_WARMUP = "Activer les animations des armes au ramassage =";
 FO_64MNU_WARMUP_TXT = "Afficher les animations des armes lors du premier ramassage (modes tactiques/modernes UNIQUEMENT).";
-FO_64MNU_CLASSIC_CHAINSAW ="Tronçonneuse de style classique pour classes tactique/moderne =";
-FO_64MNU_CLASSIC_CHAINGUN = "Mitrailleuse de style classique pour classes tactique/moderne =";
-FO_64MNU_CLASSIC_ROCKET = "Lance-roquettes de style classique pour classes tactiques/modernes =";
+FO_64MNU_CLASSIC_CHAINSAW ="Apparence classique de la Tronçonneuse pour les classes tactique/moderne =";
+FO_64MNU_CLASSIC_CHAINGUN = "Apparence classique de la Mitrailleuse pour les classes tactique/moderne =";
+FO_64MNU_CLASSIC_ROCKET = "Apparence classique du Lance-roquettes pour les classes tactiques/modernes =";
 FO_64MNU_CLASSIC_SWITCH = "Options pour basculer entre les armes classiques ou modernisées.";
 
 FO_64MNU_SKIP_RELOAD = "Ignorer les séquences de rechargement des armes (Maintenez \"Apply Changes\") =";
@@ -238,7 +238,7 @@ FO_64MNU_LOWAMMO_TXT1 = "Vous permet d'activer ou de désactiver l'avertissement
 FO_64MNU_LOWAMMO_TXT2 = "(modes tactiques/modernes UNIQUEMENT)";
 
 FO_64MNU_SWITCH_FIST = "Passez aux poings lors du ramassage d'un Berserk =";
-FO_64MNU_SWITCH_FIST_TXT = "Option pour désactiver le passage aux poings lors du ramassage en mode berserk.";
+FO_64MNU_SWITCH_FIST_TXT = "Option pour désactiver le passage aux poings lors du ramassage en mode berserkeur.";
 
 FO_64MNU_SKINS = "--------------------------- Skins d'armes et d'objets -----------------------------";
 
@@ -246,7 +246,7 @@ FO_64MNU_SKIN_LASER = "Sprites du Rayon laser alternatif =";
 FO_64MNU_SKIN_ITEM = "Sprites des objets ramassés alternatifs =";
 FO_64MNU_SKIN_HEALTH = "Sprites Kits de soins et Berserk alternatifs =";
 FO_64MNU_SKIN_ALPHA = "Sprites des objets ramassés des verions Alpha =";
-FO_64MNU_SKIN_ALPHA_TXT = "Options pour des looks alpha alternatifs pour les objets et les armes.";
+FO_64MNU_SKIN_ALPHA_TXT = "Options pour activer les apparences alternatives alpha des objets et les armes.";
 
 FO_64MNU_OTHER = "-------------------------------------- Autres -----------------------------------";
 
@@ -271,7 +271,7 @@ FO_SPAWN_SPECTRE_TXT = "Pourcentage aléatoire de spectres =";
 FO_SPAWN_CACO = "Générateur de Cacodémons =";
 FO_SPAWN_CACO_TXT = "Pourcentage aléatoire de Cacodémons =";
 FO_SPAWN_SOUL = "Générateur d'Âmes perdues =";
-FO_SPAWN_SOUL_TXT1 = "Pourcentage aléatoire d'âme perdues =";
+FO_SPAWN_SOUL_TXT1 = "Pourcentage aléatoire d'âmes perdues =";
 FO_SPAWN_SOUL_TXT2 = "(Doloris/Agonis peuvent les invoquer en fonction des valeurs)";
 FO_SPAWN_KNIGHT = "Générateur de Chevaliers des enfers =";
 FO_SPAWN_KNIGHT = "Pourcentage aléatoire de chevaliers des enfers =";
@@ -299,7 +299,7 @@ FO_MONSTER_OTHER= "Autres options de monstres";
 
 FO_MONSTER_SKIN = "------------------------------- Skins de monstres -------------------------------";
 
-FO_MONSTER_HELLHOUND = "Apparence du Chien de l'Enfer =";
+FO_MONSTER_HELLHOUND = "Apparence du Cerbère =";
 FO_MONSTER_HELLHOUND_TXT1 = "Si vous avez sélectionné \"Aléatoire (Pas de Baron)\"";
 FO_MONSTER_HELLHOUND_TXT2 = "et désactivé la sélection de skin Cerbère";
 FO_MONSTER_HELLHOUND_TXT3 = "vous obtiendrez \"Aléatoire (Pas de Cerbère)\"";
@@ -316,16 +316,16 @@ FO_MAP_SELECT_TXT3 = "Vous pouvez utiliser Doom 2 sur des wads non compatibles";
 FO_MAP_PROP = "----------------------------- Remplacement des décorations des niveaux -----------------------------";
 
 FO_PROP_INFECTED = "Cadavres de Marine infecté =";
-FO_PROP_INFECTED_TXT = "Remplacez les marines morts et les décorations de marine morts par les monstres "La chose".";
+FO_PROP_INFECTED_TXT = "Remplacez les marines morts et les décorations de marine morts par les monstres 'La chose'.";
 FO_PROP_GHOST = "Mode esprit frappeur =";
 FO_PROP_GHOST_TXT1 = "Remplacez les objets décoratifs des esprits frappeurs hostiles.";
-FO_PROP_GHOST_TXT2 = "(les Esprits frappeurs sont des les objets décoratifs dans les niveaux hostiles qui peuvent attaquer le joueur)";
+FO_PROP_GHOST_TXT2 = "(les Esprits frappeurs sont des les objets décoratifs dans les niveaux hostiles qui peuvent attaquer le joueur.)";
 
 FO_PERFORMANCE_MISK = "Options de performance et diverses";
 FO_PERFORMANCE_MISK_TXT = "Activez cette option UNIQUEMENT si vous hébergez un serveur sur un jeu multijoueur.";
 FO_PERFORMANCE_MISK_TXT = "(l'activation de cette option générera un message d'erreur si vous utilisez GZDoom)";
 FO_PERFORMANCE_ZAN_MULTI = "Activer les scripts multijoueurs spécifiques à Zandronum =";
-FO_PERFORMANCE_ZAN_TACTICAL = "Activer le script de classe tactique spécifique à QZandronum =";
+FO_PERFORMANCE_ZAN_TACTICAL = "Activer le script de la classe tactique spécifique à QZandronum =";
 
 FO_OPTION_PERFORMANCE = "-------------------------------- Performances et gore --------------------------------";
 
@@ -339,27 +339,27 @@ FO_OPTION_PERFORMANCE_SPLASH = "Désactiver les éclaboussures liquides =";
 
 FO_OPTION_HUD = "------------------------------------ ATH ------------------------------------";
 
-FO_OPTION_HUD_STYLE = "Définir le style de l'ATH =";
-FO_OPTION_HUD_SCREEN = "Activer les effets d'écran de l'ATH=";
+FO_OPTION_HUD_STYLE = "Définir le style de l'ATH (HUD) =";
+FO_OPTION_HUD_SCREEN = "Activer les effets d'écran de l'ATH =";
 FO_OPTION_HUD_BLOOD = "Active les effets d'écran sur l'ATH, tels que les éclaboussures de sang et les impacts de balles.";
 FO_OPTION_HUD_TRAILS = "Activer les éclaboussures de traînées de sang sur l'écran de l'ATH =";
 FO_OPTION_HUD_SPLASH = "Les monstres qui saignent de près créeront des éclaboussures de sang sur l'ATH.";
-FO_OPTION_HUD_SPLASH_TXT1 = "(Si les effets d'écran sont désactivés, cette option sera également désactivée)";
-FO_OPTION_HUD_SPLASH_TXT2 = "(Ne fonctionne pas pour le mode effets d'écran BDv21)";
+FO_OPTION_HUD_SPLASH_TXT1 = "(Si les effets d'écran sont désactivés, cette option sera également désactivée.)";
+FO_OPTION_HUD_SPLASH_TXT2 = "(Ne fonctionne pas pour le mode effets d'écran BDv21.)";
 
 FO_OPTION_SOUND = "---------------------------------- Bruitages ----------------------------------";
  
-FO_OPTION_SOUND_FOOTS = "Activer les bruits de pas =";
+FO_OPTION_SOUND_FOOTS = "Activer les bruits de pas";
 
-FO_OPTION_MAP_OP = "Options des niveaux";
-FO_OPTION_MAP_OP_TXT ="(Ces options fonctionnent UNIQUEMENT avec les cartes BD64)";
-FO_OPTION_MAP_EASY = "Jouez aux cartes plus faciles Map08 et Map28 (pas de combat de boss (final étendu))=";
-FO_OPTION_MAP_TC ="Ajouter les cartes Absolution TC à la campagne =";
-FO_OPTION_MAP_TITLE ="Afficher la séquence d'ouverture originale de Doom 64 au démarrage";
-FO_OPTION_MAP_TITLE_TXT ="Afficher la carte d'ouverture du jeu (redémarrage requis) =";
+FO_OPTION_MAP_OP = "Options des niveaux :";
+FO_OPTION_MAP_OP_TXT = "(Ces options fonctionnent UNIQUEMENT avec les cartes BD64).";
+FO_OPTION_MAP_EASY = "Jouez aux cartes plus faciles Map08 et Map28 (pas de combat de boss ((étendue finale)) =";
+FO_OPTION_MAP_TC = "Ajouter les cartes Absolution TC à la campagne principale =";
+FO_OPTION_MAP_TITLE = "Afficher la séquence d'ouverture originale de Doom 64 au démarrage.";
+FO_OPTION_MAP_TITLE_TXT = "Afficher le niveau d'ouverture du jeu (redémarrage requis) =";
 
-FO_ENGINE_OPTION = "Raccourcis des options du moteur";
-FO_ENGINE_OPTION_TXT = "Options Zdoom, disponibles ici pour votre commodité";
+FO_ENGINE_OPTION = "Raccourcis des options du moteur :";
+FO_ENGINE_OPTION_TXT = "Options Zdoom, disponibles ici pour votre commodité.";
 FO_ENGINE_CLIPPING = "Ajuster le clipping des sprites";
 FO_ENGINE_CROSSHAIR = "Forcer Réticule Zdoom";
 FO_ENGINE_JUMP = "Autoriser Saut";

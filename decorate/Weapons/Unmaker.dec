@@ -611,6 +611,7 @@ Tag "$FO_TAG_UNMAKER"
 		TNT1 A 0 A_FireCustomMissile("UnmakerLaser2",10,0,0,-5)
 		UNMA B 3 Bright
 		UNMA A 3
+		TNT1 A 0 A_Refire
 		Goto Ready
 	Special:
 		TNT1 A 0 A_Takeinventory("WeaponSpecialAction",1)

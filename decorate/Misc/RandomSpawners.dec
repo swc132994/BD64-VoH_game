@@ -316,7 +316,7 @@ Scale 0.7
 		MEGA A 0
 		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnMegaSphere")
 		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnDemonKey")
-//		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
+		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
 		TNT1 A 0 A_Jump(38,"SpawnDemonKey")//15%
 	SpawnMegaSphere:
 		TNT1 A 1 A_SpawnItemEx("64MegaSphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
@@ -343,7 +343,7 @@ Scale 0.7
 		PINV A 0
 		TNT1 A 0 A_JumpIf(args[0] == 1,"SpawnInvulnerabilitySphere")
 		TNT1 A 0 A_JumpIf(args[0] == 2,"SpawnDemonKey")
-//		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
+		TNT1 A 2 ACS_NamedExecuteAlways("WpnPowerRandom")
 		TNT1 A 0 A_Jump(38,"SpawnDemonKey")//15%
 	SpawnInvulnerabilitySphere:
 		TNT1 A 1 A_SpawnItemEx("64InvulnerabilitySphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)

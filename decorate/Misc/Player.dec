@@ -43,7 +43,7 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Head",0.0
 Player.StartItem "64Pistol"
-Player.StartItem "Clip",50
+Player.StartItem "Clip",60
 Player.StartItem "64Fist"
 Player.ColorRange 112,127
 Player.ViewHeight 50
@@ -225,7 +225,7 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Head",0.0
 Species "Marines"
-Player.StartItem "Clip",31
+Player.StartItem "Clip",60
 Player.StartItem "RifleAmmo",31
 Player.StartItem "SMGAmmo",46
 Player.StartItem "Pistolammo",11
@@ -459,7 +459,7 @@ Player.CrouchSprite "PLYC"
 
 Actor Tactical64DoomPlayer_P : Tactical64DoomPlayer		//tactical class with pistol start
 {
-Player.StartItem "Clip",31
+Player.StartItem "Clip",60
 Player.StartItem "RifleAmmo",31
 Player.StartItem "SMGAmmo",46
 Player.StartItem "IsTacticalClass",1
@@ -497,7 +497,7 @@ Species "Marines"
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Head",0.0
-Player.StartItem "Clip",31
+Player.StartItem "Clip",60
 Player.StartItem "RifleAmmo",31
 Player.StartItem "SMGAmmo",46
 Player.StartItem "IsModern",1

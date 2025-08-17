@@ -9,7 +9,7 @@ DeathSound "colonelzombie/death"
 PainSound "colonelzombie/pain"
 DamageFactor "Head",2.25
 Tag "$FO_TAG_PLASMAGUY"
-DropItem "64Cell"
+DropItem "PlasmaRifleDrop"
 DropItem "SOULSPAWNER"
 Obituary "$FO_OB_PLASMAGUY"
 	States

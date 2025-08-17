@@ -10,7 +10,7 @@ DeathSound "bfgguy/death"
 ActiveSound "bfgguy/active"
 Tag "$FO_TAG_BFGGUY"
 Obituary "$FO_OB_BFGGUY"
-DropItem "64CellPack"
+DropItem "BFG9000Drop"
 DropItem "SOULSPAWNER"
 MeleeRange 120
 +AVOIDMELEE

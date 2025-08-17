@@ -57,7 +57,7 @@ DamageFactor "Unmaker",0.2
 Obituary "$FO_OB_ZOMBIE"
 Tag "$FO_TAG_PISTOLMAN"
 DropItem "SOULSPAWNER"
-DropItem "64Clip"
+DropItem "PistolDrop"
 +DOHARMSPECIES
 +NOBLOODDECALS
 +NEVERFAST

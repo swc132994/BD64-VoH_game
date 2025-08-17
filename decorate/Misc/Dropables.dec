@@ -3,14 +3,18 @@ Actor ShotgunDrop
 	states
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_Jump(128,"Spawn2")
-		Goto Spawn1
+		TNT1 A 0
+		TNT1 A 0 A_Jump(128,"DropAmmo")		
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
 	Spawn1:
 		TNT1 A 1 A_CustomMissile("DropedShotgun",20,0,0,2,random(30,50))
 		stop
 	Spawn2:
 		TNT1 A 1 A_CustomMissile("DropedShotgun2",20,0,180,2,random(30,50))
 		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64Shell")
+		Stop
 	}
 }
 
@@ -66,14 +70,18 @@ Actor SSGDrop : ShotgunDrop
 	states
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_Jump(128,"Spawn2")
-		Goto Spawn1
+		TNT1 A 0
+		TNT1 A 0 A_Jump(128,"DropAmmo")	
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
 	Spawn1:
 		TNT1 A 1 A_CustomMissile("DropedSSG",20,0,0,2,random(30,50))
 		stop
 	Spawn2:
 		TNT1 A 1 A_CustomMissile("DropedSSG2",20,0,180,2,random(30,50))
 		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64Shell")
+		Stop
 	}
 }
 
@@ -108,14 +116,18 @@ actor RifleDrop : ShotgunDrop
 	states
 	{
 	Spawn:
-		TNT1 A 0 A_Jump(128,"Spawn2")
-		Goto Spawn1
+		TNT1 A 0
+		TNT1 A 0 A_Jump(85,"DropAmmo")	//33.333%
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
 	Spawn1:
 		TNT1 A 1 A_CustomMissile("DropedRifle",20,0,0,2,random(30,50))
 		stop
 	Spawn2:
 		TNT1 A 1 A_CustomMissile("DropedRifle2",20,0,180,2,random(30,50))
 		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64HighCaliberBox")
+		Stop
 	}
 }
 
@@ -150,14 +162,18 @@ actor ChaingunDrop : ShotgunDrop
 	states
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_Jump(128,"Spawn2")
-		Goto Spawn1
+		TNT1 A 0
+		TNT1 A 0 A_Jump(85,"DropAmmo")	//33.333%	
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
 	Spawn1:
 		TNT1 A 1 A_CustomMissile("DropedChaingun",20,0,0,2,random(30,50))
 		stop
 	Spawn2:
 		TNT1 A 1 A_CustomMissile("DropedChaingun2",20,0,180,2,random(30,50))
 		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64HighCaliberBox")
+		Stop
 	}
 }
 
@@ -192,14 +208,18 @@ actor ChainsawDrop : ShotgunDrop
 	states
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_Jump(128,"Spawn2")
-		Goto Spawn1
+		TNT1 A 0
+		TNT1 A 0 A_Jump(128,"DropAmmo")		
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
 	Spawn1:
 		TNT1 A 1 A_CustomMissile("DropedChainsaw",20,0,0,2,random(30,50))
 		stop
 	Spawn2:
 		TNT1 A 1 A_CustomMissile("DropedChainsaw2",20,0,180,2,random(30,50))
 		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("SawGas")
+		Stop
 	}
 }
 
@@ -226,5 +246,143 @@ ACTOR DropedChainsaw2 : DropedChainsaw
 		CWAS H 4
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
 		CWAS GFEDCBA 4
+	}
+}
+
+Actor PistolDrop
+{
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump(128,"DropAmmo")		
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
+	Spawn1:
+		TNT1 A 1 A_CustomMissile("DropedPistol",20,0,0,2,random(30,50))
+		stop
+	Spawn2:
+		TNT1 A 1 A_CustomMissile("DropedPistol2",20,0,180,2,random(30,50))
+		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64Clip")
+		Stop
+	}
+}
+
+ACTOR DropedPistol : DropedShotgun
+{
+	States
+	{
+	Spawn:
+		PIST A 4
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
+		PIST AAAAAAA 4
+	Death:
+		TNT1 A 0 A_DropItem("64PistolTACTICAL")
+		TNT1 A 1 A_DropItem("64Pistol")
+		Stop
+	}
+}
+
+ACTOR DropedPistol2 : DropedPistol
+{
+	States
+	{
+	Spawn:
+		PIST A 4
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
+		PIST AAAAAAA 4
+	}
+}
+
+Actor PlasmaRifleDrop
+{
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump(255,"DropAmmo")	//99.5%
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
+	Spawn1:
+		TNT1 A 1 A_CustomMissile("DropedPlasmaRifle",20,0,0,2,random(30,50))
+		stop
+	Spawn2:
+		TNT1 A 1 A_CustomMissile("DropedPlasmaRifle2",20,0,180,2,random(30,50))
+		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64Cell")
+		Stop
+	}
+}
+
+ACTOR DropedPlasmaRifle : DropedShotgun
+{
+	States
+	{
+	Spawn:
+		PLAS A 4
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
+		PLAS AAAAAAA 4
+	Death:
+		TNT1 A 0 A_DropItem("64PlasmaRifleTACTICAL")
+		TNT1 A 1 A_DropItem("64PlasmaRifle")
+		Stop
+	}
+}
+
+ACTOR DropedPlasmaRifle2 : DropedPlasmaRifle
+{
+	States
+	{
+	Spawn:
+		PLAS A 4
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
+		PLAS AAAAAAA 4
+	}
+}
+
+Actor BFG9000Drop
+{
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump(255,"DropAmmo")	//99.5%
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
+	Spawn1:
+		TNT1 A 1 A_CustomMissile("DropedBFG9000",20,0,0,2,random(30,50))
+		stop
+	Spawn2:
+		TNT1 A 1 A_CustomMissile("DropedBFG90002",20,0,180,2,random(30,50))
+		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64CellPack")
+		Stop
+	}
+}
+
+ACTOR DropedBFG9000 : DropedShotgun
+{
+	States
+	{
+	Spawn:
+		BFUG A 4
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
+		BFUG AAAAAAA 4
+	Death:
+		TNT1 A 0 A_DropItem("64BFG9000TACTICAL")
+		TNT1 A 1 A_DropItem("64BFG9000")
+		Stop
+	}
+}
+
+ACTOR DropedBFG90002 : DropedBFG9000
+{
+	States
+	{
+	Spawn:
+		BFUG A 4
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
+		BFUG AAAAAAA 4
 	}
 }

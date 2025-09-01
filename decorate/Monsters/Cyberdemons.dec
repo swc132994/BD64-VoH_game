@@ -2,8 +2,7 @@ Actor 64Cyberdemon : Cyberdemon Replaces Cyberdemon
 {
 //$category "Game/BD64_Monsters"
 Scale 0.80
-Health 5000
-Speed 13
+Speed 12
 PainChance "Flames",0
 PainChance "Bullet",26
 PainChance "SuperFists",200
@@ -34,11 +33,11 @@ Obituary "$FO_OB_CYBORG"
 		Goto See
 	Missile:
 		CYBR F 7 A_FaceTarget
-		CYBR E 10 Bright A_CustomMissile("CyberRocket",62,-24,0)
+		CYBR E 10 Bright A_CustomMissile("CyberRocket",62,-24,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		CYBR F 10 A_FaceTarget
-		CYBR E 10 Bright A_CustomMissile("CyberRocket",62,-24,0)
+		CYBR E 10 Bright A_CustomMissile("CyberRocket",62,-24,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		CYBR F 10 A_FaceTarget
-		CYBR E 10 Bright A_CustomMissile("CyberRocket",62,-24,0)
+		CYBR E 10 Bright A_CustomMissile("CyberRocket",62,-24,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		Goto See
 	Death:
 		CYBR G 10 A_Scream
@@ -100,11 +99,8 @@ Actor Annihilator64 : Cyberdemon 19991
 //$category "Game/BD64_Monsters"
 SpawnID 157
 Scale 0.85
-Health 6000
-Radius 40
-Mass 1000
-Speed 16
-PainChance 10
+Health 5000
+PainChance 15
 PainChance "Flames",0
 PainChance "Bullet",0
 PainChance "SuperFists",200
@@ -137,25 +133,25 @@ DropItem "64Soulsphere",32
 	Missile:
 		TNT1 A 0 A_Jump(128,11)
 		A64A E 6 A_FaceTarget
-		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,0)
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,0)
+		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		A64A E 12 A_FaceTarget
-		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,0)
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,0)
+		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		A64A E 12 A_FaceTarget
-		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,0)
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,0)
+		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		TNT1 A 0 A_Jump(128,1)
 		Goto See
 		A64A E 6 A_FaceTarget
-		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,0)
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,0)
+		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		A64A E 12 A_FaceTarget
-		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,0)
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,0)
+		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		A64A E 12 A_FaceTarget
-		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,0)
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,0)
+		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		Goto See
 	Pain:
 		A64A B 6 A_Pain

@@ -93,7 +93,7 @@ WM_NOSTAMINA = "Pas assez d'endurance !";
 WM_NEED_SILENCER = "Il vous faut un supresseur pour pistolet ! On en trouve dans les sacs à dos.";
 WM_CHAINSAW_SSG_NONE = "Il vous faut un Super-Fusil de chasse !";
 WM_CHAINSAW_SSG = "Veuillez recharger votre Super-Fusil de chasse !";
-WM_CHAINGUNSPIN = "Personne sensé ne toucherait au canon d'une mitrailleuse.";
+WM_CHAINGUNSPIN = "Aucun être sensé ne toucherait au canon actif d'une mitrailleuse.";
 WM_NOTENOUGHAMMO = "Munitions insufisantes !";
 WM_ROCKETROUND = "Tirs de roquettes sont activés.";
 WM_MORTARROUND = "Obus de mortier activés.";
@@ -102,9 +102,9 @@ WM_NOMINES = "Aucune mines dans l'inventaire !";
 WM_NOTENOUGHDEMONART = "Pas assez d'artefacts démoniaques !";
 WM_AUTOFIRE= "Mode de tir automatique.";
 WM_BURSTFIRE = "Mode de tir en rafale.";
-UN_REGULAR = "Mode régulier.";
-UN_UNMAKE = "Mode déstruction.";
-UN_HELLTIME = "Mode Infernale.";
+UN_REGULAR = "Mode normal.";
+UN_UNMAKE = "Mode destruction.";
+UN_HELLTIME = "Mode infernale.";
 UN_TIMESTOP = "Le temps s'arrête !";
 UN_NOTENOUGHSOULS = "Pas assez d'âmes !";
 UN_NOTENOUGHESSENCE = "Pas assez d'essence démoniaque !";
@@ -373,6 +373,7 @@ FO_ENGINE_DECALS = "saisir la valeur manuellement";
 FO_ENGINE_FPS = "Compteur PFS";
 FO_ENGINE_DISCORD = "Présence Discord Rich";
 FO_ENGINE_DISCORD_TXT = "(Ne fonctionne pas sur Zandronum).";
+FO_ENGINE_LANGUAGE_TXT = "(La langue russe de fonctionne pas sur Zandronum)";
 
 FO_ENGINE_GIBS = "Quantité de démenbrements (gibs)";
 FO_ENGINE_GIBS_TXT1 = "Limite le nombre de démenbrements qui apparaîtront en tout temps.";
@@ -441,7 +442,7 @@ FO_GOTCLIPBOX2 = "\cpBoîte de munitions gros calibre\c- récupérée.";
 FO_GOTSHELLS = "\cpQuatres cartouches de Fusil à pompe\c- récupérées.";
 FO_GOTSHELLBOX = "\cpBoîte de cartouches de Fusil à Pompe\c- récupéré.";
 FO_GOTROCKET = "\cpRoquette récupérée\c-.";
-FO_GOTROCKBOX = "\cpCaisse de roquettes\c- récupéré.";
+FO_GOTROCKBOX = "\cpCaisse de roquettes\c- récupérée.";
 FO_GOTCELL = "\cpCellules d'énergie\c- récupérées.";
 FO_GOTCELLBOX = "\cpPack d'énergie\c- récupéré.";
 FO_GOTSAWGAS = "\cpBidon d'essence\c- récupéré.";
@@ -454,34 +455,34 @@ FO_SCAVENGE1 = "Vous récupérez \ch10 bandages\c- dans ce Medikit.";
 FO_SCAVENGE2 = "Vous récupérez \ch25 bandages\c- dans ce Medikit.";
 FO_SCAVENGE3 = "Vous récupérez une \crseringue Berserk\c- dans ce pack Berserk.";
 FO_GOTSILECER = "\cpSupresseur pour pistolet\c- récupéré !";
-FO_GOTFLASHLIGHT = "\cnLampe de poche\c- récupéré !";
-BD64_GOTMINES = "\cpMine anti-personnelle\c- récupéré!";
+FO_GOTFLASHLIGHT = "\cnLampe de poche\c- récupérée !";
+BD64_GOTMINES = "\cpMine anti-personnelle\c- récupérée !";
 
 //////////////////////////////////////////////////////////////////
 //doors
 
 /*
-	PD_BLUEO = "You need a blue key.";
-	PD_REDO = "You need a red key.";
-	PD_YELLOWO = "You need a yellow key.";
-	PD_BLUEK = "You need a blue key.";
-	PD_REDK = "You need a red key.";
-	PD_YELLOWK = "You need a yellow key.";
-	PD_BLUEC = "You need a blue key card.";
-	PD_REDC = "You need a red key card.";
-	PD_YELLOWC = "You need a yellow key card.";
-	PD_BLUECO = "You need a blue key card.";
-	PD_REDCO = "You need a red key card.";
-	PD_YELLOWCO = "You need a yellow key card.";
-	PD_BLUESO = "You need a blue skull key.";
-	PD_REDSO = "You need a red skull key.";
-	PD_YELLOWSO = "You need a yellow skull key.";
-	PD_BLUES = "You need a blue skull key.";
-	PD_REDS = "You need a red skull key.";
-	PD_YELLOWS = "You need a yellow skull key.";
-	PD_ANY = "You need a key.";
-	PD_All3 = "You need all three keys.";
-	PD_All6 = "You need all six keys.";
+	PD_BLUEO = "Il vous faut une clé bleue.";
+	PD_REDO = "Il vous faut une clé rouge.";
+	PD_YELLOWO = "Il vous faut une clé jaune.";
+	PD_BLUEK = "Il vous faut une clé bleue.";
+	PD_REDK = "Il vous faut une clé rouge";
+	PD_YELLOWK = "Il vous faut une clé jaune.";
+	PD_BLUEC = "Il vous faut une carte-clé magnétique.";
+	PD_REDC = "Il vous faut une carte-clé magnétique rouge.";
+	PD_YELLOWC = "Il vous faut une carte-clé magnétique jaune.";
+	PD_BLUECO = "Il vous faut une carte-clé magnétique.";
+	PD_REDCO = "Il vous faut une carte-clé magnétique rouge.";
+	PD_YELLOWCO = "Il vous faut une carte-clé magnétique jaune.";
+	PD_BLUESO = "Il vous faut une clé crâne bleue.";
+	PD_REDSO = "Il vous faut une clé crâne rouge.";
+	PD_YELLOWSO = "Il vous faut une clé crâne jaune.";
+	PD_BLUES = "Il vous faut une clé crâne bleue.";
+	PD_REDS = "Il vous faut une clé crâne rouge.";
+	PD_YELLOWS = "Il vous faut une clé crâne jaune.";
+	PD_ANY = "Il vous faut une clé.";
+	PD_All3 = "Vous avez besoin de trois clés.";
+	PD_All6 = "Vous avez besoin des six clés.";
 */
 
 //////////////////////////////////////////////////////////////////
@@ -501,7 +502,6 @@ BD64_GOTRIFLE = "Vous avez mis la main sur le \cmFusil d'assault\c- ! (Touche 4)
 BD64_GOTCHAINGUN = "Vous avez mis la main sur la \cmMitrailleuse\c- ! (Touche 4)";
 //Slot 5
 BD64_GOTLAUNCHER = "Vous avez mis la main sur le \cmLance-roquettes\c- ! (Touche 5)";
-BD64_GOTMINES = "Vous avez mis la main sur une \cmMine polyvalente\c- ! (Touche 5)";
 //Slot 6
 BD64_GOTPLASMA = "Vous avez mis la main sur le \cmFusil à plasma\c-  ! (Touche 6)";
 BD64_GOTGAUSS = "Vous avez mis la main sur le \cmFusil Gauss !\c-  (Touche 6)";
@@ -524,7 +524,7 @@ FO_TAG_SMG = "\cmPistolet-mitrailleur";
 FO_TAG_MP40 = "\cmMP40";
 //3
 FO_TAG_SHOTGUN = "\cmFusil à pompe";
-FO_TAG_SUPERSHOTGUN = "\cmSuper-Fusil de chasse juxtaposé";
+FO_TAG_SUPERSHOTGUN = "\cmSuper-Fusil de chasse";
 //4
 FO_TAG_RIFLE = "\cmFusil d'assault";
 FO_TAG_CHAINGUN = "\cmMitrailleuse";
@@ -583,7 +583,7 @@ FO_TAG_MEGA= "\chArmure bleue";
 // powerup tags
 
 FO_TAG_INVUL = "\cqSphère d'invulnérabilité";
-FO_TAG_SUPER = "\chSphère d'âme";
+FO_TAG_SUPER = "\chSupercharge";
 FO_TAG_MSPHERE = "\csMéga-Sphère";
 FO_TAG_INVIS = "\caSphère d'invisibilité partielle";
 FO_TAG_SUIT = "\cdBouclier anti-radiations";
@@ -691,7 +691,7 @@ FO_TAG_ELEMENTAL = "Doloris";
 FO_TAG_ELEMENTAL_NIGHTMARE = "Agonis";
 FO_TAG_PEST = "Peste";
 FO_TAG_LOSTSOUL = "Âme perdue";
-FO_TAG_STALKER = "Harceleur";
+FO_TAG_STALKER = "Traqueur";
 FO_TAG_TRITE = "Araignée infernale";
 FO_TAG_FORGOTTEN = "L'oublié";
 FO_TAG_VILE = "Archvile";
@@ -723,7 +723,7 @@ FO_TAG_NPC_BERSERK = "Marine berserkeur";
 FO_TAG_NPC_CHAINGUN = "Marine mitrailleur";
 FO_TAG_NPC_CHAINSAW = "Marine tronçonneur";
 FO_TAG_NPC_FIST = "Marine désarmé";
-FO_TAG_NPC_PLASMA = "Marine fusil à lasma";
+FO_TAG_NPC_PLASMA = "Marine fusil à plasma";
 FO_TAG_NPC_RAILGUN = "Marine fusil gauss";
 FO_TAG_NPC_ROCKET = "Marine artilleur";
 FO_TAG_NPC_SSG = "Marine super-fusil";
@@ -776,14 +776,14 @@ FO_OB_UNDEADHIT = "%o à pris une claque monumentale de la part d'un \crRevenant
 FO_OB_FATSO = "%o a été(e) écrasé(e) par un \crMancubus.\c-";
 FO_OB_CHAINGUY = "%o s'est fait(e) transformé(e) en passoire par un \crZombie commando\c-.";
 FO_OB_SKULL = "%o a été(e) effrayé(e) par une \crÂme perdue\c-.";
-FO_OB_STALKER = "%o n'avait pas vu le \crHarceleur\c-.";
+FO_OB_STALKER = "%o n'avait pas aperçu le \crtraqueur\c- à temps.";
 FO_OB_TRITE = "%o a été(e) empoisonné(e) par une \crAraignée infernale\c-.";
 FO_OB_FORGOTTEN = "%o a été(e) électrocuté(e) par un \crOublié\c-.";
 FO_OB_IMP = "%o a été(e) brulé(e) au quatrième degré par un \crDiablotin\c-.";
 FO_OB_IMPHIT = "%o a été(e) tailladé(e) en pièces par un \crDiablotin\c-.";
 FO_OB_IMP_NIGHTMARE = ​​"%o a été(e) brûlé(e) au quatrième degré par un \crDiablotin cauchemardesque\c-.";
 FO_OB_IMPHIT_NIGHTMARE = ​​"%o a été(e) tailladé(e) en pièces par un \crDiablotin cauchemardesque\c-.";
-FO_OB_IMPALER = "%o a été(e) perforé(e) par un \crEmpaleur\c-.";
+FO_OB_IMPALER = "%o a été(e) transpercé(e) par un \crEmpaleur\c-.";
 FO_OB_IMPALERHIT = "%o a été(e) empalé(e) vivant(e)\c-.";
 FO_OB_HARVESTER = "%o a rendu(e) son âme à un \crMoissoneur.\c-";
 FO_OB_CACO = "%o a été dévoré(e) par un \crCacodémon.\c-";

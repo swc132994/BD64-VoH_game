@@ -6,6 +6,7 @@ Mass 125
 DamageType "Extreme"
 Damagefactor "Melee",0
 Damagefactor "Kick",0
+Damagefactor "Flames",0.5
 Tag "$FO_TAG_EXPLOSIVEBARREL"
 +PUSHABLE
 +SLIDESONWALLS

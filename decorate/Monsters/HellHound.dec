@@ -1,12 +1,13 @@
 Actor 64HellHound : Demon //Hellhound Alt by IMI
 {
 Scale 0.8
-Health 1000
+Health 800
 GibHealth 20
 Speed 16
 Radius 24
 MeleeThreshold 200
-MeleeRange 60 //default 44
+MeleeRange 100 //default 44
+MaxDropOffHeight 36
 PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200

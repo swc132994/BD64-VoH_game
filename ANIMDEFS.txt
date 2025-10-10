@@ -785,3 +785,17 @@ texture BFALL4
 	pic BFALL9 tics 1
 	pic BFALL10 tics 1
 	pic BFALL11 tics 1
+	
+//SEWAGE FALL
+texture SWFALL1
+	pic SWFALL1 tics 1
+	pic SWFALL2 tics 1
+	pic SWFALL3 tics 1
+	pic SWFALL4 tics 1
+	pic SWFALL5 tics 1
+	pic SWFALL6 tics 1
+	pic SWFALL7 tics 1
+	pic SWFALL8 tics 1
+	pic SWFALL9 tics 1
+	pic SWFALL10 tics 1
+	pic SWFALL11 tics 1

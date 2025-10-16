@@ -9,6 +9,8 @@ Height 100
 Radius 65
 Mass 1000
 Speed 24
+MaxStepHeight 40
+MaxDropOffHeight 40
 PainChance 10
 PainChance "Flames",0
 PainChance "Bullet",0

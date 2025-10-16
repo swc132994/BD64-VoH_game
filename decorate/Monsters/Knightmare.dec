@@ -10,6 +10,8 @@ Mass 500
 Speed 14
 Alpha 0.6
 MeleeRange 60	//default 44
+MaxStepHeight 28
+MaxDropOffHeight 32
 RenderStyle Translucent
 DamageFactor "Head",0.8
 Tag "$FO_TAG_KNIGHTMARE"

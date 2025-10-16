@@ -3,6 +3,8 @@ Actor 64Cyberdemon : Cyberdemon Replaces Cyberdemon
 //$category "Game/BD64_Monsters"
 Scale 0.80
 Speed 12
+MaxStepHeight 28
+MaxDropOffHeight 32
 PainChance "Flames",0
 PainChance "Bullet",26
 PainChance "SuperFists",200
@@ -100,6 +102,8 @@ Actor Annihilator64 : Cyberdemon 19991
 SpawnID 157
 Scale 0.85
 Health 5000
+MaxStepHeight 28
+MaxDropOffHeight 32
 PainChance 15
 PainChance "Flames",0
 PainChance "Bullet",0

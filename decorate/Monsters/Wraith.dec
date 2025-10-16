@@ -11,6 +11,8 @@ Speed 14
 Fastspeed 16
 MeleeRange 64 //default 44
 MeleeThreshold 128
+MaxStepHeight 28
+MaxDropOffHeight 32
 PainChance 128
 PainChance "Flames",26
 PainChance "Bullet",26

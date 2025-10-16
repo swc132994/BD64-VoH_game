@@ -9,6 +9,8 @@ Height 56
 Mass 500
 Speed 20
 Alpha 0.6
+MaxStepHeight 28
+MaxDropOffHeight 32
 RenderStyle Translucent
 MeleeRange 150
 PainChance 10

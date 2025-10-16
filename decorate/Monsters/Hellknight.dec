@@ -2,6 +2,8 @@ Actor 64HellKnight : HellKnight Replaces HellKnight
 {
 //$category "Game/BD64_Monsters"
 Scale 0.8
+MaxStepHeight 28
+MaxDropOffHeight 32
 PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",220
@@ -29,11 +31,15 @@ Tag "$FO_TAG_KNIGHT"
 		BOS2 AABB 3 A_Chase
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12Green",20,0,70)
 		BOS2 CCDD 3 A_Chase
+		TNT1 A 0 A_CheckSight("See")
 		TNT1 A 0 A_JumpIfInTargetInventory("PowerInvisibility",1,"Forget")
 		Loop
 	Forget:
 		TNT1 A 0 A_ClearTarget
-		Goto Spawn
+		BOS2 ABCD 5 A_Wander
+		BOS2 A 10 A_LookEx
+		TNT1 A 0 A_Jump(33,"Spawn")
+		Goto Forget+1
 	Melee:
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget23Green",12,0,70)
 		BOS2 EF 8 A_FaceTarget

@@ -8,6 +8,8 @@ Radius 24
 Speed 8
 FastSpeed 12
 Mass 1200
+MaxStepHeight 28
+MaxDropOffHeight 32
 SeeSound "64Belphegor/see"
 PainSound "64Belphegor/pain"
 DeathSound "64Belphegor/death"

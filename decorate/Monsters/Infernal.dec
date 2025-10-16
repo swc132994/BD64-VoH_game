@@ -10,6 +10,8 @@ Mass 5000
 Damage 15
 MeleeThreshold 250
 MeleeRange 100
+MaxStepHeight 28
+MaxDropOffHeight 32
 Obituary "$FO_OB_RESURRECTOR"
 Tag "$FO_TAG_RESURRECTOR"
 PainChance 10

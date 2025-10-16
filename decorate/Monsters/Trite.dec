@@ -11,6 +11,8 @@ PoisonDamage 10
 MeleeThreshold 64
 MaxTargetRange 160
 MinMissileChance 10
+MaxStepHeight 28
+MaxDropOffHeight 32
 PainSound "Trite/Pain"
 SeeSound "Trite/Sight"
 DeathSound "Trite/Death"

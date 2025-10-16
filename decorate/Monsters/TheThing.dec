@@ -7,6 +7,8 @@ Height 56
 Radius 20
 Mass 300
 Speed 10
+MaxStepHeight 28
+MaxDropOffHeight 32
 Obituary "$FO_OB_THING"
 SeeSound "64Thing/sight"
 PainSound "64Thing/pain"

@@ -171,9 +171,6 @@ Tag "$FO_TAG_SHOTGUN"
 		SHTF "[" 1
 		SHTF ZYX 1
 		Stop
-	ReloadingKick:
-		SHSR C 16
-		Stop
 	SlideKickingStart:
 		SHTF XYZ 1
 		SHTF "[" 1
@@ -198,6 +195,7 @@ Tag "$FO_TAG_SHOTGUN"
 	v1Ready:
 	Ready:
 		SHTG A 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
+		TNT1 A 0 A_TakeInventory("ShotgunPumping",0)
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")

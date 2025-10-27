@@ -303,15 +303,10 @@ FastSpeed 30
 
 Actor Motherdemon_Final : Motherdemon 9898		//New boss for map28 Ultimate Absolution
 {
-Height 150
-Radius 60
-Speed 24
+MaxStepHeight 128
+MaxDropOffHeight 64
 Health 20000
 PainChance 0
-DamageFactor "CauseWaterSplash",0.0
-DamageFactor "CauseObjectsToSplash",0.0
-DamageFactor "UnmakerWhite",0.5
-DamageFactor "BFG",0.5
 	States
 	{
 	See:

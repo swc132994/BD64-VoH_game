@@ -182,7 +182,7 @@ Actor Tracer : FastProjectile
 scale 0.15
 radius 2
 height 2
-speed 140
+speed 60
 alpha 0.5
 renderstyle ADD
 +FORCEXYBILLBOARD
@@ -191,8 +191,8 @@ renderstyle ADD
 	states
 	{
 	Spawn:
-		SPKO S -1 Bright
-		Stop
+		SPKO S 1 Bright A_ChangeVelocity(velx*1.5,vely*1.5,velz*1.5,CVF_REPLACE)
+		Loop
 	XDeath:
 	Death:
 		TNT1 A 3

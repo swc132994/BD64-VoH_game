@@ -48,6 +48,7 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 		Wait
 	Ready:
 		TNT1 A 0 A_JumpIf(waterlevel > 1,"NotReady")
+		TNT1 A 0 A_AlertMonsters(350)
 		TNT1 A 0 A_PlaySound("chainsaw/idle",CHAN_6,1,TRUE)
 		WASG CD 5 A_WeaponReady
 		Loop
@@ -217,18 +218,22 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		Goto NotReady
 		TNT1 A 0 A_PlaySound("chainsaw/idle",CHAN_6,1,TRUE)
 		SAWG ABCD 2 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
+		TNT1 A 0 A_AlertMonsters(350)
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
 		SAWG ABCD 2 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
+		TNT1 A 0 A_AlertMonsters(350)
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
 		SAWG ABCD 2 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
+		TNT1 A 0 A_AlertMonsters(350)
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
 		SAWG ABCD 2 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
+		TNT1 A 0 A_AlertMonsters(350)
 		TNT1 A 0 A_TakeInventory("SawGas",1)
 		Loop
 	NotReady:
@@ -455,18 +460,22 @@ Weapon.SisterWeapon "64ChainsawTactical"
 		Goto NotReady
 		TNT1 A 0 A_PlaySound("chainsaw/idle",CHAN_6,1,TRUE)
 		WASG CD 4 A_WeaponReady
+		TNT1 A 0 A_AlertMonsters(350)
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
 		WASG CD 4 A_WeaponReady
+		TNT1 A 0 A_AlertMonsters(350)
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
 		WASG CD 4 A_WeaponReady
+		TNT1 A 0 A_AlertMonsters(350)
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
 		WASG CD 4 A_WeaponReady
+		TNT1 A 0 A_AlertMonsters(350)
 		TNT1 A 0 A_TakeInventory("SawGas",1)
 		Loop
 	NotReady:

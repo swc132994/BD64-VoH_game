@@ -719,5 +719,6 @@ OptionString "BD64LanguageOptions"
 	"eng", "English-GB (United Kingdom)"
 	"es", "Espanol (Spanish)"
 	"fr", "Francais (French)"
+	"pt", "Portuguese (Brasil)"
 	"ru", "Русский (Russian)"
 }

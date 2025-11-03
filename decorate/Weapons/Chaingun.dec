@@ -143,21 +143,21 @@ Tag "$FO_TAG_CHAINGUN"
 		LCGS ABCD 1
 		Stop
 	KickSpin:
-		TNT1 A 0 A_AlertMonsters(350)
+		TNT1 A 0 A_AlertMonsters(500)
 		TNT1 A 0 A_PlaySound("CHAINSPI",CHAN_5,1,TRUE)
 		CHNG JKLM 1
 		CHNG NOPQNOPQN 1
-		TNT1 A 0 A_AlertMonsters(350)
+		TNT1 A 0 A_AlertMonsters(500)
 		TNT1 A 0 A_PlaySound("CHAINSPI",CHAN_5,1,TRUE)
 		CHNG RSTU 1 //16
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		Stop
 	ClassicKickSpin:
-		TNT1 A 0 A_AlertMonsters(350)
+		TNT1 A 0 A_AlertMonsters(500)
 		TNT1 A 0 A_PlaySound("CHAINSPI",CHAN_5,1,TRUE)
 		LCGS DEFG 1
 		LCGS HIJKHIJKH 1
-		TNT1 A 0 A_AlertMonsters(350)
+		TNT1 A 0 A_AlertMonsters(500)
 		TNT1 A 0 A_PlaySound("CHAINSPI",CHAN_5,1,TRUE)
 		LCGS ALMN 1 //16
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
@@ -174,14 +174,14 @@ Tag "$FO_TAG_CHAINGUN"
 		CHNG HGFE 1
 		Stop
 	SlideKickingStartSpin:
-		TNT1 A 0 A_AlertMonsters(350)
+		TNT1 A 0 A_AlertMonsters(500)
 		TNT1 A 0 A_PlaySound("CHAINSPI",CHAN_5,1,TRUE)
 		CHNG JKLM 1
 		CHNG NOPQNOPQNOPQNOPQ 1
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		Stop
 	SlideKickingEndSpin:
-		TNT1 A 0 A_AlertMonsters(350)
+		TNT1 A 0 A_AlertMonsters(500)
 		TNT1 A 0 A_PlaySound("CHAINSPI",CHAN_5,1,TRUE)
 		CHNG NOPQRSTU 1
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
@@ -197,17 +197,17 @@ Tag "$FO_TAG_CHAINGUN"
 		LCGS ABCD 1
 		Stop
 	ClassicSlideKickingStartSpin:
-		TNT1 A 0 A_AlertMonsters(350)
+		TNT1 A 0 A_AlertMonsters(500)
 		TNT1 A 0 A_PlaySound("CHAINSPI",CHAN_5,1,TRUE)
 		LCGS DEFG 1
 		LCGS HIJKHIJKHIJKHIJK 1
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		Stop
 	ClassicSlideKickingEndSpin:
-		TNT1 A 0 A_AlertMonsters(350)
+		TNT1 A 0 A_AlertMonsters(500)
 		TNT1 A 0 A_PlaySound("CHAINSPI",CHAN_5,1,TRUE)
 		LCGS HIJK 1
-		TNT1 A 0 A_AlertMonsters(350)
+		TNT1 A 0 A_AlertMonsters(500)
 		TNT1 A 0 A_PlaySound("CHAINSPI",CHAN_5,1,TRUE)
 		LCGS ALMN 1
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
@@ -226,7 +226,7 @@ Tag "$FO_TAG_CHAINGUN"
 		"####" A 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
 		Loop
 	Ready2: //Minigun Spinning
-		TNT1 A 0 A_AlertMonsters(350)
+		TNT1 A 0 A_AlertMonsters(500)
 		TNT1 A 0 A_PlaySound("CHAINSPI",CHAN_5,1,TRUE)
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")

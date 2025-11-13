@@ -12,7 +12,7 @@ Speed 6
 MaxTargetRange 600
 Species "Marines"
 Translation "112:127=%[0.00,0.00,0.00]:[0.0,0.6,0.0]"
-Tag "$FO_TAG_NPC-RIFLE"
+Tag "$FO_TAG_NPC_RIFLE"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -230,7 +230,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.35,0.35,0.35]"
-Tag "$FO_TAG_NPC-BFG"
+Tag "$FO_TAG_NPC_BFG"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -427,7 +427,7 @@ Speed 8
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.72,0.57,0.58]"
-Tag "$FO_TAG_NPC-BERSERK"
+Tag "$FO_TAG_NPC_BERSERK"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -619,7 +619,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.91,0.15,0.15]"
-Tag "$FO_TAG_NPC-CHAINGUN"
+Tag "$FO_TAG_NPC_CHAINGUN"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -812,7 +812,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.65,1.39,1.17]"
-Tag "$FO_TAG_NPC-CHAINSAW"
+Tag "$FO_TAG_NPC_CHAINSAW"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -992,7 +992,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.97,0.98,0.61]"
-Tag "$FO_TAG_NPC-FIST"
+Tag "$FO_TAG_NPC_FIST"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -1172,7 +1172,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.56,0.61,0.94]"
-Tag "$FO_TAG_NPC-PLASMA"
+Tag "$FO_TAG_NPC_PLASMA"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -1363,7 +1363,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[1.20,1.13,1.35]"
-Tag "$FO_TAG_NPC-RAILGUN"
+Tag "$FO_TAG_NPC_RAILGUN"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -1553,7 +1553,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.80,1.11,0.65]"
-Tag "$FO_TAG_NPC-ROCKET"
+Tag "$FO_TAG_NPC_ROCKET"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -1746,7 +1746,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.32,0.32,0.32]"
-Tag "$FO_TAG_NPC-SSG"
+Tag "$FO_TAG_NPC_SSG"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -1937,7 +1937,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.66,0.70,0.75]"
-Tag "$FO_TAG_NPC-SHOTGUN"
+Tag "$FO_TAG_NPC_SHOTGUN"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -2131,7 +2131,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.79,0.54,0.68]"
-Tag "$FO_TAG_NPC-UNMAKE0"
+Tag "$FO_TAG_NPC_UNMAKE0"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -2323,7 +2323,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.79,0.54,0.68]"
-Tag "$FO_TAG_NPC-UNMAKE1"
+Tag "$FO_TAG_NPC_UNMAKE1"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -2515,7 +2515,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.79,0.54,0.68]"
-Tag "$FO_TAG_NPC-UNMAKE2"
+Tag "$FO_TAG_NPC_UNMAKE2"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
@@ -2708,7 +2708,7 @@ Speed 6
 MaxTargetRange 600
 Scale 0.8
 Translation "112:127=%[0.00,0.00,0.00]:[0.79,0.54,0.68]"
-Tag "$FO_TAG_NPC-UNMAKE3"
+Tag "$FO_TAG_NPC_UNMAKE3"
 Obituary "$FO_OB_NPC"
 DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0

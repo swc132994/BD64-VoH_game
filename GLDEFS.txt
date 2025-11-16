@@ -987,8 +987,8 @@ object 64BaronBallYellow
 flickerlight LOSTSOUL
 {
 	color 1.0 0.5 0.0
-	size 56
-	secondarysize 64
+	size 25
+	secondarysize 33
 	chance 0.1
 }
 
@@ -1080,8 +1080,8 @@ object 64LostSoul
 flickerlight STALKER
 {
 	color 0.2 1.0 0.0
-	size 56
-	secondarysize 64
+	size 25
+	secondarysize 33
 	chance 0.5
 }
 

@@ -680,7 +680,7 @@ OptionValue "WpnPower_Spawner_Value"
 {
 	0,"Random"
 	1,"Power-ups"
-	2,"Unmaker Power-ups"
+	2,"Demon Artefacts & Power-ups"
 }
 
 OptionValue "AlternativeAmmoPickupSpritesValue"

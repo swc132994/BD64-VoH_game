@@ -412,7 +412,7 @@ Weapon.SisterWeapon "64ClassicRocketLauncherTactical"
 		TNT1 A 0 A_SetPitch(pitch+0.8,SPF_INTERPOLATE)
 		RLHF DDEEFFGGHI 2
 		RLHF JKLMN 1
-		RLHG A 10
+		RLHG A 5
 	HeavyLoadAnimation:
 		RLHG BCD 2
 		RLLG E 0 A_JumpIfInventory("NoReloading",1,"HeavyLoadAnimationNoReload")
@@ -723,7 +723,7 @@ DamageType "Extreme"
 		TNT1 A 0 A_PlaySound("EXPLO3",CHAN_VOICE)
 		TNT1 A 0 A_PlaySound("EXPLOSION",CHAN_WEAPON)
 		TNT1 A 0 Radius_Quake(2,8,0,12,0)
-		TNT1 A 0 A_Explode
+		TNT1 A 0 A_Explode(130)
 		TNT1 A 0 A_RadiusThrust(128,-1,RTF_AFFECTSOURCE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_SpawnItemEx("LiquidExplosionEffectSpawner")
 		MISL BCDEF 1 Bright
@@ -753,7 +753,7 @@ Damage 30
 		TNT1 A 0 A_PlaySound("EXPLO3",CHAN_VOICE)
 		TNT1 A 0 A_PlaySound("EXPLOSION",CHAN_WEAPON)
 		TNT1 A 0 Radius_Quake(7,13,0,17,0)	//+5ea
-		TNT1 A 0 A_Explode
+		TNT1 A 0 A_Explode(150)
 		TNT1 A 0 A_RadiusThrust(128,-1,RTF_AFFECTSOURCE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_SpawnItemEx("LiquidExplosionEffectSpawner")
 		MISL BCDEF 1 Bright
@@ -781,7 +781,7 @@ Damage 25
 		TNT1 A 0 A_PlaySound("EXPLO3",CHAN_VOICE)
 		TNT1 A 0 A_PlaySound("EXPLOSION",CHAN_WEAPON)
 		TNT1 A 0 Radius_Quake(8,15,0,20,0)
-		TNT1 A 0 A_Explode
+		TNT1 A 0 A_Explode(140)
 		TNT1 A 0 A_RadiusThrust(128,-1,RTF_AFFECTSOURCE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_SpawnItemEx("LiquidExplosionEffectSpawner")
 		MISL BCDEF 1 Bright

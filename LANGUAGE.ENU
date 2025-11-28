@@ -153,7 +153,7 @@ FO_OP_KICK = "\ckKick";
 FO_OP_TOSS = "\ckToss Mine";
 FO_OP_PLACE = "\ckPlace Mine";
 FO_OP_SPECIAL = "\ckWeapon Special Action";
-FO_OP_FLASH = "\ckFlashlightswitch";
+FO_OP_FLASH = "\ckToggle Flashlight";
 
 //////////////////////////////////////////////////////////////////
 //menus

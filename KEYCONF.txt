@@ -1,19 +1,17 @@
 AddKeySection "$FO_OP_BD64" BrutalDoomInteractions
 
 AddMenuKey "$FO_OP_KICK" "+zoom"
-DefaultBind "Q" "+zoom"
-
 AddMenuKey "$FO_OP_TOSS" "+user1"
-DefaultBind "G" "+user1"
-
 AddMenuKey "$FO_OP_PLACE" "+user2"
-DefaultBind "M" "+user2"
-
 AddMenuKey "$FO_OP_SPECIAL" "+user3"
-DefaultBind "V" "+user3"
+AddMenuKey "$FO_OP_FLASH" "FlashlightSwitch"
 
 Alias "Flashlightswitch" "PukeName ToggleFlashlight"
-AddMenuKey "$FO_OP_FLASH" "FlashlightSwitch"
-DefaultBind "F" "FlashlightSwitch"
 
-DefaultBind "CAPSLOCK" "toggle cl_run"
+defaultbind Q +zoom
+defaultbind G +user1
+defaultbind M +user2
+defaultbind V +user3
+defaultbind F FlashlightSwitch
+defaultbind CAPSLOCK "toggle cl_run"
+defaultbind R +reload

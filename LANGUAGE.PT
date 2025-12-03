@@ -89,9 +89,9 @@ HUD_HEALTH = "Vida";
 //////////////////////////////////////////////////////////////////
 //weapon, item &  misc messages
 
-NEED_FLASHLIGHT = "Você precisa de uma lanterna! Isso pode ser encontrada nas mochilas";
+NEED_FLASHLIGHT = "Você precisa de uma lanterna! Ela pode ser encontrada nas mochilas";
 WM_NOSTAMINA = "Sem energia suficiente!";
-WM_NEED_SILENCER = "Você precisa de um silenciador de pistola! Isso pode ser encontrada nas mochilas";
+WM_NEED_SILENCER = "Você precisa de um silenciador de pistola! Isso pode ser encontrado nas mochilas";
 WM_CHAINSAW_SSG_NONE = "Você precisa de uma super shotgun!";
 WM_CHAINSAW_SSG = "A super shotgun precisa ser recarregada!";
 WM_CHAINGUNSPIN = "Ninguém em sã consciência tocaria numa chaingun girando.";
@@ -99,14 +99,14 @@ WM_NOTENOUGHAMMO = "Sem munição suficiente!";
 WM_ROCKETROUND = "Disparos de foguete habilitados";
 WM_MORTARROUND = "Disparos de morteiro habilitados";
 WM_SPECIAL = "Arma especial disponível";
-WM_NOMINES = "Sem minas no inventário!";	
+WM_NOMINES = "Sem minas terrestres no inventário!";	
 WM_NOTENOUGHDEMONART = "Não há artefatos demoníacos suficientes.!";
 WM_AUTOFIRE= "Modo de disparo automático";
 WM_BURSTFIRE = "Modo de disparo em rajada";
 UN_REGULAR = "Modo Regular";
 UN_UNMAKE = "Modo Unmake";
 UN_HELLTIME = "Modo Infernal";
-UN_TIMESTOP = "O tempo parece parar completamente.!";
+UN_TIMESTOP = "O tempo parece parar completamente!";
 UN_NOTENOUGHSOULS = "Sem almas suficiente!";
 UN_NOTENOUGHESSENCE = "Sem essências demoníacas suficiente!";
 SH_NEEDBANDAGES = "Sem ataduras suficiente!";
@@ -150,11 +150,11 @@ FO_TAG_HARDER_RELOAD_MESSAGE = "O mapa foi reiniciado durante a ativação da em
 //Option values
 
 FO_OP_BD64 = "\ckBrutal Doom 64";
-FO_OP_KICK = "\ckKick";
-FO_OP_TOSS = "\ckToss Mine";
-FO_OP_PLACE = "\ckPlace Mine";
-FO_OP_SPECIAL = "\ckWeapon Special Action";
-FO_OP_FLASH = "\ckFlashlightswitch";
+FO_OP_KICK = "\ckChutar";
+FO_OP_TOSS = "\ckJogar uma Mina Terrestre";
+FO_OP_PLACE = "\ckColocar Uma Mina Terrestre";
+FO_OP_SPECIAL = "\ckAção Especial da Arma";
+FO_OP_FLASH = "\ckInterruptor da Lanterna";
 
 //////////////////////////////////////////////////////////////////
 //menus
@@ -174,7 +174,7 @@ FO_64OPTIONS_MAIN = "OPÇÕES DO BRUTAL DOOM 64";
 FO_64OPTIONS_MAIN_TXT1 = "Algumas mudanças não serão inicializadas automaticamente.";
 FO_64OPTIONS_MAIN_TXT2 = "Pressione \"Aplicar Mudanças\" para as mudanças terem efeito.";
 
-FO_64OPTIONS_PRESET = "-------------------------------- Presets -------------------------------------";
+FO_64OPTIONS_PRESET = "-------------------------------- Predefinições -------------------------------------";
 
 FO_64MNU_LAST = "Última predefinição usada =";
 
@@ -212,9 +212,9 @@ FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1 = "Opções para escolher substituições de a
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2 = "ou configurado para aparecer aleatoriamente";
 
 FO_64MNU_BONUS = "Bonus por padrão";
-FO_64MNU_BONUS_TXT = "(hell potions are combined armor/health pickups)";
+FO_64MNU_BONUS_TXT = "(As poções infernais são itens que combinam armadura e vida.)";
 FO_64MNU_POWERUP = "Melhorias por Padrão";
-FO_64MNU_POWERUP_NOTE = "(Para os mapas do D64 é recomendado que deixe isso habilitado para Melhorias)";
+FO_64MNU_POWERUP_NOTE = "(Para os mapas do D64 é recomendado que deixe isso habilitado para melhorias)";
 FO_64MNU_PLASMA = "Plasmagun por Padrão";
 FO_64MNU_BFG = "BFG9000 por Padrão";
 FO_64MNU_CHAINGUN = "Chaingun por Padrão";
@@ -460,7 +460,7 @@ FO_SCAVENGE2 = "Você Pegou \ch25 ataduras\c- desse Kit Médico.";
 FO_SCAVENGE3 = "Você Pegou uma \crSeringa Berserk\c- desse Pacote de Berserk.";
 FO_GOTSILECER = "Você Pegou um \cpSilenciador de Pistola\c-!";
 FO_GOTFLASHLIGHT = "Você Pegou uma \cnLanterna\c-!";
-BD64_GOTMINES = "Você Pegou uma \cpMina Esplosiva\c-!";
+BD64_GOTMINES = "Você Pegou uma \cpMina Terrestre\c-!";
 
 //////////////////////////////////////////////////////////////////
 //door locks
@@ -568,7 +568,7 @@ FO_TAG_ESSENSE2 = "\crEssência Demôniaca Grande";
 FO_TAG_BANDAGES = "\crAtaduras";
 FO_TAG_SYRINGE = "\crSeringa Berserk";
 FO_TAG_SAWGAS = "\cpGalão de Gasolina";
-FO_TAG_MINES = "\cmMina Explosiva";
+FO_TAG_MINES = "\cmMina Terrestre";
 FO_TAG_SILENCER = "\cpSilenciador de Pistola";
 FO_TAG_FLASHLIGHT = "\cnLanterna";
 

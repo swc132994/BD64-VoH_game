@@ -1492,7 +1492,7 @@ object MotherFire
 
 object MotherFireTrail
 {
-	frame MPUF {light ARCHATK5}
+	frame MPUF {light ARCHATK2}
 }
 
 //forgotton one

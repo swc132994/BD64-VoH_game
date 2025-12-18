@@ -13,6 +13,7 @@ PainChance "Kick",255
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
+DamageFactor "Flames",0.5
 Dropitem "SawGas"
 Dropitem "DemonEssenceSpawner"
 Tag "$FO_TAG_FATSO"

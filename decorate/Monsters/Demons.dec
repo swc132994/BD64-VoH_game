@@ -775,6 +775,7 @@ Scale 0.85
 Health 500
 Speed 14
 Alpha 0.5
+PainChance 90
 MeleeRange 55 //default 44
 RenderStyle Translucent
 Tag "$FO_TAG_SPECTRE_NIGHTMARE"

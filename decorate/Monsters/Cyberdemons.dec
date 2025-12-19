@@ -12,6 +12,7 @@ PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
+DamageFactor "Flames",0.75
 DropItem "DemonEssenceLargeSpawner"
 DropItem "64Soulsphere",32
 Tag "$FO_TAG_CYBERDEMON"
@@ -112,6 +113,7 @@ PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
+DamageFactor "Flames",0.75
 Tag "$FO_TAG_ANNIHILATOR"
 Obituary "$FO_OB_ANNIHILATOR"
 SeeSound "monster/annsit"

@@ -1,7 +1,7 @@
 Actor 64BFGGuy : 64Zombieman 19122
 {
 //$category "Game/BD64_Monsters"
-Health 120
+Health 150
 Speed 4
 AttackSound "bfgguy/sight"
 SeeSound "bfgguy/sight"

@@ -12,6 +12,7 @@ PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
+DamageFactor "Flames",0.75
 MeleeThreshold 300
 MeleeRange 100
 DropItem "DemonEssenceLargeSpawner"
@@ -188,6 +189,7 @@ PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
+DamageFactor "Flames",0.75
 AttackSound "None"
 MeleeThreshold 300
 MeleeRange 100

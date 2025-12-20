@@ -17,6 +17,7 @@ PainChance "Bullet",0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "BFG",0.7
+DamageFactor "Flames",0.7
 Obituary "$FO_OB_MOTHER"
 SeeSound "mother/sight"
 AttackSound "mother/attack"

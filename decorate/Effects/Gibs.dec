@@ -2009,9 +2009,9 @@ Scale 1
 		MANE ABCDEFGH 4
 		Wait
 	Death:
-		MANE B 35
+		MANE C 35
 		TNT1 A 0 A_CustomMissile("Brutal_BloodSpot",0,0,random(0,360),2,random(0,90))
-		MANE B -1
+		MANE C -1
 		Stop
 	}
 }

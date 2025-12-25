@@ -514,17 +514,16 @@ YScale 1.0
 	States
 	{
 	See:
-		TRIT AABBCCDD 3
+		TSPI AABBCCDD 2
 		Loop
 	Melee:
 	Missile:
-		TRIT A 9
-		TRIT F 10
-		TRIT E 8
+		TSPI GHH 3
+		TSPI I 10
+		TSPI J 8
 		Goto See
 	Death:
-		TRIT GHIJK 5
-		TNT1 A 3
+		TSPI KLMNOPQ 5
 		Stop
 	}
 }

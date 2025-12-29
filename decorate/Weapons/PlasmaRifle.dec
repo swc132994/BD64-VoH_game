@@ -490,7 +490,7 @@ Alpha 0.1
 
 Actor PlasmaFlame
 {
-Damage 4
+Damage (Random(10,15))
 Speed 40
 Height 8
 Radius 8

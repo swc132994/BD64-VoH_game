@@ -384,7 +384,7 @@ Weapon.SelectionOrder 2200
 Weapon.Kickback 0
 Weapon.AmmoType "SawGas"
 Weapon.AmmoUse 1
-Weapon.AmmoGive 100
+Weapon.AmmoGive 50
 Inventory.PickupMessage "$BD64_GOTCHAINSAW"
 Obituary "$FO_OB_MPCHAINSAW"
 Tag "$FO_TAG_CHAINSAW"

@@ -18,6 +18,26 @@ Actor ShotgunDrop
 	}
 }
 
+Actor ShotgunDropNPC : ShotgunDrop
+{
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump(233,"DropAmmo")	//90%	
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
+	Spawn1:
+		TNT1 A 1 A_CustomMissile("DropedShotgun",20,0,0,2,random(30,50))
+		stop
+	Spawn2:
+		TNT1 A 1 A_CustomMissile("DropedShotgun2",20,0,180,2,random(30,50))
+		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64Shell")
+		Stop
+	}
+}
+
 Actor DropedShotgun
 {
 XScale 0.7
@@ -85,6 +105,26 @@ Actor SSGDrop : ShotgunDrop
 	}
 }
 
+Actor SSGDropNPC : ShotgunDrop
+{
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump(233,"DropAmmo")//90%	
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
+	Spawn1:
+		TNT1 A 1 A_CustomMissile("DropedSSG",20,0,0,2,random(30,50))
+		stop
+	Spawn2:
+		TNT1 A 1 A_CustomMissile("DropedSSG2",20,0,180,2,random(30,50))
+		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64Shell")
+		Stop
+	}
+}
+
 ACTOR DropedSSG : DropedShotgun
 {
 	States
@@ -131,6 +171,26 @@ actor RifleDrop : ShotgunDrop
 	}
 }
 
+actor RifleDropNPC : ShotgunDrop
+{
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump(233,"DropAmmo")	//90%
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
+	Spawn1:
+		TNT1 A 1 A_CustomMissile("DropedRifle",20,0,0,2,random(30,50))
+		stop
+	Spawn2:
+		TNT1 A 1 A_CustomMissile("DropedRifle2",20,0,180,2,random(30,50))
+		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64HighCaliberBox")
+		Stop
+	}
+}
+
 ACTOR DropedRifle : DropedShotgun
 {
 	States
@@ -164,6 +224,26 @@ actor ChaingunDrop : ShotgunDrop
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_Jump(85,"DropAmmo")	//33.333%	
+		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
+	Spawn1:
+		TNT1 A 1 A_CustomMissile("DropedChaingun",20,0,0,2,random(30,50))
+		stop
+	Spawn2:
+		TNT1 A 1 A_CustomMissile("DropedChaingun2",20,0,180,2,random(30,50))
+		stop
+	DropAmmo:
+		TNT1 A 1 A_DropItem("64HighCaliberBox")
+		Stop
+	}
+}
+
+actor ChaingunDropNPC : ShotgunDrop
+{
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump(233,"DropAmmo")	//90%	
 		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
 	Spawn1:
 		TNT1 A 1 A_CustomMissile("DropedChaingun",20,0,0,2,random(30,50))
@@ -348,6 +428,7 @@ Actor BFG9000Drop
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_Jump(255,"DropAmmo")	//99.5%
+		TNT1 A 0 A_Jump(128,"DropAmmo")	//50%
 		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
 	Spawn1:
 		TNT1 A 1 A_CustomMissile("DropedBFG9000",20,0,0,2,random(30,50))

@@ -276,7 +276,7 @@ Player.CrouchSprite "PLYC"
 	Run:
 		TNT1 A 0 A_JumpIfInventory("Stamina",100,"Tired")
 	KeepRunning:
-		TNT1 A 0 A_GiveInventory("Stamina",9)
+		TNT1 A 0 A_GiveInventory("Stamina",8)
 		TNT1 A 0 ACS_NamedExecuteAlways("TacticalPlayerFasterACS")	//Makes player faster
 		PLAY AAAA 1 A_SetPitch(+0.4 + pitch)
 		PLAY BBBB 1 A_SetPitch(-0.4 + pitch)

@@ -289,7 +289,7 @@ Renderstyle Normal
 Actor BFGBetaBall
 {
 Scale 0.6
-Damage 9
+Damage 8
 Radius 6
 Height 8
 Speed 25

@@ -72,6 +72,9 @@ MONSTER
 	Pain:
 		SLHV K 6 A_Pain
 		Goto See
+	Death.SSG:
+		SLHV K 2 A_Recoil(10)
+		TNT1 A 0 A_JumpIfCloser(170,"XDeath")
 	Death:
 		SLHV L 8
 		SLHV M 8 A_Scream
@@ -95,7 +98,8 @@ MONSTER
 		SLVH F 35
 		SLVH F -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
-	XDeath:
+	Death.Chainsaw:
+	Death.BFG:
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncher",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2",32,0,random(0,360),2,random(0,90))
@@ -116,6 +120,43 @@ MONSTER
 		SLHV U 5 A_NoBlocking
 		SLHV VWX 5
 		SLHV Y -1 A_SpawnItemEx("GrowingBloodPool")
+		Stop
+	XDeath:
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncher",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPiece",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeathEyes",40,0,random(0,360),2,random(-5,5))
+		TNT1 AA 0 A_CustomMissile("XDeathHarvesterArm1",50,0,random(0,360),2,random(20,90))
+		TNT1 AA 0 A_CustomMissile("XDeathHarvesterLeg1",50,0,random(0,360),2,random(20,90))
+		TNT1 A 0 A_CustomMissile("XDeathHarversterHorn",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
+		TNT1 A 0 A_XScream
+		TNT1 A 0 A_NoBlocking
+		SHXD A 2 ThrustThingZ(0,30,0,0)
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
+		SHXD A 2 A_CheckFloor("LANDAFTERXDEATH")
+		Wait		
+		SHXD A 2 ThrustThingZ(0,40,0,1)
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
+		SHXD A 2 A_CheckFloor("LANDAFTERXDEATH")
+		Wait
+	LandAfterXDeath:
+		SHXD B 1 A_Stop
+		TNT1 A 0 A_Jump(128,"LandAfterXDeath2")
+		TNT1 A 0 A_ChangeFlag("FORCEXYBILLBOARD",TRUE)
+		SHXD B -1 A_SpawnItemEx("GrowingBloodPool")
+		Stop
+	LandAfterXDeath2:
+		SHXD C 1
+		TNT1 A 0 A_ChangeFlag("FORCEXYBILLBOARD",TRUE)
+		SHXD C -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
 	Death.Plasma: Death.BFGSplash: Death.Flames:
 		TNT1 A 0 A_XScream
@@ -258,7 +299,6 @@ DropItem "None"
 		TNT1 A 0 A_NoBlocking
 		SHDM B 1 A_SpawnItemEx("64BrutalisedHarvester_2",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
-	XDeath:
 	Death.Chainsaw:
 	Death.BFG:
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncher",0,0,random(0,360),2,random(50,130))
@@ -282,6 +322,28 @@ DropItem "None"
 		SLHV VWX 5
 		SLHV Y -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
+	XDeath:
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncher",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPiece",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeathEyes",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathHarvesterArm1",50,0,random(0,360),2,random(20,90))
+		TNT1 AA 0 A_CustomMissile("XDeathHarvesterLeg1",50,0,random(0,360),2,random(20,90))
+		TNT1 A 0 A_CustomMissile("XDeathHarversterHorn",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
+		TNT1 A 0 A_XScream
+		TNT1 A 0 A_NoBlocking
+		SHXD A 2 ThrustThingZ(0,30,0,0)
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
+		SHXD A 2 A_CheckFloor("LANDAFTERXDEATH")
+		Wait
 	Raise:
 		TNT1 A 0 A_SpawnItemEx("64SoulHarvesterGhostReturning",0,0,32)
 		SLHV QPONML 7
@@ -358,8 +420,6 @@ Actor 64BrutalisedHarvester_2 : 64BrutalisedHarvester
 	Death.SSG:
 		SHDM B 2 A_Recoil(10)
 		TNT1 A 0 A_JumpIfCloser(170,"XDeath")
-	XDeath:
-	Death.CutLess:
 	Death.Chainsaw:
 	Death.BFG:
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncher",0,0,random(0,360),2,random(50,130))
@@ -382,6 +442,28 @@ Actor 64BrutalisedHarvester_2 : 64BrutalisedHarvester
 		SLHV VWX 5
 		SLHV Y -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
+	Death.CutLess:
+	XDeath:
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncher",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPiece",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeathEyes",40,0,random(0,360),2,random(-5,5))
+		TNT1 AA 0 A_CustomMissile("XDeathHarvesterLeg1",50,0,random(0,360),2,random(20,90))
+		TNT1 A 0 A_CustomMissile("XDeathHarversterHorn",40,0,random(0,360),2,random(-5,5))		
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
+		TNT1 A 0 A_XScream
+		TNT1 A 0 A_NoBlocking
+		SHXD A 2 ThrustThingZ(0,30,0,0)
+		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
+		SHXD A 2 A_CheckFloor("LANDAFTERXDEATH")
+		Wait
 	Raise:
 		TNT1 A 0 A_SpawnItemEx("64SoulHarvesterGhostReturning",0,0,32)
 		SLHV QPONML 7
@@ -389,7 +471,6 @@ Actor 64BrutalisedHarvester_2 : 64BrutalisedHarvester
 		Stop
 	}
 }
-
 
 actor 64SoulHarvesterBall
 {

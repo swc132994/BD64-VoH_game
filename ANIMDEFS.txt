@@ -60,6 +60,8 @@ flat BLOOD1
 	pic FHDB30 rand 2 2
 	pic FHDB31 rand 2 2
 	pic FHDB32 rand 2 2
+	pic FHDB33 rand 2 2
+	pic FHDB34 rand 2 2
 
 flat BLOOD2
 	pic FHDB01 rand 2 2
@@ -94,6 +96,8 @@ flat BLOOD2
 	pic FHDB30 rand 2 2
 	pic FHDB31 rand 2 2
 	pic FHDB32 rand 2 2
+	pic FHDB33 rand 2 2
+	pic FHDB34 rand 2 2
 
 flat BLOOD3
 	pic FHDB01 rand 2 2
@@ -128,6 +132,8 @@ flat BLOOD3
 	pic FHDB30 rand 2 2
 	pic FHDB31 rand 2 2
 	pic FHDB32 rand 2 2
+	pic FHDB33 rand 2 2
+	pic FHDB34 rand 2 2
 
 	warp2 flat FHDB01
 	warp2 flat FHDB02
@@ -161,6 +167,8 @@ flat BLOOD3
 	warp2 flat FHDB30
 	warp2 flat FHDB31
 	warp2 flat FHDB32
+	warp2 flat FHDB33
+	warp2 flat FHDB34
 
 	//Water
 flat FWATER1
@@ -311,19 +319,6 @@ flat FWATER4
 	pic HDWAT33 rand 2 2
 	pic HDWAT34 rand 2 2
 
-warp2 texture RRWAT_01
-warp2 texture RRWAT_02
-warp2 texture RRWAT_03
-warp2 texture RRWAT_04
-warp2 texture RRWAT_05
-warp2 texture RRWAT_06
-warp2 texture RRWAT_07
-warp2 texture RRWAT_08
-warp2 texture RRWAT_09
-warp2 texture RRWAT_10
-warp2 texture RRWAT_11
-warp2 texture RRWAT_12
-
 flat SLIME01
 	pic RBWAT_01 rand 3 3
 	pic RBWAT_02 rand 3 3
@@ -440,6 +435,8 @@ flat SLIME06
 	pic FHDM30 rand 2 2
 	pic FHDM31 rand 2 2
 	pic FHDM32 rand 2 2
+	pic FHDM33 rand 2 2
+	pic FHDM34 rand 2 2
 
 flat SLIME07
 	pic FHDM01 rand 2 2
@@ -474,6 +471,8 @@ flat SLIME07
 	pic FHDM30 rand 2 2
 	pic FHDM31 rand 2 2
 	pic FHDM32 rand 2 2
+	pic FHDM33 rand 2 2
+	pic FHDM34 rand 2 2
 
 flat SLIME08
 	pic FHDM01 rand 2 2
@@ -508,6 +507,8 @@ flat SLIME08
 	pic FHDM30 rand 2 2
 	pic FHDM31 rand 2 2
 	pic FHDM32 rand 2 2
+	pic FHDM33 rand 2 2
+	pic FHDM34 rand 2 2
 
 	warp2 flat FHDM01
 	warp2 flat FHDM02
@@ -541,6 +542,8 @@ flat SLIME08
 	warp2 flat FHDM30
 	warp2 flat FHDM31
 	warp2 flat FHDM32
+	warp2 flat FHDM33
+	warp2 flat FHDM34
 
 warp texture SP_FACE1
 warp texture SKSNAKE1

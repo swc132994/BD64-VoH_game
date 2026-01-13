@@ -137,41 +137,6 @@ flat BLOOD3
 	pic FHDB33 rand 2 2
 	pic FHDB34 rand 2 2
 
-warp2 flat FHDB01
-warp2 flat FHDB02
-warp2 flat FHDB03
-warp2 flat FHDB04
-warp2 flat FHDB05
-warp2 flat FHDB06
-warp2 flat FHDB07
-warp2 flat FHDB08
-warp2 flat FHDB09
-warp2 flat FHDB10
-warp2 flat FHDB11
-warp2 flat FHDB12
-warp2 flat FHDB13
-warp2 flat FHDB14
-warp2 flat FHDB15
-warp2 flat FHDB16
-warp2 flat FHDB17
-warp2 flat FHDB18
-warp2 flat FHDB19
-warp2 flat FHDB20
-warp2 flat FHDB21
-warp2 flat FHDB22
-warp2 flat FHDB23
-warp2 flat FHDB24
-warp2 flat FHDB25
-warp2 flat FHDB26
-warp2 flat FHDB27
-warp2 flat FHDB28
-warp2 flat FHDB29
-warp2 flat FHDB30
-warp2 flat FHDB31
-warp2 flat FHDB32
-warp2 flat FHDB33
-warp2 flat FHDB34
-
 //Water
 flat FWATER1
 	pic HDWAT01 rand 2 2

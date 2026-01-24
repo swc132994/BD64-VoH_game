@@ -695,7 +695,7 @@ Actor 64Rocket : Rocket Replaces Rocket
 {
 scale 0.75
 Speed 30
-Damage 30
+Damage 25
 Decal "BigScorch"
 Obituary "$FO_OB_MPROCKET"
 DamageType "Extreme"
@@ -765,8 +765,8 @@ Damage 35
 Actor CyberRocket : 64Rocket
 {
 Scale 1.3
-Speed 20
-Damage 35
+Speed 25
+Damage 30
 	States
 	{
 	Death:

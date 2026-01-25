@@ -32,7 +32,8 @@ HitObituary "$FO_OB_SPIDERHIT"
 		Loop
 	See:
 		MSMN A 3 A_Metal
-		MSMN AABBCCDD 3 A_Chase
+		MSMN ABBCCD 3 A_Chase
+		MSMN D 3 A_Wander
 		Loop
 	Melee:
 		MSMN DE 6 A_FaceTarget
@@ -153,8 +154,8 @@ ACTOR MasterMindProjectile : EnemyProjectile
 {
 Scale 0.1
 Damage 5
-Speed 60
-FastSpeed 70
+Speed 70
+FastSpeed 80
 DamageType "Extreme"
 Translation "0:255=%[0,0,0]:[0.87,0.80,1.00]"//Pale Lavander
 	States
@@ -210,7 +211,8 @@ BloodType "Brutal_BloodBLUE"
 		Loop
 	See:
 		BSGI A 3 A_Metal
-		BSGI AABBCCDD 3 A_Chase
+		BSGI ABBCCD 3 A_Chase
+		BSGI D 3 A_Wander
 		Loop
 	Melee:
 		BSGI DE 6 A_FaceTarget

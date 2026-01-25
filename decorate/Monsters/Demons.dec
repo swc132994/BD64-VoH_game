@@ -773,8 +773,8 @@ SpawnID 155
 Scale 0.85
 Health 500
 Alpha 0.5
-PainChance 120
-MeleeRange 68 //default 44
+PainChance 64
+MeleeRange 88 //default 44
 RenderStyle Translucent
 Tag "$FO_TAG_SPECTRE_NIGHTMARE"
 Obituary "$FO_OB_SPECTREHIT_NIGHTMARE"

@@ -5,8 +5,8 @@ DamageType "Bullet"
 Damage 2
 Radius 2
 Height 2
-Speed 70
-FastSpeed 80
+Speed 80
+FastSpeed 90
 Alpha 0.5
 RenderStyle Add
 Decal "BulletDecalNew1"

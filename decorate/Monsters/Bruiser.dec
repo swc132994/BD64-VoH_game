@@ -33,6 +33,7 @@ MONSTER
 +MISSILEEVENMORE
 +FLOORCLIP
 +NEVERFAST
++DONTHARMCLASS
 	States
 	{
 	Spawn:
@@ -320,6 +321,10 @@ DamageFactor "Cutless",0.6
 		KGB8 C 2 A_CheckFloor("LANDAFTERXDEATH2")
 		Wait
 	Death.Head:
+		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("SmallBrainPieceGreen",56,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Green",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_Die
 		TNT1 A 0 A_XScream
 		Goto Death+2
@@ -403,6 +408,14 @@ Decal "Scorch"
 Actor FlamethrowerFireParticlesGreen : FlamethrowerFireParticles
 {
 Translation "0:255=%[0,0,0]:[0.00,1.00,0.50]"
+	States
+	{
+	Spawn:
+		FIR3 ABCD 2 NoDelay Bright A_SpawnItemEx("GreenFlare22",0,0,10)
+		TNT1 A 0 A_CustomMissile("BigBlackSmoke",40,0,random(0,360),2,random(40,160))
+		FIR3 EFGHIJKLMNOP 2 Bright A_SpawnItemEx("GreenFlare22",0,0,10)
+		Stop
+	}
 }
 
 Actor ExplosionParticleHeavyGreen : ExplosionParticleHeavy

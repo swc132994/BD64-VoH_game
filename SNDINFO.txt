@@ -1018,6 +1018,10 @@ FLORGLS2		FLORGLS2
 
 polt/buzz		PLBUZZIN
 
+//gore nest
+nest/death			64NESTOR
+nest/cube			64CUSPIT
+
 //PSX Caulking sounds - By Jaxxoon R
 //Generic sounds
 claw1					DSCLAW1

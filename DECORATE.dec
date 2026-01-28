@@ -84,6 +84,7 @@
 #INCLUDE "Decorate/Monsters/Impaler.dec"
 #INCLUDE "Decorate/Monsters/Harvester.dec"
 #INCLUDE "Decorate/Monsters/NPCMarines.dec"
+#INCLUDE "Decorate/Monsters/GoreNest.dec"
 
 //RANDOM SPAWNERS, CAST CALL & DROPABLES
 #INCLUDE "Decorate/Misc/RandomSpawners.dec"

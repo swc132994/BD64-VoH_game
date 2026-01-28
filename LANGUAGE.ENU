@@ -719,6 +719,7 @@ FO_TAG_EVILTREEROOT = "Evil Tree Root";
 FO_TAG_HANGMAN = "Hangman";
 FO_TAG_KEEN = "Scorpion Hanged";
 FO_TAG_SUPERFALLEN = "Supreme Fallen";
+FO_TAG_GORENEST = "Gore Nest";
 
 //////////////////////////////////////////////////////////////////
 //NPC marine tags & obituary

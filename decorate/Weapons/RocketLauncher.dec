@@ -93,7 +93,7 @@ Inventory.Icon "LAUNA0"
 +IGNORESKILL
 }
 
-Actor 64RocketLauncherTactical : Brutal64Weapon
+Actor 64RocketLauncherTactical : Brutal64Weapon	//brightmaps completed
 {
 Scale 0.82
 Weapon.SlotNumber 5

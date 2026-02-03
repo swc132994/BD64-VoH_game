@@ -5,12 +5,13 @@ statusbar fullscreen,forcescaled//,0.75 //set HUD transparancy
 {
 	InInventory "HUDSwitch",1 //Doom Style (Fullscreen HUD)
 	{
-		drawswitchableimage BlueCard,"nullimage","STKEYS0",101,181;
-		drawswitchableimage YellowCard,"nullimage","STKEYS1",111,181;
-		drawswitchableimage RedCard,"nullimage","STKEYS2",121,181;
-		drawswitchableimage BlueSkull,"nullimage","STKEYS3",100,169;
-		drawswitchableimage YellowSkull,"nullimage","STKEYS4",110,169;
-		drawswitchableimage RedSkull,"nullimage","STKEYS5",120,169;
+		drawswitchableimage BlueCard,"nullimage","STKEYS0",300,181;
+		drawswitchableimage YellowCard,"nullimage","STKEYS1",300,169;
+		drawswitchableimage RedCard,"nullimage","STKEYS2",300,157;
+		
+		drawswitchableimage BlueSkull,"nullimage","STKEYS3",310,181;
+		drawswitchableimage YellowSkull,"nullimage","STKEYS4",310,169;
+		drawswitchableimage RedSkull,"nullimage","STKEYS5",310,157;
 		
 		InInventory "PowerStrength",1
 		{
@@ -53,12 +54,6 @@ statusbar fullscreen,forcescaled//,0.75 //set HUD transparancy
 				drawnumber 3,HUDFONT_DOOM,untranslated,ammo1,276,180;
 				}
 			}
-	
-		/*InInventory "ProxyMineThrownActive",1
-		{
-			//Drawimage "MineIcon",280,164;
-			drawbar "vinebar2","vinebar1", Ammo MineHold,vertical,interpolate(15),286,158;
-		}*/
 	
 		InInventory "64FistUpperToken",1
 		{
@@ -107,24 +102,19 @@ statusbar fullscreen,forcescaled//,0.75 //set HUD transparancy
 				}
 			}
 
-		/*InInventory "ProxyMineThrownActive",1
-		{
-			drawimage "mineicon",186,170;
-			drawbar "minebar2","minebar1", Ammo MineHold,horizontal,interpolate(15),180,183;
-		}*/
-
 		InInventory "64FistUpperToken",1
 		{
 			drawimage "UPTEXT",107,152;
 			drawbar "UPBAR1","UPBAR2", Ammo AltPunchCharge,horizontal,interpolate(25),115,160;
 		}
 
-		drawswitchableimage BlueCard,"nullimage","STKEYS0",90,181;
-		drawswitchableimage YellowCard,"nullimage","STKEYS1",100,181;
-		drawswitchableimage RedCard,"nullimage","STKEYS2",110,181;
-		drawswitchableimage BlueSkull,"nullimage","STKEYS3",89,169;
-		drawswitchableimage YellowSkull,"nullimage","STKEYS4",99,169;
-		drawswitchableimage RedSkull,"nullimage","STKEYS5",109,169;
+		drawswitchableimage BlueCard,"nullimage","STKEYS0",77,181;
+		drawswitchableimage YellowCard,"nullimage","STKEYS1",87,181;
+		drawswitchableimage RedCard,"nullimage","STKEYS2",97,181;
+		
+		drawswitchableimage BlueSkull,"nullimage","STKEYS3",76,169;
+		drawswitchableimage YellowSkull,"nullimage","STKEYS4",86,169;
+		drawswitchableimage RedSkull,"nullimage","STKEYS5",96,169;
 
 
 	}
@@ -132,8 +122,8 @@ statusbar fullscreen,forcescaled//,0.75 //set HUD transparancy
 	{
 		IsSelected not "64ProximityMine"
 		{
-		drawimage "PMNEA0",218,185,center,20,15;
-		drawnumber 3,SMALLFONT,untranslated,Ammo("64MineAmmo"),alignment(center),218,185;
+		drawimage "PMNEA0",222,185,center,20,15;
+		drawnumber 3,SMALLFONT,untranslated,Ammo("64MineAmmo"),alignment(center),222,185;
 		}
 	}
 	
@@ -289,11 +279,6 @@ statusbar normal
 			drawbar "nulupbr2","nulupbr1",Ammo AltPunchCharge,horizontal,interpolate(10),57,182;
 			}
 			
-		/*InInventory "ProxyMineThrownActive",1
-			{
-			drawbar "nulmnbr2","nulmnbr1",Ammo MineHold,horizontal,interpolate(20),57,177;
-			}*/
-
 		drawimage "Armour",105,165;
 		drawnumber 3,HUDFONT_DOOM,untranslated,armor,145,177;
 		//Icon Card and Skull fix

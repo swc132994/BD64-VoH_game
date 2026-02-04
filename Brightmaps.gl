@@ -553,26 +553,25 @@ brightmap sprite SAR3Z1		{map "brightmaps/SAR3Z1_B.png"}
 brightmap sprite SAR3Z2Z8	{map "brightmaps/SAR3Z2Z8_B.png"}
 
 //ACID DEMON
-brightmap sprite ACIDA1		{map "brightmaps/SARGA1_B.png"}
-brightmap sprite ACIDA2A8	{map "brightmaps/SARGA2A8_B.png"}
-brightmap sprite ACIDB1		{map "brightmaps/SARGB1_B.png"}
-brightmap sprite ACIDB2B8	{map "brightmaps/SARGB2B8_B.png"}
-brightmap sprite ACIDC1		{map "brightmaps/SARGC1_B.png"}
-brightmap sprite ACIDC2C8	{map "brightmaps/SARGC2C8_B.png"}
-brightmap sprite ACIDD1		{map "brightmaps/SARGD1_B.png"}
-brightmap sprite ACIDD2D8	{map "brightmaps/SARGD2D8_B.png"}
-brightmap sprite ACIDE1		{map "brightmaps/SARGE1_B.png"}
-brightmap sprite ACIDE2E8	{map "brightmaps/SARGE2E8_B.png"}
-brightmap sprite ACIDF1		{map "brightmaps/SARGF1_B.png"}
-brightmap sprite ACIDF2F8	{map "brightmaps/SARGF2F8_B.png"}
-brightmap sprite ACIDG1		{map "brightmaps/SARGG1_B.png"}
-brightmap sprite ACIDG2G8	{map "brightmaps/SARGG2G8_B.png"}
-brightmap sprite ACIDH1		{map "brightmaps/SARGH1_B.png"}
-brightmap sprite ACIDH2H8	{map "brightmaps/SARGH2H8_B.png"}
-Brightmap sprite ACIDY1		{map "brightmaps/ACIDY1_B.png"}
-brightmap sprite ACIDY2Y8	{map "brightmaps/ACIDY2Y8_B.png"}
-brightmap sprite ACIDZ1		{map "brightmaps/ACIDZ1_B.png"}
-brightmap sprite ACIDZ2Z8	{map "brightmaps/ACIDZ2Z8_B.png"}
+brightmap sprite ACIDA1      {map "brightmaps/AcidDemon/ACIDA1_BR.png" disablefullbright}
+brightmap sprite ACIDA2A8    {map "brightmaps/AcidDemon/ACIDA2A8_BR.png" disablefullbright}
+brightmap sprite ACIDB1      {map "brightmaps/AcidDemon/ACIDB1_BR.png" disablefullbright}
+brightmap sprite ACIDB2B8    {map "brightmaps/AcidDemon/ACIDB2B8_BR.png" disablefullbright}
+brightmap sprite ACIDC1      {map "brightmaps/AcidDemon/ACIDC1_BR.png" disablefullbright}
+brightmap sprite ACIDC2C8    {map "brightmaps/AcidDemon/ACIDC2C8_BR.png" disablefullbright}
+brightmap sprite ACIDD1      {map "brightmaps/AcidDemon/ACIDD1_BR.png" disablefullbright}
+brightmap sprite ACIDD2D8    {map "brightmaps/AcidDemon/ACIDD2D8_BR.png" disablefullbright}
+brightmap sprite ACIDE1      {map "brightmaps/AcidDemon/ACIDE1_BR.png" disablefullbright}
+brightmap sprite ACIDE2E8    {map "brightmaps/AcidDemon/ACIDE2E8_BR.png" disablefullbright}
+brightmap sprite ACIDF1      {map "brightmaps/AcidDemon/ACIDF1_BR.png" disablefullbright}
+brightmap sprite ACIDF2F8    {map "brightmaps/AcidDemon/ACIDF2F8_BR.png" disablefullbright}
+brightmap sprite ACIDG2G8    {map "brightmaps/AcidDemon/ACIDG2G8_BR.png" disablefullbright}
+brightmap sprite ACIDH1      {map "brightmaps/AcidDemon/ACIDH1_BR.png" disablefullbright}
+brightmap sprite ACIDH2H8    {map "brightmaps/AcidDemon/ACIDH2H8_BR.png" disablefullbright}
+brightmap sprite ACIDY1      {map "brightmaps/AcidDemon/ACIDY1_BR.png" disablefullbright}
+brightmap sprite ACIDY2Y8    {map "brightmaps/AcidDemon/ACIDY2Y8_BR.png" disablefullbright}
+brightmap sprite ACIDZ1      {map "brightmaps/AcidDemon/ACIDZ1_BR.png" disablefullbright}
+brightmap sprite ACIDZ2Z8    {map "brightmaps/AcidDemon/ACIDZ2Z8_BR.png" disablefullbright}
 
 //NEW HELLHOUND
 brightmap sprite HEHRA1		{map "brightmaps/HEHRA1_BR.png"}

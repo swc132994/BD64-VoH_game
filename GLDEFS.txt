@@ -921,6 +921,19 @@ object 64BaronBall
 	frame BRNRH {light BARONBALL2_X6}
 }
 
+object 64BaronBallBerserk
+{
+	frame BRNRA {light BARONBALL2_X3}
+	frame BRNRB {light BARONBALL2_X3}
+
+	frame BRNRC {light BARONBALL2_X1}
+	frame BRNRD {light BARONBALL2_X1}
+	frame BRNRE {light BARONBALL2_X2}
+	frame BRNRF {light BARONBALL2_X3}
+	frame BRNRG {light BARONBALL2_X3}
+	frame BRNRH {light BARONBALL2_X4}
+}
+
 //Knightmare fireball
 flickerlight BARONBALL3_X1
 {

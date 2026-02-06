@@ -52,7 +52,7 @@ MONSTER
 		DIAB B 5 A_Chase("Missile","Missile",CHF_RESURRECT)
 		TNT1 A 0 A_Playsound("HEDBON2",CHAN_AUTO,1,FALSE,2)
 		DIAB C 5 A_Chase("Melee","Missile",CHF_RESURRECT)
-		DIAB D 5 A_Chase("Missile","Missile",CHF_RESURRECT)
+		DIAB D 5 A_Wander
 		Goto See
 	Missile:
 		TNT1 A 0 A_Jump(92,"Meteor","FireAttack")

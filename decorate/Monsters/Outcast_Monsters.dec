@@ -503,7 +503,8 @@ BloodType "Brutal_BloodBLUE"
 		Goto Forget+1
 	See:
 		NTCR A 2 A_BabyMetal
-		NTCR AABBBCCCDDD 2 A_Chase
+		NTCR AABBBCCCDD 2 A_Chase
+		NTCR D 2 A_Wander
 		TNT1 A 0 A_CheckSight("See")
 		TNT1 A 0 A_JumpIfInTargetInventory("PowerInvisibility",1,"Forget")
 		goto See

@@ -28,7 +28,7 @@ HitObituary "$FO_OB_BARONHIT"
 		Loop
 	See:
 		TNT1 A 0 A_JumpIfInventory("powerstrength",1,"SeeBerserk")
-		TNT1 A 0 A_Jump(205,2)//80%
+		TNT1 A 0 A_Jump(218,2)//85%
 		TNT1 A 0 A_JumpIfHealthLower(500,"stomp")//baron health=1000
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12GREEN",20,0,70)
 		BOSS AABB 3 A_Chase

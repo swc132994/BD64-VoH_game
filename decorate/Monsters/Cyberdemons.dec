@@ -27,19 +27,21 @@ Obituary "$FO_OB_CYBORG"
 		Loop
 	See:
 		CYBR A 3 A_Metal
-		CYBR AA 3 A_Chase
-		CYBR B 3 A_Hoof
-		CYBR BBCCCDDD 3 A_Chase
+		CYBR AABB 3 A_Chase
+		CYBR B 3 A_Wander
+		CYBR C 3 A_Hoof
+		CYBR CCDD 3 A_Chase
+		CYBR D 3 A_Wander
 		Loop
 	Pain:
 		CYBR F 6 A_Pain
 		Goto See
 	Missile:
-		CYBR F 7 A_FaceTarget
+		CYBR F 8 A_FaceTarget
 		CYBR E 10 Bright A_CustomMissile("CyberRocket",62,-24,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		CYBR F 10 A_FaceTarget
+		CYBR F 8 A_FaceTarget
 		CYBR E 10 Bright A_CustomMissile("CyberRocket",62,-24,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		CYBR F 10 A_FaceTarget
+		CYBR F 8 A_FaceTarget
 		CYBR E 10 Bright A_CustomMissile("CyberRocket",62,-24,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		Goto See
 	Death:
@@ -131,33 +133,37 @@ DropItem "64Soulsphere",32
 		A64A A 10 A_LookEx
 		Loop
 	See:
+	
+	See:
 		A64A A 3 A_Playsound("monster/anhoof",CHAN_BODY)
-		A64A ABBCC 3 A_Chase
-		A64A D 3 A_Playsound("monster/anhoof",CHAN_BODY)
-		A64A D 3 A_Chase
+		A64A AABB 3 A_Chase
+		A64A B 3 A_Wander
+		A64A C 3 A_Playsound("monster/anhoof",CHAN_BODY)
+		A64A CCDD 3 A_Chase	
+		A64A D 3 A_Wander
 		Loop
 	Missile:
 		TNT1 A 0 A_Jump(128,11)
-		A64A E 6 A_FaceTarget
+		A64A E 8 A_FaceTarget
 		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		A64A E 12 A_FaceTarget
+		A64A F 10 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A E 8 A_FaceTarget
 		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		A64A E 12 A_FaceTarget
+		A64A F 10 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A E 8 A_FaceTarget
 		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A F 10 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		TNT1 A 0 A_Jump(128,1)
 		Goto See
-		A64A E 6 A_FaceTarget
+		A64A E 8 A_FaceTarget
 		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		A64A E 12 A_FaceTarget
+		A64A F 10 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A E 8 A_FaceTarget
 		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		A64A E 12 A_FaceTarget
+		A64A F 10 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A E 8 A_FaceTarget
 		TNT1 A 0 A_CustomMissile("CyberRocket",68,25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
-		A64A F 12 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
+		A64A F 10 Bright A_CustomMissile("CyberRocket",68,-25,random(-2,2),CMF_OFFSETPITCH,random(-2,2))
 		Goto See
 	Pain:
 		A64A B 6 A_Pain

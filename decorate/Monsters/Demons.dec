@@ -772,6 +772,7 @@ Actor 64NightmareSpectre : 64Spectre 1000
 SpawnID 155
 Scale 0.85
 Health 500
+Speed 12
 Alpha 0.5
 PainChance 64
 MeleeRange 88 //default 44
@@ -814,13 +815,17 @@ Obituary "$FO_OB_SPECTREHIT_NIGHTMARE"
 		TNT1 A 0 A_FadeTo(0.25,0.33,false)
 		SAR3 F 6 A_FaceTarget
 		TNT1 A 0 A_FadeTo(0.25,0.33,false)
-		SAR3 G 3 A_Recoil(-8)
-		SAR3 G 3 A_SargAttack
+		SAR3 G 3 A_Recoil(-12)
+		TNT1 A 0 ThrustThingZ(0,20,0,0)
+		SAR3 G 3 A_FaceTarget
+		TNT1 AAA 0 A_SargAttack
 		goto See+12
 	Melee2:
 		SAR3 EF 6 A_FaceTarget
-		SAR3 G 3 A_Recoil(-8)
-		SAR3 G 3 A_SargAttack
+		SAR3 G 3 A_Recoil(-12)
+		TNT1 A 0 ThrustThingZ(0,20,0,0)
+		SAR3 G 3 A_FaceTarget
+		TNT1 AAA 0 A_SargAttack
 		Goto See+12
 	Pain:
 		TNT1 A 0 A_JumpIf(alpha == 0.25,"Pain2")

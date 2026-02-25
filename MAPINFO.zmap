@@ -87,7 +87,7 @@ Skill Survival
 
 Skill SurvivalRealism
 {
-	SpawnFilter = Nightmare
+	SpawnFilter = Normal
 	DamageFactor = 5.0
 	MonsterHealth = 0.3
 	ReplaceActor = "64HealthBonus","64Bandages"

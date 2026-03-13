@@ -169,9 +169,9 @@ DropItem "SOULSPAWNER"
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		GBM1 A 2 ThrustThingZ(0,30,0,0)
+		HSKG A 2 ThrustThingZ(0,30,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-		GBM1 A 2 A_CheckFloor("LANDAFTERXDEATH")
+		HSKG A 2 A_CheckFloor("LANDAFTERXDEATH")
 		Wait
 	Death.Shotgun:
 		ZFM1 A 2 A_Recoil(6)
@@ -214,9 +214,9 @@ DropItem "SOULSPAWNER"
 		TNT1 AAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		GBM1 A 2 ThrustThingZ(0,40,0,1)
+		HSKG A 2 ThrustThingZ(0,40,0,1)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-		GBM1 A 2 A_CheckFloor("LANDAFTERXDEATH")
+		HSKG A 2 A_CheckFloor("LANDAFTERXDEATH")
 		Wait
 	Death.Bullet:
 		TNT1 A 0 A_Jump(205,"Death")//80%
@@ -234,6 +234,17 @@ DropItem "SOULSPAWNER"
 		Stop
 	Death.PlasmaBurningZombie:
 		BURN A 1 A_SpawnItemEx("BurningHuskZombie",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
+		Stop
+	LandAfterXDeath:
+		HSKG B 1 A_Stop
+		TNT1 A 0 A_Jump(128,"LandAfterXDeath2")
+		TNT1 A 0 A_ChangeFlag("FORCEXYBILLBOARD",TRUE)
+		HSKG B -1 A_SpawnItemEx("GrowingBloodPool")
+		Stop
+	LandAfterXDeath2:
+		HSKG C 1
+		TNT1 A 0 A_ChangeFlag("FORCEXYBILLBOARD",TRUE)
+		HSKG C -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
 	}
 }
@@ -370,9 +381,9 @@ DropItem "None"
 		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
-		GBM1 A 2 ThrustThingZ(0,30,0,0)
+		HSKG A 2 ThrustThingZ(0,30,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-		GBM1 A 2 A_CheckFloor("LANDAFTERXDEATH")
+		HSKG A 2 A_CheckFloor("LANDAFTERXDEATH")
 		Wait
 	Death.SuperFists:
 	Death.SuperKick:
@@ -394,9 +405,9 @@ DropItem "None"
 		TNT1 AAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		GBM1 A 2 ThrustThingZ(0,40,0,1)
+		HSKG A 2 ThrustThingZ(0,40,0,1)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-		GBM1 A 2 A_CheckFloor("LANDAFTERXDEATH")
+		HSKG A 2 A_CheckFloor("LANDAFTERXDEATH")
 		Wait
 	Death.Heavy:
 		TNT1 A 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
@@ -494,9 +505,9 @@ Actor BrutalizedHuskZombie_2 : BrutalizedHuskZombie_1
 		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
-		GBM1 A 2 ThrustThingZ(0,30,0,0)
+		HSKG A 2 ThrustThingZ(0,30,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-		GBM1 A 2 A_CheckFloor("LANDAFTERXDEATH")
+		HSKG A 2 A_CheckFloor("LANDAFTERXDEATH")
 		Wait
 	Death.SplatteredOnWall:
 		TNT1 AA 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
@@ -514,9 +525,9 @@ Actor BrutalizedHuskZombie_2 : BrutalizedHuskZombie_1
 		TNT1 AAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		GBM1 A 2 ThrustThingZ(0,40,0,1)
+		HSKG A 2 ThrustThingZ(0,40,0,1)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-		GBM1 A 2 A_CheckFloor("LANDAFTERXDEATH")
+		HSKG A 2 A_CheckFloor("LANDAFTERXDEATH")
 		Wait
 	Raise:
 		64ZF NMLKJI 5

@@ -5,6 +5,7 @@ Scale 0.9
 Radius 62
 MaxStepHeight 28
 MaxDropOffHeight 32
+PainChance 16
 PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",200
@@ -182,7 +183,7 @@ Speed 14
 Radius 62
 MaxStepHeight 28
 MaxDropOffHeight 32
-PainChance 30
+PainChance 16
 PainChance "Flames",10
 PainChance "Bullet",10
 PainChance "SuperFists",200

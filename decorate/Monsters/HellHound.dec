@@ -1,7 +1,7 @@
 Actor 64HellHound : Demon //Hellhound Alt by IMI
 {
 Scale 0.8
-Health 800
+Health 600
 GibHealth 20
 Speed 16
 Radius 24
@@ -45,7 +45,7 @@ DropItem "DemonEssenceSpawner"
 		HEHR EF 4 A_FaceTarget
 		TNT1 A 0 A_Recoil(-13)
 		TNT1 A 0 ThrustThingZ(0,20,0,0)
-		HEHR H 4 A_CustomMeleeAttack(7*random(2,8),"Dog/melee")
+		HEHR H 4 A_CustomMeleeAttack(6*random(2,7),"Dog/melee")
 		HEHR FE 4 A_FaceTarget
 		TNT1 A 0 A_ChangeFlag("NOPAIN",FALSE)
 		Goto See

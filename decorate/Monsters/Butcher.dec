@@ -15,7 +15,7 @@ SeeSound "sawcubus/sight"
 PainSound "sawcubus/pain"
 DeathSound "sawcubus/death"
 ActiveSound "sawcubus/active"
-PainChance 13
+PainChance 20
 PainChance "SuperFists",200
 PainChance "Kick",200
 PainChance "SuperKick",200

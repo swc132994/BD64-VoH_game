@@ -227,6 +227,7 @@ DeathSound "Pestilence/tracex"
 RenderStyle Translucent
 Alpha 0.7
 Decal "SmallerScorch"
+Species "ThruProjectile"
 PROJECTILE
 -NOBLOCKMAP
 +SHOOTABLE
@@ -234,6 +235,7 @@ PROJECTILE
 +NOBLOOD
 +NOTARGETSWITCH
 +NOTARGET
++THRUSPECIES
 	States
 	{
 	Spawn:

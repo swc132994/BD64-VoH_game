@@ -220,6 +220,7 @@ SeeSound "skeleton/attack"
 DeathSound "skeleton/tracex"
 Decal "SmallerScorch"
 DamageType "Extreme"
+Species "ThruProjectile"
 PROJECTILE
 -NOBLOCKMAP
 +SHOOTABLE

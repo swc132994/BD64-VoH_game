@@ -14,7 +14,7 @@ MaxStepHeight 28
 MaxDropOffHeight 32
 Obituary "$FO_OB_RESURRECTOR"
 Tag "$FO_TAG_RESURRECTOR"
-PainChance 10
+PainChance 8
 PainChance "SuperFists",200
 PainChance "Kick",200
 PainChance "SuperKick",200

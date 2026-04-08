@@ -11,6 +11,7 @@ PainChance "Bullet",26
 PainChance "SuperFists",200
 PainChance "Kick",255
 PainChance "SuperKick",255
+DamageFactor "Ice",1.5
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Flames",0.75
@@ -200,11 +201,13 @@ Speed 20
 RenderStyle Normal
 Decal "MedScorch"
 DamageType "Extreme"
+Species "ThruProjectile"
 -NOBLOCKMAP
 +NOBLOOD
 +SHOOTABLE
 +NOTARGETSWITCH
 +NOTARGET
++THRUSPECIES
 	States
 	{
 	Spawn:

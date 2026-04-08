@@ -699,9 +699,11 @@ Damage 25
 Decal "BigScorch"
 Obituary "$FO_OB_MPROCKET"
 DamageType "Extreme"
+Species "ThruProjectile"
 -DEHEXPLOSION
 -ROCKETTRAIL
 +NODAMAGETHRUST
++THRUSPECIES
 	States
 	{
 	Spawn:

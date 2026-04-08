@@ -2,7 +2,7 @@ Actor 64Belphegor : BaronOfHell 11053
 {
 //$category "Game/BD64_Monsters"
 Scale 0.8
-Health 1750
+Health 1500
 Height 64
 Radius 24
 Speed 8
@@ -16,7 +16,7 @@ DeathSound "64Belphegor/death"
 ActiveSound "64Belphegor/active"
 Obituary "$FO_OB_BELPHEGOR"
 Tag "$FO_TAG_BELPHEGOR"
-PainChance 16
+PainChance 20
 PainChance "SuperFists",220
 PainChance "Kick",255
 PainChance "SuperKick",255

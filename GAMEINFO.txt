@@ -1,4 +1,4 @@
 STARTUPTYPE = "Hexen"
-STARTUPTITLE = "BD64 - Veteran of Hell"
+STARTUPTITLE = "BD64 - Veteran of Hell V1.7b"
 STARTUPCOLORS = "CC 00 00", "00 00 00"	//red text, black background
 DiscordAppId = "1208721820036104202"

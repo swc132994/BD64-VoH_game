@@ -25,7 +25,7 @@ Skill Baby
 Skill Easy
 {
 	SpawnFilter = Easy
-	DamageFactor = 0.5
+	DamageFactor = 0.6
 	Name = "$FO_TAG_EASY"
 	EasyBossBrain
 	mustconfirm = "$FO_TAG_EASY_TXT"
@@ -34,7 +34,7 @@ Skill Easy
 Skill Normal
 {
 	SpawnFilter = Normal
-	DamageFactor = 0.75
+	DamageFactor = 0.7
 	Name = "$FO_TAG_NORMAL"
 	mustconfirm = "$FO_TAG_NORMAL_TXT"
 	defaultskill
@@ -43,7 +43,7 @@ Skill Normal
 Skill Hard
 {
 	SpawnFilter = Hard
-	DamageFactor = 0.75
+	DamageFactor = 0.7
 	Name = "$FO_TAG_HARD"
 	mustconfirm = "$FO_TAG_HARD_TXT"
 }
@@ -51,7 +51,7 @@ Skill Hard
 Skill HardPlus
 {
 	SpawnFilter = Hard
-	DamageFactor = 0.75
+	DamageFactor = 0.7
 	Name = "$FO_TAG_HARDER"
 	FastMonsters
 	SpawnMulti //This command works correctly in GZDoom, but has no effect on Zandronum because his used multiplayer emulation
@@ -62,8 +62,8 @@ Skill HardPlus
 Skill Nightmare
 {
 	SpawnFilter = Nightmare
-	MonsterHealth = 1.25
-	DamageFactor = 0.75
+	MonsterHealth = 1.2
+	DamageFactor = 0.7
 	Aggressiveness = 0.5
 	FastMonsters
 	Name = "$FO_TAG_NIGHTMARE"
@@ -73,8 +73,8 @@ Skill Nightmare
 Skill Survival
 {
 	SpawnFilter = Hard
-	DamageFactor = 0.75
-	MonsterHealth = 1.25
+	DamageFactor = 0.7
+	MonsterHealth = 1.2
 	ReplaceActor = "64HealthBonus","64Bandages"
 	ReplaceActor = "Stimpack","BandagedStimSpawner"
 	ReplaceActor = "Medikit","BandagedMedikitSpawner"
@@ -100,7 +100,6 @@ Skill SurvivalRealism
 	textcolor = Gray
 	mustconfirm = "$FO_TAG_REALISM_TXT"
 }
-
 
 Intermission Doom2Cast
 {

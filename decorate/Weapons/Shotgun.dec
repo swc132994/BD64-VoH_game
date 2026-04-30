@@ -262,6 +262,7 @@ Tag "$FO_TAG_SHOTGUN"
 		TNT1 A 0 A_AlertMonsters
 		TNT1 A 0 A_ZoomFactor(0.95)
 		SHTF AB 2 Bright
+		TNT1 A 0 A_SetAngle(angle + frandom(-1.0,1.0),SPF_INTERPOLATE)
 		TNT1 A 0 A_ZoomFactor(1.0)
 		TNT1 A 0 A_JumpIfInventory("PowerStrength",1,"SlamPump")
 		SHTF C 1 A_SetPitch(pitch-2,SPF_INTERPOLATE)

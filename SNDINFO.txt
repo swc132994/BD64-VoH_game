@@ -663,6 +663,19 @@ $random 64Belphegor/throw
 64ThingActive			SBR1C
 64ThingActive1			BLROAM2A	$volume 64ThingActive1 0.75
 
+//NIGHT CRAWLER
+NCrawler/sight			NCSIGHT
+NCrawler/Active			NCACT
+NCrawler/pain1			NCPAIN1
+NCrawler/pain2			NCPAIN2
+NCrawler/death			NCDED
+NCrawler/Walk			NCWALK
+
+$random NCrawler/pain
+	{
+	NCrawler/pain1 NCrawler/pain2
+	}
+
 //Plasma Zombie
 colonelzombie/see		PZOMSEE
 colonelzombie/pain		PZOMPAIN

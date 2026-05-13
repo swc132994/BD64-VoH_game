@@ -163,7 +163,7 @@ MONSTER
 		DKHL I 2 A_Recoil(6)
 		TNT1 A 0 A_Jump(85,"Death")
 	Death.ShotgunNoArm:
-		TNT1 A 0 A_CustomMissile("XDeathBruiserCannonGreen",50,0,random(00,360),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathBruiserCannonGreen",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		BRAL A 1 A_SpawnItemEx("64BruiserNoArm",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)

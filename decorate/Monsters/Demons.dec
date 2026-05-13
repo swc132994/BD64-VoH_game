@@ -77,7 +77,7 @@ Obituary "$FO_OB_DEMONHIT"
 	Death.CutLess:
 		TNT1 A 0 A_Jump(85,"Death")
 	Death.ShotgunNoArm:
-		TNT1 A 0 A_CustomMissile("XDeathPinkyArm1",50,0,random(00,360),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathPinkyArm1",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		SANA A 1 A_SpawnItemEx("64DemonNoArm",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
@@ -132,8 +132,8 @@ Obituary "$FO_OB_DEMONHIT"
 		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBig",45,0,random(0,360),2,random(10,90))
-		TNT1 AA 0 A_CustomMissile("XDeathPinkyArm1",50,0,random(00,360),2,random(10,50))
-		TNT1 AA 0 A_CustomMissile("XDeathPinkyleg1",50,0,random(00,360),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeathPinkyArm1",50,0,random(0,360),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeathPinkyleg1",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		GBM2 A 2 ThrustThingZ(0,40,0,0)
@@ -319,8 +319,8 @@ DropItem "None"
 		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBig",45,0,random(0,360),2,random(10,90))
-		TNT1 A 0 A_CustomMissile("XDeathPinkyArm1",50,0,random(00,360),2,random(10,50))
-		TNT1 AA 0 A_CustomMissile("XDeathPinkyleg1",50,0,random(00,360),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathPinkyArm1",50,0,random(0,360),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeathPinkyleg1",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		GBM2 A 2 ThrustThingZ(0,40,0,0)
@@ -449,7 +449,7 @@ HitObituary "$FO_OB_SPECTREHIT"
 	Death.CutLess:
 		TNT1 A 0 A_Jump(85,"Death")
 	Death.ShotgunNoArm:
-		TNT1 A 0 A_CustomMissile("XDeathSpectreArm1",50,0,random(00,360),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathSpectreArm1",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		SPCA A 1 A_SpawnItemEx("64SpectreNoArm",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
@@ -505,8 +505,8 @@ HitObituary "$FO_OB_SPECTREHIT"
 		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBig",45,0,random(0,360),2,random(10,90))
-		TNT1 AA 0 A_CustomMissile("XDeathSpectreArm1",50,0,random(00,360),2,random(10,50))
-		TNT1 AA 0 A_CustomMissile("XDeathSpectreLeg1",50,0,random(00,360),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeathSpectreArm1",50,0,random(0,360),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeathSpectreLeg1",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		PBM2 A 2 ThrustThingZ(0,40,0,0)
@@ -692,8 +692,8 @@ DropItem "None"
 		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBig",45,0,random(0,360),2,random(10,90))
-		TNT1 A 0 A_CustomMissile("XDeathSpectreArm1",50,0,random(00,360),2,random(10,50))
-		TNT1 AA 0 A_CustomMissile("XDeathSpectreLeg1",50,0,random(00,360),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathSpectreArm1",50,0,random(0,360),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeathSpectreLeg1",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		PBM2 A 2 ThrustThingZ(0,40,0,0)
@@ -870,7 +870,7 @@ Obituary "$FO_OB_SPECTREHIT_NIGHTMARE"
 	Death.CutLess:
 		TNT1 A 0 A_Jump(85,"Death")
 	Death.ShotgunNoArm:
-		TNT1 A 0 A_CustomMissile("XDeathNSpectreArm1",50,0,random(00,360),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathNSpectreArm1",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		NMSA A 1 A_SpawnItemEx("64NightmareSpectreNoArm",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
@@ -925,8 +925,8 @@ Obituary "$FO_OB_SPECTREHIT_NIGHTMARE"
 		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBig",45,0,random(0,360),2,random(10,90))
-		TNT1 AA 0 A_CustomMissile("XDeathNSpectreArm1",50,0,random(00,360),2,random(10,50))
-		TNT1 AA 0 A_CustomMissile("XDeathNSpectreLeg1",50,0,random(00,360),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeathNSpectreArm1",50,0,random(0,360),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeathNSpectreLeg1",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		PBM3 A 2 ThrustThingZ(0,40,0,0)
@@ -1112,8 +1112,8 @@ DropItem "None"
 		TNT1 AAAA 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAA 0 A_CustomMissile("Bloodmist",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBig",45,0,random(0,360),2,random(10,90))
-		TNT1 A 0 A_CustomMissile("XDeathNSpectreArm1",50,0,random(00,360),2,random(10,50))
-		TNT1 AA 0 A_CustomMissile("XDeathNSpectreLeg1",50,0,random(00,360),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeathNSpectreArm1",50,0,random(0,360),2,random(10,50))
+		TNT1 AA 0 A_CustomMissile("XDeathNSpectreLeg1",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		PBM3 A 2 ThrustThingZ(0,40,0,0)

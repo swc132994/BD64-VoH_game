@@ -42,7 +42,8 @@ Script "BD64Initilize" Enter
 	ACS_NamedExecuteAlways("BD64Respawn",0);
 	CreateTranslation(2666,0:255=%[0,0,0]:[0.94,0.97,1.00]);//ALICE BLUE
 
-	if(GetPlayerInfo(PlayerNumber(),PLAYERINFO_PLAYERCLASS) == 1 & 2)
+	int pc = GetPlayerInfo(PlayerNumber(), PLAYERINFO_PLAYERCLASS);
+	if (pc == 1 || pc == 2)
 	{
 
 	}
@@ -139,7 +140,7 @@ script "SetBloodAmountACS" (void)
 
 Script "LowBloodCheckerACS" (VOID)
 {
-if	(GameType () == GAME_NET_DEATHMATCH || GetCvar("bd_lowgraphicsmode") != 0 | GetCvar("zdoombrutaljanitor") != 0 )
+if	(GameType () == GAME_NET_DEATHMATCH || GetCvar("bd_lowgraphicsmode") != 0 || GetCvar("zdoombrutaljanitor") != 0 )
 { GiveInventory("LowGraphicsMode",1); }
 }
 

@@ -667,8 +667,8 @@ Radius 24
 Height 16
 Speed 16
 Mass 2000
-Damage (Random(3,6))
-PoisonDamage 30
+Damage 3
+PoisonDamage 24
 DamageType "Poison"
 Obituary "$FO_OB_EVILEYE"
 PROJECTILE
@@ -710,8 +710,8 @@ Radius 16
 Height 8
 Speed 8
 Mass 3000
-Damage (Random(2,4))
-PoisonDamage 20
+Damage 2
+PoisonDamage 16
 DamageType "Poison"
 Obituary "$FO_OB_EVILEYE"
 RenderStyle Translucent
@@ -753,8 +753,8 @@ Radius 10
 Height 8
 Speed 8
 Mass 4000
-Damage (Random(1,2))
-PoisonDamage 10
+Damage 1
+PoisonDamage 8
 DamageType "Poison"
 Obituary "$FO_OB_EVILEYE"
 RenderStyle Translucent

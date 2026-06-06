@@ -83,6 +83,7 @@ Plasma Zombie		19138
 Trite				19139
 Impaler				19140
 Harverster			19141
+GoreNest			19142
 
 64MarineUnmaker		9940
 64MarineUnmaker1	9941

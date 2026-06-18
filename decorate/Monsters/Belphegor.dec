@@ -365,7 +365,7 @@ Health 0
 
 Actor 64BelphegorBall : BaronBall
 {
-Translation "0:255=%[0,0,0]:[0.33,0,1]"
+//Translation "0:255=%[0,0,0]:[0.33,0,1]"
 Damage 35
 Scale 1.2
 Speed 25
@@ -378,39 +378,41 @@ DamageType "Plasma"
 	States
 	{
 	Spawn:
-		BRNR AB 2 Bright A_SpawnItemEx("LensFlareProjectileBlue",0,-2,0,0,0,0,0,SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("BaronProjectileCoreDark",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
+		TNT1 A 0 A_SpawnItemEx("LensFlareProjectileDark",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
+		BEL7 A 2 Bright
+		TNT1 A 0 A_SpawnItemEx("BaronProjectileCoreDark",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
+		TNT1 A 0 A_SpawnItemEx("LensFlareProjectileDark",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
+		BEL7 B 2 Bright
 		Loop
 	Death:
 		TNT1 A 0 A_SetScale(1.7,1.7)
 		TNT1 A 0 A_FadeOut(0.3)
-		TNT1 AAAAAA 0 A_SpawnItemEx("ExplosionParticleBlueHeavySmall",0,0,0,Random(-5,5),Random(-5,5),Random(-5,5),Random(45,360),SXF_TRANSFERTRANSLATION|SXF_TRANSFERPITCH)
-		TNT1 AAAAAA 0 A_SpawnItemEx("ExplosionParticleBlueVeryFast",0,0,0,Random(-15,15),Random(-15,15),Random(-15,15),Random(45,360),SXF_TRANSFERTRANSLATION|SXF_TRANSFERPITCH)
-		TNT1 AAAAAA 0 A_SpawnItemEx("ExplosionParticleBlue",0,0,0,Random(-10,10),Random(-10,10),Random(-10,10),Random(45,360),SXF_TRANSFERTRANSLATION|SXF_TRANSFERPITCH)
+		TNT1 AAA 0 A_CustomMissile("ExplosionParticleDark",0,0,random(0,360),2,random(10,70))
+		TNT1 AAAAAAAAA 0 A_CustomMissile("ExplosionParticleDarkHeavySmall",0,0,random(0,360),2,random(20,50))
+		TNT1 AAAAA 0 A_CustomMissile("ExplosionParticleDarkVeryFast",0,0,random(0,360),2,random(20,40))
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterMed")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterMed")
 		TNT1 A 0 Radius_Quake(2,54,0,15,0)
 		TNT1 A 0 A_Explode(20,125,0)
 		TNT1 A 0 A_PlaySound("EXPLO3",CHAN_VOICE)
 		TNT1 A 0 A_PlaySound("EXPLOSION",CHAN_WEAPON)
-		BAL7 CDEFGH 2 Bright A_SpawnItemEx("LensFlareTorchBlue",0,0,0,0,0,0,0,SXF_TRANSFERTRANSLATION)
+		BEL7 CDEFGH 2 Bright A_SpawnItemEx("LensFlareTorchDark")
 		Stop
 	}
 }
 
-Actor BaronProjectileCoreBlue
+Actor BaronProjectileCoreDark
 {
-Translation "0:255=%[0,0,0]:[0,0,1]"//Blue
-Scale 1.3
-Alpha 1.3
+Speed 25
+Scale 3
+Alpha 1
 RenderStyle Add
 +CLIENTSIDEONLY
-+THRUACTORS
-+NOBLOCKMAP
-+FLOORCLIP
 	States
 	{
 	Spawn:
-		BAL7 I 2 Bright
+		BEL7 I 2 Bright
 		Stop
 	}
 }

@@ -898,6 +898,21 @@ Alpha 0.5
 	}
 }
 
+Actor LensFlareTorchDark : LensFlareAlt
+{
+Alpha 0.5
+-FORCEYBILLBOARD
++FORCEXYBILLBOARD
++RANDOMIZE
+	states
+	{
+	Spawn:
+		LENS D 4 Bright
+		LENZ D 1 Bright
+		Stop
+	}
+}
+
 Actor LensFlareTorchBlueWallTorch : LensFlareTorchBlue
 {
 xScale 0.3
@@ -911,6 +926,17 @@ Actor LensFlareProjectileBlue : LensFlareTorchBlue
 	Spawn:
 		LENS B 1 Bright
 		LENZ B 1 Bright
+		Stop
+	}
+}
+
+Actor LensFlareProjectileDark : LensFlareTorchBlue
+{
+	states
+	{
+	Spawn:
+		LENS D 1 Bright
+		LENZ D 1 Bright
 		Stop
 	}
 }

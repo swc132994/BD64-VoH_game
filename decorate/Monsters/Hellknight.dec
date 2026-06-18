@@ -325,7 +325,12 @@ Decal "MedScorch"
 	states
 	{
 	Spawn:
-		BAL7 AB 2 Bright A_CustomMissile("LensFlareProjectileGreen",-2,0)
+		TNT1 A 0 A_SpawnItemEx("BaronGreenProjectileCore",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
+		TNT1 A 0 A_SpawnItemEx("LensFlareProjectileGreen",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
+		BAL7 A 2 Bright
+		TNT1 A 0 A_SpawnItemEx("BaronGreenProjectileCore",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
+		TNT1 A 0 A_SpawnItemEx("LensFlareProjectileGreen",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
+		BAL7 B 2 Bright
 		Loop
 	Death:
 		TNT1 A 0 A_SetScale(1.5,1.5)
@@ -343,13 +348,10 @@ Decal "MedScorch"
 
 Actor BaronGreenProjectileCore
 {
-Scale 1
+Scale 2
 Alpha 1
 RenderStyle Add
 +CLIENTSIDEONLY
-+THRUACTORS
-+NOBLOCKMAP
-+FLOORCLIP
 	States
 	{
 	Spawn:

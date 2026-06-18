@@ -201,7 +201,28 @@ RenderStyle Add
 
 ACTOR ExplosionParticleBlue : ExplosionParticleGreen
 {
-Translation "0:255=%[0,0,0]:[0,0,1]"//Blue
+	States
+	{
+	Spawn:
+		SPKB A 8 Bright NoDelay A_JumpIf(waterlevel > 1,"Splash")
+	Death:
+		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
+		SPKB A 1 Bright A_FadeOut(0.03)
+		Loop
+	}
+}
+
+ACTOR ExplosionParticleDark : ExplosionParticleGreen
+{
+	States
+	{
+	Spawn:
+		SPKD A 8 Bright NoDelay A_JumpIf(waterlevel > 1,"Splash")
+	Death:
+		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
+		SPKD A 1 Bright A_FadeOut(0.03)
+		Loop
+	}
 }
 
 ACTOR ExplosionParticleGreenHeavy : ExplosionParticleHeavy
@@ -234,7 +255,28 @@ Scale 0.04
 
 ACTOR ExplosionParticleBlueHeavySmall : ExplosionParticleGreenHeavySmall
 {
-Translation "0:255=%[0,0,0]:[0,0,1]"//Blue
+	States
+	{
+	Spawn:
+		SPKB A 8 Bright NoDelay A_JumpIf(waterlevel > 1,"Splash")
+	Death:
+		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
+		SPKB A 1 Bright A_FadeOut(0.03)
+		Loop
+	}
+}
+
+ACTOR ExplosionParticleDarkHeavySmall : ExplosionParticleGreenHeavySmall
+{
+	States
+	{
+	Spawn:
+		SPKD A 8 Bright NoDelay A_JumpIf(waterlevel > 1,"Splash")
+	Death:
+		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
+		SPKD A 1 Bright A_FadeOut(0.03)
+		Loop
+	}
 }
 
 ACTOR ExplosionParticleGreenVeryFast : ExplosionParticleHeavy
@@ -255,7 +297,28 @@ Gravity 0.9
 
 ACTOR ExplosionParticleBlueVeryFast : ExplosionParticleGreenVeryFast
 {
-Translation "0:255=%[0,0,0]:[0,0,1]"//Blue
+	States
+	{
+	Spawn:
+		SPKB A 8 Bright NoDelay A_JumpIf(waterlevel > 1,"Splash")
+	Death:
+		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
+		SPKB A 1 Bright A_FadeOut(0.03)
+		Loop
+	}
+}
+
+ACTOR ExplosionParticleDarkVeryFast : ExplosionParticleGreenVeryFast
+{
+	States
+	{
+	Spawn:
+		SPKD A 8 Bright NoDelay A_JumpIf(waterlevel > 1,"Splash")
+	Death:
+		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
+		SPKD A 1 Bright A_FadeOut(0.03)
+		Loop
+	}
 }
 
 ACTOR ExplosionParticleYellow : ExplosionParticleGreen

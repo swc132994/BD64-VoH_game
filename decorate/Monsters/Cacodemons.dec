@@ -735,7 +735,7 @@ Decal "SmallerScorch"
 	States
 	{
 	Spawn:
-		NCAC AABBCC 2 Bright A_SpawnItemEx("LensFlareProjectileRed")
+		NCAC AABBCC 2 Bright A_SpawnItemEx("LensFlareProjectileRed",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
 		Loop
 	Death:
 		TNT1 AA 0 A_CustomMissile("ExplosionParticleHeavy",0,0,random(0,360),2,random(0,180))
@@ -758,7 +758,7 @@ Alpha 0.8
 	States
 	{
 	Spawn:
-		BAL9 AABBCC 2 Bright A_SpawnItemEx("LensFlareProjectileRed")
+		BAL9 AABBCC 2 Bright A_SpawnItemEx("LensFlareProjectileRed",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
 		Loop
 	}
 }

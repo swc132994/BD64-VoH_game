@@ -375,10 +375,12 @@ Decal "MedScorch"
 	Death:
 		TNT1 A 0 A_SetScale(1.5,1.5)
 		TNT1 A 0 A_FadeOut(0.3)
+		TNT1 A 0 A_CheckSight("QuietDeath")
 		TNT1 AAA 0 A_CustomMissile("ExplosionParticleHeavy",0,0,random(0,360),2,random(10,70))
 		TNT1 AAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",0,0,random(0,360),2,random(20,50))
 		TNT1 AAAAA 0 A_CustomMissile("ExplosionParticleVeryFast",0,0,random(0,360),2,random(20,40))
 		TNT1 AAAA 0 A_CustomMissile("SmallFireballFireTrail",0,0,random(0,360),2,random(0,360))
+	QuietDeath:
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterMed")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterMed")
 		BRNR CDEFGH 2 Bright A_SpawnItemEx("LensFlareTorchRed")
@@ -423,10 +425,12 @@ DamageType "Plasma"
 	Death:
 		TNT1 A 0 A_SetScale(1.5,1.5)
 		TNT1 A 0 A_FadeOut(0.3)
+		TNT1 A 0 A_CheckSight("QuietDeath")
 		TNT1 AAAAAAAA 0 A_CustomMissile("ExplosionParticleLaser",0,0,random(0,360),2,random(0,180))
 		TNT1 AAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",0,0,random(0,360),2,random(0,360))
 		TNT1 AAAAA 0 A_CustomMissile("ExplosionParticleVeryFast",0,0,random(0,360),2,random(20,40))
 		TNT1 AAAA 0 A_CustomMissile("SmallFireballFireTrail",0,0,random(0,360),2,random(0,360))
+	QuietDeath:
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterMed")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterMed")
 		TNT1 A 0 Radius_Quake(2,54,0,15,0)

@@ -388,9 +388,11 @@ DamageType "Plasma"
 	Death:
 		TNT1 A 0 A_SetScale(1.7,1.7)
 		TNT1 A 0 A_FadeOut(0.3)
+		TNT1 A 0 A_CheckSight("QuietDeath")
 		TNT1 AAA 0 A_CustomMissile("ExplosionParticleDark",0,0,random(0,360),2,random(10,70))
 		TNT1 AAAAAAAAA 0 A_CustomMissile("ExplosionParticleDarkHeavySmall",0,0,random(0,360),2,random(20,50))
 		TNT1 AAAAA 0 A_CustomMissile("ExplosionParticleDarkVeryFast",0,0,random(0,360),2,random(20,40))
+	QuietDeath:
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterMed")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterMed")
 		TNT1 A 0 Radius_Quake(2,54,0,15,0)

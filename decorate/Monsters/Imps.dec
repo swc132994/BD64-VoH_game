@@ -638,8 +638,10 @@ PROJECTILE
 		BAL1 ABC 2 Bright A_SpawnItemEx("LensFlareProjectileOrange",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
 		Loop
 	Death:
+		TNT1 A 0 A_CheckSight("QuietDeath")
 		TNT1 AAA 0 A_CustomMissile("ExplosionParticleHeavy",0,0,random(0,360),2,random(0,180))
 		TNT1 AAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",0,0,random(0,360),2,random(0,360))
+	QuietDeath:	
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterSmall")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterSmall")
 		BAL1 DEFGHI 2 Bright A_SpawnItemEx("LensFlareTorchOrange")
@@ -1303,8 +1305,10 @@ PROJECTILE
 		NMBL ABC 2 Bright A_SpawnItemEx("LensFlareProjectileDark",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
 		Loop
 	Death:
+		TNT1 A 0 A_CheckSight("QuietDeath")
 		TNT1 AAA 0 A_CustomMissile("ExplosionParticleDark",0,0,random(0,360),2,random(0,180))
 		TNT1 AAAAAA 0 A_CustomMissile("ExplosionParticleDarkHeavySmall",0,0,random(0,360),2,random(0,360))
+	QuietDeath:
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterSmall")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterSmall")
 		NMBL DEFGHI 2 Bright A_SpawnItemEx("LensFlareTorchDark")

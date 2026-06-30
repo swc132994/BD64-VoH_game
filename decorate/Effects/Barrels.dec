@@ -1,4 +1,4 @@
-Actor 64ExplosiveBarrel : ExplosiveBarrel Replaces ExplosiveBarrel	//replaced by poltergiest random spawner
+Actor 64ExplosiveBarrel : ExplosiveBarrel// Replaces ExplosiveBarrel (RandomSpawners.dec)
 {
 Scale 0.8
 Health 20

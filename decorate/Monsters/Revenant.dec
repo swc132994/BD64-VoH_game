@@ -1,4 +1,4 @@
-Actor 64Revenant : Revenant Replaces Revenant	//DrPyspy 64 stlye revenant
+Actor 64Revenant : Revenant// Replaces Revenant (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Scale 0.68
@@ -211,7 +211,7 @@ Game Doom
 SpawnID 53
 Scale 0.4
 Health 15
-Damage 8
+Damage 10
 Speed 10
 FastSpeed 15
 Radius 8
@@ -261,7 +261,7 @@ PROJECTILE
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterSmall")
 		TNT1 A 0 A_playSound("EXPLOSIO3",CHAN_VOICE)
 		TNT1 A 0 Radius_Quake(2,8,0,12,0)
-		TNT1 A 0 A_Explode(5,100)
+		TNT1 A 0 A_Explode(10,100)
 		MBAL CDEFGH 2 Bright
 		Stop
 	}

@@ -1,4 +1,4 @@
-Actor 64DoomImp : DoomImp Replaces DoomImp
+Actor 64DoomImp : DoomImp// Replaces DoomImp (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Scale 0.75

@@ -494,6 +494,7 @@ Tag "$FO_TAG_NIGHTCRAWLER"
 DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodBLUE"
 +DONTHARMSPECIES
+-BOSSDEATH
 	States
 	{
 	Spawn:
@@ -528,6 +529,7 @@ BloodType "Brutal_BloodBLUE"
 		NTCR F 6 A_Pain
 		goto See
 	Death:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 A 0 A_CustomMissile("XDeath1BLUE",52,0,random(150,210),2,random(10,50))
 		TNT1 AAA 0 A_CustomMissile("XDeath1BLUE",52,0,random(0,360),2,random(10,50))
 		TNT1 AAA 0 A_CustomMissile("XDeath2bBLUE",52,0,random(0,360),2,random(10,50))
@@ -538,11 +540,11 @@ BloodType "Brutal_BloodBLUE"
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		NTCR GHIJ 5
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		NTCR K 35 A_BossDeath
+		NTCR K 35 //A_BossDeath
 		NTCR K -1 A_SpawnItemEx("GrowingBloodPoolBlue")
 		Stop
 	XDeath:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 A 0 A_CustomMissile("XDeath1BLUE",52,0,random(150,210),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("XDeath1BLUE",52,0,random(0,360),2,random(10,50))
 		TNT1 AAAA 0 A_CustomMissile("XDeath2bBLUE",52,0,random(0,360),2,random(10,50))
@@ -561,15 +563,13 @@ BloodType "Brutal_BloodBLUE"
 		TNT1 A 0 A_Jump(128,"XDeathFlip")
 		XBBR A 5 A_Scream
 		XBBR B 5 A_NoBlocking
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		XBBR C 35 A_BossDeath
+		XBBR C 35 //A_BossDeath
 		XBBR C -1 A_SpawnItemEx("GrowingBloodPoolBlue")
 		Stop
 	XDeathFlip:
 		XBBR D 5 A_Scream
 		XBBR E 5 A_NoBlocking
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		XBBR F 35 A_BossDeath
+		XBBR F 35 //A_BossDeath
 		XBBR F -1 A_SpawnItemEx("GrowingBloodPoolBlue")
 		Stop
 	Raise:
@@ -580,9 +580,9 @@ BloodType "Brutal_BloodBLUE"
 		A040 A -1
 		Stop
 	Ice:
+		"####" "#" 0 A_KillMaster("None")
 		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
 		"####" "#" 5 A_FreezeDeath
-		"####" "#" 0 A_KillMaster
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
 	}

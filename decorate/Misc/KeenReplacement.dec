@@ -159,7 +159,6 @@ Health 2500
 Tag "$FO_TAG_SUPERFALLEN"
 Obituary "$FO_OB_SUPERFALLEN"
 +BOSS
-+BOSSDEATH
 	States
 	{
 	Spawn:

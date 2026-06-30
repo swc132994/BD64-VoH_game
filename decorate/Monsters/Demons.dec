@@ -1,4 +1,4 @@
-Actor 64Demon : Demon Replaces Demon
+Actor 64Demon : Demon// Replaces Demon (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Scale 0.8
@@ -342,7 +342,7 @@ HitObituary "$FO_OB_STEALTHDEMON"
 +STEALTH
 }
 
-Actor 64Spectre : Spectre Replaces Spectre
+Actor 64Spectre : Spectre// Replaces Spectre (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Scale 0.8

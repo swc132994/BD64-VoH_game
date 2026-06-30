@@ -1,4 +1,4 @@
-Actor PlasmaRifleSpawner : CustomInventory// Replaces PlasmaRifle		//spawned from randomspawners
+Actor PlasmaRifleSpawner : CustomInventory// Replaces PlasmaRifle (RandomSpawners.dec)
 {
 //$category "Game/BD64_Weapons"
 Scale 0.82

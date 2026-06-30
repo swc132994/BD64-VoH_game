@@ -34,7 +34,7 @@ DropItem "DemonEssenceSpawner"
 BloodType "Brutal_BloodGreen"
 Species "HellKnight"
 MONSTER
-+BOSSDEATH
+//+BOSSDEATH
 +FLOORCLIP
 +NOBLOODDECALS
 +NEVERFAST
@@ -84,11 +84,11 @@ MONSTER
 		BOZ3 H 6 A_Pain
 		Goto See
 	Death:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		BOZ3 I 5 A_Scream
 		BOZ3 J 5 A_NoBlocking
 		BOZ3 KLM 5
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		BOZ3 N 35 A_BossDeath
+		BOZ3 N 35 //A_BossDeath
 		BOZ3 N -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
 	Raise:
@@ -100,6 +100,7 @@ MONSTER
 		A038 A -1
 		Stop
 	Death.Plasma: Death.BFGSplash: Death.Flames:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -113,10 +114,8 @@ MONSTER
 		TNT1 A 0 A_SpawnItemEx("BarrelExplosionSmokeColumn")
 		TNT1 A 0 A_spawnItemEx("BurningFleshEffect2",0,0,5)
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
-		KMPD ABCDE 4
-		KMPD F 4
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		KMPD F -1 A_BossDeath
+		KMPD ABCDEF 4
+		KMPD F -1 //A_BossDeath
 		Stop
 	Death.Shotgun:
 		BOZ3 H 2 A_Recoil(5)
@@ -134,9 +133,11 @@ MONSTER
 	Death.CutLess:
 		TNT1 A 0 A_Jump(85,"Death")
 	Death.ShotgunNoArm:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 A 0 A_CustomMissile("KnightmareArm",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 //A_BossDeath
 		KMAL N 1 A_SpawnItemEx("64KnightmareNoArm",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Death.Head:
@@ -149,13 +150,14 @@ MONSTER
 		TNT1 A 0 A_NoBlocking
 		BZ1H ABCDE 5
 		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		BZ1H F 35 A_BossDeath
+		BZ1H F 35 //A_BossDeath
 		BZ1H F -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
 	Death.SuperFists:
 	Death.SuperKick:
 		TNT1 A 0 A_Jump(170,"Death.Head")
 	XDeath:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherGreen",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
@@ -170,8 +172,7 @@ MONSTER
 		TNT1 A 0 A_SpawnItemEx("KnightmareLegs",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_XScream
-		TNT1 A 0 A_BossDeath
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		TNT1 A 0 //A_BossDeath
 		BZB1 A 2 A_Recoil(8)
 		BZB1 A 2 ThrustThingZ(0,45,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
@@ -191,9 +192,9 @@ MONSTER
 		BZB1 D -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
 	Ice:
+		"####" "#" 0 A_KillMaster("None")
 		BOZ3 "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
 		"####" "#" 5 A_FreezeDeath
-		"####" "#" 0 A_KillMaster
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
 	}
@@ -269,8 +270,7 @@ DamageFactor "Cutless",0.6
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		KMHS ABCDE 5
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		KMHS F 35 A_BossDeath
+		KMHS F 35
 		KMHS F -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
 	XDeath:
@@ -287,8 +287,6 @@ DamageFactor "Cutless",0.6
 		TNT1 A 0 A_SpawnItemEx("KnightmareLegs",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_XScream
-		TNT1 A 0 A_BossDeath
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		BZB1 A 2 A_Recoil(8)
 		BZB1 A 2 ThrustThingZ(0,45,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
@@ -308,10 +306,8 @@ DamageFactor "Cutless",0.6
 		TNT1 A 0 A_SpawnItemEx("BarrelExplosionSmokeColumn")
 		TNT1 A 0 A_SpawnItemEx("BurningFleshEffect2",0,0,5)
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
-		KMOP BCDE 4
-		KMOP F 4
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		KMOP F -1 A_BossDeath
+		KMOP BCDEF 4
+		KMOP F -1
 		Stop
 	Raise:
 		BOZ3 NMLKJI 5

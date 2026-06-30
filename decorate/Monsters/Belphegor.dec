@@ -29,6 +29,7 @@ BloodType "Brutal_BloodGreen"
 +MISSILEMORE
 +MISSILEEVENMORE
 +NEVERFAST
+-BOSSDEATH
 	States
 	{
 	Spawn:
@@ -93,11 +94,11 @@ BloodType "Brutal_BloodGreen"
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
 		Goto See
 	Death:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		BOS3 I 5 A_Scream
 		BOS3 J 5 A_NoBlocking
 		BOS3 KLM 5
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		BOS3 N 35 A_BossDeath
+		BOS3 N 35 //A_BossDeath
 		BOS3 N -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop	
 	Death.Shotgun:
@@ -117,9 +118,11 @@ BloodType "Brutal_BloodGreen"
 		BOS3 H 2 A_Recoil(6)
 		TNT1 A 0 A_Jump(85,"Death")
 	Death.ShotgunNoArm:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 A 0 A_CustomMissile("BelphegorArm",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 //A_BossDeath
 		BLPL A 1 A_SpawnItemEx("64BelphegorNoArm",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Death.SuperFists:
@@ -128,6 +131,7 @@ BloodType "Brutal_BloodGreen"
 		Goto XDeath2
 	Death.BFG:
 	Xdeath:	//Seperate legs
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherGreen",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
@@ -142,8 +146,7 @@ BloodType "Brutal_BloodGreen"
 		TNT1 AAAA 0 A_CustomMissile("BelphegorLeg",52,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_BossDeath
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		TNT1 A 0 //A_BossDeath
 		BPTG A 2 A_Recoil(8)
 		BPTG A 2 ThrustThingZ(0,45,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
@@ -154,6 +157,7 @@ BloodType "Brutal_BloodGreen"
 		Wait
 	Death.Chainsaw:
 	Xdeath2:	//combined legs
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherGreen",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
@@ -168,8 +172,7 @@ BloodType "Brutal_BloodGreen"
 		TNT1 A 0 A_SpawnItemEx("XDeathBelpLegs",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_BossDeath
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		TNT1 A 0 //A_BossDeath
 		BPTG A 2 A_Recoil(8)
 		BPTG A 2 ThrustThingZ(0,45,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
@@ -189,6 +192,7 @@ BloodType "Brutal_BloodGreen"
 		BPTG D -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
 	Death.Plasma: Death.BFGSplash: Death.Flames:
+		TNT1 A 0 A_KillMaster("None")
 		TNT1 A 0 A_SetScale(1.0,1.0)
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
@@ -205,17 +209,16 @@ BloodType "Brutal_BloodGreen"
 		TNT1 AAA 0 A_SpawnItemEx("Brutal_BloodGREEN",0,0,30)
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
 		CRG1 ABCDEFGH 3
-		TNT1 A 0 A_KillMaster("None")
-		CRG1 H -1 A_BossDeath
+		CRG1 H -1 //A_BossDeath
 		Stop
 	Crush:
 		TNT1 A 0 A_PlaySound("Misc/Gibbed",CHAN_BODY)
 		A038 A -1
 		Stop
 	Ice:
+		"####" "#" 0 A_KillMaster("None")
 		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
 		"####" "#" 5 A_FreezeDeath
-		"####" "#" 0 A_KillMaster
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
 	}
@@ -296,8 +299,6 @@ DamageFactor "Cutless",0.6
 		TNT1 AAAA 0 A_CustomMissile("BelphegorLeg",52,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_BossDeath
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		BPTG A 2 A_Recoil(Random(-6,6))
 		BPTG A 2 ThrustThingZ(0,45,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
@@ -320,8 +321,6 @@ DamageFactor "Cutless",0.6
 		TNT1 A 0 A_SpawnItemEx("XDeathBelpLegs",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_BossDeath
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		BPTG A 2 A_Recoil(Random(-6,6))
 		BPTG A 2 ThrustThingZ(0,45,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)

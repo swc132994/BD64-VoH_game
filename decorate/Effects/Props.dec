@@ -49,7 +49,7 @@ scale 0.75
 	}
 }
 
-actor 64DeadCacodemon : DeadCacodemon Replaces DeadCacodemon
+actor 64DeadCacodemon : DeadCacodemon// Replaces DeadCacodemon (RandomSpawners.dec)
 {
 +LOOKALLAROUND
 +FLOORCLIP
@@ -267,7 +267,7 @@ scale 0.75
 	}
 }
 
-Actor 64SmallBloodPool : SmallBloodPool Replaces SmallBloodPool		//oldblood model
+Actor 64SmallBloodPool : SmallBloodPool Replaces SmallBloodPool //oldblood model
 {
 Scale 0.82
 Radius 20
@@ -295,7 +295,7 @@ Height 1
 	}
 }
 
-Actor 64SmallBloodPoolBLUE : 64SmallBloodPool		//oldblood model
+Actor 64SmallBloodPoolBLUE : 64SmallBloodPool //oldblood model
 {
 Translation "0:255=%[0,0,0]:[1,0,2]"//BLUE
 }
@@ -773,7 +773,7 @@ Height 19
 	}
 }
 
-actor 64DeadMarine : DeadMarine	//replaced with random spawner
+actor 64DeadMarine : DeadMarine// replaces DeadMarine (RandomSpawners.dec)
 {
 scale 0.8
 +FLOORCLIP
@@ -794,7 +794,7 @@ scale 0.8
 	}
 }
 
-actor 64GibbedMarine : GibbedMarine	//replaced with random spawner
+actor 64GibbedMarine : GibbedMarine// replaces GibbedMarine (RandomSpawners.dec)
 {
 scale 0.8
 +FLOORCLIP
@@ -811,7 +811,7 @@ scale 0.8
 	}
 }
 
-actor 64GibbedMarineExtra : GibbedMarineExtra	//replaced with random spawner
+actor 64GibbedMarineExtra : GibbedMarineExtra// replaces GibbedMarineExtra (RandomSpawners.dec)
 {
 scale 0.8
 +FLOORCLIP
@@ -1188,7 +1188,7 @@ Actor 64TorchTree : TorchTree Replaces TorchTree
 	}
 }
 
-actor 64BigTree : BigTree Replaces BigTree
+actor 64BigTree : BigTree// Replaces BigTree (RandomSpawners.dec)
 {
 Scale 0.7
 	States
@@ -1210,7 +1210,7 @@ Scale 0.7
 	}
 }
 
-actor 64Candlestick : Candlestick replaces Candlestick
+actor 64Candlestick : Candlestick// replaces Candlestick (RandomSpawners.dec)
 {
 Scale 0.7
 +RANDOMIZE
@@ -1237,7 +1237,7 @@ Scale 0.7
 	}
 }
 
-actor 64Candelabra : Candelabra replaces Candelabra
+actor 64Candelabra : Candelabra// replaces Candelabra (RandomSpawners.dec)
 {
 Scale 0.7
 	States
@@ -1601,7 +1601,7 @@ Radius 5
 	}
 }
 
-actor 64TechLampB : TechLamp Replaces TechLamp
+actor 64TechLampB : TechLamp// Replaces TechLamp (RandomSpawners.dec)
 {
 	States
 	{
@@ -1613,7 +1613,7 @@ actor 64TechLampB : TechLamp Replaces TechLamp
 	}
 }
 
-actor 64TechLamp2B : TechLamp2 Replaces TechLamp2
+actor 64TechLamp2B : TechLamp2// Replaces TechLamp2 (RandomSpawners.dec)
 {
 	States
 	{
@@ -1625,7 +1625,7 @@ actor 64TechLamp2B : TechLamp2 Replaces TechLamp2
 	}
 }
 
-actor 64TechColumn : Column Replaces Column
+actor 64TechColumn : Column// Replaces Column (RandomSpawners.dec)
 {
 	States
 	{
@@ -1856,7 +1856,7 @@ DamageType "Flames"
 	}
 }
 
-ACTOR 64EvilEye : EvilEye Replaces EvilEye
+ACTOR 64EvilEye : EvilEye// Replaces EvilEye (RandomSpawners.dec)
 {
 SCALE 0.8
 	States
@@ -1888,7 +1888,7 @@ SCALE 0.8
 	}
 }
 
-ACTOR 64FloatingSkull : FloatingSkull Replaces FloatingSkull
+ACTOR 64FloatingSkull : FloatingSkull// Replaces FloatingSkull (RandomSpawners.dec)
 {
 SCALE 0.8
 +FLOATBOB
@@ -1900,7 +1900,7 @@ SCALE 0.8
 	}
 }
 
-ACTOR 64ShortGreenColumn : ShortGreenColumn// Replaces ShortGreenColumn	//Replaced with chance to replace with tortured marine
+ACTOR 64ShortGreenColumn : ShortGreenColumn// Replaces ShortGreenColumn (Damned_Marines.dec)
 {
 SCALE 0.8
 	States
@@ -1920,7 +1920,7 @@ SCALE 0.8
 	}
 }
 
-ACTOR 64HeartColumn : HeartColumn Replaces HeartColumn
+ACTOR 64HeartColumn : HeartColumn// Replaces HeartColumn (RandomSpawners.dec)
 {
 Scale 0.8
 Height 67
@@ -1938,7 +1938,7 @@ Height 67
 	}
 }
 
-ACTOR 64ShortRedColumn : ShortRedColumn// Replaces ShortRedColumn	//Replaced with chance to replace with tortured marine
+ACTOR 64ShortRedColumn : ShortRedColumn// Replaces ShortRedColumn (Damned_Marines.dec)
 {
 SCALE 0.8
 	States
@@ -1954,7 +1954,7 @@ SCALE 0.8
 	}
 }
 
-ACTOR 64SkullColumn : SkullColumn// Replaces SkullColumn	//Replaced with chance to replace with tortured marine
+ACTOR 64SkullColumn : SkullColumn// Replaces SkullColumn (Damned_Marines.dec)
 {
 SCALE 0.8
 	States

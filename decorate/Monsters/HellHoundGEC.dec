@@ -1,9 +1,9 @@
 Actor 64HellHoundGEC : Demon
 {
 Scale 0.8
-Health 600
+Health 500
 GibHealth 20
-Speed 16
+Speed 15
 Radius 24
 MeleeThreshold 200
 MeleeRange 100 //default 44
@@ -28,6 +28,7 @@ Species "Dog"
 DropItem "DemonEssenceSpawner"
 +NOBLOODDECALS
 +NEVERFAST
+//+BOSSDEATH
 	States
 	{
 	Spawn:
@@ -50,16 +51,13 @@ DropItem "DemonEssenceSpawner"
 		TNT1 A 0 A_ChangeFlag("NOPAIN",FALSE)
 		Goto See
 	Missile:
-		GECH EE 4 A_FaceTarget
-		GECH O 3 A_FaceTarget
-		GECH P 2 Bright A_CustomMissile("CacodemonBall",36,-9,random(-1,1),1,random(-1,1))
-		GECH P 2 Bright A_CustomMissile("CacodemonBall",36,9,random(-1,1),1,random(-1,1))
-		GECH OE 3 A_FaceTarget
-		GECH O 3 A_FaceTarget
-		GECH P 2 Bright A_CustomMissile("CacodemonBall",36,-9,random(-1,1),1,random(-1,1))
-		GECH P 2 Bright A_CustomMissile("CacodemonBall",36,9,random(-1,1),1,random(-1,1))
-		GECH OE 4 A_FaceTarget
-		Goto See
+		GECH EE 3 A_FaceTarget
+		GECH O 4 A_FaceTarget
+		TNT1 A 0 A_CustomMissile("CacodemonBall",36,-9,3)
+		TNT1 A 0 A_CustomMissile("CacodemonBall",36,9,-3)
+		GECH P 4 Bright
+		GECH OE 5 A_FaceTarget
+		Goto See	
 	Pain:
 		GECH G 6 A_Pain
 		Goto See
@@ -71,13 +69,15 @@ DropItem "DemonEssenceSpawner"
 		GECH MLKJI 5
 		Goto See
 	Death:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		GECH I 5 A_NoBlocking
 		GECH J 5 A_Scream
 		GECH KL 5
-		GECH M 35 A_KillMaster("None")	//tag 666 fix
+		GECH M 35 //A_BossDeath
 		GECH M -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
 	Death.Plasma: Death.BFGSplash: Death.Flames:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -93,7 +93,7 @@ DropItem "DemonEssenceSpawner"
 		TNT1 AAA 0 A_SpawnItemEx("Brutal_Blood",0,0,30)
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
 		CRB1 ABCDEFGH 3
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		TNT1 A 0 //A_BossDeath
 		CRB1 H -1
 		Stop
 	Death.Shotgun:
@@ -109,17 +109,19 @@ DropItem "DemonEssenceSpawner"
 		Goto Death
 	Death.CutLess:
 		TNT1 A 0 A_Jump(85,"Death")
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 A 0 A_CustomMissile("HoundGEC_Head",50,0,random(0,360),2,random(10,50))
 		TNT1 AAA 0 A_CustomMissile("XDeath2",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Scream
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		TNT1 A 0 //A_BossDeath
 		GH1H A 1 A_SpawnItemEx("BrutalizedHoundGEC",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Death.SuperFists:
 	Death.SuperKick:
 		TNT1 A 0 A_Jump(170,"Death")
 	XDeath:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncher",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2",32,0,random(0,360),2,random(0,90))
@@ -138,11 +140,12 @@ DropItem "DemonEssenceSpawner"
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		GHMI ABCD 5
-		GHMI E 35 A_KillMaster("None")	//tag 666 fix
+		GHMI E 35 //A_BossDeath
 		GHMI E -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
 	Death.BFG:
 	Death.Chainsaw:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncher",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2",32,0,random(0,360),2,random(0,90))
@@ -161,13 +164,13 @@ DropItem "DemonEssenceSpawner"
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		GHMB ABCD 5
-		GHMB E 35 A_KillMaster("None")	//tag 666 fix
+		GHMB E 35 //A_BossDeath
 		GHMB E -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
 	Ice:
+		"####" "#" 0 A_KillMaster("None")
 		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
 		"####" "#" 5 A_FreezeDeath
-		"####" "#" 0 A_KillMaster
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
 	}

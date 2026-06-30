@@ -1,4 +1,4 @@
-actor BloodyTwitchReplacer : RandomSpawner Replaces BloodyTwitch
+actor BloodyTwitchReplacer : RandomSpawner// Replaces BloodyTwitch (RandomSpawners.dec)
 {
 +SPAWNCEILING
 DropItem "DamnedHanging1SOLID"
@@ -6,7 +6,7 @@ DropItem "DamnedHanging2SOLID"
 DropItem "64TritePod_SOLID"
 }
 
-actor NonSolidTwitchReplacer : RandomSpawner Replaces NonSolidTwitch
+actor NonSolidTwitchReplacer : RandomSpawner// Replaces NonSolidTwitch (RandomSpawners.dec)
 {
 +SPAWNCEILING
 DropItem "DamnedHanging1"

@@ -1,4 +1,4 @@
-Actor 64HellKnight : HellKnight Replaces HellKnight
+Actor 64HellKnight : HellKnight// Replaces HellKnight (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Scale 0.8
@@ -20,6 +20,7 @@ Obituary "$FO_OB_KNIGHT"
 Tag "$FO_TAG_KNIGHT"
 +NOBLOODDECALS
 +NEVERFAST
+-BOSSDEATH
 	states
 	{
 	Spawn:
@@ -54,11 +55,11 @@ Tag "$FO_TAG_KNIGHT"
 		BOS2 H 6 A_Pain
 		Goto See
 	Death:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		BOS2 I 5 A_Scream
 		BOS2 J 5 A_NoBlocking
 		BOS2 KLM 5
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		BOS2 N 35 A_BossDeath
+		BOS2 N 35 //A_BossDeath
 		BOS2 N -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
 	Raise:
@@ -70,6 +71,7 @@ Tag "$FO_TAG_KNIGHT"
 		A038 A -1
 		Stop
 	Death.Plasma: Death.BFGSplash: Death.Flames:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -84,8 +86,7 @@ Tag "$FO_TAG_KNIGHT"
 		TNT1 A 0 A_SpawnItemEx("BurningFleshEffect2",0,0,5)
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
 		BOSB IJKLMN 4
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		BOSB N -1 A_BossDeath
+		BOSB N -1 //A_BossDeath
 		Stop
 	Death.Shotgun:
 		BOS2 H 2 A_Recoil(5)
@@ -103,12 +104,15 @@ Tag "$FO_TAG_KNIGHT"
 	Death.CutLess:
 		TNT1 A 0 A_Jump(85,"Death")
 	Death.ShotgunNoArm:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 A 0 A_CustomMissile("XDeathHKArm",50,0,random(0,360),2,random(10,50))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 //A_BossDeath
 		HNAL N 1 A_SpawnItemEx("64HellKnightNoArm",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Death.Head:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeathEyesGreen",40,0,random(0,360),2,random(-5,5))
@@ -118,14 +122,14 @@ Tag "$FO_TAG_KNIGHT"
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		BS2H ABCDE 5
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		BS2H F 35 A_BossDeath
+		BS2H F 35 //A_BossDeath
 		BS2H F -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
 	Death.SuperFists:
 	Death.SuperKick:
 		TNT1 A 0 A_Jump(170,"Death.Head")
 	XDeath:
+		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherGreen",0,0,random(0,360),2,random(50,130))
 		TNT1 AA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AA 0 A_CustomMissile("XDeath2Green",32,0,random(0,360),2,random(0,90))
@@ -140,8 +144,7 @@ Tag "$FO_TAG_KNIGHT"
 		TNT1 A 0 A_SpawnItemEx("XDeathHKLegs",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_BossDeath
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
+		TNT1 A 0 //A_BossDeath
 		KGB1 A 2 A_Recoil(8)
 		KGB1 A 2 ThrustThingZ(0,45,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
@@ -161,9 +164,9 @@ Tag "$FO_TAG_KNIGHT"
 		KGB1 D -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
 	Ice:
+		"####" "#" 0 A_KillMaster("None")
 		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
 		"####" "#" 5 A_FreezeDeath
-		"####" "#" 0 A_KillMaster
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
 	}
@@ -240,8 +243,7 @@ DamageFactor "Cutless",0.6
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		HNHS ABCDE 5
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		HNHS F 35 A_BossDeath
+		HNHS F 35
 		HNHS F -1 A_SpawnItemEx("GrowingBloodPoolGreen")
 		Stop
 	XDeath:
@@ -258,8 +260,6 @@ DamageFactor "Cutless",0.6
 		TNT1 A 0 A_SpawnItemEx("XDeathHKLegs",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_BossDeath
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
 		KGB1 C 2 A_Recoil(8)
 		KGB1 C 2 ThrustThingZ(0,45,0,0)
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
@@ -280,8 +280,7 @@ DamageFactor "Cutless",0.6
 		TNT1 A 0 A_SpawnItemEx("BurningFleshEffect2",0,0,5)
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
 		HKPD ABCDEF 4
-		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		HKPD F -1 A_BossDeath
+		HKPD F -1
 		Stop
 	Raise:
 		BOS2 NMLKJI 5

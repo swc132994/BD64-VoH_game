@@ -1,4 +1,4 @@
-Actor ChaingunSpawner : CustomInventory// Replaces Chaingun		//spawned from randomspawners
+Actor ChaingunSpawner : CustomInventory// Replaces Chaingun (RandomSpawners.dec)
 {
 //$category "Game/BD64_Weapons"
 Scale 0.82

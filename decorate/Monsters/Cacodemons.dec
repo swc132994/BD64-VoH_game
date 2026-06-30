@@ -1,4 +1,4 @@
-Actor 64Cacodemon : Cacodemon Replaces Cacodemon
+Actor 64Cacodemon : Cacodemon// Replaces Cacodemon (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Scale 0.8

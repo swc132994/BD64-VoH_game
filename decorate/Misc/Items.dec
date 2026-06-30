@@ -1,4 +1,4 @@
-Actor 64ArmorBonus : ArmorBonus Replaces ArmorBonus
+Actor 64ArmorBonus : ArmorBonus// Replaces ArmorBonus (RandomSpawners.dec)
 {
 Scale 0.82
 Armor.SaveAmount 2
@@ -60,7 +60,7 @@ Tag "$FO_TAG_MEGA"
 	}
 }
 
-Actor 64HealthBonus : HealthBonus Replaces HealthBonus
+Actor 64HealthBonus : HealthBonus// Replaces HealthBonus (RandomSpawners.dec)
 {
 Scale 0.82
 Inventory.Amount 2
@@ -129,7 +129,7 @@ Tag "$FO_TAG_MEDIKIT"
 	}
 }
 
-Actor 64InvulnerabilitySphere : InvulnerabilitySphere Replaces InvulnerabilitySphere
+Actor 64InvulnerabilitySphere : InvulnerabilitySphere// Replaces InvulnerabilitySphere (RandomSpawners.dec)
 {
 Scale 0.82
 powerup.color "FF FF FF",0.30
@@ -150,7 +150,7 @@ Tag "$FO_TAG_INVUL"
 	}
 }
 
-Actor 64Soulsphere : CustomInventory Replaces Soulsphere
+Actor 64Soulsphere : CustomInventory// Replaces Soulsphere (RandomSpawners.dec)
 {
 Scale 0.7
 +COUNTITEM
@@ -178,7 +178,7 @@ Tag "$FO_TAG_SUPER"
 	}
 }
 
-Actor 64Megasphere : Megasphere Replaces Megasphere
+Actor 64Megasphere : Megasphere// Replaces Megasphere (RandomSpawners.dec)
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTMSPHERE"
@@ -204,7 +204,7 @@ Tag "$FO_TAG_MSPHERE"
 	}
 }
 
-Actor 64BlurSphere : BlurSphere Replaces BlurSphere
+Actor 64BlurSphere : BlurSphere// Replaces BlurSphere (RandomSpawners.dec)
 {
 Scale 0.82
 powerup.strength 50
@@ -248,7 +248,7 @@ Tag "$FO_TAG_SUIT"
 	}
 }
 
-ACTOR 64Infrared : Infrared //Replaces Infrared		//Replaced by optional spawner
+ACTOR 64Infrared : Infrared// Replaces Infrared (RandomSpawners.dec)
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTVISOR"
@@ -291,7 +291,7 @@ Tag "$FO_TAG_MAP"
 	}
 }
 
-Actor 64Berserk : Berserk Replaces Berserk
+Actor 64Berserk : Berserk// Replaces Berserk (RandomSpawners.dec)
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTBERSERK"

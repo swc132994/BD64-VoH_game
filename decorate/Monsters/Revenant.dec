@@ -1,4 +1,4 @@
-Actor 64Revenant : Revenant Replaces Revenant	//DrPyspy 64 stlye revenant
+Actor 64Revenant : Revenant// Replaces Revenant (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Scale 0.68

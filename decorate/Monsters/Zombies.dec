@@ -40,7 +40,7 @@ Actor EnemyProjectileExtreme : EnemyProjectile
 DamageType "Extreme"
 }
 
-Actor 64ZombieMan : ZombieMan Replaces ZombieMan
+Actor 64ZombieMan : ZombieMan// Replaces ZombieMan (RandomSpawners.dec)
 {
 //$category "Game/BD64Monsters
 Scale 0.8
@@ -676,7 +676,7 @@ Obituary "$FO_OB_STEALTHZOMBIE"
 +STEALTH
 }
 
-Actor 64ShotgunGuy : 64Zombieman Replaces ShotgunGuy
+Actor 64ShotgunGuy : 64Zombieman// Replaces ShotgunGuy (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Speed 6
@@ -1782,7 +1782,7 @@ Actor BrutalizedSSGGuy_2 : BrutalizedSSGGuy_1
 	}
 }
 
-Actor 64ChaingunGuy : 64Zombieman Replaces Chaingunguy
+Actor 64ChaingunGuy : 64Zombieman// Replaces Chaingunguy (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Health 120
@@ -2203,7 +2203,7 @@ Actor BrutalizedChaingunner_2 : BrutalizedChaingunner_1
 
 
 
-Actor 64ZombieMarine : 64Zombieman Replaces WolfensteinSS
+Actor 64ZombieMarine : 64Zombieman// Replaces WolfensteinSS (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Health 80

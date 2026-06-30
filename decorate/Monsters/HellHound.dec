@@ -1,7 +1,7 @@
 Actor 64HellHound : Demon //Hellhound Alt by IMI
 {
 Scale 0.8
-Health 600
+Health 500
 GibHealth 20
 Speed 16
 Radius 24

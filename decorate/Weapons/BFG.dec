@@ -1,4 +1,4 @@
-Actor BFG9000Spawner : CustomInventory Replaces BFG9000
+Actor BFG9000Spawner : CustomInventory// Replaces BFG9000 (RandomSpawners.dec)
 {
 //$category "Game/BD64_Weapons"
 Scale 0.9

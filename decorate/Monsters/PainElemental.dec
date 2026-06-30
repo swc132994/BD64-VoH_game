@@ -1,4 +1,4 @@
-Actor 64PainElemental : PainElemental Replaces PainElemental
+Actor 64PainElemental : PainElemental// Replaces PainElemental (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Scale 0.8

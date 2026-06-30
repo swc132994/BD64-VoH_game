@@ -1,4 +1,4 @@
-Actor 64Archvile : Archvile Replaces Archvile
+Actor 64Archvile : Archvile// Replaces Archvile (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Scale 0.64

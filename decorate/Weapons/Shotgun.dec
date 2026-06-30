@@ -1,4 +1,4 @@
-Actor ShotgunSpawner : CustomInventory	replaces Shotgun	//spawned from randomspawners
+Actor ShotgunSpawner : CustomInventory Replaces Shotgun
 {
 Scale 0.87
 Tag "$FO_TAG_SHOTGUN"

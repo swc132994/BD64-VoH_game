@@ -1,4 +1,4 @@
-Actor GaussCannonSpawner : CustomInventory	19134	//spawned from randomspawners
+Actor GaussCannonSpawner : CustomInventory	19134
 {
 //$category "Game/BD64_Weapons"
 Scale 0.9

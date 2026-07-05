@@ -113,7 +113,7 @@ DropItem "PistolDrop"
 		PPOS EE 5 A_FaceTarget
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",0,0,55)
 		TNT1 A 0 A_PlaySound("PISTOLF",CHAN_WEAPON)
-		PPOS F 2 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",45,0,random(-3,3),1,random(-3,3))
+		PPOS F 2 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",45,0,Frandom(-2.0,2.0),CMF_OFFSETPITCH,Frandom(-1.0,1.0))
 		TNT1 A 0 A_SpawnItemEx("BulletCaseSpawn",0,0,45)
 		PPOS GE 5
 		TNT1 A 0 A_Jump(64,"Missile")
@@ -734,7 +734,7 @@ DropItem "SOULSPAWNER"
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget16",0,0,55)
 		SPOS EE 8 A_FaceTarget
 		TNT1 A 0 A_PlaySound("SGFIRE",CHAN_WEAPON)
-		TNT1 AAAAAA 0 A_CustomMissile("EnemyProjectile",40,-7,random(-7,7),1,random(-4,4))
+		TNT1 AAAAAA 0 A_CustomMissile("EnemyProjectile",40,-7,Frandom(-3.5,3.5),CMF_OFFSETPITCH,Frandom(-1.75,1.75))
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget10",0,0,55)
 		SPOS F 5 Bright Light("ZOMBIEATK")
 		SPOS E 5
@@ -1239,6 +1239,7 @@ Obituary "$FO_OB_STEALTHSHOTGUNGUY"
 Actor 64SSGGuy : 64ShotgunGuy 19110
 {
 //$category "Game/BD64_Monsters"
+Speed 7
 DropItem "SSGDrop"
 DropItem "SOULSPAWNER"
 Tag "$FO_TAG_SSGGUY"
@@ -1294,7 +1295,7 @@ SpawnID 170
 		POS4 EE 8 A_FaceTarget
 		TNT1 A 0 A_PlaySound("SSGFIRE",CHAN_WEAPON)
 		TNT1 A 0 A_JumpIfCloser(150,"MissileClose")
-		TNT1 AAAAAAAAAAAA 0 A_CustomMissile("EnemyProjectile",36,-5,random(-7,7),1,random(-4,4))
+		TNT1 AAAAAAAAAAAA 0 A_CustomMissile("EnemyProjectile",36,-5,Frandom(-6.0,6.0),CMF_OFFSETPITCH,Frandom(-3.0,3.0))
 	MissileCP:
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget10",0,0,55)
 		POS4 F 5 Bright Light("ZOMBIEATK")
@@ -1314,7 +1315,7 @@ SpawnID 170
 		PO4R FG 4
 		Goto See
 	MissileClose:
-		TNT1 AAAAAAAAAAAA 0 A_CustomMissile("EnemyProjectileExtreme",36,-5,random(-7,7),1,random(-4,4))
+		TNT1 AAAAAAAAAAAA 0 A_CustomMissile("EnemyProjectileExtreme",36,-5,Frandom(-6.0,6.0),CMF_OFFSETPITCH,Frandom(-3.0,3.0))
 		Goto MissileCP
 	Pain:
 		POS4 G 6 A_Pain
@@ -1821,65 +1822,65 @@ DropItem "SOULSPAWNER"
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget10",0,0,55)
 		MPOS EE 5 A_FaceTarget
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",0,0,55)
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))	
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
-		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
-		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
-		MPOS E 2 A_FaceTarget
-		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",0,0,55)
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
-		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
-		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
-		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
-		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
-		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
-		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
-		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
-		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",0,0,55)
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
+		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
+		MPOS E 2 A_FaceTarget
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",0,0,55)
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
+		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
+		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
+		MPOS E 2 A_FaceTarget
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
+		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
+		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
+		MPOS E 2 A_FaceTarget
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
+		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
+		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
+		MPOS E 2 A_FaceTarget
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget16",0,0,55)
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
-		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,random(-6,6),1,random(-3,3))
+		MPOS F 1 Bright Light("CHAINGUN") A_CustomMissile("ChaingunProjectile",36,6,Frandom(-4.0,4.0),CMF_OFFSETPITCH,Frandom(-2.0,2.0))
 		TNT1 A 0 A_SpawnItemEx("ChaingunCaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("MGUNFIR",CHAN_WEAPON)
 		MPOS E 2 A_FaceTarget
@@ -2242,47 +2243,47 @@ DropItem "SOULSPAWNER"
 	Missile:
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",0,0,55)
 		CPOS E 8 A_FaceTarget
-		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,random(-3,3),1,random(-3,3))
+		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,Frandom(-2.5,2.5),CMF_OFFSETPITCH,Frandom(-1.2,1.2))
 		TNT1 A 0 A_SpawnItemEx("50CaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("RIFLE",CHAN_WEAPON)
 		CPOS E 2 A_FaceTarget
-		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,random(-3,3),1,random(-3,3))
+		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,Frandom(-2.5,2.5),CMF_OFFSETPITCH,Frandom(-1.2,1.2))
 		TNT1 A 0 A_SpawnItemEx("50CaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("RIFLE",CHAN_WEAPON)
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget6",0,0,55)
 		CPOS E 2 A_FaceTarget
-		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,random(-3,3),1,random(-3,3))
+		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,Frandom(-2.5,2.5),CMF_OFFSETPITCH,Frandom(-1.2,1.2))
 		TNT1 A 0 A_SpawnItemEx("50CaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("RIFLE",CHAN_WEAPON)
 		CPOS E 3 A_FaceTarget
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",0,0,55)
 		CPOS E 8 A_FaceTarget
-		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,random(-3,3),1,random(-3,3))
+		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,Frandom(-2.5,2.5),CMF_OFFSETPITCH,Frandom(-1.2,1.2))
 		TNT1 A 0 A_SpawnItemEx("50CaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("RIFLE",CHAN_WEAPON)
 		CPOS E 2 A_FaceTarget
-		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,random(-3,3),1,random(-3,3))
+		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,Frandom(-2.5,2.5),CMF_OFFSETPITCH,Frandom(-1.2,1.2))
 		TNT1 A 0 A_SpawnItemEx("50CaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("RIFLE",CHAN_WEAPON)
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget6",0,0,55)
 		CPOS E 2 A_FaceTarget
-		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,random(-3,3),1,random(-3,3))
+		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,Frandom(-2.5,2.5),CMF_OFFSETPITCH,Frandom(-1.2,1.2))
 		TNT1 A 0 A_SpawnItemEx("50CaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("RIFLE",CHAN_WEAPON)
 		CPOS E 3 A_FaceTarget
 		TNT1 A 0 A_Jump(128,"See")
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",0,0,55)
 		CPOS E 8 A_FaceTarget
-		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,random(-3,3),1,random(-3,3))
+		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,Frandom(-2.5,2.5),CMF_OFFSETPITCH,Frandom(-1.2,1.2))
 		TNT1 A 0 A_SpawnItemEx("50CaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("RIFLE",CHAN_WEAPON)
 		CPOS E 2 A_FaceTarget
-		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,random(-3,3),1,random(-3,3))
+		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,Frandom(-2.5,2.5),CMF_OFFSETPITCH,Frandom(-1.2,1.2))
 		TNT1 A 0 A_SpawnItemEx("50CaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("RIFLE",CHAN_WEAPON)
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",0,0,55)
 		CPOS E 2 A_FaceTarget
-		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,random(-3,3),1,random(-3,3))
+		CPOS F 1 Bright Light("ZOMBIEATK") A_CustomMissile("EnemyProjectile",36,5,Frandom(-2.5,2.5),CMF_OFFSETPITCH,Frandom(-1.2,1.2))
 		TNT1 A 0 A_SpawnItemEx("50CaseSpawn",0,0,30)
 		TNT1 A 0 A_PlaySound("RIFLE",CHAN_WEAPON)
 		CPOS E 2 A_FaceTarget

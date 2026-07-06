@@ -211,10 +211,14 @@ Script "TUnmakerChecker" (void)
 {
 	for(int i = 6666; i < 6766; i++)
 	{
-		if(CheckActorInventory(i,"unmakerTACTICAL") || CheckActorInventory(i,"64RuinerTACTICAL"))	//checks if you have unmaker or ruiner
+		if(CheckActorInventory(i,"unmakerTACTICAL") || CheckActorInventory(i,"64RuinerTACTICAL")) //checks if you have unmaker or ruiner
 		{
 			SetResultValue(2);
-			if(CheckActorInventory(i,"WpnPower1Icon") && CheckActorInventory(i,"WpnPower2Icon") && CheckActorInventory(i,"WpnPower3Icon"))	//checks if you have all 3 demon keys
+			if(CheckActorInventory(i,"WpnPower1Icon") && CheckActorInventory(i,"WpnPower2Icon") && CheckActorInventory(i,"WpnPower3Icon")) //checks if you have all 3 main demon artefacs
+			{
+			SetResultValue(3);
+			}
+			if(CheckActorInventory(i,"WpnPower4Icon") || CheckActorInventory(i,"WpnPower5Icon")) //checks if you have either outcast artefact
 			{
 			SetResultValue(3);
 			}

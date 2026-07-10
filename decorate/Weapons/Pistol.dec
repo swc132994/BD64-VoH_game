@@ -1,7 +1,7 @@
 ACTOR PistolSpawner : CustomInventory Replaces Pistol
 {
 //$category "Game/BD64_Weapons"
-Scale 0.82
+Scale 0.6
 Tag "$FO_TAG_PISTOL"
 Inventory.PickupMessage "$BD64_GOTPISTOL"
 Inventory.PickupSound "WPICK"
@@ -23,7 +23,7 @@ Inventory.PickupSound "WPICK"
 
 Actor 64Pistol : DoomWeapon
 {
-Scale 0.82
+Scale 0.6
 Weapon.SlotNumber 2
 Weapon.SlotPriority 10
 Weapon.SelectionOrder 1900

@@ -314,10 +314,10 @@ FastSpeed 30
 
 Actor Motherdemon_Final : Motherdemon 9898		//New boss for map28 Ultimate Absolution
 {
-MaxStepHeight 128
-MaxDropOffHeight 128
-Health 20000
-+NOPAIN
+	MaxStepHeight 128
+	MaxDropOffHeight 128
+	Health 20000
+	+NOPAIN
 	States
 	{
 	See:
@@ -424,7 +424,6 @@ Health 20000
 		TNT1 A 0 A_CustomRailgun(0,0,None,None,RGF_FULLBRIGHT|RGF_NOPIERCING,10,10,"FinalMotherdemonBeamPuff",0,0,0,0,30,5,"FinalMotherdemonBeam",25)
 		MOTH G 2 Bright A_FaceTarget
 		MOTH G 2 Bright ThrustThing(angle*256/360,1,0,0)
-		TNT1 A 0 A_Jump(26,"EnragedEnd")
 		Loop
 	EnragedEnd:
 		TNT1 A 0 A_StopSound(CHAN_7)

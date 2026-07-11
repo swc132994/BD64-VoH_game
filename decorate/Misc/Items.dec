@@ -1020,8 +1020,7 @@ Inventory.MaxAmount 1
 ACTOR WpnPower4 : CustomInventory 9908	//GREEN ARTIFACT
 {
 //$category "Game/BD64_Artifacts"
-Translation "0:255=%[0,0,0]:[0,1,0]"//Green
-Inventory.Icon POW3E0
+Inventory.Icon POW4E0
 Inventory.PickupMessage "$FO_GOTDEMON_GREEN"
 Inventory.PickupSound "DEMKEYUP"
 Tag "$FO_TAG_DEMON_GREEN"
@@ -1030,7 +1029,7 @@ Tag "$FO_TAG_DEMON_GREEN"
 	States
 	{
 	Spawn:
-		POW3 ABCDEDCB 5 Bright Light("INVULN")
+		POW4 ABCDEDCB 5 Bright Light("INVULN")
 		Loop
 	Pickup:
 		TNT1 A 0 A_GiveInventory("WpnPower4Icon",1)
@@ -1049,8 +1048,7 @@ Inventory.MaxAmount 1
 ACTOR WpnPower5 : CustomInventory 9909	//RED ARTIFACT
 {
 //$category "Game/BD64_Artifacts"
-Translation "0:255=%[0,0,0]:[1,0,0]"//Red
-Inventory.Icon POW3E0
+Inventory.Icon POW5E0
 Inventory.PickupMessage "$FO_GOTDEMON_RED"
 Inventory.PickupSound "DEMKEYUP"
 Tag "$FO_TAG_DEMON_RED"
@@ -1059,7 +1057,7 @@ Tag "$FO_TAG_DEMON_RED"
 	States
 	{
 	Spawn:
-		POW3 ABCDEDCB 5 Bright Light("BLURSPHERE")
+		POW5 ABCDEDCB 5 Bright Light("BLURSPHERE")
 		Loop
 	Pickup:
 		TNT1 A 0 A_GiveInventory("WpnPower5Icon",1)

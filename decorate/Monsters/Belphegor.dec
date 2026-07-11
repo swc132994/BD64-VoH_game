@@ -239,6 +239,7 @@ DamageFactor "Cutless",0.6
 	{
 	Spawn:
 		BLPL A 0
+	See:
 		BLPL A 8 A_FaceTarget
 		TNT1 A 0 A_Pain
 		TNT1 AAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(150,210),2,random(10,50))
@@ -265,6 +266,7 @@ DamageFactor "Cutless",0.6
 		TNT1 AAAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8GREEN",0,0,70)
 		BLPL Z 8 A_FaceTarget
+		Goto Death
 	Death.Rifle:
 	Death:
 		TNT1 A 0 A_Die

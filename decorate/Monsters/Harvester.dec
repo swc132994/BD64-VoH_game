@@ -255,6 +255,7 @@ DropItem "None"
 		TNT1 A 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8",0,0,60)
 		SHDM X 8 A_FaceTarget
+		Goto Death
 	Death:
 	Death.Bullet:
 		TNT1 A 0 A_Die
@@ -357,7 +358,7 @@ Actor 64BrutalisedHarvester_2 : 64BrutalisedHarvester
 	States
 	{
 	Spawn:
-		SHDM B 1
+		SHDM B 0
 	See:
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8",0,0,60)
 		SHDM B 8 A_FaceTarget
@@ -386,6 +387,7 @@ Actor 64BrutalisedHarvester_2 : 64BrutalisedHarvester
 		TNT1 A 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8",0,0,60)
 		SHDM Y 8 A_FaceTarget
+		Goto Death
 	Death:
 	Death.Bullet:
 	Death.Rifle:

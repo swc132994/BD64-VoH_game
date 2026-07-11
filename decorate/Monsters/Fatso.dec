@@ -278,7 +278,7 @@ DropItem "None"
 	States
 	{
 	Spawn:
-		FTNG A 1
+		FTNG A 0
 	See:
 		FTNG A 8 A_FaceTarget
 		TNT1 A 0 A_Pain
@@ -306,6 +306,7 @@ DropItem "None"
 		TNT1 AAAAAA 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_CustomMissile("Intestine",32,0,random(0,360),2,random(0,90))
 		FTNG B 8 A_FaceTarget
+		Goto Death
 	Death:
 		TNT1 A 0 A_Die
 		TNT1 A 0 A_CustomMissile("XDeath2b",72,0,random(150,210),2,random(10,50))

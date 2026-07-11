@@ -642,8 +642,7 @@ MONSTER
 	States
 	{
 	Spawn:
-		DHUL A 1
-		Goto See
+		DHUL A 0
 	See:
 		DHUL AABBCCDD 2 A_Wander
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodGreen",0,0,40)

@@ -302,8 +302,8 @@ Inventory.PickupMessage "$BD64_GOTLASER"
 		"####" A 0 A_FireCustomMissile("EnergyBlast",0,FALSE,0,-3)
 		"####" A 0 A_AlertMonsters
 		"####" A 0 A_FireCustomMissile("LaserTrail",0,FALSE)
-		"####" A 0 A_SetPitch(pitch+random(-1,1),SPF_INTERPOLATE)
-		"####" A 0 A_SetAngle(angle+random(-1,1),SPF_INTERPOLATE)
+		"####" A 0 A_SetPitch(pitch+Frandom(-1.0,1.0),SPF_INTERPOLATE)
+		"####" A 0 A_SetAngle(angle+Frandom(-1.0,1.0),SPF_INTERPOLATE)
 		"####" A 0 Offset(0,32) A_StopSound(CHAN_ITEM)
 		"####" R 2 Bright A_FireCustomMissile("GunFireSmoke",0,FALSE)
 		"####" S 2 Bright A_PlaySound("RBLAST",CHAN_WEAPON)

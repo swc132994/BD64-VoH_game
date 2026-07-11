@@ -218,7 +218,7 @@ DropItem "None"
 	States
 	{
 	Spawn:
-		RMWX A 1
+		RMWX A 0
 	See:
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8",0,0,62)
 		RMWX A 8 A_FaceTarget
@@ -247,6 +247,7 @@ DropItem "None"
 		TNT1 AAAA 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8",0,0,62)
 		RMWX B 8 A_FaceTarget
+		Goto Death
 	Death.Bullet:
 	Death:
 		TNT1 A 0 A_Die
@@ -329,7 +330,7 @@ Actor 64BrutalizedFleshWizard2 : 64BrutalizedFleshWizard1 //will eventually add 
 	States
 	{
 	Spawn:
-		RMWY A 1
+		RMWY A 0
 	See:
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8",0,0,62)
 		RMWY A 8 A_FaceTarget
@@ -358,6 +359,7 @@ Actor 64BrutalizedFleshWizard2 : 64BrutalizedFleshWizard1 //will eventually add 
 		TNT1 AAAA 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8",0,0,62)
 		RMWY B 8 A_FaceTarget
+		Goto Death
 	Death.Bullet:
 	Death:
 		TNT1 A 0 A_Die

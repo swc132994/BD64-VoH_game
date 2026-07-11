@@ -352,12 +352,14 @@ FO_OPTION_SOUND = "---------------------------------- Sounds -------------------
  
 FO_OPTION_SOUND_FOOTS = "Enable Footstep Sounds =";
 
+/*	MOVED TO BD64 MAPS
 FO_OPTION_MAP_OP = "Map Options";
 FO_OPTION_MAP_OP_TXT ="(These options ONLY work with the BD64 Maps)";
 FO_OPTION_MAP_EASY ="Play Easier Map08 and Map28 (No Extended Final) Boss Fight) =";
 FO_OPTION_MAP_TC ="Add Absolution Maps to Campaign (Modified Outpost Omega) =";
 FO_OPTION_MAP_TITLE ="Show orignal Doom 64 opening title sequence at startup";
 FO_OPTION_MAP_TITLE_TXT ="Show Opening Title Map (Restart Required) =";
+*/
 
 FO_ENGINE_OPTION = "Engine Option Shortcuts";
 FO_ENGINE_OPTION_TXT = "Zdoom options, available here for your convenience";

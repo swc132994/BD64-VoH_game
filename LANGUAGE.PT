@@ -353,13 +353,15 @@ FO_OPTION_HUD_SPLASH_TXT2 = "(Não funciona no modo de efeitos de tela do BDv21.
 FO_OPTION_SOUND = "---------------------------------- Sons ----------------------------------";
  
 FO_OPTION_SOUND_FOOTS = "Habilitar Sons de Passos =";
-//terminar 
+
+/*	//MOVED TO BD64 MAPS
 FO_OPTION_MAP_OP = "Opções de Mapa";
 FO_OPTION_MAP_OP_TXT ="(Essas opções funcionam APENAS com os Mapas do BD64)";
 FO_OPTION_MAP_EASY ="Jogar Map08 e Map28 Mais Fáceis (Sem a Batalha (Estendida) do Chefe Final) =";
 FO_OPTION_MAP_TC ="Adicionar Mapas do Absolution TC à Campanha =";
 FO_OPTION_MAP_TITLE ="Mostrar sequência do título de abertura original do Doom 64 na inicialização";
 FO_OPTION_MAP_TITLE_TXT ="Mostrar Mapa do Título de Abertura (Requer Reinicialização) =";
+*/
 
 FO_ENGINE_OPTION = "Atalhos de Opções da Engine";
 FO_ENGINE_OPTION_TXT = "Opções do ZDoom, disponíveis aqui para sua conveniência";

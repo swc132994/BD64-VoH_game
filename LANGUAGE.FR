@@ -351,12 +351,14 @@ FO_OPTION_SOUND = "---------------------------------- Bruitages ----------------
  
 FO_OPTION_SOUND_FOOTS = "Activer les bruits de pas";
 
+/*	//MOVED TO BD64 MAPS
 FO_OPTION_MAP_OP = "Options des niveaux :";
 FO_OPTION_MAP_OP_TXT = "(Ces options fonctionnent UNIQUEMENT avec les cartes BD64).";
 FO_OPTION_MAP_EASY = "Jouez aux cartes plus faciles Map08 et Map28 (pas de combat de boss ((étendue finale)) =";
 FO_OPTION_MAP_TC = "Ajouter les cartes Absolution TC à la campagne principale =";
 FO_OPTION_MAP_TITLE = "Afficher la séquence d'ouverture originale de Doom 64 au démarrage.";
 FO_OPTION_MAP_TITLE_TXT = "Afficher le niveau d'ouverture du jeu (redémarrage requis) =";
+*/
 
 FO_ENGINE_OPTION = "Raccourcis des options du moteur :";
 FO_ENGINE_OPTION_TXT = "Options Zdoom, disponibles ici pour votre commodité.";

@@ -105,7 +105,7 @@ OptionMenu "BD64Menu"
 	Submenu "$FO_64MNU_OTHER_ITEMS",		"BrutalDoom64Item/WeaponOptions"
 	Submenu "$FO_64MNU_OHTHER_MONSTER",			"BrutalDoom64OptionsOtherMonster"
 	Submenu "$FO_64MNU_PERFORMANCE",		"BrutalDoom64OptionsPerformance"
-	Submenu "$FO_64MNU_LEVEL_OPTIONS",			"BD64MapOptions"
+//	Submenu "$FO_64MNU_LEVEL_OPTIONS",			"BD64MapOptions"	//MOVED TO BD64 MAPS
 	StaticText " "
 	StaticText "$FO_64OPTIONS_GAMEPLAY",1
 	StaticText " "
@@ -334,6 +334,7 @@ OptionMenu "BrutalDoom64OptionsPerformance"
 	Option "$FO_OPTION_SOUND_FOOTS","FootStepCheckCvar","NoYes"
 }
 
+/*	//MOVED TO BD64 MAPS
 OptionMenu "BD64MapOptions"
 {
 	Title "$FO_OPTION_MAP_OP"
@@ -350,6 +351,7 @@ OptionMenu "BD64MapOptions"
 		StaticText ""
 	Option "$FO_OPTION_MAP_TITLE_TXT","BD64_SkipTitleMap","NoYes"
 }
+*/
 
 Optionmenu GZDShortcuts
 {

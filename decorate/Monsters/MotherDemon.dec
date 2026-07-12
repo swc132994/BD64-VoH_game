@@ -314,10 +314,10 @@ FastSpeed 30
 
 Actor Motherdemon_Final : Motherdemon 9898		//New boss for map28 Ultimate Absolution
 {
-	MaxStepHeight 128
-	MaxDropOffHeight 128
-	Health 20000
-	+NOPAIN
+MaxStepHeight 128
+MaxDropOffHeight 128
+Health 20000
++NOPAIN
 	States
 	{
 	See:

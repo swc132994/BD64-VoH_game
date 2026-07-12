@@ -85,7 +85,7 @@ Inventory.MaxAmount 11
 
 Actor 64PistolTACTICAL : Brutal64Weapon
 {
-Scale 0.82
+Scale 0.6
 Weapon.SlotNumber 2
 Weapon.SlotPriority 10
 Weapon.SelectionOrder 1900

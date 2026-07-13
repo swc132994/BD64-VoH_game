@@ -413,6 +413,9 @@ menu/clear					dsempty
 menu/activate				dsempty
 menu/backup					dspistol
 
+//Player burn death
+Player/BurnDeath		PLBRNDTH
+
 //Door need key
 misc/keytry			dsnokey
 

@@ -233,9 +233,9 @@ DropItem "None"
 		TNT1 A 0 A_Pain
 		TNT1 AAAA 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
 		SANA B 8 A_FaceTarget
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		SANA CDE 5
@@ -607,9 +607,9 @@ DropItem "None"
 		TNT1 A 0 A_Pain
 		TNT1 AAAA 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
 		SPCA B 8 A_FaceTarget
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		SPCA CDE 5
@@ -1028,9 +1028,9 @@ DropItem "None"
 		TNT1 A 0 A_Pain
 		TNT1 AAAA 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
 		NMSA B 8 A_FaceTarget
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		NMSA CDE 5

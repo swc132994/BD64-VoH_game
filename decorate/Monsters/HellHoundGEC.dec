@@ -218,9 +218,9 @@ DropItem "None"
 		GH1H BA 8 A_FaceTarget
 		TNT1 AAAA 0 A_CustomMissile("XDeath1",32,0,random(0,360),2,random(0,90))
 		GH1H A 8 A_FaceTarget
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		GH1H CDE 5

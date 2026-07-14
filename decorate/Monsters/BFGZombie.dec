@@ -223,12 +223,12 @@ DropItem "None"
 		TNT1 A 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8",0,0,55)
 		ZBF1 A 8 A_FaceTarget
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
 	Death.Bullet:
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_Die
 		BZ65 ABCDE 5
 		BZ65 F 35
 		BZ65 F -1 A_SpawnItemEx("GrowingBloodPool")
@@ -326,13 +326,13 @@ Actor BrutalizedBFGDude_2 : BrutalizedBFGDude_1
 	See:
 	Spawn:
 		ZBF2 A 10
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
 	Death.Bullet:
 	Death.Rifle:
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_Die
 		BZ67 ABCDE 5
 		BZ67 F 35
 		BZ67 F -1 A_SpawnItemEx("GrowingBloodPool")

@@ -294,12 +294,12 @@ DropItem "None"
 		TNT1 A 0 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8",0,0,50)
 		ZFM1 A 8 A_FaceTarget
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
 	Death.Bullet:
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_Die
 		ZFM1 BCDEF 5
 		ZFM1 G 35
 		ZFM1 G -1 A_SpawnItemEx("GrowingBloodPool")
@@ -438,13 +438,13 @@ Actor BrutalizedHuskZombie_2 : BrutalizedHuskZombie_1
 	See:
 	Spawn:
 		ZFM2 A 10
+		TNT1 A 0 A_Die
 		Goto Death
 	Death.Bullet:
 	Death.Rifle:
 	Death:
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_Die
 		ZFM2 BCDEF 5
 		ZFM2 G 35
 		ZFM2 G -1 A_SpawnItemEx("GrowingBloodPool")

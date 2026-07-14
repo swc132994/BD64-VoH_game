@@ -83,8 +83,8 @@ Tag "$FO_TAG_FORGOTTEN"
 	Heal:
 		TNT1 A 0 A_ChangeFlag("NOPAIN",TRUE)
 		ESKU BC 10
-		ESKU BC 10 A_Die("PossessCorpse")
-		Goto See
+		TNT1 A 0 A_Die("PossessCorpse")
+		Goto Death.PossessCorpse
 	Melee:
 		TNT1 A 0 ThrustThingZ(0,15,0,0)
 		ESKU AA 4 A_Recoil(4)

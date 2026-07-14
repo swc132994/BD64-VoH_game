@@ -291,11 +291,11 @@ DropItem "None"
 		TNT1 A 0 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8BLUE",0,0,62)
 		S1D7 B 8 A_Facetarget
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_Die
 		S1D7 CDE 4
 		S1R3 WX 5
 		S1R3 Y 35
@@ -409,12 +409,12 @@ Actor BrutalizedHellstorm_2 : BrutalizedHellstorm_1
 		TNT1 A 0 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8BLUE",0,0,62)
 		S1D8 B 8 A_Facetarget
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
 	Death.Rifle:
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_Die
 		S1D8 CDE 4
 		S1R3 WX 5
 		S1R3 Y 35

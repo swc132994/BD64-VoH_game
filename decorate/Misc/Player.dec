@@ -106,8 +106,7 @@ Player.CrouchSprite "PLYC"
 		PLAY V 35
 		PLAY V -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
-	Death.Plasma: Death.BFGSplash: Death.Flames:
-		TNT1 A 0 A_Jump(128,"Death.PlasmaBurningPlayer")
+	Death.Plasma: Death.BFGSplash:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -125,7 +124,7 @@ Player.CrouchSprite "PLYC"
 		CRB1 ABCDEFGH 3
 		CRB1 H -1
 		Stop
-	Death.PlasmaBurningPlayer:
+	Death.Flames:
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_PlaySound("Player/BurnDeath",CHAN_BODY)
 		TNT1 AAA 0 A_CustomMissile("CarbonizedSmoke1",30,0,random(0,360),2,random(10,90))
@@ -352,8 +351,7 @@ Player.CrouchSprite "PLYC"
 		PLAY V 35
 		PLAY V -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
-	Death.Plasma: Death.BFGSplash: Death.Flames:
-		TNT1 A 0 A_Jump(128,"Death.PlasmaBurningPlayer")
+	Death.Plasma: Death.BFGSplash:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -371,7 +369,7 @@ Player.CrouchSprite "PLYC"
 		CRB1 ABCDEFGH 3
 		CRB1 H -1
 		Stop
-	Death.PlasmaBurningPlayer:
+	Death.Flames:
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_PlaySound("Player/BurnDeath",CHAN_BODY)
 		TNT1 AAA 0 A_CustomMissile("CarbonizedSmoke1",30,0,random(0,360),2,random(10,90))
@@ -579,8 +577,7 @@ Player.CrouchSprite "PLYC"
 		PLAY V 35
 		PLAY V -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
-	Death.Plasma: Death.BFGSplash: Death.Flames:
-		TNT1 A 0 A_Jump(128,"Death.PlasmaBurningPlayer")
+	Death.Plasma: Death.BFGSplash:
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
@@ -598,7 +595,7 @@ Player.CrouchSprite "PLYC"
 		CRB1 ABCDEFGH 3
 		CRB1 H -1
 		Stop
-	Death.PlasmaBurningPlayer:
+	Death.Flames:
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_PlaySound("Player/BurnDeath",CHAN_BODY)
 		TNT1 AAA 0 A_CustomMissile("CarbonizedSmoke1",30,0,random(0,360),2,random(10,90))

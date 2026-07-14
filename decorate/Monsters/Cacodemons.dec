@@ -187,9 +187,9 @@ DropItem "None"
 		TNT1 A 0 A_SetScale(0-ScaleX,ScaleY)	//Flip horizontal
 	See:
 		HNHE ABABABABABABABABABABABABABABABAB 4 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		HNHE B 35 A_SetFloorClip
@@ -249,9 +249,9 @@ Actor Brutalized64Caco_2 : Brutalized64Caco
 	See:
 	Spawn:
 		HNHE CDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCD 4 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		HNHE D 35 A_SetFloorClip
@@ -308,9 +308,9 @@ Actor Brutalized64Caco_3 : Brutalized64Caco
 	See:
 	Spawn:
 		HNHE EFEFEFEFEFEFEFEFEFEFEFEFEF 4 A_CustomMissile("XDeath1",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Scream
 		HNHE F 35 A_SetFloorClip
@@ -565,9 +565,9 @@ DropItem "None"
 		TNT1 A 0 A_SetScale(0-ScaleX,ScaleY)	//Flip horizontal
 	See:
 		NCHE ABABABABABABABABABABABABABABABAB 4 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		NCHE B 35 A_SetFloorClip
@@ -632,9 +632,9 @@ Actor BrutalizedNCaco_2 : BrutalizedNCaco
 	See:
 	Spawn:
 		NCHE CDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCD 4 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		NCHE D 35 A_SetFloorClip
@@ -691,9 +691,9 @@ Actor BrutalizedNCaco_3 : BrutalizedNCaco
 	See:
 	Spawn:
 		NCHE EFEFEFEFEFEFEFEFEFEFEFEFEF 4 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Scream
 		NCHE F 35 A_SetFloorClip

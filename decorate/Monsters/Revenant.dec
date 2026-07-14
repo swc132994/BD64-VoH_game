@@ -307,13 +307,13 @@ DropItem "None"
 	See:
 	Spawn:
 		SKNH ABCDEDCBFGHIHGFABCDEDCBFGHIHGF 3 A_CustomMissile("XDeath1",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
 	Death.CutLess:
 	Death.Shotgun:
 	Death.SSG:
 	Death.Head:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 AA 0 A_CustomMissile("XDeath1",32,0,random(0,360),2,random(0,90))
@@ -547,6 +547,7 @@ DropItem "None"
 		TNT1 A 0 A_CustomMissile("XDeath1",50,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_Pain
 		SND2 ACABABC 5 A_FaceTarget
+		TNT1 A 0 A_Die
 		Goto Death
 	Attack:
 		TNT1 A 0 A_CustomMissile("64RevenantTracer3",69,0)
@@ -562,7 +563,6 @@ DropItem "None"
 		SND2 A 2 A_Recoil(6)
 		TNT1 A 0 A_JumpIfCloser(250,"XDeath")
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_Scream
 		SND2 D 5 A_NoBlocking
 		SND2 EF 5
@@ -673,9 +673,9 @@ MONSTER
 		DKEL AABBCCDD 2 A_Wander
 		TNT1 A 0 A_SpawnItemEx("Brutal_Blood",0,0,40)
 		DKEL AABBCCDD 2 A_Wander
+		TNT1 A 0 A_Die
 		Goto Death
 	Death:
-		TNT1 A 0 A_Die
 		TNT1 A 0 A_NoBlocking
 		SKD1 ABCDE 5
 		SKD1 E -1 A_CustomMissile("BigBloodSpot",0,0,random(0,360),2,random(0,90))

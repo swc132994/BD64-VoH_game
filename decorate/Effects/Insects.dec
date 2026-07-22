@@ -1,7 +1,7 @@
 Actor Swarm
 {
++NOINTERACTION
 +NOCLIP
-+NOGRAVITY
 	States
 	{
 	Spawn:
@@ -9,7 +9,7 @@ Actor Swarm
 		TNT1 AAAAAAA 2 A_CustomMissile("FlyDecor",32,0,random(0,360),2,random(-40,40))
 	Done:
 		TNT1 A -1
-		STOP
+		Stop
 	}
 }
 
@@ -17,14 +17,12 @@ Actor FlyDecor
 {
 Scale 0.1
 Speed 3
-+MISSILE
-+NOGRAVITY
-+DONTSPLASH
-+CLIENTSIDEONLY
-+NOCLIP
-+RANDOMIZE
-BounceType "Doom"
 ReactionTime 4
++MISSILE
++CLIENTSIDEONLY
++RANDOMIZE
++NOINTERACTION
++NOCLIP
 	States
 	{
 	Spawn:
@@ -33,10 +31,6 @@ ReactionTime 4
 		Loop
 	Death:
 		SFLY "#" 1 A_CustomMissile("FlyDecor",0,0,random(-40,40))
-		Stop
-	Death.Crush:
-	Crush:
-		TNT1 A 1 A_NoBlocking
 		Stop
 	}
 }

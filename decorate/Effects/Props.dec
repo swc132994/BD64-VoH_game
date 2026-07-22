@@ -3,6 +3,8 @@ Actor MotherDemon_Ghost	//spawned when raising dead prop monsters
 Scale 0.5
 RenderStyle Subtract
 Alpha 0.4
++NOBLOCKMAP
++NOINTERACTION
 	States
 	{
 	Spawn:
@@ -658,13 +660,10 @@ Scale 0.8
 		TNT1 A 0 A_SpawnItemEx("Swarm",0,0,20)
 		Goto Stay
 	Stay:
-		POL3 AB 3 Bright Light("SKULLCANDLES")
+		POL3 AB 3 Light("SKULLCANDLES")
 		Loop
 	Spawn2:		//Burning marine
-		ALVE A 1
-	SemiStay2:
-		TNT1 AAA 0 A_SpawnItemEx("BurningBarrelSmoke")
-		TNT1 A 0 A_TakeInventory("BurningBarrelSmokeCheck",0)
+		TNT1 A 0 A_SpawnItemEx("BurningMarineSmoke")
 		TNT1 A 0 A_PlaySound("BDfireplace",CHAN_VOICE,0.50,TRUE,2.25)
 	Stay2:		
 		TNT1 A 0 A_CheckSight("StayBlank2")
@@ -673,11 +672,9 @@ Scale 0.8
 		ALVE A 3 Light("BIGREDTORCH") A_CustomMissile("RealFlameTrailsSmall",0,0,random(0,360),2,random(70,110))
 		ALVE A 3 Light("BIGREDTORCH") A_CustomMissile("RealFlameTrailsSmall",0,0,random(0,360),2,random(70,110))
 		ALVE A 4 Light("BIGREDTORCH") A_CustomMissile("RealFlameTrailsSmall",0,0,random(0,360),2,random(70,110))
-		TNT1 A 0 A_GiveInventory("BurningBarrelSmokeCheck",1)
-		TNT1 A 0 A_JumpIfInventory("BurningBarrelSmokeCheck",8,"SemiStay2")
 		Loop
 	StayBlank2:
-		ALVE A 3 Bright Light("BIGREDTORCH")
+		ALVE A 35 Light("BIGREDTORCH")
 		Goto Stay2
 	}
 }
@@ -843,27 +840,19 @@ Height 68
 		TNT1 A 0 A_SpawnItemEx("Swarm")
 		Goto Stay
 	Stay:
-		TNT1 A 0 A_CheckSight("StayBlank")
-		TNT1 A 0 A_SpawnItemEx("drippingblood",0,0,-5)
+		TNT1 A 0 A_SpawnItemEx("DrippingBlood",0,0,-5)
 		TNT1 A 0 A_Jump(128,2)
 		HDB2 A 70
 		Loop
 		HDB2 A 45
 		Loop
-	StayBlank:
-		HDB2 A 3
-		Goto Stay
 	Stay2:
-		TNT1 A 0 A_CheckSight("StayBlank2")
-		TNT1 A 0 A_SpawnItemEx("drippingblood",0,0,-5)
+		TNT1 A 0 A_SpawnItemEx("DrippingBlood",0,0,-5)
 		TNT1 A 0 A_Jump(128,2)
 		MGD1 I 70
 		Loop
 		MGD1 I 45
 		Loop
-	StayBlank2:
-		MGD1 I 3
-		Goto Stay2
 	}
 }
 
@@ -880,16 +869,12 @@ Height 52
 		S018 A 0	//Alpha
 		Goto Stay
 	Stay:
-		"####" A 0 A_CheckSight("StayBlank")
-		"####" A 0 A_SpawnItemEx("drippingblood",0,0,-5)
+		"####" A 0 A_SpawnItemEx("DrippingBlood",0,0,-5)
 		"####" A 0 A_Jump(128,2)
 		"####" A 70
 		Loop
 		"####" A 45
 		Loop
-	StayBlank:
-		"####" A 3
-		Goto Stay
 	}
 }
 
@@ -905,16 +890,12 @@ Height 49
 		TNT1 A 0 A_SpawnItemEx("Swarm")
 		Goto Stay
 	Stay:
-		TNT1 A 0 A_CheckSight("StayBlank")
-		TNT1 A 0 A_SpawnItemEx("drippingblood",0,0,-5)
+		TNT1 A 0 A_SpawnItemEx("DrippingBlood",0,0,-5)
 		TNT1 A 0 A_Jump(128,2)
 		HDB3 A 70
 		Loop
 		HDB3 A 45
 		Loop
-	StayBlank:
-		HDB3 A 3
-		Goto Stay
 	Spawn2:
 		HGDB A -1
 		stop
@@ -928,16 +909,12 @@ Height 47
 	States
 	{
 	Spawn:
-		HDB5 A 0 A_CheckSight("StayBlank")
-		TNT1 A 0 A_SpawnItemEx("drippingblood",0,0,-5)
+		TNT1 A 0 A_SpawnItemEx("DrippingBlood",0,0,-5)
 		TNT1 A 0 A_Jump(128,2)
 		HDB5 A 70
 		Loop
 		HDB5 A 45
 		Loop
-	StayBlank:
-		HDB5 A 3
-		Goto Spawn
 	}
 }
 
@@ -952,16 +929,12 @@ Height 74
 		TNT1 A 0 A_SpawnItemEx("Swarm",0,0,-10)
 		Goto Stay
 	Stay:
-		TNT1 A 0 A_CheckSight("StayBlank")
-		TNT1 A 0 A_SpawnItemEx("drippingblood",0,0,-5)
+		TNT1 A 0 A_SpawnItemEx("DrippingBlood",0,0,-5)
 		TNT1 A 0 A_Jump(128,2)
 		HDB6 A 70
 		Loop
 		HDB6 A 45
 		Loop
-	StayBlank:
-		HDB6 A 3
-		Goto Stay
 	}
 }
 
@@ -976,16 +949,12 @@ Height 71
 		TNT1 A 0 A_SpawnItemEx("Swarm",0,0,5)
 		Goto Stay
 	Stay:
-		TNT1 A 0 A_CheckSight("StayBlank")
-		TNT1 A 0 A_SpawnItemEx("drippingblood",0,0,-5)
+		TNT1 A 0 A_SpawnItemEx("DrippingBlood",0,0,-5)
 		TNT1 A 0 A_Jump(128,2)
 		HDB4 A 70
 		Loop
 		HDB4 A 45
 		Loop
-	StayBlank:
-		HDB4 A 3
-		Goto Stay
 	}
 }
 
@@ -1019,16 +988,12 @@ Height 79
 		S007 A 0	//Alpha
 		Goto Stay
 	Stay:
-		"####" A 0 A_CheckSight("StayBlank")
-		"####" A 0 A_SpawnItemEx("drippingblood",0,0,-5)
+		"####" A 0 A_SpawnItemEx("DrippingBlood",0,0,-5)
 		"####" A 0 A_Jump(128,2)
 		"####" A 70
 		Loop
 		"####" A 45
 		Loop
-	StayBlank:
-		"####" A 3
-		Goto Stay
 	}
 }
 
@@ -1047,16 +1012,12 @@ Height 65
 		GOR4 A 0 NoDelay A_Jump(128,2)
 		TNT1 A 0 A_SetScale(0-ScaleX,ScaleY)	//flip horzizontal
 	Stay:
-		TNT1 A 0 A_CheckSight("StayBlank")
-		TNT1 A 0 A_SpawnItemEx("drippingblood",0,0,-3)
+		TNT1 A 0 A_SpawnItemEx("DrippingBlood",0,0,-3)
 		TNT1 A 0 A_Jump(128,2)
 		GOR4 A 70
 		Loop
 		GOR4 A 45
 		Loop
-	StayBlank:
-		GOR4 A 3
-		Goto Stay
 	}
 }
 
@@ -1075,16 +1036,12 @@ Height 79
 		GOR5 A 0 NoDelay A_Jump(128,2)
 		TNT1 A 0 A_SetScale(0-ScaleX,ScaleY)	//flip horzizontal
 	Stay:
-		GOR5 A 0 A_CheckSight("StayBlank")
-		TNT1 A 0 A_SpawnItemEx("drippingblood",0,0,-3)
+		TNT1 A 0 A_SpawnItemEx("DrippingBlood",0,0,-3)
 		TNT1 A 0 A_Jump(128,2)
 		GOR5 A 70
 		Loop
 		GOR5 A 45
 		Loop
-	StayBlank:
-		GOR5 A 3
-		Goto Stay
 	}
 }
 
@@ -1104,16 +1061,12 @@ Height 83
 		TNT1 A 0 A_SpawnItemEx("Swarm",0,0,5)
 		Goto Stay
 	Stay:
-		TNT1 A 0 A_CheckSight("StayBlank")
-		TNT1 A 0 A_SpawnItemEx("drippingblood",0,0,-5)
+		TNT1 A 0 A_SpawnItemEx("DrippingBlood",0,0,-5)
 		TNT1 A 0 A_Jump(128,2)
 		TWEG A 70
 		Loop
 		TWEG A 45
 		Loop
-	StayBlank:
-		TWEG A 3
-		Goto Stay
 	}
 }
 
@@ -1133,16 +1086,12 @@ Height 83
 		TNT1 A 0 A_SpawnItemEx("Swarm",0,0,5)
 		Goto Stay
 	Stay:
-		TNT1 A 0 A_CheckSight("StayBlank")
-		TNT1 A 0 A_SpawnItemEx("drippingblood",0,0,-5)
+		TNT1 A 0 A_SpawnItemEx("DrippingBlood",0,0,-5)
 		TNT1 A 0 A_Jump(128,2)
 		MK9F A 70
 		Loop
 		MK9F A 45
 		Loop
-	StayBlank:
-		MK9F A 3
-		Goto Stay
 	}
 }
 
@@ -1218,18 +1167,14 @@ Scale 0.7
 	{
 	Spawn:
 		CAND A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
-		TNT1 A 0 A_SpawnItemEx("LightShaft2Brighter")
+		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterSmall")
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
 		TNT1 A 0 A_SpawnItemEx("LensFlareAltLongOrangeCandle",0,0,20)
-		CAND ABB 1 Bright Light("SMALLREDTORCH")
-		TNT1 A 0 A_SpawnItemEx("LensFlareAltLongOrangeCandle",0,0,20)
-		CAND BA 1 Bright Light("SMALLREDTORCH")
-		TNT1 A 0 A_SpawnItemEx("LensFlareAltLongOrangeCandle",0,0,20)
-		CAND B 1 Bright Light("SMALLREDTORCH")
+		CAND ABABABABABABABABAB 2 Light("SMALLREDTORCH")
 		Loop
 	StayBlank:
-		CAND ABAB 2 Light("SMALLREDTORCH")
+		CAND ABABABABABABABABAB 2 Light("SMALLREDTORCH")
 		Goto Stay
 	ClassicTorch:
 		CAND ABAB 2 Light("SMALLREDTORCH")
@@ -1268,7 +1213,7 @@ Scale 0.7
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchOrange",0,0,50)
 		Loop
 	StayBlank:
-		CBRA ABCDE 2 Light("SMALLREDTORCH")
+		CBRA ABCDEABCDEABCDE 2 Light("SMALLREDTORCH")
 		Goto Stay
 	ClassicTorch:
 		CBRA ABCDE 4 Light("SMALLREDTORCH")
@@ -1294,7 +1239,7 @@ Scale 0.75
 		TTBN AA 2 Light("BIGREDTORCH") A_SpawnItemEx("LensFlareTorchOrange",0,0,60)
 		Loop
 	StayBlank:
-		TRED ABCDE 2 Light("BIGREDTORCH")
+		TRED ABCDEABCDEABCDE 2 Light("BIGREDTORCH")
 		Goto Stay
 	ClassicTorch:
 		TRED ABCDE 4 Light("BIGREDTORCH")
@@ -1320,7 +1265,7 @@ Scale 0.75
 		TTBN AA 2 Light("BIGBLUETORCH") A_SpawnItemEx("LensFlareTorchBlue",0,0,60)
 		Loop
 	StayBlank:
-		TBLU ABCDE 2 Light("BIGBLUETORCH")
+		TBLU ABCDEABCDEABCDE 2 Light("BIGBLUETORCH")
 		Goto Stay
 	ClassicTorch:
 		TBLU ABCDE 4 Light("BIGBLUETORCH")
@@ -1346,7 +1291,7 @@ Scale 0.75
 		TTBN AA 2 Light("BIGGREENTORCH") A_SpawnItemEx("LensFlareTorchGreen",0,0,60)
 		Loop
 	StayBlank:
-		TGRN ABCDE 2 Light("BIGGREENTORCH")
+		TGRN ABCDEABCDEABCDE 2 Light("BIGGREENTORCH")
 		Goto Stay
 	ClassicTorch:
 		TGRN ABCDE 4 Light("BIGGREENTORCH")
@@ -1373,7 +1318,7 @@ Scale 0.75
 		TTBN AA 2 Light("BIGYELLOWTORCH") A_SpawnItemEx("LensFlareTorchYellow",0,0,60)
 		Loop
 	StayBlank:
-		TLYL ABCDE 2 Light("BIGYELLOWTORCH")
+		TLYL ABCDEABCDEABCDE 2 Light("BIGYELLOWTORCH")
 		Goto Stay
 	ClassicTorch:
 		TLYL ABCDE 4 Light("BIGYELLOWTORCH")
@@ -1399,7 +1344,7 @@ Scale 0.75
 		TSBN AA 2 Light("BIGREDTORCH") A_SpawnItemEx("LensFlareTorchOrange",0,0,44)
 		Loop
 	StayBlank:
-		SMRT ABCDE 2 Light("BIGREDTORCH")
+		SMRT ABCDEABCDEABCDE 2 Light("BIGREDTORCH")
 		Goto Stay
 	ClassicTorch:
 		SMRT ABCDE 4 Light("BIGREDTORCH")
@@ -1425,7 +1370,7 @@ Scale 0.75
 		TSBN AA 2 Light("BIGBLUETORCH") A_SpawnItemEx("LensFlareTorchBlue",0,0,44)
 		Loop
 	StayBlank:
-		SMBT ABCDE 2 Light("BIGBLUETORCH")
+		SMBT ABCDEABCDEABCDE 2 Light("BIGBLUETORCH")
 		Goto Stay
 	ClassicTorch:
 		SMBT ABCDE 4 Light("BIGBLUETORCH")
@@ -1451,7 +1396,7 @@ Scale 0.75
 		TSBN AA 2 Light("BIGGREENTORCH") A_SpawnItemEx("LensFlareTorchGreen",0,0,44)
 		Loop
 	StayBlank:
-		SMGT ABCDE 2 Light("BIGGREENTORCH")
+		SMGT ABCDEABCDEABCDE 2 Light("BIGGREENTORCH")
 		Goto Stay
 	ClassicTorch:
 		SMGT ABCDE 4 Light("BIGGREENTORCH")
@@ -1478,7 +1423,7 @@ Scale 0.75
 		TSBN AA 2 Light("BIGELLOWTORCH") A_SpawnItemEx("LensFlareTorchYellow",0,0,44)
 		Loop
 	StayBlank:
-		SMYT ABCDE 2 Light("BIGELLOWTORCH")
+		SMYT ABCDEABCDEABCDE 2 Light("BIGELLOWTORCH")
 		Goto Stay
 	ClassicTorch:
 		SMYT ABCDE 4 Light("BIGELLOWTORCH")
@@ -1507,7 +1452,7 @@ Radius 5
 		TWBN AA 2 Light("SMALLREDTORCH") A_SpawnItemEx("LensFlareTorchOrangeWallTorch",0,0,20)
 		Loop
 	StayBlank:
-		WLRT ABCDE 2 Light("SMALLREDTORCH")
+		WLRT ABCDEABCDEABCDE 2 Light("SMALLREDTORCH")
 		Goto Stay
 	ClassicTorch:
 		WLRT ABCDE 4 Light("SMALLREDTORCH")
@@ -1536,7 +1481,7 @@ Radius 5
 		TWBN AA 2 Light("SMALLBLUETORCH") A_SpawnItemEx("LensFlareTorchBlueWallTorch",0,0,20)
 		Loop
 	StayBlank:
-		WLBT ABCDE 2 Light("SMALLBLUETORCH")
+		WLBT ABCDEABCDEABCDE 2 Light("SMALLBLUETORCH")
 		Goto Stay
 	ClassicTorch:
 		WLBT ABCDE 4 Light("SMALLBLUETORCH")
@@ -1565,7 +1510,7 @@ Radius 5
 		TWBN AA 2 Light("SMALLGREENTORCH") A_SpawnItemEx("LensFlareTorchGreenWallTorch",0,0,20)
 		Loop
 	StayBlank:
-		WLGT ABCDE 2 Light("SMALLGREENTORCH")
+		WLGT ABCDEABCDEABCDE 2 Light("SMALLGREENTORCH")
 		Goto Stay
 	ClassicTorch:
 		WLGT ABCDE 4 Light("SMALLGREENTORCH")
@@ -1593,7 +1538,7 @@ Radius 5
 		TWBN AA 2 Light("SMALLYELLOWTORCH") A_SpawnItemEx("LensFlareTorchYellowWallTorch",0,0,20)
 		Loop
 	StayBlank:
-		WLYT ABCDE 2 Light("SMALLYELLOWTORCH")
+		WLYT ABCDEABCDEABCDE 2 Light("SMALLYELLOWTORCH")
 		Goto Stay
 	ClassicTorch:
 		WLYT ABCDE 4 Light("SMALLYELLOWTORCH")
@@ -1608,7 +1553,7 @@ actor 64TechLampB : TechLamp// Replaces TechLamp (RandomSpawners.dec)
 	Spawn:
 		TLMP A 0 NoDelay A_SpawnItemEx("LightShaft2")
 	Stay:
-		TLMP A 2 Light("BIGLAMP") A_SpawnItemEx("ShortOrangeFlareSmallLamp",0,0,66)
+		TLMP A 35 Light("BIGLAMP") A_SpawnItemEx("ShortOrangeFlareSmallLamp",0,0,66)
 		Loop
 	}
 }
@@ -1620,7 +1565,7 @@ actor 64TechLamp2B : TechLamp2// Replaces TechLamp2 (RandomSpawners.dec)
 	Spawn:
 		TLP2 A 0 NoDelay A_SpawnItemEx("LightShaft2")
 	Stay:
-		TLP2 A 2 Light("SMALLLAMP") A_SpawnItemEx("ShortOrangeFlareSmallLamp",0,0,50)
+		TLP2 A 35 Light("SMALLLAMP") A_SpawnItemEx("ShortOrangeFlareSmallLamp",0,0,50)
 		Loop
 	}
 }
@@ -1632,7 +1577,7 @@ actor 64TechColumn : Column// Replaces Column (RandomSpawners.dec)
 	Spawn:
 		COLU A 0 NoDelay A_SpawnItemEx("LightShaft2")
 	Stay:
-		COLU A 2 Light("LampBasic") A_SpawnItemEx("ShortOrangeFlareSmallLamp",0,0,44)
+		COLU A 35 Light("LampBasic") A_SpawnItemEx("ShortOrangeFlareSmallLamp",0,0,44)
 		Loop
 	}
 }
@@ -1643,12 +1588,11 @@ Game Doom
 Radius 6
 Height 10
 Scale 0.8
-Alpha 0.3
+Alpha 0.2
 Renderstyle Add
--SOLID
++NOBLOCKMAP
 +FORCEYBILLBOARD
 +CLIENTSIDEONLY
-+THRUACTORS
 +NOGRAVITY
 +RANDOMIZE
 	States
@@ -1658,18 +1602,14 @@ Renderstyle Add
 	SpawnLoop:
 		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
-		TNT1 A 0 A_CheckSight("WaitSight")
 		SHF1 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		SHF2 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		SHF3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		SHF4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		SHF5 ABCDEFGHIJKLMNOPQRSTUVW 2
 		Goto SpawnLoop
-	WaitSight:
-		TNT1 A 3
-		Goto Live
 	NoShaft:
-		TNT1 A 175
+		TNT1 A 105
 		Goto SpawnLoop
 	}
 }
@@ -1685,16 +1625,12 @@ Alpha 0.15
 	SpawnLoop:
 		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
-		TNT1 A 0 A_CheckSight("WaitSight")
 		FBB3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB5 ABCDEFGHIJKL 2
 		Goto SpawnLoop
-	WaitSight:
-		TNT1 A 3
-		Goto Live
 	NoShaft:
-		TNT1 A 175
+		TNT1 A 105
 		Goto SpawnLoop
 	}
 }
@@ -1712,22 +1648,23 @@ Alpha 0.25
 	states
 	{
 	Spawn:
-		TNT1 A 1
+		TNT1 A 3
 	SpawnLoop:
 		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
-		TNT1 A 0 A_CheckSight("WaitSight")
 		FBB3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB5 ABCDEFGHIJKL 2
 		Goto SpawnLoop
-	WaitSight:
-		TNT1 A 3
-		Goto Live
 	NoShaft:
-		TNT1 A 175
+		TNT1 A 105
 		Goto SpawnLoop
 	}
+}
+
+actor LightShaft2BrighterSmall : LightShaft2Brighter
+{
+Scale 1.5
 }
 
 actor LightShaft2BrighterLess : LightShaft2
@@ -1737,20 +1674,16 @@ Alpha 0.19
 	States
 	{
 	Spawn:
-		TNT1 A 1
+		TNT1 A 3
 	SpawnLoop:
 		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
-		TNT1 A 0 A_CheckSight("WaitSight")
 		FBB3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB5 ABCDEFGHIJKL 2
 		Goto SpawnLoop
-	WaitSight:
-		TNT1 A 3
-		Goto Live
 	NoShaft:
-		TNT1 A 175
+		TNT1 A 105
 		Goto SpawnLoop
 	}
 }
@@ -1762,20 +1695,31 @@ Alpha 0.25
 	States
 	{
 	Spawn:
-		TNT1 A 1
+		TNT1 A 3
 	SpawnLoop:
 		"####" "#" 2 ACS_NamedExecuteAlways("LightAndFogChecker")
 	Live:
-		TNT1 A 0 A_CheckSight("WaitSight")
 		FBB1 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
 		FBB2 ABCDE 2
 		Goto SpawnLoop
-	WaitSight:
-		TNT1 A 3
-		Goto Live
 	NoShaft:
-		TNT1 A 175
+		TNT1 A 105
 		Goto SpawnLoop
+	}
+}
+
+actor BurningMarineSmoke : LightShaft2
+{
+XScale 1.8
+YScale 3
+Alpha 0.55
+	States
+	{
+	Spawn:
+		FBB3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+		FBB4 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+		FBB5 ABCDEFGHIJKL 2
+		Loop
 	}
 }
 
@@ -1783,7 +1727,7 @@ actor BurningBarrelSmoke : LightShaft2	//non-permanent smoke
 {
 XScale 1.8
 YScale 3
-Alpha 0.19
+Alpha 0.55
 	States
 	{
 	Spawn:
@@ -1817,10 +1761,10 @@ DamageType "Flames"
 	States
 	{
 	Spawn:
-		FCAN A 0 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		FCAN A 2 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
 		FCAN A 2 A_PlaySound("BDfireplace",CHAN_BODY,0.60,TRUE,2.25)
 	SemiStay:
-		TNT1 AAA 0 A_SpawnItemEx("BurningBarrelSmoke")
+		TNT1 A 0 A_SpawnItemEx("BurningBarrelSmoke")
 		TNT1 A 0 A_TakeInventory("BurningBarrelSmokeCheck",0)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
@@ -1833,7 +1777,9 @@ DamageType "Flames"
 		TNT1 A 0 A_JumpIfInventory("BurningBarrelSmokeCheck",8,"SemiStay")
 		Loop
 	StayBlank:
-		BBFA ABCDE 2 Bright Light("BIGREDTORCH")
+		BBFA ABCDEABC 2 Light("BIGREDTORCH")
+		TNT1 A 0 A_GiveInventory("BurningBarrelSmokeCheck",1)
+		TNT1 A 0 A_JumpIfInventory("BurningBarrelSmokeCheck",8,"SemiStay")
 		Goto Stay
 	Death:
 		TNT1 AAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",0,0,random(0,360),2,random(0,180))
@@ -2013,7 +1959,7 @@ Actor BD64HangingTechLampb 9923
 {
 //$category "Maps/BD64_Lights"
 Game Doom
-Height 56
+Height 54
 Radius 16
 +NOGRAVITY
 +SPAWNCEILING
@@ -2032,7 +1978,7 @@ actor BD64CeilingLightb 9924
 {
 //$category "Maps/BD64_Lights"
 Game Doom
-Height 16
+Height 11
 Radius 16
 +NOGRAVITY
 +SPAWNCEILING
@@ -2084,6 +2030,8 @@ RenderStyle Add
 		F2RE H 1 Bright Light("GROUNDFIRE") A_SpawnItemEx("RedFlare",0,0,32)
 		Loop
 	WaitSight:
+		F1RE ABCDEFGH 1
+		F2RE ABCDEFGH 1
 		F1RE ABCDEFGH 1
 		F2RE ABCDEFGH 1
 		Goto Stay

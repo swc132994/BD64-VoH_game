@@ -1005,6 +1005,15 @@ Skin 0 "bloodstains.png"
 Scale 40 40 1
 ZOffset -0.10
 FrameIndex BPDL A 0 0
+AngleOffset 90
+ZOffset -0.11
+FrameIndex BPDL B 0 0
+AngleOffset 180
+ZOffset -0.12
+FrameIndex BPDL C 0 0
+AngleOffset 270
+ZOffset -0.13
+FrameIndex BPDL D 0 0
 }
 
 Model CeilBloodSpotGreen
@@ -1015,6 +1024,15 @@ Skin 0 "bloodstains.png"
 Scale 40 40 1
 ZOffset -0.12
 FrameIndex BPDL A 0 0
+AngleOffset 90
+ZOffset -0.13
+FrameIndex BPDL B 0 0
+AngleOffset 180
+ZOffset -0.14
+FrameIndex BPDL C 0 0
+AngleOffset 270
+ZOffset -0.15
+FrameIndex BPDL D 0 0
 }
 
 Model CeilBloodSpotBLUE
@@ -1025,6 +1043,15 @@ Skin 0 "bloodstains.png"
 Scale 40 40 1
 ZOffset -0.13
 FrameIndex BPDL A 0 0
+AngleOffset 90
+ZOffset -0.14
+FrameIndex BPDL B 0 0
+AngleOffset 180
+ZOffset -0.15
+FrameIndex BPDL C 0 0
+AngleOffset 270
+ZOffset -0.16
+FrameIndex BPDL D 0 0
 }
 
 Model CeilBloodSpotLarge
@@ -1035,6 +1062,15 @@ Skin 0 "bloodstain.png"
 Scale 40 40 1
 ZOffset -0.14
 FrameIndex BPDL A 0 0
+AngleOffset 90
+ZOffset -0.15
+FrameIndex BPDL B 0 0
+AngleOffset 180
+ZOffset -0.16
+FrameIndex BPDL C 0 0
+AngleOffset 270
+ZOffset -0.17
+FrameIndex BPDL D 0 0
 }
 
 Model CeilBloodSpotLargeGreen
@@ -1045,6 +1081,15 @@ Skin 0 "bloodstain.png"
 Scale 40 40 1
 ZOffset -0.15
 FrameIndex BPDL A 0 0
+AngleOffset 90
+ZOffset -0.16
+FrameIndex BPDL B 0 0
+AngleOffset 180
+ZOffset -0.17
+FrameIndex BPDL C 0 0
+AngleOffset 270
+ZOffset -0.18
+FrameIndex BPDL D 0 0
 }
 
 Model CeilBloodSpotLargeBLUE
@@ -1055,6 +1100,15 @@ Skin 0 "bloodstain.png"
 Scale 40 40 1
 ZOffset -0.16
 FrameIndex BPDL A 0 0
+AngleOffset 90
+ZOffset -0.17
+FrameIndex BPDL B 0 0
+AngleOffset 180
+ZOffset -0.18
+FrameIndex BPDL C 0 0
+AngleOffset 270
+ZOffset -0.19
+FrameIndex BPDL D 0 0
 }
 
 ////OBJECTS

@@ -748,7 +748,7 @@ Decal "SmallerScorch"
 		TNT1 AAAA 0 A_CustomMissile("ExplosionParticleVeryFast",0,0,random(0,360),2,random(0,180))
 		TNT1 AAAA 0 A_CustomMissile("Shoque",0,0,random(0,360),2,random(0,180))
 		TNT1 AAAAA 0 A_CustomMissile("ExplosionParticleHeavy",0,0,random(0,360),2,random(0,360))
-		TNT1 AAAAAA 0 A_CustomMissile("SmallFireballFireTrail",0,0,random(0,360),2,random(0,360))
+		TNT1 AAAAAA 0 A_CustomMissile("ExplosionParticleHeavySmall",0,0,random(0,360),2,random(0,360))
 	QuietDeath:
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterSmall")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterSmall")

@@ -1992,7 +1992,7 @@ Scale 1
 		Wait
 	Death:
 		MANB C 35
-		TNT1 A 0 A_CustomMissile("Brutal_BloodSpot",0,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		MANB C -1
 		Stop
 	}
@@ -2010,7 +2010,7 @@ Scale 1
 		Wait
 	Death:
 		MANE C 35
-		TNT1 A 0 A_CustomMissile("Brutal_BloodSpot",0,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		MANE C -1
 		Stop
 	}

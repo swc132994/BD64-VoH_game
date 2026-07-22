@@ -370,7 +370,7 @@ Actor BrutalizedBFGDude_2 : BrutalizedBFGDude_1
 
 Actor 64EnemyBFGBall : 64BaronBallGreen
 {
-Scale 0.50
+Scale 0.5
 Radius 8
 Height 16
 DamageType "BFG"
@@ -383,11 +383,12 @@ DeathSound "weapons/bfgx"
 	states
 	{
 	Spawn:
-		BFS1 AABB 1 Bright A_SpawnItemEx("LensFlareProjectileGreen")
-		TNT1 A 0 A_SpawnItemEx("64EnemyBFGBallFlare")
+	Spawn:
+		TNT1 A 0 NoDelay A_JumpIf(waterlevel > 1,"DeathSplash")
+		BFS1 AB 1 Bright A_SpawnItemEx("64EnemyBFGBallFlare")
 		Loop
 	Death:
-		TNT1 A 1 A_CheckSight("QuietDeath")
+		TNT1 A 0 A_CheckSight("QuietDeath")
 		TNT1 AAA 0 A_CustomMissile("ExplosionParticleGreenHeavySmall",0,0,random(0,360),2,random(10,70))
 		TNT1 AAAAAAAAA 0 A_CustomMissile("ExplosionParticleGreenHeavySmall",0,0,random(0,360),2,random(20,50))
 		TNT1 AAAAA 0 A_CustomMissile("ExplosionParticleGreenVeryFast",0,0,random(0,360),2,random(20,40))
@@ -402,5 +403,8 @@ DeathSound "weapons/bfgx"
 		BFE1 C 4 Bright A_FadeOut(0.142857)
 		BFE1 DEF 1 Bright A_FadeOut(0.142857)
 		Stop
+	DeathSplash:
+		TNT1 A 0 A_CustomMissile("GiantWaterRicochet")
+		TNT1 A 0 A_CustomMissile("WaterParticleXSpawner",0,0,random(0,360),2,random(80,110))
 	}
 }

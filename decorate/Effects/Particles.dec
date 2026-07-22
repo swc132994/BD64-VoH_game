@@ -38,6 +38,20 @@ BounceCount 1
 	}
 }
 
+ACTOR ExplosionParticleHeavySmall : ExplosionParticleHeavy
+{
+Scale 0.04
+	States
+	{
+	Spawn:
+		SPRK O 8 Bright NoDelay A_JumpIf(waterlevel > 1,"Splash")
+	Death:
+		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
+		SPRK O 1 Bright A_FadeOut(0.03)
+		Loop
+	}
+}
+
 Actor ExplosionParticleHeavyBlue : ExplosionParticleHeavy
 {
 Translation "0:255=%[0,0,0]:[0,0,1]"

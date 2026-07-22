@@ -286,6 +286,15 @@ pulselight BIGLAMP
 }
 
 //TECH LAMPS & TORCHES
+flickerlight CANDLETORCH
+{
+	color 1.0 0.3 0.0
+	size 20
+	secondarySize 24
+	chance 0.5
+	offset 0 35 0
+}
+
 flickerlight SMALLREDTORCH
 {
 	color 1.0 0.3 0.0
@@ -443,30 +452,24 @@ pulselight ARMORBONUS
 }
 
 //Blue Keys
-pulselight BLUEKEY
+pointlight BLUEKEY
 {
 	color 0.0 0.0 0.6
-	size 10
-	secondarySize 14
-	interval 0.57
+	size 16
 }
 
 //Yellow Keys
-pulselight YELLOWKEY
+pointlight YELLOWKEY
 {
 	color 0.6 0.6 0.0
-	size 10
-	secondarySize 14
-	interval 0.57
+	size 16
 }
 
 //Red Keys
-pulselight REDKEY
+pointlight REDKEY
 {
 	color 0.6 0.0 0.0
-	size 10
-	secondarySize 14
-	interval 0.57
+	size 16
 }
 
 //Unmaker key 1 Orange
@@ -2020,21 +2023,21 @@ frame TNT2 {light Flashlight3}
 pointlight Flashlight1
 {
 color 0.9 0.9 0.9
-size 18
+size 20
 offset 0 0 0
 }
 
 pointlight Flashlight2
 {
 color 0.7 0.7 0.7
-size 36
+size 40
 offset 0 0 0
 }
 
 pointlight Flashlight3
 {
 color 0.4 0.4 0.4
-size 72
+size 80
 offset 0 0 0
 }
 

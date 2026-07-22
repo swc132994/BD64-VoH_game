@@ -16,7 +16,7 @@ Mass 0
 		Stop
 	Death:
 	XDeath:
-		TNT2 A 1
+		TNT2 A 1 A_AlertMonsters(100)
 		Stop
 	}
 }
@@ -35,22 +35,6 @@ Height 36
 +CLIENTSIDEONLY
 }
 
-ACTOR FlashlightAlerter : FlashlightProjectile
-{
-Radius 3
-Height 6
-States
-	{
-	Spawn:
-		TNT1 A 1
-		Stop
-	Death:
-	XDeath:
-		TNT1 A 1 A_AlertMonsters(100)
-		Stop
-	}
-}
-
 ACTOR FlashlightSpawner : CustomInventory
 {
 	States
@@ -60,10 +44,9 @@ ACTOR FlashlightSpawner : CustomInventory
 		TNT1 A 0 A_Print("$NEED_FLASHLIGHT",2)
 		Stop
 	FlashLightEnabled:
-		TNT1 A 0 A_FireCustomMissile("FlashlightAlerter",0,0)
-		TNT1 A 0 A_FireCustomMissile("FlashlightProjectile",0,0)
-		TNT1 A 0 A_FireCustomMissile("FlashlightProjectile2",0,0)
-		TNT1 A 0 A_FireCustomMissile("FlashlightProjectile3",0,0)
+		TNT1 A 0 A_FireCustomMissile("FlashlightProjectile",0,FALSE)
+		TNT1 A 0 A_FireCustomMissile("FlashlightProjectile2",0,FALSE)
+		TNT1 A 0 A_FireCustomMissile("FlashlightProjectile3",0,FALSE)
 		Stop
 	}
 }

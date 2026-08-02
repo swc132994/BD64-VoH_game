@@ -327,7 +327,6 @@ ReactionTime 20
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterMed")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterMed",0,0,4)
 		BFE2 ABCD 3 Bright
-		TNT1 A 0 A_SpawnItemEx("LiquidExplosionEffectSpawner")
 		TNT1 A 1 A_CustomMissile("PlasmaSmoke",1,0,random(0,360),2,random(0,160))
 		Stop
 	}
@@ -355,7 +354,6 @@ Gravity 0.4
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterMed")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterMed")
 		REDB ABCD 3 Bright
-		TNT1 A 0 A_SpawnItemEx("LiquidExplosionEffectSpawner")
 		TNT1 A 1 A_CustomMissile("PlasmaSmoke",1,0,random(0,360),2,random(0,160))
 		Stop
 	}

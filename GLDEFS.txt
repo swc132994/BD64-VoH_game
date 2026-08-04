@@ -289,10 +289,19 @@ pulselight BIGLAMP
 flickerlight CANDLETORCH
 {
 	color 1.0 0.3 0.0
-	size 20
-	secondarySize 24
+	size 22
+	secondarySize 26
 	chance 0.5
-	offset 0 35 0
+	offset 0 24 0
+}
+
+flickerlight GREENCANDLETORCH
+{
+	color 0.0 1.0 0.0
+	size 22
+	secondarySize 26
+	chance 0.5
+	offset 0 24 0
 }
 
 flickerlight SMALLREDTORCH

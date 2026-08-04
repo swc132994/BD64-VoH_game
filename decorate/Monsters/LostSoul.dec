@@ -3,7 +3,6 @@ Actor 64LostSoul : LostSoul// Replaces LostSoul (RandomSpawners.dec)
 //$category "Game/BD64_Monsters"
 Scale 0.8
 Health 50
-Alpha 0.99
 RenderStyle Normal
 PainChance "SuperFists",200
 PainChance "Kick",255

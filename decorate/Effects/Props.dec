@@ -1132,6 +1132,7 @@ Actor 64TorchTree : TorchTree Replaces TorchTree
 	}
 }
 
+/*
 actor 64BigTree : BigTree// Replaces BigTree (RandomSpawners.dec)
 {
 Scale 0.7
@@ -1177,6 +1178,7 @@ Scale 0.7
 	}
 }
 
+
 actor 64Candelabra : Candelabra// replaces Candelabra (RandomSpawners.dec)
 {
 Scale 0.7
@@ -1201,6 +1203,7 @@ Scale 0.7
 		Loop
 	}
 }
+*/
 
 actor 64RedTorch : RedTorch replaces RedTorch
 {
@@ -1393,13 +1396,13 @@ Scale 0.75
 		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
-		TSBN AAAAAAAAAAAA 3 Light("BIGELLOWTORCH") A_CustomMissile("RealFlameTrailsYellow",40,0,random(0,360),2,random(70,110))
+		TSBN AAAAAAAAAAAA 3 Light("BIGYELLOWTORCH") A_CustomMissile("RealFlameTrailsYellow",40,0,random(0,360),2,random(70,110))
 		Loop
 	StayBlank:
-		SMYT ABCDEABCDEABCDE 2 Light("BIGELLOWTORCH")
+		SMYT ABCDEABCDEABCDE 2 Light("BIGYELLOWTORCH")
 		Goto Stay
 	ClassicTorch:
-		SMYT ABCDE 4 Light("BIGELLOWTORCH")
+		SMYT ABCDE 4 Light("BIGYELLOWTORCH")
 		Loop
 	}
 }
@@ -1516,6 +1519,7 @@ Radius 5
 	}
 }
 
+/*
 actor 64TechLampB : TechLamp// Replaces TechLamp (RandomSpawners.dec)
 {
 	States
@@ -1527,6 +1531,7 @@ actor 64TechLampB : TechLamp// Replaces TechLamp (RandomSpawners.dec)
 		Loop
 	}
 }
+
 
 actor 64TechLamp2B : TechLamp2// Replaces TechLamp2 (RandomSpawners.dec)
 {
@@ -1540,6 +1545,7 @@ actor 64TechLamp2B : TechLamp2// Replaces TechLamp2 (RandomSpawners.dec)
 	}
 }
 
+
 actor 64TechColumn : Column// Replaces Column (RandomSpawners.dec)
 {
 	States
@@ -1551,6 +1557,7 @@ actor 64TechColumn : Column// Replaces Column (RandomSpawners.dec)
 		Loop
 	}
 }
+*/
 
 actor LightShaft1
 {
@@ -1755,7 +1762,8 @@ DamageType "Flames"
 	}
 }
 
-ACTOR 64EvilEye : EvilEye// Replaces EvilEye (RandomSpawners.dec)
+/*
+ACTOR 64EvilEye : EvilEye //Replaces EvilEye //(RandomSpawners.dec)
 {
 SCALE 0.8
 	States
@@ -1765,13 +1773,14 @@ SCALE 0.8
 		TNT1 A 0 A_Jump(128,"Stay2")
 		Goto Stay
 	Stay:
-		CEYE ABCB 5 Bright Light("SMALLGREENTORCH")
+		CEYE ABCB 5 Bright Light("GREENCANDLETORCH")
 		Loop
 	Stay2:
-		EYE2 ABCB 5 Bright Light("SMALLGREENTORCH")
+		EYE2 ABCB 5 Bright Light("GREENCANDLETORCH")
 		Loop
 	}
 }
+*/
 
 ACTOR 64Stalagmite : Stalagmite Replaces Stalagmite
 {
@@ -1787,6 +1796,7 @@ SCALE 0.8
 	}
 }
 
+/*
 ACTOR 64FloatingSkull : FloatingSkull// Replaces FloatingSkull (RandomSpawners.dec)
 {
 SCALE 0.8
@@ -1798,6 +1808,7 @@ SCALE 0.8
 		Loop
 	}
 }
+*/
 
 ACTOR 64ShortGreenColumn : ShortGreenColumn// Replaces ShortGreenColumn (Damned_Marines.dec)
 {
@@ -1819,6 +1830,7 @@ SCALE 0.8
 	}
 }
 
+/*
 ACTOR 64HeartColumn : HeartColumn// Replaces HeartColumn (RandomSpawners.dec)
 {
 Scale 0.8
@@ -1836,6 +1848,7 @@ Height 67
 		Loop
 	}
 }
+*/
 
 ACTOR 64ShortRedColumn : ShortRedColumn// Replaces ShortRedColumn (Damned_Marines.dec)
 {

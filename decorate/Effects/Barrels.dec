@@ -92,15 +92,19 @@ SeeSound "None"
 DeathSound "None"
 Decal "SmallerScorch"
 +MISSILE
++RIPPER
 +ACTIVATEPCROSS
 +BOUNCEONWALLS
++BOUNCEONFLOORS
 +BLOODLESSIMPACT
+BounceCount 3
+BounceFactor 0.1
 	States
 	{
 	Spawn:
 		FLRB P 0 NoDelay A_Jump(128,2)
 		TNT1 A 0 A_SetScale(0-ScaleX,ScaleY)	//FLIP IMAGE HORZ
-	Fly:
+	Bounce.Wall:
 		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
 		FLRB PQRSTU 2 A_SpawnItemEx("FlameTrails")
 		Loop
@@ -110,6 +114,9 @@ Decal "SmallerScorch"
 		FLRB Q -1 A_SpawnItemEx("TinyBurningPiece")
 		Stop
 		FLRB Q -1 A_SpawnItemEx("TinyBurningPiece2")
+		Stop
+	Splash:
+		FLRB Q -1
 		Stop
 	}
 }

@@ -22,7 +22,7 @@ damagefactor "Bullet",1.5
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 3
 		Stop
 	Nospawn:
@@ -103,7 +103,7 @@ actor HeadshotTarget2 : HeadshotTargetBase
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 2
 		Stop
 	}
@@ -115,7 +115,7 @@ BloodType "Brutal_BloodGreen"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 2
 		Stop
 	}
@@ -127,7 +127,7 @@ BloodType "Brutal_BloodBLUE"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 2
 		Stop
 	}
@@ -138,8 +138,8 @@ actor HeadshotTarget4 : HeadshotTargetBase
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
-		TNT1 A 5
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+		TNT1 A 4
 		Stop
 	}
 }
@@ -150,7 +150,7 @@ BloodType "Brutal_BloodGreen"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 4
 		Stop
 	}
@@ -162,7 +162,7 @@ BloodType "Brutal_BloodBLUE"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 4
 		Stop
 	}
@@ -173,7 +173,7 @@ actor HeadshotTarget6 : HeadshotTargetBase
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 6
 		Stop
 	}
@@ -185,7 +185,7 @@ BloodType "Brutal_BloodGreen"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 6
 		Stop
 	}
@@ -197,7 +197,7 @@ BloodType "Brutal_BloodBLUE"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 6
 		Stop
 	}
@@ -208,7 +208,7 @@ actor HeadshotTarget8 : HeadshotTargetBase
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 8
 		Stop
 	}
@@ -220,7 +220,7 @@ BloodType "Brutal_BloodGreen"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 8
 		Stop
 	}
@@ -232,7 +232,7 @@ BloodType "Brutal_BloodBLUE"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 8
 		Stop
 	}
@@ -243,7 +243,7 @@ actor HeadshotTarget10 : HeadshotTargetBase
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 10
 		Stop
 	}
@@ -265,7 +265,7 @@ actor HeadshotTarget12 : HeadshotTargetBase
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 12
 		Stop
 	}
@@ -277,7 +277,7 @@ BloodType "Brutal_BloodGreen"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 12
 		Stop
 	}
@@ -288,7 +288,7 @@ actor HeadshotTarget16 : HeadshotTargetBase
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 16
 		Stop
 	}
@@ -300,7 +300,7 @@ BloodType "Brutal_BloodGreen"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 16
 		Stop
 	}
@@ -312,7 +312,7 @@ BloodType "Brutal_BloodBLUE"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 16
 		Stop
 	}
@@ -323,7 +323,7 @@ actor HeadshotTarget20 : HeadshotTargetBase
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 20
 		Stop
 	}
@@ -335,7 +335,7 @@ BloodType "Brutal_BloodGreen"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 20
 		Stop
 	}
@@ -347,7 +347,7 @@ BloodType "Brutal_BloodBLUE"
 States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 20
 		Stop
 	}
@@ -358,7 +358,7 @@ actor HeadshotTarget23 : HeadshotTargetBase
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 23
 		Stop
 	}
@@ -370,7 +370,7 @@ BloodType "Brutal_BloodGreen"
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 23
 		Stop
 	}
@@ -382,7 +382,7 @@ BloodType "Brutal_BloodBLUE"
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 23
 		Stop
 	}
@@ -393,7 +393,7 @@ actor HeadshotTarget30 : HeadshotTargetBase
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 30
 		Stop
 	}
@@ -405,7 +405,7 @@ BloodType "Brutal_BloodGreen"
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 30
 		Stop
 	}
@@ -427,7 +427,7 @@ actor HeadshotTarget32 : HeadshotTargetBase
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
+//		TNT1 A 0 NoDelay A_CheckSight("Nospawn")
 		TNT1 A 32
 		Stop
 	}

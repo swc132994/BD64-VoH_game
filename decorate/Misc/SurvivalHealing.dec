@@ -241,7 +241,7 @@ SeeSound "weapons/shell"
 +FORCEXYBILLBOARD
 +NOTDMATCH
 +GHOST
-+ISMONSTER		//INFRARED
++CORPSE
 	States
 	{
 	Spawn:

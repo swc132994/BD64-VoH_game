@@ -20,6 +20,7 @@ actor 64DeadClassicCacodemon : DeadCacodemon
 {
 +LOOKALLAROUND
 +FLOORCLIP
++CORPSE
 scale 0.75
 	states
 	{
@@ -55,6 +56,7 @@ actor 64DeadCacodemon : DeadCacodemon// Replaces DeadCacodemon (RandomSpawners.d
 {
 +LOOKALLAROUND
 +FLOORCLIP
++CORPSE
 scale 0.75
 	states
 	{
@@ -90,6 +92,7 @@ actor 64DeadDemon : DeadDemon Replaces DeadDemon
 {
 +LOOKALLAROUND
 +FLOORCLIP
++CORPSE
 scale 0.75
 	states
 	{
@@ -133,6 +136,7 @@ actor 64DeadDoomImp : DeadDoomImp Replaces DeadDoomImp
 {
 +LOOKALLAROUND
 +FLOORCLIP
++CORPSE
 scale 0.75
 	states
 	{
@@ -220,8 +224,9 @@ RenderStyle Translucent
 
 actor 64DeadShotgunGuy : DeadShotgunGuy Replaces DeadShotgunGuy
 {
-+FLOORCLIP
 scale 0.75
++FLOORCLIP
++CORPSE
 	states
 	{
 	Spawn:
@@ -256,8 +261,9 @@ scale 0.75
 
 actor 64DeadZombieMan : 64DeadShotgunGuy Replaces DeadZombieMan
 {
-+FLOORCLIP
 scale 0.75
++FLOORCLIP
++CORPSE
 	states
 	{
 	Spawn:
@@ -769,7 +775,7 @@ actor 64DeadMarine : DeadMarine// replaces DeadMarine (RandomSpawners.dec)
 {
 scale 0.8
 +FLOORCLIP
-+ISMONSTER		//Infrared
++CORPSE
 	States
 	{
 	Spawn:
@@ -790,7 +796,7 @@ actor 64GibbedMarine : GibbedMarine// replaces GibbedMarine (RandomSpawners.dec)
 {
 scale 0.8
 +FLOORCLIP
-+ISMONSTER		//Infrared
++CORPSE
 	States
 	{
 	Spawn:
@@ -807,7 +813,7 @@ actor 64GibbedMarineExtra : GibbedMarineExtra// replaces GibbedMarineExtra (Rand
 {
 scale 0.8
 +FLOORCLIP
-+ISMONSTER		//Infrared
++CORPSE
 	States
 	{
 	Spawn:

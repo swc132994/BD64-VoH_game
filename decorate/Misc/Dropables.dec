@@ -1,17 +1,12 @@
+//WEAPON DROP SPAWNERS
 Actor ShotgunDrop
 {
-	states
+	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(128,"DropAmmo")		
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedShotgun",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedShotgun2",20,0,180,2,random(30,50))
-		stop
+		TNT1 A 0 NoDelay A_Jump(128,"DropAmmo") //50% Weapon /50% Ammo
+		TNT1 A 1 A_SpawnItemEx("DroppedShotgun",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
+		Stop
 	DropAmmo:
 		TNT1 A 1 A_DropItem("64Shell")
 		Stop
@@ -20,422 +15,137 @@ Actor ShotgunDrop
 
 Actor ShotgunDropNPC : ShotgunDrop
 {
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(233,"DropAmmo")	//90%	
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedShotgun",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedShotgun2",20,0,180,2,random(30,50))
-		stop
-	DropAmmo:
-		TNT1 A 1 A_DropItem("64Shell")
-		Stop
-	}
-}
-
-Actor DropedShotgun
-{
-XScale 0.7
-YScale 0.4
-damage 0
-speed 6
-health 1
-radius 16
-height 4
-Mass 1
-Gravity 0.9
-+MISSILE
-+THRUACTORS
-+NOTELEPORT
-+NOBLOCKMAP
-+BLOODLESSIMPACT
-+FORCEXYBILLBOARD
-+NODAMAGETHRUST
-+MOVEWITHSECTOR
-+CORPSE
--DONTSPLASH
-+DROPPED
 	States
 	{
 	Spawn:
-		TRII A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		TRII BCDEFGH 4
-		Loop
-	Death:
-		TNT1 A 0 A_DropItem("64ShotgunTACTICAL")
-		TNT1 A 1 A_DropItem("64Shotgun")
+		TNT1 A 0 NoDelay A_Jump(233,"DropAmmo") //~90% Ammo
+		TNT1 A 1 A_SpawnItemEx("DroppedShotgun",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
 		Stop
-	}
-}
-
-Actor DropedShotgun2 : DropedShotgun
-{
-	States
-	{
-	Spawn:
-		TRII H 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		TRII GFEDCBA 4
 	}
 }
 
 Actor SSGDrop : ShotgunDrop
 {
-	states
+	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(128,"DropAmmo")	
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedSSG",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedSSG2",20,0,180,2,random(30,50))
-		stop
+		TNT1 A 0 NoDelay A_Jump(128,"DropAmmo")
+		TNT1 A 1 A_SpawnItemEx("DroppedSSG",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
+		Stop
 	DropAmmo:
 		TNT1 A 1 A_DropItem("64Shell")
 		Stop
 	}
 }
 
-Actor SSGDropNPC : ShotgunDrop
-{
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(233,"DropAmmo")//90%	
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedSSG",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedSSG2",20,0,180,2,random(30,50))
-		stop
-	DropAmmo:
-		TNT1 A 1 A_DropItem("64Shell")
-		Stop
-	}
-}
-
-ACTOR DropedSSG : DropedShotgun
+Actor SSGDropNPC : SSGDrop
 {
 	States
 	{
 	Spawn:
-		TRI1 A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		TRI1 BCDEFGH 4
-	Death:
-		TNT1 A 0 A_DropItem("64SuperShotgunTACTICAL")
-		TNT1 A 1 A_DropItem("64SuperShotgun")
+		TNT1 A 0 NoDelay A_Jump(233,"DropAmmo")
+		TNT1 A 1 A_SpawnItemEx("DroppedSSG",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
 
-ACTOR DropedSSG2 : DropedSSG
+Actor RifleDrop : ShotgunDrop
 {
 	States
 	{
 	Spawn:
-		TRI1 H 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		TRI1 GFEDCBA 4
-	}
-}
-
-actor RifleDrop : ShotgunDrop
-{
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(85,"DropAmmo")	//33.333%
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedRifle",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedRifle2",20,0,180,2,random(30,50))
-		stop
+		TNT1 A 0 NoDelay A_Jump(85,"DropAmmo") //~33% Ammo
+		TNT1 A 1 A_SpawnItemEx("DroppedRifle",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
+		Stop
 	DropAmmo:
 		TNT1 A 1 A_DropItem("64HighCaliberBox")
 		Stop
 	}
 }
 
-actor RifleDropNPC : ShotgunDrop
-{
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(233,"DropAmmo")	//90%
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedRifle",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedRifle2",20,0,180,2,random(30,50))
-		stop
-	DropAmmo:
-		TNT1 A 1 A_DropItem("64HighCaliberBox")
-		Stop
-	}
-}
-
-ACTOR DropedRifle : DropedShotgun
+Actor RifleDropNPC : RifleDrop
 {
 	States
 	{
 	Spawn:
-		2RI2 A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		2RI2 BCDEFGH 4
-	Death:
-		TNT1 A 0 A_DropItem("64RifleTactical")
-		TNT1 A 1 A_DropItem("64Rifle")
+		TNT1 A 0 NoDelay A_Jump(233,"DropAmmo")
+		TNT1 A 1 A_SpawnItemEx("DroppedRifle",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
 
-ACTOR DropedRifle2 : DropedRifle
-{
-	States
-	{
-	 Spawn:
-		2RI2 H 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		2RI2 GFEDCBA 4
-	}
-}
-
-actor ChaingunDrop : ShotgunDrop
-{
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(85,"DropAmmo")	//33.333%	
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedChaingun",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedChaingun2",20,0,180,2,random(30,50))
-		stop
-	DropAmmo:
-		TNT1 A 1 A_DropItem("64HighCaliberBox")
-		Stop
-	}
-}
-
-actor ChaingunDropNPC : ShotgunDrop
-{
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(233,"DropAmmo")	//90%	
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedChaingun",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedChaingun2",20,0,180,2,random(30,50))
-		stop
-	DropAmmo:
-		TNT1 A 1 A_DropItem("64HighCaliberBox")
-		Stop
-	}
-}
-
-ACTOR DropedChaingun : DropedShotgun
+Actor ChaingunDrop : RifleDrop
 {
 	States
 	{
 	Spawn:
-		TRI3 A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		TRI3 BCDEFGH 4
-	Death:
-		TNT1 A 0 A_DropItem("64ChaingunTACTICAL")
-		TNT1 A 1 A_DropItem("64Chaingun")
+		TNT1 A 0 NoDelay A_Jump(85,"DropAmmo")
+		TNT1 A 1 A_SpawnItemEx("DroppedChaingun",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
 
-ACTOR DropedChaingun2 : DropedChaingun
+Actor ChaingunDropNPC : ChaingunDrop
 {
 	States
 	{
 	Spawn:
-		TRI3 H 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		TRI3 GFEDCBA 4
+		TNT1 A 0 NoDelay A_Jump(233,"DropAmmo")
+		TNT1 A 1 A_SpawnItemEx("DroppedChaingun",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
+		Stop
 	}
 }
 
-actor ChainsawDrop : ShotgunDrop
+Actor ChainsawDrop : ShotgunDrop
 {
-	states
+	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(128,"DropAmmo")		
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedChainsaw",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedChainsaw2",20,0,180,2,random(30,50))
-		stop
+		TNT1 A 0 NoDelay A_Jump(128,"DropAmmo")
+		TNT1 A 1 A_SpawnItemEx("DroppedChainsaw",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
+		Stop
 	DropAmmo:
 		TNT1 A 1 A_DropItem("SawGas")
 		Stop
 	}
 }
 
-ACTOR DropedChainsaw : DropedShotgun
+Actor PistolDrop : ShotgunDrop
 {
 	States
 	{
 	Spawn:
-		CWAS A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		CWAS BCDEFGH 4
-	Death:
-		TNT1 A 0 A_DropItem("64ChainsawTACTICAL")
-		TNT1 A 1 A_DropItem("64Chainsaw")
+		TNT1 A 0 NoDelay A_Jump(128,"DropAmmo")
+		TNT1 A 1 A_SpawnItemEx("DroppedPistol",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
 		Stop
-	}
-}
-
-ACTOR DropedChainsaw2 : DropedChainsaw
-{
-	States
-	{
-	Spawn:
-		CWAS H 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		CWAS GFEDCBA 4
-	}
-}
-
-Actor PistolDrop
-{
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(128,"DropAmmo")		
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedPistol",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedPistol2",20,0,180,2,random(30,50))
-		stop
 	DropAmmo:
 		TNT1 A 1 A_DropItem("64Clip")
 		Stop
 	}
 }
 
-ACTOR DropedPistol : DropedShotgun
+Actor PlasmaRifleDrop : ShotgunDrop
 {
 	States
 	{
 	Spawn:
-		PIST A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		PIST AAAAAAA 4
-	Death:
-		TNT1 A 0 A_DropItem("64PistolTACTICAL")
-		TNT1 A 1 A_DropItem("64Pistol")
+		TNT1 A 0 NoDelay A_Jump(255,"DropAmmo") //~99.6% Ammo
+		TNT1 A 1 A_SpawnItemEx("DroppedPlasmaRifle",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
 		Stop
-	}
-}
-
-ACTOR DropedPistol2 : DropedPistol
-{
-	States
-	{
-	Spawn:
-		PIST A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		PIST AAAAAAA 4
-	}
-}
-
-Actor PlasmaRifleDrop
-{
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(255,"DropAmmo")	//99.5%
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedPlasmaRifle",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedPlasmaRifle2",20,0,180,2,random(30,50))
-		stop
 	DropAmmo:
 		TNT1 A 1 A_DropItem("64Cell")
 		Stop
 	}
 }
 
-ACTOR DropedPlasmaRifle : DropedShotgun
+Actor BFG9000Drop : PlasmaRifleDrop
 {
 	States
 	{
 	Spawn:
-		PLAS A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		PLAS AAAAAAA 4
-	Death:
-		TNT1 A 0 A_DropItem("64PlasmaRifleTACTICAL")
-		TNT1 A 1 A_DropItem("64PlasmaRifle")
+		TNT1 A 0 NoDelay A_Jump(255,"DropAmmo")
+		TNT1 A 1 A_SpawnItemEx("DroppedBFG9000",0,0,12,frandom(3.0,6.0),0,frandom(2.0,4.0),random(-90,90),SXF_NOCHECKPOSITION)
 		Stop
-	}
-}
-
-ACTOR DropedPlasmaRifle2 : DropedPlasmaRifle
-{
-	States
-	{
-	Spawn:
-		PLAS A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		PLAS AAAAAAA 4
-	}
-}
-
-Actor BFG9000Drop
-{
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_Jump(255,"DropAmmo")	//99.5%
-		TNT1 A 0 A_Jump(128,"DropAmmo")	//50%
-		TNT1 A 0 A_Jump(256,"Spawn1","Spawn2")
-	Spawn1:
-		TNT1 A 1 A_CustomMissile("DropedBFG9000",20,0,0,2,random(30,50))
-		stop
-	Spawn2:
-		TNT1 A 1 A_CustomMissile("DropedBFG90002",20,0,180,2,random(30,50))
-		stop
 	DropAmmo:
 		TNT1 A 0 A_Jump(32,2)
 		TNT1 A 1 A_DropItem("64Cell")
@@ -445,28 +155,182 @@ Actor BFG9000Drop
 	}
 }
 
-ACTOR DropedBFG9000 : DropedShotgun
+//DROPPED WEAPON PROJECTILES
+Actor DroppedShotgun
 {
+XScale 0.7
+YScale 0.4
+Speed 4
+Radius 16
+Height 4
+Gravity 0.9
++MISSILE
++THRUACTORS
++NOTELEPORT
++NOBLOCKMAP
++FORCEXYBILLBOARD
 	States
 	{
 	Spawn:
-		BFUG A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		BFUG AAAAAAA 4
+		TNT1 A 0 NoDelay A_Jump(128,"SpinReverse")
+	SpinForward:
+		TRII ABCDEFGH 4
+		Loop
+	SpinReverse:
+		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
+	SpinReverseLoop:
+		TRII GFEDCBA 4
+		Loop
 	Death:
-		TNT1 A 0 A_DropItem("64BFG9000TACTICAL")
-		TNT1 A 1 A_DropItem("64BFG9000")
+		TNT1 A 0 A_DropItem("64ShotgunTACTICAL")
+		TNT1 A 1 A_DropItem("64Shotgun")
 		Stop
 	}
 }
 
-ACTOR DropedBFG90002 : DropedBFG9000
+ACTOR DroppedSSG : DroppedShotgun
 {
 	States
 	{
 	Spawn:
+		TNT1 A 0 NoDelay A_Jump(128,"SpinReverse")
+	SpinForward:
+		TRI1 ABCDEFGH 4
+		Loop
+	SpinReverse:
+		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
+	SpinReverseLoop:
+		TRI1 GFEDCBA 4
+		Loop
+	Death:
+		TNT1 A 0 A_DropItem("64SuperShotgunTACTICAL")
+		TNT1 A 1 A_DropItem("64SuperShotgun")
+		Stop
+	}
+}
+
+ACTOR DroppedRifle : DroppedShotgun
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_Jump(128,"SpinReverse")
+	SpinForward:
+		2RI2 ABCDEFGH 4
+		Loop
+	SpinReverse:
+		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
+	SpinReverseLoop:
+		2RI2 GFEDCBA 4
+		Loop
+	Death:
+		TNT1 A 0 A_DropItem("64RifleTactical")
+		TNT1 A 1 A_DropItem("64Rifle")
+		Stop
+	}
+}
+
+ACTOR DroppedChaingun : DroppedShotgun
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_Jump(128,"SpinReverse")
+	SpinForward:
+		TRI3 ABCDEFGH 4
+		Loop
+	SpinReverse:
+		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
+	SpinReverseLoop:
+		TRI3 GFEDCBA 4
+		Loop
+	Death:
+		TNT1 A 0 A_DropItem("64ChaingunTACTICAL")
+		TNT1 A 1 A_DropItem("64Chaingun")
+		Stop
+	}
+}
+
+ACTOR DroppedChainsaw : DroppedShotgun
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_Jump(128,"SpinReverse")
+	SpinForward:
+		CWAS ABCDEFGH 4
+		Loop
+	SpinReverse:
+		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
+	SpinReverseLoop:
+		CWAS GFEDCBA 4
+		Loop
+	Death:
+		TNT1 A 0 A_DropItem("64ChainsawTACTICAL")
+		TNT1 A 1 A_DropItem("64Chainsaw")
+		Stop
+	}
+}
+
+ACTOR DroppedPistol : DroppedShotgun
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_Jump(128,"Flip")
+	SpawnLoop:
+		PIST A 4
+		Loop
+	Flip:
+		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
+	FlipLoop:
+		PIST A 4
+		Loop
+	Death:
+		TNT1 A 0 A_DropItem("64PistolTACTICAL")
+		TNT1 A 1 A_DropItem("64Pistol")
+		Stop
+	}
+}
+
+ACTOR DroppedPlasmaRifle : DroppedShotgun
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_Jump(128,"Flip")
+	SpawnLoop:
+		PLAS A 4
+		Loop
+	Flip:
+		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
+	FlipLoop:
+		PLAS A 4
+		Loop
+	Death:
+		TNT1 A 0 A_DropItem("64PlasmaRifleTACTICAL")
+		TNT1 A 1 A_DropItem("64PlasmaRifle")
+		Stop
+	}
+}
+
+ACTOR DroppedBFG9000 : DroppedShotgun
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_Jump(128,"Flip")
+	SpawnLoop:
 		BFUG A 4
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",FALSE)
-		BFUG AAAAAAA 4
+		Loop
+	Flip:
+		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
+	FlipLoop:
+		BFUG A 4
+		Loop
+	Death:
+		TNT1 A 0 A_DropItem("64BFG9000TACTICAL")
+		TNT1 A 1 A_DropItem("64BFG9000")
+		Stop
 	}
 }

@@ -46,7 +46,7 @@ BounceFactor 0.1
 
 ACTOR XDeath1Green : XDeath1
 {
-Translation "0:255=%[0,0,0]:[0.5,1,0]"//Green
+Translation "0:255=%[0,0,0]:[0.5,1,0]"
 Decal "BrutalBloodSuperGreen"
 	States
 	{
@@ -70,7 +70,7 @@ Decal "BrutalBloodSuperGreen"
 
 ACTOR XDeath1Blue : XDeath1
 {
-Translation "ICE"//Blue
+Translation "ICE"
 Decal "BrutalBloodSuperBlue"
 	States
 	{
@@ -98,6 +98,7 @@ Scale 1.1
 radius 6
 Height 5
 Speed 13
+Mass 5
 Gravity 0.8
 SeeSound "misc/xdeath4"
 DeathSound "misc/xdeath3"
@@ -171,7 +172,7 @@ BounceFactor 0.1
 
 ACTOR XDeath2Green : XDeath2
 {
-Translation "0:255=%[0,0,0]:[0.6,1,0]"//Green
+Translation "0:255=%[0,0,0]:[0.6,1,0]"
 Decal "BrutalBloodSuperGreen"
 	States
 	{
@@ -224,7 +225,7 @@ Decal "BrutalBloodSuperGreen"
 
 ACTOR XDeath2Blue : XDeath2
 {
-Translation "ICE"//Blue
+Translation "ICE"
 Decal "BrutalBloodSuperBlue"
 	States
 	{
@@ -344,7 +345,7 @@ Decal "BrutalBloodSplat"
 
 ACTOR XDeath3Green : XDeath3
 {
-Translation "0:255=%[0,0,0]:[0.6,1,0]"//Green
+Translation "0:255=%[0,0,0]:[0.6,1,0]"
 Decal "BrutalBloodSplatGreen"
 	States
 	{
@@ -397,7 +398,7 @@ Decal "BrutalBloodSplatGreen"
 
 ACTOR XDeath3Blue : XDeath3
 {
-Translation "ICE"//Blue
+Translation "ICE"
 Decal "BrutalBloodSplatBlue"
 	States
 	{
@@ -625,7 +626,7 @@ Decal "BrutalBloodSuper"
 
 ACTOR XDeath5Green : XDeath5
 {
-Translation "0:255=%[0,0,0]:[0.5,1,0]"//Green
+Translation "0:255=%[0,0,0]:[0.5,1,0]"
 Decal "BrutalBloodSuperGreen"
 	States
 	{
@@ -677,7 +678,7 @@ Decal "BrutalBloodSuperGreen"
 
 ACTOR XDeath5Blue : XDeath5
 {
-Translation "ICE"//Blue
+Translation "ICE"
 Decal "BrutalBloodSuperBlue"
 	States
 	{
@@ -970,7 +971,7 @@ Decal "BrutalBloodSplat"
 
 ACTOR IntestineGreen : XDeath1	//modelled
 {
-Translation "0:255=%[0,0,0]:[0.7,1,0]"//Green
+Translation "0:255=%[0,0,0]:[0.7,1,0]"
 Scale 0.8
 Radius 8
 Height 12
@@ -1040,7 +1041,7 @@ Decal "BrutalBloodSplatGreen"
 
 ACTOR IntestineBlue : XDeath1	//modelled
 {
-Translation "ICE"//Blue
+Translation "ICE"
 Scale 0.8
 Radius 8
 Height 12
@@ -1145,7 +1146,7 @@ Decal "BrutalBloodSuper"
 
 ACTOR BurningXDeath1Blue : BurningXDeath1
 {
-Translation "0:255=%[0,0,0]:[0.5,0,1]"//Blue
+Translation "0:255=%[0,0,0]:[0.5,0,1]"
 Decal "BrutalBloodSuperBlue"
 	States
 	{
@@ -1228,7 +1229,11 @@ BounceFactor 0.1
 		TNT1 A 0 A_PlaySound("misc/xdeath3",CHAN_BODY)
 		TNT1 A 0 A_QueueCorpse
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpot")
-		TNT1 BO 0 A_Jump(128,"Rest")//Random frame B or O
+		TNT1 A 0 A_Jump(256,1,2) //Random Frame B or O
+		TNT1 B 0
+		Goto Rest
+		TNT1 O 0
+		Goto Rest
 	Rest:
 		XDT5 "#" 3 ACS_NamedExecuteAlways("LowBloodCheckerACS")
 		XDT5 "#" 800
@@ -1244,7 +1249,7 @@ BounceFactor 0.1
 
 ACTOR SmallBrainPieceGreen : SmallBrainPiece	//sticky gib
 {
-Translation "0:255=%[0,0,0]:[0.5,1,0]"//Green
+Translation "0:255=%[0,0,0]:[0.5,1,0]"
 Decal "BrutalBloodSplatGreen"
 	States
 	{
@@ -1279,7 +1284,11 @@ Decal "BrutalBloodSplatGreen"
 		TNT1 A 0 A_PlaySound("misc/xdeath3",CHAN_BODY)
 		TNT1 A 0 A_QueueCorpse
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpotGreen")
-		TNT1 BO 0 A_Jump(128,"Rest")//Random frame B or O
+		TNT1 A 0 A_Jump(256,1,2) //Random Frame B or O
+		TNT1 B 0
+		Goto Rest
+		TNT1 O 0
+		Goto Rest
 	Rest:
 		XDT5 "#" 3 ACS_NamedExecuteAlways("LowBloodCheckerACS")
 		XDT5 "#" 800
@@ -1295,7 +1304,7 @@ Decal "BrutalBloodSplatGreen"
 
 ACTOR SmallBrainPieceBlue : SmallBrainPiece	//sticky gib
 {
-Translation "Ice"//Blue
+Translation "Ice"
 Decal "BrutalBloodSplatBlue"
 	States
 	{
@@ -1330,7 +1339,11 @@ Decal "BrutalBloodSplatBlue"
 		TNT1 A 0 A_PlaySound("misc/xdeath3",CHAN_BODY)
 		TNT1 A 0 A_QueueCorpse
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpotBlue")
-		TNT1 BO 0 A_Jump(128,"Rest")//Random frame B or O
+		TNT1 A 0 A_Jump(256,1,2) //Random Frame B or O
+		TNT1 B 0
+		Goto Rest
+		TNT1 O 0
+		Goto Rest
 	Rest:
 		XDT5 "#" 3 ACS_NamedExecuteAlways("LowBloodCheckerACS")
 		XDT5 "#" 800
@@ -1379,7 +1392,11 @@ BounceFactor 0.1
 	Death:
 		TNT1 A 0 A_QueueCorpse
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpot")
-		TNT1 AC 0 A_Jump(128,"Rest")//Random frame A or C
+		TNT1 A 0 A_Jump(256,1,2) //Random Frame A or C
+		TNT1 A 0
+		Goto Rest
+		TNT1 C 0
+		Goto Rest
 	Rest:
 		BRIB "#" 3 ACS_NamedExecuteAlways("LowBloodCheckerACS")
 		BRIB "#" 800
@@ -1426,7 +1443,15 @@ BounceFactor 0.7
 	Death:
 		TNT1 A 0 A_QueueCorpse
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpot")
-		TNT1 EFGH 0 A_Jump(64,"Rest")//Random frame E F G H
+		TNT1 A 0 A_Jump(256,1,2,3,4) //Random Frame E F G H
+		TNT1 E 0
+		Goto Rest
+		TNT1 F 0
+		Goto Rest
+		TNT1 G 0
+		Goto Rest
+		TNT1 H 0
+		Goto Rest
 	Rest:
 		BRIB "#" 3 ACS_NamedExecuteAlways("LowBloodCheckerACS")
 		BRIB "#" 800
@@ -1441,7 +1466,7 @@ BounceFactor 0.7
 
 ACTOR XDeathEyesGreen : XDeathEyes
 {
-Translation "0:255=%[0,0,0]:[0.5,1,0]"//Green
+Translation "0:255=%[0,0,0]:[0.5,1,0]"
 Decal "BrutalBloodSplatGreen"
 	States
 	{
@@ -1453,7 +1478,15 @@ Decal "BrutalBloodSplatGreen"
 	Death:
 		TNT1 A 0 A_QueueCorpse
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpotGreen")
-		TNT1 EFGH 0 A_Jump(64,"Rest")//Random frame E F G H
+		TNT1 A 0 A_Jump(256,1,2,3,4) //Random Frame E F G H
+		TNT1 E 0
+		Goto Rest
+		TNT1 F 0
+		Goto Rest
+		TNT1 G 0
+		Goto Rest
+		TNT1 H 0
+		Goto Rest
 	Rest:
 		BRIB "#" 3 ACS_NamedExecuteAlways("LowBloodCheckerACS")
 		BRIB "#" 800
@@ -1468,7 +1501,7 @@ Decal "BrutalBloodSplatGreen"
 
 ACTOR XDeathEyesBlue : XDeathEyes
 {
-Translation "Ice"//Blue
+Translation "Ice"
 Decal "BrutalBloodSplatBlue"
 	States
 	{
@@ -1480,7 +1513,15 @@ Decal "BrutalBloodSplatBlue"
 	Death:
 		TNT1 A 0 A_QueueCorpse
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpotBlue")
-		TNT1 EFGH 0 A_Jump(64,"Rest")//Random frame E F G H
+		TNT1 A 0 A_Jump(256,1,2,3,4) //Random Frame E F G H
+		TNT1 E 0
+		Goto Rest
+		TNT1 F 0
+		Goto Rest
+		TNT1 G 0
+		Goto Rest
+		TNT1 H 0
+		Goto Rest
 	Rest:
 		BRIB "#" 3 ACS_NamedExecuteAlways("LowBloodCheckerACS")
 		BRIB "#" 800
@@ -1507,7 +1548,15 @@ Decal "BrutalBloodSplat"
 	Death:
 		TNT1 A 0 A_QueueCorpse
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpot")
-		TNT1 EFGH 0 A_Jump(64,"Rest")//Random frame E F G H
+		TNT1 A 0 A_Jump(256,1,2,3,4) //Random Frame E F G H
+		TNT1 E 0
+		Goto Rest
+		TNT1 F 0
+		Goto Rest
+		TNT1 G 0
+		Goto Rest
+		TNT1 H 0
+		Goto Rest
 	Rest:
 		BRIB "#" 3 ACS_NamedExecuteAlways("LowBloodCheckerACS")
 		BRIB "#" 800
@@ -1548,12 +1597,12 @@ Height 4
 		Wait
 	Death:
 		TNT1 A 0 A_Jump(128,"Death2")
-		TRG3 I 35
+		TRG3 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TRG3 I -1
 		Stop
 	Death2:
-		TRG3 J 35
+		TRG3 J 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TRG3 J -1
 		Stop
@@ -1573,7 +1622,7 @@ ACTOR XDeathZombieLeg1 : XDeathZombieArm1
 		TRG4 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		TRG4 I 35
+		TRG4 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TRG4 I -1
 		Stop
@@ -1590,7 +1639,7 @@ ACTOR XDeathShotgunGuyLeg : XDeathZombieArm1
 		SGL4 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		SGL4 I 35
+		SGL4 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		SGL4 I -1
 		Stop
@@ -1608,7 +1657,7 @@ ACTOR XDeathMarineLeg1 : XDeathZombieArm1
 		MRG4 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		MRG4 I 35
+		MRG4 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		MRG4 I -1
 		Stop
@@ -1625,7 +1674,7 @@ ACTOR XDeathMarineArm1 : XDeathZombieArm1
 		MRG3 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		MRG3 I 35
+		MRG3 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		MRG3 I -1
 		Stop
@@ -1643,7 +1692,7 @@ ACTOR MarinePlasmaLeg1 : XDeathZombieArm1
 		PMG4 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		PMG4 I 35
+		PMG4 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		PMG4 I -1
 		Stop
@@ -1660,7 +1709,7 @@ ACTOR MarinePlasmaArm1 : XDeathZombieArm1
 		PMG3 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		PMG3 I 35
+		PMG3 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		PMG3 I -1
 		Stop
@@ -1679,12 +1728,12 @@ ACTOR XDeathZombieArmBlack : XDeathZombieArm1
 		Wait
 	Death:
 		TNT1 A 0 A_Jump(128,"Death2")
-		TRS3 I 35
+		TRS3 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TRS3 I -1
 		Stop
 	Death2:
-		TRS3 J 35
+		TRS3 J 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TRS3 J -1
 		Stop
@@ -1701,7 +1750,7 @@ ACTOR XDeathZombieLegBlack : XDeathZombieArm1
 		TRS4 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		TRS4 I 35
+		TRS4 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TRS4 I -1
 		Stop
@@ -1719,7 +1768,7 @@ ACTOR XDeathZombieArmRed : XDeathZombieArm1
 		ZMG3 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		ZMG3 I 35
+		ZMG3 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		ZMG3 I -1
 		Stop
@@ -1736,7 +1785,7 @@ ACTOR XDeathZombieLegRed : XDeathZombieArm1
 		ZMG4 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		ZMG4 I 35
+		ZMG4 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		ZMG4 I -1
 		Stop
@@ -1754,7 +1803,7 @@ ACTOR XDeathWaffenArm : XDeathZombieArm1
 		NZAG ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		NZAG I 35
+		NZAG I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		NZAG I -1
 		Stop
@@ -1773,7 +1822,7 @@ Scale 0.75
 		TRG1 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		TRG1 I 35
+		TRG1 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TRG1 I -1
 		Stop
@@ -1791,7 +1840,7 @@ Scale 0.75
 		TRG2 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		TRG2 I 35
+		TRG2 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TRG2 I -1
 		Stop
@@ -1817,7 +1866,7 @@ Decal "BrutalBloodSplatBlue"
 		"####" "#" 4
 		Wait
 	Death:
-		NRG1 I 35
+		NRG1 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		NRG1 I -1
 		Stop
@@ -1842,7 +1891,7 @@ Decal "BrutalBloodSplatBlue"
 		"####" "#" 4
 		Wait
 	Death:
-		NRG2 I 35
+		NRG2 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		NRG2 I -1
 		Stop
@@ -1860,7 +1909,7 @@ ACTOR XDeathPinkyArm1 : XDeathZombieArm1
 		TRG5 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		TRG5 I 35
+		TRG5 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TRG5 I -1
 		Stop
@@ -1877,7 +1926,7 @@ ACTOR XDeathPinkyLeg1 : XDeathZombieArm1
 		TRG6 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		TRG6 I 35
+		TRG6 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TRG6 I -1
 		Stop
@@ -1897,7 +1946,7 @@ Renderstyle Translucent
 		PRG5 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		PRG5 I 35
+		PRG5 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		PRG5 I -1
 		Stop
@@ -1916,7 +1965,7 @@ Renderstyle Translucent
 		PRG6 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		PRG6 I 35
+		PRG6 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		PRG6 I -1
 		Stop
@@ -1937,7 +1986,7 @@ Renderstyle Translucent
 		NRG5 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		NRG5 I 35
+		NRG5 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		NRG5 I -1
 		Stop
@@ -1957,7 +2006,7 @@ Renderstyle Translucent
 		NRG6 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		NRG6 I 35
+		NRG6 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		NRG6 I -1
 		Stop
@@ -1981,7 +2030,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		GRG5 I 35
+		GRG5 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotGreen")
 		GRG5 I -1
 		Stop
@@ -2004,7 +2053,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		GRG6 I 35
+		GRG6 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotGreen")
 		GRG6 I -1
 		Stop
@@ -2022,7 +2071,7 @@ ACTOR XDeathFatsoCannon : XDeathZombieArm1
 		FTX3 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		FTX3 I 35
+		FTX3 I 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpot")
 		FTX3 I -1
 		Stop
@@ -2060,7 +2109,7 @@ Scale 1
 		MANB ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		MANB C 35
+		MANB C 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		MANB C -1
 		Stop
@@ -2078,7 +2127,7 @@ Scale 1
 		MANE ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		MANE C 35
+		MANE C 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		MANE C -1
 		Stop
@@ -2101,7 +2150,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		BTX3 I 35
+		BTX3 I 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpotGreen")
 		BTX3 I -1
 		Stop
@@ -2120,7 +2169,7 @@ States
 		SKG1 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		SKG1 I 35
+		SKG1 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		SKG1 I -1
 		Stop
@@ -2136,7 +2185,7 @@ Scale 0.68
 		SKLG A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		SKLG C 35
+		SKLG C 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpot")
 		SKLG C -1
 		Stop
@@ -2152,7 +2201,7 @@ Scale 0.68
 		SKLG B 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		SKLG D 35
+		SKLG D 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpot")
 		SKLG D -1
 		Stop
@@ -2168,7 +2217,7 @@ Scale 0.68
 		RLAU A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		RLAU B 35
+		RLAU B 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpot")
 		RLAU B -1
 		Stop
@@ -2185,7 +2234,7 @@ ACTOR XDeathCacodemonGib1 : XDeathZombieArm1
 		CAG1 A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		CAG1 B 35
+		CAG1 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		CAG1 C -1
 		Stop
@@ -2200,7 +2249,7 @@ ACTOR XDeathCacodemonGib2 : XDeathZombieArm1
 		CAG2 A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		CAG2 B 35
+		CAG2 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		CAG2 C -1
 		Stop
@@ -2215,7 +2264,7 @@ ACTOR XDeathCacodemonGib3 : XDeathZombieArm1
 		CAG3 A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		CAG3 B 35
+		CAG3 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		CAG3 B -1
 		Stop
@@ -2230,7 +2279,7 @@ States
 		CAG4 A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		CAG4 B 35
+		CAG4 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		CAG4 B -1
 		Stop
@@ -2245,7 +2294,7 @@ ACTOR XDeathCacodemonGib5 : XDeathZombieArm1
 		CAG5 A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		CAG5 B 35
+		CAG5 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		CAG5 B -1
 		Stop
@@ -2268,7 +2317,7 @@ renderstyle translucent
 		"####" "#" 4
 		Wait	
 	Death:
-		NCG1 B 35
+		NCG1 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		NCG1 C -1
 		Stop
@@ -2283,7 +2332,7 @@ ACTOR XDeathNCacodemonGib2 : XDeathNCacodemonGib1
 		NCG2 A 4 A_SpawnItemEX("Brutal_FlyingBloodFakeBlue",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		NCG2 B 35
+		NCG2 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		NCG2 C -1
 		Stop
@@ -2298,7 +2347,7 @@ ACTOR XDeathNCacodemonGib3 : XDeathNCacodemonGib1
 		NCG3 A 4 A_SpawnItemEX("Brutal_FlyingBloodFakeBlue",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		NCG3 B 35
+		NCG3 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		NCG3 B -1
 		Stop
@@ -2313,7 +2362,7 @@ ACTOR XDeathNCacodemonGib4 : XDeathNCacodemonGib1
 		NCG4 A 4 A_SpawnItemEX("Brutal_FlyingBloodFakeBlue",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		NCG4 B 35
+		NCG4 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		NCG4 B -1
 		Stop
@@ -2328,7 +2377,7 @@ ACTOR XDeathNCacodemonGib5 : XDeathNCacodemonGib1
 		NCG5 A 4 A_SpawnItemEX("Brutal_FlyingBloodFakeBlue",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		NCG5 B 35
+		NCG5 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		NCG5 B -1
 		Stop
@@ -2351,7 +2400,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		KGB2 B 35
+		KGB2 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotGreen")
 		KGB2 B -1
 		Stop
@@ -2370,7 +2419,7 @@ Decal "BrutalBloodSplatGreen"
 		HNHN ABCD 4
 		Wait
 	Death:
-		HNHN R 35
+		HNHN R 20
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpotGreen")
 		HNHN R -1
 		Stop
@@ -2393,7 +2442,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		BGB2 B 35
+		BGB2 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotGreen")
 		BGB2 B -1
 		Stop
@@ -2412,7 +2461,7 @@ Decal "BrutalBloodSplatGreen"
 		BNHN ABCD 4
 		Wait
 	Death:
-		BNHN R 35
+		BNHN R 20
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpotGreen")
 		BNHN R -1
 		Stop
@@ -2437,7 +2486,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		BZB2 B 35
+		BZB2 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotGreen")
 		BZB2 B -1
 		Stop
@@ -2456,7 +2505,7 @@ Scale 0.64
 		DIAG ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		DIAG I 35
+		DIAG I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		DIAG I -1
 		Stop
@@ -2474,7 +2523,7 @@ Scale 0.64
 		DIAG JKLMNOPQ 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		DIAG R 35
+		DIAG R 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		DIAG R -1
 		Stop
@@ -2492,7 +2541,7 @@ ACTOR XDeathCyberArm : XDeathZombieArm1
 		CYAR A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		CYAR A 35
+		CYAR A 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpot")
 		CYAR A -1
 		Stop
@@ -2509,7 +2558,7 @@ ACTOR XDeathCyberLeg : XDeathZombieArm1
 		CYLG A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		CYLG A 35
+		CYLG A 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpot")
 		CYLG A -1
 		Stop
@@ -2528,7 +2577,7 @@ Scale 0.85
 		ANLG A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		ANLG A 35
+		ANLG A 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpot")
 		ANLG A -1
 		Stop
@@ -2602,12 +2651,12 @@ Scale 0.7
 		Wait
 	Death:
 		TNT1 A 0 A_Jump(128,"Death2")
-		SPIH I 35
+		SPIH I 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpot")
 		SPIH I -1
 		Stop
 	Death2:
-		SPIH J 35
+		SPIH J 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpot")
 		SPIH J -1
 		Stop
@@ -2632,12 +2681,12 @@ Decal "BrutalBloodSplatBlue"
 		Wait
 	Death:
 		TNT1 A 0 A_Jump(128,"Death2")
-		BBRH I 35
+		BBRH I 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpotBlue")
 		BBRH I -1
 		Stop
 	Death2:
-		BBRH J 35
+		BBRH J 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpotBlue")
 		BBRH J -1
 		Stop
@@ -2653,7 +2702,7 @@ renderstyle Normal
 		NCG3 A 4 A_SpawnItemEX("Brutal_FlyingBloodFakeBlue",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		NCG3 B 35
+		NCG3 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		NCG3 B -1
 		Stop
@@ -2673,7 +2722,7 @@ Scale 0.7
 		EBBG ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFakeBlue",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		EBBG A 35
+		EBBG A 20
 		TNT1 A 0 A_SpawnItemEx("GiantBloodSpotBlue")
 		EBBG A -1
 		Stop
@@ -2718,7 +2767,7 @@ Scale 0.7
 		MPBG ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		MPBG A 35
+		MPBG A 20
 		TNT1 A 0 A_SpawnItemEx("GiantBloodSpot")
 		MPBG A -1
 		Stop
@@ -2736,7 +2785,7 @@ ACTOR XDeathHHRearLeg : XDeathZombieArm1
 		HHRL ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		HHRL I 35
+		HHRL I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		HHRL I -1
 		Stop
@@ -2753,7 +2802,7 @@ ACTOR XDeathHHHead : XDeathZombieArm1
 		HHHD ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		HHHD A 35
+		HHHD A 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		HHHD A -1
 		Stop
@@ -2771,7 +2820,7 @@ ACTOR HoundGEC_RearLeg : XDeathZombieArm1
 		GHRL ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		GHRL I 35
+		GHRL I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		GHRL I -1
 		Stop
@@ -2788,7 +2837,7 @@ ACTOR HoundGEC_Head : XDeathZombieArm1
 		GHHD ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		GHHD A 35
+		GHHD A 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		GHHD A -1
 		Stop
@@ -2811,7 +2860,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		BPLG I 35
+		BPLG I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotGreen")
 		BPLG I -1
 		Stop
@@ -2833,7 +2882,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		KGB6 B 35
+		KGB6 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotGreen")
 		KGB6 B -1
 		Stop
@@ -2851,7 +2900,7 @@ ACTOR XDeathZombieArmBFG : XDeathZombieArm1
 		ZBG3 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		ZBG3 I 35
+		ZBG3 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		ZBG3 I -1
 		Stop
@@ -2868,7 +2917,7 @@ ACTOR XDeathZombieLegBFG : XDeathZombieArm1
 		ZBG4 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		ZBG4 I 35
+		ZBG4 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		ZBG4 I -1
 		Stop
@@ -2888,7 +2937,7 @@ RenderStyle Translucent
 		PTQA ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		PTQA I 35
+		PTQA I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		PTQA I -1
 		Stop
@@ -2907,7 +2956,7 @@ Alpha 0.6
 		PTQB ABCDEFG 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		wait
 	Death:
-		"####" "#" 35
+		"####" "#" 20
 		"####" "#" 0 A_SpawnItemEx("Brutal_BloodSpot")
 		"####" "#" -1
 		Stop
@@ -2928,7 +2977,7 @@ RenderStyle Translucent
 		PTQC ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		"####" "#" 35
+		"####" "#" 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		TNT1 A 0 A_Jump(256,1,2,3,4,5,6)
 		PTQC I -1
@@ -2959,12 +3008,12 @@ RenderStyle Translucent
 		Wait
 	Death:
 		RMYX A 0 A_Jump(128,"Death2")
-		RMYX E 35
+		RMYX E 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		RMYX E -1
 		Stop
 	Death2:
-		RMYX F 35
+		RMYX F 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		RMYX F -1
 		Stop
@@ -2984,7 +3033,7 @@ RenderStyle Translucent
 		RNYX A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		RNYX B 35
+		RNYX B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		RNYX B -1
 		Stop
@@ -3003,7 +3052,7 @@ Scale 0.85
 		SWG6 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		SWG6 I 35
+		SWG6 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		SWG6 I -1
 		Stop
@@ -3021,7 +3070,7 @@ Scale 0.85
 		SWKB A 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		SWKB B 35
+		SWKB B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		SWKB B -1
 		Stop
@@ -3039,7 +3088,7 @@ Scale 0.85
 		SWKB C 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		SWKB D 35
+		SWKB D 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		SWKB D -1
 		Stop
@@ -3057,7 +3106,7 @@ ACTOR XDeathHuskArm1 : XDeathZombieArm1
 		HKAR ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		HKAR I 35
+		HKAR I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		HKAR I -1
 		Stop
@@ -3163,7 +3212,7 @@ Decal "BrutalBloodSplatBlue"
 		"####" "#" 4
 		Wait
 	Death:
-		NCG3 B 35
+		NCG3 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		NCG3 B -1
 		Stop
@@ -3179,7 +3228,7 @@ States
 		CLG4 A 4 A_SpawnItemEX("Brutal_FlyingBloodFakeBlue",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		CLG4 B 35
+		CLG4 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		CLG4 B -1
 		Stop
@@ -3195,7 +3244,7 @@ Decal "BrutalBloodSplatBlue"
 		CLG5 A 4 A_SpawnItemEX("Brutal_FlyingBloodFakeBlue",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		CLG5 B 35
+		CLG5 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		CLG5 B -1
 		Stop
@@ -3218,7 +3267,7 @@ Decal "BrutalBloodSplatBlue"
 		"####" "#" 4
 		Wait
 	Death:
-		CNG4 B 35
+		CNG4 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		CNG4 B -1
 		Stop
@@ -3236,7 +3285,7 @@ Decal "BrutalBloodSplatBlue"
 		CNG5 A 4 A_SpawnItemEX("Brutal_FlyingBloodFakeBlue",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		CNG5 B 35
+		CNG5 B 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		CNG5 B -1
 		Stop
@@ -3263,7 +3312,7 @@ Decal "BrutalBloodSplatBlue"
 		"####" "#" 4
 		Wait
 	Death:
-		D1A6 I 35
+		D1A6 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		D1A6 I -1
 		Stop
@@ -3289,7 +3338,7 @@ Decal "BrutalBloodSplatBlue"
 		"####" "#" 4
 		Wait
 	Death:
-		D1A6 R 35
+		D1A6 R 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotBlue")
 		D1A6 R -1
 		Stop
@@ -3313,7 +3362,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		PTG1 I 35
+		PTG1 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpotGreen")
 		PTG1 I -1
 		Stop
@@ -3334,7 +3383,7 @@ Scale 0.68
 		"####" "#" 4
 		Wait
 	Death:
-		PTIG C 35
+		PTIG C 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpotGreen")
 		PTIG C -1
 		Stop
@@ -3355,7 +3404,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		PTIG D 35
+		PTIG D 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpotGreen")
 		PTIG D -1
 		Stop
@@ -3376,7 +3425,7 @@ Decal "BrutalBloodSplatGreen"
 		"####" "#" 4
 		Wait
 	Death:
-		VLAU B 35
+		VLAU B 20
 		TNT1 A 0 A_SpawnItemEx("BigBloodSpotGreen")
 		VLAU B -1
 		Stop
@@ -3395,7 +3444,7 @@ Scale 0.75
 		SLH1 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		SLH1 I 35
+		SLH1 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		SLH1 I -1
 		Stop
@@ -3413,7 +3462,7 @@ Scale 0.75
 		SLH2 ABCDEFGH 4 A_SpawnItemEX("Brutal_FlyingBloodFake",0,0,1,1,1,1,180,SXF_TRANSFERPITCH)
 		Wait
 	Death:
-		SLH2 I 35
+		SLH2 I 20
 		TNT1 A 0 A_SpawnItemEx("Brutal_BloodSpot")
 		SLH2 I -1
 		Stop
@@ -3431,7 +3480,7 @@ ACTOR XDeathHarversterHorn : XDeathZombieArm1
 		SHSP ABCD 4
 		Wait
 	Death:
-		SHSP A 35
+		SHSP A 20
 		TNT1 A 0 A_SpawnItemEx("MinuscleBloodSpot")
 		SHSP A -1
 		Stop

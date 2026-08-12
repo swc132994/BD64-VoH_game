@@ -1,31 +1,33 @@
 ACTOR DetectFloorBullet
 {
-Mass 1
-Gravity 1
 scale 0.4
-radius 12
-height 1
+radius 2
+height 2
+Gravity 1.0
+Mass 5
 Alpha 0.9
 Renderstyle Translucent
-+FLOORCLIP
-+DONTSPLASH
-+CLIENTSIDEONLY
-+NOTELEPORT
 +NOBLOCKMAP
-+FORCEXYBILLBOARD
-+NODAMAGETHRUST
++NOTELEPORT
++CLIENTSIDEONLY
 +MOVEWITHSECTOR
++THRUACTORS
++MISSILE
++BOUNCEONFLOORS
+BounceFactor 0.01
+BounceCount 2
 	States
 	{
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("Flat_Decal_Check")==0,"Off")
-//		TNT1 A 3 ACS_NamedExecute("Flat_Decal_Remover")
-		TNT1 AA 1 A_CheckFloor("Death")
+		TNT1 A 0 A_JumpIf(waterlevel > 1,"Off")
+		TNT1 A 0 ThrustThingZ(0,1,0,0)
+		TNT1 A 5
 		Stop
 	Death:
 		XXX1 A 2000
-		XXX1 A 1 A_FadeOut(0.01)
+		XXX1 A 2 A_FadeOut(0.02)
 		Wait
 	Off:
 		TNT1 A 1
@@ -35,33 +37,35 @@ Renderstyle Translucent
 
 ACTOR DetectCeilBullet
 {
-Mass 1
 scale 0.4
-radius 12
-height 1
+radius 2
+height 2
+Mass 5
 Alpha 0.9
 Renderstyle Translucent
-+FLOORCLIP
-+DONTSPLASH
-+NOTELEPORT
 +NOBLOCKMAP
-+THRUACTORS
++NOTELEPORT
++CLIENTSIDEONLY
 +MOVEWITHSECTOR
-+NODAMAGETHRUST
++THRUACTORS
++MISSILE
 +NOGRAVITY
++SKYEXPLODE
+-EXPLODEONWATER
 	States
 	{
 	Spawn:
 		TNT1 A 0
-		TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("Flat_Decal_Check")==0,"Off")
-//		TNT1 A 3 ACS_NamedExecute("Flat_Decal_Remover")
-		TNT1 A 0 ThrustThingZ(0,35,0,0)
-		TNT1 AA 1 A_CheckCeiling("Death")
+		TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("Flat_Decal_Check") == 0,"Off")
+		TNT1 A 0 A_JumpIf(waterlevel > 1,"Off")
+		TNT1 A 0 ThrustThingZ(0,5,0,0)
+		TNT1 A 6
 		Stop
 	Death:
 		XXX1 A 2000
-		XXX1 A 1 A_FadeOut(0.01)
+		XXX1 A 2 A_FadeOut(0.005)
 		Wait
+	Death.Sky:
 	Off:
 		TNT1 A 1
 		Stop

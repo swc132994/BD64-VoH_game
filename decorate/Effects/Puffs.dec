@@ -1,9 +1,9 @@
 ACTOR HitPuff Replaces BulletPuff
 {
 Scale 1.5
-radius 0
-height 0
-Mass 500
+radius 2
+height 2
+Mass 5
 Gravity 0.01
 alpha 0.4
 renderstyle Add
@@ -61,9 +61,10 @@ ACTOR RicoChet
 {
 Scale 0.09
 Speed 0
-Radius 1
-Height 1
+Radius 2
+Height 2
 alpha 1.0
+Mass 5
 renderstyle Add
 Obituary "$FO_OB_RICOCHET"
 +CLIENTSIDEONLY

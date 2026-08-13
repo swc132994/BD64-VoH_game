@@ -174,7 +174,6 @@ script "LightAndFogChecker" (Void)
 		Case 2: SetActorState(0,"NoLight"); break;
 		Case 3: SetActorState(0,"NoShaft"); break;
 	}
-	Delay(1);
 }
 
 script "BerserkSwitchFistsACS" (void) Clientside
@@ -314,7 +313,6 @@ script "BonusRandomACS" (void)
 		Case 1: SetActorState(0,"SpawnHealthBonus"); SetActorState(0,"SpawnArmorBonus"); break;
 		Case 2: SetActorState(0,"SpawnHellPotion"); break;	
 	}
-	Delay(1);
 }
 
 script "ThingRandomACS" (void)

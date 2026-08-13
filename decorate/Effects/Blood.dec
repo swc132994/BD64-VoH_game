@@ -420,6 +420,7 @@ height 2
 Gravity 1.0
 Mass 5
 +NOBLOCKMAP
++DONTSPLASH
 +CORPSE
 +NOTELEPORT
 +CLIENTSIDEONLY
@@ -530,6 +531,23 @@ actor MediumAcidSpot : GiantBloodSpot	//modelled
 {
 Translation "0:255=%[0,0,0]:[1,1,0]"//Yellow
 Scale 0.4
+}
+
+actor MinuscleBloodSpot : Brutal_BloodSpot	//modelled
+{
+Scale 0.25
+}
+
+actor MinuscleBloodSpotGreen : Brutal_BloodSpotGreen	//modelled
+{
+Translation "0:255=%[0,0,0]:[1,2,0]"	
+Scale 0.25
+}
+
+actor MinuscleBloodSpotBlue : Brutal_BloodSpotBlue	//modelled
+{
+Translation "0:255=%[0,0,0]:[1,0,2]"	
+Scale 0.25
 }
 
 actor GrowingBloodPool : Brutal_BloodSpot	//modelled
@@ -1093,23 +1111,6 @@ actor Brutal_FlyingBloodTrail5Blue : Brutal_FlyingBloodTrailBlue
 {
 Translation "0:255=%[0,0,0]:[1,0,2]"
 Decal "None"
-}
-
-actor MinuscleBloodSpot : Brutal_BloodSpot	//modelled
-{
-Scale 0.25
-}
-
-actor MinuscleBloodSpotGreen : Brutal_BloodSpotGreen	//modelled
-{
-Translation "0:255=%[0,0,0]:[1,2,0]"	
-Scale 0.25
-}
-
-actor MinuscleBloodSpotBlue : Brutal_BloodSpotBlue	//modelled
-{
-Translation "0:255=%[0,0,0]:[1,0,2]"	
-Scale 0.25
 }
 
 ACTOR MiniBloodDropEffect

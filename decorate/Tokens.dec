@@ -6,6 +6,8 @@ inventory.maxamount 1
 +NONETID
 }
 
+Actor lowgraphicsmode : BD64_Tokens {}
+
 //Player Functions
 Actor IsRunning : BD64_Tokens {}
 Actor IsTacticalClass : BD64_Tokens {}

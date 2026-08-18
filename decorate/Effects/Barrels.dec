@@ -185,7 +185,7 @@ Renderstyle translucent
 	}
 }
 
-actor 64BossExplosionBLUE : 64BossExplosion
+actor 64BossExplosionBlue : 64BossExplosion
 {
 	states
 	{
@@ -198,7 +198,7 @@ actor 64BossExplosionBLUE : 64BossExplosion
 		TNT1 AAA 0 A_CustomMissile("BarrelExplosionFire",20,0,random(0,360),2,random(10,40))
 		TNT1 A 0 A_CustomMissile("ExplosionSmokeFast22",0,0,random(0,360),2,random(0,360))
 		TNT1 A 0 A_PlaySound("EXPLO3",CHAN_WEAPON)
-		TNT1 A 0 A_CustomMissile("BloodmistBigBLUE",45,0,random(0,360),2,random(10,90))
+		TNT1 A 0 A_CustomMissile("BloodmistBigBlue",45,0,random(0,360),2,random(10,90))
 		TNT1 A 0 Radius_Quake(2,8,0,12,0)
 		TNT1 A 10
 		stop

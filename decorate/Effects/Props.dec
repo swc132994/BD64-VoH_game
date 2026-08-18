@@ -28,7 +28,7 @@ scale 0.75
 		HEA3 K 3 A_LookEx(0,0,150,100)
 		Wait
 	Spawn:
-		HEA3 K 0 NoDelay A_SpawnItemEx("64SmallBloodPoolBLUE")
+		HEA3 K 0 NoDelay A_SpawnItemEx("64SmallBloodPoolBlue")
 		TNT1 A 0 A_Jump(39,"Spawn2")//15%
 	Death:
 		TNT1 A 0 A_Jump(256,"Rest1","Rest2","Rest3")
@@ -190,7 +190,7 @@ RenderStyle Translucent
 		TRO2 P 3 A_LookEx(0,0,150,100)
 		Wait
 	Spawn:
-		TRO2 P 0 NoDelay A_SpawnItemEx("64SmallBloodPoolBLUE")
+		TRO2 P 0 NoDelay A_SpawnItemEx("64SmallBloodPoolBlue")
 		TNT1 A 0 A_Jump(39,"Spawn2")//15%
 	Death:
 		TNT1 A 0 A_Jump(256,"Rest1","Rest2","Rest3","Rest4","Rest5","Rest6")
@@ -303,9 +303,9 @@ Height 1
 	}
 }
 
-Actor 64SmallBloodPoolBLUE : 64SmallBloodPool //oldblood model
+Actor 64SmallBloodPoolBlue : 64SmallBloodPool //oldblood model
 {
-Translation "0:255=%[0,0,0]:[1,0,2]"//BLUE
+Translation "0:255=%[0,0,0]:[1,0,2]"
 }
 
 actor GoreLongDecoration1
@@ -1250,13 +1250,13 @@ Scale 0.75
 		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
-		TTBN AAAAAAAAAAAA 3 Light("BIGBLUETORCH") A_CustomMissile("RealFlameTrailsBlue",53,0,random(0,360),2,random(70,110))
+		TTBN AAAAAAAAAAAA 3 Light("BIGBlueTORCH") A_CustomMissile("RealFlameTrailsBlue",53,0,random(0,360),2,random(70,110))
 		Loop
 	StayBlank:
-		TBLU ABCDEABCDEABCDE 2 Light("BIGBLUETORCH")
+		TBLU ABCDEABCDEABCDE 2 Light("BIGBlueTORCH")
 		Goto Stay
 	ClassicTorch:
-		TBLU ABCDE 4 Light("BIGBLUETORCH")
+		TBLU ABCDE 4 Light("BIGBlueTORCH")
 		Loop
 	}
 }
@@ -1275,13 +1275,13 @@ Scale 0.75
 		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
-		TTBN AAAAAAAAAAAA 3 Light("BIGGREENTORCH") A_CustomMissile("RealFlameTrailsGreen",53,0,random(0,360),2,random(70,110))
+		TTBN AAAAAAAAAAAA 3 Light("BIGGreenTORCH") A_CustomMissile("RealFlameTrailsGreen",53,0,random(0,360),2,random(70,110))
 		Loop
 	StayBlank:
-		TGRN ABCDEABCDEABCDE 2 Light("BIGGREENTORCH")
+		TGRN ABCDEABCDEABCDE 2 Light("BIGGreenTORCH")
 		Goto Stay
 	ClassicTorch:
-		TGRN ABCDE 4 Light("BIGGREENTORCH")
+		TGRN ABCDE 4 Light("BIGGreenTORCH")
 		Loop
 	}
 }
@@ -1351,13 +1351,13 @@ Scale 0.75
 		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
-		TSBN AAAAAAAAAAAA 3 Light("BIGBLUETORCH") A_CustomMissile("RealFlameTrailsBlue",40,0,random(0,360),2,random(70,110))
+		TSBN AAAAAAAAAAAA 3 Light("BIGBlueTORCH") A_CustomMissile("RealFlameTrailsBlue",40,0,random(0,360),2,random(70,110))
 		Loop
 	StayBlank:
-		SMBT ABCDEABCDEABCDE 2 Light("BIGBLUETORCH")
+		SMBT ABCDEABCDEABCDE 2 Light("BIGBlueTORCH")
 		Goto Stay
 	ClassicTorch:
-		SMBT ABCDE 4 Light("BIGBLUETORCH")
+		SMBT ABCDE 4 Light("BIGBlueTORCH")
 		Loop
 	}
 }
@@ -1376,13 +1376,13 @@ Scale 0.75
 		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
-		TSBN AAAAAAAAAAAA 3 Light("BIGGREENTORCH") A_CustomMissile("RealFlameTrailsGreen",40,0,random(0,360),2,random(70,110))
+		TSBN AAAAAAAAAAAA 3 Light("BIGGreenTORCH") A_CustomMissile("RealFlameTrailsGreen",40,0,random(0,360),2,random(70,110))
 		Loop
 	StayBlank:
-		SMGT ABCDEABCDEABCDE 2 Light("BIGGREENTORCH")
+		SMGT ABCDEABCDEABCDE 2 Light("BIGGreenTORCH")
 		Goto Stay
 	ClassicTorch:
-		SMGT ABCDE 4 Light("BIGGREENTORCH")
+		SMGT ABCDE 4 Light("BIGGreenTORCH")
 		Loop
 	}
 }
@@ -1458,13 +1458,13 @@ Radius 5
 		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
-		TWBN AAAAAAAAAAAA 3 Light("SMALLBLUETORCH") A_CustomMissile("RealFlameTrailsBlueWallTorch",20,0,random(0,360),2,random(70,110))
+		TWBN AAAAAAAAAAAA 3 Light("SMALLBlueTORCH") A_CustomMissile("RealFlameTrailsBlueWallTorch",20,0,random(0,360),2,random(70,110))
 		Loop
 	StayBlank:
-		WLBT ABCDEABCDEABCDE 2 Light("SMALLBLUETORCH")
+		WLBT ABCDEABCDEABCDE 2 Light("SMALLBlueTORCH")
 		Goto Stay
 	ClassicTorch:
-		WLBT ABCDE 4 Light("SMALLBLUETORCH")
+		WLBT ABCDE 4 Light("SMALLBlueTORCH")
 		Loop
 	}
 }
@@ -1486,13 +1486,13 @@ Radius 5
 		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
-		TWBN AAAAAAAAAAAA 3 Light("SMALLGREENTORCH") A_CustomMissile("RealFlameTrailsGreenWallTorch",20,0,random(0,360),2,random(70,110))
+		TWBN AAAAAAAAAAAA 3 Light("SMALLGreenTORCH") A_CustomMissile("RealFlameTrailsGreenWallTorch",20,0,random(0,360),2,random(70,110))
 		Loop
 	StayBlank:
-		WLGT ABCDEABCDEABCDE 2 Light("SMALLGREENTORCH")
+		WLGT ABCDEABCDEABCDE 2 Light("SMALLGreenTORCH")
 		Goto Stay
 	ClassicTorch:
-		WLGT ABCDE 4 Light("SMALLGREENTORCH")
+		WLGT ABCDE 4 Light("SMALLGreenTORCH")
 		Loop
 	}
 }
@@ -1779,10 +1779,10 @@ SCALE 0.8
 		TNT1 A 0 A_Jump(128,"Stay2")
 		Goto Stay
 	Stay:
-		CEYE ABCB 5 Bright Light("GREENCANDLETORCH")
+		CEYE ABCB 5 Bright Light("GreenCANDLETORCH")
 		Loop
 	Stay2:
-		EYE2 ABCB 5 Bright Light("GREENCANDLETORCH")
+		EYE2 ABCB 5 Bright Light("GreenCANDLETORCH")
 		Loop
 	}
 }
@@ -1831,7 +1831,7 @@ SCALE 0.8
 		S040 A -1	//Alpha
 		Stop
 	GuttedAlive:
-		S040 B -1  //alternative of Alpha
+		S040 B -1	//alternative Alpha
 		Stop
 	}
 }

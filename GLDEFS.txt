@@ -1225,20 +1225,32 @@ object 64ArachnotronPlasma_OLD	//arachnotron uses same as plasmaball
 	frame APBXE {light ARACHPLAS_X4}
 }*/
 
-flickerlight LavaParticle
+flickerlight GiantLavaSplashLight
 {
-	color 1.0 0.2 0.0
-	size 10
-	secondarySize 20
+	color 0.72 0.14 0.01
+	size 56
+	secondarySize 72
 	chance 0.25
+	offset 0 24 0
 }
 
-flickerlight NukageParticle
+object GiantLavaRicochet
 {
-	color 0.0 1.0 0.0
-	size 3
-	secondarySize 6
+	frame GSPL { light GiantLavaSplashLight }
+}
+
+flickerlight GiantNukageSplashLight
+{
+	color 0.15 0.40 0.08
+	size 48
+	secondarySize 64
 	chance 0.25
+	offset 0 24 0
+}
+
+object GiantNukageRicochet
+{
+	frame GSPL { light GiantNukageSplashLight }
 }
 
 //Revenant tracer

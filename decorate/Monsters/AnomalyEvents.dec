@@ -395,7 +395,7 @@ Tag "$FO_TAG_EVILSPIRIT"
 	}
 }
 
-ACTOR 64Poltergeist4
+ACTOR 64Poltergeist4	//Possessed Statue
 {
 Scale 0.8
 Health 50
@@ -583,7 +583,7 @@ ProjectilePassHeight -16
 		ES7M A 0 NoDelay A_SpawnItemEx("LightShaft2BrighterLessSmall")
 		Goto Stay
 	Stay:
-		ES7M ABCB 5 Bright Light("GREENCANDLETORCH")
+		ES7M ABCB 5 Bright Light("GreenCANDLETORCH")
 		Loop
 	}
 }

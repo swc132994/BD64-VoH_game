@@ -202,7 +202,7 @@ BloodType "Brutal_BloodGreen"
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
-		TNT1 AAAA 0 A_CustomMissile("XDeath1GREEN",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("XDeath1Green",32,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistSmallGreen",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",30,0,random(0,360),2,random(0,180))
 		TNT1 AAAAAAAAAAAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",30,0,random(0,360),2,random(0,360))
@@ -477,7 +477,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 Obituary "$FO_OB_NIGHTCRAWLER"
 Tag "$FO_TAG_NIGHTCRAWLER"
 DropItem "DemonEssenceSpawner"
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 +DONTHARMSPECIES
 -BOSSDEATH
 	States
@@ -515,13 +515,13 @@ BloodType "Brutal_BloodBLUE"
 		goto See
 	Death:
 		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		TNT1 A 0 A_CustomMissile("XDeath1BLUE",52,0,random(150,210),2,random(10,50))
-		TNT1 AAA 0 A_CustomMissile("XDeath1BLUE",52,0,random(0,360),2,random(10,50))
-		TNT1 AAA 0 A_CustomMissile("XDeath2bBLUE",52,0,random(0,360),2,random(10,50))
-		TNT1 A 0 A_CustomMissile("XDeath2bBLUE",52,0,random(150,210),2,random(10,50))
-		TNT1 A 0 A_CustomMissile("XDeath3BLUE",52,0,random(150,210),2,random(10,50))
-		TNT1 AAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",52,0,random(150,210),2,random(10,50))
-		TNT1 AAAAAAAA 0 A_CustomMissile("Brutal_BloodBLUE",55,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath1Blue",52,0,random(150,210),2,random(10,50))
+		TNT1 AAA 0 A_CustomMissile("XDeath1Blue",52,0,random(0,360),2,random(10,50))
+		TNT1 AAA 0 A_CustomMissile("XDeath2bBlue",52,0,random(0,360),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeath2bBlue",52,0,random(150,210),2,random(10,50))
+		TNT1 A 0 A_CustomMissile("XDeath3Blue",52,0,random(150,210),2,random(10,50))
+		TNT1 AAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",52,0,random(150,210),2,random(10,50))
+		TNT1 AAAAAAAA 0 A_CustomMissile("Brutal_BloodBlue",55,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		NTCR GHIJ 5
@@ -530,15 +530,15 @@ BloodType "Brutal_BloodBLUE"
 		Stop
 	XDeath:
 		TNT1 A 0 A_KillMaster("None")	//tag 666 fix
-		TNT1 A 0 A_CustomMissile("XDeath1BLUE",52,0,random(150,210),2,random(10,50))
-		TNT1 AAAA 0 A_CustomMissile("XDeath1BLUE",52,0,random(0,360),2,random(10,50))
-		TNT1 AAAA 0 A_CustomMissile("XDeath2bBLUE",52,0,random(0,360),2,random(10,50))
-		TNT1 AAA 0 A_CustomMissile("XDeath2bBLUE",52,0,random(150,210),2,random(10,50))
-		TNT1 AAA 0 A_CustomMissile("XDeath3BLUE",52,0,random(150,210),2,random(10,50))
-		TNT1 AAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",52,0,random(150,210),2,random(10,50))
-		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBigBLUE",45,0,random(0,360),2,random(10,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("Brutal_BloodBLUE",55,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath1Blue",52,0,random(150,210),2,random(10,50))
+		TNT1 AAAA 0 A_CustomMissile("XDeath1Blue",52,0,random(0,360),2,random(10,50))
+		TNT1 AAAA 0 A_CustomMissile("XDeath2bBlue",52,0,random(0,360),2,random(10,50))
+		TNT1 AAA 0 A_CustomMissile("XDeath2bBlue",52,0,random(150,210),2,random(10,50))
+		TNT1 AAA 0 A_CustomMissile("XDeath3Blue",52,0,random(150,210),2,random(10,50))
+		TNT1 AAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",52,0,random(150,210),2,random(10,50))
+		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBigBlue",45,0,random(0,360),2,random(10,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("Brutal_BloodBlue",55,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("NCrawlerEye",50,0,random(0,360),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathCrawlerGun",35,0,random(0,360),2,random(10,60))
 		TNT1 A 0 A_CustomMissile("XDeathBlueSpiderLeg1",35,0,random(0,360),2,random(10,60))

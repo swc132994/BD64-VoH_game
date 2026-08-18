@@ -230,7 +230,7 @@ Actor 64RadSuit : RadSuit Replaces RadSuit
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTSUIT"
-powerup.color "green",0.15
+powerup.color "Green",0.15
 Tag "$FO_TAG_SUIT"
 	States
 	{
@@ -326,14 +326,14 @@ Tag "$FO_TAG_BERSERK"
 
 ACTOR GLBlueCard : CustomInventory Replaces Bluecard
 {
-Inventory.PickupMessage "$FO_GOTBLUECARD"
+Inventory.PickupMessage "$FO_GOTBlueCARD"
 Inventory.PickupSound "KCRPKUP"
-Tag "$FO_TAG_BLUECARD"
+Tag "$FO_TAG_BlueCARD"
 +COUNTITEM
 	States
 	{
 	Spawn:
-		BKEY AAAAA 3 BRIGHT Light("BLUEKEY") A_SpawnItemEx("LensFlareTorchBlue",0,0,10)
+		BKEY AAAAA 3 BRIGHT Light("BlueKEY") A_SpawnItemEx("LensFlareTorchBlue",0,0,10)
 		BKEY B 12
 		Loop
 	Pickup:
@@ -380,14 +380,14 @@ Tag "$FO_TAG_REDCARD"
 
 ACTOR GLBlueSkull : CustomInventory Replaces BlueSkull
 {
-Inventory.PickupMessage "$FO_GOTBLUESKUL"
+Inventory.PickupMessage "$FO_GOTBlueSKUL"
 Inventory.PickupSound "SKLPKUP"
-Tag "$FO_TAG_GOTBLUESKUL"
+Tag "$FO_TAG_GOTBlueSKUL"
 +COUNTITEM
 	States
 	{
 	Spawn:
-		BSKU AAAAA 3 BRIGHT Light("BLUEKEY") A_SpawnItemEx("LensFlareTorchBlue",0,0,10)
+		BSKU AAAAA 3 BRIGHT Light("BlueKEY") A_SpawnItemEx("LensFlareTorchBlue",0,0,10)
 		BSKU B 12
 		Loop
 	Pickup:
@@ -992,7 +992,7 @@ SpawnID 164
 Inventory.Icon POW3E0
 Inventory.PickupMessage "$FO_GOTDEMON_BLU"
 Inventory.PickupSound "DEMKEYUP"
-Tag "$FO_TAG_DEMON_BLUE"
+Tag "$FO_TAG_DEMON_Blue"
 +COUNTITEM
 -INTERHUBSTRIP
 	States
@@ -1017,13 +1017,13 @@ Inventory.MaxAmount 1
 +UNDROPPABLE
 }
 
-ACTOR WpnPower4 : CustomInventory 9908	//GREEN ARTIFACT
+ACTOR WpnPower4 : CustomInventory 9908	//Green ARTIFACT
 {
 //$category "Game/BD64_Artifacts"
 Inventory.Icon POW4E0
-Inventory.PickupMessage "$FO_GOTDEMON_GREEN"
+Inventory.PickupMessage "$FO_GOTDEMON_Green"
 Inventory.PickupSound "DEMKEYUP"
-Tag "$FO_TAG_DEMON_GREEN"
+Tag "$FO_TAG_DEMON_Green"
 +COUNTITEM
 -INTERHUBSTRIP
 	States

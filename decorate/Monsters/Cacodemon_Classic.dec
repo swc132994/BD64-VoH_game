@@ -12,7 +12,7 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DropItem "DemonEssenceSpawner"
 MeleeRange 60 //default 44
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 Tag "$FO_TAG_CACO"
 Obituary "$FO_OB_CACO"
 HitObituary "$FO_OB_CACOHIT"
@@ -57,20 +57,20 @@ HitObituary "$FO_OB_CACOHIT"
 	XDeath:
 	Death.SuperKick:
 	Death.SuperFists:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("XDeathClassicCacodemonGib3",50,0,random(0,360),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathClassicCacodemonGib4",50,0,random(0,360),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathClassicCacodemonGib5",50,0,random(0,360),2,random(20,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan2BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBigBLUE",45,0,random(0,360),2,random(10,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBigBlue",45,0,random(0,360),2,random(10,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_SetFloorClip
@@ -87,16 +87,16 @@ HitObituary "$FO_OB_CACOHIT"
 		Goto Death
 	Death.CutLess:
 		TNT1 A 0 A_Jump(85,"Death")
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("XDeathClassicCacodemonGib4",50,0,random(150,210),2,random(20,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		CLHE A 1 A_SpawnItemEx("Brutalized64ClassicCaco",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
@@ -108,19 +108,19 @@ HitObituary "$FO_OB_CACOHIT"
 		TNT1 A 0 A_JumpIfCloser(1000,"Death.Cutless")
 		Goto Death
 	Death.Splattered:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("XDeathClassicCacodemonGib3",50,0,random(150,210),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathClassicCacodemonGib4",50,0,random(150,210),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathClassicCacodemonGib5",50,0,random(150,210),2,random(20,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan2BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_SetFloorClip
@@ -140,8 +140,8 @@ HitObituary "$FO_OB_CACOHIT"
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
 		TNT1 A 0 A_SetFloorClip
-		TNT1 AAAA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistSmallBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistSmallBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",30,0,random(0,360),2,random(0,180))
 		TNT1 AAAAAAAAAAAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",30,0,random(0,360),2,random(0,360))
 		TNT1 AAAAA 0 A_CustomMissile("ExplosionParticleVeryFast",30,0,random(0,360),2,random(0,360))
@@ -149,7 +149,7 @@ HitObituary "$FO_OB_CACOHIT"
 		TNT1 A 0 A_SpawnItemEx("BarrelExplosionSmokeColumn",random(-10,10),random(-10,10),20)
 		TNT1 A 0 A_SpawnItemEx("BarrelExplosionSmokeColumn")
 		TNT1 A 0 A_spawnItemEx("BurningFleshEffect2",0,0,5)
-		TNT1 AAA 0 A_SpawnItemEx("Brutal_BloodBLUE",0,0,30)
+		TNT1 AAA 0 A_SpawnItemEx("Brutal_BloodBlue",0,0,30)
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
 		CRP1 ABCDEFGH 3
 		CRP1 H -1
@@ -183,7 +183,7 @@ DropItem "None"
 		CLHE A 0 NoDelay A_Jump(128,2)
 		TNT1 A 0 A_SetScale(0-ScaleX,ScaleY)	//Flip horizontal
 	See:
-		CLHE ABABABABABABABABABABABABABABABAB 4 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
+		CLHE ABABABABABABABABABABABABABABABAB 4 A_CustomMissile("XDeath1Blue",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_Die
 		Goto Death
 	Death:
@@ -196,34 +196,34 @@ DropItem "None"
 		TNT1 A 0 A_Jump(64,"Death")
 	Death.Shotgun:
 	Death.CutLess:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("XDeathClassicCacodemonGib3",50,0,random(150,210),2,random(20,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		CLHE A 1 A_SpawnItemEx("Brutalized64ClassicCaco_2",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Death.Heavy:
 	Death.SSG:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("XDeathClassicCacodemonGib3",50,0,random(150,210),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathClassicCacodemonGib5",50,0,random(150,210),2,random(20,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan2BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_XScream
 		CLGM A 35 A_SetFloorClip
@@ -243,7 +243,7 @@ Actor Brutalized64ClassicCaco_2 : Brutalized64ClassicCaco
 	{
 	See:
 	Spawn:
-		CLHE CDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCD 4 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
+		CLHE CDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCD 4 A_CustomMissile("XDeath1Blue",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_Die
 		Goto Death
 	Death:
@@ -256,31 +256,31 @@ Actor Brutalized64ClassicCaco_2 : Brutalized64ClassicCaco
 		TNT1 A 0 A_Jump(64,"Death")
 	Death.Shotgun:
 	Death.CutLess:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_XScream
 		CLHE E 1 A_SpawnItemEx("Brutalized64ClassicCaco_3",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Death.Heavy:
 	Death.SSG:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan2BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_XScream
 		CLGM A 35 A_SetFloorClip
@@ -295,7 +295,7 @@ Actor Brutalized64ClassicCaco_3 : Brutalized64ClassicCaco
 	{
 	See:
 	Spawn:
-		CLHE EFEFEFEFEFEFEFEFEFEFEFEFEF 4 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
+		CLHE EFEFEFEFEFEFEFEFEFEFEFEFEF 4 A_CustomMissile("XDeath1Blue",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_Die
 		Goto Death
 	Death:
@@ -310,16 +310,16 @@ Actor Brutalized64ClassicCaco_3 : Brutalized64ClassicCaco
 	Death.CutLess:
 	Death.Heavy:
 	Death.SSG:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan2BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_XScream
 		CLGM A 35 A_SetFloorClip
@@ -349,7 +349,7 @@ Obituary "$FO_OB_CACO_NIGHTMARE"
 HitObituary "$FO_OB_CACOHIT_NIGHTMARE"
 Tag "$FO_TAG_CACO_NIGHTMARE"
 DropItem "DemonEssenceSpawner"
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 +FORCEXYBILLBOARD
 +MISSILEMORE
 +MISSILEEVENMORE
@@ -407,20 +407,20 @@ BloodType "Brutal_BloodBLUE"
 	XDeath:
 	Death.SuperKick:
 	Death.SuperFists:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("XDeathNCacodemonGib3",50,0,random(0,360),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathNClassicCacodemonGib4",50,0,random(0,360),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathNClassicCacodemonGib5",50,0,random(0,360),2,random(20,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan2BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBigBLUE",45,0,random(0,360),2,random(10,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("BloodmistExtraBigBlue",45,0,random(0,360),2,random(10,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_SetFloorClip
@@ -437,16 +437,16 @@ BloodType "Brutal_BloodBLUE"
 		Goto Death
 	Death.CutLess:
 		TNT1 A 0 A_Jump(85,"Death")
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("XDeathNClassicCacodemonGib4",50,0,random(150,210),2,random(20,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		CNHE A 1 A_SpawnItemEx("BrutalizedNClassicCaco",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
@@ -458,19 +458,19 @@ BloodType "Brutal_BloodBLUE"
 		TNT1 A 0 A_JumpIfCloser(1000,"Death.Cutless")
 		Goto Death
 	Death.Splattered:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("XDeathNCacodemonGib3",50,0,random(0,360),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathNClassicCacodemonGib4",50,0,random(0,360),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathNClassicCacodemonGib5",50,0,random(0,360),2,random(20,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan2BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_SetFloorClip
@@ -490,8 +490,8 @@ BloodType "Brutal_BloodBLUE"
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_Stop
 		TNT1 A 0 A_SetFloorClip
-		TNT1 AAAA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistSmallBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAA 0 A_CustomMissile("BloodmistSmallBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 AAAAAAAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",30,0,random(0,360),2,random(0,180))
 		TNT1 AAAAAAAAAAAAAAAAAA 0 A_CustomMissile("ExplosionParticleHeavy",30,0,random(0,360),2,random(0,360))
 		TNT1 AAAAA 0 A_CustomMissile("ExplosionParticleVeryFast",30,0,random(0,360),2,random(0,360))
@@ -499,7 +499,7 @@ BloodType "Brutal_BloodBLUE"
 		TNT1 A 0 A_SpawnItemEx("BarrelExplosionSmokeColumn",random(-10,10),random(-10,10),20)
 		TNT1 A 0 A_SpawnItemEx("BarrelExplosionSmokeColumn")
 		TNT1 A 0 A_spawnItemEx("BurningFleshEffect2",0,0,5)
-		TNT1 AAA 0 A_SpawnItemEx("Brutal_BloodBLUE",0,0,30)
+		TNT1 AAA 0 A_SpawnItemEx("Brutal_BloodBlue",0,0,30)
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCrater")
 		CRP1 ABCDEFGH 3
 		CRP1 H -1
@@ -533,7 +533,7 @@ DropItem "None"
 		CNHE A 0 NoDelay A_Jump(128,2)
 		TNT1 A 0 A_SetScale(0-ScaleX,ScaleY)	//Flip horizontal
 	See:
-		CNHE ABABABABABABABABABABABABABABABAB 4 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
+		CNHE ABABABABABABABABABABABABABABABAB 4 A_CustomMissile("XDeath1Blue",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_Die
 		Goto Death
 	Death:
@@ -546,34 +546,34 @@ DropItem "None"
 		TNT1 A 0 A_Jump(64,"Death")
 	Death.Shotgun:
 	Death.CutLess:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("XDeathNCacodemonGib3",50,0,random(150,210),2,random(20,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
 		CNHE C 1 A_SpawnItemEx("BrutalizedNClassicCaco_2",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Death.Heavy:
 	Death.SSG:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("XDeathNCacodemonGIb3",50,0,random(150,210),2,random(20,90))
 		TNT1 A 0 A_CustomMissile("XDeathNClassicCacodemonGib5",50,0,random(150,210),2,random(20,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan2BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_XScream
 		CNGM A 35 A_SetFloorClip
@@ -598,7 +598,7 @@ Actor BrutalizedNClassicCaco_2 : BrutalizedNClassicCaco
 	{
 	See:
 	Spawn:
-		CNHE CDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCD 4 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
+		CNHE CDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCD 4 A_CustomMissile("XDeath1Blue",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_Die
 		Goto Death
 	Death:
@@ -611,31 +611,31 @@ Actor BrutalizedNClassicCaco_2 : BrutalizedNClassicCaco
 		TNT1 A 0 A_Jump(64,"Death")
 	Death.Shotgun:
 	Death.CutLess:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_XScream
 		CNHE E 1 A_SpawnItemEx("BrutalizedNClassicCaco_3",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Death.Heavy:
 	Death.SSG:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan2BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_XScream
 		CNGM A 35 A_SetFloorClip
@@ -650,7 +650,7 @@ Actor BrutalizedNClassicCaco_3 : BrutalizedNClassicCaco
 	{
 	See:
 	Spawn:
-		CNHE EFEFEFEFEFEFEFEFEFEFEFEFEF 4 A_CustomMissile("XDeath1BLUE",32,0,random(150,210),2,random(10,50))
+		CNHE EFEFEFEFEFEFEFEFEFEFEFEFEF 4 A_CustomMissile("XDeath1Blue",32,0,random(150,210),2,random(10,50))
 		TNT1 A 0 A_Die
 		Goto Death
 	Death:
@@ -665,16 +665,16 @@ Actor BrutalizedNClassicCaco_3 : BrutalizedNClassicCaco
 	Death.CutLess:
 	Death.Heavy:
 	Death.SSG:
-		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBLUE",0,0,random(0,360),2,random(50,130))
-		TNT1 AA 0 A_CustomMissile("XDeath1BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath2BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AA 0 A_CustomMissile("XDeath3BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeath5BLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("SmallBrainPieceBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan1BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 A 0 A_CustomMissile("XDeathOrgan2BLUE",40,0,random(0,360),2,random(-5,5))
-		TNT1 AAAA 0 A_CustomMissile("IntestineBLUE",32,0,random(0,360),2,random(0,90))
-		TNT1 AAAA 0 A_CustomMissile("BloodmistBLUE",35,0,random(0,360),2,random(0,90))
+		TNT1 AAAAAA 0 A_CustomMissile("CeilBloodLauncherBlue",0,0,random(0,360),2,random(50,130))
+		TNT1 AA 0 A_CustomMissile("XDeath1Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath2Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AA 0 A_CustomMissile("XDeath3Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeath5Blue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("SmallBrainPieceBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan1Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 A 0 A_CustomMissile("XDeathOrgan2Blue",40,0,random(0,360),2,random(-5,5))
+		TNT1 AAAA 0 A_CustomMissile("IntestineBlue",32,0,random(0,360),2,random(0,90))
+		TNT1 AAAA 0 A_CustomMissile("BloodmistBlue",35,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_XScream
 		CNGM A 35 A_SetFloorClip

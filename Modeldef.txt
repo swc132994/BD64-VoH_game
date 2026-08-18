@@ -557,68 +557,90 @@ FrameIndex POB2 D 0 0
 }
 
 //GROWING BLOOD POOLS
-Model GrowingBloodPool	//combined into one model
+Model GrowingBloodPool
 {
 Path "models"
 Model 0 "bloodspot.md3"
 Skin 0 "bloodpoolgrow.png"
 Scale 20 20 1
 ZOffset 0.84
-rotating
 INTERPOLATEDOUBLEDFRAMES
-Rotation-Center 0 0 0
-rotation-speed 0.1
+AngleOffset 0.0
 FrameIndex FBB1 A 0 0
 Scale 21 21 1
+AngleOffset 1.5
 FrameIndex FBB1 B 0 0
 Scale 22 22 1
+AngleOffset 3.0
 FrameIndex FBB1 C 0 0
 Scale 23 23 1
+AngleOffset 4.5
 FrameIndex FBB1 D 0 0
 Scale 24 24 1
+AngleOffset 6.0
 FrameIndex FBB1 E 0 0
 Scale 25 25 1
+AngleOffset 7.5
 FrameIndex FBB1 F 0 0
 Scale 26 26 1
+AngleOffset 9.0
 FrameIndex FBB1 G 0 0
 Scale 27 27 1
+AngleOffset 10.5
 FrameIndex FBB1 H 0 0
 Scale 28 28 1
+AngleOffset 12.0
 FrameIndex FBB1 I 0 0
 Scale 29 29 1
+AngleOffset 13.5
 FrameIndex FBB1 J 0 0
 Scale 30 30 1
+AngleOffset 15.0
 FrameIndex FBB1 K 0 0
 Scale 31 31 1
+AngleOffset 16.5
 FrameIndex FBB1 L 0 0
 Scale 32 32 1
+AngleOffset 18.0
 FrameIndex FBB1 M 0 0
 Scale 33 33 1
+AngleOffset 19.5
 FrameIndex FBB1 N 0 0
 Scale 34 34 1
+AngleOffset 21.0
 FrameIndex FBB1 O 0 0
 Scale 35 35 1
+AngleOffset 22.5
 FrameIndex FBB1 P 0 0
 Scale 36 36 1
+AngleOffset 24.0
 FrameIndex FBB1 Q 0 0
 Scale 37 37 1
+AngleOffset 25.5
 FrameIndex FBB1 R 0 0
 Scale 38 38 1
+AngleOffset 27.0
 FrameIndex FBB1 S 0 0
 Scale 39 39 1
+AngleOffset 28.5
 FrameIndex FBB1 T 0 0
 Scale 40 40 1
+AngleOffset 30.0
 FrameIndex FBB1 U 0 0
 Scale 41 41 1
+AngleOffset 31.5
 FrameIndex FBB1 V 0 0
 Scale 42 42 1
+AngleOffset 33.0
 FrameIndex FBB1 W 0 0
 Scale 43 43 1
+AngleOffset 34.5
 FrameIndex FBB1 X 0 0
 Scale 44 44 1
+AngleOffset 36.0
 FrameIndex FBB1 Y 0 0
 Scale 45 45 1
-rotation-speed 0
+AngleOffset 37.5
 FrameIndex FBB1 Z 0 0
 }
 
@@ -629,61 +651,83 @@ Model 0 "bloodspot.md3"
 Skin 0 "bloodpoolgrow.png"
 Scale 35 35 1
 ZOffset 0.85
-rotating
 INTERPOLATEDOUBLEDFRAMES
-Rotation-Center 0 0 0
-rotation-speed 0.1
+AngleOffset 0.0
 FrameIndex FBB1 A 0 0
 Scale 36 36 1
+AngleOffset 1.5
 FrameIndex FBB1 B 0 0
 Scale 37 37 1
+AngleOffset 3.0
 FrameIndex FBB1 C 0 0
 Scale 38 38 1
+AngleOffset 4.5
 FrameIndex FBB1 D 0 0
 Scale 39 39 1
+AngleOffset 6.0
 FrameIndex FBB1 E 0 0
 Scale 40 40 1
+AngleOffset 7.5
 FrameIndex FBB1 F 0 0
 Scale 41 41 1
+AngleOffset 9.0
 FrameIndex FBB1 G 0 0
 Scale 42 42 1
+AngleOffset 10.5
 FrameIndex FBB1 H 0 0
 Scale 43 43 1
+AngleOffset 12.0
 FrameIndex FBB1 I 0 0
 Scale 44 44 1
+AngleOffset 13.5
 FrameIndex FBB1 J 0 0
 Scale 45 45 1
+AngleOffset 15.0
 FrameIndex FBB1 K 0 0
 Scale 46 46 1
+AngleOffset 16.5
 FrameIndex FBB1 L 0 0
 Scale 47 47 1
+AngleOffset 18.0
 FrameIndex FBB1 M 0 0
 Scale 48 48 1
+AngleOffset 19.5
 FrameIndex FBB1 N 0 0
 Scale 49 49 1
+AngleOffset 21.0
 FrameIndex FBB1 O 0 0
 Scale 50 50 1
+AngleOffset 22.5
 FrameIndex FBB1 P 0 0
 Scale 51 51 1
+AngleOffset 24.0
 FrameIndex FBB1 Q 0 0
 Scale 52 52 1
+AngleOffset 25.5
 FrameIndex FBB1 R 0 0
 Scale 53 53 1
+AngleOffset 27.0
 FrameIndex FBB1 S 0 0
 Scale 54 54 1
+AngleOffset 28.5
 FrameIndex FBB1 T 0 0
 Scale 55 55 1
+AngleOffset 30.0
 FrameIndex FBB1 U 0 0
 Scale 56 56 1
+AngleOffset 31.5
 FrameIndex FBB1 V 0 0
 Scale 57 57 1
+AngleOffset 33.0
 FrameIndex FBB1 W 0 0
 Scale 58 58 1
+AngleOffset 34.5
 FrameIndex FBB1 X 0 0
 Scale 59 59 1
+AngleOffset 36.0
 FrameIndex FBB1 Y 0 0
 Scale 60 60 1
-rotation-speed 0
+AngleOffset 37.5
 FrameIndex FBB1 Z 0 0
 }
 
@@ -694,191 +738,257 @@ Model 0 "bloodspot.md3"
 Skin 0 "bloodpoolgrow.png"
 Scale 35 35 1
 ZOffset 0.86
-rotating
 INTERPOLATEDOUBLEDFRAMES
-Rotation-Center 0 0 0
-rotation-speed 0.1
+AngleOffset 0.0
 FrameIndex FBB1 A 0 0
 Scale 36 36 1
+AngleOffset 1.5
 FrameIndex FBB1 B 0 0
 Scale 37 37 1
+AngleOffset 3.0
 FrameIndex FBB1 C 0 0
 Scale 38 38 1
+AngleOffset 4.5
 FrameIndex FBB1 D 0 0
 Scale 39 39 1
+AngleOffset 6.0
 FrameIndex FBB1 E 0 0
 Scale 40 40 1
+AngleOffset 7.5
 FrameIndex FBB1 F 0 0
 Scale 41 41 1
+AngleOffset 9.0
 FrameIndex FBB1 G 0 0
 Scale 42 42 1
+AngleOffset 10.5
 FrameIndex FBB1 H 0 0
 Scale 43 43 1
+AngleOffset 12.0
 FrameIndex FBB1 I 0 0
 Scale 44 44 1
+AngleOffset 13.5
 FrameIndex FBB1 J 0 0
 Scale 45 45 1
+AngleOffset 15.0
 FrameIndex FBB1 K 0 0
 Scale 46 46 1
+AngleOffset 16.5
 FrameIndex FBB1 L 0 0
 Scale 47 47 1
+AngleOffset 18.0
 FrameIndex FBB1 M 0 0
 Scale 48 48 1
+AngleOffset 19.5
 FrameIndex FBB1 N 0 0
 Scale 49 49 1
+AngleOffset 21.0
 FrameIndex FBB1 O 0 0
 Scale 50 50 1
+AngleOffset 22.5
 FrameIndex FBB1 P 0 0
 Scale 51 51 1
+AngleOffset 24.0
 FrameIndex FBB1 Q 0 0
 Scale 52 52 1
+AngleOffset 25.5
 FrameIndex FBB1 R 0 0
 Scale 53 53 1
+AngleOffset 27.0
 FrameIndex FBB1 S 0 0
 Scale 54 54 1
+AngleOffset 28.5
 FrameIndex FBB1 T 0 0
 Scale 55 55 1
+AngleOffset 30.0
 FrameIndex FBB1 U 0 0
 Scale 56 56 1
+AngleOffset 31.5
 FrameIndex FBB1 V 0 0
 Scale 57 57 1
+AngleOffset 33.0
 FrameIndex FBB1 W 0 0
 Scale 58 58 1
+AngleOffset 34.5
 FrameIndex FBB1 X 0 0
 Scale 59 59 1
+AngleOffset 36.0
 FrameIndex FBB1 Y 0 0
 Scale 60 60 1
-rotation-speed 0
+AngleOffset 37.5
 FrameIndex FBB1 Z 0 0
 }
 
-Model GrowingBloodPoolGreen	//combined into one model
+Model GrowingBloodPoolGreen
 {
 Path "models"
 Model 0 "bloodspot.md3"
 Skin 0 "bloodpoolgrow.png"
 Scale 20 20 1
 ZOffset 0.87
-rotating
 INTERPOLATEDOUBLEDFRAMES
-Rotation-Center 0 0 0
-rotation-speed 0.1
+AngleOffset 0.0
 FrameIndex FBB1 A 0 0
 Scale 21 21 1
+AngleOffset 1.5
 FrameIndex FBB1 B 0 0
 Scale 22 22 1
+AngleOffset 3.0
 FrameIndex FBB1 C 0 0
 Scale 23 23 1
+AngleOffset 4.5
 FrameIndex FBB1 D 0 0
 Scale 24 24 1
+AngleOffset 6.0
 FrameIndex FBB1 E 0 0
 Scale 25 25 1
+AngleOffset 7.5
 FrameIndex FBB1 F 0 0
 Scale 26 26 1
+AngleOffset 9.0
 FrameIndex FBB1 G 0 0
 Scale 27 27 1
+AngleOffset 10.5
 FrameIndex FBB1 H 0 0
 Scale 28 28 1
+AngleOffset 12.0
 FrameIndex FBB1 I 0 0
 Scale 29 29 1
+AngleOffset 13.5
 FrameIndex FBB1 J 0 0
 Scale 30 30 1
+AngleOffset 15.0
 FrameIndex FBB1 K 0 0
 Scale 31 31 1
+AngleOffset 16.5
 FrameIndex FBB1 L 0 0
 Scale 32 32 1
+AngleOffset 18.0
 FrameIndex FBB1 M 0 0
 Scale 33 33 1
+AngleOffset 19.5
 FrameIndex FBB1 N 0 0
 Scale 34 34 1
+AngleOffset 21.0
 FrameIndex FBB1 O 0 0
 Scale 35 35 1
+AngleOffset 22.5
 FrameIndex FBB1 P 0 0
 Scale 36 36 1
+AngleOffset 24.0
 FrameIndex FBB1 Q 0 0
 Scale 37 37 1
+AngleOffset 25.5
 FrameIndex FBB1 R 0 0
 Scale 38 38 1
+AngleOffset 27.0
 FrameIndex FBB1 S 0 0
 Scale 39 39 1
+AngleOffset 28.5
 FrameIndex FBB1 T 0 0
 Scale 40 40 1
+AngleOffset 30.0
 FrameIndex FBB1 U 0 0
 Scale 41 41 1
+AngleOffset 31.5
 FrameIndex FBB1 V 0 0
 Scale 42 42 1
+AngleOffset 33.0
 FrameIndex FBB1 W 0 0
 Scale 43 43 1
+AngleOffset 34.5
 FrameIndex FBB1 X 0 0
 Scale 44 44 1
+AngleOffset 36.0
 FrameIndex FBB1 Y 0 0
 Scale 45 45 1
-rotation-speed 0
+AngleOffset 37.5
 FrameIndex FBB1 Z 0 0
 }
 
-Model GrowingBloodPoolBLUE	//combined into one model
+Model GrowingBloodPoolBLUE
 {
 Path "models"
 Model 0 "bloodspot.md3"
 Skin 0 "bloodpoolgrow.png"
 Scale 20 20 1
 ZOffset 0.88
-rotating
 INTERPOLATEDOUBLEDFRAMES
-Rotation-Center 0 0 0
-rotation-speed 0.1
+AngleOffset 0.0
 FrameIndex FBB1 A 0 0
 Scale 21 21 1
+AngleOffset 1.5
 FrameIndex FBB1 B 0 0
 Scale 22 22 1
+AngleOffset 3.0
 FrameIndex FBB1 C 0 0
 Scale 23 23 1
+AngleOffset 4.5
 FrameIndex FBB1 D 0 0
 Scale 24 24 1
+AngleOffset 6.0
 FrameIndex FBB1 E 0 0
 Scale 25 25 1
+AngleOffset 7.5
 FrameIndex FBB1 F 0 0
 Scale 26 26 1
+AngleOffset 9.0
 FrameIndex FBB1 G 0 0
 Scale 27 27 1
+AngleOffset 10.5
 FrameIndex FBB1 H 0 0
 Scale 28 28 1
+AngleOffset 12.0
 FrameIndex FBB1 I 0 0
 Scale 29 29 1
+AngleOffset 13.5
 FrameIndex FBB1 J 0 0
 Scale 30 30 1
+AngleOffset 15.0
 FrameIndex FBB1 K 0 0
 Scale 31 31 1
+AngleOffset 16.5
 FrameIndex FBB1 L 0 0
 Scale 32 32 1
+AngleOffset 18.0
 FrameIndex FBB1 M 0 0
 Scale 33 33 1
+AngleOffset 19.5
 FrameIndex FBB1 N 0 0
 Scale 34 34 1
+AngleOffset 21.0
 FrameIndex FBB1 O 0 0
 Scale 35 35 1
+AngleOffset 22.5
 FrameIndex FBB1 P 0 0
 Scale 36 36 1
+AngleOffset 24.0
 FrameIndex FBB1 Q 0 0
 Scale 37 37 1
+AngleOffset 25.5
 FrameIndex FBB1 R 0 0
 Scale 38 38 1
+AngleOffset 27.0
 FrameIndex FBB1 S 0 0
 Scale 39 39 1
+AngleOffset 28.5
 FrameIndex FBB1 T 0 0
 Scale 40 40 1
+AngleOffset 30.0
 FrameIndex FBB1 U 0 0
 Scale 41 41 1
+AngleOffset 31.5
 FrameIndex FBB1 V 0 0
 Scale 42 42 1
+AngleOffset 33.0
 FrameIndex FBB1 W 0 0
 Scale 43 43 1
+AngleOffset 34.5
 FrameIndex FBB1 X 0 0
 Scale 44 44 1
+AngleOffset 36.0
 FrameIndex FBB1 Y 0 0
 Scale 45 45 1
-rotation-speed 0
+AngleOffset 37.5
 FrameIndex FBB1 Z 0 0
 }
 

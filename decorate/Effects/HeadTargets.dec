@@ -121,9 +121,9 @@ States
 	}
 }
 
-actor HeadshotTarget2BLUE : HeadshotTargetBase
+actor HeadshotTarget2Blue : HeadshotTargetBase
 {
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 States
 	{
 	Spawn:
@@ -156,9 +156,9 @@ States
 	}
 }
 
-actor HeadshotTarget4BLUE : HeadshotTargetBase
+actor HeadshotTarget4Blue : HeadshotTargetBase
 {
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 States
 	{
 	Spawn:
@@ -191,9 +191,9 @@ States
 	}
 }
 
-actor HeadshotTarget6BLUE : HeadshotTargetBase
+actor HeadshotTarget6Blue : HeadshotTargetBase
 {
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 States
 	{
 	Spawn:
@@ -226,9 +226,9 @@ States
 	}
 }
 
-actor HeadshotTarget8BLUE : HeadshotTargetBase
+actor HeadshotTarget8Blue : HeadshotTargetBase
 {
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 States
 	{
 	Spawn:
@@ -306,9 +306,9 @@ States
 	}
 }
 
-actor HeadshotTarget16BLUE : HeadshotTargetBase
+actor HeadshotTarget16Blue : HeadshotTargetBase
 {
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 States
 	{
 	Spawn:
@@ -341,9 +341,9 @@ States
 	}
 }
 
-actor HeadshotTarget20BLUE : HeadshotTargetBase
+actor HeadshotTarget20Blue : HeadshotTargetBase
 {
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 States
 	{
 	Spawn:
@@ -376,9 +376,9 @@ BloodType "Brutal_BloodGreen"
 	}
 }
 
-actor HeadshotTarget23BLUE : HeadshotTargetBase
+actor HeadshotTarget23Blue : HeadshotTargetBase
 {
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 	States
 	{
 	Spawn:
@@ -411,9 +411,9 @@ BloodType "Brutal_BloodGreen"
 	}
 }
 
-actor HeadshotTarget30BLUE : HeadshotTargetBase
+actor HeadshotTarget30Blue : HeadshotTargetBase
 {
-BloodType "Brutal_BloodBLUE"
+BloodType "Brutal_BloodBlue"
 	States
 	{
 	Spawn:

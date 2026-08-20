@@ -1401,7 +1401,7 @@ color 1.0 1.0 0.0
 size 32
 secondarySize 48
 chance 0.3
-offset 0 80 0
+offset 0 40 0
 }
 
 flickerlight ARCHATK2
@@ -1410,7 +1410,7 @@ color 1.0 1.0 0.0
 size 56
 secondarySize 64
 chance 0.3
-offset 0 80 0
+offset 0 40 0
 }
 
 flickerlight ARCHATK3
@@ -1419,7 +1419,7 @@ color 1.0 1.0 0.0
 size 56
 secondarySize 64
 chance 0.3
-offset 0 64 0
+offset 0 32 0
 }
 
 flickerlight ARCHATK4
@@ -1428,7 +1428,7 @@ color 1.0 1.0 0.0
 size 64
 secondarySize 72
 chance 0.3
-offset 0 48 0
+offset 0 24 0
 }
 
 flickerlight ARCHATK5
@@ -1437,7 +1437,7 @@ color 1.0 1.0 0.0
 size 80
 secondarySize 88
 chance 0.3
-offset 0 40 0
+offset 0 20 0
 }
 
 flickerlight ARCHATK6
@@ -1446,7 +1446,7 @@ color 0.7 0.7 0.0
 size 96
 secondarySize 104
 chance 0.3
-offset 0 40 0
+offset 0 20 0
 }
 
 flickerlight ARCHATK7
@@ -1455,7 +1455,7 @@ color 0.3 0.3 0.0
 size 104
 secondarySize 112
 chance 0.3
-offset 0 40 0
+offset 0 20 0
 }
 
 pulselight ARCHRES
@@ -1520,7 +1520,7 @@ object SuperMotherBall
 //MotherDemon Fire
 object MotherFireTrail
 {
-	frame MPUF {light ARCHATK2}
+	frame MPUF {light ARCHATK1}
 }
 
 //forgotton one

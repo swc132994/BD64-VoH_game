@@ -523,6 +523,11 @@ Scale 0.5
 Alpha 0.7
 RenderStyle Add
 SeeSound "harvester/ghost"
++NOBLOCKMAP
++NOINTERACTION
++CLIENTSIDEONLY
++CORPSE
++FLOORCLIP
 +NOCLIP
 	States
 	{

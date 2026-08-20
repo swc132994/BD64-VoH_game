@@ -158,9 +158,9 @@ Scale 0.8
 Alpha 0.08
 RenderStyle Translucent
 +NOBLOCKMAP
++NOINTERACTION
 +CLIENTSIDEONLY
-+ISMONSTER
-+NOGRAVITY
++CORPSE
 	States
 	{
 	Spawn:

@@ -1326,8 +1326,9 @@ Scale 0.75
 Alpha 0.08
 RenderStyle Translucent
 +NOBLOCKMAP
++NOINTERACTION
 +CLIENTSIDEONLY
-+ISMONSTER		//Infrared
++CORPSE
 +FLOORCLIP
 	States
 	{

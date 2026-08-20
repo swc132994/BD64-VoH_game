@@ -143,14 +143,14 @@ MONSTER
 
 Actor MotherBall : 64RevenantTracer3
 {
-Damage 10
+Damage 8
 Speed 15
 RenderStyle Normal
 }
 
 Actor MotherBallWeak : 64RevenantTracer3
 {
-Damage 3
+Damage 4
 Speed 15
 RenderStyle Normal
 States
@@ -177,26 +177,29 @@ States
 
 Actor MotherFire
 {
-Game Doom
 Scale 0.8
-Damage 5
+Damage (5)
 Speed 15
 Height 8
 Radius 6
 Alpha 0.5
 RenderStyle Translucent
-DamageType "Vertigo"
+DamageType "Flames"
 SeeSound "skeleton/attack"
 DeathSound "null"
+ReactionTime 18
 PROJECTILE
 +RANDOMIZE
 +NODAMAGETHRUST
 +FLOORHUGGER
++DONTSPLASH
++RIPPER
 	States
 	{
 	Spawn:
-		MFIR ABCDE 4 Bright A_CustomMissile("MotherFireTrail",0,0,0,2)
+		MFIR ABCDE 4 Bright A_SpawnitemEx("MotherFireTrail")
 		TNT1 A 0 A_FireCrackle
+		TNT1 A 0 A_CountDown
 		Loop
 	Death:
 		MFIR E 1 Bright
@@ -226,15 +229,15 @@ PROJECTILE
 	{
 	Spawn:
 		TNT1 A 0 ThrustThingZ(0,1,0,1)
-		MFIR ABCDE 4 Bright A_CustomMissile("MotherFireTrail",0,0,0,2,0)
+		MFIR ABCDE 4 Bright A_SpawnItemEx("LongFlameParticle1")
 		TNT1 A 0 A_FireCrackle
-		MFIR ABCDE 4 Bright A_CustomMissile("MotherFireTrail",0,0,0,2,0)
+		MFIR ABCDE 4 Bright A_SpawnItemEx("LongFlameParticle1")
 		TNT1 A 0 A_FireCrackle
-		MFIR ABCDE 4 Bright A_CustomMissile("MotherFireTrail",0,0,0,2,0)
+		MFIR ABCDE 4 Bright A_SpawnItemEx("LongFlameParticle1")
 		TNT1 A 0 A_FireCrackle
-		MFIR ABCDE 4 Bright A_CustomMissile("MotherFireTrail",0,0,0,2,0)
+		MFIR ABCDE 4 Bright A_SpawnItemEx("LongFlameParticle1")
 		TNT1 A 0 A_FireCrackle
-		MFIR ABCDE 4 Bright A_CustomMissile("MotherFireTrail",0,0,0,2,0)
+		MFIR ABCDE 4 Bright A_SpawnItemEx("LongFlameParticle1")
 	Death:
 		MFIR E 1 Bright
 		Stop
@@ -243,7 +246,6 @@ PROJECTILE
 
 Actor MotherFireTrail
 {
-Game Doom
 Scale 0.8
 Mass 1
 Height 8
@@ -253,27 +255,28 @@ Damage 0
 DamageType "Flames"
 Alpha 0.6
 RenderStyle Translucent
-+NOGRAVITY
++NOINTERACTION
++NOBLOCKMAP
++DONTSPLASH 
 	States
 	{
 	Spawn:
-		MPUF A 5 NoDelay Bright A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 0 A_ChangeFlag("DONTSPLASH",TRUE)
-		TNT1 A 0 A_Explode(15,35,1)
-		MPUF A 5 Bright A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 0 A_Explode(15,35,1)
-		MPUF A 5 Bright A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 0 A_Explode(15,35,1)
-		MPUF A 5 Bright A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 0 A_Explode(15,35,1)
-		MPUF A 5 Bright A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 0 A_Explode(15,35,1)
-		MPUF A 5 Bright A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 0 A_Explode(15,35,1)
-		MPUF A 5 Bright A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 0 A_Explode(15,35,1)
-		MPUF A 5 Bright A_CustomMissile("LongFlameParticle1",random(0,8),0,random(0,360),2,random(80,100))
-		TNT1 A 0 A_Explode(15,35,1)
+		MPUF A 5 NoDelay Bright A_SpawnItemEx("LongFlameParticle1")
+		TNT1 A 0 A_Explode(12,35,1)
+		MPUF A 5 Bright A_SpawnItemEx("LongFlameParticle1")
+		TNT1 A 0 A_Explode(12,35,1)
+		MPUF A 5 Bright A_SpawnItemEx("LongFlameParticle1")
+		TNT1 A 0 A_Explode(12,35,1)
+		MPUF A 5 Bright A_SpawnItemEx("LongFlameParticle1")
+		TNT1 A 0 A_Explode(12,35,1)
+		MPUF A 5 Bright A_SpawnItemEx("LongFlameParticle1")
+		TNT1 A 0 A_Explode(12,35,1)
+		MPUF A 5 Bright A_SpawnItemEx("LongFlameParticle1")
+		TNT1 A 0 A_Explode(12,35,1)
+		MPUF A 5 Bright A_SpawnItemEx("LongFlameParticle1")
+		TNT1 A 0 A_Explode(12,35,1)
+		MPUF A 5 Bright A_SpawnItemEx("LongFlameParticle1")
+		TNT1 A 0 A_Explode(12,35,1)
 		TNT1 A 1 A_SpawnItemEx("DetectFloorCraterSmallMotherdemon")
 		Stop
 	}
@@ -550,8 +553,9 @@ Actor FinalMotherdemonSprite1
 Alpha 0.5
 RenderStyle Add
 +NOBLOCKMAP
++NOINTERACTION
 +CLIENTSIDEONLY
-+ISMONSTER
++CORPSE
 +FLOORCLIP
 	States
 	{

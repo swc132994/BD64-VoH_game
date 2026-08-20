@@ -70,7 +70,7 @@ smallclip		10
 smallsound		world/lavasizzlesmall
 
 baseclass		lavasplashbase
-chunkclass		BD64LavaSmoke
+chunkclass		LavaSmoke
 chunkxvelshift	-1
 chunkyvelshift	-1
 chunkzvelshift	2

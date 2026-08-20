@@ -720,8 +720,10 @@ Scale 0.75
 Alpha 0.2
 RenderStyle Translucent
 +NOBLOCKMAP
++NOINTERACTION
 +CLIENTSIDEONLY
-+ISMONSTER	//Infrared
++CORPSE
++FLOORCLIP
 	States
 	{
 	Spawn:
@@ -1141,8 +1143,9 @@ Scale 0.8
 Alpha 0.2
 RenderStyle Translucent
 +NOBLOCKMAP
++NOINTERACTION
 +CLIENTSIDEONLY
-+ISMONSTER		//Infrared
++CORPSE
 +FLOORCLIP
 	States
 	{

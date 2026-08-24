@@ -932,6 +932,25 @@ SHGHSCR1 SHGHSCR1
 SHGHSCR2 SHGHSCR2
 SHGHSCR3 SHGHSCR3
 
+//Vassago
+Vassago/SeeSound DSVASSIT
+Vassago/ActiveSound DSVASACT
+Vassago/PainSound DSVASPAI
+Vassago/DeathSound DSVASDTH
+Vassago/AttackSound DSVASATK
+
+//Vassago Flame
+VassagoFlame/SeeSound DSINCBRN
+
+$random BurnSound
+	{
+	VassagoFlame/BurnSound1 VassagoFlame/BurnSound2 VassagoFlame/BurnSound3
+	}
+
+VassagoFlame/BurnSound1 DSINCHT1
+VassagoFlame/BurnSound2 DSINCHT2
+VassagoFlame/BurnSound3 DSINCHT3
+
 //Anomaly Events
 $random polt/see
 	{

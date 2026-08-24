@@ -722,6 +722,7 @@ FO_TAG_HANGMAN = "Hangman";
 FO_TAG_KEEN = "Scorpion Hanged";
 FO_TAG_SUPERFALLEN = "Supreme Fallen";
 FO_TAG_GORENEST = "Gore Nest";
+FO_TAG_VASSAGO = "Vassago";
 
 //////////////////////////////////////////////////////////////////
 //NPC marine tags & obituary
@@ -828,6 +829,7 @@ FO_OB_EVILEYE = "%o stared into an \crevil Eye\c- for too long...";
 FO_OB_EVILTREE = "%o was impaled by a \crYateveo\c-.";
 FO_OB_HANGMAN = "%o was ambushed by a \crhanged man\c-.";
 FO_OB_SUPERFALLEN = "%o was immolated by a \cr supreme fallen\c-.";
+FO_OB_VASSAGO = "%o was burned to a crisp by a \cr vassago\c-.";
 //	OB_DOG = "%o was mauled by a dog.";
 
 //////////////////////////////////////////////////////////////////

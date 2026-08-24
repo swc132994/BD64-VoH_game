@@ -1362,6 +1362,65 @@ brightmap sprite CENTI0		{map "brightmaps/Impaler/CENTI0_BR.png"}
 brightmap sprite CENTJ0		{map "brightmaps/Impaler/CENTJ0_BR.png"}
 brightmap sprite CENTK0		{map "brightmaps/Impaler/CENTK0_BR.png"}
 
+//Vassago
+brightmap sprite VASSA1C1	{map "brightmaps/Vassago/VASSA1C1_BR.png"}
+brightmap sprite VASSA2C8	{map "brightmaps/Vassago/VASSA2C8_BR.png"}
+brightmap sprite VASSA3C7	{map "brightmaps/Vassago/VASSA3C7_BR.png"}
+brightmap sprite VASSA6C4	{map "brightmaps/Vassago/VASSA6C4_BR.png"}
+brightmap sprite VASSA7C3	{map "brightmaps/Vassago/VASSA7C3_BR.png"}
+brightmap sprite VASSA8C2	{map "brightmaps/Vassago/VASSA8C2_BR.png"}
+brightmap sprite VASSB1D1	{map "brightmaps/Vassago/VASSB1D1_BR.png"}
+brightmap sprite VASSB2D8	{map "brightmaps/Vassago/VASSB2D8_BR.png"}
+brightmap sprite VASSB3D7	{map "brightmaps/Vassago/VASSB3D7_BR.png"}
+brightmap sprite VASSB7D3	{map "brightmaps/Vassago/VASSB7D3_BR.png"}
+brightmap sprite VASSB8D2	{map "brightmaps/Vassago/VASSB8D2_BR.png"}
+brightmap sprite VASSE1R1	{map "brightmaps/Vassago/VASSE1R1_BR.png"}
+brightmap sprite VASSE2R8	{map "brightmaps/Vassago/VASSE2R8_BR.png"}
+brightmap sprite VASSE3R7	{map "brightmaps/Vassago/VASSE3R7_BR.png"}
+brightmap sprite VASSE7R3	{map "brightmaps/Vassago/VASSE7R3_BR.png"}
+brightmap sprite VASSE8R2	{map "brightmaps/Vassago/VASSE8R2_BR.png"}
+brightmap sprite VASSF1S1	{map "brightmaps/Vassago/VASSF1S1_BR.png"}
+brightmap sprite VASSF2S8	{map "brightmaps/Vassago/VASSF2S8_BR.png"}
+brightmap sprite VASSF3S7	{map "brightmaps/Vassago/VASSF3S7_BR.png"}
+brightmap sprite VASSF7S3	{map "brightmaps/Vassago/VASSF7S3_BR.png"}
+brightmap sprite VASSF8S2	{map "brightmaps/Vassago/VASSF8S2_BR.png"}
+brightmap sprite VASSG1T1	{map "brightmaps/Vassago/VASSG1T1_BR.png"}
+brightmap sprite VASSG2T8	{map "brightmaps/Vassago/VASSG2T8_BR.png"}
+brightmap sprite VASSG3T7	{map "brightmaps/Vassago/VASSG3T7_BR.png"}
+brightmap sprite VASSG7T3	{map "brightmaps/Vassago/VASSG7T3_BR.png"}
+brightmap sprite VASSG8T2	{map "brightmaps/Vassago/VASSG8T2_BR.png"}
+brightmap sprite VASSH1U1	{map "brightmaps/Vassago/VASSH1U1_BR.png"}
+brightmap sprite VASSH2U8	{map "brightmaps/Vassago/VASSH2U8_BR.png"}
+brightmap sprite VASSH3U7	{map "brightmaps/Vassago/VASSH3U7_BR.png"}
+brightmap sprite VASSH7U3	{map "brightmaps/Vassago/VASSH7U3_BR.png"}
+brightmap sprite VASSH8U2	{map "brightmaps/Vassago/VASSH8U2_BR.png"}
+brightmap sprite VASSI1		{map "brightmaps/Vassago/VASSI1_BR.png"}
+brightmap sprite VASSI2		{map "brightmaps/Vassago/VASSI2_BR.png"}
+brightmap sprite VASSI3		{map "brightmaps/Vassago/VASSI3_BR.png"}
+brightmap sprite VASSI7		{map "brightmaps/Vassago/VASSI7_BR.png"}
+brightmap sprite VASSI8		{map "brightmaps/Vassago/VASSI8_BR.png"}
+brightmap sprite VSSBA1		{map "brightmaps/Vassago/VSSBA1_BR.png"}
+brightmap sprite VSSBA2A8	{map "brightmaps/Vassago/VSSBA2A8_BR.png"}
+brightmap sprite VSSBA3A7	{map "brightmaps/Vassago/VSSBA3A7_BR.png"}
+brightmap sprite VSSBB1		{map "brightmaps/Vassago/VSSBB1_BR.png"}
+brightmap sprite VSSBB2B8	{map "brightmaps/Vassago/VSSBB2B8_BR.png"}
+brightmap sprite VSSBB3B7	{map "brightmaps/Vassago/VSSBB3B7_BR.png"}
+brightmap sprite VSSBC1		{map "brightmaps/Vassago/VSSBC1_BR.png"}
+brightmap sprite VSSBC2C8	{map "brightmaps/Vassago/VSSBC2C8_BR.png"}
+brightmap sprite VSSBC3C7	{map "brightmaps/Vassago/VSSBC3C7_BR.png"}
+brightmap sprite VSSBD1		{map "brightmaps/Vassago/VSSBD1_BR.png"}
+brightmap sprite VSSBD2D8	{map "brightmaps/Vassago/VSSBD2D8_BR.png"}
+brightmap sprite VSSBD3D7	{map "brightmaps/Vassago/VSSBD3D7_BR.png"}
+brightmap sprite VSSBE1		{map "brightmaps/Vassago/VSSBE1_BR.png"}
+brightmap sprite VSSBE2E8	{map "brightmaps/Vassago/VSSBE2E8_BR.png"}
+brightmap sprite VSSBE3E7	{map "brightmaps/Vassago/VSSBE3E7_BR.png"}
+brightmap sprite VSSBF1		{map "brightmaps/Vassago/VSSBF1_BR.png"}
+brightmap sprite VSSBF2F8	{map "brightmaps/Vassago/VSSBF2F8_BR.png"}
+brightmap sprite VSSBF3F7	{map "brightmaps/Vassago/VSSBF3F7_BR.png"}
+brightmap sprite VSSBG1		{map "brightmaps/Vassago/VSSBG1_BR.png"}
+brightmap sprite VSSBG2G8	{map "brightmaps/Vassago/VSSBG2G8_BR.png"}
+brightmap sprite VSSBG3G7	{map "brightmaps/Vassago/VSSBG3G7_BR.png"}
+
 //Keen Replacement
 brightmap sprite SC0RL0		{map "brightmaps/KeenReplace/BMFATALY.png"}
 

@@ -20,28 +20,28 @@ script "DefaultCvars" (void) net
 	SetCvar("AbsMapCheckCvar",1);
 
 	SetCvar("Chaingun_Spawner_Cvar",1);
-	SetCvar("GaussCannon_Spawner_Cvar",1);
+	SetCvar("PlasmaRifle_Spawner_Cvar",1);
 	SetCvar("BFG_Spawner_Cvar",1);
 	SetCvar("WpnPower_Spawner_Cvar",1);
 	SetCvar("BonusRandomCvar",1);
 
-	SetCvar("ZMarineRandom_Cvar",1);
-	SetCvar("SSGZombieRandom_Cvar",1);
-	SetCvar("ZombieChaingunRandom_Cvar",1);
-	SetCvar("NImp_Spawner_Cvar",1);
-	SetCvar("AcidDemonRandom_Cvar",1);
-	SetCvar("NSpectre_Spawner_Cvar",1);
-	SetCvar("NCaco_Spawner_Cvar",1);
-	SetCvar("StalkerRandom_Cvar",1);
-	SetCvar("ArachnotronRandomCvar",1);
-	SetCvar("KnightmareRandomCvar",1);
+	SetCvar("Zombieman_Spawner_Cvar",1);
+	SetCvar("Shotgunguy_Spawner_Cvar",1);
+	SetCvar("Chaingunguy_Spawner_Cvar",1);
+	SetCvar("Imp_Spawner_Cvar",1);
+	SetCvar("Demon_Spawner_Cvar",1);
+	SetCvar("Spectre_Spawner_Cvar",1);
+	SetCvar("Cacodemon_Spawner_Cvar",1);
+	SetCvar("LostSoul_Spawner_Cvar",1);
+	SetCvar("Arachnotron_Spawner_Cvar",1);
+	SetCvar("HellKnight_Spawner_Cvar",1);
 	SetCvar("Revenant_Spawner_Cvar",1);
-	SetCvar("Hellhound_Spawner_Cvar",1);
-	SetCvar("BruiserRandom_Cvar",1);
-	SetCvar("NightElementalRandomCvar",1);
-	SetCvar("FleshWizardRandomCvar",1);
-	SetCvar("Annihilator_Spawner_Cvar",1);
-	SetCvar("Motherdemon_Spawner_Cvar",1);
+	SetCvar("Baron_Spawner_Cvar",1);
+	SetCvar("Fatso_Spawner_Cvar",1);
+	SetCvar("PainElemental_Spawner_Cvar",1);
+	SetCvar("Archvile_Spawner_Cvar",1);
+	SetCvar("Cyberdemon_Spawner_Cvar",1);
+	SetCvar("Mastermind_Spawner_Cvar",1);
 
 	SetCvar("CacoChooserCvar",0);
 	SetCvar("HoundChooserCvar",1);
@@ -63,24 +63,24 @@ script "DefaultCvars" (void) net
 	ACS_NamedExecuteAlways("BD64Respawn",0);
 	
 	//percent is here
-	SetCvar("bd64_SpawnPercentZombieman", 1);
-	SetCvar("bd64_SpawnPercentShotgunGuy", 1);
-	SetCvar("bd64_SpawnPercentChaingunGuy", 1);
-	SetCvar("bd64_SpawnPercentImp", 1);
-	SetCvar("bd64_SpawnPercentDemon", 1);
-	SetCvar("bd64_SpawnPercentSpectre", 1);
-	SetCvar("bd64_SpawnPercentCacodemon", 1);
-	SetCvar("bd64_SpawnPercentLostSoul", 1);
-	SetCvar("bd64_SpawnPercentPainElemental", 1);
-	SetCvar("bd64_SpawnPercentArachnotron", 1);
-	SetCvar("bd64_SpawnPercentHellKnight", 1);
-	SetCvar("bd64_SpawnPercentRevenant", 1);
-	SetCvar("bd64_SpawnPercentBaron", 1);
-	SetCvar("bd64_SpawnPercentMancubus", 1);
-	SetCvar("bd64_SpawnPercentArchvile", 1);
-	SetCvar("bd64_SpawnPercentCyberdemon", 1);
-	SetCvar("bd64_SpawnPercentMastermind", 1);
-	SetCvar("bd64_SpawnPercentHorde", 1);
+	SetCvar("bd64_SpawnPercentZombieman",1);
+	SetCvar("bd64_SpawnPercentShotgunGuy",1);
+	SetCvar("bd64_SpawnPercentChaingunGuy",1);
+	SetCvar("bd64_SpawnPercentImp",1);
+	SetCvar("bd64_SpawnPercentDemon",1);
+	SetCvar("bd64_SpawnPercentSpectre",1);
+	SetCvar("bd64_SpawnPercentCacodemon",1);
+	SetCvar("bd64_SpawnPercentLostSoul",1);
+	SetCvar("bd64_SpawnPercentPainElemental",1);
+	SetCvar("bd64_SpawnPercentArachnotron",1);
+	SetCvar("bd64_SpawnPercentHellKnight",1);
+	SetCvar("bd64_SpawnPercentRevenant",1);
+	SetCvar("bd64_SpawnPercentBaron",1);
+	SetCvar("bd64_SpawnPercentMancubus",1);
+	SetCvar("bd64_SpawnPercentArchvile",1);
+	SetCvar("bd64_SpawnPercentCyberdemon",1);
+	SetCvar("bd64_SpawnPercentMastermind",1);
+	SetCvar("bd64_SpawnPercentHorde",1);
 	
 	delay(1);
 }
@@ -109,28 +109,28 @@ script "ClassicalCvars" (void) net
 	SetCvar("HoundChooserCvar",-1);
 
 	SetCvar("Chaingun_Spawner_Cvar",1);
-	SetCvar("GaussCannon_Spawner_Cvar",1);
+	SetCvar("PlasmaRifle_Spawner_Cvar",1);
 	SetCvar("BFG_Spawner_Cvar",1);
 	SetCvar("WpnPower_Spawner_Cvar",1);
 	SetCvar("BonusRandomCvar",1);
 
-	SetCvar("ZMarineRandom_Cvar",1);
-	SetCvar("SSGZombieRandom_Cvar",1);
-	SetCvar("ZombieChaingunRandom_Cvar",1);
-	SetCvar("NImp_Spawner_Cvar",1);
-	SetCvar("AcidDemonRandom_Cvar",1);
-	SetCvar("NSpectre_Spawner_Cvar",1);
-	SetCvar("NCaco_Spawner_Cvar",1);
-	SetCvar("StalkerRandom_Cvar",1);
-	SetCvar("ArachnotronRandomCvar",1);
-	SetCvar("KnightmareRandomCvar",1);
+	SetCvar("Zombieman_Spawner_Cvar",1);
+	SetCvar("Shotgunguy_Spawner_Cvar",1);
+	SetCvar("Chaingunguy_Spawner_Cvar",1);
+	SetCvar("Imp_Spawner_Cvar",1);
+	SetCvar("Demon_Spawner_Cvar",1);
+	SetCvar("Spectre_Spawner_Cvar",1);
+	SetCvar("Cacodemon_Spawner_Cvar",1);
+	SetCvar("LostSoul_Spawner_Cvar",1);
+	SetCvar("Arachnotron_Spawner_Cvar",1);
+	SetCvar("HellKnight_Spawner_Cvar",1);
 	SetCvar("Revenant_Spawner_Cvar",-1);
-	SetCvar("Hellhound_Spawner_Cvar",1);
-	SetCvar("BruiserRandom_Cvar",1);
-	SetCvar("NightElementalRandomCvar",1);
-	SetCvar("FleshWizardRandomCvar",-4);
-	SetCvar("Annihilator_Spawner_Cvar",1);
-	SetCvar("Motherdemon_Spawner_Cvar",-4);
+	SetCvar("Baron_Spawner_Cvar",1);
+	SetCvar("Fatso_Spawner_Cvar",1);
+	SetCvar("PainElemental_Spawner_Cvar",1);
+	SetCvar("Archvile_Spawner_Cvar",-4);
+	SetCvar("Cyberdemon_Spawner_Cvar",1);
+	SetCvar("Mastermind_Spawner_Cvar",-4);
 
 	SetCvar("TheHorde_Multiplier_Cvar",-1);
 
@@ -150,24 +150,24 @@ script "ClassicalCvars" (void) net
 	ACS_NamedExecuteAlways("BD64Respawn",0);
 	
 	//percent is here
-	SetCvar("bd64_SpawnPercentZombieman", 1);
-	SetCvar("bd64_SpawnPercentShotgunGuy", 1);
-	SetCvar("bd64_SpawnPercentChaingunGuy", 1);
-	SetCvar("bd64_SpawnPercentImp", 1);
-	SetCvar("bd64_SpawnPercentDemon", 1);
-	SetCvar("bd64_SpawnPercentSpectre", 1);
-	SetCvar("bd64_SpawnPercentCacodemon", 1);
-	SetCvar("bd64_SpawnPercentLostSoul", 1);
-	SetCvar("bd64_SpawnPercentPainElemental", 1);
-	SetCvar("bd64_SpawnPercentArachnotron", 1);
-	SetCvar("bd64_SpawnPercentHellKnight", 1);
-	SetCvar("bd64_SpawnPercentRevenant", 1);
-	SetCvar("bd64_SpawnPercentBaron", 1);
-	SetCvar("bd64_SpawnPercentMancubus", 1);
-	SetCvar("bd64_SpawnPercentArchvile", 1);
-	SetCvar("bd64_SpawnPercentCyberdemon", 1);
-	SetCvar("bd64_SpawnPercentMastermind", 1);
-	SetCvar("bd64_SpawnPercentHorde", 1);
+	SetCvar("bd64_SpawnPercentZombieman",1);
+	SetCvar("bd64_SpawnPercentShotgunGuy",1);
+	SetCvar("bd64_SpawnPercentChaingunGuy",1);
+	SetCvar("bd64_SpawnPercentImp",1);
+	SetCvar("bd64_SpawnPercentDemon",1);
+	SetCvar("bd64_SpawnPercentSpectre",1);
+	SetCvar("bd64_SpawnPercentCacodemon",1);
+	SetCvar("bd64_SpawnPercentLostSoul",1);
+	SetCvar("bd64_SpawnPercentPainElemental",1);
+	SetCvar("bd64_SpawnPercentArachnotron",1);
+	SetCvar("bd64_SpawnPercentHellKnight",1);
+	SetCvar("bd64_SpawnPercentRevenant",1);
+	SetCvar("bd64_SpawnPercentBaron",1);
+	SetCvar("bd64_SpawnPercentMancubus",1);
+	SetCvar("bd64_SpawnPercentArchvile",1);
+	SetCvar("bd64_SpawnPercentCyberdemon",1);
+	SetCvar("bd64_SpawnPercentMastermind",1);
+	SetCvar("bd64_SpawnPercentHorde",1);
 	
 	delay(1);
 }
@@ -193,28 +193,28 @@ script "StevenCvars" (void) net
 	SetCvar("AbsMapCheckCvar",1);
 
 	SetCvar("Chaingun_Spawner_Cvar",0);
-	SetCvar("GaussCannon_Spawner_Cvar",0);
+	SetCvar("PlasmaRifle_Spawner_Cvar",0);
 	SetCvar("BFG_Spawner_Cvar",0);
 //	SetCvar("WpnPower_Spawner_Cvar",0);
 	SetCvar("BonusRandomCvar",0);
 
-	SetCvar("ZMarineRandom_Cvar",0);
-	SetCvar("SSGZombieRandom_Cvar",0);
-	SetCvar("ZombieChaingunRandom_Cvar",0);
-	SetCvar("NImp_Spawner_Cvar",0);
-	SetCvar("AcidDemonRandom_Cvar",0);
-	SetCvar("NSpectre_Spawner_Cvar",0);
-	SetCvar("NCaco_Spawner_Cvar",0);
-	SetCvar("StalkerRandom_Cvar",0);
-	SetCvar("ArachnotronRandomCvar",0);
-	SetCvar("KnightmareRandomCvar",0);
+	SetCvar("Zombieman_Spawner_Cvar",0);
+	SetCvar("Shotgunguy_Spawner_Cvar",0);
+	SetCvar("Chaingunguy_Spawner_Cvar",0);
+	SetCvar("Imp_Spawner_Cvar",0);
+	SetCvar("Demon_Spawner_Cvar",0);
+	SetCvar("Spectre_Spawner_Cvar",0);
+	SetCvar("Cacodemon_Spawner_Cvar",0);
+	SetCvar("LostSoul_Spawner_Cvar",0);
+	SetCvar("Arachnotron_Spawner_Cvar",0);
+	SetCvar("HellKnight_Spawner_Cvar",0);
 	SetCvar("Revenant_Spawner_Cvar",0);
-	SetCvar("Hellhound_Spawner_Cvar",0);
-	SetCvar("BruiserRandom_Cvar",0);
-	SetCvar("NightElementalRandomCvar",0);
-	SetCvar("FleshWizardRandomCvar",0);
-	SetCvar("Annihilator_Spawner_Cvar",0);
-	SetCvar("Motherdemon_Spawner_Cvar",0);
+	SetCvar("Baron_Spawner_Cvar",0);
+	SetCvar("Fatso_Spawner_Cvar",0);
+	SetCvar("PainElemental_Spawner_Cvar",0);
+	SetCvar("Archvile_Spawner_Cvar",0);
+	SetCvar("Cyberdemon_Spawner_Cvar",0);
+	SetCvar("Mastermind_Spawner_Cvar",0);
 
 	SetCvar("CacoChooserCvar",1);
 	SetCvar("HoundChooserCvar",2);
@@ -236,24 +236,24 @@ script "StevenCvars" (void) net
 	ACS_NamedExecuteAlways("BD64Respawn",0);
 	
 	//percent is here
-	SetCvar("bd64_SpawnPercentZombieman", 4);
-	SetCvar("bd64_SpawnPercentShotgunGuy", 4);
-	SetCvar("bd64_SpawnPercentChaingunGuy", 4);
-	SetCvar("bd64_SpawnPercentImp", 5);
-	SetCvar("bd64_SpawnPercentDemon", 5);
-	SetCvar("bd64_SpawnPercentSpectre", 4);
-	SetCvar("bd64_SpawnPercentCacodemon", 3);
-	SetCvar("bd64_SpawnPercentLostSoul", 2);
-	SetCvar("bd64_SpawnPercentPainElemental", 2);
-	SetCvar("bd64_SpawnPercentArachnotron", 2);
-	SetCvar("bd64_SpawnPercentHellKnight", 4);
-	SetCvar("bd64_SpawnPercentRevenant", 5);
-	SetCvar("bd64_SpawnPercentBaron", 4);
-	SetCvar("bd64_SpawnPercentMancubus", 4);
-	SetCvar("bd64_SpawnPercentArchvile", 3);
-	SetCvar("bd64_SpawnPercentCyberdemon", 6);
-	SetCvar("bd64_SpawnPercentMastermind", 6);
-	SetCvar("bd64_SpawnPercentHorde", 10);
+	SetCvar("bd64_SpawnPercentZombieman",4);
+	SetCvar("bd64_SpawnPercentShotgunGuy",4);
+	SetCvar("bd64_SpawnPercentChaingunGuy",4);
+	SetCvar("bd64_SpawnPercentImp",5);
+	SetCvar("bd64_SpawnPercentDemon",5);
+	SetCvar("bd64_SpawnPercentSpectre",4);
+	SetCvar("bd64_SpawnPercentCacodemon",3);
+	SetCvar("bd64_SpawnPercentLostSoul",2);
+	SetCvar("bd64_SpawnPercentPainElemental",2);
+	SetCvar("bd64_SpawnPercentArachnotron",2);
+	SetCvar("bd64_SpawnPercentHellKnight",4);
+	SetCvar("bd64_SpawnPercentRevenant",5);
+	SetCvar("bd64_SpawnPercentBaron",4);
+	SetCvar("bd64_SpawnPercentMancubus",4);
+	SetCvar("bd64_SpawnPercentArchvile",3);
+	SetCvar("bd64_SpawnPercentCyberdemon",6);
+	SetCvar("bd64_SpawnPercentMastermind",6);
+	SetCvar("bd64_SpawnPercentHorde",10);
 	
 	delay(1);
 }

@@ -1980,6 +1980,95 @@ Frame SHGHH {Light SoulHarvesterGhost2}
 Frame SHGHI {Light SoulHarvesterGhost1}
 }
 
+//VASSAGO
+flickerlight VassagoFireball
+{
+	color 1.0 0.5 0.0
+	size 48
+	secondarysize 56
+	chance 0.8
+}
+pointlight VassagoFireballX1
+{
+	color 1.0 0.5 0.0
+	size 78
+}
+pointlight VassagoFireballX2
+{
+	color 1.0 0.5 0.0
+	size 88
+}
+pointlight VassagoFireballX3
+{
+	color 1.0 0.5 0.0
+	size 80
+}
+flickerlight VassagoFire1
+{
+	color 1.0 0.5 0.0
+	size 64
+	secondarysize 68
+	chance 0.8
+}
+flickerlight VassagoFire2
+{
+	color 1.0 0.5 0.0
+	size 52
+	secondarysize 56
+	chance 0.8
+}
+flickerlight VassagoFire3
+{
+	color 1.0 0.5 0.0
+	size 40
+	secondarysize 44
+	chance 0.8
+}
+flickerlight VassagoFire4
+{
+	color 1.0 0.5 0.0
+	size 20
+	secondarysize 23
+	chance 0.8
+}
+
+object 64Vassago
+{
+	frame VASSJ0 {light VassagoFireballX2}
+	frame VASSK0 {light VassagoFireballX2}
+	frame VASSL0 {light VassagoFireballX3}
+	frame VASSM0 {light VassagoFireballX3}
+	frame VASSN0 {light VassagoFireballX3}
+	frame VASSO0 {light VassagoFireballX1}
+	frame VASSP0 {light VassagoFireball}
+}
+
+object 64VassagoFlame
+{
+	frame VFLMA {light VassagoFireball}
+	frame VFLMB {light VassagoFireball}
+	frame VFLMC {light VassagoFireballX1}
+	frame VFLMD {light VassagoFireballX2}
+	frame VFLME {light VassagoFireballX3}
+	frame VFLMF {light VassagoFire1}
+	frame VFLMG {light VassagoFire1}
+	frame VFLMH {light VassagoFire1}
+	frame VFLMI {light VassagoFire1}
+	frame VFLMJ {light VassagoFire2}
+	frame VFLMK {light VassagoFire2}
+	frame VFLML {light VassagoFire3}
+	frame VFLMM {light VassagoFire3}
+	frame VFLMN {light VassagoFire3}
+	frame VFLMO {light VassagoFire4}
+	frame VFLMP {light VassagoFire4}
+	frame VFLMQ {light VassagoFire4}
+}
+	
+object VassagoFireTrail
+{
+	frame MPUF {light ARCHATK1}
+}
+
 //Doom Teleport fog
 flickerlight DTFOG1
 {

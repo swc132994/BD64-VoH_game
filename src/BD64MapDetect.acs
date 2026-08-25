@@ -1,11 +1,15 @@
 //This file is based off the BDv21b Map Enhancement system.
-//These scripts will check the Doom 1 maps and place Doom 2 monsters approx to PSX Doom 1 placements.
+//These scripts will check the Doom 1 maps and place Doom 2 monsters approximate to PSX Doom placements.
 //
-//CREDITS
-//BROS_ETT_311 (brosett311), Sgt_Mark_IV, Kaminsky, TDRR
+//CREDITS - BROS_ETT_311 (brosett311), Sgt_Mark_IV,Kaminsky,TDRR
+
+bool bMapChecked = false;
 
 Script "BD64MapCheckSetup" ENTER
 {
+	if (bMapChecked) terminate;
+	bMapChecked = true;
+
 	SetPlayerProperty(0,1,PROP_TOTALLYFROZEN);
 	ACS_NamedExecuteWithResult("BD64DetectMap",0,0,0,0);
 	Delay(5);
@@ -14,11 +18,12 @@ Script "BD64MapCheckSetup" ENTER
 
 script "BD64DetectMap" (Void)
 {
-	int x = GetActorX(0) >> 16;// / 65536;
-	int y = GetActorY(0) >> 16;// / 65536;
-	int z = GetActorZ(0) >> 16;// / 65536;
+	int x = GetActorX(0) >> 16;
+	int y = GetActorY(0) >> 16;
+	int z = GetActorZ(0) >> 16;
 	int par = GetLevelInfo(LEVELINFO_PAR_TIME);
 	int secrets = GetLevelInfo(LEVELINFO_TOTAL_SECRETS);
+
 	//E1M1
 		if ( (x == 1056 && y == -3616 || x == 1072 && y == -4296) && par == 30 && StrCmp(StrParam(n:PRINTNAME_LEVEL),"E1M1") == 0 )
 		{

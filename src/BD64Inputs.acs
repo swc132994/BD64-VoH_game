@@ -83,21 +83,28 @@ script "CheckCrouch" ENTER
 
 script "Sprinting" ENTER
 {
-if(CheckInventory("IsTacticalClass") == 1)
-	{
 	int buttons;
 
 	while (TRUE)
+	{
+		if (CheckInventory("IsTacticalClass") == 1)
 		{
-		buttons = GetPlayerInput(-1,INPUT_BUTTONS); //& (~GetPlayerInput(-1,INPUT_OLDBUTTONS));
+			buttons = GetPlayerInput(-1,INPUT_BUTTONS);
 
-		if ((buttons & BT_SPEED) && (buttons & BT_FORWARD) && !(buttons & BT_CROUCH))
+			if ((buttons & BT_SPEED) && (buttons & BT_FORWARD) && !(buttons & BT_CROUCH))
 			{
-			GiveInventory("IsRunning",1);
-			delay(1);
+				GiveInventory("IsRunning",1);
+				delay(1);
 			}
-		delay(1);
-		TakeInventory("IsRunning",1);
+			else
+			{
+				TakeInventory("IsRunning",1);
+				delay(1);
+			}
+		}
+		else
+		{
+			delay(5);
 		}
 	}
 }

@@ -1,7 +1,7 @@
-#define MAXPLAYERS 8
+#define MAXPLAYERS 64
 int flashlightOn[MAXPLAYERS];
 
-Script "ToggleFlashlight" (void)
+Script "ToggleFlashlight" (void) NET
 {
     if (flashlightOn[PlayerNumber()])
         flashlightOn[PlayerNumber()] = 0;
@@ -14,7 +14,7 @@ Script "ToggleFlashlight" (void)
         flashlightOn[PlayerNumber()] = 0;
         terminate;
     }
-    ActivatorSound("flashlight/click", 127);
+    ActivatorSound("flashlight/click",127);
 }
 
 Script "FlashlightHandling" ENTER

@@ -319,15 +319,8 @@ script "AlphaBarrelSee" (void)
 	}
 }
 
-script "ClassicTorchACS" (void)
-{
-	if(GetCVar("ClassicTorchCvar") == 1) { SetActorState(0,"ClassicTorch"); }
-}
-
-script "LiquidSplashCvarACS" (void)
-{
-	if(GetCVar("LiquidSplashCvar") == 1) { SetActorState(0,"NoSplash"); }
-}
+script "ClassicTorchACS" (void)	{ SetResultValue(GetCvar("ClassicTorchCvar")); }
+script "LiquidSplashACS" (void)	{ SetResultValue(GetCvar("LiquidSplashCvar")); }
 
 script "LowAmmoSFX" (void) clientside
 {

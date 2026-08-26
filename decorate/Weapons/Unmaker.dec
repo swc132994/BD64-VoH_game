@@ -312,12 +312,32 @@ ReactionTime 90
 	}
 }
 
-Actor DemonEssenceLarge : DemonEssence		//from boss demons
+Actor DemonEssenceLarge : CustomInventory
 {
+Translation "0:255=%[0,0,0]:[1,0.25,0.1]"//Orange-Red
 Scale 1.2
 Inventory.PickupMessage "$FO_GOTESSENSE2"
-Inventory.Amount 10
+Inventory.PickupSound "DemonSoulUp"
 Tag "$FO_TAG_ESSENSE2"
+RenderStyle Translucent
+Alpha 0.3
++ALWAYSPICKUP
++FLOATBOB
+ReactionTime 90
+	States
+	{
+	Spawn:
+		SAMM AABBCCDD 2 Bright Light("HellPotion") A_SpawnItemEx("RedFlareSmallItem",0,0,14)
+		TNT1 A 0 A_Countdown
+		Loop
+	Pickup:
+		TNT1 A 0 A_GiveInventory("DemonEssence",20)
+		TNT1 A 0 A_GiveInventory("Health",50)
+		Stop
+	Death:
+		SAMM AABBCCDD 2 A_FadeOut(0.05)
+		Wait
+	}
 }
 
 Actor SoulSpawner
@@ -756,10 +776,10 @@ Actor UnmakerLaser2 : FastProjectile
 {
 Translation "0:255=%[0,0,0]:[0.55,0,0]"//DarkRed
 Scale 1.5
-Radius 10
-Height 6
+Radius 8
+Height 8
 Speed 32
-Damage 10
+Damage 11
 DamageType "Unmaker"
 RenderStyle Normal
 Decal "LaserDecal"

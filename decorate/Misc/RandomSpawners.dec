@@ -246,7 +246,7 @@ Scale 0.82
 //		TNT1 A 0 A_Jumpif(args[0] == 2,"SpawnDemonKey")
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 1,"SpawnBlurSphere")
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 2,"SpawnDemonKey")
-		TNT1 A 0 A_Jump(26,"SpawnDemonKey")//10%
+		TNT1 A 0 A_Jump(13,"SpawnDemonKey")//5%
 	SpawnBlurSphere:
 		TNT1 A 1 A_SpawnItemEx("64Blursphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
@@ -274,7 +274,7 @@ Scale 0.82
 //		TNT1 A 0 A_Jumpif(args[0] == 2,"SpawnDemonKey")
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 1,"SpawnBerserk")
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 2,"SpawnDemonKey")
-		TNT1 A 0 A_Jump(26,"SpawnDemonKey")//10%
+		TNT1 A 0 A_Jump(13,"SpawnDemonKey")//5%
 	SpawnBerserk:
 		TNT1 A 1 A_SpawnItemEx("64Berserk",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
@@ -302,7 +302,7 @@ Scale 0.7
 //		TNT1 A 0 A_Jumpif(args[0] == 2,"SpawnDemonKey")
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 1,"SpawnSoulSphere")
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 2,"SpawnDemonKey")
-		TNT1 A 0 A_Jump(26,"SpawnDemonKey")//10%
+		TNT1 A 0 A_Jump(13,"SpawnDemonKey")//5%
 	SpawnSoulSphere:
 		TNT1 A 1 A_SpawnItemEx("64Soulsphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
@@ -330,7 +330,7 @@ Scale 0.7
 //		TNT1 A 0 A_Jumpif(args[0] == 2,"SpawnDemonKey")
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 1,"SpawnMegaSphere")
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 2,"SpawnDemonKey")
-		TNT1 A 0 A_Jump(38,"SpawnDemonKey")//15%
+		TNT1 A 0 A_Jump(26,"SpawnDemonKey")//10%
 	SpawnMegaSphere:
 		TNT1 A 1 A_SpawnItemEx("64MegaSphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
@@ -358,7 +358,7 @@ Scale 0.7
 //		TNT1 A 0 A_Jumpif(args[0] == 2,"SpawnDemonKey")
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 1,"SpawnInvulnerabilitySphere")
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 2,"SpawnDemonKey")
-		TNT1 A 0 A_Jump(38,"SpawnDemonKey")//15%
+		TNT1 A 0 A_Jump(26,"SpawnDemonKey")//10%
 	SpawnInvulnerabilitySphere:
 		TNT1 A 1 A_SpawnItemEx("64InvulnerabilitySphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
@@ -1519,7 +1519,7 @@ ProjectilePassHeight -16
 		TNT1 A 0 A_JumpIf(CallACS("PoltergeistEnablerACS") == 0,"SpawnCandlestick")
 		TNT1 A 0 A_Jump(26,"SpawnHellCandle")//10%
 	SpawnCandlestick:
-		CAND A 2 ACS_NamedExecuteAlways("ClassicTorchACS")
+		TNT1 A 0 A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLessSmall")
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
@@ -1560,7 +1560,7 @@ ProjectilePassHeight -16
 		TNT1 A 0 A_JumpIf(CallACS("PoltergeistEnablerACS") == 0,"SpawnCandelabra")
 		TNT1 A 0 A_Jump(26,"SpawnHellCandle")//10%
 	SpawnCandelabra:
-		64CN A 2 ACS_NamedExecuteAlways("ClassicTorchACS")
+		TNT1 A 0 A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,45)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchOrangeLoop",0,0,45)
 		TNT1 A 0 A_SpawnItemEx("TorchBallRedLoop",0,0,45)		

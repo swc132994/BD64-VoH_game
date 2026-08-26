@@ -31,14 +31,13 @@ ACTOR PentagramSpawner
 {
 XScale 0.25
 YScale 0.025
-Gravity 1
+Gravity 10
 Radius 1
 Height 1
 Alpha 1
 RenderStyle Add
 +NOBLOCKMAP
-+NOINTERACTION
-+NOCLIP
++THRUACTORS
 +CLIENTSIDEONLY
 	States
 	{

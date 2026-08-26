@@ -1499,6 +1499,16 @@ object 64BloodHaunting
 	frame BFV0 {light BLOODMAGICGLOW}
 }
 
+//Motherdemon trail light
+flickerlight MOTHERTRAIL
+{
+color 1.0 1.0 0.0
+size 12
+secondarySize 20
+chance 0.3
+offset 0 5 0
+}
+
 //MotherDemon Ball
 object MotherBall
 {
@@ -1520,7 +1530,7 @@ object SuperMotherBall
 //MotherDemon Fire
 object MotherFireTrail
 {
-	frame MPUF {light ARCHATK1}
+	frame MPUF {light MOTHERTRAIL}
 }
 
 //forgotton one
@@ -2066,7 +2076,7 @@ object 64VassagoFlame
 	
 object VassagoFireTrail
 {
-	frame MPUF {light ARCHATK1}
+	frame MPUF {light MOTHERTRAIL}
 }
 
 //Doom Teleport fog

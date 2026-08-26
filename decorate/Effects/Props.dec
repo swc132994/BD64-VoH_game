@@ -1164,11 +1164,10 @@ Scale 0.7
 actor 64Candlestick : Candlestick// replaces Candlestick (RandomSpawners.dec)
 {
 Scale 0.7
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		CAND A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		CAND A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLessSmall")
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")
@@ -1188,11 +1187,10 @@ Scale 0.7
 actor 64Candelabra : Candelabra// replaces Candelabra (RandomSpawners.dec)
 {
 Scale 0.7
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		64CN A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		64CN A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,45)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchOrangeLoop",0,0,45)
 		TNT1 A 0 A_SpawnItemEx("TorchBallRedLoop",0,0,45)		
@@ -1214,11 +1212,10 @@ Scale 0.7
 actor 64RedTorch : RedTorch replaces RedTorch
 {
 Scale 0.75
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		TRED A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		TRED A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,53)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchOrangeLoop",0,0,53)
 		TNT1 A 0 A_SpawnItemEx("TorchBallRedLoop",0,0,53)
@@ -1239,11 +1236,10 @@ Scale 0.75
 actor 64BlueTorch : BlueTorch replaces BlueTorch
 {
 Scale 0.75
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		TBLU A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		TBLU A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,53)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchBlueLoop",0,0,53)
 		TNT1 A 0 A_SpawnItemEx("TorchBallBlueLoop",0,0,53)
@@ -1264,11 +1260,10 @@ Scale 0.75
 actor 64GreenTorch : GreenTorch replaces GreenTorch
 {
 Scale 0.75
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		TGRN A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		TGRN A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,53)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchGreenLoop",0,0,53)
 		TNT1 A 0 A_SpawnItemEx("TorchBallGreenLoop",0,0,53)
@@ -1290,11 +1285,10 @@ actor 64YellowTorch : RedTorch 9917
 {
 //$category "Game/BD64_Props"
 Scale 0.75
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		TLYL A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		TLYL A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,53)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchYellowLoop",0,0,53)
 		TNT1 A 0 A_SpawnItemEx("TorchBallYellowLoop",0,0,53)
@@ -1315,11 +1309,10 @@ Scale 0.75
 actor 64RedTorchSmall : RedTorch replaces ShortRedTorch
 {
 Scale 0.75
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		SMRT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		SMRT A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,40)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchOrangeLoop",0,0,40)
 		TNT1 A 0 A_SpawnItemEx("TorchBallRedLoop",0,0,40)
@@ -1340,11 +1333,10 @@ Scale 0.75
 actor 64BlueTorchSmall : BlueTorch replaces ShortBlueTorch
 {
 Scale 0.75
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		SMBT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		SMBT A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,40)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchBlueLoop",0,0,40)
 		TNT1 A 0 A_SpawnItemEx("TorchBallBlueLoop",0,0,40)
@@ -1365,11 +1357,10 @@ Scale 0.75
 actor 64GreenTorchSmall : ShortGreenTorch replaces ShortGreenTorch
 {
 Scale 0.75
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		SMGT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		SMGT A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,40)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchGreenLoop",0,0,40)
 		TNT1 A 0 A_SpawnItemEx("TorchBallGreenLoop",0,0,40)
@@ -1391,11 +1382,10 @@ actor 64YellowTorchSmall : ShortRedTorch 9918
 {
 //$category "Game/BD64_Props"
 Scale 0.75
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		SMYT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		SMYT A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,40)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchYellowLoop",0,0,40)
 		TNT1 A 0 A_SpawnItemEx("TorchBallYellowLoop",0,0,40)
@@ -1419,11 +1409,10 @@ actor 64WallTorchRed 9930
 Scale 0.75
 Radius 5
 +NOGRAVITY
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		WLRT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		WLRT A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLessSmall",0,0,20)
 		TNT1 A 0 A_SpawnItemEx("LensFlareWallTorchOrangeLoop",0,0,20)
 		TNT1 A 0 A_SpawnItemEx("WallTorchBallRedLoop",0,0,20)
@@ -1447,11 +1436,10 @@ actor 64WallTorchBlue 9933
 Scale 0.75
 Radius 5
 +NOGRAVITY
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		WLBT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		WLBT A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLessSmall",0,0,20)
 		TNT1 A 0 A_SpawnItemEx("LensFlareWallTorchBlueLoop",0,0,20)
 		TNT1 A 0 A_SpawnItemEx("WallTorchBallBlueLoop",0,0,20)
@@ -1475,11 +1463,10 @@ actor 64WallTorchGreen 9935
 Scale 0.75
 Radius 5
 +NOGRAVITY
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		WLGT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		WLGT A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLessSmall",0,0,20)
 		TNT1 A 0 A_SpawnItemEx("LensFlareWallTorchGreenLoop",0,0,20)
 		TNT1 A 0 A_SpawnItemEx("WallTorchBallGreenLoop",0,0,20)
@@ -1503,11 +1490,10 @@ actor 64WallTorchYellow 9936
 Scale 0.75
 Radius 5
 +NOGRAVITY
-+RANDOMIZE
 	States
 	{
 	Spawn:
-		WLYT A 5 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		WLYT A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2BrighterLessSmall",0,0,20)
 		TNT1 A 0 A_SpawnItemEx("LensFlareWallTorchOrangeLoop",0,0,20)
 		TNT1 A 0 A_SpawnItemEx("WallTorchBallYellowLoop",0,0,20)
@@ -1730,7 +1716,7 @@ DamageType "Flames"
 	States
 	{
 	Spawn:
-		FCAN A 2 NoDelay ACS_NamedExecuteAlways("ClassicTorchACS")
+		FCAN A 0 NoDelay A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		FCAN A 2 A_PlaySound("BDfireplace",CHAN_BODY,0.60,TRUE,2.25)
 	SemiStay:
 		TNT1 A 0 A_SpawnItemEx("BurningBarrelSmoke")

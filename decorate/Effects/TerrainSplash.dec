@@ -114,6 +114,7 @@ Health 100
 Alpha 0.6
 DamageFactor "CauseWaterSplash",99.0
 DamageType "CauseObjectsToSplash"
++CLIENTSIDEONLY
 +DONTSPLASH
 +NOGRAVITY
 +THRUACTORS

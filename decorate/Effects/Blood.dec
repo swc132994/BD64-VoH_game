@@ -5,9 +5,11 @@ actor Brutal_Blood Replaces Blood
 	states
 	{
 	Spawn:
-		BSPR A 0
-		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
-		TNT1 A 2 ACS_NamedExecuteAlways("SetBloodAmountACS")
+		TNT1 A 0 NoDelay A_JumpIf(waterlevel > 1,"Splash")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") <= 1,"LowBlood")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") == 3,"LotsOfBlood")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") == 4,"AbsurdBlood")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") == 5,"AnimuGore")
 	Spawn2:
 		TNT1 AA 0 A_CustomMissile("Brutal_FlyingBloodFake",0,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("Brutal_FlyingBlood",7,0,random(0,360),2,random(20,60))
@@ -57,9 +59,11 @@ Translation "0:255=%[0,0,0]:[1,2,0]"
 	states
 	{
 	Spawn:
-		BSPR A 0
-		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
-		TNT1 A 2 ACS_NamedExecuteAlways("SetBloodAmountACS")
+		TNT1 A 0 NoDelay A_JumpIf(waterlevel > 1,"Splash")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") <= 1,"LowBlood")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") == 3,"LotsOfBlood")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") == 4,"AbsurdBlood")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") == 5,"AnimuGore")
 	Spawn2:
 		TNT1 AA 0 A_CustomMissile("Brutal_FlyingBloodFakeGreen",0,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("Brutal_FlyingBloodGreen",7,0,random(0,360),2,random(20,60))
@@ -109,9 +113,11 @@ Translation "0:255=%[0,0,0]:[1,0,2]"
 	states
 	{
 	Spawn:
-		BSPR A 0
-		TNT1 A 0 A_JumpIf(waterlevel > 1,"Splash")
-		TNT1 A 2 ACS_NamedExecuteAlways("SetBloodAmountACS")
+		TNT1 A 0 NoDelay A_JumpIf(waterlevel > 1,"Splash")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") <= 1,"LowBlood")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") == 3,"LotsOfBlood")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") == 4,"AbsurdBlood")
+		TNT1 A 0 A_JumpIf(CallACS("SetBloodAmountACS") == 5,"AnimuGore")
 	Spawn2:
 		TNT1 AA 0 A_CustomMissile("Brutal_FlyingBloodFakeBlue",0,0,random(0,360),2,random(0,90))
 		TNT1 A 0 A_CustomMissile("Brutal_FlyingBloodBlue",7,0,random(0,360),2,random(20,60))
@@ -1335,6 +1341,7 @@ alpha 0.9
 gravity 0.7
 renderstyle Add
 Decal "BrutalBloodSuper"
++CLIENTSIDEONLY
 -NOGRAVITY
 +RANDOMIZE
 +MISSILE

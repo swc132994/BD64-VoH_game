@@ -325,13 +325,10 @@ FO_PROP_GHOST_TXT2 = "(poltergeists are hostile map props that can attack the pl
 FO_PERFORMANCE_MISK = "Performance & Miscellaneous Options";
 FO_PERFORMANCE_MISK_TXT = "Enable this option ONLY if hosting a server on a multiplayer game.";
 FO_PERFORMANCE_MISK_TXT2 = "(enabling this option will generate an error message if using GZDoom)";
-FO_PERFORMANCE_ZAN_MULTI = "Enable Zandronum Specific Multiplayer Scripts =";
-FO_PERFORMANCE_ZAN_TACTICAL = "Enable QZandronum Specific Tactical Class Script =";
 
 FO_OPTION_PERFORMANCE = "-------------------------------- Performance & Gore --------------------------------";
 
-FO_OPTION_PERFORMANCE_SERVER =  "Select Blood Amount (Server/Singleplayer) =";
-FO_OPTION_PERFORMANCE_CLIENT = "Select Blood Amount (Client/Multiplayer) =";
+FO_OPTION_PERFORMANCE_CLIENT = "Select Blood Amount =";
 FO_OPTION_PERFORMANCE_FLATS = "Enable Gore Removing on Flats (30s) =";
 FO_OPTION_PERFORMANCE_DECALS = "Enable Floor/Ceiling Shot/Blast Decals =";
 FO_OPTION_PERFORMANCE_FOG = "Light Fog & Halos Options =";

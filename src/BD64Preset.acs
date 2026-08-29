@@ -49,7 +49,7 @@ script "DefaultCvars" (void) net
 	SetCvar("HUDSwitchCvar",0);
 	SetCvar("FootStepCheckCvar",0);
 	SetCvar("LFog_Cvar",0);
-	SetCvar("FloorDecal_Cvar",1);
+	SetCvar("FlatDecalCvar",1);
 	SetCvar("ClassicTorchCvar",0);
 	SetCvar("LiquidSplashCvar",0);
 
@@ -137,7 +137,7 @@ script "ClassicalCvars" (void) net
 	SetCvar("HUDSwitchCvar",0);
 	SetCvar("FootStepCheckCvar",1);
 	SetCvar("LFog_Cvar",1);
-	SetCvar("FloorDecal_Cvar",0);
+	SetCvar("FlatDecalCvar",0);
 	SetCvar("ClassicTorchCvar",1);
 	SetCvar("LiquidSplashCvar",1);
 
@@ -222,7 +222,7 @@ script "StevenCvars" (void) net
 	SetCvar("HUDSwitchCvar",1);
 	SetCvar("FootStepCheckCvar",0);
 	SetCvar("LFog_Cvar",0);
-	SetCvar("FloorDecal_Cvar",1);
+	SetCvar("FlatDecalCvar",1);
 	SetCvar("ClassicTorchCvar",0);
 	SetCvar("LiquidSplashCvar",0);
 

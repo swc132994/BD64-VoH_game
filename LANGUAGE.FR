@@ -324,13 +324,10 @@ FO_PROP_GHOST_TXT2 = "(les Esprits frappeurs sont des les objets décoratifs dan
 FO_PERFORMANCE_MISK = "Options de performance et diverses";
 FO_PERFORMANCE_MISK_TXT = "Activez cette option UNIQUEMENT si vous hébergez un serveur sur un jeu multijoueur.";
 FO_PERFORMANCE_MISK_TXT = "(l'activation de cette option générera un message d'erreur si vous utilisez GZDoom)";
-FO_PERFORMANCE_ZAN_MULTI = "Activer les scripts multijoueurs spécifiques à Zandronum =";
-FO_PERFORMANCE_ZAN_TACTICAL = "Activer le script de la classe tactique spécifique à QZandronum =";
 
 FO_OPTION_PERFORMANCE = "-------------------------------- Performances et gore --------------------------------";
 
-FO_OPTION_PERFORMANCE_SERVER =  "Sélectionner la quantité de sang (serveur/solo) =";
-FO_OPTION_PERFORMANCE_CLIENT = "Sélectionner la quantité de sang (Client/Multijoueur) =";
+FO_OPTION_PERFORMANCE_CLIENT = "Sélectionner la quantité de sang =";
 FO_OPTION_PERFORMANCE_FLATS = "Activer la suppression du gore sur les surfaces plates (30s) =";
 FO_OPTION_PERFORMANCE_DECALS = "Activer les décalcomanies de tir/explosion au sol/plafond =";
 FO_OPTION_PERFORMANCE_FOG = "Options de brouillard léger et de halos =";

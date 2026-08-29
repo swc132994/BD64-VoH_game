@@ -14,11 +14,11 @@ Tag "$FO_TAG_EXPLOSIVEBARREL"
 	{
 	Spawn:
 		BEXP A 0
-	SpawnLoop:
-		"####" A 3 ACS_NamedExecuteAlways("AlphaPickupACS")
+	ShowNormal:
+		"####" A 0 A_JumpIf(CallACS("AlphaSpritesACS") == 1,"ShowAlpha")
 		"####" A 35
 		Loop
-	StayAlpha:
+	ShowAlpha:
 		BAR1 ABABABAB 4 Light("BETABALL_X4") A_SpawnItemEx("GreenLensFlareAltSmall",0,0,35)
 		Goto Spawn
 	Death:

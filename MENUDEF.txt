@@ -304,15 +304,11 @@ OptionMenu "BrutalDoom64OptionsPerformance"
 		StaticText "$FO_PERFORMANCE_MISK_TXT",1
 		StaticText "$FO_PERFORMANCE_MISK_TXT2",1
 		StaticText ""
-	Option "$FO_PERFORMANCE_ZAN_MULTI","isrunningzandronum","OnOff"
-	Option "$FO_PERFORMANCE_ZAN_TACTICAL","IsRunningQZan","OnOff"
-		StaticText ""
 		StaticText "$FO_OPTION_PERFORMANCE",1
 		StaticText ""
-	Option "$FO_OPTION_PERFORMANCE_SERVER","zdoombrutalblood","BrutalBlood"
-	Option "$FO_OPTION_PERFORMANCE_CLIENT","bd_bloodamount","BrutalBlood"
+	Option "$FO_OPTION_PERFORMANCE_CLIENT","BD64_BloodAmountCvar","BrutalBlood"
 	Option "$FO_OPTION_PERFORMANCE_FLATS","zdoombrutaljanitor","YesNo"
-	Option "$FO_OPTION_PERFORMANCE_DECALS","FloorDecal_Cvar","YesNo"
+	Option "$FO_OPTION_PERFORMANCE_DECALS","FlatDecalCvar","YesNo"
 	Option "$FO_OPTION_PERFORMANCE_FOG","LFog_Cvar","LFog_Value"
 	Option "$FO_OPTION_PERFORMANCE_TORCH","ClassicTorchCvar","YesNo"
 	Option "$FO_OPTION_PERFORMANCE_SPLASH","LiquidSplashCvar","YesNo"

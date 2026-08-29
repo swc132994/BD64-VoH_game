@@ -1,10 +1,7 @@
-user int bd_bloodamount	= 2;
+user int BD64_BloodAmountCvar = 2;
 user int bd_lowgraphicsmode = 0;
 
-server int zdoombrutalblood	= 2;
 server int zdoombrutaljanitor = 0;
-server int isrunningzandronum = 0;
-server int IsRunningQZan = 0;
 
 user bool AlternativeLaserSkinCvar = TRUE;	//old or new laser
 user bool HUDSwitchCvar = False;			//enable vanila status bar/arragaend hud
@@ -54,7 +51,7 @@ server bool NoReloadCvar = FALSE;			//No Reload System
 
 //MISC CVARS
 server int AlternativeAmmoPickupSpritesCvar = 1;	//default or alternative ammo pickups
-server int FloorDecal_Cvar = 1;				//floor/ceiling decal control
+server int FlatDecalCvar = 1;				//floor/ceiling decal control
 server int LFog_Cvar = 0;					//light fog control
 server int FootStepCheckCvar = 0;			//footstep sounds
 server int CensoredHealing_Cvar = 0;		//censored healing sprites

@@ -102,43 +102,13 @@ Script "PlayerDeathScript" Death
 	TakeInventory("ClassicRLToken",1);
 }
 
-Script "DM_SpawnACS" (VOID)
+Script "DM_SpawnACS" (void)
 {
 if	(GameType() == GAME_NET_DEATHMATCH)
 	GiveInventory("IsDM",1);
 }
 
-script "SetBloodAmountACS" (void)
-{
-	if(GetCvar("isrunningzandronum") != 0)
-	{
-		switch(GetCvar("bd_bloodamount"))
-		{
-			Case 0: SetActorState(0,"LowBlood"); break;
-			Case 1: SetActorState(0,"LowBlood"); break;
-			Case 2: break;
-			Case 3: SetActorState(0,"LotsOfBlood"); break;
-			Case 4: SetActorState(0,"AbsurdBlood"); break;
-			case 5: SetActorState(0,"AnimuGore"); break;
-			break;
-		}
-	}
-	else
-	{
-		switch(GetCvar("zdoombrutalblood"))
-		{
-			Case 0: SetActorState(0,"LowBlood"); break;
-			Case 1: SetActorState(0,"LowBlood"); break;
-			Case 2: break;
-			Case 3: SetActorState(0,"LotsOfBlood"); break;
-			Case 4: SetActorState(0,"AbsurdBlood"); break;
-			case 5: SetActorState(0,"AnimuGore"); break;
-			break;
-		}
-	}
-}
-
-Script "LowBloodCheckerACS" (VOID)
+Script "LowBloodCheckerACS" (void)
 {
 if	(GameType () == GAME_NET_DEATHMATCH || GetCvar("bd_lowgraphicsmode") != 0 || GetCvar("zdoombrutaljanitor") != 0 )
 { GiveInventory("LowGraphicsMode",1); }
@@ -149,18 +119,6 @@ script "Zandro_Check" OPEN
 if(IsZandronum())
 	{
 	ConsoleCommand("compat_clientssendfullbuttoninfo 1");
-	}
-}
-
-script "QZanTacticalCheck" Enter
-{
-Delay(3);
-if (GetCvar("IsRunningQZan") == 1)
-	{
-	if(CheckInventory("IsTacticalClass") == 1)
-		{
-		ConsoleCommand("cl_run FALSE");
-		}
 	}
 }
 
@@ -176,7 +134,7 @@ script "LightAndFogChecker" (Void)
 	}
 }
 
-script "BerserkSwitchFistsACS" (void) Clientside
+script "BerserkSwitchFistsACS" (void) CLIENTSIDE
 {
 	if(GetUserCVar(PlayerNumber(),"BerserkSwitchFistsCvar") == true)	
 	{
@@ -188,26 +146,6 @@ script "BerserkSwitchFistsACS" (void) Clientside
 		{
 			SetWeapon("64Fist");
 		}
-	}
-}
-
-script "Flat_Decal_Check" (void) NET
-{
-SetResultValue(GetCVar("FloorDecal_Cvar"));
-}
-
-script "Flat_Decal_Remover" (void)
-{
-	if(GetCVar("FloorDecal_Cvar") == 0) { SetActorState(0,"Off"); }
-}
-
-script "RainCheckerACS" (void)
-{
-	Switch(GetCvar("RainChecker_Cvar"))
-	{
-		Case 0: SetActorState(0,"Death"); Break;
-		Default:
-		Case 1: Break;
 	}
 }
 
@@ -234,48 +172,18 @@ Script "TUnmakerChecker" (void)
 			{
 				currentResult = 3;
 			}
-			
 			if (currentResult > highestResult)
 			{
 				highestResult = currentResult;
 			}
 		}
 	}
-	
 	SetResultValue(highestResult);
-}
-
-Script "AlternativeAmmoPickupSpritesACS" (void)
-{
-	if(GetCvar("AlphaPickupCvar") == 1 && GetCvar("AlternativeAmmoPickupSpritesCvar") == 2)
-		{
-			SetActorState(0,"AlternativeSprite"); SetActorState(0,"AltSpawn"); SetActorState(0,"SpawnAny");
-		}
-	else
-	if(GetCvar("AlternativeAmmoPickupSpritesCvar") == 2)
-		{
-			SetActorState(0,"AlternativeSprite"); SetActorState(0,"AltSpawn");
-		}
 }
 
 script "FootStepCheck" (void)	//footstep sound check for player decorate
 {
 	if(GetCvar("FootStepCheckCvar") == 1) { GiveInventory("FootstepDisabled",1); }
-}
-
-script "CensoredHealing_ACS" (void)
-{
-	static str CensorHeal[] =
-	{
-		"CensoredSpawn","BFGStyleSpawn"
-	};
-	
-	int cvarVal = GetCVar("CensoredHealing_Cvar");
-	if (cvarVal >= 1 && cvarVal <= 2)
-	{
-		SetActorState(0,CensorHeal[cvarVal - 1]);
-	}
-	Delay(1);
 }
 
 /*script "WeaponPickupChecker" (int Weapon)
@@ -302,27 +210,20 @@ script "CensoredHealing_ACS" (void)
 	}
 }*/
 
-script "AlphaPickupACS" (void)
-{
-	if(GetCvar("AlphaPickupCvar") == 1)
-	{
-		SetActorState(0,"AlphaSpawn");	//Items
-		SetActorState(0,"StayAlpha");	//Barrel
-	}
-}
+script "FlatDecalACS" (void) CLIENTSIDE { SetResultValue(GetCVar("FlatDecalCvar")); }
+script "LiquidSplashACS" (void)	CLIENTSIDE { SetResultValue(GetCvar("LiquidSplashCvar")); }
 
-script "AlphaBarrelSee" (void)
-{
-	if(GetCvar("AlphaPickupCvar") == 1)
-	{
-		SetActorState(0,"AlphaSee");	//Barrel Death
-	}
-}
-
+script "CensoredHealingACS" (void) { SetResultValue(GetCVar("CensoredHealing_Cvar")); }
+script "AltAmmoSpritesACS" (void) { SetResultValue(GetCVar("AlternativeAmmoPickupSpritesCvar")); }
+script "AlphaSpritesACS" (void) { SetResultValue(GetCvar("AlphaPickupCvar")); }
 script "ClassicTorchACS" (void)	{ SetResultValue(GetCvar("ClassicTorchCvar")); }
-script "LiquidSplashACS" (void)	{ SetResultValue(GetCvar("LiquidSplashCvar")); }
 
-script "LowAmmoSFX" (void) clientside
+script "SetBloodAmountACS" (void) CLIENTSIDE 
+{ 
+    SetResultValue(GetUserCVar(ConsolePlayerNumber(),"BD64_BloodAmountCvar")); 
+}
+
+script "LowAmmoSFX" (void) CLIENTSIDE
 {
 	if(GetUserCVar(PlayerNumber(),"LowAmmoSFX") == 1) { PlaySound(0,"Weapon/LowAmmo",CHAN_AUTO,1.0,false,1.0,true); }
 }

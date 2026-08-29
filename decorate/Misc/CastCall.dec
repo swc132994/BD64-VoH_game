@@ -1,24 +1,4 @@
 //Ending cast call actors
-actor D64ZombiemanCast : 64ZombieMan
-{
-XScale 1.0
-YScale 1.0
-	States
-	{
-	See:
-		PPOS AABBCCDD 4
-		Loop
-	Missile:
-		PPOS E 10
-		PPOS FG 8
-		Goto See
-	Death:
-		POSS HIJK 5
-		POSS L -1
-		Stop
-	}
-}
-
 Actor D64HuskZombieCast : 64HuskZombie
 {
 XScale 1.0
@@ -55,6 +35,26 @@ YScale 1.0
 		CRRI GH 4
 		CRRI IJKLMNP 3
 		CRRI P -1
+		Stop
+	}
+}
+
+actor D64ZombiemanCast : 64ZombieMan
+{
+XScale 1.0
+YScale 1.0
+	States
+	{
+	See:
+		PPOS AABBCCDD 4
+		Loop
+	Missile:
+		PPOS E 10
+		PPOS FG 8
+		Goto See
+	Death:
+		POSS HIJK 5
+		POSS L -1
 		Stop
 	}
 }
@@ -100,6 +100,36 @@ YScale 1.0
 	Death:
 		POS4 HIJK 5
 		POS4 L -1
+		Stop
+	}
+}
+
+Actor D64BFGGuyCast : 64BFGGuy
+{
+XScale 1.0
+YScale 1.0
+	States
+	{
+	Idle:
+	Spawn:
+		64BZ A 8
+		Loop
+	See:
+		64BZ AABBCCDD 4
+		64BZ AABBCCDD 4
+		Loop
+	Melee:
+		64BZ AB 4
+	Missile:
+		64BZ UUU 8
+		64BZ EE 4 Bright
+		64BZ F 1 Bright
+		64BZ E 2 Bright
+		64BZ UUU 4
+		Goto See
+	Death:
+		64BZ HIJKLM 5
+		64BZ N -1
 		Stop
 	}
 }
@@ -184,36 +214,6 @@ YScale 1.0
 	Death:
 		ZMAY HIJKLM 5
 		ZMAY M -1
-		Stop
-	}
-}
-
-Actor D64BFGGuyCast : 64BFGGuy
-{
-XScale 1.0
-YScale 1.0
-	States
-	{
-	Idle:
-	Spawn:
-		64BZ A 8
-		Loop
-	See:
-		64BZ AABBCCDD 4
-		64BZ AABBCCDD 4
-		Loop
-	Melee:
-		64BZ AB 4
-	Missile:
-		64BZ UUU 8
-		64BZ EE 4 Bright
-		64BZ F 1 Bright
-		64BZ E 2 Bright
-		64BZ UUU 4
-		Goto See
-	Death:
-		64BZ HIJKLM 5
-		64BZ N -1
 		Stop
 	}
 }
@@ -625,6 +625,31 @@ YScale 1.0
 	}
 }
 
+actor D64HellHoundCast : 64HellHoundGEC
+{
+XScale 1.0
+YScale 1.0
+	States
+	{
+	See:
+		GECH AABBCCDD 2
+		Loop
+	Missile:
+		GECH EEO 4
+		GECH P 5 Bright
+		GECH OEEE 4
+		Goto See
+	Melee:
+		GECH EFHFE 5
+		Goto See
+	Death:
+		GECH IJ 8
+		GECH KLM 5
+		GECH M -1
+		Stop
+	}
+}
+
 actor D64KnightmareCast : 64Knightmare
 {
 XScale 1.0
@@ -670,6 +695,60 @@ YScale 1.0
 	}
 }
 
+Actor D64BelphegorCast : 64Belphegor
+{
+XScale 1.0
+YScale 1.0
+	States
+	{
+	See:
+		BOS3 AAAABBBBCCCCDDDD 3
+		Loop
+	Missile:
+		BOS3 EF 9
+		BOS3 G 8 Bright
+		Goto See
+	Melee:
+		BOS3 EF 9
+		BOS3 G 8
+		Goto See
+	Death:
+		BOS3 IJKLMN 8
+		BOS3 N -1
+		Stop
+	}
+}
+
+
+actor D64VassagoCast : 64Vassago
+{
+XScale 1.0
+YScale 1.0
+	States
+	{
+	See:
+		VASS ABCB 6
+		Loop
+	Melee:
+		VASS DEGHEA 4
+		Goto See
+	Missile:
+		VSSB A 4
+		VSSB BC 4
+		VSSB D 8
+		VSSB EF 4
+		VSSB G 2
+		Goto See
+	Death:
+		VASS JK 6 Bright
+		VASS L 5 Bright
+		VASS MNO 4 Bright
+		VASS P 5 Bright
+		VASS Q -1
+		Stop
+	}
+}
+		
 actor D64ArachnotronCast : 64Arachnotron
 {
 XScale 1.0
@@ -777,7 +856,6 @@ YScale 1.0
 	}
 }
 
-
 actor D64RevenantCast : 64Revenant
 {
 XScale 1.0
@@ -849,31 +927,6 @@ YScale 1.0
 	}
 }
 
-actor D64HellHoundCast : 64HellHoundGEC
-{
-XScale 1.0
-YScale 1.0
-	States
-	{
-	See:
-		GECH AABBCCDD 2
-		Loop
-	Missile:
-		GECH EEO 4
-		GECH P 5 Bright
-		GECH OEEE 4
-		Goto See
-	Melee:
-		GECH EFHFE 5
-		Goto See
-	Death:
-		GECH IJ 8
-		GECH KLM 5
-		GECH M -1
-		Stop
-	}
-}
-
 actor D64BruiserCast : 64Bruiser
 {
 XScale 1.0
@@ -896,30 +949,6 @@ YScale 1.0
 	Death:
 		DKHL JKLMN 8
 		DKHL O -1
-		Stop
-	}
-}
-
-Actor D64BelphegorCast : 64Belphegor
-{
-XScale 1.0
-YScale 1.0
-	States
-	{
-	See:
-		BOS3 AAAABBBBCCCCDDDD 3
-		Loop
-	Missile:
-		BOS3 EF 9
-		BOS3 G 8 Bright
-		Goto See
-	Melee:
-		BOS3 EF 9
-		BOS3 G 8
-		Goto See
-	Death:
-		BOS3 IJKLMN 8
-		BOS3 N -1
 		Stop
 	}
 }

@@ -327,13 +327,10 @@ FO_PROP_GHOST_TXT2 = "(Poltergeists são elementos hostis do mapa que podem atac
 FO_PERFORMANCE_MISK = "Opções de Performance e Variadas";
 FO_PERFORMANCE_MISK_TXT = "Habilite essa opção APENAS se estiver fazendo uma hospedagem de um servidor em uma partida multijogador.";
 FO_PERFORMANCE_MISK_TXT2 = "(Habilitar essa opção irá gerar uma mensagem de erro se estiver usando o GZDoom)";
-FO_PERFORMANCE_ZAN_MULTI = "Habilitar Scripts Específicos do Multijogador no Zandronum =";
-FO_PERFORMANCE_ZAN_TACTICAL = "Habilitar Scripts Específicos da Classe Tática no QZandronum =";
 
 FO_OPTION_PERFORMANCE = "-------------------------------- Performance e Sangue --------------------------------";
 
-FO_OPTION_PERFORMANCE_SERVER =  "Selecione a Quantidade de Sangue (Server/Um jogador) =";
-FO_OPTION_PERFORMANCE_CLIENT = "Selecione a Quantidade de Sangue (Client/Multijogador) =";
+FO_OPTION_PERFORMANCE_CLIENT = "Selecione a Quantidade de Sangue =";
 FO_OPTION_PERFORMANCE_FLATS = "Habilitar a Remoção de decalques de Sangue em Superfícies Planas (30s) =";
 FO_OPTION_PERFORMANCE_DECALS = "Habilitar Decalques de Impacto/Explosão no Piso/Teto =";
 FO_OPTION_PERFORMANCE_FOG = "Opções de Faróis de Neblina e Halos =";

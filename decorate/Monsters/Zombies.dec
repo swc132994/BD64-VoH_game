@@ -59,7 +59,7 @@ DamageFactor "Unmaker",0.2
 Obituary "$FO_OB_ZOMBIE"
 Tag "$FO_TAG_PISTOLMAN"
 DropItem "SOULSPAWNER"
-DropItem "PistolDrop"
+DropItem "64PistolDrop"
 +DOHARMSPECIES
 +NOBLOODDECALS
 +NEVERFAST
@@ -683,7 +683,7 @@ Speed 6
 GibHealth 15
 Tag "$FO_TAG_SHOTGUNGUY"
 Obituary "$FO_OB_SHOTGUY"
-DropItem "ShotgunDrop"
+DropItem "64ShotgunDrop"
 DropItem "SOULSPAWNER"
 	States
 	{
@@ -1242,7 +1242,7 @@ Actor 64SSGGuy : 64ShotgunGuy 19110
 {
 //$category "Game/BD64_Monsters"
 Speed 7
-DropItem "SSGDrop"
+DropItem "64SSGDrop"
 DropItem "SOULSPAWNER"
 Tag "$FO_TAG_SSGGUY"
 Obituary "$FO_OB_SSGGUY"
@@ -1795,7 +1795,7 @@ Speed 4
 AttackSound "MGUNFIR"
 Tag "$FO_TAG_COMMANDO"
 Obituary "$FO_OB_CHAINGUY"
-DropItem "ChaingunDrop"
+DropItem "64ChaingunDrop"
 DropItem "SOULSPAWNER"
 	States
 	{
@@ -2219,7 +2219,7 @@ DamageFactor "Head",2.25
 AttackSound "RIFLE"
 Tag "$FO_TAG_ZOMBIEMARINE"
 Obituary "$FO_OB_ZOMBIEMARINE"
-DropItem "RifleDrop"
+DropItem "64RifleDrop"
 DropItem "SOULSPAWNER"
 	States
 	{

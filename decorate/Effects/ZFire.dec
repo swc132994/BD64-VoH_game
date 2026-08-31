@@ -1,6 +1,5 @@
 ACTOR FlameTrails
 {
-Game Doom
 Scale 0.5
 Radius 1
 Height 1
@@ -153,7 +152,6 @@ Scale 0.5
 
 ACTOR FastSmallFlameTrails
 {
-Game Doom
 Scale 0.3
 Radius 1
 Height 1
@@ -324,7 +322,6 @@ ACTOR BallGettingReadyYellow : BallGettingReadyRed
 
 ACTOR RealFlameTrailsSmall
 {
-Game Doom
 Scale 0.8
 Radius 1
 Height 1
@@ -446,7 +443,6 @@ Speed 1
 
 ACTOR MinimalFlameTrails
 {
-Game Doom
 Scale 0.4
 Radius 1
 Height 1
@@ -599,7 +595,6 @@ RenderStyle Translucent
 
 ACTOR FlamethrowerFireParticles
 {
-Game Doom
 Scale 1.5
 Radius 1
 Height 1
@@ -659,7 +654,6 @@ Renderstyle Add
 
 ACTOR FlamethrowerMissile
 {
-Game Doom
 Scale 0.5
 Gravity 0
 Radius 2
@@ -740,7 +734,6 @@ DamageType "Flames"
 ACTOR TinyBurningPiece2 : TinyBurningPiece
 {
 Scale 0.7
-+CLIENTSIDEONLY
 	States
 	{
 	Spawn:
@@ -761,6 +754,16 @@ Translation "0:255=%[0,0,0]:[0.30,0.76,1.00]"
 Actor TinyBurningPieceBlue2 : TinyBurningPiece2
 {
 Translation "0:255=%[0,0,0]:[0.30,0.76,1.00]"
+}
+
+Actor TinyBurningPieceGreen : TinyBurningPiece
+{
+Translation "0:255=%[0,0,0]:[0.00,1.00,0.50]"
+}
+
+Actor TinyBurningPieceGreen2 : TinyBurningPiece2
+{
+Translation "0:255=%[0,0,0]:[0.00,1.00,0.50]"
 }
 
 ACTOR 64ExplosionFireBase : FlameTrails
@@ -793,7 +796,6 @@ Renderstyle Add
 
 ACTOR LongFlameParticle1
 {
-Game Doom
 Scale 0.6
 Radius 1
 Height 1
@@ -875,7 +877,6 @@ ReactionTime 60
 
 Actor Shoque
 {
-Game Doom
 Scale 0.7
 Height 1
 Radius 1

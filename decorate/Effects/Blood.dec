@@ -362,7 +362,6 @@ Mass 5
 +THRUACTORS
 +MISSILE
 +BOUNCEONFLOORS
-//+FLOORCLIP
 BounceFactor 0.01
 BounceCount 2
 	states
@@ -385,9 +384,8 @@ BounceCount 2
 		BPDL D 0
 		Goto Rest
 	Rest:
-		"####" "#" 0 ACS_NamedExecuteAlways("LowBloodCheckerACS")
 		"####" "#" 800
-		"####" "#" 0 A_JumpIfInventory("lowgraphicsmode",1,"Fade")
+		"####" "#" 0 A_JumpIf(CallACS("GoreCleanerACS"),"Fade")
 		Loop
 	Fade:
 		"####" "#" 3 A_FadeOut(0.1)
@@ -496,9 +494,8 @@ Scale 0.5
 		FBB1 A 30
 		FBB1 BCDEFGHIJKLMNOPQRSTUVWXYZ 3
 	Rest:
-		TNT1 A 0 ACS_NamedExecuteAlways("LowBloodCheckerACS")
 		FBB1 Z 900
-		TNT1 A 0 A_JumpIfInventory("lowgraphicsmode",1,"Fade")
+		TNT1 A 0 A_JumpIf(CallACS("GoreCleanerACS"),"Fade")
 		loop
 	Fade:
 		FBB1 Z 3 A_FadeOut(0.1)

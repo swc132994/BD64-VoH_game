@@ -48,7 +48,7 @@ script "DefaultCvars" (void) net
 
 	SetCvar("HUDSwitchCvar",0);
 	SetCvar("FootStepCheckCvar",0);
-	SetCvar("LFog_Cvar",0);
+	SetCvar("LightFogCvar",0);
 	SetCvar("FlatDecalCvar",1);
 	SetCvar("ClassicTorchCvar",0);
 	SetCvar("LiquidSplashCvar",0);
@@ -59,7 +59,7 @@ script "DefaultCvars" (void) net
 	
 	SetUserCvar(PlayerNumber(),"AlternativeLaserSkinCvar",TRUE);
 	SetUserCvar(PlayerNumber(),"BerserkSwitchFistsCvar",TRUE);
-	SetUserCvar(PlayerNumber(),"LowAmmoSFX",1);
+	SetUserCvar(PlayerNumber(),"LowAmmoSFXCvar",1);
 	ACS_NamedExecuteAlways("BD64Respawn",0);
 	
 	//percent is here
@@ -136,7 +136,7 @@ script "ClassicalCvars" (void) net
 
 	SetCvar("HUDSwitchCvar",0);
 	SetCvar("FootStepCheckCvar",1);
-	SetCvar("LFog_Cvar",1);
+	SetCvar("LightFogCvar",1);
 	SetCvar("FlatDecalCvar",0);
 	SetCvar("ClassicTorchCvar",1);
 	SetCvar("LiquidSplashCvar",1);
@@ -146,7 +146,7 @@ script "ClassicalCvars" (void) net
 
 	SetUserCvar(PlayerNumber(),"AlternativeLaserSkinCvar",FALSE);
 	SetUserCvar(PlayerNumber(),"BerserkSwitchFistsCvar",1);
-	SetUserCvar(PlayerNumber(),"LowAmmoSFX",0);
+	SetUserCvar(PlayerNumber(),"LowAmmoSFXCvar",0);
 	ACS_NamedExecuteAlways("BD64Respawn",0);
 	
 	//percent is here
@@ -221,7 +221,7 @@ script "StevenCvars" (void) net
 
 	SetCvar("HUDSwitchCvar",1);
 	SetCvar("FootStepCheckCvar",0);
-	SetCvar("LFog_Cvar",0);
+	SetCvar("LightFogCvar",0);
 	SetCvar("FlatDecalCvar",1);
 	SetCvar("ClassicTorchCvar",0);
 	SetCvar("LiquidSplashCvar",0);
@@ -232,7 +232,7 @@ script "StevenCvars" (void) net
 	
 	SetUserCvar(PlayerNumber(),"AlternativeLaserSkinCvar",TRUE);
 	SetUserCvar(PlayerNumber(),"BerserkSwitchFistsCvar",TRUE);
-	SetUserCvar(PlayerNumber(),"LowAmmoSFX",1);
+	SetUserCvar(PlayerNumber(),"LowAmmoSFXCvar",1);
 	ACS_NamedExecuteAlways("BD64Respawn",0);
 	
 	//percent is here

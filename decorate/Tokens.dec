@@ -6,8 +6,6 @@ inventory.maxamount 1
 +NONETID
 }
 
-Actor lowgraphicsmode : BD64_Tokens {}
-
 //Player Functions
 Actor IsRunning : BD64_Tokens {}
 Actor IsTacticalClass : BD64_Tokens {}
@@ -16,7 +14,6 @@ Actor IsCrouching : BD64_Tokens {}
 Actor HudSwitch : BD64_Tokens {}	//option to switch to Doom Style Hud
 Actor ScreenFX : BD64_Tokens {}		//option to HUD blood splash
 Actor BloodTrail : BD64_Tokens {}	//option to HUD blood trail
-Actor FootStepDisabled : BD64_Tokens {}
 
 //Switch Map Functions
 Actor VMapCheck : BD64_Tokens {}		//option switch to vanilla BD64 maps

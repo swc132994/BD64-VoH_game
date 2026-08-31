@@ -19,8 +19,7 @@ BounceCount 2
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_JumpIf(CallACS("FlatDecalACS")==0,"Off")	
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("FlatDecalACS")==0,"Off")	
 		TNT1 A 0 A_JumpIf(waterlevel > 1,"Off")
 		TNT1 A 0 ThrustThingZ(0,1,0,0)
 		TNT1 A 5
@@ -55,8 +54,7 @@ Renderstyle Translucent
 	States
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 0 A_JumpIf(CallACS("FlatDecalACS")==0,"Off")
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("FlatDecalACS")==0,"Off")
 		TNT1 A 0 A_JumpIf(waterlevel > 1,"Off")
 		TNT1 A 0 ThrustThingZ(0,5,0,0)
 		TNT1 A 6

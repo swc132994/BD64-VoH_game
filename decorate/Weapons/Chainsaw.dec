@@ -360,6 +360,8 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		TNT1 A 0 A_GiveInventory("IsFidgeting",1)
 	CountinueFidget:
 		SAWG A 0 A_PlaySound("DSSAWZIP",CHAN_WEAPON)
+		TNT1 A 0 A_PlaySound("chainsaw/Stop",CHAN_ITEM)
+		TNT1 A 0 A_StopSound(CHAN_6)
 		SAWS EFG 1 A_WeaponReady(WRF_ALLOWZOOM|WRF_NOFIRE|WRF_NOBOB)
 		TNT1 A 0 A_GiveInventory("HoldFidget",1)
 	HoldingFidget:	

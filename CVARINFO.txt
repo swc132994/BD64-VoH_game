@@ -1,10 +1,8 @@
-user int BD64_BloodAmountCvar = 2;
-user int bd_lowgraphicsmode = 0;
+user int SetBloodAmountCvar = 2;
+user int GoreCleanerCvar = 0;
 
-server int zdoombrutaljanitor = 0;
-
-user bool AlternativeLaserSkinCvar = TRUE;	//old or new laser
-user bool HUDSwitchCvar = False;			//enable vanila status bar/arragaend hud
+user bool AlternativeLaserSkinCvar = TRUE;			//old or new laser
+user bool HUDSwitchCvar = False;					//enable vanila status bar/arragaend hud
 user noarchive bool BerserkSwitchFistsCvar = TRUE;	//berserk fists switching
 
 //MONSTER SPAWNER CVARS
@@ -50,10 +48,13 @@ server int VWeaponCvar = 0;					//vanilla weapon animation for classical class
 server bool NoReloadCvar = FALSE;			//No Reload System
 
 //MISC CVARS
+user int FlatDecalCvar = 1;					//floor/ceiling decal control
+user int LightFogCvar = 0;					//light fog control
+user int LiquidSplashCvar = 0;				//Enable liquid splashes
+user int FootStepCheckCvar = 0;				//footstep sounds
+user bool LowAmmoSFXCvar = TRUE;			//Switch Low Ammo SFX
+
 server int AlternativeAmmoPickupSpritesCvar = 1;	//default or alternative ammo pickups
-server int FlatDecalCvar = 1;				//floor/ceiling decal control
-server int LFog_Cvar = 0;					//light fog control
-server int FootStepCheckCvar = 0;			//footstep sounds
 server int CensoredHealing_Cvar = 0;		//censored healing sprites
 server int AlphaPickupCvar = 0;				//pickup sprites from D64 alpha build
 server int bd64_ScreenFX = 0;				//HUD ScreenFX
@@ -61,8 +62,7 @@ server int bd64_BloodTrail = 0;				//HUD Bloodtrail
 Server int FlashlightStartCvar = 0;			//start with flashlight/torch
 server int PoltergeistCvar = 0;				//Enable poltergiest props
 server int ClassicTorchCvar = 0;			//Enable classic style torces
-server int LiquidSplashCvar = 0;			//Enable liquid splashes
-user bool LowAmmoSFX = TRUE;				//Switch Low Ammo SFX
+
 server string BD64_Preset = "Default";		//Shows what preset was last applied, does nothing
 
 //MONSTER SPAWN PERCENT CVARS

@@ -8,7 +8,6 @@ renderstyle Add
 +NOINTERACTION
 +NOGRAVITY
 +CLIENTSIDEONLY
-+NOCLIP
 }
 
 Actor RedFlare : Flare_General
@@ -50,7 +49,6 @@ Actor GreenFlare : Flare_General
 	}
 }
 
-
 Actor YellowFlare : Flare_General
 {
 	states
@@ -64,70 +62,19 @@ Actor YellowFlare : Flare_General
 	}
 }
 
-Actor RedFlareSmall : RedFlare
-{
-Scale 0.15
-}
+Actor RedFlareSmall : RedFlare { Scale 0.15 }
+Actor GreenFlareSmall : GreenFlare { Scale 0.2 alpha 0.4 }
+Actor BlueFlareSmall : BlueFlare { Scale 0.15 alpha 0.3 }
+Actor YellowFlareSmall : YellowFlare { Scale 0.15 }
 
-Actor GreenFlareSmall : GreenFlare
-{
-Scale 0.2
-alpha 0.4
-}
+Actor RedFlareMedium : RedFlare { Scale 0.25 }
+Actor GreenFlareMedium : GreenFlare { alpha 0.3 Scale 0.25 }
+Actor BlueFlareMedium : BlueFlare { Scale 0.15 alpha 0.3 }
+Actor YellowFlareMedium : YellowFlare { Scale 0.20 }
 
-Actor BlueFlareSmall : BlueFlare
-{
-Scale 0.15
-alpha 0.3
-}
-
-Actor YellowFlareSmall : YellowFlare
-{
-Scale 0.15
-}
-
-Actor RedFlareMedium : RedFlare
-{
-Scale 0.25
-}
-
-Actor GreenFlareMedium : GreenFlare
-{
-alpha 0.3
-Scale 0.25
-}
-
-Actor BlueFlareMedium : BlueFlare
-{
-Scale 0.15
-alpha 0.3
-}
-
-Actor YellowFlareMedium : YellowFlare
-{
-Scale 0.20
-}
-
-Actor RedFlareSmallItem : RedFlare
-{
-XScale 0.15
-YScale 0.07
-alpha 0.3
-}
-
-Actor GreenFlareSmallItem : GreenFlare
-{
-XScale 0.15
-YScale 0.07
-alpha 0.4
-}
-
-Actor BlueFlareSmallItem : BlueFlare
-{
-XScale 0.15
-YScale 0.07
-alpha 0.3
-}
+Actor RedFlareSmallItem : RedFlare { XScale 0.15 YScale 0.07 alpha 0.3 }
+Actor GreenFlareSmallItem : GreenFlare { XScale 0.15 YScale 0.07 alpha 0.4 }
+Actor BlueFlareSmallItem : BlueFlare { XScale 0.15 YScale 0.07 alpha 0.3 }
 
 Actor PlasmaFlare : BlueFlare
 {
@@ -207,13 +154,12 @@ alpha 0.4
 	states
 	{
 	Spawn:
-		TNT1 A 0
-		TNT1 A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("HaloDisabledACS") == 1,"NoLight")
 	Live:
 		LENS A 8
 		Stop
 	NoLight:
-		TNT1 A 3
+		TNT1 A 1
 		Stop
 	}
 }
@@ -227,13 +173,12 @@ alpha 1
 	states
 	{
 	Spawn:
-		LENS O 0 Bright
-		TNT1 A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("HaloDisabledACS") == 1,"NoLight")
 	Live:
 		LENS O 5 Bright
 		Stop
 	NoLight:
-		TNT1 A 3
+		TNT1 A 1
 		Stop
 	}
 }
@@ -249,15 +194,13 @@ alpha 1
 	states
 	{
 	Spawn:
-		TNT1 A 0
-	SpawnLoop:
-		"####" A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("HaloDisabledACS") == 1,"NoLight")
 	Live:
-		LENS A 2
-		Goto SpawnLoop
+		LENS A 35
+		Goto Spawn
 	NoLight:
-		TNT1 A 105
-		Goto SpawnLoop
+		TNT1 A 35
+		Goto Spawn
 	}
 }
 
@@ -273,15 +216,13 @@ alpha 1
 	states
 	{
 	Spawn:
-		TNT1 A 0
-	SpawnLoop:
-		"####" A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("HaloDisabledACS") == 1,"NoLight")
 	Live:
-		LENS A 2
-		Goto SpawnLoop
+		LENS A 35
+		Goto Spawn
 	NoLight:
-		TNT1 A 105
-		Goto SpawnLoop
+		TNT1 A 35
+		Goto Spawn
 	}
 }
 
@@ -296,18 +237,15 @@ alpha 1
 	states
 	{
 	Spawn:
-		TNT1 A 0
-	SpawnLoop:
-		"####" A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("HaloDisabledACS") == 1,"NoLight")
 	Live:
 		LENS A 35
-		Goto SpawnLoop
+		Goto Spawn
 	NoLight:
-		TNT1 A 105
-		Goto SpawnLoop
+		TNT1 A 35
+		Goto Spawn
 	}
 }
-
 
 Actor ShortOrangeFlareSmallLamp : Flare_General
 {
@@ -318,13 +256,12 @@ alpha 1
 	states
 	{
 	Spawn:
-		LENS O 0 Bright
-		TNT1 A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("HaloDisabledACS") == 1,"NoLight")
 	Live:
 		LENS O 35 Bright
 		Stop
 	NoLight:
-		TNT1 A 3
+		TNT1 A 1
 		Stop
 	}
 }
@@ -360,7 +297,7 @@ Alpha 0.3
 	}
 }
 
-ACTOR PlayerMuzzle1
+ACTOR PlayerMuzzle1	//Normal
 {
 Speed 0
 +NOCLIP
@@ -373,7 +310,7 @@ Speed 0
 	}
 }
 
-ACTOR PlayerMuzzle2 : PlayerMuzzle1
+ACTOR PlayerMuzzle2 : PlayerMuzzle1	//Chaingun
 {
 	States
 	{
@@ -383,7 +320,7 @@ ACTOR PlayerMuzzle2 : PlayerMuzzle1
 	}
 }
 
-ACTOR PlayerMuzzle3 : PlayerMuzzle1
+ACTOR PlayerMuzzle3 : PlayerMuzzle1	//Plasma
 {
 	States
 	{
@@ -393,9 +330,9 @@ ACTOR PlayerMuzzle3 : PlayerMuzzle1
 	}
 }
 
-ACTOR PlayerMuzzle4 : PlayerMuzzle1
+ACTOR PlayerMuzzle4 : PlayerMuzzle1	//Red
 {
-Translation "0:255=%[0,0,0]:[1,0,0]"//Red
+Translation "0:255=%[0,0,0]:[1,0,0]"
 	States
 	{
 	Spawn:
@@ -404,9 +341,9 @@ Translation "0:255=%[0,0,0]:[1,0,0]"//Red
 	}
 }
 
-ACTOR PlayerMuzzle5 : PlayerMuzzle1
+ACTOR PlayerMuzzle5 : PlayerMuzzle1	//Green
 {
-Translation "0:255=%[0,0,0]:[0,1,0]"//Green
+Translation "0:255=%[0,0,0]:[0,1,0]"
 	States
 	{
 	Spawn:
@@ -415,9 +352,9 @@ Translation "0:255=%[0,0,0]:[0,1,0]"//Green
 	}
 }
 
-ACTOR PlayerMuzzle6 : PlayerMuzzle1
+ACTOR PlayerMuzzle6 : PlayerMuzzle1	//Ice
 {
-Translation "0:255=%[0,0,0]:[0.49,0.73,0.91]"//Aero
+Translation "0:255=%[0,0,0]:[0.49,0.73,0.91]"
 	States
 	{
 	Spawn:
@@ -512,8 +449,7 @@ ReactionTime 6
 	states
 	{
 	Spawn:
-		LEYS O 0 Bright
-		TNT1 A 2 ACS_NamedExecuteAlways("LightAndFogChecker")
+		TNT1 A 0 NoDelay A_JumpIf(CallACS("HaloDisabledACS") == 1,"NoLight")
 	Live:
 		LEYS O 3 Bright A_SetScale(0.4,0.3)
 		LEYZ O 1 Bright A_SetScale(0.2,0.1)
@@ -522,7 +458,7 @@ ReactionTime 6
 		Loop
 	NoLight:
 	Death:
-		TNT1 A 3
+		TNT1 A 1
 		Stop
 	}
 }
@@ -909,7 +845,4 @@ Scale 0.4
 	}
 }
 
-Actor 64EnemyBFGBallFlare : BFGFlare
-{
-Scale 0.5
-}
+Actor 64EnemyBFGBallFlare : BFGFlare { Scale 0.5 }

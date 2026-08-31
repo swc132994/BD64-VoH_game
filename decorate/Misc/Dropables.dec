@@ -1,5 +1,5 @@
 //WEAPON DROP SPAWNERS
-Actor ShotgunDrop
+Actor 64ShotgunDrop
 {
 Height 2
 Radius 2
@@ -17,7 +17,7 @@ Radius 2
 	}
 }
 
-Actor ShotgunDropNPC : ShotgunDrop
+Actor 64ShotgunDropNPC : 64ShotgunDrop
 {
 	States
 	{
@@ -28,7 +28,7 @@ Actor ShotgunDropNPC : ShotgunDrop
 	}
 }
 
-Actor SSGDrop : ShotgunDrop
+Actor 64SSGDrop : 64ShotgunDrop
 {
 	States
 	{
@@ -39,7 +39,7 @@ Actor SSGDrop : ShotgunDrop
 	}
 }
 
-Actor SSGDropNPC : ShotgunDrop
+Actor 64SSGDropNPC : 64ShotgunDrop
 {
 	States
 	{
@@ -50,7 +50,7 @@ Actor SSGDropNPC : ShotgunDrop
 	}
 }
 
-Actor RifleDrop : ShotgunDrop
+Actor 64RifleDrop : 64ShotgunDrop
 {
 	States
 	{
@@ -64,7 +64,7 @@ Actor RifleDrop : ShotgunDrop
 	}
 }
 
-Actor RifleDropNPC : RifleDrop
+Actor 64RifleDropNPC : 64RifleDrop
 {
 	States
 	{
@@ -75,7 +75,7 @@ Actor RifleDropNPC : RifleDrop
 	}
 }
 
-Actor ChaingunDrop : RifleDrop
+Actor 64ChaingunDrop : 64RifleDrop
 {
 	States
 	{
@@ -86,7 +86,7 @@ Actor ChaingunDrop : RifleDrop
 	}
 }
 
-Actor ChaingunDropNPC : RifleDrop
+Actor 64ChaingunDropNPC : 64RifleDrop
 {
 	States
 	{
@@ -97,7 +97,7 @@ Actor ChaingunDropNPC : RifleDrop
 	}
 }
 
-Actor ChainsawDrop : ShotgunDrop
+Actor 64ChainsawDrop : 64ShotgunDrop
 {
 	States
 	{
@@ -111,7 +111,7 @@ Actor ChainsawDrop : ShotgunDrop
 	}
 }
 
-Actor PistolDrop : ShotgunDrop
+Actor 64PistolDrop : 64ShotgunDrop
 {
 	States
 	{
@@ -125,7 +125,7 @@ Actor PistolDrop : ShotgunDrop
 	}
 }
 
-Actor PlasmaRifleDrop : ShotgunDrop
+Actor 64PlasmaRifleDrop : 64ShotgunDrop
 {
 	States
 	{
@@ -139,7 +139,7 @@ Actor PlasmaRifleDrop : ShotgunDrop
 	}
 }
 
-Actor BFG9000Drop : ShotgunDrop
+Actor 64BFG9000Drop : 64ShotgunDrop
 {
 	States
 	{

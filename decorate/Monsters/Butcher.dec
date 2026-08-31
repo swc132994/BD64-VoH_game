@@ -21,7 +21,7 @@ PainChance "Kick",200
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-Dropitem "ChainsawDrop"
+Dropitem "64ChainsawDrop"
 DropItem "DemonEssenceSpawner"
 MONSTER
 +FLOORCLIP

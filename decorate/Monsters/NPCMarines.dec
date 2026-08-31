@@ -18,7 +18,7 @@ DamageFactor "Head",2.25
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
-DropItem "RifleDropNPC"
+DropItem "64RifleDropNPC"
 DropItem "SOULSPAWNER"
 +FRIENDLY
 +LOOKALLAROUND
@@ -237,7 +237,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "BFG9000Drop"
+DropItem "64BFG9000Drop"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -627,7 +627,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "ChaingunDropNPC"
+DropItem "64ChaingunDropNPC"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -820,7 +820,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "ChainsawDrop"
+DropItem "64ChainsawDrop"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -1182,7 +1182,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "PlasmaRifleDrop"
+DropItem "64PlasmaRifleDrop"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -1756,7 +1756,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "SSGDropNPC"
+DropItem "64SSGDropNPC"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE
@@ -1947,7 +1947,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Unmaker",0.1
 Species "Marines"
 DropItem "SOULSPAWNER"
-DropItem "ShotgunDropNPC"
+DropItem "64ShotgunDropNPC"
 +FRIENDLY
 +LOOKALLAROUND
 +QUICKTORETALIATE

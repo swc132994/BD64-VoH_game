@@ -89,7 +89,7 @@ Script "BD64Initilize" Enter
 	SetInventory("TCMapCheck",GetCvar("TCMapCheckCvar"));
 }
 
-script "IceDeathTranslate" (VOID) NET
+script "IceDeathTranslate" (void) NET
 {
 Thing_SetTranslation(0,2666);
 Delay(1);
@@ -108,10 +108,16 @@ if	(GameType() == GAME_NET_DEATHMATCH)
 	GiveInventory("IsDM",1);
 }
 
-Script "LowBloodCheckerACS" (void)
+script "GoreCleanerACS" (void) NET CLIENTSIDE
 {
-if	(GameType () == GAME_NET_DEATHMATCH || GetCvar("bd_lowgraphicsmode") != 0 || GetCvar("zdoombrutaljanitor") != 0 )
-{ GiveInventory("LowGraphicsMode",1); }
+    if (GameType() == GAME_NET_DEATHMATCH || GetUserCVar(ConsolePlayerNumber(),"GoreCleanerCvar") == 1)
+    {
+        SetResultValue(1);
+    }
+    else
+    {
+        SetResultValue(0);
+    }
 }
 
 script "Zandro_Check" OPEN
@@ -122,19 +128,19 @@ if(IsZandronum())
 	}
 }
 
-script "LightAndFogChecker" (Void)
+script "HaloDisabledACS" (void) NET CLIENTSIDE
 {
-	Switch(GetCvar("LFog_Cvar"))
-	{
-		Default:
-		Case 0: Break;
-		Case 1: SetActorState(0,"NoLight"); SetActorState(0,"NoShaft"); break;
-		Case 2: SetActorState(0,"NoLight"); break;
-		Case 3: SetActorState(0,"NoShaft"); break;
-	}
+    int mode = GetUserCVar(ConsolePlayerNumber(),"LightFogCvar");
+    SetResultValue(mode == 1 || mode == 2);
 }
 
-script "BerserkSwitchFistsACS" (void) CLIENTSIDE
+script "LightFogDisabledACS" (void) NET CLIENTSIDE
+{
+    int mode = GetUserCVar(ConsolePlayerNumber(),"LightFogCvar");
+    SetResultValue(mode == 1 || mode == 3);
+}
+
+script "BerserkSwitchFistsACS" (void) NET
 {
 	if(GetUserCVar(PlayerNumber(),"BerserkSwitchFistsCvar") == true)	
 	{
@@ -149,41 +155,38 @@ script "BerserkSwitchFistsACS" (void) CLIENTSIDE
 	}
 }
 
-script "SoulHandler" ENTER
-{
-Thing_ChangeTID(0,6666+PlayerNumber());//gives player a TID to allow control of item spawns
-}
+script "SoulHandler" ENTER { Thing_ChangeTID(0,6666 + PlayerNumber()); }			//assigns player a TID on map start
+script "SoulHandlerRespawn" RESPAWN { Thing_ChangeTID(0,6666 + PlayerNumber()); }	//reassigns player a TID after respawn
 
-Script "TUnmakerChecker" (void)
+script "TUnmakerChecker" (void) NET
 {
 	int highestResult = 1;
 
-	for(int i = 6666; i < 6766; i++)
+	for (int p = 0; p < 64; p++)
 	{
-		if(CheckActorInventory(i,"unmakerTACTICAL") || CheckActorInventory(i,"64RuinerTACTICAL"))	//checks if you have unmaker or ruiner
+		if (!PlayerInGame(p)) continue;
+
+		int tid = 6666 + p;
+
+		if (CheckActorInventory(tid,"unmakerTACTICAL") || CheckActorInventory(tid,"64RuinerTACTICAL"))
 		{
 			int currentResult = 2;
-			
-			if(CheckActorInventory(i,"WpnPower1Icon") && CheckActorInventory(i,"WpnPower2Icon") && CheckActorInventory(i,"WpnPower3Icon"))
+
+			if ((CheckActorInventory(tid,"WpnPower1Icon") && CheckActorInventory(tid,"WpnPower2Icon") && CheckActorInventory(tid,"WpnPower3Icon"))
+			|| CheckActorInventory(tid,"WpnPower4Icon") || CheckActorInventory(tid,"WpnPower5Icon"))
 			{
 				currentResult = 3;
 			}
-			if(CheckActorInventory(i,"WpnPower4Icon") || CheckActorInventory(i,"WpnPower5Icon"))	//checks if you have either outcast artefact
-			{
-				currentResult = 3;
-			}
+
 			if (currentResult > highestResult)
 			{
 				highestResult = currentResult;
+
+				if (highestResult == 3) break;
 			}
 		}
 	}
 	SetResultValue(highestResult);
-}
-
-script "FootStepCheck" (void)	//footstep sound check for player decorate
-{
-	if(GetCvar("FootStepCheckCvar") == 1) { GiveInventory("FootstepDisabled",1); }
 }
 
 /*script "WeaponPickupChecker" (int Weapon)
@@ -210,25 +213,25 @@ script "FootStepCheck" (void)	//footstep sound check for player decorate
 	}
 }*/
 
-script "FlatDecalACS" (void) CLIENTSIDE { SetResultValue(GetCVar("FlatDecalCvar")); }
-script "LiquidSplashACS" (void)	CLIENTSIDE { SetResultValue(GetCvar("LiquidSplashCvar")); }
+script "CensoredHealingACS"	(void) { SetResultValue(GetCVar("CensoredHealing_Cvar")); }
+script "AltAmmoSpritesACS"	(void) { SetResultValue(GetCVar("AlternativeAmmoPickupSpritesCvar")); }
+script "AlphaSpritesACS"	(void) { SetResultValue(GetCvar("AlphaPickupCvar")); }
+script "ClassicTorchACS"	(void) { SetResultValue(GetCvar("ClassicTorchCvar")); }
 
-script "CensoredHealingACS" (void) { SetResultValue(GetCVar("CensoredHealing_Cvar")); }
-script "AltAmmoSpritesACS" (void) { SetResultValue(GetCVar("AlternativeAmmoPickupSpritesCvar")); }
-script "AlphaSpritesACS" (void) { SetResultValue(GetCvar("AlphaPickupCvar")); }
-script "ClassicTorchACS" (void)	{ SetResultValue(GetCvar("ClassicTorchCvar")); }
+script "LiquidSplashACS"	(void) NET CLIENTSIDE { SetResultValue(GetUserCVar(ConsolePlayerNumber(),"LiquidSplashCvar")); }
+script "FlatDecalACS"		(void) NET CLIENTSIDE { SetResultValue(GetUserCVar(ConsolePlayerNumber(),"FlatDecalCvar")); }
+script "SetBloodAmountACS"	(void) NET CLIENTSIDE { SetResultValue(GetUserCVar(ConsolePlayerNumber(),"SetBloodAmountCvar")); }
+script "FootStepCheckACS"	(void) NET CLIENTSIDE { SetResultValue(GetUserCVar(ConsolePlayerNumber(),"FootStepCheckCvar")); }
 
-script "SetBloodAmountACS" (void) CLIENTSIDE 
-{ 
-    SetResultValue(GetUserCVar(ConsolePlayerNumber(),"BD64_BloodAmountCvar")); 
-}
-
-script "LowAmmoSFX" (void) CLIENTSIDE
+script "LowAmmoSFXACS" (void) NET CLIENTSIDE
 {
-	if(GetUserCVar(PlayerNumber(),"LowAmmoSFX") == 1) { PlaySound(0,"Weapon/LowAmmo",CHAN_AUTO,1.0,false,1.0,true); }
+    if (GetUserCVar(PlayerNumber(),"LowAmmoSFXCvar") == 1) 
+    { 
+        PlaySound(0,"Weapon/LowAmmo",CHAN_AUTO,1.0,false,1.0,true); 
+    }
 }
 
-script "RandomCvars" (void) net
+script "RandomCvars" (void) NET
 {
 	SetCvar("Chaingun_Spawner_Cvar",0);
 	SetCvar("PlasmaRifle_Spawner_Cvar",0);
@@ -260,7 +263,7 @@ script "RandomCvars" (void) net
 	delay(1);
 }
 
-script "RandomMonstersPercentACS" (void) net
+script "RandomMonstersPercentACS" (void) NET
 {
 	SetCvar("bd64_SpawnPercentZombieman",random(1,10));
 	SetCvar("bd64_SpawnPercentShotgunguy",random(1,10));

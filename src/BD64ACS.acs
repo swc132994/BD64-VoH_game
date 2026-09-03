@@ -102,10 +102,16 @@ Script "PlayerDeathScript" Death
 	TakeInventory("ClassicRLToken",1);
 }
 
-Script "DM_SpawnACS" (void)
+script "DM_SpawnACS" (void) NET
 {
-if	(GameType() == GAME_NET_DEATHMATCH)
-	GiveInventory("IsDM",1);
+	if (GameType() == GAME_NET_DEATHMATCH)
+	{
+		SetResultValue(1);
+	}
+	else
+	{
+		SetResultValue(0);
+	}
 }
 
 script "GoreCleanerACS" (void) NET CLIENTSIDE

@@ -9,15 +9,9 @@ Inventory.PickupSound "WPICK"
 	States
 	{
 	Spawn:
-		LGUN C 0 NoDelay A_JumpIfInventory("AltLaserSkin",1,2)
-		LGUN B 0
-		"####" "#" 1
-		"####" "#" 2
-		"####" "#" 0 ACS_NamedExecuteAlways("DM_SpawnACS")
-		"####" "#" 2
-		"####" "#" 0 A_JumpIfInventory("ISDM",1,"DMSpawn")
-		"####" "#" 2
-		Loop
+		LGUN B 0 NoDelay A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMSpawn")
+		LGUN B -1
+		Stop
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
 		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")

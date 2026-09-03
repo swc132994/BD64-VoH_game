@@ -8,11 +8,8 @@ Inventory.PickupSound "WPICK"
 	States
 	{
 	Spawn:
-		ARSD A 2
-		ARSD A 0 ACS_NamedExecuteAlways("DM_SpawnACS")
-		ARSD A 2
-		ARSD A 0 A_JumpIfInventory("ISDM",1,"DMSpawn")
-		ARSD A 1
+		ARSD A 0 NoDelay A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMSpawn")
+		ARSD A -1
 		Loop
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")

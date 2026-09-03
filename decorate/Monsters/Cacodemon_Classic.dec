@@ -155,7 +155,7 @@ HitObituary "$FO_OB_CACOHIT"
 		CRP1 H -1
 		Stop
 	Ice:
-		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		"####" "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
@@ -505,7 +505,7 @@ BloodType "Brutal_BloodBlue"
 		CRP1 H -1
 		Stop
 	Ice:
-		HEA4 "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		HEA4 "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
@@ -585,7 +585,7 @@ DropItem "None"
 		HEA4 E 1 A_SpawnItemEx("NightmareClassicCacodemon",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Ice:
-		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		"####" "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait

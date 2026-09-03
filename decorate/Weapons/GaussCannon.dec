@@ -4,7 +4,6 @@ Actor GaussCannonSpawner : CustomInventory	19134
 Scale 0.9
 Tag "$FO_TAG_GAUSS"
 Inventory.PickupMessage "$BD64_GOTGAUSS"
-Obituary "$FO_OB_GAUSS"
 Inventory.PickupSound "WPICK"
 	States
 	{
@@ -22,10 +21,12 @@ Inventory.PickupSound "WPICK"
 		Stop
 	DMSpawn:
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-		TNT1 A 0 A_SpawnItemEx("TeleportationFog")
-		TNT1 A 0 A_SpawnItemEx("64GaussCannon")
-		TNT1 A 0 A_SpawnItemEx("64GaussCannonTACTICAL")
+	DMSpawnLoop:
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 0 A_SpawnItemEx("64GaussCannon",0,0,0,0,0,0,0,SXF_SETMASTER)
+		TNT1 A 0 A_SpawnItemEx("64GaussCannonTACTICAL",0,0,0,0,0,0,0,SXF_SETMASTER)
 		TNT1 A 1050
+		TNT1 A 0 A_RemoveChildren(TRUE)
 		Loop
 	}
 }

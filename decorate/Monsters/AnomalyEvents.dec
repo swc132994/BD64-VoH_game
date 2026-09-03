@@ -1474,7 +1474,7 @@ MONSTER
 	Ice:
 		"####" "#" 0 A_Gravity
 		"####" "#" 0 A_SetGravity(8)
-		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		"####" "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait

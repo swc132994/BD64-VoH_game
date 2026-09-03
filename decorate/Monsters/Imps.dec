@@ -245,7 +245,7 @@ Obituary "$FO_OB_IMP"
 		DI64 X -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
 	Ice:
-		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		"####" "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
@@ -910,7 +910,7 @@ BloodType "Brutal_BloodBlue"
 		TRO2 X -1 A_SpawnItemEx("GrowingBloodPoolBlue")
 		Stop
 	Ice:
-		TRO2 "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		TRO2 "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
@@ -1110,7 +1110,7 @@ DropItem "None"
 		TRO2 L 1 A_SpawnItemEx("NightmareImp",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Ice:
-		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		"####" "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait

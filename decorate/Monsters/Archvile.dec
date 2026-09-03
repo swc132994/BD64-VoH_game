@@ -189,7 +189,7 @@ Obituary "$FO_OB_VILE"
 		VILE Y -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
 	Ice:
-		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		"####" "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait

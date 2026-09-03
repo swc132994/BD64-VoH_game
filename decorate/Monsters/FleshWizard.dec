@@ -198,7 +198,7 @@ MONSTER
 		POL5 A -1
 		Stop
 	Ice:
-		LMWZ "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		LMWZ "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
@@ -318,7 +318,7 @@ DropItem "None"
 		FW1H F -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
 	Ice:
-		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		"####" "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait

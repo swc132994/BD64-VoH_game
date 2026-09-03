@@ -1,6 +1,5 @@
 Actor PlasmaRifleSpawner : CustomInventory// Replaces PlasmaRifle (RandomSpawners.dec)
 {
-//$category "Game/BD64_Weapons"
 Scale 0.82
 Tag "$FO_TAG_PLASMARIFLE"
 Inventory.PickupMessage "$BD64_GOTPLASMA"
@@ -22,10 +21,12 @@ Inventory.PickupSound "WPICK"
 		Stop
 	DMSpawn:
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-		TNT1 A 0 A_SpawnItemEx("TeleportationFog")
-		TNT1 A 0 A_SpawnItemEx("64PlasmaRifle")
-		TNT1 A 0 A_SpawnItemEx("64PlasmaRifleTACTICAL")
+	DMSpawnLoop:
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 0 A_SpawnItemEx("64PlasmaRifle",0,0,0,0,0,0,0,SXF_SETMASTER)
+		TNT1 A 0 A_SpawnItemEx("64PlasmaRifleTACTICAL",0,0,0,0,0,0,0,SXF_SETMASTER)
 		TNT1 A 1050
+		TNT1 A 0 A_RemoveChildren(TRUE)
 		Loop
 	}
 }

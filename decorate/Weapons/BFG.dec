@@ -1,9 +1,7 @@
 Actor BFG9000Spawner : CustomInventory// Replaces BFG9000 (RandomSpawners.dec)
 {
-//$category "Game/BD64_Weapons"
 Scale 0.9
 Tag "$FO_TAG_BFG9000"
-Obituary "$FO_OB_MPBFG_BOOM"
 Inventory.PickupMessage "$BD64_GOTBFG9000"
 Inventory.PickupSound "WPICK"
 	States
@@ -22,10 +20,12 @@ Inventory.PickupSound "WPICK"
 		Stop
 	DMSpawn:
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-		TNT1 A 0 A_SpawnItemEx("TeleportationFog")
-		TNT1 A 0 A_SpawnItemEx("64BFG9000")
-		TNT1 A 0 A_SpawnItemEx("64BFG9000TACTICAL")
+	DMSpawnLoop:
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 0 A_SpawnItemEx("64BFG9000",0,0,0,0,0,0,0,SXF_SETMASTER)
+		TNT1 A 0 A_SpawnItemEx("64BFG9000TACTICAL",0,0,0,0,0,0,0,SXF_SETMASTER)
 		TNT1 A 1050
+		TNT1 A 0 A_RemoveChildren(TRUE)
 		Loop
 	}
 }

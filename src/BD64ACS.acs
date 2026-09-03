@@ -89,10 +89,10 @@ Script "BD64Initilize" Enter
 	SetInventory("TCMapCheck",GetCvar("TCMapCheckCvar"));
 }
 
-script "IceDeathTranslate" (void) NET
+script "IceDeathTranslateACS" (void)
 {
-Thing_SetTranslation(0,2666);
-Delay(1);
+	Thing_SetTranslation(0,2666);
+	SetResultValue(1);
 }
 
 Script "PlayerDeathScript" Death

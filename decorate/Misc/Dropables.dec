@@ -176,12 +176,12 @@ Gravity 0.9
 	Spawn:
 		TNT1 A 0 NoDelay A_Jump(128,"SpinReverse")
 	SpinForward:
-		TRII ABCDEFGH 4
+		TRII ABCDEFGH 2
 		Loop
 	SpinReverse:
 		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
 	SpinReverseLoop:
-		TRII GFEDCBA 4
+		TRII GFEDCBA 2
 		Loop
 	Death:
 		TNT1 A 0 A_DropItem("64ShotgunTACTICAL")
@@ -197,12 +197,12 @@ ACTOR DroppedSSG : DroppedShotgun
 	Spawn:
 		TNT1 A 0 NoDelay A_Jump(128,"SpinReverse")
 	SpinForward:
-		TRI1 ABCDEFGH 4
+		TRI1 ABCDEFGH 2
 		Loop
 	SpinReverse:
 		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
 	SpinReverseLoop:
-		TRI1 GFEDCBA 4
+		TRI1 GFEDCBA 2
 		Loop
 	Death:
 		TNT1 A 0 A_DropItem("64SuperShotgunTACTICAL")
@@ -218,12 +218,12 @@ ACTOR DroppedRifle : DroppedShotgun
 	Spawn:
 		TNT1 A 0 NoDelay A_Jump(128,"SpinReverse")
 	SpinForward:
-		2RI2 ABCDEFGH 4
+		2RI2 ABCDEFGH 2
 		Loop
 	SpinReverse:
 		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
 	SpinReverseLoop:
-		2RI2 GFEDCBA 4
+		2RI2 GFEDCBA 2
 		Loop
 	Death:
 		TNT1 A 0 A_DropItem("64RifleTactical")
@@ -239,12 +239,12 @@ ACTOR DroppedChaingun : DroppedShotgun
 	Spawn:
 		TNT1 A 0 NoDelay A_Jump(128,"SpinReverse")
 	SpinForward:
-		TRI3 ABCDEFGH 4
+		TRI3 ABCDEFGH 2
 		Loop
 	SpinReverse:
 		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
 	SpinReverseLoop:
-		TRI3 GFEDCBA 4
+		TRI3 GFEDCBA 2
 		Loop
 	Death:
 		TNT1 A 0 A_DropItem("64ChaingunTACTICAL")
@@ -260,12 +260,12 @@ ACTOR DroppedChainsaw : DroppedShotgun
 	Spawn:
 		TNT1 A 0 NoDelay A_Jump(128,"SpinReverse")
 	SpinForward:
-		CWAS ABCDEFGH 4
+		CWAS ABCDEFGH 2
 		Loop
 	SpinReverse:
 		TNT1 A 0 A_SetScale(-ScaleX,ScaleY)
 	SpinReverseLoop:
-		CWAS GFEDCBA 4
+		CWAS GFEDCBA 2
 		Loop
 	Death:
 		TNT1 A 0 A_DropItem("64ChainsawTACTICAL")

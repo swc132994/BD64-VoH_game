@@ -193,7 +193,7 @@ MONSTER
 		Stop
 	Ice:
 		"####" "#" 0 A_KillMaster("None")
-		BOZ3 "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		BOZ3 "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait

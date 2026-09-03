@@ -300,7 +300,7 @@ MONSTER
 		CRB1 H -1
 		Stop
 	Ice:
-		3WRT "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		3WRT "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait

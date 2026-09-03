@@ -264,7 +264,6 @@ BounceFactor 0.5
 
 ACTOR PlasmaFireSmoke : BigBlackSmoke	{RenderStyle Add}
 
-
 ACTOR MediumBlackSmoke : BigBlackSmoke	{Scale 0.3}
 
 ACTOR BarrelExplosionFire : BigBlackSmoke

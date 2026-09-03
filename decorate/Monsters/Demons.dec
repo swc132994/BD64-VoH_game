@@ -191,7 +191,7 @@ Obituary "$FO_OB_DEMONHIT"
 		CRB1 H -1
 		Stop
 	Ice:
-		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		"####" "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
@@ -565,7 +565,7 @@ HitObituary "$FO_OB_SPECTREHIT"
 		CRB1 H -1
 		Stop
 	Ice:
-		SAR2 "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		SAR2 "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
@@ -707,7 +707,7 @@ DropItem "None"
 		SAR2 I 1 A_SpawnItemEx("64Spectre",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Ice:
-		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		"####" "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
@@ -988,7 +988,7 @@ Obituary "$FO_OB_SPECTREHIT_NIGHTMARE"
 		CRB1 H -1
 		Stop
 	Ice:
-		SAR3 "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		SAR3 "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait
@@ -1130,7 +1130,7 @@ DropItem "None"
 		SAR3 I 1 A_SpawnItemEx("64NightmareSpectre",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
 	Ice:
-		"####" "#" 2 ACS_NamedExecuteAlways("IceDeathTranslate") 
+		"####" "#" 0 A_JumpIf(CallACS("IceDeathTranslateACS"),1) 
 		"####" "#" 5 A_FreezeDeath
 		"####" "#" 1 A_FreezeDeathChunks
 		wait

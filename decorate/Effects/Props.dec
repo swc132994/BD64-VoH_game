@@ -696,7 +696,6 @@ actor 64LiveStick : LiveStick Replaces LiveStick
 
 ACTOR 64RealGibs : RealGibs replaces RealGibs
 {
-Game Doom
 scale 0.85
 	States
 	{
@@ -1552,7 +1551,6 @@ actor 64TechColumn : Column// Replaces Column (RandomSpawners.dec)
 
 actor LightShaft1
 {
-Game Doom
 Radius 6
 Height 10
 Scale 0.8
@@ -1902,7 +1900,6 @@ SCALE 0.8
 Actor BD64HangingTechLampb 9923
 {
 //$category "Maps/BD64_Lights"
-Game Doom
 Height 54
 Radius 16
 +NOGRAVITY
@@ -1921,7 +1918,6 @@ Radius 16
 actor BD64CeilingLightb 9924
 {
 //$category "Maps/BD64_Lights"
-Game Doom
 Height 11
 Radius 16
 +NOGRAVITY
@@ -1941,7 +1937,6 @@ Radius 16
 actor BD64GroundFire 9929
 {
 //$category "Maps/BD64_Lights"
-Game Doom
 scale 0.6
 Height 8
 Radius 6

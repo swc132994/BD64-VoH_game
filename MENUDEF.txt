@@ -160,7 +160,7 @@ OptionMenu "BrutalDoom64Item/WeaponOptions"
 	Option "$FO_64MNU_WARMUP","WeaponsWarmUpCvar","YesNo"
 		StaticText "$FO_64MNU_WARMUP_TXT",1
 		StaticText ""
-	Option "$FO_64MNU_CLASSIC_CHAINSAW","VanillaChainsawCvar","YesNo"
+	Option "$FO_64MNU_CLASSIC_CHAINSAW","ClassicChainsawCvar","YesNo"
 	Option "$FO_64MNU_CLASSIC_CHAINGUN","ClassicChaingunCvar","YesNo"
 	Option "$FO_64MNU_CLASSIC_ROCKET","ClassicRLCvar","YesNo"
 		StaticText "$FO_64MNU_CLASSIC_SWITCH",1

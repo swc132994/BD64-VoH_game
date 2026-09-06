@@ -1,8 +1,8 @@
 user int SetBloodAmountCvar = 2;
 user int GoreCleanerCvar = 0;
 
-user bool AlternativeLaserSkinCvar = TRUE;			//old or new laser
-user bool HUDSwitchCvar = False;					//enable vanila status bar/arragaend hud
+
+user bool HUDSwitchCvar = False;					//enable vanilla doom style status bar
 user noarchive bool BerserkSwitchFistsCvar = TRUE;	//berserk fists switching
 
 //MONSTER SPAWNER CVARS
@@ -40,10 +40,11 @@ server int WpnPower_Spawner_Cvar = 1;		//unmaker powerups
 server int BonusRandomCvar = 1;				//Replace armor and health bonus
 
 //WEAPON CVARS
+server bool AlternativeLaserSkinCvar = TRUE;//old or new laser
 server bool WeaponsWarmUpCvar = TRUE;		//weapons warm up animation
 server bool ClassicChaingunCvar = FALSE;	//Classic Chaingun
 server bool ClassicRLCvar = FALSE;			//old or new rocket launcher
-server int VanillaChainsawCvar = 0;			//switch to vanilla chainsaw
+server int ClassicChainsawCvar = 0;			//switch to classic chainsaw
 server int VWeaponCvar = 0;					//vanilla weapon animation for classical class
 server bool NoReloadCvar = FALSE;			//No Reload System
 

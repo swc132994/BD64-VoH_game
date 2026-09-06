@@ -11,15 +11,13 @@
 
 script "BD64Respawn" Respawn NET
 {
-	SetInventory("HudSwitch",getusercvar(PlayerNumber(),"HUDSwitchCvar")); //Hud to Doom Style
-	SetInventory("NoReloading",getcvar("NoReloadCvar")); //Reloading Mode
-	SetInventory("VWeaponMode",getCvar("VWeaponCvar")); //Classic Weapons mode for Classical Mode
-	SetInventory("AltLaserSkin",getuserCvar(PlayerNumber(),"AlternativeLaserSkinCvar")); //Alternative Lasergun skins
+	SetInventory("HudSwitch",GetUserCVar(PlayerNumber(),"HUDSwitchCvar")); //Hud to Doom Style
+	SetInventory("NoReloading",GetCvar("NoReloadCvar")); //Reloading Mode
+	SetInventory("VWeaponMode",GetCvar("VWeaponCvar")); //Vanilla weapon feel in classic mode.
+	SetInventory("AltLaserSkin",GetCvar("AlternativeLaserSkinCvar"));
 
 	//Classic Weapons Mode for Tactical and Modern Classes
-	SetInventory("ClassicRLToken",getcvar("ClassicRLCvar"));
-	SetInventory("ClassicChaingunToken",getcvar("ClassicChaingunCvar"));
-	SetInventory("ClassicChainsawToken",getcvar("VanillaChainsawCvar"));
+	SetInventory("ClassicChaingunToken",GetCvar("ClassicChaingunCvar"));
 
 	Delay(1);
 }
@@ -75,7 +73,7 @@ Script "BD64Initilize" Enter
 		Log(l:"FO_TAG_HARDER_RELOAD_MESSAGE");
 		ChangeLevel(StrParam(n:PRINTNAME_LEVEL),0,CHANGELEVEL_NOINTERMISSION,-1);
 		}
-	}	
+	}
 
 	//Survival Mode
 	if(GameSkill() == SKILL_SURVIVAL || GameSkill() == SKILL_SURVIVAL_REALISM)
@@ -97,9 +95,9 @@ script "IceDeathTranslateACS" (void)
 
 Script "PlayerDeathScript" Death
 {
+flashlightOn[PlayerNumber()] = 0;
 	Delay(1);
-	TakeInventory("ClassicChainsawToken",1);
-	TakeInventory("ClassicRLToken",1);
+	TakeInventory("FlashLightPickup",1);
 }
 
 script "DM_SpawnACS" (void) NET
@@ -116,14 +114,14 @@ script "DM_SpawnACS" (void) NET
 
 script "GoreCleanerACS" (void) NET CLIENTSIDE
 {
-    if (GameType() == GAME_NET_DEATHMATCH || GetUserCVar(ConsolePlayerNumber(),"GoreCleanerCvar") == 1)
-    {
-        SetResultValue(1);
-    }
-    else
-    {
-        SetResultValue(0);
-    }
+	if (GameType() == GAME_NET_DEATHMATCH || GetUserCVar(ConsolePlayerNumber(),"GoreCleanerCvar") == 1)
+	{
+		SetResultValue(1);
+	}
+	else
+	{
+		SetResultValue(0);
+	}
 }
 
 script "Zandro_Check" OPEN
@@ -136,24 +134,76 @@ if(IsZandronum())
 
 script "HaloDisabledACS" (void) NET CLIENTSIDE
 {
-    int mode = GetUserCVar(ConsolePlayerNumber(),"LightFogCvar");
-    SetResultValue(mode == 1 || mode == 2);
+	int mode = GetUserCVar(ConsolePlayerNumber(),"LightFogCvar");
+	SetResultValue(mode == 1 || mode == 2);
 }
 
 script "LightFogDisabledACS" (void) NET CLIENTSIDE
 {
-    int mode = GetUserCVar(ConsolePlayerNumber(),"LightFogCvar");
-    SetResultValue(mode == 1 || mode == 3);
+	int mode = GetUserCVar(ConsolePlayerNumber(),"LightFogCvar");
+	SetResultValue(mode == 1 || mode == 3);
+}
+
+script "RLauncherSwitchACS" (int currentIsClassic)
+{
+	int SwitchClassic = GetCVar("ClassicRLCvar");
+
+	if (!currentIsClassic && SwitchClassic)	//From tactical to classic
+	{
+		GiveInventory("64ClassicRocketLauncherTactical",1);
+		SetWeapon("64ClassicRocketLauncherTactical");
+		TakeInventory("64RocketLauncherTactical",1);
+		SetResultValue(1); //Swap
+	}
+	else if (currentIsClassic && !SwitchClassic) //From classic to tactical
+	{
+		int ammoCount = CheckInventory("RocketAmmo");
+		GiveInventory("64RocketLauncherTactical",1);
+		SetInventory("RocketAmmo",ammoCount);
+		SetWeapon("64RocketLauncherTactical");
+		TakeInventory("64ClassicRocketLauncherTactical",1);
+		SetResultValue(1); //Swap
+	}
+	else
+	{
+		SetResultValue(0); //No swap
+	}
+}
+
+script "ChainsawSwitchACS" (int currentIsClassic)
+{
+	int SwitchClassic = GetCVar("ClassicChainsawCvar"); 
+
+	if (!currentIsClassic && SwitchClassic)	//From tactical to classic
+	{
+		GiveInventory("64ChainsawTactical_Classic",1);
+		SetWeapon("64ChainsawTactical_Classic");
+		TakeInventory("64ChainsawTACTICAL",1);
+		SetResultValue(1); //Swap
+	}
+	else if (currentIsClassic && !SwitchClassic)	//From classic to tactical
+	{
+		int FuelCount = CheckInventory("SawGas");
+		GiveInventory("64ChainsawTACTICAL",1);
+		SetInventory("SawGas",FuelCount);
+		SetWeapon("64ChainsawTACTICAL");
+		TakeInventory("64ChainsawTactical_Classic",1);
+		SetResultValue(1); //Swap
+	}
+	else
+	{
+		SetResultValue(0); //No swap
+	}
 }
 
 script "BerserkSwitchFistsACS" (void) NET
 {
-	if(GetUserCVar(PlayerNumber(),"BerserkSwitchFistsCvar") == true)	
+	if(GetUserCVar(PlayerNumber(),"BerserkSwitchFistsCvar") == true)
 	{
 		If(CheckInventory("IsTacticalClass") || CheckInventory("IsModern"))
 		{
 			SetWeapon("64FistTactical");
-		}	
+		}
 		else
 		{
 			SetWeapon("64Fist");
@@ -231,10 +281,10 @@ script "FootStepCheckACS"	(void) NET CLIENTSIDE { SetResultValue(GetUserCVar(Con
 
 script "LowAmmoSFXACS" (void) NET CLIENTSIDE
 {
-    if (GetUserCVar(PlayerNumber(),"LowAmmoSFXCvar") == 1) 
-    { 
-        PlaySound(0,"Weapon/LowAmmo",CHAN_AUTO,1.0,false,1.0,true); 
-    }
+	if (GetUserCVar(PlayerNumber(),"LowAmmoSFXCvar") == 1) 
+	{
+		PlaySound(0,"Weapon/LowAmmo",CHAN_AUTO,1.0,false,1.0,true); 
+	}
 }
 
 script "RandomCvars" (void) NET

@@ -114,7 +114,7 @@ Obituary "$FO_OB_MPCHAINSAW"
 	}
 }
 
-Actor 64ChainsawTACTICAL : Brutal64Weapon	//CHAINSAW FOR TACTICAL CLASS
+Actor 64ChainsawTACTICAL : Brutal64Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 1
@@ -130,13 +130,15 @@ Weapon.AmmoGive2 0
 Inventory.PickupMessage "$BD64_GOTCHAINSAW"
 Obituary "$FO_OB_MPCHAINSAW"
 Tag "$FO_TAG_CHAINSAW"
-Inventory.forbiddento "64DoomPlayer"
+Inventory.ForbiddenTo "64DoomPlayer"
 VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
-Weapon.SisterWeapon "64ChainsawTactical_Classic"
 +WEAPON.AXEBLOOD
 +WEAPON.MELEEWEAPON
 	States
 	{
+	NullState:	//reached with ACSCall to cleanly terminate state for weapon swap
+		TNT1 A 1
+		Stop
 	MineThrowFlash:
 		SAWS ONDCBA 1
 		TNT1 A 11
@@ -147,7 +149,7 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		SAWS D 6
 		SAWS NOPQR 1
 		Stop
-	SSGFlash:	//30
+	SSGFlash:
 		SAWS RQPON 1
 		SAWS D 20
 		SAWS NOPQR 1
@@ -159,13 +161,6 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		SAWS D 3
 		SAWS NOPQR 1
 		Stop
-	ClassicSawSelected:	//Deselect animation
-		SAWS RQPONDCBA 1 Offset(0,32)
-		TNT1 A 3
-	ClassicSawSelected2:	//Classic select animation
-		TNT1 A 0 A_PlaySound("chainsaw/draw",CHAN_7)
-		WASS ABCD 1 Offset(0,32)
-		TNT1 A 0 A_GiveInventory("SisterWeaponSelector",1)
 	Spawn:
 		CSAW A -1
 		Stop
@@ -182,12 +177,10 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		TNT1 A 0 A_StopSound(CHAN_ITEM)
 		TNT1 A 0 A_StopSound(CHAN_6)
 		SAWS RQPONDCBA 1
-		TNT1 A 0 A_Takeinventory("SisterWeaponSelector",0)
 		TNT1 A 0 A_Lower
 		Wait
 	Select:
-		TNT1 A 0 A_TakeInventory("SisterWeaponSelector",0)
-		TNT1 A 0 A_JumpIfInventory("ClassicChainsawToken",1,"ClassicSawSelected2")
+		TNT1 A 0 A_JumpIf(CallACS("ChainsawSwitchACS",0) == 1,"NullState")
 		TNT1 A 0 A_JumpIf(waterlevel > 1,2)
 		TNT1 A 0 A_JumpIfInventory("SawGas",1,"Select2")
 		SAWS ABCDNOPQR 1 Offset(0,32)
@@ -209,7 +202,7 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		Goto CountinueSelect2
 	v1Ready:
 	Ready:
-		TNT1 A 0 A_JumpIfInventory("ClassicChainsawToken",1,"ClassicSawSelected")
+		TNT1 A 0 A_JumpIf(CallACS("ChainsawSwitchACS",0) == 1,"NullState")
 		TNT1 A 0 A_JumpIf(waterlevel > 1,"NotReady")
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
@@ -237,7 +230,7 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		TNT1 A 0 A_TakeInventory("SawGas",1)
 		Loop
 	NotReady:
-		TNT1 A 0 A_JumpIfInventory("ClassicChainsawToken",1,"ClassicSawSelected")
+		TNT1 A 0 A_JumpIf(CallACS("ChainsawSwitchACS",0) == 1,"NullState")
 		TNT1 A 0 A_StopSound(CHAN_6)
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		SAWG A 5 A_WeaponReady
@@ -308,7 +301,7 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		TNT1 A 0 A_ZoomFactor(0.75)
 		OSSF AB 1 Bright
 		TNT1 A 0 A_ZoomFactor(1.0)
-		OSSF C 3 A_SetPitch(pitch-4,SPF_INTERPOLATE)
+		OSSF C 3 A_SetPitch(pitch-4.0,SPF_INTERPOLATE)
 		OSSF DE 1 A_SetPitch(pitch+2.6,SPF_INTERPOLATE)
 		OSSF F 1 A_SetPitch(pitch+1.2,SPF_INTERPOLATE)
 		OSSG A 1 A_SetPitch(pitch+0.8,SPF_INTERPOLATE)
@@ -341,7 +334,7 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		TNT1 A 0 A_ZoomFactor(0.95)
 		OSSU AB 1 Bright
 		TNT1 A 0 A_ZoomFactor(1.0)
-		OSSF E 3 A_SetPitch(pitch-2,SPF_INTERPOLATE)
+		OSSF E 3 A_SetPitch(pitch-2.0,SPF_INTERPOLATE)
 		TNT1 A 0 Offset(-4,32)
 		OSSF E 1 A_SetPitch(pitch+1.3,SPF_INTERPOLATE)
 		TNT1 A 0 Offset(-3,32)
@@ -364,7 +357,7 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 		TNT1 A 0 A_StopSound(CHAN_6)
 		SAWS EFG 1 A_WeaponReady(WRF_ALLOWZOOM|WRF_NOFIRE|WRF_NOBOB)
 		TNT1 A 0 A_GiveInventory("HoldFidget",1)
-	HoldingFidget:	
+	HoldingFidget:
 		SAWS H 2 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM|WRF_NOFIRE)
 		TNT1 A 0 A_TakeInventory("HoldFidget",1)
 		SAWS GFE 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM|WRF_NOFIRE|WRF_NOBOB)
@@ -376,7 +369,6 @@ Weapon.SisterWeapon "64ChainsawTactical_Classic"
 	}
 }
 
-//CLASSICAL LOOK
 Actor 64ChainsawTactical_Classic : Brutal64Weapon
 {
 Scale 0.82
@@ -386,18 +378,19 @@ Weapon.SelectionOrder 2200
 Weapon.Kickback 0
 Weapon.AmmoType "SawGas"
 Weapon.AmmoUse 1
-Weapon.AmmoGive 50
+Weapon.AmmoGive 0
 Inventory.PickupMessage "$BD64_GOTCHAINSAW"
 Obituary "$FO_OB_MPCHAINSAW"
 Tag "$FO_TAG_CHAINSAW"
-Inventory.forbiddento "64DoomPlayer"
+Inventory.ForbiddenTo "64DoomPlayer"
 VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
-Weapon.SisterWeapon "64ChainsawTactical"
 +WEAPON.AXEBLOOD
 +WEAPON.MELEEWEAPON
-+POWERED_UP
 	States
 	{
+	NullState:	//reached with ACSCall to cleanly terminate state for weapon swap
+		TNT1 A 1
+		Stop
 	MineThrowFlash:
 		WASS EFGH 1
 		TNT1 A 18
@@ -420,7 +413,7 @@ Weapon.SisterWeapon "64ChainsawTactical"
 		WASS H 6
 		WASS HGFE 1
 		Stop
-	SSGFlash:	//30
+	SSGFlash:
 		WASS EFGH 1
 		WASS H 22
 		WASS HGFE 1
@@ -436,12 +429,10 @@ Weapon.SisterWeapon "64ChainsawTactical"
 		TNT1 A 0 A_Takeinventory("PlaceMine",0)
 		TNT1 A 0 A_Takeinventory("Kicking",0)
 		WASS EFGH 2
-		TNT1 A 0 A_Takeinventory("SisterWeaponSelector",0)
 		TNT1 A 0 A_Lower
 		Wait
 	Select:
-		TNT1 A 0 A_JumpIfInventory("ClassicChainsawToken",1,2)
-		TNT1 A 0 A_TakeInventory("SisterWeaponSelector",0)
+		TNT1 A 0 A_JumpIf(CallACS("ChainsawSwitchACS",1) == 1,"NullState")
 		TNT1 A 0 A_JumpIf(waterlevel > 1,"SelectNoFuel")
 		TNT1 A 0 A_JumpIfInventory("SawGas",1,1)
 		Goto SelectNoFuel
@@ -452,8 +443,7 @@ Weapon.SisterWeapon "64ChainsawTactical"
 		Wait
 	v1Ready:
 	Ready:
-		TNT1 A 0 A_JumpIfInventory("ClassicChainsawToken",1,2)
-		TNT1 A 0 A_TakeInventory("SisterWeaponSelector",0)
+		TNT1 A 0 A_JumpIf(CallACS("ChainsawSwitchACS",1) == 1,"NullState")
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
@@ -481,6 +471,7 @@ Weapon.SisterWeapon "64ChainsawTactical"
 		TNT1 A 0 A_TakeInventory("SawGas",1)
 		Loop
 	NotReady:
+		TNT1 A 0 A_JumpIf(CallACS("ChainsawSwitchACS",1) == 1,"NullState")
 		TNT1 A 0 A_StopSound(CHAN_6)
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		WASG C 5 A_WeaponReady
@@ -543,7 +534,7 @@ Weapon.SisterWeapon "64ChainsawTactical"
 		TNT1 A 0 A_ZoomFactor(0.75)
 		OSSF AB 1 Bright
 		TNT1 A 0 A_ZoomFactor(1.0)
-		OSSF C 3 A_SetPitch(pitch-4,SPF_INTERPOLATE)
+		OSSF C 3 A_SetPitch(pitch-4.0,SPF_INTERPOLATE)
 		OSSF DE 1 A_SetPitch(pitch+2.6,SPF_INTERPOLATE)
 		OSSF F 1 A_SetPitch(pitch+1.2,SPF_INTERPOLATE)
 		OSSG A 1 A_SetPitch(pitch+0.8,SPF_INTERPOLATE)
@@ -576,7 +567,7 @@ Weapon.SisterWeapon "64ChainsawTactical"
 		TNT1 A 0 A_ZoomFactor(0.95)
 		OSSU AB 1 Bright
 		TNT1 A 0 A_ZoomFactor(1.0)
-		OSSF E 3 A_SetPitch(pitch-2,SPF_INTERPOLATE)
+		OSSF E 3 A_SetPitch(pitch-2.0,SPF_INTERPOLATE)
 		OSSF E 1 A_SetPitch(pitch+1.3,SPF_INTERPOLATE)
 		OSSF F 1 A_SetPitch(pitch+0.6,SPF_INTERPOLATE)
 		OSSG A 1 A_SetPitch(pitch+0.4,SPF_INTERPOLATE)

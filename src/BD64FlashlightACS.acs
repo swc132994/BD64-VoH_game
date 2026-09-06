@@ -3,43 +3,35 @@ int flashlightOn[MAXPLAYERS];
 
 Script "ToggleFlashlight" (void) NET
 {
-    if (flashlightOn[PlayerNumber()])
-        flashlightOn[PlayerNumber()] = 0;
-    else
-        flashlightOn[PlayerNumber()] = 1;
-        
-    if (CheckInventory("FlashLightPickup") == 0)
-    {
-        Delay(1);
-        flashlightOn[PlayerNumber()] = 0;
-        terminate;
-    }
-    ActivatorSound("flashlight/click",127);
+	if (CheckInventory("FlashLightPickup") == 0)
+	{
+		Print(s:"$NEED_FLASHLIGHT");
+		flashlightOn[PlayerNumber()] = 0;
+		terminate;
+	}
+
+	flashlightOn[PlayerNumber()] = !flashlightOn[PlayerNumber()];
+	ActivatorSound("flashlight/click",127);
 }
 
 Script "FlashlightHandling" ENTER
 {
-    While(1)
-    {
-        if (flashlightOn[PlayerNumber()])
-        {
-            GiveInventory("FlashlightSpawner",1);
-        }
-        Delay(1);
-    }
-}
+	int pNum = PlayerNumber();
 
-Script "FlashLightStartACS" OPEN 
-{
-    if (GetCvar("FlashlightStartCvar") == 1)
-    {
-        for (int i = 0; i < MAXPLAYERS; i++)
-        {
-            if (PlayerInGame(i))
-            {
-                SetActivatorToPlayer(i);
-                GiveInventory("FlashlightPickup",1);
-            }
-        }
-    }
+	while (1)
+	{
+		if (flashlightOn[pNum])
+		{
+			if (GetActorProperty(0,APROP_HEALTH) > 0 && CheckInventory("FlashLightPickup"))
+			{
+				GiveInventory("FlashlightSpawner",1);
+			}
+			else
+			{
+				flashlightOn[pNum] = 0;
+			}
+		}
+
+		Delay(2);
+	}
 }

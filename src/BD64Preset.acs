@@ -4,7 +4,7 @@ script "DefaultCvars" (void) net
 	SetCVarString("BD64_Preset","Default");
 
 	SetCvar("AlternativeAmmoPickupSpritesCvar",1);
-	SetCvar("VanillaChainsawCvar",0);
+	SetCvar("ClassicChainsawCvar",0);
 	SetCvar("ClassicChaingunCvar",0);
 	SetCvar("ClassicRLCvar",0);
 	SetCvar("VWeaponCvar",0);
@@ -90,7 +90,7 @@ script "ClassicalCvars" (void) net
 	SetCVarString("BD64_Preset","Classical");
 	
 	SetCvar("AlternativeAmmoPickupSpritesCvar",1);
-	SetCvar("VanillaChainsawCvar",1);
+	SetCvar("ClassicChainsawCvar",1);
 	SetCvar("ClassicChaingunCvar",1);
 	SetCvar("ClassicRLCvar",1);
 	SetCvar("VWeaponCvar",1);
@@ -177,7 +177,7 @@ script "StevenCvars" (void) net
 	SetCVarString("BD64_Preset","SWC's Vision");
 	
 	SetCvar("AlternativeAmmoPickupSpritesCvar",2);
-	SetCvar("VanillaChainsawCvar",0);
+	SetCvar("ClassicChainsawCvar",0);
 	SetCvar("ClassicChaingunCvar",0);
 	SetCvar("ClassicRLCvar",0);
 	SetCvar("VWeaponCvar",0);

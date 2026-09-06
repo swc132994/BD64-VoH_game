@@ -18,7 +18,7 @@ Inventory.PickupSound "WPICK"
 		Stop
 	PickupTactical:
 		TNT1 A 0 A_GiveInventory("64SMGTactical",1)
-		Stop		
+		Stop
 	DMSpawn:
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
 	DMSpawnLoop:

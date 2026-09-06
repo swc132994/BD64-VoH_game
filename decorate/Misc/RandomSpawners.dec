@@ -384,7 +384,6 @@ Scale 0.82
 		PVIS A 0
 //		TNT1 A 0 A_Jumpif(args[0] == 1,"SpawnInfrared")
 //		TNT1 A 0 A_Jumpif(args[0] == 2,"SpawnFlashlight")
-//		TNT1 A 2 ACS_NamedExecuteAlways("FlashlightCheck")	
 		TNT1 A 0 A_Jump(90,"SpawnFlashlight")//35%
 	SpawnInfrared:
 		TNT1 A 1 A_SpawnItemEx("64Infrared",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
@@ -712,7 +711,7 @@ Scale 0.8
 	States
 	{
 	Spawn:
-		HEAD M 0	
+		HEAD M 0
 		TNT1 A 0 A_JumpIf(CallACS("PoltergeistEnablerACS") == 0,"SpawnNormalStatue")
 		TNT1 A 0 A_Jump(26,"SpawnGoreNest")//10%
 	SpawnNormalStatue:
@@ -1203,7 +1202,7 @@ MONSTER
 		TNT1 A 0 A_JumpIf(CallACS("MastermindSpawnerACS") == 3,"SpawnEradicator")
 		TNT1 A 0 A_JumpIf(CallACS("MastermindSpawnerACS") == -1,"AltSpawn1")
 		TNT1 A 0 A_JumpIf(CallACS("MastermindSpawnerACS") == -2,"AltSpawn2")
-		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercentACS",17)*13,"SpawnEradicator")		
+		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercentACS",17)*13,"SpawnEradicator")
 		TNT1 A 0 A_Jump(CallACS("MonstersSpawnPercentACS",17)*13,"SpawnMother")
 		Goto SpawnMastermind
 	AltSpawn1:
@@ -1563,7 +1562,7 @@ ProjectilePassHeight -16
 		TNT1 A 0 A_JumpIf(CallACS("ClassicTorchACS") == 1,"ClassicTorch")
 		TNT1 A 0 A_SpawnItemEx("LightShaft2Fast",0,0,45)
 		TNT1 A 0 A_SpawnItemEx("LensFlareTorchOrangeLoop",0,0,45)
-		TNT1 A 0 A_SpawnItemEx("TorchBallRedLoop",0,0,45)		
+		TNT1 A 0 A_SpawnItemEx("TorchBallRedLoop",0,0,45)
 		TNT1 A 0 A_Playsound("props/redfire",CHAN_BODY,1,TRUE,2.25)
 	Stay:
 		TNT1 A 0 A_CheckSight("StayBlank")

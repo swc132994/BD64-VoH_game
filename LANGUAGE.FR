@@ -221,8 +221,6 @@ FO_64MNU_OTHER_ITEMS_SPAWN = "Autres options d'objets/armes";
 
 FO_64MNU_WEAPON_FUNCTION = "---------------------------- Fonctions des armes ------------------------------";
 
-FO_64MNU_CLASSIC_SHOTGUN = "Activer les animations classiques du fusil à pompe/SSG =";
-FO_64MNU_CLASSIC_SHOTGUN_TXT = "Afficher les animations classiques du fusil à pompe/SSG de Doom 64 (mode classique).";
 FO_64MNU_WARMUP = "Activer les animations des armes au ramassage =";
 FO_64MNU_WARMUP_TXT = "Afficher les animations des armes lors du premier ramassage (modes tactiques/modernes UNIQUEMENT).";
 FO_64MNU_CLASSIC_CHAINSAW ="Apparence classique de la tronçonneuse pour les classes tactique/moderne =";

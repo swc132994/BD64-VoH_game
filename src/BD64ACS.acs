@@ -11,13 +11,18 @@
 
 script "BD64Respawn" Respawn NET
 {
-	SetInventory("HudSwitch",GetUserCVar(PlayerNumber(),"HUDSwitchCvar")); //Hud to Doom Style
-	SetInventory("NoReloading",GetCvar("NoReloadCvar")); //Reloading Mode
-	SetInventory("VWeaponMode",GetCvar("VWeaponCvar")); //Vanilla weapon feel in classic mode.
+	Thing_ChangeTID(0,6666 + PlayerNumber()); //assigns player a TID on map start & respawn
+	SetInventory("HudSwitch",GetUserCVar(PlayerNumber(),"HUDSwitchCvar")); //HUD to Doom Style
+	SetInventory("NoReloading",GetCvar("NoReloadCvar")); //no reloading mode for tactical & modern class
 	SetInventory("AltLaserSkin",GetCvar("AlternativeLaserSkinCvar"));
 
-	//Classic Weapons Mode for Tactical and Modern Classes
+	//classic weapons mode for tactical and modern classes
 	SetInventory("ClassicChaingunToken",GetCvar("ClassicChaingunCvar"));
+	
+	if (GetCvar("FlashlightStartCvar"))
+	{
+		GiveInventory("FlashLightPickup",1);
+	}
 
 	Delay(1);
 }
@@ -30,7 +35,7 @@ Script "BD64Initilize" Enter
 {
 	if(GameType() == GAME_TITLE_MAP) terminate;
 
-	if(GameType () == GAME_SINGLE_PLAYER)
+	if(GameType() == GAME_SINGLE_PLAYER)
 	{
 		sethudsize(160,90,TRUE);
 		setfont("BLASCR");
@@ -38,7 +43,7 @@ Script "BD64Initilize" Enter
 	}
 
 	ACS_NamedExecuteAlways("BD64Respawn",0);
-	CreateTranslation(2666,0:255=%[0,0,0]:[0.94,0.97,1.00]);//ALICE BLUE
+	CreateTranslation(2666,0:255=%[0,0,0]:[0.94,0.97,1.00]);
 
 	int pc = GetPlayerInfo(PlayerNumber(),PLAYERINFO_PLAYERCLASS);
 	if (pc == 1 || pc == 2)
@@ -50,7 +55,7 @@ Script "BD64Initilize" Enter
 		TakeInventory("Stamina",100);
 	}
 
-	if(GetCvar("WeaponsWarmUpCvar") == 0) //First Select Animation
+	if(GetCvar("WeaponsWarmUpCvar") == 0) //first select animation
 	{
 		TakeInventory("StartWeapon",1);
 		TakeInventory("NeverSelectedPistol",1);
@@ -69,21 +74,23 @@ Script "BD64Initilize" Enter
 		if(GameType() == GAME_NET_COOPERATIVE) terminate;
 		else
 		{
-		ConsoleCommand("netgame 1");
-		Log(l:"FO_TAG_HARDER_RELOAD_MESSAGE");
-		ChangeLevel(StrParam(n:PRINTNAME_LEVEL),0,CHANGELEVEL_NOINTERMISSION,-1);
+			ConsoleCommand("netgame 1");
+			Log(l:"FO_TAG_HARDER_RELOAD_MESSAGE");
+			ChangeLevel(StrParam(n:PRINTNAME_LEVEL),0,CHANGELEVEL_NOINTERMISSION,-1);
 		}
 	}
 
-	//Survival Mode
+	//survival mode
 	if(GameSkill() == SKILL_SURVIVAL || GameSkill() == SKILL_SURVIVAL_REALISM)
-	if(PlayerClass(PlayerNumber()) == 0)
-		GiveInventory("64PortableFirstAidKit",1);
-	else
-	GiveInventory("64PortableFirstAidKitTACTICAL",1);
+	{
+		if(PlayerClass(PlayerNumber()) == 0)
+			GiveInventory("64PortableFirstAidKit",1);
+		else
+			GiveInventory("64PortableFirstAidKitTactical",1);
+	}
 
-	//Map Checker
-	SetInventory("VmapCheck",GetCvar("VMapCheckCvar")); //Vanilla Final Outpost and The Absolution
+	//map checkers
+	SetInventory("VmapCheck",GetCvar("VMapCheckCvar")); //vanilla final outpost & absolution tc maps
 	SetInventory("TCMapCheck",GetCvar("TCMapCheckCvar"));
 }
 
@@ -95,7 +102,7 @@ script "IceDeathTranslateACS" (void)
 
 Script "PlayerDeathScript" Death
 {
-flashlightOn[PlayerNumber()] = 0;
+	flashlightOn[PlayerNumber()] = 0;
 	Delay(1);
 	TakeInventory("FlashLightPickup",1);
 }
@@ -126,9 +133,9 @@ script "GoreCleanerACS" (void) NET CLIENTSIDE
 
 script "Zandro_Check" OPEN
 {
-if(IsZandronum())
+	if(IsZandronum())
 	{
-	ConsoleCommand("compat_clientssendfullbuttoninfo 1");
+		ConsoleCommand("compat_clientssendfullbuttoninfo 1");
 	}
 }
 
@@ -148,51 +155,51 @@ script "RLauncherSwitchACS" (int currentIsClassic)
 {
 	int SwitchClassic = GetCVar("ClassicRLCvar");
 
-	if (!currentIsClassic && SwitchClassic)	//From tactical to classic
+	if (!currentIsClassic && SwitchClassic)	//from tactical to classic
 	{
 		GiveInventory("64ClassicRocketLauncherTactical",1);
 		SetWeapon("64ClassicRocketLauncherTactical");
 		TakeInventory("64RocketLauncherTactical",1);
-		SetResultValue(1); //Swap
+		SetResultValue(1);
 	}
-	else if (currentIsClassic && !SwitchClassic) //From classic to tactical
+	else if (currentIsClassic && !SwitchClassic) //from classic to tactical
 	{
 		int ammoCount = CheckInventory("RocketAmmo");
 		GiveInventory("64RocketLauncherTactical",1);
 		SetInventory("RocketAmmo",ammoCount);
 		SetWeapon("64RocketLauncherTactical");
 		TakeInventory("64ClassicRocketLauncherTactical",1);
-		SetResultValue(1); //Swap
+		SetResultValue(1);
 	}
 	else
 	{
-		SetResultValue(0); //No swap
+		SetResultValue(0);
 	}
 }
 
 script "ChainsawSwitchACS" (int currentIsClassic)
 {
-	int SwitchClassic = GetCVar("ClassicChainsawCvar"); 
+	int SwitchClassic = GetCVar("ClassicChainsawCvar");
 
-	if (!currentIsClassic && SwitchClassic)	//From tactical to classic
+	if (!currentIsClassic && SwitchClassic)	//from tactical to classic
 	{
 		GiveInventory("64ChainsawTactical_Classic",1);
 		SetWeapon("64ChainsawTactical_Classic");
-		TakeInventory("64ChainsawTACTICAL",1);
-		SetResultValue(1); //Swap
+		TakeInventory("64ChainsawTactical",1);
+		SetResultValue(1);
 	}
-	else if (currentIsClassic && !SwitchClassic)	//From classic to tactical
+	else if (currentIsClassic && !SwitchClassic)	//from classic to tactical
 	{
 		int FuelCount = CheckInventory("SawGas");
-		GiveInventory("64ChainsawTACTICAL",1);
+		GiveInventory("64ChainsawTactical",1);
 		SetInventory("SawGas",FuelCount);
-		SetWeapon("64ChainsawTACTICAL");
+		SetWeapon("64ChainsawTactical");
 		TakeInventory("64ChainsawTactical_Classic",1);
-		SetResultValue(1); //Swap
+		SetResultValue(1);
 	}
 	else
 	{
-		SetResultValue(0); //No swap
+		SetResultValue(0);
 	}
 }
 
@@ -200,7 +207,7 @@ script "BerserkSwitchFistsACS" (void) NET
 {
 	if(GetUserCVar(PlayerNumber(),"BerserkSwitchFistsCvar") == true)
 	{
-		If(CheckInventory("IsTacticalClass") || CheckInventory("IsModern"))
+		if(CheckInventory("IsTacticalClass") || CheckInventory("IsModern"))
 		{
 			SetWeapon("64FistTactical");
 		}
@@ -210,9 +217,6 @@ script "BerserkSwitchFistsACS" (void) NET
 		}
 	}
 }
-
-script "SoulHandler" ENTER { Thing_ChangeTID(0,6666 + PlayerNumber()); }			//assigns player a TID on map start
-script "SoulHandlerRespawn" RESPAWN { Thing_ChangeTID(0,6666 + PlayerNumber()); }	//reassigns player a TID after respawn
 
 script "TUnmakerChecker" (void) NET
 {
@@ -224,7 +228,7 @@ script "TUnmakerChecker" (void) NET
 
 		int tid = 6666 + p;
 
-		if (CheckActorInventory(tid,"unmakerTACTICAL") || CheckActorInventory(tid,"64RuinerTACTICAL"))
+		if (CheckActorInventory(tid,"unmakerTactical") || CheckActorInventory(tid,"64RuinerTactical"))
 		{
 			int currentResult = 2;
 
@@ -245,30 +249,6 @@ script "TUnmakerChecker" (void) NET
 	SetResultValue(highestResult);
 }
 
-/*script "WeaponPickupChecker" (int Weapon)
-{
-	static str WeaponPickups[50] =
-	{ //Regular Weapons
-		"64Chainsaw","64Pistol","64SMG","64Shotgun","64SuperShotgun","64Chaingun","64Rifle","64RocketLauncher","64PlasmaRifle","64GaussCannon","64BFG9000","Unmaker","Lasergun","64MP40",
-		//Xtra Weapons
-		"64FireAxe","64Revolver","64AssaultShotgun","64QuadShotgun","64HexaShotgun","64LMG","64SniperRifle","64NadeLauncher","64Nailgun","64BFG10K","64Ruiner","64Flamethrower","64HeatseekerLauncher","64NuclearMissileLauncher"
-		};
-
-
-	If(CheckInventory("IsTacticalClass") || CheckInventory("IsModern"))
-	{
-		str TacticalWeaponPickup = StrParam(s:WeaponPickups[Weapon-1],s:"Tactical");
-		
-		GiveInventory(TacticalWeaponPickup,1);
-		SetWeapon(TacticalWeaponPickup);
-	}	
-	else
-	{
-		GiveInventory(WeaponPickups[Weapon-1],1);
-		SetWeapon(WeaponPickups[Weapon-1]);
-	}
-}*/
-
 script "CensoredHealingACS"	(void) { SetResultValue(GetCVar("CensoredHealing_Cvar")); }
 script "AltAmmoSpritesACS"	(void) { SetResultValue(GetCVar("AlternativeAmmoPickupSpritesCvar")); }
 script "AlphaSpritesACS"	(void) { SetResultValue(GetCvar("AlphaPickupCvar")); }
@@ -281,9 +261,9 @@ script "FootStepCheckACS"	(void) NET CLIENTSIDE { SetResultValue(GetUserCVar(Con
 
 script "LowAmmoSFXACS" (void) NET CLIENTSIDE
 {
-	if (GetUserCVar(PlayerNumber(),"LowAmmoSFXCvar") == 1) 
+	if (GetUserCVar(ConsolePlayerNumber(),"LowAmmoSFXCvar") == 1)
 	{
-		PlaySound(0,"Weapon/LowAmmo",CHAN_AUTO,1.0,false,1.0,true); 
+		PlaySound(0,"Weapon/LowAmmo",CHAN_AUTO,1.0,false,1.0,true);
 	}
 }
 
@@ -292,7 +272,6 @@ script "RandomCvars" (void) NET
 	SetCvar("Chaingun_Spawner_Cvar",0);
 	SetCvar("PlasmaRifle_Spawner_Cvar",0);
 	SetCvar("BFG_Spawner_Cvar",0);
-//	SetCvar("WpnPower_Spawner_Cvar",0);
 	SetCvar("BonusRandomCvar",0);
 	SetCvar("Zombieman_Spawner_Cvar",0);
 	SetCvar("Shotgunguy_Spawner_Cvar",random(-2,0));

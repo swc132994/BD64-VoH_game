@@ -23,10 +23,9 @@ Inventory.PickupSound "WPICK"
 		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
 	DMSpawnLoop:
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 0 A_SpawnItemEx("64GaussCannon",0,0,0,0,0,0,0,SXF_SETMASTER)
-		TNT1 A 0 A_SpawnItemEx("64GaussCannonTACTICAL",0,0,0,0,0,0,0,SXF_SETMASTER)
+		TNT1 A 0 A_SpawnItemEx("64GaussCannon")
+		TNT1 A 0 A_SpawnItemEx("64GaussCannonTactical")
 		TNT1 A 1050
-		TNT1 A 0 A_RemoveChildren(TRUE)
 		Loop
 	}
 }
@@ -101,7 +100,7 @@ Inventory.Icon "GCPCA0"
 +IGNORESKILL
 }
 
-ACTOR 64GaussCannonTACTICAL : Brutal64Weapon
+ACTOR 64GaussCannonTactical : Brutal64Weapon
 {
 Scale 0.9
 Weapon.SlotNumber 6

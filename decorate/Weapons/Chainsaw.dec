@@ -114,7 +114,7 @@ Obituary "$FO_OB_MPCHAINSAW"
 	}
 }
 
-Actor 64ChainsawTACTICAL : Brutal64Weapon
+Actor 64ChainsawTactical : Brutal64Weapon
 {
 Scale 0.82
 Weapon.SlotNumber 1

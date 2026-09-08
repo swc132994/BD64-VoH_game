@@ -3,9 +3,12 @@ int flashlightOn[MAXPLAYERS];
 
 Script "ToggleFlashlight" (void) NET
 {
+	if (GetActorProperty(0,APROP_HEALTH) <= 0)
+		terminate;
+
 	if (CheckInventory("FlashLightPickup") == 0)
 	{
-		Print(s:"$NEED_FLASHLIGHT");
+		Print(l:"NEED_FLASHLIGHT");
 		flashlightOn[PlayerNumber()] = 0;
 		terminate;
 	}
@@ -32,6 +35,6 @@ Script "FlashlightHandling" ENTER
 			}
 		}
 
-		Delay(2);
+		Delay(1);
 	}
 }

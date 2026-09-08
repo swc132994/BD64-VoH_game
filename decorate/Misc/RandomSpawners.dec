@@ -100,8 +100,7 @@ Scale 0.82
 		TNT1 A 0 A_JumpIf(CallACS("ChaingunSpawnerACS") == 1,"SpawnChaingun")
 		TNT1 A 0 A_JumpIf(CallACS("ChaingunSpawnerACS") == 2,"SpawnRifle")
 		TNT1 A 0 A_JumpIf(CallACS("ChaingunSpawnerACS") == 3,"SpawnSMG")
-		TNT1 A 0 A_Jump(85,"SpawnSMG")//33%
-		TNT1 A 0 A_Jump(85,"SpawnRifle")//33%
+		TNT1 A 0 A_Jump(85,"SpawnSMG","SpawnRifle")//33%
 	SpawnChaingun:
 		TNT1 A 1 A_SpawnItemEx("ChaingunSpawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
@@ -160,8 +159,7 @@ Scale 0.9
 		TNT1 A 0 A_JumpIf(CallACS("BFGSpawnerACS") == 1,"SpawnBFG9000")
 		TNT1 A 0 A_JumpIf(CallACS("BFGSpawnerACS") == 2,"SpawnUnmaker")
 		TNT1 A 0 A_JumpIf(CallACS("BFGSpawnerACS") == 3,"SpawnLasergun")
-		TNT1 A 0 A_Jump(64,"SpawnLasergun")//25%
-		TNT1 A 0 A_Jump(64,"SpawnUnmaker")//25%
+		TNT1 A 0 A_Jump(64,"SpawnLasergun","SpawnUnmaker")//25%
 	SpawnBFG9000:
 		TNT1 A 1 A_SpawnItemEx("BFG9000Spawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop

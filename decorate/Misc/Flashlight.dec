@@ -40,10 +40,6 @@ ACTOR FlashlightSpawner : CustomInventory
 	States
 	{
 	Pickup:
-		TNT1 A 0 A_JumpIfInventory("FlashlightPickup",1,"FlashLightEnabled")
-		TNT1 A 0 A_Print("$NEED_FLASHLIGHT",2)
-		Stop
-	FlashLightEnabled:
 		TNT1 A 0 A_FireCustomMissile("FlashlightProjectile",0,FALSE)
 		TNT1 A 0 A_FireCustomMissile("FlashlightProjectile2",0,FALSE)
 		TNT1 A 0 A_FireCustomMissile("FlashlightProjectile3",0,FALSE)

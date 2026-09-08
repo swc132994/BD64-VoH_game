@@ -45,7 +45,6 @@ server bool WeaponsWarmUpCvar = TRUE;		//weapons warm up animation
 server bool ClassicChaingunCvar = FALSE;	//Classic Chaingun
 server bool ClassicRLCvar = FALSE;			//old or new rocket launcher
 server int ClassicChainsawCvar = 0;			//switch to classic chainsaw
-server int VWeaponCvar = 0;					//vanilla weapon animation for classical class
 server bool NoReloadCvar = FALSE;			//No Reload System
 
 //MISC CVARS

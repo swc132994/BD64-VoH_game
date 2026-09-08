@@ -92,7 +92,7 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 	}
 }
 
-ACTOR 64PortableFirstAidKitTACTICAL : Brutal64Weapon
+ACTOR 64PortableFirstAidKitTactical : Brutal64Weapon
 {
 Scale 0.8
 Obituary "How did you die from health. Are you a vampire?"

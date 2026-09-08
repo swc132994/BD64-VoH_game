@@ -184,7 +184,7 @@ Gravity 0.9
 		TRII GFEDCBA 2
 		Loop
 	Death:
-		TNT1 A 0 A_DropItem("64ShotgunTACTICAL")
+		TNT1 A 0 A_DropItem("64ShotgunTactical")
 		TNT1 A 1 A_DropItem("64Shotgun")
 		Stop
 	}
@@ -205,7 +205,7 @@ ACTOR DroppedSSG : DroppedShotgun
 		TRI1 GFEDCBA 2
 		Loop
 	Death:
-		TNT1 A 0 A_DropItem("64SuperShotgunTACTICAL")
+		TNT1 A 0 A_DropItem("64SuperShotgunTactical")
 		TNT1 A 1 A_DropItem("64SuperShotgun")
 		Stop
 	}
@@ -247,7 +247,7 @@ ACTOR DroppedChaingun : DroppedShotgun
 		TRI3 GFEDCBA 2
 		Loop
 	Death:
-		TNT1 A 0 A_DropItem("64ChaingunTACTICAL")
+		TNT1 A 0 A_DropItem("64ChaingunTactical")
 		TNT1 A 1 A_DropItem("64Chaingun")
 		Stop
 	}
@@ -268,7 +268,7 @@ ACTOR DroppedChainsaw : DroppedShotgun
 		CWAS GFEDCBA 2
 		Loop
 	Death:
-		TNT1 A 0 A_DropItem("64ChainsawTACTICAL")
+		TNT1 A 0 A_DropItem("64ChainsawTactical")
 		TNT1 A 1 A_DropItem("64Chainsaw")
 		Stop
 	}
@@ -289,7 +289,7 @@ ACTOR DroppedPistol : DroppedShotgun
 		PIST A 4
 		Loop
 	Death:
-		TNT1 A 0 A_DropItem("64PistolTACTICAL")
+		TNT1 A 0 A_DropItem("64PistolTactical")
 		TNT1 A 1 A_DropItem("64Pistol")
 		Stop
 	}
@@ -310,7 +310,7 @@ ACTOR DroppedPlasmaRifle : DroppedShotgun
 		PLAS A 4
 		Loop
 	Death:
-		TNT1 A 0 A_DropItem("64PlasmaRifleTACTICAL")
+		TNT1 A 0 A_DropItem("64PlasmaRifleTactical")
 		TNT1 A 1 A_DropItem("64PlasmaRifle")
 		Stop
 	}
@@ -331,7 +331,7 @@ ACTOR DroppedBFG9000 : DroppedShotgun
 		BFUG A 4
 		Loop
 	Death:
-		TNT1 A 0 A_DropItem("64BFG9000TACTICAL")
+		TNT1 A 0 A_DropItem("64BFG9000Tactical")
 		TNT1 A 1 A_DropItem("64BFG9000")
 		Stop
 	}

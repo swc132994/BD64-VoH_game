@@ -83,7 +83,7 @@ Inventory.MaxAmount 11
 +IGNORESKILL
 }
 
-Actor 64PistolTACTICAL : Brutal64Weapon
+Actor 64PistolTactical : Brutal64Weapon
 {
 Scale 0.6
 Weapon.SlotNumber 2

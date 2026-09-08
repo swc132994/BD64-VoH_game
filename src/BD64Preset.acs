@@ -7,7 +7,6 @@ script "DefaultCvars" (void) net
 	SetCvar("ClassicChainsawCvar",0);
 	SetCvar("ClassicChaingunCvar",0);
 	SetCvar("ClassicRLCvar",0);
-	SetCvar("VWeaponCvar",0);
 	SetCvar("WeaponsWarmUpCvar",1);
 	SetCvar("CensoredHealing_Cvar",0);
 	SetCvar("AlphaPickupCvar",0);
@@ -93,7 +92,6 @@ script "ClassicalCvars" (void) net
 	SetCvar("ClassicChainsawCvar",1);
 	SetCvar("ClassicChaingunCvar",1);
 	SetCvar("ClassicRLCvar",1);
-	SetCvar("VWeaponCvar",1);
 	SetCvar("WeaponsWarmUpCvar",0);
 	SetCvar("CensoredHealing_Cvar",0);
 	SetCvar("AlphaPickupCvar",0);
@@ -180,7 +178,6 @@ script "StevenCvars" (void) net
 	SetCvar("ClassicChainsawCvar",0);
 	SetCvar("ClassicChaingunCvar",0);
 	SetCvar("ClassicRLCvar",0);
-	SetCvar("VWeaponCvar",0);
 	SetCvar("WeaponsWarmUpCvar",1);
 	SetCvar("CensoredHealing_Cvar",0);
 	SetCvar("AlphaPickupCvar",1);

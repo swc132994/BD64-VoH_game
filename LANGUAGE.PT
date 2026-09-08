@@ -223,8 +223,6 @@ FO_64MNU_OTHER_ITEMS_SPAWN = "Outras opções de Itens/Armas";
 
 FO_64MNU_WEAPON_FUNCTION = "---------------------------- Funções das Armas ------------------------------";
 
-FO_64MNU_CLASSIC_SHOTGUN = "Habilitar Animações clássicas da Shotgun/SSG =";
-FO_64MNU_CLASSIC_SHOTGUN_TXT = "Exibir animações clássicas da Shotgun/SSG do Doom 64 (modo clássico).";
 FO_64MNU_WARMUP = "Habilitar Animações de Aquecimento =";
 FO_64MNU_WARMUP_TXT = "Exibir animações de Aquecimento da arma ao pegá-la pela primeira vez (APENAS nos modos tático/moderno).";
 FO_64MNU_CLASSIC_CHAINSAW = "Aparência clássica da Chainsaw para os modos Tático/Moderno =";

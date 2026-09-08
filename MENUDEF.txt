@@ -151,11 +151,8 @@ OptionMenu "BrutalDoom64Item/WeaponOptions"
 	StaticText "$FO_64OPTIONS_MAIN_TXT1",1
 	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
 	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
-	StaticText " "
+	StaticText ""
 	StaticText "$FO_64MNU_WEAPON_FUNCTION",1
-		StaticText ""
-	Option "$FO_64MNU_CLASSIC_SHOTGUN","VWeaponCvar","YesNo"
-		StaticText "$FO_64MNU_CLASSIC_SHOTGUN_TXT",1
 		StaticText ""
 	Option "$FO_64MNU_WARMUP","WeaponsWarmUpCvar","YesNo"
 		StaticText "$FO_64MNU_WARMUP_TXT",1

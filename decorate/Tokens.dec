@@ -22,7 +22,6 @@ Actor TCMapCheck : BD64_Tokens {}	//option to switch to TC maps
 
 //Weapon Functions
 Actor Kicking : BD64_Tokens {}
-Actor VWeaponMode : BD64_Tokens {}	//option to switch to classic weapons (For Classical Class)
 Actor KickHasHit : BD64_Tokens {}
 Actor TossMine : BD64_Tokens {}
 Actor PlaceMine : BD64_Tokens {}

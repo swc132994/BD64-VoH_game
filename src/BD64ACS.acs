@@ -107,9 +107,12 @@ Script "PlayerDeathScript" Death
 	TakeInventory("FlashLightPickup",1);
 }
 
-script "DM_SpawnACS" (void) NET
+script "DM_SpawnACS" (void)
 {
-	if (GameType() == GAME_NET_DEATHMATCH)
+	int isDM = (GetCVar("deathmatch") == 1);
+	int isCoopRespawn = (GetCVar("sv_itemrespawn") == 1);
+
+	if (isDM || isCoopRespawn)
 	{
 		SetResultValue(1);
 	}

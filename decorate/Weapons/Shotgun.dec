@@ -4,28 +4,25 @@ Scale 0.87
 Tag "$FO_TAG_SHOTGUN"
 Inventory.PickupMessage "$BD64_GOTSHOTGUN"
 Inventory.PickupSound "WPICK"
++INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
-		SHOT A 0 NoDelay A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMSpawn")
 		SHOT A -1
 		Stop
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
 		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")
 		TNT1 A 0 A_GiveInventory("64Shotgun",1)
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
 		Stop
 	PickupTactical:
 		TNT1 A 0 A_GiveInventory("64ShotgunTactical",1)
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
 		Stop
-	DMSpawn:
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-	DMSpawnLoop:
-		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 0 A_SpawnItemEx("64Shotgun")
-		TNT1 A 0 A_SpawnItemEx("64ShotgunTactical")
-		TNT1 A 1050
-		Loop
+	DMRespawn:
+		TNT1 A 0 A_SpawnItemEx("ShotgunRespawnerDM")
+		Stop
 	}
 }
 

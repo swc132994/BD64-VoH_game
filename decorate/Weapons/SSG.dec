@@ -5,6 +5,7 @@ Scale 0.87
 Tag "$FO_TAG_SUPERSHOTGUN"
 Inventory.PickupMessage "$BD64_GOTSHOTGUN2"
 Inventory.PickupSound "WPICK"
++INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
@@ -14,9 +15,14 @@ Inventory.PickupSound "WPICK"
 		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
 		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")
 		TNT1 A 0 A_GiveInventory("64SuperShotgun",1)
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
 		Stop
 	PickupTactical:
 		TNT1 A 0 A_GiveInventory("64SuperShotgunTactical",1)
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
+		Stop
+	DMRespawn:
+		TNT1 A 0 A_SpawnItemEx("SuperShotgunRespawnerDM")
 		Stop
 	}
 }

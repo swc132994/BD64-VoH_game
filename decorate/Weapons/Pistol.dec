@@ -5,6 +5,7 @@ Scale 0.6
 Tag "$FO_TAG_PISTOL"
 Inventory.PickupMessage "$BD64_GOTPISTOL"
 Inventory.PickupSound "WPICK"
++INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:

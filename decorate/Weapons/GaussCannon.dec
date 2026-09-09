@@ -8,25 +8,21 @@ Inventory.PickupSound "WPICK"
 	States
 	{
 	Spawn:
-		GCPC A 0 NoDelay A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMSpawn")
 		GCPC A -1
 		Stop
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
 		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")
 		TNT1 A 0 A_GiveInventory("64GaussCannon",1)
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
 		Stop
 	PickupTactical:
 		TNT1 A 0 A_GiveInventory("64GaussCannonTactical",1)
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
 		Stop
-	DMSpawn:
-		TNT1 A 0 A_ChangeFlag("THRUACTORS",TRUE)
-	DMSpawnLoop:
-		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 0 A_SpawnItemEx("64GaussCannon")
-		TNT1 A 0 A_SpawnItemEx("64GaussCannonTactical")
-		TNT1 A 1050
-		Loop
+	DMRespawn:
+		TNT1 A 0 A_SpawnItemEx("PlasmaRifleRespawnerDM")
+		Stop
 	}
 }
 

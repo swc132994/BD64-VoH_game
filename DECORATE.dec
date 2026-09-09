@@ -88,6 +88,7 @@
 #INCLUDE "Decorate/Monsters/Vassago.dec"
 
 //RANDOM SPAWNERS, CAST CALL & DROPABLES
+#INCLUDE "Decorate/Misc/DMRespawners.dec"
 #INCLUDE "Decorate/Misc/RandomSpawners.dec"
 #INCLUDE "Decorate/Misc/CastCall.dec"
 #INCLUDE "Decorate/Misc/Dropables.dec"

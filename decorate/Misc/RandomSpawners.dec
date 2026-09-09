@@ -102,13 +102,13 @@ Scale 0.82
 		TNT1 A 0 A_JumpIf(CallACS("ChaingunSpawnerACS") == 3,"SpawnSMG")
 		TNT1 A 0 A_Jump(85,"SpawnSMG","SpawnRifle")//33%
 	SpawnChaingun:
-		TNT1 A 1 A_SpawnItemEx("ChaingunSpawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("ChaingunSpawner",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnRifle:
-		TNT1 A 1 A_SpawnItemEx("RifleSpawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("RifleSpawner",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnSMG:
-		TNT1 A 1 A_SpawnItemEx("SMGSpawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("SMGSpawner",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	}
 }
@@ -132,10 +132,10 @@ Scale 0.82
 		TNT1 A 0 A_JumpIf(CallACS("PlasmaRifleSpawnerACS") == 2,"SpawnGaussCannon")
 		TNT1 A 0 A_Jump(64,"SpawnGaussCannon")//25%
 	SpawnPlasmaRifle:
-		TNT1 A 1 A_SpawnItemEx("PlasmaRifleSpawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("PlasmaRifleSpawner",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnGaussCannon:
-		TNT1 A 1 A_SpawnItemEx("GaussCannonSpawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("GaussCannonSpawner",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	}
 }
@@ -161,13 +161,13 @@ Scale 0.9
 		TNT1 A 0 A_JumpIf(CallACS("BFGSpawnerACS") == 3,"SpawnLasergun")
 		TNT1 A 0 A_Jump(64,"SpawnLasergun","SpawnUnmaker")//25%
 	SpawnBFG9000:
-		TNT1 A 1 A_SpawnItemEx("BFG9000Spawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("BFG9000Spawner",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnUnmaker:
-		TNT1 A 1 A_SpawnItemEx("UnmakerSpawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("UnmakerSpawner",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnLasergun:
-		TNT1 A 1 A_SpawnItemEx("LasergunSpawner",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("LasergunSpawner",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	}
 }
@@ -192,10 +192,10 @@ Scale 0.82
 		TNT1 A 0 A_JumpIf(CallACS("BonusRandomACS") == 2,"SpawnHellPotion")
 		TNT1 A 0 A_Jump(26,"SpawnHellPotion")//10%
 	SpawnHealthBonus:
-		TNT1 A 1 A_SpawnItemEx("64HealthBonus",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("64HealthBonus",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnHellPotion:
-		TNT1 A 1 A_SpawnItemEx("64HellPotion",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("64HellPotion",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	}
 }
@@ -219,10 +219,10 @@ Scale 0.82
 		TNT1 A 0 A_JumpIf(CallACS("BonusRandomACS") == 2,"SpawnHellPotion")
 		TNT1 A 0 A_Jump(26,"SpawnHellPotion")//10%
 	SpawnArmorBonus:
-		TNT1 A 1 A_SpawnItemEx("64ArmorBonus",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("64ArmorBonus",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnHellPotion:
-		TNT1 A 1 A_SpawnItemEx("64HellPotion",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("64HellPotion",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	}
 }
@@ -246,10 +246,10 @@ Scale 0.82
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 2,"SpawnDemonKey")
 		TNT1 A 0 A_Jump(13,"SpawnDemonKey")//5%
 	SpawnBlurSphere:
-		TNT1 A 1 A_SpawnItemEx("64Blursphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("64Blursphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnDemonKey:
-		TNT1 A 0 A_SpawnItemEx("64Blursphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 0 A_SpawnItemEx("64Blursphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		TNT1 A 1 A_SpawnItemEx("WpnPower1",0,0,0,0,0,0,0,SXF_CLEARCALLERTID,0,tid)
 		Stop
 	}
@@ -274,10 +274,10 @@ Scale 0.82
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 2,"SpawnDemonKey")
 		TNT1 A 0 A_Jump(13,"SpawnDemonKey")//5%
 	SpawnBerserk:
-		TNT1 A 1 A_SpawnItemEx("64Berserk",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("64Berserk",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnDemonKey:
-		TNT1 A 0 A_SpawnItemEx("64Berserk",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 0 A_SpawnItemEx("64Berserk",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		TNT1 A 1 A_SpawnItemEx("WpnPower2",0,0,0,0,0,0,0,SXF_CLEARCALLERTID,0,tid)
 		Stop
 	}
@@ -302,10 +302,10 @@ Scale 0.7
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 2,"SpawnDemonKey")
 		TNT1 A 0 A_Jump(13,"SpawnDemonKey")//5%
 	SpawnSoulSphere:
-		TNT1 A 1 A_SpawnItemEx("64Soulsphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("64Soulsphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnDemonKey:
-		TNT1 A 0 A_SpawnItemEx("64Soulsphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 0 A_SpawnItemEx("64Soulsphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		TNT1 A 1 A_SpawnItemEx("WpnPower3",0,0,0,0,0,0,0,SXF_CLEARCALLERTID,0,tid)
 		Stop
 	}
@@ -330,10 +330,10 @@ Scale 0.7
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 2,"SpawnDemonKey")
 		TNT1 A 0 A_Jump(26,"SpawnDemonKey")//10%
 	SpawnMegaSphere:
-		TNT1 A 1 A_SpawnItemEx("64MegaSphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("64MegaSphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnDemonKey:
-		TNT1 A 0 A_SpawnItemEx("64MegaSphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 0 A_SpawnItemEx("64MegaSphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		TNT1 A 1 A_SpawnItemEx("WpnPower4",0,0,0,0,0,0,0,SXF_CLEARCALLERTID,0,tid)
 		Stop
 	}
@@ -358,10 +358,10 @@ Scale 0.7
 		TNT1 A 0 A_JumpIf(CallACS("WpnPowerRandomACS") == 2,"SpawnDemonKey")
 		TNT1 A 0 A_Jump(26,"SpawnDemonKey")//10%
 	SpawnInvulnerabilitySphere:
-		TNT1 A 1 A_SpawnItemEx("64InvulnerabilitySphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("64InvulnerabilitySphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnDemonKey:
-		TNT1 A 0 A_SpawnItemEx("64InvulnerabilitySphere",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 0 A_SpawnItemEx("64InvulnerabilitySphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		TNT1 A 1 A_SpawnItemEx("WpnPower5",0,0,0,0,0,0,0,SXF_CLEARCALLERTID,0,tid)
 		Stop
 	}
@@ -384,10 +384,10 @@ Scale 0.82
 //		TNT1 A 0 A_Jumpif(args[0] == 2,"SpawnFlashlight")
 		TNT1 A 0 A_Jump(90,"SpawnFlashlight")//35%
 	SpawnInfrared:
-		TNT1 A 1 A_SpawnItemEx("64Infrared",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 1 A_SpawnItemEx("64Infrared",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		Stop
 	SpawnFlashlight:
-		TNT1 A 0 A_SpawnItemEx("64Infrared",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
+		TNT1 A 0 A_SpawnItemEx("64Infrared",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_CLEARCALLERTID,0,tid)
 		TNT1 A 1 A_SpawnItemEx("FlashlightItem")
 		Stop
 	}

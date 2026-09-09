@@ -1,0 +1,197 @@
+//weapons
+Actor ChainsawRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("Chainsaw")
+		Stop
+	}
+}
+
+Actor ShotgunRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("Shotgun")
+		Stop
+	}
+}
+
+Actor SuperShotgunRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("SuperShotgun")
+		Stop
+	}
+}
+
+Actor ChaingunRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("Chaingun")
+		Stop
+	}
+}
+
+Actor RocketLauncherRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("RocketLauncher")
+		Stop
+	}
+}
+
+Actor PlasmaRifleRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("Plasmarifle")
+		Stop
+	}
+}
+
+Actor BFG9000RespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("BFG9000")
+		Stop
+	}
+}
+
+
+//items & powerups
+Actor HealthBonusRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("HealthBonus")
+		Stop
+	}
+}
+
+Actor ArmorBonusRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("ArmorBonus")
+		Stop
+	}
+}
+
+Actor SoulsphereRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("Soulsphere")
+		Stop
+	}
+}
+
+Actor MegasphereRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("Megasphere")
+		Stop
+	}
+}
+
+Actor BlurSphereRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("BlurSphere")
+		Stop
+	}
+}
+
+Actor InfraredRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("Infrared")
+		Stop
+	}
+}
+
+Actor BerserkRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("Berserk")
+		Stop
+	}
+}
+
+Actor InvulnerabilityRespawnerDM
+{
++NOINTERACTION
+	States
+	{
+	Spawn:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("InvulnerabilitySphere")
+		Stop
+	}
+}

@@ -120,7 +120,7 @@ Intermission Doom2Cast
 	Cast
 	{
 		CastClass = "D64ZombiemanCast"
-		CastName = "$FO_TAG_PISTOLMAN"
+		CastName = "$FO_TAG_ZOMBIEMAN"
 		AttackSound = "Missile",1,"grunt/attack"
 	}
 	

@@ -635,7 +635,6 @@ FO_TAG_STEALTHSHOTGUY = "Скрытный Зомби-сержант";
 FO_TAG_STEALTHZOMBIE = "Скрытный Зомби";
 
 FO_TAG_ZOMBIEMAN = "Зомби";
-FO_TAG_PISTOLMAN = "Пистолетный зомби";
 FO_TAG_SHOTGUNGUY = "Зомби-сержант";
 FO_TAG_SSGGUY = "SSG зомби";
 FO_TAG_COMMANDO = "Зомби-пулемётчик";

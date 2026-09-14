@@ -662,7 +662,6 @@ FO_TAG_STEALTHSHOTGUY = "Sargento Furtivo";
 FO_TAG_STEALTHZOMBIE = "Zombieman Furtivo";
 
 FO_TAG_ZOMBIEMAN = "Ex-Humano";
-FO_TAG_PISTOLMAN = "Zumbi com Pistola";
 FO_TAG_SHOTGUNGUY = "Ex-Sargento";
 FO_TAG_SSGGUY = "Zumbi com SSG";
 FO_TAG_COMMANDO = "Ex-Comando";

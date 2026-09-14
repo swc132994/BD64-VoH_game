@@ -655,7 +655,6 @@ FO_TAG_STEALTHSHOTGUY = "Sergent furtif";
 FO_TAG_STEALTHZOMBIE = "Zombie furtif";
 
 FO_TAG_ZOMBIEMAN = "Zombie";
-FO_TAG_PISTOLMAN = "Zombie pistolet";
 FO_TAG_SHOTGUNGUY = "Zombie sergent";
 FO_TAG_SSGGUY = "Zombie doubles canon";
 FO_TAG_COMMANDO = "Zombie commando";

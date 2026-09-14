@@ -90,7 +90,7 @@ HUD_HEALTH = "Health";
 
 NEED_FLASHLIGHT = "You need a flashlight! This can be found in backpacks";
 WM_NOSTAMINA = "Not enough stamina!";
-WM_NEED_SILENCER = "You need a pistol silencer! This can be found in backpacks";
+WM_NEED_SILENCER = "You need a silencer attachment! This can be found in backpacks";
 WM_CHAINSAW_SSG_NONE = "You need a super shotgun!";
 WM_CHAINSAW_SSG = "Super shotgun needs reloading!";
 WM_CHAINGUNSPIN = "No one in their right mind would touch a spinning chaingun.";
@@ -173,7 +173,7 @@ FO_64OPTIONS_MAIN = "BRUTAL DOOM 64 OPTIONS";
 FO_64OPTIONS_MAIN_TXT1 = "Some changes are not initialized automatically";
 FO_64OPTIONS_MAIN_TXT2 = "Press \"Apply Changes\" for the changes to take effect";
 
-FO_64OPTIONS_PRESET = "-------------------------------- Presets -------------------------------------";
+FO_64OPTIONS_PRESET = "\c[Orange]---------- Presets ----------";
 
 FO_64MNU_LAST = "Last Preset Used =";
 
@@ -192,14 +192,14 @@ FO_64MNU_SWC_TXT2 = "how the creator plays his own mod";
 FO_64MNU_RANDOM = "Spawner Randomiser";
 FO_64MNU_RANDOM_TXT1 = "To set all monster/weapon/item spawners to random, press this";
 
-FO_64OPTIONS_OPTIONS = "-------------------------------- Options -------------------------------------";
+FO_64OPTIONS_OPTIONS = "\c[Orange]---------- Options ----------";
 
 FO_64MNU_OTHER_ITEMS = "Other Item/Weapon Options";
 FO_64MNU_OHTHER_MONSTER = "Other Monster Options";
 FO_64MNU_PERFORMANCE = "Performance & Misc. Options";
 FO_64MNU_LEVEL_OPTIONS = "Map Options";
 
-FO_64OPTIONS_GAMEPLAY = "-------------------------------- Gameplay -------------------------------------";
+FO_64OPTIONS_GAMEPLAY = "\c[Orange]---------- Gameplay ----------";
 
 FO_64MNU_WEAPONS_SPAWN = "Item/Weapon Spawner Options";
 FO_64MNU_MONSTER_SPAWN = "Monster Spawner Options";
@@ -210,17 +210,26 @@ FO_64MNU_ITEMS_WEAPONS_SPAWN = "Item/Weapon Spawner Options";
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1 = "Options to choose replacements of weapons and power-ups"; 
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2 = "or set to appear randomly";
 
-FO_64MNU_BONUS = "Bonus by Default";
+64MNU_BONUSSPAWNER = "Bonus Spawner";
+FO_64MNU_BONUS = "Default = Regular Bonus";
 FO_64MNU_BONUS_TXT = "(hell potions are combined armor/health pickups)";
-FO_64MNU_POWERUP = "Power-up by Default";
+
+64MNU_POWERUP_SPAWNER = "Power-up Spawner";
+FO_64MNU_POWERUP = "Default = Power-ups";
 FO_64MNU_POWERUP_NOTE = "(For D64 maps it is recommended to leave set to Power-ups)";
-FO_64MNU_PLASMA = "Plasmagun by Default";
-FO_64MNU_BFG = "BFG9000 by Default";
-FO_64MNU_CHAINGUN = "Chaingun by Default";
+
+64MNU_PLASMASPAWNER = "Plasma Rifle Spawner";
+FO_64MNU_PLASMA = "Default = Plasma Rifle";
+
+64MNU_BFGSPAWNER = "BFG 9000 Spawner";
+FO_64MNU_BFG = "Default = BFG 9000";
+
+64MNU_CHAINGUNSPAWNER = "Chaingun Spawner";
+FO_64MNU_CHAINGUN = "Default = Chaingun";
 
 FO_64MNU_OTHER_ITEMS_SPAWN = "Other Item/Weapon Options";
 
-FO_64MNU_WEAPON_FUNCTION = "---------------------------- Weapons Functions ------------------------------";
+FO_64MNU_WEAPON_FUNCTION = "\c[Orange]---------- Weapons Functions ----------";
 
 FO_64MNU_WARMUP = "Enable Weapon Warm Up Animations =";
 FO_64MNU_WARMUP_TXT = "Show weapon warm up animations on first pickup (tactical/modern modes ONLY).";
@@ -239,7 +248,7 @@ FO_64MNU_LOWAMMO_TXT2 = "(tactical/modern modes ONLY)";
 FO_64MNU_SWITCH_FIST = "Switch to Fists on Berserk Pickup =";
 FO_64MNU_SWITCH_FIST_TXT = "Option to disable switching to fists on berserk pickup.";
 
-FO_64MNU_SKINS = "--------------------------- Weapons & Items Skins -----------------------------";
+FO_64MNU_SKINS = "\c[Orange]---------- Weapons & Items Skins ----------";
 
 FO_64MNU_SKIN_LASER = "Alternative Laser Skin =";
 FO_64MNU_SKIN_ITEM = "Item Sprites Pickups =";
@@ -247,7 +256,7 @@ FO_64MNU_SKIN_HEALTH = "Alternative Healing Kits & Berserk Pickups =";
 FO_64MNU_SKIN_ALPHA = "Alpha Build Item Pickups =";
 FO_64MNU_SKIN_ALPHA_TXT = "Options for alternative or some alpha build looks for items & weapons.";
 
-FO_64MNU_OTHER = "-------------------------------------- Other -----------------------------------";
+FO_64MNU_OTHER = "\c[Orange]---------- Other ----------";
 
 FO_64MNU_FLASHLIGHT = "Start with Flashlight =";
 
@@ -296,7 +305,7 @@ FO_SPAWN_SETTING = "(Recommended setting x3, x4 or Random)";
 
 FO_MONSTER_OTHER= "Other Monster Options";
 
-FO_MONSTER_SKIN = "------------------------------- Monster Skins -------------------------------";
+FO_MONSTER_SKIN = "\c[Orange]---------- Monster Skins ----------";
 
 FO_MONSTER_HELLHOUND = "Hellhound Style =";
 FO_MONSTER_HELLHOUND_TXT1 = "If you selected \"Random (No Baron)\"";
@@ -305,14 +314,14 @@ FO_MONSTER_HELLHOUND_TXT3 = "you will receive \"Random (No HellHound)\"";
 
 FO_MONSTER_CACO = "Cacodemon Style =";
 
-FO_OPTION_MAP = "------------------------------- MapSet Selection -------------------------------";
+FO_OPTION_MAP = "\c[Orange]---------- MapSet Selection ----------";
 
 FO_MAP_SELECT = "Select Mapset =";
 FO_MAP_SELECT_TXT1 = "This option is not automatic and must be configured manually";
 FO_MAP_SELECT_TXT2 = "before starting a new game in one of the supported wads";
 FO_MAP_SELECT_TXT3 = "You can use Doom 2 on non-compatible wads";
 
-FO_MAP_PROP = "----------------------------- Map Prop Replacement -----------------------------";
+FO_MAP_PROP = "\c[Orange]---------- Map Prop Replacement ----------";
 
 FO_PROP_INFECTED = "Infected Dead Marine Corpse =";
 FO_PROP_INFECTED_TXT = "Replace dead marines & dead marine props with 'The Thing' monsters.";
@@ -324,7 +333,7 @@ FO_PERFORMANCE_MISK = "Performance & Miscellaneous Options";
 FO_PERFORMANCE_MISK_TXT = "Enable this option ONLY if hosting a server on a multiplayer game.";
 FO_PERFORMANCE_MISK_TXT2 = "(enabling this option will generate an error message if using GZDoom)";
 
-FO_OPTION_PERFORMANCE = "-------------------------------- Performance & Gore --------------------------------";
+FO_OPTION_PERFORMANCE = "\c[Orange]---------- Performance & Gore ----------";
 
 FO_OPTION_PERFORMANCE_CLIENT = "Select Blood Amount =";
 FO_OPTION_PERFORMANCE_FLATS = "Enable Gore Removing on Flats (30s) =";
@@ -333,7 +342,7 @@ FO_OPTION_PERFORMANCE_FOG = "Light Fog & Halos Options =";
 FO_OPTION_PERFORMANCE_TORCH = "Enable Classic Style Torches (Need Map Restart) =";
 FO_OPTION_PERFORMANCE_SPLASH = "Disable Liquid Splashes =";
 
-FO_OPTION_HUD = "------------------------------------ HUD ------------------------------------";
+FO_OPTION_HUD = "\c[Orange]---------- HUD ----------";
 
 FO_OPTION_HUD_STYLE = "Set HUD Style =";
 FO_OPTION_HUD_SCREEN = "Enable HUD Screen Effects =";
@@ -343,7 +352,7 @@ FO_OPTION_HUD_SPLASH = "Close up bleeding monsters will create HUD blood splashe
 FO_OPTION_HUD_SPLASH_TXT1 = "(If screen effects are disabled, this option will also be disabled)";
 FO_OPTION_HUD_SPLASH_TXT2 = "(Does not work for BDv21 screen effects mode)";
 
-FO_OPTION_SOUND = "---------------------------------- Sounds ----------------------------------";
+FO_OPTION_SOUND = "\c[Orange]---------- Sounds ----------";
  
 FO_OPTION_SOUND_FOOTS = "Enable Footstep Sounds =";
 
@@ -405,9 +414,9 @@ FO_GOTMSPHERE = "\csMega Sphere!";
 FO_GOTINVIS = "\caPartial Invisibility!";
 FO_GOTSUIT = "\cdRadiation Shield!";
 FO_GOTVISOR = "\cnLight Amplification Goggles!";
-FO_GOTMAP = "\cbComputer Area Map!";
+FO_GOTMAP = "\cbArea Map!";
 FO_GOTBERSERK = "\crBerserk!";
-FO_GOT_SCANNER = "\cbAdvanced Area Scanner";
+FO_GOT_SCANNER = "\cbAdvanced Area Scanner!";
 
 //////////////////////////////////////////////////////////////////
 //key pickups
@@ -432,9 +441,9 @@ FO_GOTDEMON_RED = "\cgWhat is this used for?";
 //ammo & misc item pickups
 
 FO_GOTBACKPACK = "You got the \cpbackpack\c-!";
-FO_GOTBACKPACK2 = "Picked up a \cpbackpack\c- full of ammo with pistol silencer!";
-FO_GOTBACKPACK3 = "Picked up a \cpbackpack\c- full of ammo with flashlight!";
-FO_GOTBACKPACK4 =  "Picked up a \cebackpack\c- full of ammo with pistol silencer and flashlight!";
+FO_GOTBACKPACK2 = "Picked up a \cpbackpack\c- full of ammo & silencer attachment!";
+FO_GOTBACKPACK3 = "Picked up a \cpbackpack\c- full of ammo & flashlight!";
+FO_GOTBACKPACK4 =  "Picked up a \cebackpack\c- full of ammo, a silencer attachment & flashlight!";
 FO_GOTCLIP = "Picked up a \cpclip\c-.";
 FO_GOTCLIPBOX = "Picked up a \cpbox of bullets\c-.";
 FO_GOTCLIPBOX2 = "Picked up a \cphigh caliber bullet box\c-.";
@@ -453,7 +462,7 @@ FO_GOTSYRINGE = "Picked up a \crBerserk syringe\c-.";
 FO_SCAVENGE1 = "You scavenge \ch10 bandages\c- from this Medikit.";
 FO_SCAVENGE2 = "You scavenge \ch25 bandages\c- from this Medikit.";
 FO_SCAVENGE3 = "You scavenge a \crBerserk syringe\c- from this Berserk pack.";
-FO_GOTSILECER = "Picked up a \cpPistol Silencer\c-!";
+FO_GOTSILECER = "Picked up a \cpsilencer attachment\c-!";
 FO_GOTFLASHLIGHT = "Picked up a \cnFlashlight\c-!";
 BD64_GOTMINES = "Picked up an \cpExplosive Mine\c-!";
 
@@ -545,9 +554,9 @@ FO_TAG_LASER = "\cmLaser Rifle";
 //ammo & misc item tags
 
 FO_TAG_BACKPACK1 = "\cpBackpack";
-FO_TAG_BACKPACK2 = "\cpBackpack\c- with Pistol Silencer";
-FO_TAG_BACKPACK3 = "\cpBackpack\c- with Flashlight";
-FO_TAG_BACKPACK4 = "\cpBackpack\c- with Flashlight and Pistol Silencer";
+FO_TAG_BACKPACK2 = "\cpBackpack\c- & Silencer Attachment";
+FO_TAG_BACKPACK3 = "\cpBackpack\c- & Flashlight";
+FO_TAG_BACKPACK4 = "\cpBackpack\c-, Flashlight & Silencer Attachment";
 FO_TAG_CLIP = "\cpBullet Magazine";
 FO_TAG_CLIPBOX = "\cpBullet Box";
 FO_TAG_CLIPBOX2 = "\cpHigh Caliber Bullet Box";
@@ -564,7 +573,7 @@ FO_TAG_BANDAGES = "\crBandages";
 FO_TAG_SYRINGE = "\crBerserk Syringe";
 FO_TAG_SAWGAS = "\cpGasoline Can";
 FO_TAG_MINES = "\cmExplosive Mine";
-FO_TAG_SILENCER = "\cpPistol Silencer";
+FO_TAG_SILENCER = "\cpSilencer attachment";
 FO_TAG_FLASHLIGHT = "\cnFlashlight";
 
 //////////////////////////////////////////////////////////////////
@@ -588,7 +597,7 @@ FO_TAG_MSPHERE = "\csMega Sphere";
 FO_TAG_INVIS = "\caPartial Invisibility Sphere";
 FO_TAG_SUIT = "\cdRadiation Sheild";
 FO_TAG_VISOR = "\cnNight Vision Goggles";
-FO_TAG_MAP = "\cbComputer Area Map";
+FO_TAG_MAP = "\cbArea Map";
 FO_TAG_BERSERK = "\crBerserk Pack";
 FO_TAG_SCANNER = "\cbAdvanced Area Scanner";
 
@@ -622,20 +631,20 @@ FO_OB_MPFIST = "%o chewed on \cg%k\c-'s \cmfist\c-.";
 FO_OB_MPCHAINSAW = "%o was mowed over by \cg%k\c-'s \cmchainsaw\c-.";
 FO_OB_MPPISTOL = "%o was tickled by \cg%k\c-'s \cmpeashooter\c-.";
 FO_OB_MPSMG = "%o was picked off by \cg%k\c- \cmSMG\c-.";
-FO_OB_MPRIFLE = "%o was picked off by \cg%k\c- \cmAssualt Rifle\c-.";
+FO_OB_MPRIFLE = "%o was picked off by \cg%k\c- \cmassualt rifle\c-.";
 FO_OB_MP40 = "%o was gunned down by \cg%k\c-.";
 FO_OB_MPSHOTGUN = "%o chewed on \cg%k\c-'s \cmboomstick\c-.";
 FO_OB_MPSSHOTGUN = "%o was splattered by \cg%k\c-'s \cmsuper shotgun\c-.";
 FO_OB_MPCHAINGUN = "%o was mowed down by \cg%k\c-'s \cmchaingun\c-.";
 FO_OB_MPROCKET = "%o rode \cg%k\c-'s \cmrocket\c-.";
-FO_OB_MINES = "%o was shreded by \cg%k\c-'s \cmMine\c-.";
+FO_OB_MINES = "%o was shreded by \cg%k\c-'s \cmmine\c-.";
 //	OB_MPR_SPLASH = "%o almost dodged \cg%k\c-'s r\cmocket\c-.";
-FO_OB_MPPLASMARIFLE = "%o was melted by \cg%k\c-'s \cmplasma gun\c-.";
-FO_OB_GAUSS = "%o was pierced by \cg%k\c-'s \cmGauss Cannon\c-.";
+FO_OB_MPPLASMARIFLE = "%o was melted by \cg%k\c-'s \cmplasma rifle\c-.";
+FO_OB_GAUSS = "%o was pierced by \cg%k\c-'s \cmgauss cannon\c-.";
 FO_OB_MPBFG_BOOM = "%o was splintered by \cg%k\c-'s \cmBFG\c-.";
 FO_OB_MPBFG_BETA = "%o was obliterated by \cg%k\c-'s \cmBFG\c-.";
-FO_OB_LASER = "%o was barbequed by \cg%k\c-'s \cmLaser gun\c-.";
-FO_OB_LASERBLAST = "%o was blasted away by \cg%k\c-'s \cmLaser gun\c-.";
+FO_OB_LASER = "%o was barbequed by \cg%k\c-'s \cmLaser rifle\c-.";
+FO_OB_LASERBLAST = "%o was blasted away by \cg%k\c-'s \cmlaser rifle\c-.";
 FO_OB_MPUNMAKER = "%o was unmade by \cg%k\c-.";
 //	OB_MPBFG_SPLASH = "%o couldn't hide from \cg%k\c-'s \cmBFG\c-.";
 //	OB_MPTELEFRAG = "%o was \cmtelefragged\c- by \cg%k\c-.";
@@ -659,9 +668,8 @@ FO_TAG_STEALTHSHOTGUY = "Stealth Sergeant";
 FO_TAG_STEALTHZOMBIE = "Stealth Zombieman";
 
 FO_TAG_ZOMBIEMAN = "Former Human";
-FO_TAG_PISTOLMAN = "Pistol Zombie";
 FO_TAG_SHOTGUNGUY = "Former Sargeant";
-FO_TAG_SSGGUY = "SSG Zombie";
+FO_TAG_SSGGUY = "Former Lieutenant";
 FO_TAG_COMMANDO = "Former Commando";
 FO_TAG_PLASMAGUY = "Former Colonel";
 FO_TAG_BFGGUY = "Former General";

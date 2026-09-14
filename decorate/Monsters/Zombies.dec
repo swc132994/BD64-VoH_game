@@ -57,7 +57,7 @@ DamageFactor "Head",2.5
 DamageFactor "Chainsaw",0.65
 DamageFactor "Unmaker",0.2
 Obituary "$FO_OB_ZOMBIE"
-Tag "$FO_TAG_PISTOLMAN"
+Tag "$FO_TAG_ZOMBIEMAN "
 DropItem "SOULSPAWNER"
 DropItem "64PistolDrop"
 +DOHARMSPECIES

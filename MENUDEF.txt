@@ -63,55 +63,56 @@ LISTMENU "MainMenu"
 
 ListMenu "PlayerclassMenu"
 {
-	StaticTextCentered 160, 15, "$FO_MNU_CLASS"
-	Position 50, 45
-	PlayerDisplay 140, 35, "FF 00 00", "FF 00 00"
+	StaticTextCentered 160,15,"$FO_MNU_CLASS"
+	Position 50,45
+	PlayerDisplay 140,35,"FF 00 00","FF 00 00"
 	// The rest of this menu will be set up based on the actual player definitions.
 }
 
 ListMenu "SkillMenu"
 {
-	StaticTextCentered 160, 15, "$MNU_CHOOSESKILL"
-	Position 50, 45
+	StaticTextCentered 160,15,"$MNU_CHOOSESKILL"
+	Position 50,45
 }
 
 OptionMenu "BD64Menu"
 {
 	Title "$FO_64OPTIONS_MAIN"
-	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT1",1
 	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
 	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
-	StaticText " "
+	StaticText ""
 	StaticText "$FO_64OPTIONS_PRESET",1
+	StaticText ""
 	StaticText "$FO_64MNU_BEFORE",1
 	StaticText "$FO_64MNU_APPLY",1
-	TextField "$FO_64MNU_LAST", "BD64_Preset"
+	TextField "$FO_64MNU_LAST","BD64_Preset"
 	StaticText "$FO_64MNU_COMFIRM",1
 	StaticText "$FO_64MNU_NOTHING",1
-	StaticText " "
-	SafeCommand "$FO_64MNU_DEFAULT", "pukename DefaultCvars"
+	StaticText ""
+	SafeCommand "$FO_64MNU_DEFAULT","pukename DefaultCvars"
 	StaticText "$FO_64MNU_DEFAULT_TXT",1
-	SafeCommand "$FO_64MNU_CLASSICAL", "pukename ClassicalCvars"
-	StaticText "$FO_64MNU_CLASSICAL_TXT",1	
-	SafeCommand "$FO_64MNU_SWC", "pukename StevenCvars"
+	SafeCommand "$FO_64MNU_CLASSICAL","pukename ClassicalCvars"
+	StaticText "$FO_64MNU_CLASSICAL_TXT",1
+	SafeCommand "$FO_64MNU_SWC","pukename StevenCvars"
 	StaticText "$FO_64MNU_SWC_TXT1",1
 	StaticText "$FO_64MNU_SWC_TXT2",1
-	StaticText " "
+	StaticText ""
 	StaticText "$FO_64MNU_RANDOM_TXT1",1
-	SafeCommand "$FO_64MNU_RANDOM", "pukename RandomCvars"
-	StaticText " "
+	SafeCommand "$FO_64MNU_RANDOM","pukename RandomCvars"
+	StaticText ""
 	StaticText "$FO_64OPTIONS_OPTIONS",1
-	StaticText " "
+	StaticText ""
 	Submenu "$FO_64MNU_OTHER_ITEMS",		"BrutalDoom64Item/WeaponOptions"
 	Submenu "$FO_64MNU_OHTHER_MONSTER",			"BrutalDoom64OptionsOtherMonster"
 	Submenu "$FO_64MNU_PERFORMANCE",		"BrutalDoom64OptionsPerformance"
 //	Submenu "$FO_64MNU_LEVEL_OPTIONS",			"BD64MapOptions"	//MOVED TO BD64 MAPS
-	StaticText " "
+	StaticText ""
 	StaticText "$FO_64OPTIONS_GAMEPLAY",1
-	StaticText " "
+	StaticText ""
 	Submenu "$FO_64MNU_WEAPONS_SPAWN",		"BrutalDoom64OptionsItem/WeaponSpawner"	
 	Submenu "$FO_64MNU_MONSTER_SPAWN",			"BrutalDoom64OptionsMonsterSpawner"	
-	StaticText " "
+	StaticText ""
 	StaticText ""
 	Submenu 	"$FO_64MNU_ENGINE",		"GZDShortcuts"
 }
@@ -119,28 +120,28 @@ OptionMenu "BD64Menu"
 OptionMenu "BrutalDoom64OptionsItem/WeaponSpawner"
 {
 	Title "$FO_64MNU_ITEMS_WEAPONS_SPAWN"
-	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT1",1
 	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
 	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
-		StaticText " "
+		StaticText ""
 		StaticText "$FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1",1
 		StaticText "$FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2",1
 		StaticText ""
-	Option "Bonuses Spawner =","BonusRandomCvar","BonusRandomValue"
+	Option "$64MNU_BONUSSPAWNER","BonusRandomCvar","BonusRandomValue"
 		StaticText "$FO_64MNU_BONUS",1
 		StaticText "$FO_64MNU_BONUS_TXT",1
 		StaticText ""
-	Option "Power-up spawner =","WpnPower_Spawner_Cvar","WpnPower_Spawner_Value"
+	Option "$64MNU_POWERUP_SPAWNER","WpnPower_Spawner_Cvar","WpnPower_Spawner_Value"
 		StaticText "$FO_64MNU_POWERUP",1
 		StaticText "$FO_64MNU_POWERUP_NOTE",1
 		StaticText ""
-	Option "Plasmagun Spawner =","PlasmaRifle_Spawner_Cvar","GaussCannon_Spawner_Value"
+	Option "$64MNU_PLASMASPAWNER","PlasmaRifle_Spawner_Cvar","GaussCannon_Spawner_Value"
 		StaticText "$FO_64MNU_PLASMA",1
 		StaticText ""
-	Option "BFG9000 Spawner =","BFG_Spawner_Cvar","BFG_Spawner_Value"
+	Option "$64MNU_BFGSPAWNER","BFG_Spawner_Cvar","BFG_Spawner_Value"
 		StaticText "$FO_64MNU_BFG",1
 		StaticText ""
-	Option "Chaingun Spawner =","Chaingun_Spawner_Cvar","Chaingun_Spawner_Value"
+	Option "$64MNU_CHAINGUNSPAWNER","Chaingun_Spawner_Cvar","Chaingun_Spawner_Value"
 		StaticText "$FO_64MNU_CHAINGUN",1
 		StaticText ""
 }
@@ -188,7 +189,7 @@ OptionMenu "BrutalDoom64Item/WeaponOptions"
 OptionMenu "BrutalDoom64OptionsMonsterSpawner"
 {
 	Title "$FO_MONSTER_SPAWN"
-	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT1",1
 	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
 	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 		StaticText ""
@@ -259,7 +260,7 @@ OptionMenu "BrutalDoom64OptionsMonsterSpawner"
 OptionMenu "BrutalDoom64OptionsOtherMonster"
 {
 	Title "$FO_MONSTER_OTHER"
-	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT1",1
 	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
 	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 		StaticText ""
@@ -294,7 +295,7 @@ OptionMenu "BrutalDoom64OptionsOtherMonster"
 OptionMenu "BrutalDoom64OptionsPerformance"
 {
 	Title "$FO_PERFORMANCE_MISK"
-	StaticText "$FO_64OPTIONS_MAIN_TXT1", 1
+	StaticText "$FO_64OPTIONS_MAIN_TXT1",1
 	StaticText "$FO_64OPTIONS_MAIN_TXT2",1
 	Command "$FO_64SYSTEM_APPLIED","PukeName BD64Respawn"
 		StaticText ""
@@ -314,10 +315,10 @@ OptionMenu "BrutalDoom64OptionsPerformance"
 		StaticText ""
 	Option "$FO_OPTION_HUD_STYLE","HUDSwitchCvar","HUDValue"
 		StaticText ""
-	Option "$FO_OPTION_HUD_SCREEN", "bd64_ScreenFX", "ScreenTypes"
+	Option "$FO_OPTION_HUD_SCREEN","bd64_ScreenFX","ScreenTypes"
 		StaticText "$FO_OPTION_HUD_BLOOD"
 		StaticText ""
-	Option "$FO_OPTION_HUD_TRAILS", "bd64_BloodTrail","NoYes"
+	Option "$FO_OPTION_HUD_TRAILS","bd64_BloodTrail","NoYes"
 		StaticText "$FO_OPTION_HUD_SPLASH"
 		StaticText "$FO_OPTION_HUD_SPLASH_TXT1"
 		StaticText "$FO_OPTION_HUD_SPLASH_TXT2"
@@ -372,7 +373,7 @@ Optionmenu GZDShortcuts
 	Option "$FO_ENGINE_DISCORD",	"i_discordrpc",		"OnOff"
 	StaticText "$FO_ENGINE_DISCORD_TXT" ,1
 	StaticText ""
-	Option "Lauguage", "language", "BD64LanguageOptions"	
+	Option "Lauguage","language","BD64LanguageOptions"	
 	StaticText ""
 	StaticText "$FO_ENGINE_LANGUAGE_TXT",1
 	StaticText ""
@@ -443,8 +444,8 @@ OptionValue "Mastermind_Spawner_Value"
 
 OptionValue "HellKnight_Spawner_Value"
 {
-	-2, "Random (No Knightmare)"
-	-1, "Random (No Hellhound)"
+	-2,"Random (No Knightmare)"
+	-1,"Random (No Hellhound)"
 	0,"Random"
 	1,"HellKnight"
 	2,"Knightmare"
@@ -460,9 +461,9 @@ OptionValue "Fatso_Spawner_Value"
 
 OptionValue "Arachnotron_Spawner_Value"
 {
-//	-3, "Random (No Arachnotron)"
-	-2, "Random (No Night Crawler)"
-	-1, "Random (No Impaler)"
+//	-3,"Random (No Arachnotron)"
+	-2,"Random (No Night Crawler)"
+	-1,"Random (No Impaler)"
 	0,"Random"
 	1,"Arachnotron"
 	2,"Night Crawler"
@@ -482,8 +483,8 @@ OptionValue "LostSoul_Spawner_Value"
 
 OptionValue "Baron_Spawner_Value"
 {
-	-2, "Random (No Vassago)"
-	-1, "Random (No Belphegor)"
+	-2,"Random (No Vassago)"
+	-1,"Random (No Belphegor)"
 	0,"Random"
 	1,"Baron"
 	2,"Vassago"
@@ -638,9 +639,9 @@ OptionValue "LFog_Value"	//Steam and Halo effects
 
 OptionValue "ScreenTypes"	//HUD effects
 {
-	0, "No"
-	1, "Yes"
-	2, "BDv21"
+	0,"No"
+	1,"Yes"
+	2,"BDv21"
 }
 
 //Item & Weapon values
@@ -655,7 +656,7 @@ OptionValue "Chaingun_Spawner_Value"
 OptionValue "BFG_Spawner_Value"
 {
 	0,"Random"
-	1,"BFG9000"
+	1,"BFG 9000"
 	2,"Unmaker"
 	3,"Laser Rifle"
 }
@@ -670,7 +671,7 @@ OptionValue "GaussCannon_Spawner_Value"
 OptionValue "BonusRandomValue"	//Health/Armor bonus replacement
 {
 	0,"Random"
-	1,"Default Bonus"
+	1,"Regular Bonus"
 	2,"Hell Potion"
 }
 
@@ -712,11 +713,11 @@ OptionValue "WADChecker_Value"
 
 OptionString "BD64LanguageOptions" 
 {
-	"auto", "Auto"
-	"enu", "Engligh-US (United States)"
-	"eng", "English-GB (United Kingdom)"
-	"es", "Espanol (Spanish)"
-	"fr", "Francais (French)"
-	"pt", "Portuguese (Brasil)"
-	"ru", "Русский (Russian)"
+	"auto","Auto"
+	"enu","Engligh-US (United States)"
+	"eng","English-GB (United Kingdom)"
+	"es","Espanol (Spanish)"
+	"fr","Francais (French)"
+	"pt","Portuguese (Brasil)"
+	"ru","Русский (Russian)"
 }

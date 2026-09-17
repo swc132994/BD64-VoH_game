@@ -127,21 +127,21 @@ OptionMenu "BrutalDoom64OptionsItem/WeaponSpawner"
 		StaticText "$FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1",1
 		StaticText "$FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2",1
 		StaticText ""
-	Option "$64MNU_BONUSSPAWNER","BonusRandomCvar","BonusRandomValue"
+	Option "$FO_64MNU_BONUSSPAWNER","BonusRandomCvar","BonusRandomValue"
 		StaticText "$FO_64MNU_BONUS",1
 		StaticText "$FO_64MNU_BONUS_TXT",1
 		StaticText ""
-	Option "$64MNU_POWERUP_SPAWNER","WpnPower_Spawner_Cvar","WpnPower_Spawner_Value"
+	Option "$FO_64MNU_POWERUP_SPAWNER","WpnPower_Spawner_Cvar","WpnPower_Spawner_Value"
 		StaticText "$FO_64MNU_POWERUP",1
 		StaticText "$FO_64MNU_POWERUP_NOTE",1
 		StaticText ""
-	Option "$64MNU_PLASMASPAWNER","PlasmaRifle_Spawner_Cvar","GaussCannon_Spawner_Value"
+	Option "$FO_64MNU_PLASMASPAWNER","PlasmaRifle_Spawner_Cvar","GaussCannon_Spawner_Value"
 		StaticText "$FO_64MNU_PLASMA",1
 		StaticText ""
-	Option "$64MNU_BFGSPAWNER","BFG_Spawner_Cvar","BFG_Spawner_Value"
+	Option "$FO_64MNU_BFGSPAWNER","BFG_Spawner_Cvar","BFG_Spawner_Value"
 		StaticText "$FO_64MNU_BFG",1
 		StaticText ""
-	Option "$64MNU_CHAINGUNSPAWNER","Chaingun_Spawner_Cvar","Chaingun_Spawner_Value"
+	Option "$FO_64MNU_CHAINGUNSPAWNER","Chaingun_Spawner_Cvar","Chaingun_Spawner_Value"
 		StaticText "$FO_64MNU_CHAINGUN",1
 		StaticText ""
 }

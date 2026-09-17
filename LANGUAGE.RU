@@ -208,12 +208,21 @@ FO_64MNU_ITEMS_WEAPONS_SPAWN = "Параметры создания предме
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1 = "Параметры выбора замены оружия и усилений";
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2 = "или установить случайный показ";
 
+FO_64MNU_BONUSSPAWNER = "Спавнер бонусов";
 FO_64MNU_BONUS = "Бонусы по умолчанию";
 FO_64MNU_BONUS_TXT = "(Адские зелья является комбинацией брони и здоровья)";
+
+FO_64MNU_POWERUP_SPAWNER = "Спавнер усилений";
 FO_64MNU_POWERUP = "Усиление по умолчанию";
 FO_64MNU_POWERUP_NOTE = "(Рекоммендуется выставить только усиление для D64 карт)";
+
+FO_64MNU_PLASMASPAWNER = "Спавнер плазмомёта";
 FO_64MNU_PLASMA = "Плазменная пушка по умолчанию";
+
+FO_64MNU_BFGSPAWNER = "Спавнер BFG 9000";
 FO_64MNU_BFG = "BFG9000 по умолчанию";
+
+FO_64MNU_CHAINGUNSPAWNER = "Спавнер пулемёта";
 FO_64MNU_CHAINGUN = "Пулемет по умолчанию";
 
 FO_64MNU_OTHER_ITEMS_SPAWN = "Другие варианты предметов/оружия";
@@ -490,6 +499,7 @@ FO_TAG_DEFAULT = "\cmБезымянное оружие";
 //1
 FO_TAG_FIST = "\cmКулаки";
 FO_TAG_CHAINSAW = "\cmБензопила";
+FO_TAG_PORTMEDIKIT = "\crПереносная аптечка";
 //2
 FO_TAG_PISTOL = "\cmПистолет";
 FO_TAG_SMG = "\cmПистолет-пулемет";
@@ -613,7 +623,7 @@ FO_OB_MPBFG_BETA = "Игрока %o разорвал на кусочки выс�
 FO_OB_LASER = "Игрока %o поджарен из \cmлазерной пушки\c- игрока \cg%k\c-";
 FO_OB_LASERBLAST = "Игрока %o испепелен из \cmлазерной пушки\c- игрока \cg%k\c-";
 FO_OB_MPUNMAKER = "Игрока %o уничтожен \cmДесозедателем\c- игрока \cg%k\c-.";
-// OB_MPBFG_SPLASH = "%o не смог спрятаться от \cmBFG\c- \cg%k\c-.";
+FO_OB_MPBFG_SPLASH = "%o не смог спрятаться от \cmBFG\c- \cg%k\c-.";
 // OB_MPTELEFRAG = "Игрок %o \c-использовал телефраг против игрока \cg%k\c-.";
 // OB_RAILGUN = "Игрок %o прошит на сквозь из \cmрельсотрона\c- игрока \cg%k\c-";
 // OB_MPBFG_MBF = "Игрока %o сжёг из \cmBFG\c- игрок \cg%k\c-.";
@@ -682,7 +692,6 @@ FO_TAG_ANNIHILATOR = "Аннигилятор";
 FO_TAG_MASTERMIND = "Паук-предводитель";
 FO_TAG_ERADICATOR = "Искоренитель";
 FO_TAG_WOLF3DSS = "Солдат SS";
-FO_TAG_EVILSPIRIT = "Полтергейст";
 FO_TAG_CARRION = "Зомби-падальщик";
 FO_TAG_THING = "Нечто";
 FO_TAG_EVILSPIRIT = "Полтергейст";
@@ -692,6 +701,8 @@ FO_TAG_EVILTREEROOT = "Корень зловещего дерева";
 FO_TAG_HANGMAN = "Повешанный";
 FO_TAG_KEEN = "Повешанный Скорпион";
 FO_TAG_SUPERFALLEN = "Верховный Падший";
+FO_TAG_GORENEST = "Гнездо Плоти";
+FO_TAG_VASSAGO = "Вассаго";
 
 //////////////////////////////////////////////////////////////////
 //NPC marine tags & obituary
@@ -798,7 +809,8 @@ FO_OB_EVILEYE = "Игрок %o слишком долго смотрел на \cr
 FO_OB_EVILTREE = "Игрока %o пронзил \crЯтевео\c-.";
 FO_OB_HANGMAN = "Игрок %o попал в засаду \crповешенный\c-.";
 FO_OB_SUPERFALLEN = "Игрок %o испепелен \cr верховным падшим\c-.";
-// OB_DOG = "Игрока %o разорвала \crсобака\c-.";\
+FO_OB_VASSAGO = "Игрока %o испепелил \crВассаго\c-.";
+// OB_DOG = "Игрока %o разорвала \crсобака\c-.";
 
 ///////////////////////////////////////////////////////////////////////
 //Теги предметов

@@ -7,7 +7,7 @@
 //OTHER SYSTEM STUFF
 FO_64SYSTEM_AUTO = "Certaines modifications ne sont pas initialisées automatiquement";
 FO_64SYSTEM_APPLY = "Appuyez sur \"Appliquer les modifications\" pour que les modifications prennent effet";
-FO_64SYSTEM_RESTART = -"Toute modification ici nécessite un redémarrage du niveau pour fonctionner.";
+FO_64SYSTEM_RESTART = "Toute modification ici nécessite un redémarrage du niveau pour fonctionner.";
 FO_64SYSTEM_APPLIED = "Appliquer les modifications";
 
 TXT_NO = "\cgNon";
@@ -210,12 +210,21 @@ FO_64MNU_ITEMS_WEAPONS_SPAWN = "Options d'apparition d'objets/armes";
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1 = "Options permettant de choisir des remplacements d'armes et de bonus ou de les configurer"; 
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2 = "pour qu'ils apparaissent de manière aléatoire";
 
-FO_64MNU_BONUS = "Bonus par défaut";
+FO_64MNU_BONUSSPAWNER = "Générateur de Bonus";
+FO_64MNU_BONUS = "Par défaut = Bonus Régulier";
 FO_64MNU_BONUS_TXT = "(les potions infernales sont combinées avec les bonus d'armure et de santé)";
-FO_64MNU_POWERUP = "Super-pouvoirs par défaut";
-FO_64MNU_PLASMA = "Fusil à plasma par défaut";
-FO_64MNU_BFG = "BFG9000 par défaut";
-FO_64MNU_CHAINGUN = "Mitrailleuse par défaut";
+
+FO_64MNU_POWERUP_SPAWNER = "Générateur de Super-pouvoirs";
+FO_64MNU_POWERUP = "Par défaut = Super-pouvoirs";
+
+FO_64MNU_PLASMASPAWNER = "Générateur de Fusils à plasma";
+FO_64MNU_PLASMA = "Par défaut = Fusil à plasma";
+
+FO_64MNU_BFGSPAWNER = "Générateur de BFG 9000";
+FO_64MNU_BFG = "Par défaut = BFG 9000";
+
+FO_64MNU_CHAINGUNSPAWNER = "Générateur de Mitrailleuses";
+FO_64MNU_CHAINGUN = "Par défaut = Mitrailleuse";
 
 FO_64MNU_OTHER_ITEMS_SPAWN = "Autres options d'objets/armes";
 
@@ -272,7 +281,7 @@ FO_SPAWN_SOUL = "Générateur d'Âmes perdues =";
 FO_SPAWN_SOUL_TXT1 = "Pourcentage aléatoire d'âmes perdues =";
 FO_SPAWN_SOUL_TXT2 = "(Doloris/Agonis peuvent les invoquer en fonction des valeurs)";
 FO_SPAWN_KNIGHT = "Générateur de Chevaliers des enfers =";
-FO_SPAWN_KNIGHT = "Pourcentage aléatoire de chevaliers des enfers =";
+FO_SPAWN_KNIGHT_TXT = "Pourcentage aléatoire de chevaliers des enfers =";
 FO_SPAWN_UNDEAD = "Générateur de Revenants =";
 FO_SPAWN_UNDEAD_TXT = "Pourcentage aléatoire de revenants =";
 FO_SPAWN_BARON = "Générateur de Barons infernaux =";
@@ -321,7 +330,7 @@ FO_PROP_GHOST_TXT2 = "(les Esprits frappeurs sont des les objets décoratifs dan
 
 FO_PERFORMANCE_MISK = "Options de performance et diverses";
 FO_PERFORMANCE_MISK_TXT = "Activez cette option UNIQUEMENT si vous hébergez un serveur sur un jeu multijoueur.";
-FO_PERFORMANCE_MISK_TXT = "(l'activation de cette option générera un message d'erreur si vous utilisez GZDoom)";
+FO_PERFORMANCE_MISK_TXT2 = "(l'activation de cette option générera un message d'erreur si vous utilisez GZDoom)";
 
 FO_OPTION_PERFORMANCE = "-------------------------------- Performances et gore --------------------------------";
 
@@ -513,9 +522,11 @@ BD64_GOTLASER = "Vous avez mis la main sur le \cmRayon laser !\c-  (Touche 9)";
 //////////////////////////////////////////////////////////////////
 // weapon tags
 
+FO_TAG_DEFAULT = "\cmArme sans nom";
 //1
 FO_TAG_FIST = "\cmPoings";
 FO_TAG_CHAINSAW = "\cmTronconneuse";
+FO_TAG_PORTMEDIKIT = "\crKit de soins portable";
 //2
 FO_TAG_PISTOL = "\cmPistolet";
 FO_TAG_SMG = "\cmPistolet-mitrailleur";
@@ -632,8 +643,9 @@ FO_OB_GAUSS = "%o a été(e) transpercé(e) par le \cmFusil Gauss\c- de \cg%k.";
 FO_OB_MPBFG_BOOM = "%o a été désintégré(e) par le le \cmBFG\c- de \cg%k\c-.";
 FO_OB_MPBFG_BETA = "%o a été désintégré(e) par le le \cmBFG\c- de \cg%k\c-.";
 FO_OB_LASER = "%o à été réduit(e) à néant par le \cmRayon laser\c- de \cg%k\c-.";
+FO_OB_LASERBLAST = "%o a été réduit(e) en poussière par le \cmRayon laser\c- de \cg%k\c-.";
 FO_OB_MPUNMAKER = "%o à supprimé(e) \cg%k\c-.";
-//	OB_MPBFG_SPLASH = "%o ne pouvait rien faire face au \cmBFG\c- de \cg%k\c-.";
+FO_OB_MPBFG_SPLASH = "%o ne pouvait rien faire face au \cmBFG\c- de \cg%k\c-.";
 //	OB_MPTELEFRAG = "%o a été \cmtélecrasé(e)\c- par \cg%k\c-.";
 //	OB_RAILGUN = "%o été \cmréduit(e) en cendres\c- par \cg%k\c-.";
 //	OB_MPBFG_MBF = "%o a été incinéré(e) par le \cmBFG\c- de \cg%k\c-.";
@@ -711,6 +723,7 @@ FO_TAG_HANGMAN = "Pendu";
 FO_TAG_KEEN = "Scorpion pendu";
 FO_TAG_SUPERFALLEN = "Déchu suprême";
 FO_TAG_GORENEST = "Nis à gore";
+FO_TAG_VASSAGO = "Vassago";
 
 //////////////////////////////////////////////////////////////////
 //Noms et nécrologies des Marines PNJ
@@ -817,6 +830,7 @@ FO_OB_EVILEYE = "%o a regardé un \crœil vindicatif\c- pendant trop longtemps..
 FO_OB_EVILTREE = "%o a été empalé(e) par un \crYatevéo\c-.";
 FO_OB_HANGMAN = "%o a été pris en embuscade par un \crPendu\c-.";
 FO_OB_SUPERFALLEN = "%o a été immolé(e) par un \crDéchu suprême\c-.";
+FO_OB_VASSAGO = "%o a été réduit(e) en cendres par un \crVassago\c-.";
 //	OB_DOG = "%o a été mutilé par un Chien.";
 
 //////////////////////////////////////////////////////////////////

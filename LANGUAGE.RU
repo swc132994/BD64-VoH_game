@@ -1,6 +1,4 @@
-//Перевод на русский: IDDQD_1337
-
-[ru rus]
+[ru rus]	//Перевод на русский: IDDQD_1337
 
 //ДРУГИЕ СИСТЕМНЫЕ МАТЕРИАЛЫ
 FO_64SYSTEM_AUTO = "Некоторые изменения не инициализируются автоматически";
@@ -42,13 +40,13 @@ RANDOM_NO_BELPHEGOR = "Случайный (без Бельфегора)";
 RANDOM_NO_ACID = "Случайный (без Кислоты)";
 RANDOM_NO_BUTCHER = "Случайный (без Мясника)";
 
-RANDOM_NO_CACO_NIGHTMARE = ​​"Случайный (без Кошмарного)";
+RANDOM_NO_CACO_NIGHTMARE = "Случайный (без Кошмарного)";
 RANDOM_NO_FALLEN = "Случайный (без Падшего)";
 
-RANDOM_NO_SPECTRE_NIGHTMARE = ​​"Случайный (без Кошмарного)";
+RANDOM_NO_SPECTRE_NIGHTMARE = "Случайный (без Кошмарного)";
 RANDOM_NO_WRAITH = "Случайный (без Призрака)";
 
-RANDOM_NO_IMP_NIGHTMARE = ​​"Случайный (без Кошмарного)";
+RANDOM_NO_IMP_NIGHTMARE = "Случайный (без Кошмарного)";
 RANDOM_NO_HARVESTER = "Случайный (без Жнеца)";
 
 RANDOM_NO_SSGGUY = "Случайный (без SSG)";
@@ -134,7 +132,7 @@ FO_TAG_HARD = "Смотри, как я умираю!";
 FO_TAG_HARD_TXT = "Эквивалентно к 'Ультранасилию'";
 FO_TAG_HARDER = "Смотри, как я умираю+!";
 FO_TAG_HARDER_TXT = "Эквивалентно к 'Ультранасилию+', Быстрые монстры иснаряды, Спавн многопользовательского оружия";
-FO_TAG_NIGHTMARE = ​​"Хардкор!";
+FO_TAG_NIGHTMARE = "Хардкор!";
 FO_TAG_NIGHTMARE_TXT = "Способности монстров = Быстрые снаряды, +25% здоровья и более агрессивны";
 FO_TAG_SURVIVAL = "Выживание!";
 FO_TAG_SURVIVAL_TXT = "Способности монстров = +25% здоровья (ручное лечение игрока)";
@@ -208,12 +206,21 @@ FO_64MNU_ITEMS_WEAPONS_SPAWN = "Параметры создания предме
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1 = "Параметры выбора замены оружия и усилений";
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2 = "или установить случайный показ";
 
+FO_64MNU_BONUSSPAWNER = "Спавнер бонусов";
 FO_64MNU_BONUS = "Бонусы по умолчанию";
 FO_64MNU_BONUS_TXT = "(Адские зелья является комбинацией брони и здоровья)";
+
+FO_64MNU_POWERUP_SPAWNER = "Спавнер усилений";
 FO_64MNU_POWERUP = "Усиление по умолчанию";
 FO_64MNU_POWERUP_NOTE = "(Рекоммендуется выставить только усиление для D64 карт)";
+
+FO_64MNU_PLASMASPAWNER = "Спавнер плазмомёта";
 FO_64MNU_PLASMA = "Плазменная пушка по умолчанию";
+
+FO_64MNU_BFGSPAWNER = "Спавнер BFG 9000";
 FO_64MNU_BFG = "BFG9000 по умолчанию";
+
+FO_64MNU_CHAINGUNSPAWNER = "Спавнер пулемёта";
 FO_64MNU_CHAINGUN = "Пулемет по умолчанию";
 
 FO_64MNU_OTHER_ITEMS_SPAWN = "Другие варианты предметов/оружия";
@@ -472,7 +479,6 @@ BD64_GOTRIFLE = "Получена \cmШтурмовая винтовка\c-! (С
 BD64_GOTCHAINGUN = "Получен \cmпулемёт\c-! (Слот 4)"; //(Переопределение Freedoom)
 //Слот 5
 BD64_GOTLAUNCHER = "Получен \cmракетомёт\c-! (Слот 5)"; //(Переопределение Freedoom)
-BD64_GOTMINES = "Получена \cmМногоцелевая мина\c-! (Слот 5)";
 //Слот 6
 BD64_GOTPLASMA = "Получен \cmплазмомёт\c-! (Слот 6)"; //(Переопределение Freedoom)
 BD64_GOTGAUSS = "Получена \cmПушка Гаусса\c-! (Слот 6)";
@@ -490,6 +496,7 @@ FO_TAG_DEFAULT = "\cmБезымянное оружие";
 //1
 FO_TAG_FIST = "\cmКулаки";
 FO_TAG_CHAINSAW = "\cmБензопила";
+FO_TAG_PORTMEDIKIT = "\crПереносная аптечка";
 //2
 FO_TAG_PISTOL = "\cmПистолет";
 FO_TAG_SMG = "\cmПистолет-пулемет";
@@ -613,7 +620,7 @@ FO_OB_MPBFG_BETA = "Игрока %o разорвал на кусочки выс�
 FO_OB_LASER = "Игрока %o поджарен из \cmлазерной пушки\c- игрока \cg%k\c-";
 FO_OB_LASERBLAST = "Игрока %o испепелен из \cmлазерной пушки\c- игрока \cg%k\c-";
 FO_OB_MPUNMAKER = "Игрока %o уничтожен \cmДесозедателем\c- игрока \cg%k\c-.";
-// OB_MPBFG_SPLASH = "%o не смог спрятаться от \cmBFG\c- \cg%k\c-.";
+FO_OB_MPBFG_SPLASH = "%o не смог спрятаться от \cmBFG\c- \cg%k\c-.";
 // OB_MPTELEFRAG = "Игрок %o \c-использовал телефраг против игрока \cg%k\c-.";
 // OB_RAILGUN = "Игрок %o прошит на сквозь из \cmрельсотрона\c- игрока \cg%k\c-";
 // OB_MPBFG_MBF = "Игрока %o сжёг из \cmBFG\c- игрок \cg%k\c-.";
@@ -643,12 +650,12 @@ FO_TAG_BFGGUY = "Зомби-генерал";
 FO_TAG_ZOMBIEMARINE = "Зомби-морпех";
 FO_TAG_HUSK = "Хаск-зомби";
 FO_TAG_IMP = "Имп";
-FO_TAG_IMP_NIGHTMARE = ​​"Кошмарный имп";
+FO_TAG_IMP_NIGHTMARE = "Кошмарный имп";
 FO_TAG_IMPALER = "Цепеш";
 FO_TAG_HARVESTER = "Сборщик душ";
 FO_TAG_PINKY = "Демон";
 FO_TAG_SPECTRE = "Фантом";
-FO_TAG_SPECTRE_NIGHTMARE = ​​​​"Кошмарный фантом";
+FO_TAG_SPECTRE_NIGHTMARE = "Кошмарный фантом";
 FO_TAG_WRAITH = "Призрак";
 FO_TAG_BUTCHER = "Мясник";
 FO_TAG_HOUND = "Адская гончая";
@@ -658,15 +665,15 @@ FO_TAG_NIGHTCRAWLER = "Ночной змей";
 FO_TAG_FATSO = "Манкубус";
 FO_TAG_REVENANT = "Ревенант";
 FO_TAG_KNIGHT = "Рыцарь ада";
-FO_TAG_KNIGHTMARE = ​​"Кошмарный Рыцарь Ада";
+FO_TAG_KNIGHTMARE = "Кошмарный Рыцарь Ада";
 FO_TAG_BARON = "Барон Ада";
 FO_TAG_BRUISER = "Зверь";
 FO_TAG_BELPHEGOR = "Бельфегор";
 FO_TAG_FALLEN = "Падший";
 FO_TAG_CACO = "Какодемон";
-FO_TAG_CACO_NIGHTMARE = ​​"Кошмарный какодемон";
+FO_TAG_CACO_NIGHTMARE = "Кошмарный какодемон";
 FO_TAG_ELEMENTAL = "Элементаль боли";
-FO_TAG_ELEMENTAL_NIGHTMARE = ​​"Элементаль агонии";
+FO_TAG_ELEMENTAL_NIGHTMARE = "Элементаль агонии";
 FO_TAG_PEST = "Мор";
 FO_TAG_LOSTSOUL = "Потерянная душа";
 FO_TAG_STALKER = "Сталкер";
@@ -682,7 +689,6 @@ FO_TAG_ANNIHILATOR = "Аннигилятор";
 FO_TAG_MASTERMIND = "Паук-предводитель";
 FO_TAG_ERADICATOR = "Искоренитель";
 FO_TAG_WOLF3DSS = "Солдат SS";
-FO_TAG_EVILSPIRIT = "Полтергейст";
 FO_TAG_CARRION = "Зомби-падальщик";
 FO_TAG_THING = "Нечто";
 FO_TAG_EVILSPIRIT = "Полтергейст";
@@ -692,6 +698,8 @@ FO_TAG_EVILTREEROOT = "Корень зловещего дерева";
 FO_TAG_HANGMAN = "Повешанный";
 FO_TAG_KEEN = "Повешанный Скорпион";
 FO_TAG_SUPERFALLEN = "Верховный Падший";
+FO_TAG_GORENEST = "Гнездо Плоти";
+FO_TAG_VASSAGO = "Вассаго";
 
 //////////////////////////////////////////////////////////////////
 //NPC marine tags & obituary
@@ -732,7 +740,7 @@ FO_OB_STEALTHZOMBIE = "Игрок %o краем глаза заметил \crз�
 
 FO_OB_DEMONHIT = "Игрока %o укусил \crдемон\c-.";
 FO_OB_SPECTREHIT = "Игрока %o сожрал \crфантом\c-.";
-FO_OB_SPECTREHIT_NIGHTMARE = ​​"Игрока %o сожрал \crкошмарный фантом\c-.";
+FO_OB_SPECTREHIT_NIGHTMARE = "Игрока %o сожрал \crкошмарный фантом\c-.";
 FO_OB_WRAITH = "Игрока %o расцарапал \crпризрак\c-.";
 FO_OB_BUTCHER = "Игрока %o изуродовал \crмясник\c-";
 FO_OB_HOUND = "Игрока %o сжёг \crадская гончая\c-.";
@@ -760,25 +768,25 @@ FO_OB_TRITE = "Игрока %o отравил \crтрайт\c-.";
 FO_OB_FORGOTTEN = "Игрока %o зарядил \crзабытый\c-.";
 FO_OB_IMP = "Игрока %o сжёг \crимп\c-.";
 FO_OB_IMPHIT = "Игрока %o расцарапал \crимп\c-.";
-FO_OB_IMP_NIGHTMARE = ​​"Игрока %o сжёг \crкошмарный имп\c-.";
-FO_OB_IMPHIT_NIGHTMARE = ​​"Игрока %o расцарапал \crкошмарный имп\c-.";
+FO_OB_IMP_NIGHTMARE = "Игрока %o сжёг \crкошмарный имп\c-.";
+FO_OB_IMPHIT_NIGHTMARE = "Игрока %o расцарапал \crкошмарный имп\c-.";
 FO_OB_IMPALER = "Игрока %o проколол \crпронзатель\c-.";
 FO_OB_IMPALERHIT = "Игрока %o пронзил \crпронзатель\c-.";
 FO_OB_HARVESTER = "Игрока %o высосал \crсобиратель душ\c-.";
 FO_OB_CACO = "Игрока %o поразил \crкакодемон\c-.";
 FO_OB_CACOHIT = "Игрок %o слишком сблизился с \crкакодемоном\c-.";
-FO_OB_CACO_NIGHTMARE = ​​"Игрока %o поразил \crкошмарный какодемон\c-.";
-FO_OB_CACOHIT_NIGHTMARE = ​​"Игрок %o слишком сблизился с \crкошмарным какодемоном\c-.";
+FO_OB_CACO_NIGHTMARE = "Игрока %o поразил \crкошмарный какодемон\c-.";
+FO_OB_CACOHIT_NIGHTMARE = "Игрок %o слишком сблизился с \crкошмарным какодемоном\c-.";
 FO_OB_FALLEN = "Игрока %o испепелил \crпадший\c-.";
 FO_OB_ELEMENTAL = "Игрок %o слишком сблизился с \crэлементалем боли\c-.";
-FO_OB_ELEMENTAL_NIGHTMARE = ​​"Игрок %o слишком сблизился с \crэлементалем агонии\c-.";
+FO_OB_ELEMENTAL_NIGHTMARE = "Игрок %o слишком сблизился с \crэлементалем агонии\c-.";
 FO_OB_PEST = "Игрок %o не успел увернуться от химического снаряда \crчумы\c-.";
 FO_OB_PESTHIT = "Игрока %o ударил ядом \crчума\c-";
 FO_OB_BARON = "Игрок %o зашиблен \crбароном ада\c-.";
 FO_OB_BARONHIT = "Игрока %o разорвал \crбарон ада\c-.";
 FO_OB_KNIGHT = "Игрока %o распластал \crрыцарь ада\c-t.";
 FO_OB_KNIGHTHIT = "Игрока %o распотрошил \crрыцарь ада\c-.";
-FO_OB_KNIGHTMARE = ​​"Игрока %o распластал \crкошмарный рыцарь\c-.";
+FO_OB_KNIGHTMARE = "Игрока %o распластал \crкошмарный рыцарь\c-.";
 FO_OB_KNIGHTMAREHIT = "Игрока %o распотрошил \crкошмарный рыцарь\c-.";
 FO_OB_BRUISER = "Игрока %o взорвал \crгромила\c-.";
 FO_OB_BELPHEGOR = "Игрок %o уничтожил \crбельфегор\c-.";
@@ -798,7 +806,8 @@ FO_OB_EVILEYE = "Игрок %o слишком долго смотрел на \cr
 FO_OB_EVILTREE = "Игрока %o пронзил \crЯтевео\c-.";
 FO_OB_HANGMAN = "Игрок %o попал в засаду \crповешенный\c-.";
 FO_OB_SUPERFALLEN = "Игрок %o испепелен \cr верховным падшим\c-.";
-// OB_DOG = "Игрока %o разорвала \crсобака\c-.";\
+FO_OB_VASSAGO = "Игрока %o испепелил \crВассаго\c-.";
+// OB_DOG = "Игрока %o разорвала \crсобака\c-.";
 
 ///////////////////////////////////////////////////////////////////////
 //Теги предметов

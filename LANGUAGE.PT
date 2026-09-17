@@ -211,13 +211,22 @@ FO_64MNU_ITEMS_WEAPONS_SPAWN = "Opções do gerador de Itens/Armas";
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT1 = "Opções para escolher substituições de armas e melhorias."; 
 FO_64MNU_ITEMS_WEAPONS_SPAWN_TXT2 = "Ou configurado para aparecer aleatoriamente.";
 
-FO_64MNU_BONUS = "Bônus por Padrão";
+FO_64MNU_BONUSSPAWNER = "Gerador de Bônus";
+FO_64MNU_BONUS = "Padrão = Bônus";
 FO_64MNU_BONUS_TXT = "(As poções infernais são itens que combinam armadura e vida.)";
-FO_64MNU_POWERUP = "Melhorias por Padrão";
+
+FO_64MNU_POWERUP_SPAWNER = "Gerador de Melhorias";
+FO_64MNU_POWERUP = "Padrão = Melhorias";
 FO_64MNU_POWERUP_NOTE = "(Para os mapas do D64 é recomendado que deixe isso habilitado para melhorias)";
-FO_64MNU_PLASMA = "Plasmagun por Padrão";
-FO_64MNU_BFG = "BFG9000 por Padrão";
-FO_64MNU_CHAINGUN = "Chaingun por Padrão";
+
+FO_64MNU_PLASMASPAWNER = "Gerador de Plasma Rifle";
+FO_64MNU_PLASMA = "Padrão = Plasmagun";
+
+FO_64MNU_BFGSPAWNER = "Gerador de BFG 9000";
+FO_64MNU_BFG = "Padrão = BFG 9000";
+
+FO_64MNU_CHAINGUNSPAWNER = "Gerador de Chaingun";
+FO_64MNU_CHAINGUN = "Padrão = Chaingun";
 
 FO_64MNU_OTHER_ITEMS_SPAWN = "Outras opções de Itens/Armas";
 
@@ -640,7 +649,7 @@ FO_OB_MPBFG_BETA = "%o foi obliterado pela \cmBFG\c- de \cg%k\c-.";
 FO_OB_LASER = "%o virou churrasco com a \cmarma Laser\c- de \cg%k\c-.";
 FO_OB_LASERBLAST = "%o foi explodido pela \cmarma Laser\c- de \cg%k\c-.";
 FO_OB_MPUNMAKER = "%o foi desfeito por \cg%k\c-.";
-//	OB_MPBFG_SPLASH = "%o couldn't hide from \cg%k\c-'s \cmBFG\c-.";
+FO_OB_MPBFG_SPLASH = "%o couldn't hide from \cg%k\c-'s \cmBFG\c-.";
 //	OB_MPTELEFRAG = "%o was \cmtelefragged\c- by \cg%k\c-.";
 //	OB_RAILGUN = "%o was railed by \cg%k\c-.";
 //	OB_MPBFG_MBF = "%o was burned by \cg%k\c-'s \cmBFG\c-.";
@@ -718,6 +727,8 @@ FO_TAG_EVILTREEROOT = "Raiz de Árvore Maligna";
 FO_TAG_HANGMAN = "Enforcado";
 FO_TAG_KEEN = "Escorpião Enforcado";
 FO_TAG_SUPERFALLEN = "Fallen Supremo";
+FO_TAG_GORENEST = "Ninho de Sangue";
+FO_TAG_VASSAGO = "Vassago";
 
 //////////////////////////////////////////////////////////////////
 //NPC marine tags & obituary
@@ -824,6 +835,7 @@ FO_OB_EVILEYE = "%o encarou um \crolho maligno\c- por tempo demais...";
 FO_OB_EVILTREE = "%o foi empalado por um \crYateveo\c-.";
 FO_OB_HANGMAN = "%o foi emboscado por um \crenforcado\c-.";
 FO_OB_SUPERFALLEN = "%o foi imolado por um \crfallen supremo\c-.";
+FO_OB_VASSAGO = "%o foi carbonizado por um \crVassago\c-.";
 //	OB_DOG = "%o was mauled by a dog.";
 
 //////////////////////////////////////////////////////////////////

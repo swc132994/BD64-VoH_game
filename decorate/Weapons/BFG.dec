@@ -275,6 +275,7 @@ Obituary "$FO_OB_MPBFG_BOOM"
 
 Actor 64BFGExtra : BFGExtra Replaces BFGExtra
 {
+Obituary "$FO_OB_MPBFG_SPLASH"
 Renderstyle Normal
 	states
 	{

@@ -8,20 +8,17 @@ Inventory.PickupSound "WPICK"
 	States
 	{
 	Spawn:
+		SMGZ A 0 NoDelay A_SpawnItemEx("ChaingunRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+	Idle:
 		SMGZ A -1
 		Stop
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
 		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")
 		TNT1 A 0 A_GiveInventory("64SMG",1)
-		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
 		Stop
 	PickupTactical:
 		TNT1 A 0 A_GiveInventory("64SMGTactical",1)
-		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
-		Stop
-	DMRespawn:
-		TNT1 A 0 A_SpawnItemEx("ChaingunRespawnerDM")
 		Stop
 	}
 }

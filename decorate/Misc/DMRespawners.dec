@@ -1,13 +1,21 @@
-//weapons
+//WEAPON RESPAWNERS
 Actor ChainsawRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("Chainsaw")
+		TNT1 A 1 A_SpawnItemEx("Chainsaw",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -15,12 +23,20 @@ Actor ChainsawRespawnerDM
 Actor ShotgunRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("Shotgun")
+		TNT1 A 1 A_SpawnItemEx("Shotgun",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -28,12 +44,20 @@ Actor ShotgunRespawnerDM
 Actor SuperShotgunRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("SuperShotgun")
+		TNT1 A 1 A_SpawnItemEx("SuperShotgun",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -41,12 +65,20 @@ Actor SuperShotgunRespawnerDM
 Actor ChaingunRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("Chaingun")
+		TNT1 A 1 A_SpawnItemEx("Chaingun",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -54,12 +86,20 @@ Actor ChaingunRespawnerDM
 Actor RocketLauncherRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("RocketLauncher")
+		TNT1 A 1 A_SpawnItemEx("RocketLauncher",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -67,12 +107,20 @@ Actor RocketLauncherRespawnerDM
 Actor PlasmaRifleRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("Plasmarifle")
+		TNT1 A 1 A_SpawnItemEx("Plasmarifle",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -80,27 +128,43 @@ Actor PlasmaRifleRespawnerDM
 Actor BFG9000RespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("BFG9000")
+		TNT1 A 1 A_SpawnItemEx("BFG9000",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
 
 
-//items & powerups
+//ITEMS & POWERUP RESPAWNERS
 Actor HealthBonusRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("HealthBonus")
+		TNT1 A 1 A_SpawnItemEx("64HealthBonus",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -108,12 +172,83 @@ Actor HealthBonusRespawnerDM
 Actor ArmorBonusRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("ArmorBonus")
+		TNT1 A 1 A_SpawnItemEx("64ArmorBonus",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+		Stop
+	}
+}
+
+Actor HellPotionRespawnerDM
+{
++NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("64HellPotion",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+		Stop
+	}
+}
+
+Actor GreenArmorRespawnerDM
+{
++NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("GreenArmor",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+		Stop
+	}
+}
+
+Actor BlueArmorRespawnerDM
+{
++NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("BlueArmor",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -121,12 +256,20 @@ Actor ArmorBonusRespawnerDM
 Actor SoulsphereRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("Soulsphere")
+		TNT1 A 1 A_SpawnItemEx("Soulsphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -134,12 +277,20 @@ Actor SoulsphereRespawnerDM
 Actor MegasphereRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("Megasphere")
+		TNT1 A 1 A_SpawnItemEx("Megasphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -147,12 +298,20 @@ Actor MegasphereRespawnerDM
 Actor BlurSphereRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("BlurSphere")
+		TNT1 A 1 A_SpawnItemEx("BlurSphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -160,12 +319,20 @@ Actor BlurSphereRespawnerDM
 Actor InfraredRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("Infrared")
+		TNT1 A 1 A_SpawnItemEx("Infrared",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -173,12 +340,20 @@ Actor InfraredRespawnerDM
 Actor BerserkRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("Berserk")
+		TNT1 A 1 A_SpawnItemEx("Berserk",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }
@@ -186,12 +361,62 @@ Actor BerserkRespawnerDM
 Actor InvulnerabilityRespawnerDM
 {
 +NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
 	States
 	{
 	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
-		TNT1 A 1 A_SpawnItemEx("InvulnerabilitySphere")
+		TNT1 A 1 A_SpawnItemEx("InvulnerabilitySphere",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+		Stop
+	}
+}
+
+Actor RadSuitRespawnerDM
+{
++NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("RadSuit",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+		Stop
+	}
+}
+
+Actor AllmapRespawnerDM
+{
++NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+
+	DMRespawnTimer:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("Allmap",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }

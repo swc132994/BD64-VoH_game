@@ -9,15 +9,13 @@ Tag "$FO_TAG_ARMBONUS"
 	States
 	{
 	Spawn:
+		BON2 A 0 NoDelay A_SpawnItemEx("ArmorBonusRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+	Idle:
 		BON2 A 6 Light("ARMORBONUS")
 		BON2 BBCCDDCCBB 2 Light("ARMORBONUS") A_SpawnItemEx("GreenFlareSmallItem",0,0,7)
 		Loop
 	Pickup:
 		TNT1 A 0 A_GiveInventory("ArmorBonus",2)
-		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
-		Stop
-	DMRespawn:
-		TNT1 A 0 A_SpawnItemEx("ArmorBonusRespawnerDM")
 		Stop
 	}
 }
@@ -28,10 +26,11 @@ Scale 0.82
 Inventory.Pickupmessage "$FO_GOTARMOR"
 Inventory.PickupSound "ARMOR"
 Tag "$FO_TAG_ARMOR"
++INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
-		ARM1 A 0 Light("INVULN")
+		ARM1 A 0 NoDelay A_SpawnItemEx("GreenArmorRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 	ACSCheck:
 		TNT1 A 0 A_JumpIf(CallACS("AlphaSpritesACS") == 1,"ShowAlpha")
 	ShowNormal:
@@ -59,10 +58,11 @@ Scale 0.82
 Inventory.Pickupmessage "$FO_GOTMEGA"
 Inventory.PickupSound "ARMOR"
 Tag "$FO_TAG_MEGA"
++INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
-		ARM2 A 0 Light("SOULSPHERE")
+		ARM2 A 0 NoDelay A_SpawnItemEx("BlueArmorRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 	ACSCheck:
 		TNT1 A 0 A_JumpIf(CallACS("AlphaSpritesACS") == 1,"ShowAlpha")
 	ShowNormal:
@@ -95,15 +95,12 @@ Tag "$FO_TAG_HBONUS"
 	States
 	{
 	Spawn:
+		BON1 A 0 NoDelay A_SpawnItemEx("HealthBonusRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+	Idle:
 		BON1 AABBCCDD 2 Bright Light("HealthPotion") A_SpawnItemEx("BlueFlareSmallItem",0,0,7)
 		Loop
 	Pickup:
-		// Gives standard Doom HealthBonus (handles max health cap automatically)
 		TNT1 A 0 A_GiveInventory("HealthBonus",2)
-		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
-		Stop
-	DMRespawn:
-		TNT1 A 0 A_SpawnItemEx("HealthBonusRespawnerDM")
 		Stop
 	}
 }
@@ -177,7 +174,7 @@ Inventory.PickupSound "misc/p_pkup"
 	States
 	{
 	Spawn:
-		PINV A 0 Bright Light("INVULN")
+		PINV A 0 NoDelay A_SpawnItemEx("InvulnerabilityRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 	ACSCheck:
 		TNT1 A 0 A_JumpIf(CallACS("AlphaSpritesACS") == 1,"ShowAlpha")
 	ShowNormal:
@@ -188,10 +185,6 @@ Inventory.PickupSound "misc/p_pkup"
 		Goto ACSCheck
 	Pickup:
 		TNT1 A 0 A_GiveInventory("InvulnerabilitySphere",1)
-		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
-		Stop
-	DMRespawn:
-		TNT1 A 0 A_SpawnItemEx("InvulnerabilityRespawnerDM")
 		Stop
 	}
 }
@@ -199,16 +192,17 @@ Inventory.PickupSound "misc/p_pkup"
 Actor 64Soulsphere : CustomInventory// Replaces Soulsphere (RandomSpawners.dec)
 {
 Scale 0.7
-+COUNTITEM
-+INVENTORY.ALWAYSPICKUP
 Inventory.PickupMessage "$FO_GOTSUPER"
 Inventory.PickupSound "misc/p_pkup"
 Inventory.PickupAnnouncerEntry "soulsphere"
 Tag "$FO_TAG_SUPER"
++COUNTITEM
++INVENTORY.ALWAYSPICKUP
++INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
-		SOUL A 0 Bright Light("SOULSPHERE")
+		SOUL A 0 NoDelay A_SpawnItemEx("SoulsphereRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 	ACSCheck:
 		TNT1 A 0 A_JumpIf(CallACS("AlphaSpritesACS") == 1,"ShowAlpha")
 	ShowNormal:
@@ -220,9 +214,6 @@ Tag "$FO_TAG_SUPER"
 	Pickup:
 		TNT1 A 0 A_GiveInventory("SoulSphere",1)
 		TNT1 A 0 A_TakeInventory("Stamina",0)
-		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
-	DMRespawn:
-		TNT1 A 0 A_SpawnItemEx("SoulsphereRespawnerDM")
 		Stop
 	}
 }
@@ -233,10 +224,11 @@ Scale 0.82
 Inventory.PickupMessage "$FO_GOTMSPHERE"
 Inventory.PickupSound "misc/p_pkup"
 Tag "$FO_TAG_MSPHERE"
++INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
-		MEGA A 0 Bright Light("MEGASPHERE")
+		MEGA A 0 NoDelay A_SpawnItemEx("MegasphereRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 	ACSCheck:
 		TNT1 A 0 A_JumpIf(CallACS("AlphaSpritesACS") == 1,"ShowAlpha")
 	ShowNormal:
@@ -249,9 +241,6 @@ Tag "$FO_TAG_MSPHERE"
 		TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere",1)
 		TNT1 A 0 A_GiveInventory("MegasphereHealth",1)
 		TNT1 A 0 A_TakeInventory("Stamina",0)
-		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
-	DMRespawn:
-		TNT1 A 0 A_SpawnItemEx("MegasphereRespawnerDM")
 		Stop
 	}
 }
@@ -268,7 +257,7 @@ Tag "$FO_TAG_INVIS"
 	States
 	{
 	Spawn:
-		PINS A 0 Bright Light("BLURSPHERE")
+		PINS A 0 NoDelay A_SpawnItemEx("BlurSphereRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 	ACSCheck:
 		TNT1 A 0 A_JumpIf(CallACS("AlphaSpritesACS") == 1,"ShowAlpha")
 	ShowNormal:
@@ -281,10 +270,6 @@ Tag "$FO_TAG_INVIS"
 		Goto ACSCheck
 	Pickup:
 		TNT1 A 0 A_GiveInventory("BlurSphere",1)
-		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
-		Stop
-	DMRespawn:
-		TNT1 A 0 A_SpawnItemEx("BlurSphereRespawnerDM")
 		Stop
 	}
 }
@@ -295,10 +280,11 @@ Scale 0.82
 Inventory.PickupMessage "$FO_GOTSUIT"
 powerup.color "Green",0.15
 Tag "$FO_TAG_SUIT"
++INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
-		SUIT A 0 Bright Light("INVULN")
+		SUIT A 0 NoDelay A_SpawnItemEx("RadSuitRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 	ACSCheck:
 		TNT1 A 0 A_JumpIf(CallACS("AltAmmoSpritesACS") == 2,"AltSpawn")
 	ShowNormal:
@@ -326,7 +312,7 @@ Tag "$FO_TAG_VISOR"
 	States
 	{
 	Spawn:
-		PVIS A 0
+		PVIS A 0 NoDelay A_SpawnItemEx("InfraredRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 	ACSCheck:
 		TNT1 A 0 A_JumpIf(CallACS("AlphaSpritesACS") == 1,"ShowAlpha")
 	ShowNormal:
@@ -347,23 +333,26 @@ Tag "$FO_TAG_VISOR"
 		Goto ACSCheck
 	Pickup:
 		TNT1 A 0 A_GiveInventory("Infrared",1)
-		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
-		Stop
-	DMRespawn:
-		TNT1 A 0 A_SpawnItemEx("InfraredRespawnerDM")
 		Stop
 	}
 }
 
-Actor 64Allmap : Allmap Replaces Allmap
+Actor 64AllMapSpawner : RandomSpawner Replaces Allmap
+{
+	DropItem "64Allmap",255,80
+	DropItem "64Scanner",255,20
+}
+
+Actor 64Allmap : Allmap
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTMAP"
 Tag "$FO_TAG_MAP"
++INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
-		PMAP A 0 Bright Light("HellPotion")
+		PMAP A 0 NoDelay A_SpawnItemEx("AllmapRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 	ACSCheck:
 		TNT1 A 0 A_JumpIf(CallACS("AlphaSpritesACS") == 1,"ShowAlpha")
 	ShowNormal:
@@ -376,15 +365,50 @@ Tag "$FO_TAG_MAP"
 	}
 }
 
+Actor 64Scanner : CustomInventory Replaces PowerScanner 9967
+{
+//$category "Game/BD64_Artifacts"
+Scale 0.82
+Inventory.Amount 0
+Inventory.MaxAmount 0
+Inventory.PickupSound "misc/p_pkup"
+Inventory.PickupMessage "$FO_GOT_SCANNER"
+Tag "$FO_TAG_SCANNER"
++INVENTORY.ALWAYSPICKUP
++COUNTITEM
++INVENTORY.NEVERRESPAWN
+	States
+	{
+	Spawn:
+		PSCN A 0 NoDelay A_SpawnItemEx("AllmapRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+	ACSCheck:
+		TNT1 A 0 A_JumpIf(CallACS("AltAmmoSpritesACS") == 2,"AlternativeSprite")
+	ShowNormal:
+		PSCN A 15 Bright Light("ARMORBONUS")
+		PSCN BCD 3 Bright Light("ARMORBONUS")
+		PSCN E 15 Bright Light("ARMORBONUS")
+		PSCN DCB 3 Bright Light("ARMORBONUS")
+		Goto ACSCheck
+	AlternativeSprite:
+		MMAP ABCDCB 6 Bright Light("HealthPotion")
+		Goto ACSCheck
+	Pickup:
+		TNT1 A 0 A_GiveInventory("PowerScanner",1)
+		TNT1 A 0 A_GiveInventory("AllMap",1)
+		Stop
+	}
+}
+
 Actor 64Berserk : Berserk// Replaces Berserk (RandomSpawners.dec)
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTBERSERK"
 Tag "$FO_TAG_BERSERK"
++INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
-		PSTR A 0
+		PSTR A 0 NoDelay A_SpawnItemEx("BerserkRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 	ACSCheck:
 		TNT1 A 0 A_JumpIf(CallACS("AlphaSpritesACS") == 1,"ShowAlpha")
 		TNT1 A 0 A_JumpIf(CallACS("CensoredHealingACS") == 1,"ShowCensored")
@@ -406,10 +430,6 @@ Tag "$FO_TAG_BERSERK"
 		TNT1 A 0 A_GiveInventory("PowerStrength")
 		TNT1 A 0 HealThing(100,0)
 		TNT1 A 0 ACS_NamedExecute("BerserkSwitchFistsACS")
-		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawn")
-		Stop
-	DMRespawn:
-		TNT1 A 0 A_SpawnItemEx("BerserkRespawnerDM")
 		Stop
 	}
 }
@@ -549,7 +569,6 @@ Inventory.PickupMessage "$FO_GOTBACKPACK"
 Tag "$FO_TAG_BACKPACK1"
 +COUNTITEM
 +INVENTORY.ALWAYSPICKUP
-+INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
@@ -745,7 +764,7 @@ Tag "$FO_TAG_CELL"
 	}
 }
 
-Actor 64ClipBoxReplacer : RandomSpawner Replaces Clipbox
+Actor 64ClipBoxSpawner : RandomSpawner Replaces Clipbox
 {
 	DropItem "64ClipBox",255,60
 	DropItem "64HighCaliberBox",255,40
@@ -931,13 +950,15 @@ Scale 0.82
 Inventory.Amount 2
 Inventory.PickupMessage "$FO_GOTHPOTION"
 Inventory.PickupSound "misc/i_pkup"
-inventory.respawntics 1050
 Tag "$FO_TAG_HPOTION"
 +INVENTORY.BIGPOWERUP
++INVENTORY.NEVERRESPAWN
 +COUNTITEM
 	States
 	{
 	Spawn:
+		BON3 A 0 NoDelay A_SpawnItemEx("HellPotionRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+	Idle:
 		BON3 AABBCCDD 2 BRIGHT LIGHT("HellPotion") A_SpawnItemEx("RedFlareSmallItem",0,0,7)
 		Loop
 	Pickup:
@@ -949,7 +970,7 @@ Tag "$FO_TAG_HPOTION"
 
 ACTOR UpgradeStamina1 : UpgradeStamina
 {
-Inventory.MaxAmount 50	
+Inventory.MaxAmount 50
 Inventory.Amount 10
 Inventory.PickupMessage "Max health increased by 10!"
 }
@@ -1107,39 +1128,6 @@ Tag "$FO_TAG_DEMON_RED"
 		TNT1 A 0 A_GiveInventory("WpnPower5Icon",1)
 		TNT1 A 0 A_GiveInventory("UpgradeStamina1",10)
 		TNT1 A 0 HealThing(100,0)
-		Stop
-	}
-}
-
-Actor 64Scanner : CustomInventory Replaces PowerScanner 9967
-{
-//$category "Game/BD64_Artifacts"
-Scale 0.82
-Inventory.Amount 0
-Inventory.MaxAmount 0
-Inventory.PickupSound "misc/p_pkup"
-Inventory.PickupMessage "$FO_GOT_SCANNER"
-Tag "$FO_TAG_SCANNER"
-+INVENTORY.ALWAYSPICKUP
-+COUNTITEM
-	States
-	{
-	Spawn:
-		PSCN A 0
-	ACSCheck:
-		TNT1 A 0 A_JumpIf(CallACS("AltAmmoSpritesACS") == 2,"AlternativeSprite")
-	ShowNormal:
-		PSCN A 15 Bright Light("ARMORBONUS")
-		PSCN BCD 3 Bright Light("ARMORBONUS")
-		PSCN E 15 Bright Light("ARMORBONUS")
-		PSCN DCB 3 Bright Light("ARMORBONUS")
-		Goto ACSCheck
-	AlternativeSprite:
-		MMAP ABCDCB 6 Bright Light("HealthPotion")
-		Goto ACSCheck
-	Pickup:
-		TNT1 A 0 A_GiveInventory("PowerScanner",1)
-		TNT1 A 0 A_GiveInventory("AllMap",1)
 		Stop
 	}
 }

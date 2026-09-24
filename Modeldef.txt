@@ -1379,9 +1379,10 @@ Skin 0 "PNTGA0.png"
 Scale 100 100 1
 ZOffset 0.8
 FrameIndex PNTG A 0 0
+
 }
 
-Model PentagramOff
+Model BurningPentagram
 {
 Path "models"
 Model 0 "bloodspot.md3"

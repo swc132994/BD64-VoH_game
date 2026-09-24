@@ -143,6 +143,7 @@ ACTOR BarrelExplosionSmokeColumn
 XScale 0.7
 YScale 1.5
 Alpha 0.12
+Mass 1
 RenderStyle Add
 +NOBLOCKMAP
 +NOTELEPORT

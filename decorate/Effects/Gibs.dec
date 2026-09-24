@@ -3170,37 +3170,37 @@ ACTOR LostSoulPiece5 : LostSoulPiece1
 //Stalker
 ACTOR StalkerPiece1 : LostSoulPiece1
 {
-	RenderStyle Translucent
-	Alpha 0.5
-	Translation "0:255=%[0,0.05,0.02]:[0,0.55,0.25]"
+RenderStyle Translucent
+Alpha 0.5
+Translation "0:255=%[0,0.05,0.02]:[0,0.55,0.25]"
 }
 
 ACTOR StalkerPiece2 : LostSoulPiece2
 {
-	RenderStyle Translucent
-	Alpha 0.5
-	Translation "0:255=%[0,0.05,0.02]:[0,0.55,0.25]"
+RenderStyle Translucent
+Alpha 0.5
+Translation "0:255=%[0,0.05,0.02]:[0,0.55,0.25]"
 }
 
 ACTOR StalkerPiece3 : LostSoulPiece3
 {
-	RenderStyle Translucent
-	Alpha 0.5
-	Translation "0:255=%[0,0.05,0.02]:[0,0.55,0.25]"
+RenderStyle Translucent
+Alpha 0.5
+Translation "0:255=%[0,0.05,0.02]:[0,0.55,0.25]"
 }
 
 ACTOR StalkerPiece4 : LostSoulPiece4
 {
-	RenderStyle Translucent
-	Alpha 0.5
-	Translation "0:255=%[0,0.05,0.02]:[0,0.55,0.25]"
+RenderStyle Translucent
+Alpha 0.5
+Translation "0:255=%[0,0.05,0.02]:[0,0.55,0.25]"
 }
 
 ACTOR StalkerPiece5 : LostSoulPiece5
 {
-	RenderStyle Translucent
-	Alpha 0.5
-	Translation "0:255=%[0,0.05,0.02]:[0,0.55,0.25]"
+RenderStyle Translucent
+Alpha 0.5
+Translation "0:255=%[0,0.05,0.02]:[0,0.55,0.25]"
 }
 
 //Classic Cacodemon

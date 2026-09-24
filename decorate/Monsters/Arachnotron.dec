@@ -17,7 +17,7 @@ BloodType "Brutal_Blood"
 DropItem "DemonEssenceSpawner"
 Tag "$FO_TAG_SPIDER"
 Obituary "$FO_OB_BABY"
-+NOBLOODDECALS
++NOBLOOD
 +NEVERFAST
 -BOSSDEATH
 	states

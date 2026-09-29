@@ -6,6 +6,7 @@ Inventory.PickupSound "misc/p_pkup"
 Tag "$FO_TAG_ARMBONUS"
 +INVENTORY.ALWAYSPICKUP
 +INVENTORY.NEVERRESPAWN
++COUNTITEM
 	States
 	{
 	Spawn:
@@ -92,6 +93,7 @@ Inventory.PickupSound "misc/p_pkup"
 Tag "$FO_TAG_HBONUS"
 +INVENTORY.ALWAYSPICKUP
 +INVENTORY.NEVERRESPAWN
++COUNTITEM
 	States
 	{
 	Spawn:
@@ -339,8 +341,8 @@ Tag "$FO_TAG_VISOR"
 
 Actor 64AllMapSpawner : RandomSpawner Replaces Allmap
 {
-	DropItem "64Allmap",255,80
-	DropItem "64Scanner",255,20
+DropItem "64Allmap",255,80
+DropItem "64Scanner",255,20
 }
 
 Actor 64Allmap : Allmap
@@ -375,8 +377,8 @@ Inventory.PickupSound "misc/p_pkup"
 Inventory.PickupMessage "$FO_GOT_SCANNER"
 Tag "$FO_TAG_SCANNER"
 +INVENTORY.ALWAYSPICKUP
-+COUNTITEM
 +INVENTORY.NEVERRESPAWN
++COUNTITEM
 	States
 	{
 	Spawn:
@@ -554,10 +556,10 @@ Inventory.MaxAmount 1
 
 Actor 64BackpackSpawner : RandomSpawner Replaces Backpack
 {
-	DropItem "64Backpack",255,60
-	DropItem "64BackpackPistolSilencer",255,13
-	DropItem "64BackpackFlashlight",255,13
-	DropItem "64BackpackPistolSilencerAndFlashlight",255,14
+DropItem "64Backpack",255,50
+DropItem "64BackpackPistolSilencer",255,20
+DropItem "64BackpackFlashlight",255,20
+DropItem "64BackpackPistolSilencerAndFlashlight",255,10
 }
 
 Actor 64Backpack : CustomInventory
@@ -567,11 +569,13 @@ Height 26
 Inventory.PickupSound "BPPICK"
 Inventory.PickupMessage "$FO_GOTBACKPACK"
 Tag "$FO_TAG_BACKPACK1"
-+COUNTITEM
 +INVENTORY.ALWAYSPICKUP
++INVENTORY.NEVERRESPAWN
++COUNTITEM
 	States
 	{
 	Spawn:
+		BPAK A 0 NoDelay A_SpawnItemEx("BackpackRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		BPAK A -1
 		Stop
 	Pickup:
@@ -585,10 +589,10 @@ Actor 64BackpackPistolSilencer : 64Backpack
 {
 Inventory.PickupMessage "$FO_GOTBACKPACK2"
 Tag "$FO_TAG_BACKPACK2"
--COUNTITEM
 	States
 	{
 	Spawn:
+		BPAK B 0 NoDelay A_SpawnItemEx("BackpackRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		BPAK B -1
 		Stop
 	Pickup:
@@ -601,10 +605,10 @@ Actor 64BackpackFlashlight : 64Backpack
 {
 Inventory.PickupMessage "$FO_GOTBACKPACK3"
 Tag "$FO_TAG_BACKPACK3"
--COUNTITEM
 	States
 	{
 	Spawn:
+		BPAK C 0 NoDelay A_SpawnItemEx("BackpackRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		BPAK C -1
 		Stop
 	Pickup:
@@ -617,10 +621,10 @@ Actor 64BackpackPistolSilencerAndFlashlight : 64Backpack
 {
 Inventory.PickupMessage "$FO_GOTBACKPACK4"
 Tag "$FO_TAG_BACKPACK4"
--COUNTITEM
 	States
 	{
 	Spawn:
+		BPAK D 0 NoDelay A_SpawnItemEx("BackpackRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		BPAK D -1
 		Stop
 	Pickup:

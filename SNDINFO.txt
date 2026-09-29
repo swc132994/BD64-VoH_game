@@ -1151,11 +1151,11 @@ vile/raise				DSSLOP
 //Quit, etc
 $random menu/quit1
 	{
-	items/health2 powerups/invis  berserk/punch cyber/pain baron/pain weapons/unmaker player/male/death1 demon/pain grunt/pain misc/gibbed misc/teleport grunt/sight1 grunt/sight3 demon/melee
+	cyber/pain baron/pain weapons/unmaker player/male/death1 demon/pain grunt/pain misc/gibbed misc/teleport grunt/sight1 grunt/sight3 demon/melee
 	}
 $random menu/quit2
 	{
-	gibbage/egg1 powerups/megasphere chainguy/sight1 chainguy/sight2 skeleton/head gibbage/vilebody1 vile/active misc/p_pkup brain/cube misc/gibbed skeleton/swing knight/death baby/active demon/melee
+	misc/p_pkup misc/gibbed skeleton/swing knight/death baby/active demon/melee
 	}
 
 //Fireplace & torches

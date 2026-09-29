@@ -270,7 +270,7 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 
 Actor KickAttack : FastProjectile
 {
-Damage 8
+Damage 5
 DamageType "Kick"
 Speed 22
 Radius 18
@@ -281,7 +281,6 @@ SeeSound "none"
 DeathSound "none"
 Decal "none"
 Obituary "$FO_OB_MPKICK"
-+NOEXTREMEDEATH
 	States
 	{
 	Spawn:
@@ -307,7 +306,7 @@ Obituary "$FO_OB_MPKICK"
 
 Actor SuperKickAttack : KickAttack
 {
-Damage 24	//*3 more than regualr kick
+Damage 15	//*3 more than regualr kick
 DamageType "SuperKick"
 Decal "Crack"
 +EXTREMEDEATH
@@ -330,14 +329,14 @@ Decal "Crack"
 
 Actor AirKickAttack : KickAttack
 {
-Damage 9
+Damage 5
 Radius 20
 Height 32
 }
 
 Actor SuperAirKickAttack : KickAttack
 {
-Damage 27	//3* more than air kick
+Damage 15	//3* more than air kick
 DamageType "SuperKick"
 Radius 20
 Height 32

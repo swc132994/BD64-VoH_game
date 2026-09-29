@@ -835,11 +835,27 @@ Actor UnmakerRedPower : CustomInventory
 	States
 	{
 	Pickup:
-		TNT1 A 0 A_GiveInventory("PowerStrength",1)
+		TNT1 A 0 A_GiveInventory("PowerStrengthUnmaker",1)
 		TNT1 A 0 A_GiveInventory("PowerDrainUnmaker",1)
 		TNT1 A 0 A_GiveInventory("PowerTimeFreezerUnmaker",1)
 		Stop
 	}
+}
+
+Actor PowerMeleeStrengthUnmaker : PowerDamage
+{
+DamageFactor "Melee", 4.0
+DamageFactor "Kick", 4.0
+}
+
+Actor PowerStrengthUnmaker : PowerupGiver
+{
+Powerup.Type "MeleeStrengthUnmaker"
+Powerup.Duration -15
+Powerup.Color "C4 00 00", 0.2
+Inventory.MaxAmount 0
++INVENTORY.AUTOACTIVATE
++INVENTORY.ALWAYSPICKUP
 }
 
 Actor PowerDrainUnmaker : PowerDrain

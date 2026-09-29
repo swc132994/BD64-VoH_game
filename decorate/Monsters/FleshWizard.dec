@@ -3,6 +3,7 @@ Actor 64FleshWizard 19127
 //$category "Game/BD64_Monsters"
 Scale 0.64
 Health 400
+GibHealth 100
 Radius 20
 Height 56
 Mass 100

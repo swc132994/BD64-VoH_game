@@ -2,7 +2,7 @@ Actor 64HellHoundGEC : Demon
 {
 Scale 0.8
 Health 500
-GibHealth 20
+GibHealth 80
 Speed 15
 Radius 24
 MeleeThreshold 200

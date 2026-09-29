@@ -3,6 +3,7 @@ Actor 64Revenant : Revenant// Replaces Revenant (RandomSpawners.dec)
 //$category "Game/BD64_Monsters"
 Scale 0.68
 Health 350
+GibHealth 80
 MeleeThreshold 146	//default 196
 MeleeRange 60		//default 44
 MaxStepHeight 28

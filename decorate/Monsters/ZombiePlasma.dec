@@ -2,6 +2,7 @@ Actor 64PlasmaGuy : 64Zombieman 19138
 {
 //$category "Game/BD64_Monsters"
 Health 80
+GibHealth 35
 Speed 12
 SeeSound "colonelzombie/see"
 ActiveSound "colonelzombie/active"

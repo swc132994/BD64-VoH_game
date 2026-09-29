@@ -45,7 +45,7 @@ Actor 64ZombieMan : ZombieMan// Replaces ZombieMan (RandomSpawners.dec)
 //$category "Game/BD64Monsters
 Scale 0.8
 Health 40
-GibHealth 15
+GibHealth 30
 Speed 6
 MaxStepHeight 28
 MaxDropOffHeight 32
@@ -680,7 +680,7 @@ Actor 64ShotgunGuy : 64Zombieman// Replaces ShotgunGuy (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Speed 6
-GibHealth 15
+GibHealth 30
 Tag "$FO_TAG_SHOTGUNGUY"
 Obituary "$FO_OB_SHOTGUY"
 DropItem "64ShotgunDrop"
@@ -1242,6 +1242,7 @@ Actor 64SSGGuy : 64ShotgunGuy 19110
 {
 //$category "Game/BD64_Monsters"
 Speed 7
+GibHealth 30
 DropItem "64SSGDrop"
 DropItem "SOULSPAWNER"
 Tag "$FO_TAG_SSGGUY"
@@ -1791,6 +1792,7 @@ Actor 64ChaingunGuy : 64Zombieman// Replaces Chaingunguy (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Health 120
+GibHealth 40
 Speed 4
 AttackSound "MGUNFIR"
 Tag "$FO_TAG_COMMANDO"
@@ -2208,12 +2210,11 @@ Actor BrutalizedChaingunner_2 : BrutalizedChaingunner_1
 	}
 }
 
-
-
 Actor 64ZombieMarine : 64Zombieman// Replaces WolfensteinSS (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Health 80
+GibHealth 35
 Speed 12
 DamageFactor "Head",2.25
 AttackSound "RIFLE"

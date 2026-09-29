@@ -21,10 +21,10 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 MaxTargetRange 128
 Tag "$FO_TAG_FORGOTTEN"
+BloodType "FlameMonsterBlood"
 +DONTHARMCLASS
-+NOBLOOD
++NOBLOODDECALS
 +FORCEXYBILLBOARD
--MISSILEMORE
 +NEVERFAST
 	states
 	{
@@ -110,11 +110,11 @@ Tag "$FO_TAG_FORGOTTEN"
 		TNT1 AAAAA 0 A_CustomMissile("ExplosionSmokeFast22",30,0,random(0,360),2,random(0,360))
 		ESKU H 4 Bright A_Scream
 		ESKU I 4 Bright
-		TNT1 AA 0 A_SpawnItemEx("LostSoulPiece1",0,0,42,frandom(-8,8),frandom(-8,8),frandom(0,8),0,SXF_ABSOLUTEMOMENTUM)
-		TNT1 A 0 A_SpawnItemEx("LostSoulPiece2",0,0,42,frandom(-8,8),frandom(-8,8),frandom(0,8),0,SXF_ABSOLUTEMOMENTUM)
-		TNT1 A 0 A_SpawnItemEx("LostSoulPiece3",0,0,42,frandom(-8,8),frandom(-8,8),frandom(0,8),0,SXF_ABSOLUTEMOMENTUM)
-		TNT1 A 0 A_SpawnItemEx("LostSoulPiece4",0,0,42,frandom(-8,8),frandom(-8,8),frandom(0,8),0,SXF_ABSOLUTEMOMENTUM)
-		TNT1 A 0 A_SpawnItemEx("LostSoulPiece5",0,0,42,frandom(-8,8),frandom(-8,8),frandom(0,8),0,SXF_ABSOLUTEMOMENTUM)
+		TNT1 AA 0 A_SpawnItemEx("ForgottenPiece1",0,0,42,frandom(-8,8),frandom(-8,8),frandom(0,8),0,SXF_ABSOLUTEMOMENTUM)
+		TNT1 A 0 A_SpawnItemEx("ForgottenPiece2",0,0,42,frandom(-8,8),frandom(-8,8),frandom(0,8),0,SXF_ABSOLUTEMOMENTUM)
+		TNT1 A 0 A_SpawnItemEx("ForgottenPiece3",0,0,42,frandom(-8,8),frandom(-8,8),frandom(0,8),0,SXF_ABSOLUTEMOMENTUM)
+		TNT1 A 0 A_SpawnItemEx("ForgottenPiece4",0,0,42,frandom(-8,8),frandom(-8,8),frandom(0,8),0,SXF_ABSOLUTEMOMENTUM)
+		TNT1 A 0 A_SpawnItemEx("ForgottenPiece5",0,0,42,frandom(-8,8),frandom(-8,8),frandom(0,8),0,SXF_ABSOLUTEMOMENTUM)
 		ESKU J 4 A_NoBlocking
 		ESKU KLMN 4 A_FadeOut(0.1667)
 		ESKU O 4 A_FadeOut(0.1667)

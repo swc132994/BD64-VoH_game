@@ -2122,8 +2122,6 @@ DropItem "64ShotgunDropNPC"
 	}
 }
 
-// are these even used lmao
-
 Actor 64MarineUnmaker : ScriptedMarine 9940
 {
 //$category "Game/BD64_Marine_Bots"

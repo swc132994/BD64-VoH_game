@@ -1,3 +1,16 @@
+Actor FlameMonsterBlood : Blood
+{
++NOINTERACTION
++CLIENTSIDEONLY
+	States
+	{
+	Spawn:
+		TNT1 AAA 0 NoDelay A_SpawnItemEx("LavaSmoke",random(-8,8),random(-8,8),4,frandom(-1.0,1.0),frandom(-1.0,1.0),frandom(2.0,4.5))
+		TNT1 A 1
+		Stop
+	}
+}
+
 actor Brutal_Blood Replaces Blood
 {
 +NOINTERACTION

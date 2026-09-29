@@ -15,7 +15,7 @@ DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 Tag "$FO_TAG_LOSTSOUL"
 Obituary "$FO_OB_SKULL"
-+NOBLOOD
+BloodType "FlameMonsterBlood"
 +NOBLOODDECALS
 +FORCEXYBILLBOARD
 +NEVERFAST

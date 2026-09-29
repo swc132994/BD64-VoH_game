@@ -3,6 +3,7 @@ ACTOR 64Butcher 19131
 Scale 0.85
 Mass 300
 Health 300
+GibHealth 60
 Radius 20
 Height 56
 Speed 10

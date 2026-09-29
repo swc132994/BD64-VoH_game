@@ -3,6 +3,7 @@ Actor 64ClassicCacodemon : Cacodemon
 //$category "Game/BD64_Monsters"
 Scale 0.8
 Health 350
+GibHealth 70
 PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",255
@@ -334,6 +335,7 @@ Actor NightmareClassicCacodemon : Cacodemon
 SpawnID 156
 Scale 0.8
 Health 700
+GibHealth 80
 Speed 14
 Alpha 0.5
 RenderStyle Translucent

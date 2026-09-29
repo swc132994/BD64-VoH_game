@@ -2,7 +2,7 @@ Actor 64DoomImp : DoomImp// Replaces DoomImp (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
 Scale 0.75
-GibHealth 15
+GibHealth 50
 MeleeRange 60 //default 44
 MeleeThreshold 70
 MaxStepHeight 28
@@ -665,6 +665,7 @@ Actor NightmareImp : 64Doomimp 19989
 SpawnID 13
 Scale 0.75
 Health 60
+GibHealth 55
 Speed 14
 MeleeRange 60 //default 44
 PainChance 200

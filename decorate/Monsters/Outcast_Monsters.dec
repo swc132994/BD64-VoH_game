@@ -4,6 +4,7 @@ Actor 64AcidDemon : Demon 19106
 SpawnID 158
 Scale 0.8
 Health 200
+GibHealth 60
 MeleeRange 60 //default 44
 MaxTargetRange 384
 MeleeThreshold 125
@@ -462,6 +463,7 @@ Actor 64Nightcrawler : 64Arachnotron 19105
 {
 //$category "Game/BD64_Monsters"
 Health 750
+GibHealth 100
 SeeSound "NCrawler/sight"
 ActiveSound "NCrawler/Active"
 PainSound "NCrawler/pain"
@@ -477,9 +479,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 Obituary "$FO_OB_NIGHTCRAWLER"
 Tag "$FO_TAG_NIGHTCRAWLER"
 DropItem "DemonEssenceSpawner"
-BloodType "Brutal_BloodBlue"
 +DONTHARMSPECIES
--BOSSDEATH
 	States
 	{
 	Spawn:

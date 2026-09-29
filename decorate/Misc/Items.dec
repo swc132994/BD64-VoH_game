@@ -1,11 +1,10 @@
-Actor 64ArmorBonus : CustomInventory// Replaces ArmorBonus (RandomSpawners.dec)
+Actor 64ArmorBonus : ArmorBonus// Replaces ArmorBonus (RandomSpawners.dec)
 {
 Scale 0.82
-Inventory.PickupMessage "$FO_GOTARMBONUS"
-Inventory.PickupSound "misc/p_pkup"
+Armor.SaveAmount 2
+Armor.Savepercent 50
+Inventory.Pickupmessage "$FO_GOTARMBONUS"
 Tag "$FO_TAG_ARMBONUS"
-+INVENTORY.ALWAYSPICKUP
-+INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
@@ -14,9 +13,6 @@ Tag "$FO_TAG_ARMBONUS"
 		BON2 A 6 Light("ARMORBONUS")
 		BON2 BBCCDDCCBB 2 Light("ARMORBONUS") A_SpawnItemEx("GreenFlareSmallItem",0,0,7)
 		Loop
-	Pickup:
-		TNT1 A 0 A_GiveInventory("ArmorBonus",2)
-		Stop
 	}
 }
 
@@ -84,14 +80,12 @@ Tag "$FO_TAG_MEGA"
 	}
 }
 
-Actor 64HealthBonus : CustomInventory// Replaces HealthBonus (RandomSpawners.dec)
+Actor 64HealthBonus : HealthBonus
 {
 Scale 0.82
+Inventory.Amount 2
 Inventory.PickupMessage "$FO_GOTHTHBONUS"
-Inventory.PickupSound "misc/p_pkup"
 Tag "$FO_TAG_HBONUS"
-+INVENTORY.ALWAYSPICKUP
-+INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
@@ -99,9 +93,6 @@ Tag "$FO_TAG_HBONUS"
 	Idle:
 		BON1 AABBCCDD 2 Bright Light("HealthPotion") A_SpawnItemEx("BlueFlareSmallItem",0,0,7)
 		Loop
-	Pickup:
-		TNT1 A 0 A_GiveInventory("HealthBonus",2)
-		Stop
 	}
 }
 
@@ -162,15 +153,12 @@ Tag "$FO_TAG_MEDIKIT"
 	}
 }
 
-Actor 64InvulnerabilitySphere : CustomInventory// Replaces InvulnerabilitySphere (RandomSpawners.dec)
+Actor 64InvulnerabilitySphere : InvulnerabilitySphere// Replaces InvulnerabilitySphere (RandomSpawners.dec)
 {
 Scale 0.82
-Tag "$FO_TAG_INVUL"
+powerup.color "FF FF FF",0.30
 Inventory.PickupMessage "$FO_GOTINVUL"
-Inventory.PickupSound "misc/p_pkup"
-+COUNTITEM
-+INVENTORY.ALWAYSPICKUP
-+INVENTORY.NEVERRESPAWN
+Tag "$FO_TAG_INVUL"
 	States
 	{
 	Spawn:
@@ -183,9 +171,6 @@ Inventory.PickupSound "misc/p_pkup"
 	ShowAlpha:
 		P1NV ABCDCB 6 Bright Light("INVULN")
 		Goto ACSCheck
-	Pickup:
-		TNT1 A 0 A_GiveInventory("InvulnerabilitySphere",1)
-		Stop
 	}
 }
 
@@ -245,15 +230,13 @@ Tag "$FO_TAG_MSPHERE"
 	}
 }
 
-Actor 64BlurSphere : CustomInventory// Replaces BlurSphere (RandomSpawners.dec)
+Actor 64BlurSphere : BlurSphere// Replaces BlurSphere (RandomSpawners.dec)
 {
 Scale 0.82
+powerup.strength 50
 Inventory.PickupMessage "$FO_GOTINVIS"
-Inventory.PickupSound "misc/p_pkup"
 Tag "$FO_TAG_INVIS"
-+COUNTITEM
-+INVENTORY.ALWAYSPICKUP
-+INVENTORY.NEVERRESPAWN
+-VISIBILITYPULSE
 	States
 	{
 	Spawn:
@@ -268,9 +251,6 @@ Tag "$FO_TAG_INVIS"
 		PIN2 ABCDABCDABCD 2 Bright Light("BLURSPHERE")
 		PIN2 ABCDABCDABCD 2 Bright Light("BLURSPHERE")
 		Goto ACSCheck
-	Pickup:
-		TNT1 A 0 A_GiveInventory("BlurSphere",1)
-		Stop
 	}
 }
 
@@ -301,14 +281,11 @@ Tag "$FO_TAG_SUIT"
 	}
 }
 
-Actor 64Infrared : CustomInventory// Replaces Infrared (RandomSpawners.dec)
+ACTOR 64Infrared : Infrared// Replaces Infrared (RandomSpawners.dec)
 {
 Scale 0.82
 Inventory.PickupMessage "$FO_GOTVISOR"
-Inventory.PickupSound "misc/p_pkup"
 Tag "$FO_TAG_VISOR"
-+INVENTORY.ALWAYSPICKUP
-+INVENTORY.NEVERRESPAWN
 	States
 	{
 	Spawn:
@@ -331,16 +308,13 @@ Tag "$FO_TAG_VISOR"
 		PVI2 A 6
 		PVI2 B 6 Bright
 		Goto ACSCheck
-	Pickup:
-		TNT1 A 0 A_GiveInventory("Infrared",1)
-		Stop
 	}
 }
 
 Actor 64AllMapSpawner : RandomSpawner Replaces Allmap
 {
-	DropItem "64Allmap",255,80
-	DropItem "64Scanner",255,20
+DropItem "64Allmap",255,80
+DropItem "64Scanner",255,20
 }
 
 Actor 64Allmap : Allmap
@@ -375,8 +349,8 @@ Inventory.PickupSound "misc/p_pkup"
 Inventory.PickupMessage "$FO_GOT_SCANNER"
 Tag "$FO_TAG_SCANNER"
 +INVENTORY.ALWAYSPICKUP
-+COUNTITEM
 +INVENTORY.NEVERRESPAWN
++COUNTITEM
 	States
 	{
 	Spawn:
@@ -554,10 +528,10 @@ Inventory.MaxAmount 1
 
 Actor 64BackpackSpawner : RandomSpawner Replaces Backpack
 {
-	DropItem "64Backpack",255,60
-	DropItem "64BackpackPistolSilencer",255,13
-	DropItem "64BackpackFlashlight",255,13
-	DropItem "64BackpackPistolSilencerAndFlashlight",255,14
+DropItem "64Backpack",255,50
+DropItem "64BackpackPistolSilencer",255,20
+DropItem "64BackpackFlashlight",255,20
+DropItem "64BackpackPistolSilencerAndFlashlight",255,10
 }
 
 Actor 64Backpack : CustomInventory
@@ -567,11 +541,13 @@ Height 26
 Inventory.PickupSound "BPPICK"
 Inventory.PickupMessage "$FO_GOTBACKPACK"
 Tag "$FO_TAG_BACKPACK1"
-+COUNTITEM
 +INVENTORY.ALWAYSPICKUP
++INVENTORY.NEVERRESPAWN
++COUNTITEM
 	States
 	{
 	Spawn:
+		BPAK A 0 NoDelay A_SpawnItemEx("BackpackRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		BPAK A -1
 		Stop
 	Pickup:
@@ -585,10 +561,10 @@ Actor 64BackpackPistolSilencer : 64Backpack
 {
 Inventory.PickupMessage "$FO_GOTBACKPACK2"
 Tag "$FO_TAG_BACKPACK2"
--COUNTITEM
 	States
 	{
 	Spawn:
+		BPAK B 0 NoDelay A_SpawnItemEx("BackpackRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		BPAK B -1
 		Stop
 	Pickup:
@@ -601,10 +577,10 @@ Actor 64BackpackFlashlight : 64Backpack
 {
 Inventory.PickupMessage "$FO_GOTBACKPACK3"
 Tag "$FO_TAG_BACKPACK3"
--COUNTITEM
 	States
 	{
 	Spawn:
+		BPAK C 0 NoDelay A_SpawnItemEx("BackpackRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		BPAK C -1
 		Stop
 	Pickup:
@@ -617,10 +593,10 @@ Actor 64BackpackPistolSilencerAndFlashlight : 64Backpack
 {
 Inventory.PickupMessage "$FO_GOTBACKPACK4"
 Tag "$FO_TAG_BACKPACK4"
--COUNTITEM
 	States
 	{
 	Spawn:
+		BPAK D 0 NoDelay A_SpawnItemEx("BackpackRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 		BPAK D -1
 		Stop
 	Pickup:

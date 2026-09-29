@@ -30,13 +30,14 @@ DamageFactor "BFG",0.75
 DamageFactor "Flames",0
 DamageFactor "Ice",2.0
 DropItem "DemonEssenceSpawner"
+BloodType "FlameMonsterBlood"
 MONSTER
 +DONTHARMCLASS
 +NOGRAVITY
 +FLOAT
 +QUICKTORETALIATE
 +NOICEDEATH
-+NOBLOOD
++NOBLOODDECALS
 +NEVERFAST
 	States
 	{

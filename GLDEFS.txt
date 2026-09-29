@@ -1568,7 +1568,7 @@ flickerlight AlphaShock_X3
 
 flickerlight AlphaPain
 {
-	color 0.0 1.0 1.0
+	color 0.0 1.0 0.0
 	size 56
 	secondarysize 64
 	chance 0.25
@@ -1576,7 +1576,7 @@ flickerlight AlphaPain
 
 flickerlight AlphaPain_X1
 {
-	color 0.0 0.8 0.8
+	color 0.0 0.8 0.0
 	size 72
 	secondarySize 80
 	chance 0.25
@@ -1584,7 +1584,7 @@ flickerlight AlphaPain_X1
 
 flickerlight AlphaPain_X2
 {
-	color 0.0 0.7 0.7
+	color 0.0 0.7 0.0
 	size 88
 	secondarySize 96
 	chance 0.25
@@ -1592,7 +1592,7 @@ flickerlight AlphaPain_X2
 
 flickerlight AlphaPain_X3
 {
-	color 0.0 0.6 0.6
+	color 0.0 0.6 0.0
 	size 104
 	secondarySize 112
 	chance 0.25
@@ -1600,7 +1600,7 @@ flickerlight AlphaPain_X3
 
 flickerlight AlphaPain_X4
 {
-	color 0.0 0.5 0.5
+	color 0.0 0.5 0.0
 	size 112
 	secondarySize 120
 	chance 0.25
@@ -1608,7 +1608,7 @@ flickerlight AlphaPain_X4
 
 flickerlight AlphaPain_X5
 {
-	color 0.0 0.4 0.4
+	color 0.0 0.4 0.0
 	size 112
 	secondarySize 120
 	chance 0.25
@@ -1616,7 +1616,7 @@ flickerlight AlphaPain_X5
 
 flickerlight AlphaPain_X6
 {
-	color 0.0 0.3 0.3
+	color 0.0 0.3 0.0
 	size 112
 	secondarySize 120
 	chance 0.25
@@ -1624,7 +1624,7 @@ flickerlight AlphaPain_X6
 
 flickerlight AlphaPain_X7
 {
-	color 0.0 0.2 0.2
+	color 0.0 0.2 0.0
 	size 112
 	secondarySize 120
 	chance 0.25
@@ -1632,7 +1632,7 @@ flickerlight AlphaPain_X7
 
 flickerlight AlphaPain_X8
 {
-	color 0.0 0.1 0.1
+	color 0.0 0.1 0.0
 	size 112
 	secondarySize 120
 	chance 0.25

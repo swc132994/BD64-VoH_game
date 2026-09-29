@@ -28,8 +28,9 @@ PainSound "Vassago/PainSound"
 DeathSound "Vassago/DeathSound"
 Tag "$FO_TAG_VASSAGO"
 Obituary "$FO_OB_VASSAGO"
+BloodType "FlameMonsterBlood"
 MONSTER
-+NOBLOOD
++NOBLOODDECALS
 +DONTHARMCLASS
 +MISSILEEVENMORE
 +FLOORCLIP
@@ -125,7 +126,7 @@ MONSTER
 		TNT1 A 0 A_Recoil(-10)
 		TNT1 A 0 ThrustThingZ(0,15,0,0)
 		TNT1 AAAA 0 A_CustomMissile("RealFlameTrailsSmall",random(25,40),random(-20,20),random(0,360),2,random(70,110))
-		VASS G 4 A_CustomMeleeAttack(6*random(2,7),"baron/melee")
+		VASS G 4 A_CustomMeleeAttack(6*random(2,7),"baron/melee","weapons/gswing","Extreme")
 		VASS H 4 A_FaceTarget
 		TNT1 AAAA 0 A_CustomMissile("RealFlameTrailsSmall",random(25,40),random(-20,20),random(0,360),2,random(70,110))
 		VASS EA 4 A_Recoil(4)

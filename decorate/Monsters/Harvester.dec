@@ -3,6 +3,7 @@ actor 64SoulHarvester 19141
 //$category "Game/BD64_Monsters"
 Scale 0.75
 Health 100
+GibHealth 50
 Radius 20
 Height 56
 Speed 12
@@ -503,12 +504,15 @@ PROJECTILE
 		TNT1 A 0 A_SpawnItemEx("LensFlareProjectileYellow",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
 		Loop
 	Death:
+		TNT1 A 0 A_GiveToTarget("Health",Random(4,8))
+	Crash:
 		TNT1 A 0 A_SetScale(1.5,1.5)
 		TNT1 A 0 A_CheckSight("QuietDeath")
 		TNT1 AAA 0 A_CustomMissile("ExplosionParticleYellowHeavySmall",0,0,random(0,360),2,random(10,70))
 		TNT1 AAAAAAAAA 0 A_CustomMissile("ExplosionParticleYellowHeavySmall",0,0,random(0,360),2,random(20,50))
 		TNT1 AAAAA 0 A_CustomMissile("ExplosionParticleYellowVeryFast",0,0,random(0,360),2,random(20,40))
 		TNT1 AAAA 0 A_CustomMissile("ExplosionParticleYellow",0,0,random(0,360),2,random(0,360))
+		Goto QuietDeath
 	QuietDeath:
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterSmall")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterSmall")

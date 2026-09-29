@@ -11,7 +11,6 @@ Actor ChainsawRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -32,7 +31,6 @@ Actor ShotgunRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -53,7 +51,6 @@ Actor SuperShotgunRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -74,7 +71,6 @@ Actor ChaingunRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -95,7 +91,6 @@ Actor RocketLauncherRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -116,7 +111,6 @@ Actor PlasmaRifleRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -137,7 +131,6 @@ Actor BFG9000RespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -160,7 +153,6 @@ Actor HealthBonusRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -181,7 +173,6 @@ Actor ArmorBonusRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -202,7 +193,6 @@ Actor HellPotionRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -223,7 +213,6 @@ Actor GreenArmorRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -244,7 +233,6 @@ Actor BlueArmorRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -265,7 +253,6 @@ Actor SoulsphereRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -286,7 +273,6 @@ Actor MegasphereRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -307,7 +293,6 @@ Actor BlurSphereRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -328,7 +313,6 @@ Actor InfraredRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -349,7 +333,6 @@ Actor BerserkRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -370,7 +353,6 @@ Actor InvulnerabilityRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -391,7 +373,6 @@ Actor RadSuitRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
@@ -412,11 +393,30 @@ Actor AllmapRespawnerDM
 		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
 		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
 		Stop
-
 	DMRespawnTimer:
 		TNT1 A 1050
 		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
 		TNT1 A 1 A_SpawnItemEx("Allmap",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+		Stop
+	}
+}
+
+Actor BackpackRespawnerDM
+{
++NOINTERACTION
++NOGRAVITY
++MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		TNT1 A 6
+		TNT1 A 0 A_JumpIfCloser(64,"Spawn")
+		TNT1 A 0 A_JumpIf(CallACS("DM_SpawnACS") == 1,"DMRespawnTimer")
+		Stop
+	DMRespawnTimer:
+		TNT1 A 1050
+		TNT1 A 0 A_SpawnItemEx("TeleportationFogObject")
+		TNT1 A 1 A_SpawnItemEx("Backpack",0,0,0,0,0,0,0,SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
 		Stop
 	}
 }

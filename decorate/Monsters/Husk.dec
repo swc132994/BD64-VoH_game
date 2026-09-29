@@ -2,7 +2,7 @@ Actor 64HuskZombie : 64ZombieMan 19128
 {
 //$category "Game/BD64_Monsters"
 Scale 0.7
-GibHealth 15
+GibHealth 30
 MeleeRange 60
 Radius 15
 DamageFactor "CauseWaterSplash",0.0

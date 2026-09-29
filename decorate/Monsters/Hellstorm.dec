@@ -4,6 +4,7 @@ ACTOR 64Hellstorm 19132
 Translation "112:127=%[0,0,0]:[0.35,0,0.7]"
 Scale 0.64
 Health 800
+GibHealth 120
 Radius 20
 Height 56
 Mass 500

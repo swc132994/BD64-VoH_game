@@ -3,7 +3,7 @@ Actor 64Wraith 19123
 //$category "Game/BD64_Monsters"
 Scale 0.8
 Health 300
-GibHealth 100
+GibHealth 60
 Height 48
 Radius 19
 Mass 200

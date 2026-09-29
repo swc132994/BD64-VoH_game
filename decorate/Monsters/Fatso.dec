@@ -3,6 +3,7 @@ Actor 64Fatso : Fatso// Replaces Fatso (RandomSpawners.dec)
 //$category "Game/BD64_Monsters"
 Scale 0.8
 Health 700
+GibHealth 150
 Speed 6
 MaxStepHeight 28
 MaxDropOffHeight 32

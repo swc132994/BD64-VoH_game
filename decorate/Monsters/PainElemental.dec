@@ -14,8 +14,9 @@ DamageFactor "CauseObjectsToSplash",0.0
 Tag "$FO_TAG_ELEMENTAL"
 HitObituary "$FO_OB_ELEMENTAL"
 DropItem "DemonEssenceSpawner"
+BloodType "FlameMonsterBlood"
 +FORCEXYBILLBOARD
-+NOBLOOD
++NOBLOODDECALS
 +NEVERFAST
 	states
 	{

@@ -15,6 +15,7 @@ PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DropItem "DemonEssenceSpawner"
+DropItem "64Cell",32
 Tag "$FO_TAG_SPIDER"
 Obituary "$FO_OB_BABY"
 +NOBLOOD

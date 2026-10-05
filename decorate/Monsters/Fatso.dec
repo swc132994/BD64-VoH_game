@@ -16,7 +16,7 @@ DamageFactor "Ice",1.5
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Flames",0.75
-//Dropitem "SawGas"
+Dropitem "SawGas",32
 Dropitem "DemonEssenceSpawner"
 Tag "$FO_TAG_FATSO"
 Obituary "$FO_OB_FATSO"

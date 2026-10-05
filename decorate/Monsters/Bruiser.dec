@@ -27,6 +27,8 @@ DamageFactor "Ice",1.5
 DamageFactor "Head",0.5
 DamageFactor "Flames",0.75
 DropItem "DemonEssenceSpawner"
+DropItem "64Cell",32
+DropItem "64Cell",32
 BloodType "Brutal_BloodGreen"
 MONSTER
 //+BOSSDEATH

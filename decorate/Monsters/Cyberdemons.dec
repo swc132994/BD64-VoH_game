@@ -16,6 +16,8 @@ DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "Flames",0.75
 DropItem "DemonEssenceLargeSpawner"
 DropItem "64Soulsphere",32
+DropItem "64RocketAmmo",64
+DropItem "64RocketAmmo",64
 Tag "$FO_TAG_CYBERDEMON"
 Obituary "$FO_OB_CYBORG"
 +NOBLOODDECALS
@@ -126,6 +128,10 @@ DeathSound "monster/anndth"
 ActiveSound "cyber/active"
 DropItem "DemonEssenceLargeSpawner"
 DropItem "64Soulsphere",32
+DropItem "64RocketAmmo",64
+DropItem "64RocketAmmo",64
+DropItem "64RocketAmmo",64
+DropItem "64RocketAmmo",64
 +NOBLOODDECALS
 +QUICKTORETALIATE
 +NEVERFAST

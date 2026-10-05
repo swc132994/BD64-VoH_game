@@ -87,10 +87,10 @@
 #INCLUDE "Decorate/Monsters/GoreNest.dec"
 #INCLUDE "Decorate/Monsters/Vassago.dec"
 
-//RANDOM SPAWNERS, CAST CALL & DROPABLES
+//RANDOM SPAWNERS, CAST CALL & DROPPABLES
 #INCLUDE "Decorate/Misc/DMRespawners.dec"
 #INCLUDE "Decorate/Misc/RandomSpawners.dec"
 #INCLUDE "Decorate/Misc/CastCall.dec"
-#INCLUDE "Decorate/Misc/Dropables.dec"
+#INCLUDE "Decorate/Misc/Droppables.dec"
 #INCLUDE "Decorate/Monsters/AnomalyEvents.dec"
 #INCLUDE "Decorate/Misc/KeenReplacement.dec"

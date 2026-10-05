@@ -479,6 +479,7 @@ DamageFactor "CauseObjectsToSplash",0.0
 Obituary "$FO_OB_NIGHTCRAWLER"
 Tag "$FO_TAG_NIGHTCRAWLER"
 DropItem "DemonEssenceSpawner"
+DropItem "64RocketAmmo",32
 +DONTHARMSPECIES
 	States
 	{

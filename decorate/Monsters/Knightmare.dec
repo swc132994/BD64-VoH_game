@@ -409,16 +409,15 @@ Speed 20
 FastSpeed 25
 RenderStyle Normal
 Decal "MedScorch"
-Translation "0:255=%[0,0,0]:[1,1,0]"
 	States
 	{
 	Spawn:
 		TNT1 A 0 A_SpawnItemEx("BaronYellowProjectileCore",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
 		TNT1 A 0 A_SpawnItemEx("LensFlareProjectileYellow",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
-		BAL7 A 2 Bright
+		BALY A 2 Bright
 		TNT1 A 0 A_SpawnItemEx("BaronYellowProjectileCore",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
 		TNT1 A 0 A_SpawnItemEx("LensFlareProjectileYellow",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
-		BAL7 B 2 Bright	 
+		BALY B 2 Bright	 
 		Loop
 	Death:
 		TNT1 A 0 A_SetScale(1.5,1.5)
@@ -431,14 +430,13 @@ Translation "0:255=%[0,0,0]:[1,1,0]"
 	QuietDeath:
 		TNT1 A 0 A_SpawnItemEx("DetectFloorCraterMed")
 		TNT1 A 0 A_SpawnItemEx("DetectCeilCraterMed")
-		BAL7 CDEFGH 2 Bright A_SpawnItemEx("LensFlareTorchYellow")
+		BALY CDEFGH 2 Bright A_SpawnItemEx("LensFlareTorchYellow")
 		Stop
 	}
 }
 
 Actor BaronYellowProjectileCore
 {
-Translation "0:255=%[0,0,0]:[1,1,0]"
 Scale 2
 Alpha 1
 RenderStyle Add
@@ -446,7 +444,7 @@ RenderStyle Add
 	States
 	{
 	Spawn:
-		BAL7 J 2 Bright
+		BALY J 2 Bright
 		Stop
 	}
 }

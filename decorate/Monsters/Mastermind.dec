@@ -18,6 +18,7 @@ MeleeThreshold 300
 MeleeRange 100
 DropItem "DemonEssenceLargeSpawner"
 DropItem "64Soulsphere",32
+DropItem "64HighCaliberBox",64
 AttackSound "None"
 Tag "$FO_TAG_MASTERMIND"
 Obituary "$FO_OB_SPIDER"
@@ -194,6 +195,7 @@ MeleeThreshold 300
 MeleeRange 100
 DropItem "DemonEssenceLargeSpawner"
 DropItem "64Soulsphere",32
+DropItem "64CellPack",64
 Obituary "$FO_OB_ERADICATOR"
 HitObituary "$FO_OB_SPIDERHIT"
 Tag "$FO_TAG_ERADICATOR"

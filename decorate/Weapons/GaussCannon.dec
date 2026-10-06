@@ -9,7 +9,6 @@ Inventory.PickupSound "WPICK"
 	{
 	Spawn:
 		GCPC A 0 NoDelay A_SpawnItemEx("PlasmaRifleRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
-	Idle:
 		GCPC A -1
 		Stop
 	Pickup:

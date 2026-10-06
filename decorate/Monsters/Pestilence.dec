@@ -17,7 +17,7 @@ PainChance 80
 PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",255
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 DamageFactor "Poison",0
 DamageFactor "CauseWaterSplash",0.0
@@ -624,7 +624,7 @@ BloodType "Brutal_BloodGreen"
 MeleeThreshold 146	//default 196
 MeleeRange 60		//default 44
 PainChance "SuperFists",255
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0

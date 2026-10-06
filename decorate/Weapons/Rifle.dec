@@ -9,7 +9,6 @@ Inventory.PickupSound "WPICK"
 	{
 	Spawn:
 		ARSD A 0 NoDelay A_SpawnItemEx("ChaingunRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
-	Idle:
 		ARSD A -1
 		Stop
 	Pickup:

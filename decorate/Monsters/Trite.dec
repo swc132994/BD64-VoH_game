@@ -22,7 +22,7 @@ PainChance 200
 PainChance "Flames",64
 PainChance "Bullet",26
 PainChance "SuperFists",255
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 DamageFactor "Acid",0
 DamageFactor "Poison",0

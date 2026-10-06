@@ -319,7 +319,6 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 	BerserkAltEndPunch:
 		TNT1 A 0 A_ZoomFactor(0.95)
 		TNT1 A 0 A_FireCustomMissile("SuperAltPunchAttack",0,0,0,-7)
-		TNT1 A 0 A_RadiusThrust(5000,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_TakeInventory("64FistUpperToken",1)
 		PUN0 GH 1
 		TNT1 A 0 A_ZoomFactor(1.0)
@@ -332,7 +331,6 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 		TNT1 A 0 A_ZoomFactor(0.95)
 		TNT1 A 0 A_JumpIfInventory("PowerStrength",1,"BerserkAltEndPunch2")
 		TNT1 AA 0 A_FireCustomMissile("AltPunchAttack",0,0,0,-7)
-		TNT1 A 0 A_RadiusThrust(750,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_TakeInventory("64FistUpperToken",1)
 		PUN0 GH 1
 		TNT1 A 0 A_ZoomFactor(1.0)
@@ -342,7 +340,6 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 	BerserkAltEndPunch2:
 		TNT1 A 0 A_ZoomFactor(0.95)
 		TNT1 AA 0 A_FireCustomMissile("SuperAltPunchAttack",0,0,0,-7)
-		TNT1 A 0 A_RadiusThrust(6000,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_TakeInventory("64FistUpperToken",1)
 		PUN0 GH 1
 		TNT1 A 0 A_ZoomFactor(1.0)
@@ -355,7 +352,6 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 		TNT1 A 0 A_ZoomFactor(0.95)
 		TNT1 A 0 A_JumpIfInventory("PowerStrength",1,"BerserkAltEndPunch3")
 		TNT1 AAA 0 A_FireCustomMissile("AltPunchAttack",0,0,0,-7)
-		TNT1 A 0 A_RadiusThrust(1500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_TakeInventory("64FistUpperToken",1)
 		PUN0 GH 1
 		TNT1 A 0 A_ZoomFactor(1.0)
@@ -365,7 +361,6 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 	BerserkAltEndPunch3:
 		TNT1 A 0 A_ZoomFactor(0.95)
 		TNT1 AAA 0 A_FireCustomMissile("SuperAltPunchAttack",0,0,0,-7)
-		TNT1 A 0 A_RadiusThrust(7000,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_TakeInventory("64FistUpperToken",1)
 		PUN0 GH 1
 		TNT1 A 0 A_ZoomFactor(1.0)
@@ -390,8 +385,9 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 
 Actor PunchAttack : FastProjectile
 {
-Damage 5
+Damage 3
 DamageType "Melee"
+ProjectileKickBack 500
 Speed 31
 Height 6
 Radius 12
@@ -417,8 +413,9 @@ Obituary "$FO_OB_MPFIST"
 
 Actor SuperPunchAttack : PunchAttack
 {
-Damage 20	//*4 more than regular punch
+Damage 15	//*5 more than regular punch
 DamageType "SuperFists"
+ProjectileKickBack 1250
 Obituary "$FO_OB_MPFIST"
 Decal "Crack"
 +EXTREMEDEATH
@@ -444,10 +441,10 @@ Decal "Crack"
 
 Actor AltPunchAttack : PunchAttack
 {
-Damage 5
+Damage 3
 }
 
 Actor SuperAltPunchAttack : SuperPunchAttack
 {
-Damage 20	//*4 more than regular alt punch
+Damage 15	//*5 more than regular alt punch
 }

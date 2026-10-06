@@ -271,9 +271,6 @@ Mass 9999
 Activation THINGSPEC_Activate
 Obituary "$FO_OB_MINES"
 Tag "$FO_TAG_MINES"
-PainChance "SuperFists",200
-PainChance "Kick",255
-PainChance "SuperKick",255
 DamageType "Extreme"
 Decal "BigScorch"
 -SHOOTABLE

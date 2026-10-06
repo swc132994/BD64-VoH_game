@@ -10,7 +10,6 @@ Inventory.PickupSound "WPICK"
 	{
 	Spawn:
 		SGN2 A 0 NoDelay A_SpawnItemEx("SuperShotgunRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
-	Idle:
 		SGN2 A -1
 		Stop
 	Pickup:

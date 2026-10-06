@@ -5,7 +5,7 @@ Scale 0.8
 Health 50
 RenderStyle Normal
 PainChance "SuperFists",200
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 PainChance "Flames",0
 PainChance "bullet",64

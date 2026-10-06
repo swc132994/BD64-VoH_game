@@ -12,7 +12,7 @@ Obituary "$FO_OB_FORGOTTEN"
 RenderStyle Translucent
 PainChance 128
 PainChance "SuperFists",200
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 PainChance "Flames",0
 DamageFactor "Flames",0

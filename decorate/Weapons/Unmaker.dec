@@ -10,7 +10,6 @@ Inventory.PickupSound "WPICK"
 	{
 	Spawn:
 		LGUN A 0 NoDelay A_SpawnItemEx("BFG9000RespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
-	idle:
 		LGUN A -1
 		Stop
 	Pickup:

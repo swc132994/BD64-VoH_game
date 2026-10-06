@@ -11,7 +11,7 @@ MaxDropOffHeight 32
 PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",255
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
@@ -632,7 +632,7 @@ MeleeThreshold 146	//default 196
 MeleeRange 60		//default 44
 PainChance "Flames",26
 PainChance "SuperFists",255
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0

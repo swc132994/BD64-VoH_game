@@ -21,7 +21,7 @@ HitObituary "$FO_OB_IMPALERHIT"
 Tag "$FO_TAG_IMPALER"
 PainChance 32
 PainChance "SuperFists",220
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0

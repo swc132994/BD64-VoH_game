@@ -10,7 +10,6 @@ Inventory.PickupSound "WPICK"
 	{
 	Spawn:
 		LAUN A 0 NoDelay A_SpawnItemEx("RocketLauncherRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
-	Idle:
 		LAUN A -1
 		Stop
 	Pickup:

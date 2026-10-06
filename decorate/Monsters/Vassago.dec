@@ -14,7 +14,7 @@ PainChance 64
 PainChance "Flames",0
 PainChance "Bullet",26
 PainChance "SuperFists",200
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0

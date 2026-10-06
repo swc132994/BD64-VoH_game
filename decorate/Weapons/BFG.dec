@@ -9,7 +9,6 @@ Inventory.PickupSound "WPICK"
 	{
 	Spawn:
 		BFUG A 0 NoDelay A_SpawnItemEx("BFG9000RespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
-	Idle:
 		BFUG A -1
 		Stop
 	Pickup:

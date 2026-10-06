@@ -10,7 +10,6 @@ Inventory.PickupSound "WPICK"
 	{
 	Spawn:
 		CSAW A 0 NoDelay A_SpawnItemEx("ChainsawRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
-	Idle:
 		CSAW A -1
 		Stop
 	Pickup:

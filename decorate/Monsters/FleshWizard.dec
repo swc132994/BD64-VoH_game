@@ -14,7 +14,7 @@ PainChance 70
 PainChance "Flames",26
 PainChance "Bullet",26
 PainChance "SuperFists",220
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 PainChance "FWizardHaunt",0
 DamageFactor "FWizardHaunt",0

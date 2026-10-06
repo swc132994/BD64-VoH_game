@@ -19,7 +19,7 @@ Obituary "$FO_OB_BELPHEGOR"
 Tag "$FO_TAG_BELPHEGOR"
 PainChance 20
 PainChance "SuperFists",220
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0

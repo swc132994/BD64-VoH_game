@@ -18,7 +18,7 @@ ActiveSound "monster/falact"
 PainChance 80
 PainChance "Bullet",26
 PainChance "SuperFists",255
-PainChance "Kick",255
+PainChance "Kick",64
 PainChance "SuperKick",255
 PainChance "Plasma",0
 PainChance "BFG",0

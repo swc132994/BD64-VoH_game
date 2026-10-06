@@ -6,10 +6,10 @@ Radius 62
 MaxStepHeight 28
 MaxDropOffHeight 32
 PainChance 16
-PainChance "Flames",26
-PainChance "Bullet",26
+PainChance "Flames",0
+PainChance "Bullet",0
 PainChance "SuperFists",200
-PainChance "Kick",200
+PainChance "Kick",0
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
@@ -182,10 +182,10 @@ Radius 62
 MaxStepHeight 28
 MaxDropOffHeight 32
 PainChance 16
-PainChance "Flames",10
-PainChance "Bullet",10
+PainChance "Flames",0
+PainChance "Bullet",0
 PainChance "SuperFists",200
-PainChance "Kick",200
+PainChance "Kick",0
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0

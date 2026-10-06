@@ -18,7 +18,7 @@ DeathSound "sawcubus/death"
 ActiveSound "sawcubus/active"
 PainChance 20
 PainChance "SuperFists",200
-PainChance "Kick",200
+PainChance "Kick",64
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0

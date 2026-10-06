@@ -14,6 +14,9 @@ MaxDropOffHeight 40
 PainChance 8
 PainChance "Flames",0
 PainChance "Bullet",0
+PainChance "SuperFists",200
+PainChance "Kick",0
+PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
 DamageFactor "BFG",0.7

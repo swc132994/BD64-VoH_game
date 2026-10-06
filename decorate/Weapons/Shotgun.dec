@@ -9,7 +9,6 @@ Inventory.PickupSound "WPICK"
 	{
 	Spawn:
 		SHOT A 0 NoDelay A_SpawnItemEx("ShotgunRespawnerDM",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
-	Idle:
 		SHOT A -1
 		Stop
 	Pickup:
@@ -338,8 +337,7 @@ Tag "$FO_TAG_SHOTGUN"
 		SHTA ABCDEF 1
 		SHTA G 1 A_Playsound("SGSWING",CHAN_AUTO)
 		SHTA HI 1
-		SHTA J 1 A_FireCustomMissile("KickAttack",0,0,0,-7)
-		SHTA J 1 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
+		SHTA J 3 A_FireCustomMissile("KickAttack",0,0,0,-7)
 		SHTA KLNOP 1
 		TNT1 A 0 A_Refire("AltHold")
 	FinishAlt:
@@ -354,8 +352,7 @@ Tag "$FO_TAG_SHOTGUN"
 		SHTA Q 1 A_PlaySound("fstatk",CHAN_WEAPON)
 		SHTA RST 2
 		SHTA U 3
-		SHTA U 1 A_FireCustomMissile("KickAttack",0,0,0,-7)
-		SHTA U 1 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
+		SHTA U 2 A_FireCustomMissile("KickAttack",0,0,0,-7)
 		SHTA TSRQ 1
 		TNT1 A 0 A_Refire
 		Goto FinishAlt
@@ -366,9 +363,8 @@ Tag "$FO_TAG_SHOTGUN"
 		SHTA ABCDEF 1
 		SHTA G 1 A_Playsound("SGSWING",CHAN_AUTO)
 		SHTA HI 1
-		SHTA I 1 A_FireCustomMissile("SuperKickAttack",0,0,0,-7)
-		SHTA J 1 A_RadiusThrust(6750,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
-		SHTA KLNOP 1
+		SHTA I 2 A_FireCustomMissile("SuperKickAttack",0,0,0,-7)
+		SHTA JKLNOP 1
 		TNT1 A 0 A_Refire("AltHold2")
 		Goto FinishAlt
 	AltHold2:
@@ -377,8 +373,7 @@ Tag "$FO_TAG_SHOTGUN"
 		TNT1 A 0 A_GiveInventory("Stamina",2)
 		SHTA Q 1 A_PlaySound("fstatk",CHAN_WEAPON)
 		SHTA RSTU 1
-		SHTA U 1 A_FireCustomMissile("SuperKickAttack",0,0,0,-7)
-		SHTA U 1 A_RadiusThrust(6750,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
+		SHTA U 3 A_FireCustomMissile("SuperKickAttack",0,0,0,-7)
 		SHTA TSRQ 1
 		TNT1 A 0 A_Refire
 		Goto FinishAlt

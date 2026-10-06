@@ -66,14 +66,12 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 		KICK ABC 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
 		TNT1 A 0 A_jumpifinventory("PowerStrength",1,"BerserkerKick")
 		TNT1 A 0 A_FireCustomMissile("KickAttack",0,0,0,-7)
-		TNT1 A 0 A_RadiusThrust(4000,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		KICK DEEEEFGHIJ 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
 		TNT1 A 0 SetPlayerProperty(0,0,0)
 		KICK KLM 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
 		Goto GetReady
 	BerserkerKick:
 		TNT1 A 0 A_FireCustomMissile("SuperKickAttack",0,0,0,-7)
-		TNT1 A 0 A_RadiusThrust(6000,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		KICK DEEEEFGHIJ 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
 		TNT1 A 0 SetPlayerProperty(0,0,0)
 		KICK KLM 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
@@ -87,13 +85,11 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 		KICK NOPQ 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
 		TNT1 A 0 A_jumpifinventory("PowerStrength",1,"SuperAirKick")
 		TNT1 A 0 A_FireCustomMissile("AirKickAttack",0,0,0,-31)
-		TNT1 A 0 A_RadiusThrust(5000,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		KICK RRSTUVWXYZ 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
 		KICK "[]" 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
 		Goto GetReady
 	SuperAirKick:
 		TNT1 A 0 A_FireCustomMissile("SuperAirKickAttack",0,0,0,-31)
-		TNT1 A 0 A_RadiusThrust(7500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		KICK RRSTUVWXYZ 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
 		KICK "[]" 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
 		Goto GetReady
@@ -108,91 +104,78 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 		SLID ABCDE 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH)
 		TNT1 A 0 A_SetPItch(10)
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(4500,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
 		TNT1 A 0 A_JumpIfInventory("IsCrouching",1,1)
 		Goto FinishSlide
 		SLID F 1 A_FireCustomMissile("SlideAttack",0,0,0,10)
-		TNT1 A 0 A_RadiusThrust(45000,65,RTF_NOTMISSILE|RTF_NOIMPACTDAMAGE)
 		TNT1 A 0 A_Recoil(-2)
 		TNT1 A 0 A_SetPItch(10)
 		TNT1 A 0 A_JumpIfInventory("KickHasHit",1,"FinishSlideHitWall")
@@ -270,8 +253,9 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 
 Actor KickAttack : FastProjectile
 {
-Damage 5
+Damage 3
 DamageType "Kick"
+ProjectileKickBack 500
 Speed 22
 Radius 18
 Height 6
@@ -288,7 +272,7 @@ Obituary "$FO_OB_MPKICK"
 		Stop
 	Death:
 	XDeath:
-		TNT1 A 0 A_CheckFloor("DeathOnGround")
+//		TNT1 A 0 A_CheckFloor("DeathOnGround")
 		TNT1 A 0 A_PlaySound("FOOTWALL",CHAN_WEAPON)
 		TNT1 AAAAAA 0 A_CustomMissile("MeleeSmoke",0,0,random(0,360),2,random(0,360))
 		TNT1 A 0 Radius_Quake(2,6,0,5,0)
@@ -306,8 +290,9 @@ Obituary "$FO_OB_MPKICK"
 
 Actor SuperKickAttack : KickAttack
 {
-Damage 20	//*4 more than regualr kick
+Damage 15	//*5 more than regualr kick
 DamageType "SuperKick"
+ProjectileKickBack 1250
 Decal "Crack"
 +EXTREMEDEATH
 	States
@@ -329,15 +314,17 @@ Decal "Crack"
 
 Actor AirKickAttack : KickAttack
 {
-Damage 5
+Damage 4
+ProjectileKickBack 500
 Radius 20
 Height 32
 }
 
 Actor SuperAirKickAttack : KickAttack
 {
-Damage 20	//4* more than air kick
+Damage 20	//5* more than air kick
 DamageType "SuperKick"
+ProjectileKickBack 1250
 Radius 20
 Height 32
 Decal "Crack"
@@ -362,6 +349,7 @@ Decal "Crack"
 Actor KickAttackDetectDowned : KickAttack
 {
 Damage 4
+ProjectileKickBack 250
 Speed 40
 Radius 4
 Height 4
@@ -379,6 +367,7 @@ Height 4
 Actor SlideAttack : KickAttack
 {
 Damage 3
+ProjectileKickBack 250
 Speed 37
 Obituary "$FO_OB_MPSLIDEKICK"
 +GHOST

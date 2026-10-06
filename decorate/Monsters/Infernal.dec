@@ -2,7 +2,7 @@ Actor 64Infernal 19135
 {
 //$category "Game/BD64_Monsters"
 Scale 0.8
-Health 9500
+Health 9000
 Speed 16
 Radius 40
 Height 110
@@ -15,12 +15,15 @@ MaxDropOffHeight 32
 Obituary "$FO_OB_RESURRECTOR"
 Tag "$FO_TAG_RESURRECTOR"
 PainChance 8
+PainChance "Flames",0
+PainChance "Bullet",0
 PainChance "SuperFists",200
-PainChance "Kick",200
+PainChance "Kick",0
 PainChance "SuperKick",200
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DamageFactor "Flames",0.75
+DamageFactor "BFG",0.7
+DamageFactor "Flames",0.7
 DropItem "DemonEssenceLargeSpawner"
 DropItem "64Soulsphere",32
 SeeSound "SisDemon/see"

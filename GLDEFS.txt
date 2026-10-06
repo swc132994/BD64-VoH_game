@@ -747,14 +747,15 @@ object NImpBall
 
 object 64BelphegorBall
 {
-	frame BRNR {light NIMPBALL_X3}
+	frame BEL7A {light NIMPBALL_X3}
+	frame BEL7B {light NIMPBALL_X3}
 
-	frame BAL7C {light NIMPBALL_X1}
-	frame BAL7D {light NIMPBALL_X1}
-	frame BAL7E {light NIMPBALL_X2}
-	frame BAL7F {light NIMPBALL_X2}
-	frame BAL7G {light NIMPBALL_X3}
-	frame BAL7H {light NIMPBALL_X3}
+	frame BEL7C {light NIMPBALL_X1}
+	frame BEL7D {light NIMPBALL_X1}
+	frame BEL7E {light NIMPBALL_X2}
+	frame BEL7F {light NIMPBALL_X2}
+	frame BEL7G {light NIMPBALL_X3}
+	frame BEL7H {light NIMPBALL_X3}
 }
 
 //Cacodemon fireball
@@ -997,15 +998,15 @@ flickerlight BARONBALL3_X6
 
 object 64BaronBallYellow
 {
-	frame BAL7A {light BARONBALL3_X4}
-	frame BAL7B {light BARONBALL3_X4}
+	frame BALYA {light BARONBALL3_X4}
+	frame BALYB {light BARONBALL3_X4}
 
-	frame BAL7C {light BARONBALL3_X1}
-	frame BAL7D {light BARONBALL3_X2}
-	frame BAL7E {light BARONBALL3_X3}
-	frame BAL7F {light BARONBALL3_X4}
-	frame BAL7G {light BARONBALL3_X5}
-	frame BAL7H {light BARONBALL3_X6}
+	frame BALYC {light BARONBALL3_X1}
+	frame BALYD {light BARONBALL3_X2}
+	frame BALYE {light BARONBALL3_X3}
+	frame BALYF {light BARONBALL3_X4}
+	frame BALYG {light BARONBALL3_X5}
+	frame BALYH {light BARONBALL3_X6}
 }
 
 //Lost Soul
@@ -1397,93 +1398,93 @@ object 64ArchvileFire
 //Archvile
 flickerlight ARCHATK1
 {
-color 1.0 1.0 0.0
-size 32
-secondarySize 48
-chance 0.3
-offset 0 40 0
+	color 1.0 1.0 0.0
+	size 32
+	secondarySize 48
+	chance 0.3
+	offset 0 40 0
 }
 
 flickerlight ARCHATK2
 {
-color 1.0 1.0 0.0
-size 56
-secondarySize 64
-chance 0.3
-offset 0 40 0
+	color 1.0 1.0 0.0
+	size 56
+	secondarySize 64
+	chance 0.3
+	offset 0 40 0
 }
 
 flickerlight ARCHATK3
 {
-color 1.0 1.0 0.0
-size 56
-secondarySize 64
-chance 0.3
-offset 0 32 0
+	color 1.0 1.0 0.0
+	size 56
+	secondarySize 64
+	chance 0.3
+	offset 0 32 0
 }
 
 flickerlight ARCHATK4
 {
-color 1.0 1.0 0.0
-size 64
-secondarySize 72
-chance 0.3
-offset 0 24 0
+	color 1.0 1.0 0.0
+	size 64
+	secondarySize 72
+	chance 0.3
+	offset 0 24 0
 }
 
 flickerlight ARCHATK5
 {
-color 1.0 1.0 0.0
-size 80
-secondarySize 88
-chance 0.3
-offset 0 20 0
+	color 1.0 1.0 0.0
+	size 80
+	secondarySize 88
+	chance 0.3
+	offset 0 20 0
 }
 
 flickerlight ARCHATK6
 {
-color 0.7 0.7 0.0
-size 96
-secondarySize 104
-chance 0.3
-offset 0 20 0
+	color 0.7 0.7 0.0
+	size 96
+	secondarySize 104
+	chance 0.3
+	offset 0 20 0
 }
 
 flickerlight ARCHATK7
 {
-color 0.3 0.3 0.0
-size 104
-secondarySize 112
-chance 0.3
-offset 0 20 0
+	color 0.3 0.3 0.0
+	size 104
+	secondarySize 112
+	chance 0.3
+	offset 0 20 0
 }
 
 pulselight ARCHRES
 {
-color 0.6 0.0 0.0
-size 64
-secondarySize 70
-interval 0.5
-offset 0 36 0
+	color 0.6 0.0 0.0
+	size 64
+	secondarySize 70
+	interval 0.5
+	offset 0 36 0
 }
 
 object 64Archvile
 {
-frame VILEG {light ARCHATK4}
-frame VILEH {light ARCHATK4}
-frame VILEI {light ARCHATK4}
-frame VILEJ {light ARCHATK4}
-frame VILEK {light ARCHATK4}
-frame VILEL {light ARCHATK4}
-frame VILEM {light ARCHATK5}
-frame VILEN {light ARCHATK5}
-frame VILEO {light ARCHATK6}
-frame VILEP {light ARCHATK6}
-frame VILEQ {light ARCHATK7}
+	frame VILEG {light ARCHATK4}
+	frame VILEH {light ARCHATK4}
+	frame VILEI {light ARCHATK4}
+	frame VILEJ {light ARCHATK4}
+	frame VILEK {light ARCHATK4}
+	frame VILEL {light ARCHATK4}
+	frame VILEM {light ARCHATK5}
+	frame VILEN {light ARCHATK5}
+	frame VILEO {light ARCHATK6}
+	frame VILEP {light ARCHATK6}
+	frame VILEQ {light ARCHATK7}
 
-frame VILEZ {light ARCHRES}
-frame VILHA {light ARCHRES}
-frame VILHB {light ARCHRES}
+	frame VILEZ {light ARCHRES}
+	frame VILHA {light ARCHRES}
+	frame VILHB {light ARCHRES}
 }
 
 //FleshWizard
@@ -1502,11 +1503,11 @@ object 64BloodHaunting
 //Motherdemon trail light
 flickerlight MOTHERTRAIL
 {
-color 1.0 1.0 0.0
-size 12
-secondarySize 20
-chance 0.3
-offset 0 5 0
+	Color 1.0 0.5 0.2
+	size 12
+	secondarySize 20
+	chance 0.3
+	offset 0 5 0
 }
 
 //MotherDemon Ball
@@ -1676,107 +1677,109 @@ object 64AlphaShock
 //Hellstorm
 flickerlight STORMATK4
 {
-color 1.0 0.0 1.0
-size 64
-secondarySize 72
-chance 0.3
-offset 0 48 0
+	color 1.0 0.0 1.0
+	size 64
+	secondarySize 72
+	chance 0.3
+	offset 0 48 0
 }
 
 flickerlight STORMATK5
 {
-color 1.0 0.0 1.0
-size 80
-secondarySize 88
-chance 0.3
-offset 0 40 0
+	color 1.0 0.0 1.0
+	size 80
+	secondarySize 88
+	chance 0.3
+	offset 0 40 0
 }
 
 flickerlight STORMATK6
 {
-color 0.7 0.0 0.7
-size 96
-secondarySize 104
-chance 0.3
-offset 0 40 0
+	color 0.7 0.0 0.7
+	size 96
+	secondarySize 104
+	chance 0.3
+	offset 0 40 0
 }
 
 flickerlight STORMATK7
 {
-color 0.3 0.0 0.3
-size 104
-secondarySize 112
-chance 0.3
-offset 0 40 0
+	color 0.3 0.0 0.3
+	size 104
+	secondarySize 112
+	chance 0.3
+	offset 0 40 0
 }
 
 pulselight STORWIND
 {
-color 0.5 0.0 0.5
-size 32
-secondarySize 40
-interval 0.5
-offset 0 36 0
+	color 0.5 0.0 0.5
+	size 32
+	secondarySize 40
+	interval 0.5
+	offset 0 36 0
 }
 
 pulselight STORNADO
 {
-color 0.6 0.0 0.6
-size 64
-secondarySize 70
-interval 0.5
-offset 0 36 0
+	color 0.6 0.0 0.6
+	size 64
+	secondarySize 70
+	interval 0.5
+	offset 0 36 0
 }
 
 object 64Hellstorm
 {
-frame S1R3G {light STORMATK4}
-frame S1R3H {light STORMATK4}
-frame S1R3I {light STORMATK4}
-frame S1R3J {light STORMATK4}
-frame S1R3K {light STORMATK4}
-frame S1R3L {light STORMATK4}
-frame S1R3M {light STORMATK5}
-frame S1R3N {light STORMATK5}
-frame S1R3O {light STORMATK6}
-frame S1R3P {light STORMATK6}
-frame S1R3Q {light STORMATK7}
+	frame S1R3G {light STORMATK4}
+	frame S1R3H {light STORMATK4}
+	frame S1R3I {light STORMATK4}
+	frame S1R3J {light STORMATK4}
+	frame S1R3K {light STORMATK4}
+	frame S1R3L {light STORMATK4}
+	frame S1R3M {light STORMATK5}
+	frame S1R3N {light STORMATK5}
+	frame S1R3O {light STORMATK6}
+	frame S1R3P {light STORMATK6}
+	frame S1R3Q {light STORMATK7}
 
-frame SP1N {light STORWIND}
-frame ZP1N {light STORNADO}
+	frame SP1N {light STORWIND}
+	frame ZP1N {light STORNADO}
 }
 
 object 64HellstormSoulBall1
 {
-frame ZT63A {light NIMPBALL}
-frame ZT63B {light NIMPBALL}
-frame ZT63C {light NIMPBALL_X1}
-frame ZT63D {light NIMPBALL_X2}
-frame ZT63E {light NIMPBALL_X3}
-frame ZT63F {light NIMPBALL_X4}
-frame ZT63G {light NIMPBALL_X5}
-frame ZT63H {light NIMPBALL_X6}
+	frame ZT63A {light NIMPBALL}
+	frame ZT63B {light NIMPBALL}
+
+	frame ZT63C {light NIMPBALL_X1}
+	frame ZT63D {light NIMPBALL_X2}
+	frame ZT63E {light NIMPBALL_X3}
+	frame ZT63F {light NIMPBALL_X4}
+	frame ZT63G {light NIMPBALL_X5}
+	frame ZT63H {light NIMPBALL_X6}
 }
 
 object 64HellstormSoulBall2
 {
-frame ZT63A {light NIMPBALL}
-frame ZT63B {light NIMPBALL}
-frame ZT63C {light NIMPBALL_X1}
-frame ZT63D {light NIMPBALL_X2}
-frame ZT63E {light NIMPBALL_X3}
-frame ZT63F {light NIMPBALL_X4}
-frame ZT63G {light NIMPBALL_X5}
-frame ZT63H {light NIMPBALL_X6}
+	frame ZT63A {light NIMPBALL}
+	frame ZT63B {light NIMPBALL}
+
+	frame ZT63C {light NIMPBALL_X1}
+	frame ZT63D {light NIMPBALL_X2}
+	frame ZT63E {light NIMPBALL_X3}
+	frame ZT63F {light NIMPBALL_X4}
+	frame ZT63G {light NIMPBALL_X5}
+	frame ZT63H {light NIMPBALL_X6}
 }
 
 object 64HellstormFire
 {
-frame ZFYRA {light NIMPBALL}
-frame ZFYRB {light NIMPBALL_X1}
-frame ZFYRC {light NIMPBALL_X2}
-frame ZFYRD {light NIMPBALL_X3}
-frame ZFYRE {light NIMPBALL_X4}
+	frame ZFYRA {light NIMPBALL}
+	frame ZFYRB {light NIMPBALL_X1}
+	frame ZFYRC {light NIMPBALL_X2}
+	frame ZFYRD {light NIMPBALL_X3}
+	frame ZFYRE {light NIMPBALL_X4}
 }
 
 object 64HellstormFireTrail
@@ -1787,42 +1790,43 @@ object 64HellstormFireTrail
 //Fallen
 FlickerLight2 FallenLight
 {
-Color 1.0 0.5 0.2
-Size 128
-SecondarySize 64
-Interval 8
+	Color 1.0 0.5 0.2
+	Size 60
+	SecondarySize 90
+	Interval 8
+	Offset 0 34 0
 }
 
 Pointlight FallenLight2
 {
-Color 1.0 0.5 0.2
-Size 96
+	Color 1.0 0.5 0.2
+	Size 96
 }
 
 Pointlight FallenLight3
 {
-Color 1.0 0.5 0.2
-Size 64
+	Color 1.0 0.5 0.2
+	Size 64
 }
 
 Pointlight FallenLight4
 {
-Color 1.0 0.5 0.2
-Size 32
+	Color 1.0 0.5 0.2
+	Size 32
 }
 
 Object 64Fallen
 {
-Frame FALNA {Light FallenLight}
-Frame FALNB {Light FallenLight}
-Frame FALNC {Light FallenLight}
-Frame FALND {Light FallenLight}
-Frame FALNE {Light FallenLight}
-Frame FALNF {Light FallenLight}
-Frame FALNG {Light FallenLight}
-Frame FALNH {Light FallenLight2}
-Frame FALNI {Light FallenLight3}
-Frame FALNJ {Light FallenLight4}
+	Frame FALNA {Light FallenLight}
+	Frame FALNB {Light FallenLight}
+	Frame FALNC {Light FallenLight}
+	Frame FALND {Light FallenLight}
+	Frame FALNE {Light FallenLight}
+	Frame FALNF {Light FallenLight}
+	Frame FALNG {Light FallenLight}
+	Frame FALNH {Light FallenLight2}
+	Frame FALNI {Light FallenLight3}
+	Frame FALNJ {Light FallenLight4}
 }
 
 //Infernal
@@ -1866,128 +1870,128 @@ object 64SisterTracer2
 
 Object 64SoulHarvesterBall
 {
-Frame SHBAA {Light BARONBALL3_X4}
-Frame SHBAB {Light BARONBALL3_X4}
+	Frame SHBAA {Light BARONBALL3_X4}
+	Frame SHBAB {Light BARONBALL3_X4}
 
-Frame SHBAC {Light BARONBALL3_X1}
-Frame SHBAD {Light BARONBALL3_X2}
-Frame SHBAE {Light BARONBALL3_X3}
-Frame SHBAF {Light BARONBALL3_X4}
-Frame SHBAG {Light BARONBALL3_X5}
-Frame SHBAH {Light BARONBALL3_X6}
+	Frame SHBAC {Light BARONBALL3_X1}
+	Frame SHBAD {Light BARONBALL3_X2}
+	Frame SHBAE {Light BARONBALL3_X3}
+	Frame SHBAF {Light BARONBALL3_X4}
+	Frame SHBAG {Light BARONBALL3_X5}
+	Frame SHBAH {Light BARONBALL3_X6}
 }
 
 PointLight SoulHarvesterX_1
 {
-Offset 0 34 0
-Color 1.0 1.0 0.0
-Size 8
+	Offset 0 34 0
+	Color 1.0 1.0 0.0
+	Size 8
 }
 
 PointLight SoulHarvesterX_2
 {
-Offset 0 35 0
-Color 1.0 1.0 0.0
-Size 12
+	Offset 0 35 0
+	Color 1.0 1.0 0.0
+	Size 12
 }
 
 PointLight SoulHarvesterX_3
 {
-Offset 0 35 0
-Color 1.0 1.0 0.0
-Size 16
+	Offset 0 35 0
+	Color 1.0 1.0 0.0
+	Size 16
 }
 
 PointLight SoulHarvesterX_4
 {
-Offset 0 35 0
-Color 1.0 1.0 0.0
-Size 20
+	Offset 0 35 0
+	Color 1.0 1.0 0.0
+	Size 20
 }
 
 PointLight SoulHarvesterX_5
 {
-Offset 0 35 0
-Color 1.0 1.0 0.0
-Size 24
+	Offset 0 35 0
+	Color 1.0 1.0 0.0
+	Size 24
 }
 
 PointLight SoulHarvesterX_6
 {
-Offset 0 35 0
-Color 1.0 1.0 0.0
-Size 32
+	Offset 0 35 0
+	Color 1.0 1.0 0.0
+	Size 32
 }
 
 Object 64SoulHarvester
 {
-Frame SLHVE {Light SoulHarvesterX_1}
-Frame SLHVF {Light SoulHarvesterX_2}
-Frame SLHVG {Light SoulHarvesterX_3}
-Frame SLHVH {Light SoulHarvesterX_4}
-Frame SLHVI {Light SoulHarvesterX_5}
-Frame SLHVJ {Light SoulHarvesterX_6}
+	Frame SLHVE {Light SoulHarvesterX_1}
+	Frame SLHVF {Light SoulHarvesterX_2}
+	Frame SLHVG {Light SoulHarvesterX_3}
+	Frame SLHVH {Light SoulHarvesterX_4}
+	Frame SLHVI {Light SoulHarvesterX_5}
+	Frame SLHVJ {Light SoulHarvesterX_6}
 }
 
 Pointlight SoulHarvesterGhost1
 {
-Color 1.0 1.0 0.0
-Size 8
-Offset 0 4 0
+	Color 1.0 1.0 0.0
+	Size 8
+	Offset 0 4 0
 }
 
 Pointlight SoulHarvesterGhost2
 {
-Color 1.0 1.0 0.0
-Size 16
-Offset 0 8 0
+	Color 1.0 1.0 0.0
+	Size 16
+	Offset 0 8 0
 }
 
 Pointlight SoulHarvesterGhost3
 {
-Color 1.0 1.0 0.0
-Size 24
-Offset 0 32 0
+	Color 1.0 1.0 0.0
+	Size 24
+	Offset 0 32 0
 }
 
 Pointlight SoulHarvesterGhost4
 {
-Color 0.6 0.6 0.0
-Size 24
-Offset 0 48 0
+	Color 0.6 0.6 0.0
+	Size 24
+	Offset 0 48 0
 }
 
 Pointlight SoulHarvesterGhost5
 {
-Color 0.4 0.4 0.0
-Size 16
-Offset 0 56 0
+	Color 0.4 0.4 0.0
+	Size 16
+	Offset 0 56 0
 }
 
 Object 64SoulHarvesterGhost
 {
-Frame SHGHA {Light SoulHarvesterGhost1}
-Frame SHGHB {Light SoulHarvesterGhost2}
-Frame SHGHC {Light SoulHarvesterGhost3}
-Frame SHGHD {Light SoulHarvesterGhost4}
-Frame SHGHE {Light SoulHarvesterGhost5}
-Frame SHGHF {Light SoulHarvesterGhost4}
-Frame SHGHG {Light SoulHarvesterGhost3}
-Frame SHGHH {Light SoulHarvesterGhost2}
-Frame SHGHI {Light SoulHarvesterGhost1}
+	Frame SHGHA {Light SoulHarvesterGhost1}
+	Frame SHGHB {Light SoulHarvesterGhost2}
+	Frame SHGHC {Light SoulHarvesterGhost3}
+	Frame SHGHD {Light SoulHarvesterGhost4}
+	Frame SHGHE {Light SoulHarvesterGhost5}
+	Frame SHGHF {Light SoulHarvesterGhost4}
+	Frame SHGHG {Light SoulHarvesterGhost3}
+	Frame SHGHH {Light SoulHarvesterGhost2}
+	Frame SHGHI {Light SoulHarvesterGhost1}
 }
 
 Object 64SoulHarvesterGhostReturning
 {
-Frame SHGHA {Light SoulHarvesterGhost1}
-Frame SHGHB {Light SoulHarvesterGhost2}
-Frame SHGHC {Light SoulHarvesterGhost3}
-Frame SHGHD {Light SoulHarvesterGhost4}
-Frame SHGHE {Light SoulHarvesterGhost5}
-Frame SHGHF {Light SoulHarvesterGhost4}
-Frame SHGHG {Light SoulHarvesterGhost3}
-Frame SHGHH {Light SoulHarvesterGhost2}
-Frame SHGHI {Light SoulHarvesterGhost1}
+	Frame SHGHA {Light SoulHarvesterGhost1}
+	Frame SHGHB {Light SoulHarvesterGhost2}
+	Frame SHGHC {Light SoulHarvesterGhost3}
+	Frame SHGHD {Light SoulHarvesterGhost4}
+	Frame SHGHE {Light SoulHarvesterGhost5}
+	Frame SHGHF {Light SoulHarvesterGhost4}
+	Frame SHGHG {Light SoulHarvesterGhost3}
+	Frame SHGHH {Light SoulHarvesterGhost2}
+	Frame SHGHI {Light SoulHarvesterGhost1}
 }
 
 //VASSAGO
@@ -1998,21 +2002,25 @@ flickerlight VassagoFireball
 	secondarysize 56
 	chance 0.8
 }
+
 pointlight VassagoFireballX1
 {
 	color 1.0 0.5 0.0
 	size 78
 }
+
 pointlight VassagoFireballX2
 {
 	color 1.0 0.5 0.0
 	size 88
 }
+
 pointlight VassagoFireballX3
 {
 	color 1.0 0.5 0.0
-	size 80
+	size 98
 }
+
 flickerlight VassagoFire1
 {
 	color 1.0 0.5 0.0
@@ -2020,6 +2028,7 @@ flickerlight VassagoFire1
 	secondarysize 68
 	chance 0.8
 }
+
 flickerlight VassagoFire2
 {
 	color 1.0 0.5 0.0
@@ -2027,6 +2036,7 @@ flickerlight VassagoFire2
 	secondarysize 56
 	chance 0.8
 }
+
 flickerlight VassagoFire3
 {
 	color 1.0 0.5 0.0
@@ -2034,6 +2044,7 @@ flickerlight VassagoFire3
 	secondarysize 44
 	chance 0.8
 }
+
 flickerlight VassagoFire4
 {
 	color 1.0 0.5 0.0
@@ -2044,36 +2055,87 @@ flickerlight VassagoFire4
 
 object 64Vassago
 {
-	frame VASSJ0 {light VassagoFireballX2}
-	frame VASSK0 {light VassagoFireballX2}
-	frame VASSL0 {light VassagoFireballX3}
-	frame VASSM0 {light VassagoFireballX3}
-	frame VASSN0 {light VassagoFireballX3}
-	frame VASSO0 {light VassagoFireballX1}
-	frame VASSP0 {light VassagoFireball}
+	frame VASSA {light FallenLight}
+	frame VASSB {light FallenLight}
+	frame VASSC {light FallenLight}
+	frame VASSD {light FallenLight}
+	frame VASSE {light FallenLight}
+	frame VASSF {light FallenLight}
+	frame VASSG {light FallenLight}
+	frame VASSH {light FallenLight}
+	frame VASSI {light FallenLight}
+
+	frame VASSR {light FallenLight}
+	frame VASSS {light FallenLight}
+	frame VASST {light FallenLight}
+	frame VASSU {light FallenLight}	
+
+	frame VSSBA {light FallenLight}
+	frame VSSBB {light FallenLight}
+	frame VSSBC {light FallenLight}
+	frame VSSBD {light FallenLight}
+	frame VSSBE {light FallenLight}
+	frame VSSBF {light FallenLight}
+	frame VSSBG {light FallenLight}
+
+	frame VASSJ {light VassagoFireballX3}
+	frame VASSK {light VassagoFireballX3}
+	frame VASSL {light VassagoFireballX2}
+	frame VASSM {light VassagoFireballX2}
+	frame VASSN {light VassagoFireballX2}
+	frame VASSO {light VassagoFireballX1}
+	frame VASSP {light VassagoFireballX1}
+	frame VASSQ {light VassagoFireballX1}
 }
 
 object 64VassagoFlame
 {
-	frame VFLMA {light VassagoFireball}
-	frame VFLMB {light VassagoFireball}
-	frame VFLMC {light VassagoFireballX1}
-	frame VFLMD {light VassagoFireballX2}
-	frame VFLME {light VassagoFireballX3}
-	frame VFLMF {light VassagoFire1}
-	frame VFLMG {light VassagoFire1}
-	frame VFLMH {light VassagoFire1}
-	frame VFLMI {light VassagoFire1}
-	frame VFLMJ {light VassagoFire2}
-	frame VFLMK {light VassagoFire2}
+	frame VFLMA {light VassagoFire1}
+	frame VFLMB {light VassagoFire1}
+	frame VFLMC {light VassagoFire1}
+	frame VFLMD {light VassagoFire1}
+	frame VFLME {light VassagoFire1}
+	frame VFLMF {light VassagoFire2}
+	frame VFLMG {light VassagoFire2}
+	frame VFLMH {light VassagoFire2}
+	frame VFLMI {light VassagoFire2}
+	frame VFLMJ {light VassagoFire3}
+	frame VFLMK {light VassagoFire3}
 	frame VFLML {light VassagoFire3}
 	frame VFLMM {light VassagoFire3}
-	frame VFLMN {light VassagoFire3}
+	frame VFLMN {light VassagoFire4}
 	frame VFLMO {light VassagoFire4}
 	frame VFLMP {light VassagoFire4}
 	frame VFLMQ {light VassagoFire4}
 }
-	
+
+Object 64VassagoFireBall
+{
+	frame VFLMA {light VassagoFireball}
+	frame VFLMB {light VassagoFireball}
+
+	frame VFLMC {light VassagoFire1}
+	frame VFLMD {light VassagoFire1}
+	frame VFLME {light VassagoFire1}
+	frame VFLMF {light VassagoFire2}
+	frame VFLMG {light VassagoFire2}
+	frame VFLMH {light VassagoFire2}
+	frame VFLMI {light VassagoFire2}
+	frame VFLMJ {light VassagoFire3}
+	frame VFLMK {light VassagoFire3}
+	frame VFLML {light VassagoFire3}
+	frame VFLMM {light VassagoFire3}
+	frame VFLMN {light VassagoFire4}
+	frame VFLMO {light VassagoFire4}
+	frame VFLMP {light VassagoFire4}
+	frame VFLMQ {light VassagoFire4}
+}
+
+Object 64VassagoFire
+{
+	frame VFLM {light MOTHERTRAIL}
+}
+
 object VassagoFireTrail
 {
 	frame MPUF {light MOTHERTRAIL}
@@ -2127,155 +2189,155 @@ object TeleportationFog
 //TORCH-FLASHLIGHT
 object FlashlightProjectile
 {
-frame TNT2 {light Flashlight1}
+	frame TNT2 {light Flashlight1}
 }
 
-object FlashlightProjectile2
+	object FlashlightProjectile2
 {
-frame TNT2 {light Flashlight2}
+	frame TNT2 {light Flashlight2}
 }
 
 object FlashlightProjectile3
 {
-frame TNT2 {light Flashlight3}
+	frame TNT2 {light Flashlight3}
 }
 
 pointlight Flashlight1
 {
-color 0.95 0.98 1.0
-size 20
-offset 0 0 0
+	color 0.95 0.98 1.0
+	size 20
+	offset 0 0 0
 }
 
 pointlight Flashlight2
 {
-color 0.60 0.68 0.75
-size 40
-offset 0 0 0
+	color 0.60 0.68 0.75
+	size 40
+	offset 0 0 0
 }
 
 pointlight Flashlight3
 {
-color 0.25 0.30 0.40
-size 80
-offset 0 0 0
+	color 0.25 0.30 0.40
+	size 80
+	offset 0 0 0
 }
 
 pointlight LampBasic
 {
-color 1.0 0.6 0.0
-size 64
-offset 0 0 0
+	color 1.0 0.6 0.0
+	size 64
+	offset 0 0 0
 }
 
 pointlight LampWhite
 {
-color 0.4 0.4 0.4
-size 64
-offset 0 0 0
+	color 0.4 0.4 0.4
+	size 64
+	offset 0 0 0
 }
 
 pointlight BIGREDLIGHTPOINT
 {
-color 1.0 0.8 0.4
-size 96
-offset 0 0 0
+	color 1.0 0.8 0.4
+	size 96
+	offset 0 0 0
 }
 
 pointlight ShaftLight
 {
-color 0.4 0.4 0.4
-size 96
-offset 0 0 0
-dontlightself 1
+	color 0.4 0.4 0.4
+	size 96
+	offset 0 0 0
+	dontlightself 1
 }
 
 pointlight ShaftLightMinor
 {
-color 0.4 0.4 0.4
-size 16
-offset 0 0 0
-dontlightself 1
+	color 0.4 0.4 0.4
+	size 16
+	offset 0 0 0
+	dontlightself 1
 }
 
 flickerlight BETABALL1_X1
 {
-color 0.2 0.8 0.2
-size 40
-secondarySize 48
-chance 0.2
+	color 0.2 0.8 0.2
+	size 40
+	secondarySize 48
+	chance 0.2
 }
 
 flickerlight BETABALL1_X2
 {
-color 0.1 0.5 0.1
-size 32
-secondarySize 40
-chance 0.2
+	color 0.1 0.5 0.1
+	size 32
+	secondarySize 40
+	chance 0.2
 }
 
 flickerlight BETABALL1_X3
 {
-color 0.0 0.2 0.0
-size 24
-secondarySize 32
-chance 0.2
+	color 0.0 0.2 0.0
+	size 24
+	secondarySize 32
+	chance 0.2
 }
 
 flickerlight BETABALL_X4
 {
-color 0.0 0.2 0.0
-size 16
-secondarySize 24
-chance 0.2
+	color 0.0 0.2 0.0
+	size 16
+	secondarySize 24
+	chance 0.2
 }
 
 Object BFGBetaBall
 {
-Frame BFE2A {light BETABALL1_X1}
-Frame BFE2B {light BETABALL1_X2}
-Frame BFE2C {light BETABALL1_X3}
-Frame BFE2D {light BETABALL1_X4}
+	Frame BFE2A {light BETABALL1_X1}
+	Frame BFE2B {light BETABALL1_X2}
+	Frame BFE2C {light BETABALL1_X3}
+	Frame BFE2D {light BETABALL1_X4}
 }
 
 flickerlight BETABALL2_X1
 {
-color 1.0 0.4 0.4
-size 40
-secondarySize 48
-chance 0.3
+	color 1.0 0.4 0.4
+	size 40
+	secondarySize 48
+	chance 0.3
 }
 
 flickerlight BETABALL2_X2
 {
-color 0.8 0.3 0.3
-size 32
-secondarySize 40
-chance 0.3
+	color 0.8 0.3 0.3
+	size 32
+	secondarySize 40
+	chance 0.3
 }
 
 flickerlight BETABALL2_X3
 {
-color 0.6 0.2 0.2
-size 24
-secondarySize 32
-chance 0.3
+	color 0.6 0.2 0.2
+	size 24
+	secondarySize 32
+	chance 0.3
 }
 
 flickerlight BETABALL2_X4
 {
-color 0.4 0.1 0.1
-size 16
-secondarySize 24
-chance 0.2
+	color 0.4 0.1 0.1
+	size 16
+	secondarySize 24
+	chance 0.2
 }
 
 Object BFGBetaBall2
 {
-Frame REDBA {light BETABALL2_X1}
-Frame REDBB {light BETABALL2_X2}
-Frame REDBC {light BETABALL2_X3}
-Frame REDBD {light BETABALL2_X4}
+	Frame REDBA {light BETABALL2_X1}
+	Frame REDBB {light BETABALL2_X2}
+	Frame REDBC {light BETABALL2_X3}
+	Frame REDBD {light BETABALL2_X4}
 }
 
 //Anomaly Events
@@ -2303,30 +2365,30 @@ object Poltshot1
 //Keen Replacement
 Object 64NOTAFRIT
 {
-Frame FALNA {Light FallenLight}
-Frame FALNB {Light FallenLight}
-Frame FALNC {Light FallenLight}
-Frame FALND {Light FallenLight}
-Frame FALNE {Light FallenLight}
-Frame FALNF {Light FallenLight}
-Frame FALNG {Light FallenLight}
-Frame FALNH {Light FallenLight2}
-Frame FALNI {Light FallenLight3}
-Frame FALNJ {Light FallenLight4}
+	Frame FALNA {Light FallenLight}
+	Frame FALNB {Light FallenLight}
+	Frame FALNC {Light FallenLight}
+	Frame FALND {Light FallenLight}
+	Frame FALNE {Light FallenLight}
+	Frame FALNF {Light FallenLight}
+	Frame FALNG {Light FallenLight}
+	Frame FALNH {Light FallenLight2}
+	Frame FALNI {Light FallenLight3}
+	Frame FALNJ {Light FallenLight4}
 }
 
 Object 64YESAFRIT
 {
-Frame F2LNA {Light FallenLight}
-Frame F2LNB {Light FallenLight}
-Frame F2LNC {Light FallenLight}
-Frame F2LND {Light FallenLight}
-Frame F2LNE {Light FallenLight}
-Frame F2LNF {Light FallenLight}
-Frame F2LNG {Light FallenLight}
-Frame F2LNH {Light FallenLight2}
-Frame F2LNI {Light FallenLight3}
-Frame F2LNJ {Light FallenLight4}
+	Frame F2LNA {Light FallenLight}
+	Frame F2LNB {Light FallenLight}
+	Frame F2LNC {Light FallenLight}
+	Frame F2LND {Light FallenLight}
+	Frame F2LNE {Light FallenLight}
+	Frame F2LNF {Light FallenLight}
+	Frame F2LNG {Light FallenLight}
+	Frame F2LNH {Light FallenLight2}
+	Frame F2LNI {Light FallenLight3}
+	Frame F2LNJ {Light FallenLight4}
 }
 
 //TEXTURES
@@ -2354,9 +2416,9 @@ Glow
 // Fire
 flickerlight2 GROUNDFIRE
 {
-color 1.0 0.9 0.0
-size 65
-secondarySize 45
-interval 1.0
-offset 0 35 0
+	color 1.0 0.9 0.0
+	size 65
+	secondarySize 45
+	interval 1.0
+	offset 0 35 0
 }

@@ -136,6 +136,13 @@ MONSTER
 		S4UK G 35
 		S4UK G -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
+	Death.Shotgun:
+		TNT1 A 0 A_StopSound(CHAN_WEAPON)
+		SWCB F 2 A_Recoil(5)
+		TNT1 A 0 A_JumpIfCloser(170,"Death.Heavy")
+		TNT1 A 0 A_Jump(128,"Death")
+		TNT1 A 0 A_JumpIfCloser(1000,"Death.ShotgunNoArm")
+		Goto Death
 	Death.SSG:
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		SWCB F 2 A_Recoil(9)
@@ -289,6 +296,7 @@ DropItem "None"
 		TNT1 A 0 A_NoBlocking
 		S4VK A 1 A_SpawnItemEx("64ButcherArmless",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL)
 		Stop
+	Death.Shotgun:
 	Death.SSG:
 		S4WC A 2 A_Recoil(9)
 		TNT1 A 0 A_JumpIfCloser(170,"Death.SplatteredOnWall")
@@ -346,9 +354,9 @@ DropItem "None"
 		TNT1 AAA 0 A_CustomMissile("BloodmistBig",45,0,random(0,360),2,random(10,90))
 		TNT1 A 0 A_XScream
 		TNT1 A 0 A_NoBlocking
-		SWCD ABC 5
-		SWCD D 35
-		SWCD D -1 A_SpawnItemEx("GrowingBloodPool")
+		SWHD ABC 5
+		SWHD D 35
+		SWHD D -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
 	Raise:
 		SWCB KJIHG 5
@@ -411,6 +419,7 @@ Actor 64ButcherArmless : 64ButcherNoArm
 		ZAVK G 35
 		ZAVK G -1 A_SpawnItemEx("GrowingBloodPool")
 		Stop
+	Death.Shotgun:
 	Death.SSG:
 		S4VK A 2 A_Recoil(9)
 		TNT1 A 0 A_JumpIfCloser(250,"Death.SplatteredOnWall")

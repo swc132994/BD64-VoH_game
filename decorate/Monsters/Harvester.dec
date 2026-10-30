@@ -503,8 +503,9 @@ PROJECTILE
 		TNT1 A 0 A_SpawnItemEx("BaronYellowProjectileCore",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
 		TNT1 A 0 A_SpawnItemEx("LensFlareProjectileYellow",0,0,0,0,0,0,SXF_TRANSFERPOINTERS)
 		Loop
-	Death:
+	XDeath:
 		TNT1 A 0 A_GiveToTarget("Health",Random(4,8))
+	Death:
 	Crash:
 		TNT1 A 0 A_SetScale(1.5,1.5)
 		TNT1 A 0 A_CheckSight("QuietDeath")

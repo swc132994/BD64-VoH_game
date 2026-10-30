@@ -746,14 +746,37 @@ Scale 0.7
 	}
 }
 
-Actor TinyBurningPieceBlue : TinyBurningPiece
+ACTOR TinyBurningPieceBlue : TinyBurningPiece
 {
 Translation "0:255=%[0,0,0]:[0.30,0.76,1.00]"
+Scale 1.1
+Alpha 0.55
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_JumpIf(waterlevel > 1,"Splash")
+		CFCF ABCDEFG 1 Bright
+		TNT1 A 0 A_Explode(Random(0,2),64)
+		CFCF HIJKLM 1 Bright
+		TNT1 A 0 A_Jump(24,"StopBurning")
+		Loop
+	}
 }
 
-Actor TinyBurningPieceBlue2 : TinyBurningPiece2
+ACTOR TinyBurningPieceBlue2 : TinyBurningPiece
 {
 Translation "0:255=%[0,0,0]:[0.30,0.76,1.00]"
+Scale 0.7
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_JumpIf(waterlevel > 1,"Splash")
+		CFCF ABCDEFG 1 Bright
+		TNT1 A 0 A_Explode(Random(0,1),32)
+		CFCF HIJKLM 1 Bright
+		TNT1 A 0 A_Jump(24,"StopBurning")
+		Loop
+	}
 }
 
 Actor TinyBurningPieceGreen : TinyBurningPiece

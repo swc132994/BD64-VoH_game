@@ -305,6 +305,8 @@ FO_SPAWN_HUSK_TXT2 = "Opção para gerar Husks e Carrions perto de objetos de zu
 FO_SPAWN_HUSK_TXT3 = "Desabilitado por Padrão";
 FO_SPAWN_SETTING = "(Configuração recomendada x3, x4 ou Aleatório)";
 
+FO_MASTERMINFSPAWNNB = "(Para mapas do D64 é recomendado excluir a Motherdemon)";
+
 FO_MONSTER_OTHER= "Outras opções de Monstros";
 
 FO_MONSTER_SKIN = "------------------------------- Skins de Monstros -------------------------------";

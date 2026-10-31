@@ -303,6 +303,8 @@ FO_SPAWN_HUSK_TXT2 = "Option to spawn Husks & Carrions near dead zombie props";
 FO_SPAWN_HUSK_TXT3 = "Disabled by Default";
 FO_SPAWN_SETTING = "(Recommended setting x3, x4 or Random)";
 
+FO_MASTERMINFSPAWNNB = "(For D64 maps it is recommended to exclude Motherdemon)";
+
 FO_MONSTER_OTHER = "Other Monster Options";
 
 FO_MONSTER_SKIN = "\c[Orange]---------- Monster Skins ----------";

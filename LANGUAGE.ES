@@ -296,6 +296,8 @@ FO_SPAWN_HUSK_TXT2 = "Opción para generar Cascarones y Carroñeros cerca de cad
 FO_SPAWN_HUSK_TXT3 = "Desactivado por defecto";
 FO_SPAWN_SETTING = "(Configuración recomendada x3, x4 o Aleatorio)";
 
+FO_MASTERMINFSPAWNNB = "(Para mapas de D64 se recomienda excluir a la Motherdemon)";
+
 FO_MONSTER_OTHER = "Otras opciones de monstruos";
 
 FO_MONSTER_SKIN = "---------- Aspectos de Monstruos ----------";

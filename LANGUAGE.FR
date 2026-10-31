@@ -299,6 +299,8 @@ FO_SPAWN_HUSK_TXT2 = "Option permettant de faire apparaître des rétifs et des 
 FO_SPAWN_HUSK_TXT3 = "Désactivé par défaut";
 FO_SPAWN_SETTING = "(Paramètre recommandé x3, x4 ou aléatoire)";
 
+FO_MASTERMINFSPAWNNB = "(Pour les cartes D64, il est recommandé d'exclure la Motherdemon)";
+
 FO_MONSTER_OTHER= "Autres options de monstres";
 
 FO_MONSTER_SKIN = "\c[Orange]---------- Apparences des monstres ----------";

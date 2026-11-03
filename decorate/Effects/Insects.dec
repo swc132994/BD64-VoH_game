@@ -5,9 +5,11 @@ Actor Swarm
 	States
 	{
 	Spawn:
-		TNT1 A 0 NoDelay A_PlaySound("Flies",CHAN_6,0.9,TRUE,2.0)
-		TNT1 AAAAAAA 2 A_CustomMissile("FlyDecor",32,0,random(0,360),2,random(-40,40))
-	Done:
+		TNT1 A 70 A_JumpIfCloser(750,"Activate")
+		Loop
+	Activate:
+		TNT1 A 0 A_PlaySound("Flies",CHAN_6,0.9,TRUE,2.0)
+		TNT1 AAAAAAA 0 A_SpawnItemEx("FlyDecor",0,0,32,0,0,0,random(0,359),SXF_NOCHECKPOSITION,64)
 		TNT1 A -1
 		Stop
 	}
@@ -16,21 +18,26 @@ Actor Swarm
 Actor FlyDecor
 {
 Scale 0.1
-Speed 3
-ReactionTime 4
-+MISSILE
-+CLIENTSIDEONLY
-+RANDOMIZE
-+NOINTERACTION
+Radius 1
+Height 1
++NOGRAVITY
++NOBLOCKMAP
 +NOCLIP
++CLIENTSIDEONLY
+var int user_vx;
+var int user_vy;
+var int user_vz;
 	States
 	{
 	Spawn:
-		SFLY ABC 2 ThrustThingZ(0,random(-1,1),random(1,0),1)
-		TNT1 A 0 A_CountDown
+		SFLY A random(0,6)
+		TNT1 A 0 A_SetUserVar("user_vx",random(-10,10))
+		TNT1 A 0 A_SetUserVar("user_vy",random(-10,10))
+		TNT1 A 0 A_SetUserVar("user_vz",random(-4,4))
+		TNT1 A 0 A_ChangeVelocity(user_vx/10.0,user_vy/10.0,user_vz/10.0,CVF_REPLACE)
+		SFLY ABCBABCB 2
+		TNT1 A 0 A_ChangeVelocity(-user_vx/10.0,-user_vy/10.0,-user_vz/10.0,CVF_REPLACE)
+		SFLY ABCBABCB 2
 		Loop
-	Death:
-		SFLY "#" 1 A_CustomMissile("FlyDecor",0,0,random(-40,40))
-		Stop
 	}
 }

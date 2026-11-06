@@ -13,12 +13,16 @@ Inventory.PickupSound "WPICK"
 		CSAW A -1
 		Stop
 	Pickup:
+		TNT1 A 0 A_JumpIfInventory("64ChainsawTactical_Classic",1,"PickupTacticalClassic")
 		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
 		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")
 		TNT1 A 0 A_GiveInventory("64Chainsaw",1)
 		Stop
 	PickupTactical:
 		TNT1 A 0 A_GiveInventory("64ChainsawTactical",1)
+		Stop
+	PickupTacticalClassic:
+		TNT1 A 0 A_GiveInventory("64ChainsawTactical_Classic",1)
 		Stop
 	}
 }
@@ -132,8 +136,6 @@ Weapon.AmmoGive2 0
 Inventory.PickupMessage "$BD64_GOTCHAINSAW"
 Obituary "$FO_OB_MPCHAINSAW"
 Tag "$FO_TAG_CHAINSAW"
-Inventory.ForbiddenTo "64DoomPlayer"
-VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 +WEAPON.AXEBLOOD
 +WEAPON.MELEEWEAPON
 	States
@@ -380,12 +382,13 @@ Weapon.SelectionOrder 2200
 Weapon.Kickback 0
 Weapon.AmmoType "SawGas"
 Weapon.AmmoUse 1
-Weapon.AmmoGive 0
+Weapon.AmmoGive 50
+Weapon.AmmoType2 "SSGAmmo"
+Weapon.AmmoUse2 1
+Weapon.AmmoGive2 0
 Inventory.PickupMessage "$BD64_GOTCHAINSAW"
 Obituary "$FO_OB_MPCHAINSAW"
 Tag "$FO_TAG_CHAINSAW"
-Inventory.ForbiddenTo "64DoomPlayer"
-VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 +WEAPON.AXEBLOOD
 +WEAPON.MELEEWEAPON
 	States

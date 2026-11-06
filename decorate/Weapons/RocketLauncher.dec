@@ -13,12 +13,16 @@ Inventory.PickupSound "WPICK"
 		LAUN A -1
 		Stop
 	Pickup:
+		TNT1 A 0 A_JumpIfInventory("64ClassicRocketLauncherTactical",1,"PickupTacticalClassic")
 		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
 		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")
 		TNT1 A 0 A_GiveInventory("64RocketLauncher",1)
 		Stop
 	PickupTactical:
 		TNT1 A 0 A_GiveInventory("64RocketLauncherTactical",1)
+		Stop
+	PickupTacticalClassic:
+		TNT1 A 0 A_GiveInventory("64ClassicRocketLauncherTactical",1)
 		Stop
 	}
 }
@@ -590,7 +594,7 @@ Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2500
 Weapon.AmmoType "RocketAmmo"
 Weapon.AmmoUse 1
-Weapon.AmmoGive 0
+Weapon.AmmoGive 2
 Inventory.PickupMessage "$BD64_GOTLAUNCHER"
 Tag "$FO_TAG_ROCKETLAUNCHER"
 +WEAPON.ALT_USES_BOTH

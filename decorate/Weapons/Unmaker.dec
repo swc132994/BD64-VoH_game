@@ -45,7 +45,7 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 		LGUN A -1
 		Stop
 	Ready:
-		UNMA A 1 A_WeaponReady
+		UNMA A 2 A_WeaponReady
 		TNT1 A 0 A_JumpIfInventory("WeaponSpecialAction",1,"Special")
 		Loop
 	Deselect:
@@ -56,7 +56,7 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_p","Modern"
 	Select:
 		TNT1 A 0 A_Print("$WM_SPECIAL",1)
 		UNMA A 1 A_Raise
-		Loop
+		Wait
 	Fire:
 		TNT1 A 0 A_JumpIfInventory("UnAltMode",2,"FireAltRed")
 		TNT1 A 0 A_JumpIfInventory("UnAltMode",1,"FireAltGreen")
@@ -482,20 +482,21 @@ Tag "$FO_TAG_UNMAKER"
 		Stop
 	Spawn:
 		LGUN A -1
-		Loop
+		stop
 	v1Ready:
 	Ready:
+		TNT1 A 0 A_PlaySound("UNMKLP",CHAN_WEAPON,1,TRUE)
+	ReadyLoop:
 		UNM2 D 0 A_JumpIfInventory("DemonEssence",25,5)
 		UNM2 C 0 A_JumpIfInventory("DemonEssence",15,4)
 		UNM2 B 0 A_JumpIfInventory("DemonEssence",10,3)
 		UNM2 A 0 A_JumpIfInventory("DemonEssence",5,2)
 		UNMA A 0
-		"####" "#" 1 A_WeaponReady(WRF_ALLOWZOOM)
+		"####" "#" 2 A_WeaponReady(WRF_ALLOWZOOM)
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
 		TNT1 A 0 A_JumpIfInventory("WeaponSpecialAction",1,"Special")
-		TNT1 A 0 A_PlaySound("UNMKLP",CHAN_WEAPON,1,TRUE)
 		Loop
 	Select:
 		UNMA A 0 A_PlaySound("UNMAKSEL",CHAN_BODY)

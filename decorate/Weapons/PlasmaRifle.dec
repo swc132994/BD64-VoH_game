@@ -291,7 +291,6 @@ Tag "$FO_TAG_PLASMARIFLE"
 		TNT1 A 0 A_ReFire
 		Goto Ready
 	Reload:
-		TNT1 A 0 A_JumpIfInventory("NoReloading",1,"Ready")
 		TNT1 A 0 A_JumpIfInventory("Cell",1,1)
 		Goto Ready
 		TNT1 A 0 A_JumpIfInventory("PlasmaRifleAmmo",0,"Ready")

@@ -47,7 +47,7 @@ Decal "BigScorch"
 	States
 	{
 	Ready:
-		GCID A 1 A_WeaponReady
+		GCID A 2 A_WeaponReady
 		Loop
 	Deselect:
 		TNT1 A 0 A_ZoomFactor(1.0)
@@ -107,8 +107,6 @@ Weapon.AmmoGive2 0
 Inventory.Pickupmessage "$BD64_GOTGAUSS"
 Obituary "$FO_OB_GAUSS"
 Tag "$FO_TAG_GAUSS"
-VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
-Inventory.ForbiddenTo "64DoomPlayer"
 Decal "BigScorch"
 	States
 	{
@@ -141,7 +139,7 @@ Decal "BigScorch"
 		TNT1 A 0 A_ZoomFactor(1.0)
 		TNT1 A 0 A_TakeInventory("GaussScopeLightAmp",1)
 		TNT1 A 0 A_TakeInventory("Zoomed",0)
-		TGCI A 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
+		TGCI A 2 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
 		Loop
 	Deselect:
 		TNT1 A 0 A_ZoomFactor(1.0)
@@ -201,9 +199,9 @@ Decal "BigScorch"
 		TGCI A 4
 		goto Ready
 	Reload:
-		TNT1 A 0 A_JumpIfInventory("NoReloading",1,"Ready")
 		TNT1 A 0 A_JumpIfInventory("Cell",1,1)
-		Goto Ready
+		Goto NoAmmo
+		TNT1 A 0 A_JumpIfInventory("NoReloading",1,"Ready")
 		TNT1 A 0 A_TakeInventory("Zoomed",0)
 		TNT1 A 0 A_TakeInventory("GaussScopeLightAmp",1)
 		TNT1 A 0 A_TakeInventory("HasPlasmaWeapon",1)
@@ -263,7 +261,7 @@ Decal "BigScorch"
 		Goto Ready
 	Ready2:
 		TNT1 A 0 A_GiveInventory("HasPlasmaWeapon",1)
-		GCSC J 1 A_WeaponReady(WRF_ALLOWRELOAD)
+		GCSC J 2 A_WeaponReady(WRF_ALLOWRELOAD)
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
@@ -292,10 +290,13 @@ Decal "BigScorch"
 		Goto ResumeFire
 	NoReload:
 		TNT1 A 0 A_JumpIfInventory("Cell",1,1)
-		Goto Ready
+		Goto NoAmmo
 		TNT1 A 0 A_TakeInventory("Cell",10,TIF_NOTAKEINFINITE)
 		TNT1 A 0 A_JumpIfInventory("Zoomed",1,"ResumeFireZoomed")
 		Goto ResumeFire
+	NoAmmo:
+		TGCI A 10 A_PlaySound("DRYFIRE",CHAN_WEAPON)
+		Goto Ready
 	}
 }
 

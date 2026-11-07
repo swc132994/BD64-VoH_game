@@ -21,14 +21,14 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 	States
 	{
 	Ready:
-		PUN1 A 1 A_WeaponReady
+		PUN1 A 2 A_WeaponReady
 		Loop
 	Select:
 		PUN1 A 1 A_Raise
-		WAIT
+		loop
 	Deselect:
 		PUN1 A 1 A_Lower
-		Wait
+		loop
 	PullUp:
 		TNT1 A 1 Offset(0,99)
 		PUN1 A 1 Offset(0,99)
@@ -114,7 +114,6 @@ Inventory.forbiddento "64DoomPlayer"
 Weapon.AmmoType "AltPunchCharge"
 Weapon.AmmoUse 0
 Weapon.AmmoGive 0
-VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 +INVENTORY.UNDROPPABLE
 +WEAPON.AMMO_OPTIONAL
 +WEAPON.MELEEWEAPON
@@ -148,7 +147,7 @@ VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
-		PUN1 A 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
+		PUN1 A 2 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
 		Loop
 	Tired:
 		TNT1 A 0 A_Print("$WM_NOSTAMINA",1)

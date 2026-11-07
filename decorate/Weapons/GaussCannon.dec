@@ -107,8 +107,6 @@ Weapon.AmmoGive2 0
 Inventory.Pickupmessage "$BD64_GOTGAUSS"
 Obituary "$FO_OB_GAUSS"
 Tag "$FO_TAG_GAUSS"
-VisibleToPlayerClass "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
-Inventory.ForbiddenTo "64DoomPlayer"
 Decal "BigScorch"
 	States
 	{

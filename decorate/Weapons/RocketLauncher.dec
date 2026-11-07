@@ -13,16 +13,12 @@ Inventory.PickupSound "WPICK"
 		LAUN A -1
 		Stop
 	Pickup:
-		TNT1 A 0 A_JumpIfInventory("64ClassicRocketLauncherTactical",1,"PickupTacticalClassic")
 		TNT1 A 0 A_JumpIfInventory("IsTacticalClass",1,"PickupTactical")
 		TNT1 A 0 A_JumpIfInventory("IsModern",1,"PickupTactical")
 		TNT1 A 0 A_GiveInventory("64RocketLauncher",1)
 		Stop
 	PickupTactical:
 		TNT1 A 0 A_GiveInventory("64RocketLauncherTactical",1)
-		Stop
-	PickupTacticalClassic:
-		TNT1 A 0 A_GiveInventory("64ClassicRocketLauncherTactical",1)
 		Stop
 	}
 }
@@ -105,11 +101,12 @@ Inventory.PickupMessage "$BD64_GOTLAUNCHER"
 Tag "$FO_TAG_ROCKETLAUNCHER"
 +WEAPON.PRIMARY_USES_BOTH
 +WEAPON.EXPLOSIVE
+Weapon.SisterWeapon "64ClassicRocketLauncherTactical"
 	States
 	{
 	NullState:	//reached with ACSCall to cleanly terminate state for weapon swap
-		TNT1 A 1
-		Stop
+		TNT1 A 0 A_SelectWeapon("64ClassicRocketLauncherTactical")
+		Goto Deselect
 	MineThrowFlash:
 		RLNS DCBA 1
 		TNT1 A 18
@@ -262,7 +259,7 @@ Tag "$FO_TAG_ROCKETLAUNCHER"
 		Goto Ready
 	v1Ready:
 	Ready:
-		TNT1 A 0 A_JumpIf(CallACS("RLauncherSwitchACS",0) == 1,"NullState")
+		TNT1 A 0 A_JumpIf(CallACS("RLauncherSwitchACS") == 1,"NullState")
 		RLLG A 0 A_JumpIfInventory("AltMode",1,"HeavyReady")
 		RLHG A 0 A_JumpIfInventory("NoReloading",1,"ReadyNoReload")
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
@@ -283,7 +280,7 @@ Tag "$FO_TAG_ROCKETLAUNCHER"
 		"####" "#" 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
 		Loop
 	HeavyReady:
-		TNT1 A 0 A_JumpIf(CallACS("RLauncherSwitchACS",0) == 1,"NullState")
+		TNT1 A 0 A_JumpIf(CallACS("RLauncherSwitchACS") == 1,"NullState")
 		RLHG A 0 A_JumpIfInventory("NoReloading",1,"HeavyReadyNoReload")
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
@@ -309,7 +306,7 @@ Tag "$FO_TAG_ROCKETLAUNCHER"
 		RLNG A 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
 		Loop
 	Select:
-		TNT1 A 0 A_JumpIf(CallACS("RLauncherSwitchACS",0) == 1,"NullState")
+		TNT1 A 0 A_JumpIf(CallACS("RLauncherSwitchACS") == 1,"NullState")
 		TNT1 A 0 A_JumpIfInventory("NeverSelectedRL",1,"WarmUp")
 		TNT1 A 0 A_PlaySound("ROCKPKUP",CHAN_BODY)
 		TNT1 A 0 A_JumpIfInventory("RLAmmo",3,"FullSelect")
@@ -594,17 +591,18 @@ Weapon.SlotPriority 1000
 Weapon.SelectionOrder 2500
 Weapon.AmmoType "RocketAmmo"
 Weapon.AmmoUse 1
-Weapon.AmmoGive 2
+Weapon.AmmoGive 0
 Inventory.PickupMessage "$BD64_GOTLAUNCHER"
 Tag "$FO_TAG_ROCKETLAUNCHER"
-+WEAPON.ALT_USES_BOTH
 -WEAPON.AMMO_CHECKBOTH
 +WEAPON.EXPLOSIVE
++POWERED_UP
+Weapon.SisterWeapon "64RocketLauncherTactical"
 	States
 	{
 	NullState:	//reached with ACSCall to cleanly terminate state for weapon swap
-		TNT1 A 1
-		Stop
+		TNT1 A 0 A_SelectWeapon("64RocketLauncherTactical")
+		Goto Deselect
 	MineThrowFlash:
 		MISS DCBA 1
 		TNT1 A 18
@@ -627,14 +625,14 @@ Tag "$FO_TAG_ROCKETLAUNCHER"
 		Stop
 	v1Ready:
 	Ready:
-		TNT1 A 0 A_JumpIf(CallACS("RLauncherSwitchACS",1) == 1,"NullState")
+		TNT1 A 0 A_JumpIf(CallACS("RLauncherSwitchACS") == 0,"NullState")
 		MISG A 1 A_WeaponReady
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
 		TNT1 A 0 A_JumpIfInventory("TossMine",1,"TossMine")
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
 		Goto Ready
 	Select:
-		TNT1 A 0 A_JumpIf(CallACS("RLauncherSwitchACS",1) == 1,"NullState")
+		TNT1 A 0 A_JumpIf(CallACS("RLauncherSwitchACS") == 0,"NullState")
 		TNT1 A 0 A_PlaySound("ROCKPKUP",CHAN_BODY)
 		MISS ABCD 1 Offset(0,32)
 		TNT1 A 0 A_Raise

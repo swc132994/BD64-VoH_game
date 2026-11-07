@@ -154,58 +154,6 @@ script "LightFogDisabledACS" (void) NET CLIENTSIDE
 	SetResultValue(mode == 1 || mode == 3);
 }
 
-script "RLauncherSwitchACS" (int currentIsClassic)
-{
-	int SwitchClassic = GetCVar("ClassicRLCvar");
-
-	if (!currentIsClassic && SwitchClassic)	//from tactical to classic
-	{
-		GiveInventory("64ClassicRocketLauncherTactical",1);
-		SetWeapon("64ClassicRocketLauncherTactical");
-		TakeInventory("64RocketLauncherTactical",1);
-		SetResultValue(1);
-	}
-	else if (currentIsClassic && !SwitchClassic) //from classic to tactical
-	{
-		int ammoCount = CheckInventory("RocketAmmo");
-		GiveInventory("64RocketLauncherTactical",1);
-		SetInventory("RocketAmmo",ammoCount);
-		SetWeapon("64RocketLauncherTactical");
-		TakeInventory("64ClassicRocketLauncherTactical",1);
-		SetResultValue(1);
-	}
-	else
-	{
-		SetResultValue(0);
-	}
-}
-
-script "ChainsawSwitchACS" (int currentIsClassic)
-{
-	int SwitchClassic = GetCVar("ClassicChainsawCvar");
-
-	if (!currentIsClassic && SwitchClassic)	//from tactical to classic
-	{
-		GiveInventory("64ChainsawTactical_Classic",1);
-		SetWeapon("64ChainsawTactical_Classic");
-		TakeInventory("64ChainsawTactical",1);
-		SetResultValue(1);
-	}
-	else if (currentIsClassic && !SwitchClassic)	//from classic to tactical
-	{
-		int FuelCount = CheckInventory("SawGas");
-		GiveInventory("64ChainsawTactical",1);
-		SetInventory("SawGas",FuelCount);
-		SetWeapon("64ChainsawTactical");
-		TakeInventory("64ChainsawTactical_Classic",1);
-		SetResultValue(1);
-	}
-	else
-	{
-		SetResultValue(0);
-	}
-}
-
 script "BerserkSwitchFistsACS" (void) NET
 {
 	if(GetUserCVar(PlayerNumber(),"BerserkSwitchFistsCvar") == true)
@@ -256,6 +204,8 @@ script "CensoredHealingACS"	(void) { SetResultValue(GetCVar("CensoredHealing_Cva
 script "AltAmmoSpritesACS"	(void) { SetResultValue(GetCVar("AlternativeAmmoPickupSpritesCvar")); }
 script "AlphaSpritesACS"	(void) { SetResultValue(GetCvar("AlphaPickupCvar")); }
 script "ClassicTorchACS"	(void) { SetResultValue(GetCvar("ClassicTorchCvar")); }
+script "RLauncherSwitchACS"	(void) { SetResultValue(GetCVar("ClassicRLCvar")); }
+script "ChainsawSwitchACS"	(void) { SetResultValue(GetCVar("ClassicChainsawCvar")); }
 
 script "LiquidSplashACS"	(void) NET CLIENTSIDE { SetResultValue(GetUserCVar(ConsolePlayerNumber(),"LiquidSplashCvar")); }
 script "FlatDecalACS"		(void) NET CLIENTSIDE { SetResultValue(GetUserCVar(ConsolePlayerNumber(),"FlatDecalCvar")); }

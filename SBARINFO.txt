@@ -34,17 +34,17 @@ statusbar fullscreen,forcescaled//,0.75 //set HUD transparancy
 					drawimage ammoicon2,288,174,none,20,20;
 					drawnumber 3,HUDFONT_DOOM,untranslated,ammo2,276,166;
 					}
+				else IsSelected "64ChainsawTactical","64ChainsawTactical_Classic"
+					{
+					drawimage "SHELA0",288,174,none,20,20;
+					drawnumber 3,HUDFONT_DOOM,untranslated,Ammo("Shell"),276,166;
+					}
 
 				IsSelected "UnmakerTactical","64ProximityMine"
 					{
 					drawimage ammoicon2,288,174,none,20,20;
 					drawnumber 3,HUDFONT_DOOM,untranslated,ammo2,276,166;
 					}	
-					else IsSelected "64ChainsawTactical"
-					{
-					drawimage ammoicon2,288,174,none,20,20;
-					drawnumber 3,HUDFONT_DOOM,untranslated,ammo2,276,166;
-					}				
 				drawimage ammoicon1,288,190,none,15,15;
 				drawnumber 3,HUDFONT_DOOM,untranslated,ammo1,276,180;
 				}
@@ -86,14 +86,14 @@ statusbar fullscreen,forcescaled//,0.75 //set HUD transparancy
 					{
 					drawnumber 3,SMALLFONT,red,ammo2,192,183;
 					}
+				else IsSelected "64ChainsawTactical","64ChainsawTactical_Classic"
+					{
+					drawnumber 3,SMALLFONT,red,Ammo("Shell"),192,183;
+					}
 				IsSelected "UnmakerTactical","64ProximityMine"
 					{
 					drawnumber 3,SMALLFONT,red,ammo2,192,183;
 					}
-					else IsSelected "64ChainsawTactical"
-					{
-					drawnumber 3,SMALLFONT,red,ammo2,192,183;
-					}					
 					drawnumber 3,HUDFONT_DOOM,untranslated,ammo1,175,180;
 				}
 				else IsSelected not "64FistTactical"

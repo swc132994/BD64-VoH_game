@@ -484,12 +484,12 @@ OptionValue "LostSoul_Spawner_Value"
 
 OptionValue "Baron_Spawner_Value"
 {
-	-2,"Random (No Vassago)"
-	-1,"Random (No Belphegor)"
+	-2,"Random (No Belphegor)"
+	-1,"Random (No Vassago)"
 	0,"Random"
 	1,"Baron"
-	2,"Vassago"
-	3,"Belphegor"
+	2,"Belphegor"
+	3,"Vassago"
 }
 
 OptionValue "Demon_Spawner_Value"

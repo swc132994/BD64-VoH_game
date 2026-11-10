@@ -42,6 +42,7 @@ Actor SMGBolt : BD64_Tokens {}
 Actor HasUsedShell : BD64_Tokens {}
 Actor ShotgunPumping : BD64_Tokens {}
 Actor SSGAlt : BD64_Tokens {}
+Actor SSGNeedReload : BD64_Tokens {}
 Actor RifleBolt : BD64_Tokens {}
 Actor Spin : BD64_Tokens {}
 Actor UnAltMode : BD64_Tokens { inventory.maxamount 3 }

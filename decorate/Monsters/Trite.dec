@@ -2,11 +2,11 @@ Actor 64Trite 19139
 {
 //$category "Game/BD64_Monsters"
 Scale 0.5
-Health 30
+Health 90
 Radius 16
 Height 20
 Mass 100
-Speed 10
+Speed 16
 PoisonDamage 10
 MeleeThreshold 64
 MaxTargetRange 150
@@ -18,8 +18,7 @@ SeeSound "Trite/Sight"
 DeathSound "Trite/Death"
 ActiveSound "Trite/Active"
 BloodType "Brutal_BloodGreen"
-PainChance 200
-PainChance "Flames",64
+PainChance 128
 PainChance "Bullet",26
 PainChance "SuperFists",255
 PainChance "Kick",64
@@ -28,7 +27,6 @@ DamageFactor "Acid",0
 DamageFactor "Poison",0
 DamageFactor "CauseWaterSplash",0.0
 DamageFactor "CauseObjectsToSplash",0.0
-DamageFactor "Jump",50
 DamageFactor "Kick",1.5
 DamageFactor "SuperKick",1.5
 DamageFactor "Flames",1.5
@@ -50,7 +48,7 @@ MONSTER
 	States
 	{
 	Spawn:
-		TSPI A 1 A_LookEx
+		TSPI A 2 A_LookEx
 		Loop
 	See:
 		TSPI A 2 A_Chase("","",0)

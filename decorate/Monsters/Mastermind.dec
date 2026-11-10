@@ -19,6 +19,7 @@ MeleeRange 100
 DropItem "DemonEssenceLargeSpawner"
 DropItem "64Soulsphere",32
 DropItem "64HighCaliberBox",64
+DropItem "64HighCaliberBox",64
 AttackSound "None"
 Tag "$FO_TAG_MASTERMIND"
 Obituary "$FO_OB_SPIDER"

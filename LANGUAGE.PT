@@ -313,9 +313,8 @@ FO_MONSTER_OTHER= "Outras opções de Monstros";
 FO_MONSTER_SKIN = "------------------------------- Skins de Monstros -------------------------------";
 
 FO_MONSTER_HELLHOUND = "Estilo do Hellhound =";
-FO_MONSTER_HELLHOUND_TXT1 = "Se você selecionou Aleatório (Sem Baron)";
-FO_MONSTER_HELLHOUND_TXT2 = "e desativou a seleção de skins do HellHound.";
-FO_MONSTER_HELLHOUND_TXT3 = "Você receberá Aleatório (Sem HellHound)";
+FO_MONSTER_HELLHOUND_TXT1 = "Escolha entre o padrão, GEC";
+FO_MONSTER_HELLHOUND_TXT2 = "ou ambos podem aparecer juntos";
 
 FO_MONSTER_CACO = "Estilo do Cacodemon =";
 

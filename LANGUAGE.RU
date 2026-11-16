@@ -307,9 +307,8 @@ FO_MONSTER_OTHER = "Другие параметры монстров";
 FO_MONSTER_SKIN = "------------------------------ Скины монстров ------------------------------";
 
 FO_MONSTER_HELLHOUND = "Стиль адской гончий =";
-FO_MONSTER_HELLHOUND_TXT1 = "Если вы выбрали \"Случайный (без барона ада)\"";
-FO_MONSTER_HELLHOUND_TXT2 = "и отключили выбор скина адской гончей";
-FO_MONSTER_HELLHOUND_TXT3 = "вы получите \"Случайный (без адской гончей)\"";
+FO_MONSTER_HELLHOUND_TXT1 = "Выберите между стандартным, GEC";
+FO_MONSTER_HELLHOUND_TXT2 = "или оба могут появляться вместе";
 
 FO_MONSTER_CACO = "Стиль какодемона =";
 

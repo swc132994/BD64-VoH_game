@@ -311,9 +311,8 @@ FO_MONSTER_OTHER = "Other Monster Options";
 FO_MONSTER_SKIN = "\c[Orange]---------- Monster Skins ----------";
 
 FO_MONSTER_HELLHOUND = "Hellhound Style =";
-FO_MONSTER_HELLHOUND_TXT1 = "If you selected \"Random (No Baron)\"";
-FO_MONSTER_HELLHOUND_TXT2 = "and turned off Hellhound skin selection";
-FO_MONSTER_HELLHOUND_TXT3 = "you will receive \"Random (No HellHound)\"";
+FO_MONSTER_HELLHOUND_TXT1 = "Choose between default, GEC";
+FO_MONSTER_HELLHOUND_TXT2 = "or both can appear together";
 
 FO_MONSTER_CACO = "Cacodemon Style =";
 

@@ -304,9 +304,8 @@ FO_MONSTER_OTHER = "Otras opciones de monstruos";
 FO_MONSTER_SKIN = "---------- Aspectos de Monstruos ----------";
 
 FO_MONSTER_HELLHOUND = "Estilo de Sabueso del Infierno =";
-FO_MONSTER_HELLHOUND_TXT1 = "Si seleccionaste \"Aleatorio (sin Barón)\"";
-FO_MONSTER_HELLHOUND_TXT2 = "y desactivaste el aspecto de Sabueso del Infierno";
-FO_MONSTER_HELLHOUND_TXT3 = "recibirás \"Aleatorio (sin Sabueso del Infierno)\"";
+FO_MONSTER_HELLHOUND_TXT1 = "Elige entre predeterminado, GEC";
+FO_MONSTER_HELLHOUND_TXT2 = "o ambos pueden aparecer juntos";
 
 FO_MONSTER_CACO = "Estilo de Cacodemonio =";
 

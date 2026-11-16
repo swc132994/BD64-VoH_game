@@ -307,9 +307,8 @@ FO_MONSTER_OTHER= "Autres options de monstres";
 FO_MONSTER_SKIN = "\c[Orange]---------- Apparences des monstres ----------";
 
 FO_MONSTER_HELLHOUND = "Apparence du Cerbère =";
-FO_MONSTER_HELLHOUND_TXT1 = "Si vous avez sélectionné \"Aléatoire (Pas de Baron)\"";
-FO_MONSTER_HELLHOUND_TXT2 = "et désactivé la sélection de l'apparence du Cerbère";
-FO_MONSTER_HELLHOUND_TXT3 = "vous obtiendrez \"Aléatoire (Pas de Cerbère)\"";
+FO_MONSTER_HELLHOUND_TXT1 = "Choisissez entre par défaut, GEC";
+FO_MONSTER_HELLHOUND_TXT2 = "ou les deux peuvent apparaître ensemble";
 
 FO_MONSTER_CACO = "Style du Cacodémon =";
 

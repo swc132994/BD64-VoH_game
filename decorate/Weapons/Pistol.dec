@@ -41,7 +41,7 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 	states
 	{
 	Ready:
-		PISG A 2 A_WeaponReady
+		PISG AA 1 A_WeaponReady
 		loop
 	Select:
 		PISG A 1 A_Raise
@@ -65,7 +65,8 @@ Inventory.ForbiddenTo "Tactical64DoomPlayer","Tactical64DoomPlayer_P","Modern"
 		PISF B 2 Bright
 		TNT1 A 0 A_Firecustommissile("BulletCaseSpawn",0,0,0,-10)
 		PISF CDEF 1
-		PISG A 6 A_WeaponReady(WRF_NOFIRE)
+		PISG A 1
+		PISG A 6 A_WeaponReady
 		TNT1 A 0 A_Refire
 		Goto Ready
 	Spawn:
@@ -231,7 +232,7 @@ Tag "$FO_TAG_PISTOL"
 		Goto ReadyEmpty
 		P1SG A 0 A_JumpIfInventory("IsSilencer",1,2)
 		PISG A 0
-		"####" A 2 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
+		"####" AA 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
 		Loop
 	ReadyEmpty:
 		TNT1 A 0 A_JumpIfInventory("Kicking",1,"DoKick")
@@ -239,7 +240,7 @@ Tag "$FO_TAG_PISTOL"
 		TNT1 A 0 A_JumpIfInventory("PlaceMine",1,"PlaceMine")
 		P1SG B 0 A_JumpIfInventory("IsSilencer",1,2)
 		PISG B 0
-		"####" B 2 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
+		"####" BB 1 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
 		Loop
 	Fire:
 		TNT1 A 0 A_JumpIfInventory("NoReloading",1,"NoReload")
@@ -270,7 +271,8 @@ Tag "$FO_TAG_PISTOL"
 		PISF B 2 Bright A_SetAngle(angle + frandom(-1.2,1.2),SPF_INTERPOLATE)
 		TNT1 A 0 A_Firecustommissile("BulletCaseSpawn",0,0,0,-10)
 		PISF CDEF 1
-		PISG A 6 A_WeaponReady(WRF_NOFIRE|WRF_ALLOWRELOAD)
+		PISG A 1
+		PISG A 6 A_WeaponReady(WRF_ALLOWRELOAD)
 		TNT1 A 0 A_Refire
 		Goto Ready
 	SilenceFire:
@@ -282,7 +284,8 @@ Tag "$FO_TAG_PISTOL"
 		P1SF B 2 Bright A_SetAngle(angle + frandom(-0.8,0.8),SPF_INTERPOLATE)
 		TNT1 A 0 A_Firecustommissile("BulletCaseSpawn",0,0,0,-10)
 		P1SF CDEF 1
-		P1SG A 6 A_WeaponReady(WRF_NOFIRE|WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
+		P1SG A 1
+		P1SG A 6 A_WeaponReady(WRF_ALLOWRELOAD|WRF_ALLOWZOOM)
 		TNT1 A 0 A_Refire
 		Goto Ready
 	AltFire:

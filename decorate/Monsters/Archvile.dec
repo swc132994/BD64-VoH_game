@@ -1,7 +1,7 @@
 Actor 64Archvile : Archvile// Replaces Archvile (RandomSpawners.dec)
 {
 //$category "Game/BD64_Monsters"
-Scale 0.64
+Scale 0.68
 GibHealth 120
 MaxStepHeight 28
 MaxDropOffHeight 32
@@ -424,7 +424,7 @@ Actor BrutalizedArchvile_2 : BrutalizedArchvile_1
 
 ACTOR 64ArchvileFire : ArchvileFire Replaces ArchvileFire
 {
-Scale 1.25
+Scale 0.68
 Alpha 0.75
 RenderStyle Add
 +NOBLOCKMAP
@@ -437,7 +437,8 @@ RenderStyle Add
 		F4RE C 2 Bright A_FireCrackle
 		F4RE BCBCDCDCDEDED 2 Bright A_Fire
 		F4RE E 2 Bright A_FireCrackle
-		F4RE FEFEFGHIGHIGHI 2 Bright A_Fire
+		F4RE FEFEF 2 Bright A_Fire
+		F4RE GHIGHIGHI 1 Bright A_Fire
 		Stop
 	}
 }

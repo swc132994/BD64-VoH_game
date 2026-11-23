@@ -62,11 +62,11 @@ Obituary "$FO_OB_UNDEAD"
 	Missile:
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",8,0,62)
 		SKEL J 12 Bright A_FaceTarget
-		TNT1 A 0 A_CustomMissile("64RevenantTracer3",60,19)
+		TNT1 A 0 A_CustomMissile("64RevenantTracer3",63,10)
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget6",8,0,62)
-		SKEL J 6 Bright
-		TNT1 A 0 A_CustomMissile("64RevenantTracer2",60,-19)
+		TNT1 A 0 A_CustomMissile("64RevenantTracer2",63,-14)
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget6",-4,0,69)
+		SKEL J 6 Bright
 		SKEL K 6
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12",-4,0,69)
 		SKEL K 12 A_FaceTarget

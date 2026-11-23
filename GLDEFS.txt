@@ -1312,74 +1312,74 @@ flickerlight2 PestiFire
 //ArchVile Fire
 flickerlight ARCHFIRE1
 {
-	color 1.0 1.0 0.0
-	size 24
-	secondarySize 32
-	chance 0.3
-	offset 0 8 0
+    color 1.0 0.3 0.0
+    size 24
+    secondarySize 32
+    chance 0.3
+    offset 0 8 0
 }
 
 flickerlight ARCHFIRE2
 {
-	color 1.0 1.0 0.0
-	size 40
-	secondarySize 48
-	chance 0.3
-	offset 0 24 0
+    color 1.0 0.3 0.0
+    size 40
+    secondarySize 48
+    chance 0.3
+    offset 0 24 0
 }
 
 flickerlight ARCHFIRE3
 {
-	color 1.0 1.0 0.0
-	size 64
-	secondarySize 72
-	chance 0.3
-	offset 0 32 0
+    color 1.0 0.3 0.0
+    size 64
+    secondarySize 72
+    chance 0.3
+    offset 0 32 0
 }
 
 flickerlight ARCHFIRE4
 {
-	color 0.8 0.8 0.0
-	size 64
-	secondarySize 72
-	chance 0.3
-	offset 0 40 0
+    color 0.8 0.3 0.0
+    size 64
+    secondarySize 72
+    chance 0.3
+    offset 0 40 0
 }
 
 flickerlight ARCHFIRE5
 {
-	color 0.8 0.8 0.0
-	size 64
-	secondarySize 72
-	chance 0.3
-	offset 0 48 0
+    color 0.8 0.3 0.0
+    size 64
+    secondarySize 72
+    chance 0.3
+    offset 0 48 0
 }
 
 flickerlight ARCHFIRE6
 {
-	color 0.6 0.6 0.0
-	size 48
-	secondarySize 56
-	chance 0.3
-	offset 0 64 0
+    color 0.6 0.2 0.0
+    size 48
+    secondarySize 56
+    chance 0.3
+    offset 0 64 0
 }
 
 flickerlight ARCHFIRE7
 {
-	color 0.4 0.4 0.0
-	size 32
-	secondarySize 40
-	chance 0.3
-	offset 0 72 0
+    color 0.5 0.2 0.0
+    size 32
+    secondarySize 40
+    chance 0.3
+    offset 0 72 0
 }
 
 flickerlight ARCHFIRE8
 {
-	color 0.2 0.2 0.0
-	size 16
-	secondarySize 24
-	chance 0.3
-	offset 0 80 0
+    color 0.4 0.1 0.0
+    size 16
+    secondarySize 24
+    chance 0.3
+    offset 0 80 0
 }
 
 object 64ArchvileFire
@@ -1398,89 +1398,87 @@ object 64ArchvileFire
 //Archvile
 flickerlight ARCHATK1
 {
-	color 1.0 1.0 0.0
-	size 32
-	secondarySize 48
-	chance 0.3
-	offset 0 40 0
+    color 1.0 0.3 0.0
+    size 32
+    secondarySize 48
+    chance 0.3
+    offset 0 40 0
 }
 
 flickerlight ARCHATK2
 {
-	color 1.0 1.0 0.0
-	size 56
-	secondarySize 64
-	chance 0.3
-	offset 0 40 0
+    color 1.0 0.3 0.0
+    size 56
+    secondarySize 64
+    chance 0.3
+    offset 0 40 0
 }
 
 flickerlight ARCHATK3
 {
-	color 1.0 1.0 0.0
-	size 56
-	secondarySize 64
-	chance 0.3
-	offset 0 32 0
+    color 1.0 0.3 0.0
+    size 56
+    secondarySize 64
+    chance 0.3
+    offset 0 32 0
 }
 
 flickerlight ARCHATK4
 {
-	color 1.0 1.0 0.0
-	size 64
-	secondarySize 72
-	chance 0.3
-	offset 0 24 0
+    color 1.0 0.3 0.0
+    size 64
+    secondarySize 72
+    chance 0.3
+    offset 0 24 0
 }
 
 flickerlight ARCHATK5
 {
-	color 1.0 1.0 0.0
-	size 80
-	secondarySize 88
-	chance 0.3
-	offset 0 20 0
+    color 1.0 0.3 0.0
+    size 80
+    secondarySize 88
+    chance 0.3
+    offset 0 20 0
 }
 
 flickerlight ARCHATK6
 {
-	color 0.7 0.7 0.0
-	size 96
-	secondarySize 104
-	chance 0.3
-	offset 0 20 0
+    color 0.7 0.2 0.0
+    size 96
+    secondarySize 104
+    chance 0.3
+    offset 0 20 0
 }
 
 flickerlight ARCHATK7
 {
-	color 0.3 0.3 0.0
-	size 104
-	secondarySize 112
-	chance 0.3
-	offset 0 20 0
+    color 0.6 0.2 0.0
+    size 104
+    secondarySize 112
+    chance 0.3
+    offset 0 20 0
 }
 
 pulselight ARCHRES
 {
-	color 0.6 0.0 0.0
-	size 64
-	secondarySize 70
-	interval 0.5
-	offset 0 36 0
+    color 0.6 0.0 0.0
+    size 64
+    secondarySize 70
+    interval 0.5
+    offset 0 36 0
 }
 
 object 64Archvile
 {
-	frame VILEG {light ARCHATK4}
-	frame VILEH {light ARCHATK4}
-	frame VILEI {light ARCHATK4}
-	frame VILEJ {light ARCHATK4}
+	frame VILEH {light ARCHATK1}
+	frame VILEI {light ARCHATK2}
+	frame VILEJ {light ARCHATK3}
 	frame VILEK {light ARCHATK4}
 	frame VILEL {light ARCHATK4}
-	frame VILEM {light ARCHATK5}
+	frame VILEM {light ARCHATK4}
 	frame VILEN {light ARCHATK5}
 	frame VILEO {light ARCHATK6}
-	frame VILEP {light ARCHATK6}
-	frame VILEQ {light ARCHATK7}
+	frame VILEP {light ARCHATK7}
 
 	frame VILEZ {light ARCHRES}
 	frame VILHA {light ARCHRES}

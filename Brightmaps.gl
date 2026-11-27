@@ -124,25 +124,27 @@ brightmap sprite CHNII0		{map "BRIGHTMAPS/Chaingun_bm/CHNII0_BR.png" Disablefull
 brightmap sprite CHNIJ0		{map "BRIGHTMAPS/Chaingun_bm/CHNIJ0_BR.png" Disablefullbright}
 
 //GAUSS CANNON
-brightmap sprite GCPCA0		{map "BRIGHTMAPS/GCPCA0_BR.png" Disablefullbright}//Pick-Up
-brightmap sprite GCFIA0		{map "BRIGHTMAPS/GCFIA0_BR.png" Disablefullbright}//Fire
-brightmap sprite GCFIB0		{map "BRIGHTMAPS/GCFIA0_BR.png" Disablefullbright}//Fire
-brightmap sprite GCFIC0		{map "BRIGHTMAPS/GCFIB0_BR.png" Disablefullbright}//Fire
-brightmap sprite GCFID0		{map "BRIGHTMAPS/GCFIB0_BR.png" Disablefullbright}//Fire
-brightmap sprite TGCFA0		{map "BRIGHTMAPS/TGCFA0_BR.png" Disablefullbright}//Tactical Fire
-brightmap sprite TGCFB0		{map "BRIGHTMAPS/TGCFA0_BR.png" Disablefullbright}//Tactical Fire
-brightmap sprite TGCFC0		{map "BRIGHTMAPS/TGCFB0_BR.png" Disablefullbright}//Tactical Fire
-brightmap sprite TGCFD0		{map "BRIGHTMAPS/TGCFB0_BR.png" Disablefullbright}//Tactical Fire
-brightmap sprite GCSCA0		{map "BRIGHTMAPS/GCSCA0_BR.png" Disablefullbright}//Scope
-brightmap sprite GCSCB0		{map "BRIGHTMAPS/GCSCB0_BR.png" Disablefullbright}//Scope
-brightmap sprite GCSCC0		{map "BRIGHTMAPS/GCSCC0_BR.png" Disablefullbright}//Scope
-brightmap sprite GCSCD0		{map "BRIGHTMAPS/GCSCD0_BR.png" Disablefullbright}//Scope
-brightmap sprite GCSCE0		{map "BRIGHTMAPS/GCSCE0_BR.png" Disablefullbright}//Scope
-brightmap sprite GCSCF0		{map "BRIGHTMAPS/GCSCF0_BR.png" Disablefullbright}//Scope
-brightmap sprite GCSCG0		{map "BRIGHTMAPS/GCSCG0_BR.png" Disablefullbright}//Scope
-brightmap sprite GCSCH0		{map "BRIGHTMAPS/GCSCH0_BR.png" Disablefullbright}//Scope
-brightmap sprite GCSCI0		{map "BRIGHTMAPS/GCSCI0_BR.png" Disablefullbright}//Scope
-brightmap sprite GCSCJ0		{map "BRIGHTMAPS/GCSCJ0_BR.png" Disablefullbright}//Scope
+brightmap sprite GCPCA0		{map "BRIGHTMAPS/Gauss_bm/GCPCA0_BR.png" Disablefullbright}//Pick-Up
+brightmap sprite GCFIA0		{map "BRIGHTMAPS/Gauss_bm/GCFIA0_BR.png" Disablefullbright}//Fire
+brightmap sprite GCFIB0		{map "BRIGHTMAPS/Gauss_bm/GCFIA0_BR.png" Disablefullbright}//Fire
+brightmap sprite GCFIC0		{map "BRIGHTMAPS/Gauss_bm/GCFIB0_BR.png" Disablefullbright}//Fire
+brightmap sprite GCFID0		{map "BRIGHTMAPS/Gauss_bm/GCFIB0_BR.png" Disablefullbright}//Fire
+
+brightmap sprite TGCFA0		{map "BRIGHTMAPS/Gauss_bm/TGCFA0_BR.png" Disablefullbright}//Tactical Fire
+brightmap sprite TGCFB0		{map "BRIGHTMAPS/Gauss_bm/TGCFA0_BR.png" Disablefullbright}//Tactical Fire
+brightmap sprite TGCFC0		{map "BRIGHTMAPS/Gauss_bm/TGCFB0_BR.png" Disablefullbright}//Tactical Fire
+brightmap sprite TGCFD0		{map "BRIGHTMAPS/Gauss_bm/TGCFB0_BR.png" Disablefullbright}//Tactical Fire
+
+brightmap sprite GCSCA0		{map "BRIGHTMAPS/Gauss_bm/GCSCA0_BR.png" Disablefullbright}//Scope
+brightmap sprite GCSCB0		{map "BRIGHTMAPS/Gauss_bm/GCSCB0_BR.png" Disablefullbright}//Scope
+brightmap sprite GCSCC0		{map "BRIGHTMAPS/Gauss_bm/GCSCC0_BR.png" Disablefullbright}//Scope
+brightmap sprite GCSCD0		{map "BRIGHTMAPS/Gauss_bm/GCSCD0_BR.png" Disablefullbright}//Scope
+brightmap sprite GCSCE0		{map "BRIGHTMAPS/Gauss_bm/GCSCE0_BR.png" Disablefullbright}//Scope
+brightmap sprite GCSCF0		{map "BRIGHTMAPS/Gauss_bm/GCSCF0_BR.png" Disablefullbright}//Scope
+brightmap sprite GCSCG0		{map "BRIGHTMAPS/Gauss_bm/GCSCG0_BR.png" Disablefullbright}//Scope
+brightmap sprite GCSCH0		{map "BRIGHTMAPS/Gauss_bm/GCSCH0_BR.png" Disablefullbright}//Scope
+brightmap sprite GCSCI0		{map "BRIGHTMAPS/Gauss_bm/GCSCI0_BR.png" Disablefullbright}//Scope
+brightmap sprite GCSCJ0		{map "BRIGHTMAPS/Gauss_bm/GCSCJ0_BR.png" Disablefullbright}//Scope
 
 //BFG
 brightmap sprite BFUGA0		{map "BRIGHTMAPS/BFUGA0_BR.png" Disablefullbright}//Pick-Up

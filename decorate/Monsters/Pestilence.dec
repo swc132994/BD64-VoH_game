@@ -74,11 +74,11 @@ BloodType "Brutal_BloodGreen"
 	Missile:
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12Green",8,0,62)
 		GHUL J 12 Bright Light("PestiFire") A_FaceTarget
-		TNT1 A 0 A_CustomMissile("PestilentMissile1",60,19)
+		TNT1 A 0 A_CustomMissile("PestilentMissile1",63,10)
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget6Green",8,0,62)
-		GHUL J 6 Bright Light("PestiFire")
-		TNT1 A 0 A_CustomMissile("PestilentMissile2",60,-19)
+		TNT1 A 0 A_CustomMissile("PestilentMissile2",63,-14)
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget6Green",-4,0,69)
+		GHUL J 6 Bright Light("PestiFire")
 		GHUL K 6
 		TNT1 A 0 A_SpawnItemEx("HeadshotTarget12Green",-4,0,69)
 		GHUL K 12 A_FaceTarget
